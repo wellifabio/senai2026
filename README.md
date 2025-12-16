@@ -47,10 +47,9 @@ Para acesso a todos os recursos siga os passos (Intranet SENAI, Menu lateral **B
 - [Banco de Talentos PCD](https://sesisenaisp.jobs.recrut.ai/job/LKJV4W)
 
 ## GitHub dos outros professores do SENAI Jaguariúna
-- [Lucas Paiva](https://github.com/lucasPaiva00)
-- [Luis Fernando](https://github.com/luisfernandospoljaric)
 - [Reenye](https://github.com/ReenyeLima)
 - [Robson](https://github.com/robsonbsouzaa)
+- [Luis Fernando](https://github.com/luisfernandospoljaric)
 
 # [Itinerário da área de TI](https://view.genial.ly/653809a786dac80010d6f675/interactive-content-itinerario-da-area-de-tecnologia-da-informacao)
 # [Envie seu currículo](https://forms.gle/LFYviKyoqLpeJRcX9)

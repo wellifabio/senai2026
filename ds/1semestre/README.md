@@ -1,32 +1,31 @@
-# Repositório com materiais de aulas (códigos, exercícios, desafios, atividades)
-## Cursos Técnico em Desenvolvimento de Sistemas (1200 horas)
-## OBS
-Os códigos fonte, exemplos e materiais didáticos serão adicionados a este repositório ao longo do ano de 2024, consulte também os repositórios senai2024, senai2023, senai2022 e senai2021 pois estão repletos de materiais dos anos passados.
-## Calendário
-![1 Semestre](https://raw.githubusercontent.com/wellifabio/senai2024/main/assets/calendario01.png)
-![2 Semestre](https://raw.githubusercontent.com/wellifabio/senai2024/main/assets/calendario02.png)
+# 1DES - Primeiro Semestre (2º ano ensino médio)
+- [LOP (Lógica de Programação e Algoritmos - Linguágem C, Git, Github)](./01-lop/)
+- [SOP (Fundamentos e Administração de Sistemas Operacionais)](./02-sop/)
+- [LER (Levantamento de Requisitos)](./03-ler/)
+- [AITO (Arquitetura de redes com IoT)](./04-aito/)
 
-## Banco de talentos
-- Se você é:
-    - aluno do SENAI em faze final de formação
-    - aluno de graduação ou já se formou em qualquer instituição de ensino.
-    - possui conhecimentos ou habilidades e deseja trabalhar no SENAI.
-- [Banco de Talentos](https://sesisenaisp.jobs.recrut.ai/)
-- [Banco de Talentos PCD](https://sesisenaisp.jobs.recrut.ai/job/LKJV4W)
+## Proposta de divisão das aulas
+Não necessáriamente as aulas seguirão esta ordem, mas a proposta é que sejam distribuídas dessa forma para lançamento de presenças no potal.
 
-## GitHub dos outros professores do SENAI Jaguariúna
-- [Reenye](https://github.com/ReenyeLima)
-- [Lucas Paiva](https://github.com/lucasPaiva00)
-- [Robson Souza](https://github.com/robsonbsouzaa)
+### Primeiro dia da semana
+|Início|Matéria|Aulas|Fim|
+|-|:-:|:-:|:-:|
+|07:30|LOP|2|09:00|
+||Intervalo|||
+|09:15|LOP|3|11:30|
+|11:30|Almoço||13:15|
+|13:15|AITO|2|14:45|
+||Intervalo|||
+|15:00|AITO|3|17:15|
 
-- ## Competências transversais - Cursos autoinstitucionais
-- 1 Acessar o portal EAD https://ead.sp.senai.br
-- 2 Verificar se está matriculado em algum curso e completar todos os que estiver matriculado
-- 3 Caso já tenha concluído algum dos cursos escolha mais cursos sugeridos no **[Site do SENAI Jaguariúna](https://jaguariuna.sp.senai.br/cursos/13/899/formacao-inicial-e-continuada?Parent=898)**
-- 4 Se tiver dificuldades de acesso, senha, clique [Tutorial de como acessar o Portal EAD](https://ead.sp.senai.br/tutorial/comoacessar/)
-### Cursos que devemos concluír
-- Economia Circular  
-- LGPD  
-- Desvendando o 5G  
-- Segurança no Trabalho 
-### Enviar os arquivos dos certificados (imagem ou PDF) [FORMS](https://forms.gle/STMxikkU8qVfLuEb8)
+### Segundo dia da semana
+|Início|Matéria|Aulas|Fim|
+|-|:-:|:-:|:-:|
+|07:30|SOP|2|09:00|
+||Intervalo|||
+|09:15|SOP|3|11:30|
+|11:30|Almoço||13:15|
+|13:15|SOP|1|14:00|
+|14:00|LER|1|14:45|
+||Intervalo|||
+|15:00|LER|3|17:15|

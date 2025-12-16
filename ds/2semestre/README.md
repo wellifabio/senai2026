@@ -1,4 +1,4 @@
-# 2DES - Segundo Semestre
+# 1DES - Segundo Semestre (2º ano ensino médio)
 - [BCD (Banco de Dados](./01-bcd/)
 - [LIMA (Linguagem de Marcação)](./02-lima/)
 - [PBE1 (Programação Back-end 1)](./03-pbe1/)

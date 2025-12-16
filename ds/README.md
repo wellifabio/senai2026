@@ -1,44 +1,5 @@
 # Técnico em Desenvolvimento de Sistemas
 
-# [Pesquisa maturidade digital](https://maturidadedigital.senai.br/respostas/eyJyZXNwb25kZW50Q2F0ZWdvcnlJZCI6MjQyNSwicmVzZWFyY2hJZCI6NjQ3LCJ1bml0SWQiOjEyMjIsInJlZ2lvbmFsSWQiOjI2LCJrZXkiOiJTRU5BSSIsImJ1c2luZXNzSWQiOjEsImlhdCI6MTc2MzM5NzI2OCwiZXhwIjoxNzYzNDgzNjY4fQ.iFTKNKgYfRJoZ8HZL_pf37cwYInlWB6CHr09B5gpUcDSAmtIl9zx6qWtFtTmQVVf)
-
-## Ranking Kahoots
-|Aluno|Pontos|
-|-|:-:|
-|Steffany|18|
-|Artur|16|
-|Caty|10|
-|Mellyssa|10|
-|Pedro|10|
-
-|Posição|Back-end - 1º Sem 2025|Pontos|
-|-|-|:-:|
-|1º|Mellyssa|10|
-|2º|Evelyn|8|
-|3º|Steffany|6|
-
-|Posição|Projetos - 1º Sem 2025|Pontos|
-|-|-|:-:|
-|1º|Pedro|10|
-|2º|Artur|8|
-|3º|Steffany|6|
-
-|Posição|Revisão - 2º Sem 2025|Pontos|
-|-|-|:-:|
-|1º|Caty|10|
-|2º|Artur|8|
-|3º|Steffany|6|
-
-
-
-
-|Assunto|Questões|Link|
-|-|:-:|-|
-|Testes, Lógica, UML, BD e Excel|20|https://forms.office.com/r/R9T5K9TcZr|
-|BD, Proj. Agil, POO, RMS, TS|21|https://forms.office.com/r/0mgH9qH9TD|
-|Revisão de Todo o Curso|30|https://forms.office.com/r/3KU69pzP1J|
-|Revisão de Todo o Curso|40|https://forms.office.com/r/hKXjXB2v53|
-
 ## 5º Itinerário: Formação Técnica e Profissional
 Esse itinerário específico é voltado para a Formação Técnica e Profissional dos estudantes em parceria SEDUC (Secretaria de Educação do Estado de São Paulo) e SESI (Serviço Social da Indústria) e SENAI (Serviço Nacional de Aprendizagem Industrial).
 ## Semestres

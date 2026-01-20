@@ -1,0 +1,1 @@
+## [Resultados parciais](https://wellifabio.github.io/resultados/)

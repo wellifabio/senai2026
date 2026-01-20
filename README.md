@@ -27,7 +27,8 @@ Para acesso a todos os recursos siga os passos (Intranet SENAI, Menu lateral **B
 - [SENAI Play](https://play.senai.br/), passo a passo [para acessar](https://www.youtube.com/watch?v=iZrkpTHq2xQ).
 - [ABNT Coleção](https://abntcolecao.com.br/): (Empresa: SENAIDN, Usuário: ALUNOSENAISP, Senha: ALUNOSENAISP).
 - Proeducador [REMOTE](https://proeducador.sp.senai.br/site/)
-## [Resultados parciais](https://wellifabio.github.io/resultados/)
+## [DS - Materiais didáticos](https://sesisenaisp.sharepoint.com/:u:/r/sites/NovaGED/RecursosDidaticos/SitePages/T%C3%A9cnico-em-Desenvolvimento-de-Sistemas.aspx?csf=1&web=1&e=uUzUI8)
+
 ## Calendário
 ![1 Semestre](./assets/calendario01.png)
 ![2 Semestre](./assets/calendario02.png)
@@ -52,7 +53,8 @@ Para acesso a todos os recursos siga os passos (Intranet SENAI, Menu lateral **B
 - [Luis Fernando](https://github.com/luisfernandospoljaric)
 
 # [Itinerário da área de TI](https://view.genial.ly/653809a786dac80010d6f675/interactive-content-itinerario-da-area-de-tecnologia-da-informacao)
-# [Envie seu currículo](https://forms.gle/LFYviKyoqLpeJRcX9)
+## [Seu currículo](https://forms.gle/LFYviKyoqLpeJRcX9)
+Sita-se a vontade para enviar seu currículo para o professor Wellington no intúito de orientações sobre o conteúdo e redirecionamento caso alguma empresa peça indicações de alunos.
 
 ## Algumas IAs
 |Link|Decrição|

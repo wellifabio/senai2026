@@ -8,7 +8,7 @@
 
 |Modalidade|Horas|Aulas|
 |-|-|-|
-|Presencial|105 horas|140 aulas|
+|Presencial|120 horas|160 aulas|
 
 - Notas (**Mínimo 50** de 0 a 100)
 

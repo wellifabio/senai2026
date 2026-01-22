@@ -10,13 +10,13 @@ Não necessáriamente as aulas seguirão esta ordem, mas a proposta é que sejam
 ### Primeiro dia da semana
 |Início|Matéria|Aulas|Fim|
 |-|:-:|:-:|:-:|
-|07:30|LOP|2|09:00|
+|07:30|LOPAL|2|09:00|
 ||Intervalo|||
-|09:15|LOP|3|11:30|
+|09:15|LOPAL|3|11:30|
 |11:30|Almoço||13:15|
-|13:15|AITO|2|14:45|
+|13:15|ARI|2|14:45|
 ||Intervalo|||
-|15:00|AITO|3|17:15|
+|15:00|ARI|3|17:15|
 
 ### Segundo dia da semana
 |Início|Matéria|Aulas|Fim|

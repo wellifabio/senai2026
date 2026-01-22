@@ -11,21 +11,21 @@ Não necessáriamente as aulas seguirão esta ordem, mas a proposta é que sejam
 ### Primeiro dia da semana
 |Início|Matéria|Aulas|Fim|
 |-|:-:|:-:|:-:|
-|07:30|IOT|2|09:00|
+|07:30|ITCOI|2|09:00|
 ||Intervalo|||
-|09:15|IOT|3|11:30|
+|09:15|ITCOI|3|11:30|
 |11:30|Almoço||13:15|
-|13:15|PFE2|2|14:45|
+|13:15|PEND2|2|14:45|
 ||Intervalo|||
-|15:00|PFE2|3|17:15|
+|15:00|PEND2|3|17:15|
 
 ### Segundo dia da semana
 |Início|Matéria|Aulas|Fim|
 |-|:-:|:-:|:-:|
-|07:30|PDM2|2|09:00|
+|07:30|PPDM2|2|09:00|
 ||Intervalo|||
 |09:15|PSOF3|3|11:30|
 |11:30|Almoço||13:15|
-|13:15|PDM2|2|14:45|
+|13:15|PPDM2|2|14:45|
 ||Intervalo|||
-|15:00|TS|3|17:15|
+|15:00|TSOF|3|17:15|

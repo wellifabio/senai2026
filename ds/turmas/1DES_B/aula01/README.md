@@ -1,22 +1,22 @@
 # Requisitos
 
 ## Conhecimentos:
-1 Requisitos
-1.1. Definição
-1.2. Modelos de documentação
-1.3. Regras de Negócio
-1.4. Restrições
-1.5. Tipos de Requisitos
-1.5.1.Funcionais
-1.5.2.Não funcionais
-2 Levantamento de Requisitos
-2.1. Definição
-2.2. Técnicas
-2.2.1.Briefing
-2.2.2.Levantamento orientado a pontos de vista
-2.2.3.Etnografia (observação)
-2.2.4.Entrevistas
-2.2.5.Brainstorming
+- 1 Requisitos
+- 1.1. Definição
+- 1.2. Modelos de documentação
+- 1.3. Regras de Negócio
+- 1.4. Restrições
+- 1.5. Tipos de Requisitos
+- 1.5.1.Funcionais
+- 1.5.2.Não funcionais
+- 2 Levantamento de Requisitos
+- 2.1. Definição
+- 2.2. Técnicas
+- 2.2.1.Briefing
+- 2.2.2.Levantamento orientado a pontos de vista
+- 2.2.3.Etnografia (observação)
+- 2.2.4.Entrevistas
+- 2.2.5.Brainstorming
 
 ## Atividades
 ### Objetivo da aula

@@ -18,6 +18,27 @@
 - 2.2.4.Entrevistas
 - 2.2.5.Brainstorming
 
+## Requisitos
+- Partes da solução.
+- "Cada pedacinho da solução"
+### Funcional
+Descreve as funcionalidades do sistema e sua criticidade.
+- São baseados nas regras de negócio.
+- Exemplos:
+	- Telas
+	- Botões
+	- Cálculos
+	- Gráficos
+### Não Funcional
+São essenciais para o funcionamento do sistema.
+- Define como o requisito funcional trabalha.
+- Geralmente se relaciona com a infraestrutura, desempenho e segurança do sistema.
+- Exemplos:
+	- Servidores
+	- Linguagens de programação
+	- Tipos de bancos de dados
+
+
 ## Atividades
 ### Objetivo da aula
 O que são requisitos funcionais e não funcionais.

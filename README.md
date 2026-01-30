@@ -1,4 +1,4 @@
-# Repositório com materiais de aulas (códigos, exercícios, desafios, atividades)
+# Repositório com materiais de aulas (códigos, exercícios, desafios e atividades)
 
 ## Tópicos
 - [Manual do Aluno](./assets/ManualdoAluno2025_V.1.pdf)

@@ -21,7 +21,7 @@ Os códigos fonte, exemplos e materiais didáticos serão adicionados a este rep
 
 ## Plataformas SENAI para acesso a conteúdos digitais
 Para acesso a todos os recursos siga os passos (Intranet SENAI, Menu lateral **Blogs & Wikis, GED - SENAI (Na página vá até o link **Recursos Didáticos**) Rolar a página até o fim.
-- Biblioteca SP - [Conecta SENAI](https://www.conectasenai.com.br/login/), passo a passo [para acessar](./assets/conecta-passo-a-passo.pdf).
+- Biblioteca SP - [Conecta SENAI](https://www.conectasenai.com.br/login/), [passo a passo](https://github.com/wellifabio/senai2025/blob/main/assets/conecta-passo-a-passo.pdf).
 - Biblioteca DN - [Estante de livros](https://estantedelivros.senai.br/), conhecendo a [plataforma](https://www.youtube.com/watch?v=DUiEZzhOees).
 - [Recursos Didáticos](https://recursosdidaticos.senai.br/), passo a passo [para acessar](https://www.youtube.com/watch?v=sjmQ3Y9a7-A&list=PLPli_KFbLinFjpj4T8VBoZVUwWnPi4jyd).
 - [SENAI Play](https://play.senai.br/), passo a passo [para acessar](https://www.youtube.com/watch?v=iZrkpTHq2xQ).

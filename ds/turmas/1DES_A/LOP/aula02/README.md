@@ -16,7 +16,8 @@
 ### Exercícios
 ![Lousa 01](./lousa1.jpg)
 
-### Exemplo
+### Algoritmos
+Sequência de passos lógicos para alcançar um objetivo. 
 ![Lousa 02](./lousa2.jpg)
 
 ### Atividades

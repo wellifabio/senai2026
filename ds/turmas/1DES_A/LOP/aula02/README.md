@@ -27,3 +27,6 @@
 3) Escreva um algoritmo que calcule a área de um **círculo**. Mostre o resultado e faça o teste de mesa.
 
 4) Escreva um algoritmo que calcule uma **expressão de segundo grau**. Mostre os resultados das raízes se o delta for positivo ou a mensagem "Esta expressão não possui valores reais" **se** o delta for negativo. Faça o teste de mesa.
+
+## Fluxograma
+![Lousa 03](./lousa3.jpg)

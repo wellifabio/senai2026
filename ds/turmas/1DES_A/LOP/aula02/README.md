@@ -21,13 +21,14 @@ Sequência de passos lógicos para alcançar um objetivo.
 ![Lousa 02](./lousa2.jpg)
 
 ### Atividades
-1) Escreva um algoritmo que leia dois números multiplique o primeiro por dois e some o quadrado do segundo. Mostre o resultado e faça o teste de mesa.
+1) Escreva um algoritmo que leia dois números, multiplique o primeiro por dois e some o quadrado do segundo. Mostre o resultado e faça o teste de mesa.
 
 2) Escreva um algoritmo que calcule a área de um **retângulo**. Mostre o resultado e faça o teste de mesa.
 
 3) Escreva um algoritmo que calcule a área de um **círculo**. Mostre o resultado e faça o teste de mesa.
 
-4) Escreva um algoritmo que calcule uma **expressão de segundo grau**. Mostre os resultados das raízes se o delta for positivo ou a mensagem "Esta expressão não possui valores reais" **se** o delta for negativo. Faça o teste de mesa.
+4) Escreva um algoritmo que calcule uma **expressão de segundo grau**. Mostre os resultados das raízes **se** o delta for positivo ou a mensagem "Esta expressão não possui raízes reais" **se** for negativo. Faça o teste de mesa.
 
 ## Fluxograma
+Representação gráfica de um algoritmo
 ![Lousa 03](./lousa3.jpg)

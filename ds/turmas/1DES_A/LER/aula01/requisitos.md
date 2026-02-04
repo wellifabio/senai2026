@@ -80,6 +80,7 @@ O seguinte documento se baseia nas regras de negócio obtidas juntamente com o c
 - 4.3 Loja AppleStore
 
 ## Wireframe
+![Wireframes](./wireframes.png)
 
 </td>
 </tr>

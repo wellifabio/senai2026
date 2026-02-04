@@ -1,6 +1,14 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+
+    /* centralização */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0;
 }
 
 h1 {

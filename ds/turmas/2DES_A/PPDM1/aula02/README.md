@@ -71,7 +71,8 @@ Pesquise as tendencias dos melhores aplicativos do mercado, crie uma identidade 
 Ao final envie o link do protótipo funcional do figma neste **[formulário]()** com os nomes dos integrantes do grupo.
 - Prepare uma apresentação no intuito de convencer o **cliente** a fechar contrato para a construção do seu aplicativo.
 
-#### [Exemplo de aplicativo](https://www.figma.com/proto/5uvnEMO85cp3SIRbn85yjY/Union?t=hdXKrcbRz8bPZbhB-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=2021-14&starting-point-node-id=2%3A2&show-proto-sidebar=1)
+#### [Exemplo da estrutura](https://www.figma.com/design/5uvnEMO85cp3SIRbn85yjY/Union?node-id=2050-194&t=2VwYugBHcrC0rvHv-1)
+#### [Exemplo de protótipo](https://www.figma.com/proto/5uvnEMO85cp3SIRbn85yjY/Union?t=hdXKrcbRz8bPZbhB-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=2021-14&starting-point-node-id=2%3A2&show-proto-sidebar=1)
 
 ## Conclusão
 Será feita uma votação pela outra sala escolhendo o melhor protótipo apresentado.

@@ -4,6 +4,9 @@ Documento de requisitos do aplicativo **Quero Bolo**
 ### Contextualização
 A Sra. Agnes é uma excelente confeiteira está abrindo na cidade uma loja fízica e precisa de um aplicativo para divulgar e vender seus deliciosos bolos e doces, contratou a consultoria XPTO para desenvolver o aplicativo, após uma análise através de entrevistas, etnografia e um levantamento orientado a pontos de vista o Gerente de projetos elaborou o seguinte documento de requisitos.
 
+<tr>
+<td>
+
 # Documento de requisitos
 ## Introdução
 O seguinte documento se baseia nas regras de negócio obtidas juntamente com o cliente e elenca os requisitos funcionais e não funcionais levantados. Segue a seguinte estrutura, a lista de regras de negócio está numerada no formato [RN001] a [RN0..], os requisitos funcionais [RF001] a [RF0..] e os requisitos não funcionais [NF001] a [NF0..].
@@ -15,9 +18,9 @@ O seguinte documento se baseia nas regras de negócio obtidas juntamente com o c
 - A administradora do estabelecimento deseja manter um cadastro de todos os usuários do aplicativo, desta forma o aplicativo deve permitir que os usuários se cadastrem e envie os dados para um banco de dados.
 ### [RN002] Pedidos do cliente
 - O aplicativo do cliente deve listar os produtos disponíveis e permitir que o usuário escolha o produto, faça o pedido e acompanhe o status da preparação e entrega do pedido.
-### [RN002] Pedidos da confeitaria
+### [RN003] Pedidos da confeitaria
 - A gerência deve receber os pedidos feitos pelos clientes através do aplicativo, preparar os produtos e enviar para entrega.
-### [RN003]
+### [RN004]
 - O sistema deve gerar relatório dos pedidos entregues demonstrando a eficiência do processo e as estatísticas de pedidos e entrega.
 - Relatórios financeiros por período.
 
@@ -63,4 +66,20 @@ O seguinte documento se baseia nas regras de negócio obtidas juntamente com o c
     - 5.1.3 Status do pedido (Em preparação, a caminho)
 
 ## Requisitos não funcionais
-### [NF001] 
+### [NF001] Banco de dados não relacional
+- 1.1 O sistema deve manter um banco de dados com o cadastro de clientes e o registro de todos os pedidos, para menor custo o banco de dados não precisa ser relacional.
+### [NF002] Framework e Linguagens de programação
+- 2.1 Banco de dados, Firebase datastore, não relacional baseado em JSON
+- 2.2 API back-end com framework Laravel com linguagem PHP
+- 2.3 Aplicativo desenvolvido no framework Flutter com a linguagem Dart
+### [NF003] Hospedagem em nuvem
+- 3.1 Tanto o banco de dados como a API Back-end ficarão hospedados na AWS.
+### [NF004] Loja de aplicativos
+- 4.1 Aplicativo deve funcinar tanto em aparelhos android como iOS.
+- 4.2 Loja PlayStore
+- 4.3 Loja AppleStore
+
+## Wireframe
+
+</td>
+</tr>

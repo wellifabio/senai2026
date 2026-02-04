@@ -4,3 +4,4 @@
 - 3º A - Matheus Henrique Salles Spineli
 - 3º A - Miguel Araujo Gerbi
 - 3º A - Leandro Saltorato Júnior
+- 3º A - Beatriz Albuquerque Marcondes dos Santos

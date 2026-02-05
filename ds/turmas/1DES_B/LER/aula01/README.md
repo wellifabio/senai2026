@@ -62,3 +62,5 @@ Após uma exposição sobre requisitos funcionais e não funcionais.
 - Escolher um dos sistemas sugeridos na parte 2
 - Descrever como o sistema  funciona.
 - Elencar os requisitos funcionais e não funcionais destes sistemas.
+
+## [Exemplo de documentação basica de requisitos](./requisitos.md)

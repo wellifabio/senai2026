@@ -15,9 +15,10 @@ leia(distancia)
 tempo = distancia / velocidade
 escreva("O tempo gasto será de ", tempo, "horas")
 ```
+
 </td>
 <td>
-![Fluxograma](./fluxograma02.png)
+<img src="./fluxograma02.png" alt="Fluxograma">
 </td>
 </tr>
 </table>
@@ -30,7 +31,13 @@ escreva("O tempo gasto será de ", tempo, "horas")
 |          |         |  2  |
 
 ### Exercício 3
-#### Algoritmo
+<table>
+<tr>
+    <th>Algoritmo</th><th>Fluxograma</th>
+</tr>
+<tr>
+<td>
+
 ```
 variáveis nome, salario, aumentoP, aumentoRS, novoSalario
 escreva("Digite seu nome")
@@ -43,6 +50,12 @@ aumentoRS = salario * aumentoP / 100
 novoSalario = salario + aumentoRS
 escreva(nome, "seu novo salário é", novoSalario)
 ```
+</td>
+<td>
+<img src="./fluxograma03.png" alt="Fluxograma">
+</td>
+</tr>
+</table>
 
 #### Teste de mesa
 |nome|salario|aumentoP|aumentoRS|novoSalario|
@@ -54,7 +67,13 @@ escreva(nome, "seu novo salário é", novoSalario)
 |    |       |        |         |   3300    |
 
 ### Exercício 4
-#### Algoritmo
+<table>
+<tr>
+    <th>Algoritmo</th><th>Fluxograma</th>
+</tr>
+<tr>
+<td>
+
 ```
 variaveis time, vitorias, empates, pontos
 escreva("Digite o nome do time de futebol")
@@ -66,6 +85,12 @@ leia(empates)
 pontos = vitorias * 3 + empates
 escreva("O time", time," possui ", pontos, "pontos")
 ```
+</td>
+<td>
+<img src="./fluxograma04.png" alt="Fluxograma">
+</td>
+</tr>
+</table>
 
 #### Teste de mesa
 |time|vitorias|empates|pontos|
@@ -76,7 +101,13 @@ escreva("O time", time," possui ", pontos, "pontos")
 ||||18|
 
 ### Exercício 5
-#### Algoritmo
+<table>
+<tr>
+    <th>Algoritmo</th><th>Fluxograma</th>
+</tr>
+<tr>
+<td>
+
 ```
 variaveis n, nMais, nMenos
 escreva("Digite um número inteiro positivo")
@@ -89,6 +120,12 @@ se(n > 0)
 senão
     escreva("O número digitado não é positivo")
 ```
+</td>
+<td>
+<img src="./fluxograma05.png" alt="Fluxograma">
+</td>
+</tr>
+</table>
 
 #### Teste de mesa
 |n|nMais|nMenos|
@@ -98,7 +135,13 @@ senão
 |||9|
 
 ### Exercício 6
-#### Algoritmo
+<table>
+<tr>
+    <th>Algoritmo</th><th>Fluxograma</th>
+</tr>
+<tr>
+<td>
+
 ```
 variáveis velocidade = 900, distancia, tempo;
 escreva("Digite a distância percorrida pelo avião")
@@ -106,6 +149,12 @@ leia(distancia)
 tempo = distancia / velocidade
 escreva("O tempo gasto será de ", tempo, "horas")
 ```
+</td>
+<td>
+<img src="./fluxograma06.png" alt="Fluxograma">
+</td>
+</tr>
+</table>
 
 #### Teste de mesa
 |Distancia|tempo|

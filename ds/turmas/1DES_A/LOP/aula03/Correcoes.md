@@ -63,6 +63,24 @@ escreva("O time possui", pontos,"pontos")
 |||3||
 ||||18|
 
+### Exercício 5
+#### Algoritmo
+```
+variaveis n, nMais, nMenos
+escreva("Digite um número inteiro positivo")
+leia(n)
+nMais = n + 1
+nMenos = n - 1
+escreva(n, "+ 1 = ", nMais, n, " -1 =", nMenos)
+```
+
+#### Teste de mesa
+|n|nMais|nMenos|
+|-|-|-|
+|10|||
+||11||
+|||9|
+
 ### Exercício 6
 #### Algoritmo
 ```

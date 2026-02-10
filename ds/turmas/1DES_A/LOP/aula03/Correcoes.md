@@ -1,5 +1,11 @@
 ### Exercício 2
-#### Algoritmo
+<table>
+<tr>
+    <th>Algoritmo</th><th>Fluxograma</th>
+</tr>
+<tr>
+<td>
+
 ```
 variáveis velocidade, distancia, tempo;
 escreva("Digite a velocidade do seu carro")
@@ -9,6 +15,12 @@ leia(distancia)
 tempo = distancia / velocidade
 escreva("O tempo gasto será de ", tempo, "horas")
 ```
+</td>
+<td>
+![Fluxograma](./fluxograma02.png)
+</td>
+</tr>
+</table>
 
 #### Teste de mesa
 |Velocidade|distância|tempo|
@@ -52,7 +64,7 @@ leia(vitorias)
 escreva("Quantas vezes o time empatou?")
 leia(empates)
 pontos = vitorias * 3 + empates
-escreva("O time possui", pontos,"pontos")
+escreva("O time", time," possui ", pontos, "pontos")
 ```
 
 #### Teste de mesa
@@ -69,9 +81,13 @@ escreva("O time possui", pontos,"pontos")
 variaveis n, nMais, nMenos
 escreva("Digite um número inteiro positivo")
 leia(n)
-nMais = n + 1
-nMenos = n - 1
-escreva(n, "+ 1 = ", nMais, n, " -1 =", nMenos)
+se(n > 0)
+    nMais = n + 1
+    nMenos = n - 1
+    escreva("n + 1 = ", nMais)
+    escreva("n - 1 = ", nMenos)
+senão
+    escreva("O número digitado não é positivo")
 ```
 
 #### Teste de mesa

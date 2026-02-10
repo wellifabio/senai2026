@@ -177,7 +177,8 @@ leia(alqueires)
 escreva("Digite quantos caminhões você possui:")
 leia(caminhoes)
 viagens = alqueires * 250 / (caminhoes * 18)
-escreva("Será necessário ", viagens, "para transportar sua produção")
+escreva("Será necessário ", viagens,
+"para transportar sua produção")
 ```
 </td>
 <td>
@@ -192,3 +193,103 @@ escreva("Será necessário ", viagens, "para transportar sua produção")
 |2|||
 ||2||
 |||13.9|
+
+### Exercício 8
+<table>
+<tr>
+    <th>Algoritmo</th><th>Fluxograma</th>
+</tr>
+<tr>
+<td>
+
+```
+variáveis raio, altura, area, volume;
+escreva("Digite o raio de um cilindro:")
+leia(raio)
+escreva("Digite a altura do cilindro:")
+leia(altura)
+area = 2 * 3.14 * raio * (raio + altura)
+volume  = 3.14 * raio * raio * altura
+escreva("A área do cilindro é ", area,
+", e o volume é", volume)
+```
+</td>
+<td>
+<img src="./fluxograma08.png" alt="Fluxograma">
+</td>
+</tr>
+</table>
+
+#### Teste de mesa
+|raio|altura|area|volume|
+|-|-|-|-|
+|2||||
+||6|||
+|||100.48||
+||||75,36|
+
+### Exercício 9
+<table>
+<tr>
+    <th>Algoritmo</th><th>Fluxograma</th>
+</tr>
+<tr>
+<td>
+
+```
+variáveis nome, preco, novoPreco;
+escreva("Digite o nome da mercadoria:")
+leia(nome)
+escreva("Preço da mercadoria:")
+leia(preco)
+novoPreco = preco + preco * 5 / 100
+escreva("O novo preco de ", nome, "é", novoPreco)
+```
+</td>
+<td>
+<img src="./fluxograma09.png" alt="Fluxograma">
+</td>
+</tr>
+</table>
+
+#### Teste de mesa
+|nome|preco|novoPreco|
+|-|-|-|
+|Bermuda|||
+||100||
+|||105|
+
+### Exercício 10
+<table>
+<tr>
+    <th>Algoritmo</th><th>Fluxograma</th>
+</tr>
+<tr>
+<td>
+
+```
+variáveis cidade, eleitores, votos, porcentagem;
+escreva("Digite o nome da cidade:")
+leia(cidade)
+escreva("Digite quantos eleitores esta cidade possui:")
+leia(eleitores)
+escreva("Digite quantos votos teve a última eleição:")
+leia(votos)
+porcentagem = votos / eleitores * 100
+escreva("A porcentagem de votos da cidade", cidade, "
+na última eleição foi de", porcentagem)
+```
+</td>
+<td>
+<img src="./fluxograma10.png" alt="Fluxograma">
+</td>
+</tr>
+</table>
+
+#### Teste de mesa
+|cidade|eleitores|votos|Porcentagem|
+|-|-|-|-|
+|Amparo||||
+||30000|||
+|||26532||
+||||88,44|

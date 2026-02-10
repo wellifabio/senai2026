@@ -161,3 +161,34 @@ escreva("O tempo gasto será de ", tempo, "horas")
 |-|-|
 |9000||
 ||10|
+
+### Exercício 7
+<table>
+<tr>
+    <th>Algoritmo</th><th>Fluxograma</th>
+</tr>
+<tr>
+<td>
+
+```
+variáveis caminhoes, alqueires, viagens;
+escreva("Digite quantos alqueires sua fazenda possui:")
+leia(alqueires)
+escreva("Digite quantos caminhões você possui:")
+leia(caminhoes)
+viagens = alqueires * 250 / (caminhoes * 18)
+escreva("Será necessário ", viagens, "para transportar sua produção")
+```
+</td>
+<td>
+<img src="./fluxograma07.png" alt="Fluxograma">
+</td>
+</tr>
+</table>
+
+#### Teste de mesa
+|alqueires|caminhoes|viagens|
+|-|-|-|
+|2|||
+||2||
+|||13.9|

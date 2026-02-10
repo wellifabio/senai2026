@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.8">
   <diagram name="Página-1" id="w9WquhHX-24au2PuTE1C">
-    <mxGraphModel dx="1489" dy="889" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="834" dy="498" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -345,6 +345,36 @@
         </mxCell>
         <mxCell id="j3Rvo4Krdd1W1_3sAvRb-59" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;" value="Ex6" vertex="1">
           <mxGeometry height="30" width="60" x="370" y="920" as="geometry" />
+        </mxCell>
+        <mxCell id="j3Rvo4Krdd1W1_3sAvRb-60" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Início" vertex="1">
+          <mxGeometry height="30" width="80" x="660" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="j3Rvo4Krdd1W1_3sAvRb-61" edge="1" parent="1" source="j3Rvo4Krdd1W1_3sAvRb-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="j3Rvo4Krdd1W1_3sAvRb-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="j3Rvo4Krdd1W1_3sAvRb-62" parent="1" style="html=1;strokeWidth=2;shape=manualInput;whiteSpace=wrap;rounded=1;size=26;arcSize=11;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div&gt;alqueires, caminhoes&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="150" x="625" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="j3Rvo4Krdd1W1_3sAvRb-63" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="viagens = alqueires * 250 / (caminhoes * 18)" vertex="1">
+          <mxGeometry height="40" width="250" x="577" y="1059.26" as="geometry" />
+        </mxCell>
+        <mxCell id="j3Rvo4Krdd1W1_3sAvRb-64" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&quot;Será necessário&quot;, viagens, &quot;para transportar sua produção&quot;" vertex="1">
+          <mxGeometry height="71" width="140" x="625" y="1119" as="geometry" />
+        </mxCell>
+        <mxCell id="j3Rvo4Krdd1W1_3sAvRb-65" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Fim" vertex="1">
+          <mxGeometry height="30" width="80" x="662" y="1220" as="geometry" />
+        </mxCell>
+        <mxCell id="j3Rvo4Krdd1W1_3sAvRb-66" edge="1" parent="1" source="j3Rvo4Krdd1W1_3sAvRb-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.503;entryY=0.167;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="j3Rvo4Krdd1W1_3sAvRb-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="j3Rvo4Krdd1W1_3sAvRb-67" edge="1" parent="1" source="j3Rvo4Krdd1W1_3sAvRb-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.59;entryY=0.046;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="j3Rvo4Krdd1W1_3sAvRb-64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="j3Rvo4Krdd1W1_3sAvRb-68" edge="1" parent="1" source="j3Rvo4Krdd1W1_3sAvRb-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="j3Rvo4Krdd1W1_3sAvRb-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="j3Rvo4Krdd1W1_3sAvRb-69" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;" value="Ex7" vertex="1">
+          <mxGeometry height="30" width="60" x="600" y="920" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

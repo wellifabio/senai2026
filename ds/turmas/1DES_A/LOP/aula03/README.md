@@ -17,3 +17,5 @@ Para a lista de exercícios a seguir escreva o **algoritmo** em português estru
 
 ## Entregas:
 Mostre o carderno ao seu professor ao concluir todos os exercícios.
+
+## [Correções de alguns exercícios](./Correcoes.md)

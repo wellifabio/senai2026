@@ -32,3 +32,11 @@ Sequência de passos lógicos para alcançar um objetivo.
 ## Fluxograma
 Representação gráfica de um algoritmo
 ![Lousa 03](./lousa3.jpg)
+
+## Fluxograma
+Representação gráfica de um algoritmo
+![Lousa 03](./lousa3.jpg)
+
+- Faça o fluxograma de cada uma das 4 atividades
+### Solução
+![Fluxograma](./fluxogramas.png)

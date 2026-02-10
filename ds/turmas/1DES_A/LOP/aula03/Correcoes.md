@@ -5,7 +5,7 @@ variáveis velocidade, distancia, tempo;
 escreva("Digite a velocidade do seu carro")
 leia(velocidade)
 escreva("Digite a distância percorrida")
-leia(d)
+leia(distancia)
 tempo = distancia / velocidade
 escreva("O tempo gasto será de ", tempo, "horas")
 ```
@@ -63,3 +63,18 @@ escreva("O time possui", pontos,"pontos")
 |||3||
 ||||18|
 
+### Exercício 6
+#### Algoritmo
+```
+variáveis velocidade = 900, distancia, tempo;
+escreva("Digite a distância percorrida pelo avião")
+leia(distancia)
+tempo = distancia / velocidade
+escreva("O tempo gasto será de ", tempo, "horas")
+```
+
+#### Teste de mesa
+|Distancia|tempo|
+|-|-|
+|9000||
+||10|

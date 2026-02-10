@@ -14,3 +14,6 @@ Para a lista de exercícios a seguir escreva o **algoritmo** em português estru
 |8) Desenvolva um programa que leia o raio (cm) e a altura (cm) de um cilindro. Calcule e mostre a área (cm2) e o volume (cm3) do cilindro.|
 |9) Desenvolva um programa que leia o nome e o preço de uma mercadoria. O programa deverá calcular um aumento de 5% no preço da mercadoria e mostrar o nome da mercadoria e o seu novo preço.|
 |10) Desenvolva um programa que leia o nome de uma cidade, o número total de eleitores e o número total de votos apurados na última eleição. O programa deverá calcular e exibir a porcentagem de participação dos eleitores desta cidade na última eleição.|
+
+## Entregas:
+Mostre o carderno ao seu professor ao concluir todos os exercícios.

@@ -81,10 +81,10 @@
 |1. Tela de Login"||X||1|
 |2. Tela de Listagem de Posts||X||1|
 |3. Tela de Detalhes do Post|||X|0|
-|4. Funcionalidade de Busca|||X|0|
+|4. Funcionalidade de Busca|X|||3|
 |5. Responsividade UX||X||1|
 |6. Estrutura do Projeto (GitPages)||X||1|
-|Total||||**4**|
+|Total||||**6**|
 
 ## [Desafio nº2 - Design Figma](./seletiva-local/A1-Design-Case4You.pdf) 11/02/2026
 ### [MediaFiles](https://github.com/wellifabio/senai2025/tree/main/worldskills/%2308-prova_de_indice_01/Design_A1_e_A2/Media%20Files)

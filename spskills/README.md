@@ -87,6 +87,8 @@
 |Total||||**4**|
 
 ## [Desafio nº2 - Design Figma](./seletiva-local/A1-Design-Case4You.pdf) 11/02/2026
+### [MediaFiles](https://github.com/wellifabio/senai2025/tree/main/worldskills/%2308-prova_de_indice_01/Design_A1_e_A2/Media%20Files)
+### [Forms para entrega](https://forms.gle/U3qbRpnYaMhMzqvo6)
 #### Resultados
 - 3º A - [Beatriz Albuquerque Marcondes dos Santos]()
 - 3º A - [Leandro Saltorato Júnior]()

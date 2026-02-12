@@ -19,7 +19,7 @@ O seguinte documento se baseia nas regras de negócio obtidas juntamente com o c
 ### [RN002] Pedidos do cliente
 - O aplicativo do cliente deve listar os produtos disponíveis e permitir que o usuário escolha o produto, faça o pedido e acompanhe o status da preparação e entrega do pedido.
 ### [RN003] Pedidos da confeitaria
-- A gerência deve receber os pedidos feitos pelos clientes através do aplicativo, preparar os produtos e enviar para entrega.
+- A gerência deve receber os pedidos feitos pelos clientes através do aplicativov, preparar os produtos e enviar para entrega.
 ### [RN004]
 - O sistema deve gerar relatório dos pedidos entregues demonstrando a eficiência do processo e as estatísticas de pedidos e entrega.
 - Relatórios financeiros por período.

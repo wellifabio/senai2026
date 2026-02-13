@@ -92,7 +92,7 @@
 ### [Forms para entrega](https://forms.gle/U3qbRpnYaMhMzqvo6)
 #### Resultados
 - 3º A - [Beatriz Albuquerque Marcondes dos Santos](https://www.figma.com/design/T99APH8Z1bVexjJ3ejqnk4/CASE4YOU?node-id=0-1&t=KPRLKVid4nATRUak-1) - [3 * 3 = 9 pontos]
-- 3º A - [Leandro Saltorato Júnior](https://www.figma.com/design/F5mY7c2dtDSSNHtsrBPCYC/Case4You?node-id=0-1&t=xFS7PPPzSWb3xL6W-1) - [3 * 3 = 9 pontos]
+- 3º A - [Leandro Saltorato Júnior](https://www.figma.com/design/F5mY7c2dtDSSNHtsrBPCYC/Case4You?node-id=0-1&t=xFS7PPPzSWb3xL6W-1) - [4 * 3 = 12 pontos]
 - 3º A - Matheus Henrique Salles Spineli
 - 3º B - [Nicollas Felisbelo da Silva](https://www.figma.com/design/33QZZLuaTUChkCnI9dX8RX/Untitled?node-id=1-2&t=Rl9WeuRvn5Igfy2r-1) - [5 * 3 = 15 pontos]
 - 3º A - [Pietra Vitória Fernandes Lopes](https://www.figma.com/design/WMdLQNgTYo4Yu9Sn77VqB9/Sem-t%C3%ADtulo?node-id=0-1&t=sMMa0YLDWRqyPmov-1) - [3 * 3 = 9 pontos]

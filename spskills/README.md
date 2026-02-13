@@ -91,8 +91,7 @@
 ### [MediaFiles](https://github.com/wellifabio/senai2025/tree/main/worldskills/%2308-prova_de_indice_01/Design_A1_e_A2/Media%20Files)
 ### [Forms para entrega](https://forms.gle/U3qbRpnYaMhMzqvo6)
 #### Resultados
-- 3º A - [Beatriz Albuquerque Marcondes dos Santos](https://www.figma.com/design/T99APH8Z1bVexjJ3ejqnk4/CASE4YOU?node-id=0-1&t=KPRLKVid4nATRUak-1
-) - [3 * 3 = 9 pontos]
+- 3º A - [Beatriz Albuquerque Marcondes dos Santos](https://www.figma.com/design/T99APH8Z1bVexjJ3ejqnk4/CASE4YOU?node-id=0-1&t=KPRLKVid4nATRUak-1) - [3 * 3 = 9 pontos]
 - 3º A - [Leandro Saltorato Júnior](https://www.figma.com/design/F5mY7c2dtDSSNHtsrBPCYC/Case4You?node-id=0-1&t=xFS7PPPzSWb3xL6W-1) - [3 * 3 = 9 pontos]
 - 3º A - Matheus Henrique Salles Spineli
 - 3º B - [Nicollas Felisbelo da Silva](https://www.figma.com/design/33QZZLuaTUChkCnI9dX8RX/Untitled?node-id=1-2&t=Rl9WeuRvn5Igfy2r-1) - [5 * 3 = 15 pontos]

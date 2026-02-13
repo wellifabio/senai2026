@@ -7,7 +7,7 @@
 - 3º A - Leandro Saltorato Júnior
 - 3º A - Beatriz Albuquerque Marcondes dos Santos
 
-## [Desafio nº1 - Lógica, Resolução de problema Web](https://github.com/wellifabio/desafio-ui-2026.git) 06/02/2026
+## [Desafio nº1 - Lógica, Resolução de problema Web - Peso 1](https://github.com/wellifabio/desafio-ui-2026.git) 06/02/2026
 #### Resultados
 ##### Pontos
 - Fez = 3
@@ -87,13 +87,13 @@
 |6. Estrutura do Projeto (GitPages)||X||1|
 |Total||||**6**|
 
-## [Desafio nº2 - Design Figma](./seletiva-local/A1-Design-Case4You.pdf) 11/02/2026
+## [Desafio nº2 - Design Figma - Peso 3](./seletiva-local/A1-Design-Case4You.pdf) 11/02/2026
 ### [MediaFiles](https://github.com/wellifabio/senai2025/tree/main/worldskills/%2308-prova_de_indice_01/Design_A1_e_A2/Media%20Files)
 ### [Forms para entrega](https://forms.gle/U3qbRpnYaMhMzqvo6)
 #### Resultados
 - 3º A - [Beatriz Albuquerque Marcondes dos Santos](https://www.figma.com/design/T99APH8Z1bVexjJ3ejqnk4/CASE4YOU?node-id=0-1&t=KPRLKVid4nATRUak-1
-) - [Pontos 3]
-- 3º A - [Leandro Saltorato Júnior](https://www.figma.com/design/F5mY7c2dtDSSNHtsrBPCYC/Case4You?node-id=0-1&t=xFS7PPPzSWb3xL6W-1) - [Pontos 3]
+) - [3 * 3 = 9 pontos]
+- 3º A - [Leandro Saltorato Júnior](https://www.figma.com/design/F5mY7c2dtDSSNHtsrBPCYC/Case4You?node-id=0-1&t=xFS7PPPzSWb3xL6W-1) - [3 * 3 = 9 pontos]
 - 3º A - Matheus Henrique Salles Spineli
-- 3º B - [Nicollas Felisbelo da Silva](https://www.figma.com/design/33QZZLuaTUChkCnI9dX8RX/Untitled?node-id=1-2&t=Rl9WeuRvn5Igfy2r-1) - [Pontos 5]
-- 3º A - [Pietra Vitória Fernandes Lopes](https://www.figma.com/design/WMdLQNgTYo4Yu9Sn77VqB9/Sem-t%C3%ADtulo?node-id=0-1&t=sMMa0YLDWRqyPmov-1) - [Pontos 3]
+- 3º B - [Nicollas Felisbelo da Silva](https://www.figma.com/design/33QZZLuaTUChkCnI9dX8RX/Untitled?node-id=1-2&t=Rl9WeuRvn5Igfy2r-1) - [5 * 3 = 15 pontos]
+- 3º A - [Pietra Vitória Fernandes Lopes](https://www.figma.com/design/WMdLQNgTYo4Yu9Sn77VqB9/Sem-t%C3%ADtulo?node-id=0-1&t=sMMa0YLDWRqyPmov-1) - [3 * 3 = 9 pontos]

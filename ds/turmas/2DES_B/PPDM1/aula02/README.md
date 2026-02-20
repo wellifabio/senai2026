@@ -76,6 +76,7 @@ Ao final envie o link do protótipo funcional do figma neste **[formulário](htt
 
 ## Conclusão
 Será feita uma votação pela outra sala escolhendo o melhor protótipo apresentado.
+- [Enquete dos protótipos apresentados, escolha um projeto](https://forms.gle/GnvAk9FTLpkocqJT9)
 
 
 

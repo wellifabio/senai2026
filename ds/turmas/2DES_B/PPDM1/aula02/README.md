@@ -78,6 +78,8 @@ Ao final envie o link do protótipo funcional do figma neste **[formulário](htt
 Será feita uma votação pela outra sala escolhendo o melhor protótipo apresentado.
 - [Enquete dos protótipos apresentados, escolha um projeto](https://forms.gle/GnvAk9FTLpkocqJT9)
 
-
-
-
+|Resultados|Votos|
+|-|-|
+|![Primeiro](./primeiro.png)|[18](https://www.figma.com/proto/Xyqtb54BVsm6Q2DLZ7rZQJ/Prot%C3%B3tipo-PPDM?node-id=15-162&p=f&t=qMC413YSMYPLWI9r-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=15%3A162&show-proto-sidebar=1)|
+|![Segundo](./segundo.png)|[15](https://www.figma.com/proto/o7ibio9zAp7c72CX7eI4DR/Sra.-Agnes?node-id=43-61&t=KXPpJKzQP6yGiWfC-1)|
+|![Terceiro](./terceiro.png)|[6](https://www.figma.com/proto/JPVUuoXzpP43HObWswcZ0v/Untitled?node-id=2-14&p=f&t=pVLHJndsl9x6Wnme-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A14)|

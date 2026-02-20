@@ -79,4 +79,8 @@ Será feita uma votação pela outra sala escolhendo o melhor protótipo apresen
 
 - [Enquete dos protótipos apresentados, escolha um projeto](https://forms.gle/ZgqkoZANEqHKjeZR7)
 
-
+|Resultado|Votos|
+|-|-|
+|![Primeiro](./primeiro.png)|[14](https://www.figma.com/proto/lifYR4hgxm9W4ffVkLh8ee/Agnerry?node-id=74-33&t=8S3QqrrOX5s3KJeR-1&starting-point-node-id=387%3A312)|
+|![Segundo](./segundo.png)|[5](https://www.figma.com/proto/hu3CFyCoHOxV7SSwXo1QTx/Sem-t%C3%ADtulo?node-id=8-3&p=f&t=VOMdQVozxJvD4e0i-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=9%3A5)|
+|![Terceiro](./terceiro.png)|[3](https://www.figma.com/proto/FrBm8iK8cQ4ZXQy7nbzmTS/threecake?node-id=1-3&p=f&t=dvv81ckzzuclRbBc-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3)|

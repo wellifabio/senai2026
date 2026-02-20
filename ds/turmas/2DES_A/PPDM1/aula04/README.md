@@ -9,4 +9,5 @@ Os principais frameworks para desenvolvimento mobile em 2026 são **Flutter** (d
         - Node.js
     - Arquivo flutter para Windows .zip
         - Descompactar na pasta do seu usuário
+        - Configurar a variável de ambiente
     - Baixar e instalar o [Android Studio](https://developer.android.com/codelabs/basic-android-kotlin-compose-install-android-studio?hl=pt-br#0) para testar os apps no **emulador**, pagina de [download](https://developer.android.com/studio?hl=pt-br#get-android-studio).

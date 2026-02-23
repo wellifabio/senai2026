@@ -1,5 +1,7 @@
 ## Ranking local provisório
+
 - Após resultados das duas avaliações e entrevistas
+
 |Competidor|Pontos|
 |-|:-:|
 |Leandro Saltorato Júnior|27|

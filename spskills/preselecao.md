@@ -1,3 +1,14 @@
+## Ranking local provisório
+- Após resultados das duas avaliações e entrevistas
+|Competidor|Pontos|
+|-|:-:|
+|Leandro Saltorato Júnior|27|
+|Beatriz Albuquerque Marcondes dos Santos|27|
+|Nicollas Felisbelo da Silva|24|
+|Pietra Vitória Fernandes Lopes|15|
+|Miguel Araujo Gerbi|8|
+|Matheus Henrique Salles Spineli|2|
+
 ## [Desafio nº1 - Lógica, Resolução de problema Web - Peso 1](https://github.com/wellifabio/desafio-ui-2026.git) 06/02/2026
 #### Resultados
 ##### Pontos
@@ -87,14 +98,3 @@
 - 3º A - Matheus Henrique Salles Spineli
 - 3º B - [Nicollas Felisbelo da Silva](https://www.figma.com/design/33QZZLuaTUChkCnI9dX8RX/Untitled?node-id=1-2&t=Rl9WeuRvn5Igfy2r-1) - [5 * 3 = 15 pontos]
 - 3º A - [Pietra Vitória Fernandes Lopes](https://www.figma.com/design/WMdLQNgTYo4Yu9Sn77VqB9/Sem-t%C3%ADtulo?node-id=0-1&t=sMMa0YLDWRqyPmov-1) - [3 * 3 = 9 pontos]
-
-## Ranking provisório local
-|Competidor|Pontos|
-|-|:-:|
-|Beatriz Albuquerque Marcondes dos Santos|27|
-|Leandro Saltorato Júnior|27|
-|Nicollas Felisbelo da Silva|24|
-|Pietra Vitória Fernandes Lopes|15|
-|Miguel Araujo Gerbi|8|
-|Matheus Henrique Salles Spineli|2|
-

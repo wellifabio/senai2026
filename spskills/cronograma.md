@@ -8,7 +8,11 @@
 |Desenvolvimento - Sensores, GPS, Localização, Câmera ...|C1 celular|
 |Testes automatizados UI, UX|D1 celular|
 
-## Cronograma
+## Cronograma de treinamentos individuais
+- Local: SESI - Laboratório de Física
+- Horário: das 13:5h as 17:15
+- Segundas, Terças e Quintas
+
 |Dia<br>4 horas|Atividade|Descrição|Avaliador|Status|
 |-|-|-|-|-|
 |Dia01|Pré-seleção|Prova de desenvolvimento de sistemas, resolução de problemas, consumo de API Web|Wellington, Robson|Concluído|

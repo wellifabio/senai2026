@@ -39,3 +39,24 @@
 |Dia22|Desenvolvimento|Flutter, Testes automatizados|Wellington||
 |Dia23|Desenvolvimento|Flutter, Simulado D1 testes|Wellington||
 |Dia24|Desenvolvimento|Flutter, Simulado B2 consumo de API, GPS e Câmera em um mesmo App|Wellington, Reenye ou Robson||
+
+### 1 Estrutura Diária de Treinamento
+- 13:15 – 14:45 | Reunião Técnica de Trabalho (planejamento, análise de desempenho, estratégia)
+- 14:45 – 15:00 | Intervalo
+- 15:00 – 16:30 | Execução Prática Direcionada
+- 16:30 – 17:15 | Testes, Validação e Feedback Técnico
+
+### 2 Objetivos Mensais e Indicadores de Desempenho
+#### Março
+- Simulado de design A1, entre 80 e 100% em 2,5 horas.
+- Simulado de design A2, entre 80 e 100% em 2,5 horas.
+#### Abril
+- Simulado de desenvolvimento B1, entre 80 e 100% em 2,5 horas.
+- Simulado de desenvolvimento C1, entre 80 e 100% em 2,5 horas.
+#### Maio
+- Simulado / Prova de nível A1 entre 90 e 100%
+- Simulado / Prova de nível B1 entre 90 e 100%
+### 3 Resumo
+Além das horas específicas dedicadas a treinamento, também serão 8 horas semanais de aulas de programação mobile e front-end trabalhando competências relevantes para a modalidade somando **88 horas** até a seletiva.
+Carga estimada até final de **maio**: aproximadamente **72 horas** estruturadas de treinamento, mais 88 horas de componentes correlatos, totalizando **160 horas**.
+<br><br><br>Prof. Wellington 2026

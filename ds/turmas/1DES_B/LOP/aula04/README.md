@@ -1,5 +1,91 @@
 # Aula04 - Estrutura de decisão SE
 
+Estrutura condicional simples
+```
+SE condição ENTÃO
+    .
+    .
+    .
+FIM SE
+```
+![Se01](./se01.png)
+
+Estrutura condicional senão
+```
+SE condição ENTÃO
+    .
+    .
+    .
+SENÃO
+    .
+    .
+    .
+FIM SE
+```
+![Se02](./se02.png)
+
+Estrutura condicional senão se
+```
+SE condição ENTÃO
+    .
+    .
+SENÃO SE consição ENTÃO
+    .
+    .
+SENÃO
+    .
+    .
+FIM SE
+```
+![Se03](./se03.png)
+
+## Exemplos
+### Condicional simples
+Algoritmo que verifica a carga máxima de um caminhão e informa se está exedico
+```
+VARIÁVEIS carga, limite;
+limite = 1000;
+ESCREVA("Informe a carga do caminhão");
+LEIA(carga);
+SE carga >= limite ENTÃO
+    ESCREVA("Limite de carga excedido");
+FIM SE;
+ESCREVA("Boa viagem");
+```
+O algoritmo acima verifica se a carga excede o limite, caso positivo mostra a mensagem "Limite de carga excedido", e em seguida a mensagem "Boa viagem", mesmo que exceda o limite.
+### Condicional senão
+```
+VARIÁVEIS carga, limite;
+limite = 1000;
+ESCREVA("Informe a carga do caminhão");
+LEIA(carga);
+SE carga >= limite ENTÃO
+    ESCREVA("Limite de carga excedido");
+SENÃO;
+    ESCREVA("Boa viagem");
+FIM SE;
+```
+Agora exibe a mensagem se exceder o limite e caso contrário exibe a mensagem "Boa viagem".
+
+### Condicional senão se
+Vamos supor que posa exceder o limite em 10 por cento mas com alerta e se passar disso impede a viagem.
+```
+VARIÁVEIS carga, limite;
+limite = 1000;
+ESCREVA("Informe a carga do caminhão");
+LEIA(carga);
+SE carga >= limite * 10 / 100 ENTÃO
+    ESCREVA("Limite de carga excedido");
+SENÃO SE carga >= limite ENTÃO;
+    ESCREVA("Limite excedido dentro do permitido de 10%");
+SENÃO;
+    ESCREVA("Boa viagem");
+FIM SE;
+```
+Agora exibe a mensagem se exceder o limite e caso contrário exibe a mensagem "Boa viagem".
+
+
+## Lista de exercícios
 Para a lista de exercícios a seguir escreva o **algoritmo** em português estruturado, faça um **teste de mesa** e desenhe o **fluxograma**.
 
 1. Desenvolva um programa que leia um número inteiro. Se o número for maior que zero, mostre na tela "Número positivo” caso contrário "Número negativo".
@@ -51,13 +137,6 @@ Para a lista de exercícios a seguir escreva o **algoritmo** em português estru
     - Se a média for maior ou igual a 7, mostre "Aprovado".
 	- Se a média for maior ou igual a 5 e menor que 7, mostre 	 	  "Recuperação".
 	- Caso contrário, mostre "Reprovado".
-
-
-
-
-
-
- 
 
 ## Entregas:
 Mostre o carderno ao seu professor ao concluir todos os exercícios.

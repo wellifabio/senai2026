@@ -24,6 +24,7 @@ Usando os conhecimentos adquiridos nesta aula, você deve montar um carrinho de 
 |Ao clicar em "Fazer pedido" a lista deve ser apenas limpa e excluída do **localStorage**|
 
 - Crie um tema criativo a sua escolha.
+- Deixe o código limpo com o mínimo de linhas possível como vimos em aula.
 
 ## Entregas
 - Crie um repositório no gihub com o nome que preferir contendo o projeto, um README.md com o padrão estudado em nossas aulas e habilite o git pages.

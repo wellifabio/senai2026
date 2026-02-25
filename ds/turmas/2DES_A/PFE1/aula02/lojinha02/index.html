@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja - Clientes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Loja - Cadastro de Cliente</h1>
+        <button onclick="abrirModal()">+ Novo Cliente</button>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>CPF</th>
+                    <th>Nome</th>
+                    <th>Sobrenome</th>
+                    <th>Nascimento</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="dados"></tbody>
+        </table>
+    </main>
+    <!--Criar Modal-->
+    <div id="modalCli" class="modal">
+        <form id="formCli" class="modal-content">
+            <h2>Novo Cliente</h2>
+            <input type="text" name="cpf" placeholder="CPF" required>
+            <input type="text" name="nome" placeholder="Nome" required>
+            <input type="text" name="sobrenome" placeholder="Sobrenome" required>
+            <input type="date" name="nascimento" required>
+            
+            <div class="modal-buttons">
+                <button type="submit">Salvar</button>
+                <button type="reset" onclick="fecharModal()">Cancelar</button>                
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

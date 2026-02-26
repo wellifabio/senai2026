@@ -1,0 +1,45 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.5.5">
+  <diagram name="Página-1" id="OwOOf_h1SBNyoJjq1LnI">
+    <mxGraphModel dx="679" dy="370" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BrR5fBgD9hlHZuvXHPr2-60" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="DCU (Diagrama de Casos de Uso)" vertex="1">
+          <mxGeometry height="25" width="220" x="304" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BrR5fBgD9hlHZuvXHPr2-61" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="UML (Unified Modeling Language)" vertex="1">
+          <mxGeometry height="30" width="220" x="304" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BrR5fBgD9hlHZuvXHPr2-67" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#fff2cc;strokeColor=#d6b656;shadow=1;" value="Usuário" vertex="1">
+          <mxGeometry height="60" width="30" x="210" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="BrR5fBgD9hlHZuvXHPr2-72" edge="1" parent="1" source="BrR5fBgD9hlHZuvXHPr2-69" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0;exitDx=0;exitDy=0;endArrow=open;endFill=0;fillColor=#fff2cc;strokeColor=#d6b656;shadow=1;" target="BrR5fBgD9hlHZuvXHPr2-71" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="260" as="sourcePoint" />
+            <mxPoint x="519.9999999999991" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BrR5fBgD9hlHZuvXHPr2-69" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;shadow=1;" value="&lt;div&gt;[RF001]&lt;/div&gt;Fazer login" vertex="1">
+          <mxGeometry height="60" width="110" x="310" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="BrR5fBgD9hlHZuvXHPr2-70" edge="1" parent="1" source="BrR5fBgD9hlHZuvXHPr2-67" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#fff2cc;strokeColor=#d6b656;shadow=1;" target="BrR5fBgD9hlHZuvXHPr2-69">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BrR5fBgD9hlHZuvXHPr2-71" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;shadow=1;" value="&lt;div&gt;[RF001.1]&lt;/div&gt;Informar e-mail e senha" vertex="1">
+          <mxGeometry height="60" width="110" x="536" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="BrR5fBgD9hlHZuvXHPr2-73" edge="1" parent="1" source="BrR5fBgD9hlHZuvXHPr2-74" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;fillColor=#fff2cc;strokeColor=#d6b656;shadow=1;" target="BrR5fBgD9hlHZuvXHPr2-69" value="&amp;lt;&amp;lt;extends&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="446" y="300" as="sourcePoint" />
+            <mxPoint x="446" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BrR5fBgD9hlHZuvXHPr2-74" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;shadow=1;" value="&lt;div&gt;[RF001.2]&lt;/div&gt;Exibir mensagem de erro" vertex="1">
+          <mxGeometry height="60" width="110" x="536" y="270" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

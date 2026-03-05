@@ -17,6 +17,11 @@ Agora utilizando o draw.io ilustre com **diagramas de casos de uso** cada um dos
 
 #### Atividades 02
 Crie os **wireframes** (esboço) esboçando as telas do sistema acima em forma de site, utilize as formas "bootstrap" para criar os wireframes
+- Casos de uso para os 6 requisitos
+##### - Wireframes
+- Wireframe de celular para os 6 requisitos
+- Wireframe de Site para os 4 requisitos do GERENTE.
+- Ou vice-versa
 
 ### Entregas
 Junte os Diagramas e os wireframes em um arquivo só utilizando o Word, exporte para PDF e envie para este **[formulário](https://forms.gle/7nKQAcfeWVdZGxXaA)**.

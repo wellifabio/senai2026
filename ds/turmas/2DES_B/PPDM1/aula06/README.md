@@ -141,3 +141,5 @@ class _MainAppState extends State<MainApp> {
   }
 }
 ```
+- Estamos utilizando o navegador "Chrome para testar", tente utilizar o Emulador do Android Studio para testar desta vez.
+- A primeira vez que o utilizamos pode demorar um pouco, porém aos poucos vai ficando mais rápido.

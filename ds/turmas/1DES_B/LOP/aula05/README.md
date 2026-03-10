@@ -182,3 +182,111 @@ void main(){
 	getch();
 }
 ```
+ex02b.c com float e maior precisão
+```c
+#include <stdio.h>
+void main(){
+	float v, d, t;
+	
+	printf("Digite a velocidade em km/h:\n");
+	scanf("%f", &v);
+	printf("Digite a distância a ser percorrida em km\n");
+	scanf("%f", &d);
+	
+	t = d / v;
+	
+	printf("Você levará %.1f horas para percorrer.", t);
+	getch();	
+}
+```
+ex02c.c com horas e minutos
+```c
+#include <stdio.h>
+void main(){
+	float v, d, t;
+	int h, m;
+	
+	printf("Digite a velocidade em km/h:\n");
+	scanf("%f", &v);
+	printf("Digite a distância a ser percorrida em km\n");
+	scanf("%f", &d);
+	
+	t = d / v * 60;
+	h = t / 60;
+	m = t - h * 60;
+	
+	printf("Você levará %d horas e %d minutos para percorrer.", h, m);
+	getch();	
+}
+```
+ex03.c
+```c
+#include <stdio.h>
+void main(){
+	char nome[20];
+	float salario, reajuste, novoSalario;
+	printf("Digite seu nome:\n");
+	scanf(" %s", &nome);
+	printf("Digite seu salário:\n");
+	scanf("%f", &salario);
+	printf("Digite o percentual de reajuste:\n");
+	scanf("%f", &reajuste);
+	
+	novoSalario = salario + salario * reajuste / 100;
+	
+	printf("%s seu novo salário é R$ %.2f", nome, novoSalario);
+	getch();
+}
+```
+ex04.c
+```c
+#include<stdio.h>
+void main(){
+	char time[50];
+	int v, e, pontos;
+	printf("Digite o nome do time: \n");
+	scanf(" %[^\n]", &time);
+	printf("Digite o total de vitórioas:\n");
+	scanf("%d", &v);
+	printf("Digite o total de empates:\n");
+	scanf("%d", &e);
+	
+	pontos = v  * 3 + e;
+	
+	printf("O time %s fez %d pontos.", time, pontos);
+	getch();
+}
+```
+ex05.c
+```c
+#include <stdio.h>
+void main(){
+	int n;
+	printf("Digite um número inteiro\n");
+	scanf("%d", &n);
+	printf("n + 1 = %d, n - 1 = %d", n + 1, n - 1);
+	getch();
+}
+```
+ex07.c
+```c
+#include <stdio.h>
+void main(){
+	int caminhao = 18;
+	int alqueire = 250;
+	int caminhoes, alqueires, viagens, quebrados;
+	printf("Digite quantos caminões o fazendeiro possui:\n");
+	scanf("%d", &caminhoes);
+	printf("Digite quantos alqueires a fazenda possui:\n");
+	scanf("%d", &alqueires);
+	
+	viagens = (alqueires * alqueire) / (caminhoes * caminhao);
+	quebrados = (alqueires * alqueire) % (caminhoes * caminhao);
+	if(quebrados != 0){
+		viagens = viagens + 1;
+	}
+	
+	printf("Será necessário %d viagens para tranportar a colheita.", viagens);
+	getch();
+}
+```

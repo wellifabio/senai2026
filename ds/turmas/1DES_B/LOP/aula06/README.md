@@ -1,4 +1,35 @@
-# Aula06
+# Aula06 - if
+
+## Exemplos:
+If sem Else
+```c
+#include<stdio.h>
+void main(){
+	int limite = 1000, peso;
+	printf("Digite o peso da carga do caminhão:\n");
+	scanf("%d", &peso);
+	if(peso > limite){
+		printf("Limite de peso excedido.\n");
+	}
+	printf("Boa viagem.\n");
+	getch();
+}
+```
+If com Else
+```c
+#include<stdio.h>
+void main(){
+	int limite = 1000, peso;
+	printf("Digite o peso da carga do caminhão:\n");
+	scanf("%d", &peso);
+	if(peso > limite){
+		printf("Limite de peso excedido.\n");
+	} else {
+		printf("Boa viagem.\n");
+	}
+	getch();
+}
+```
 
 ## Atividades
 Agora desenvolva em linguagem C os 13 exercícios que fizemos os algoritmos e fluxogramas da ula04.

@@ -127,3 +127,94 @@ Agora faça alista com 10 exercícios da aula03 com a linguagem **c** nomeie com
 |8) Desenvolva um programa que leia o raio (cm) e a altura (cm) de um cilindro. Calcule e mostre a área (cm2) e o volume (cm3) do cilindro.|
 |9) Desenvolva um programa que leia o nome e o preço de uma mercadoria. O programa deverá calcular um aumento de 5% no preço da mercadoria e mostrar o nome da mercadoria e o seu novo preço.|
 |10) Desenvolva um programa que leia o nome de uma cidade, o número total de eleitores e o número total de votos apurados na última eleição. O programa deverá calcular e exibir a porcentagem de participação dos eleitores desta cidade na última eleição.|
+
+## Correções
+ex01.c
+```c
+#include <stdio.h>
+void main(){
+	//Variáveis
+	int a, b, c, d;
+	//Entrada
+	printf("Digite três números inteiros:\n");
+	scanf("%d %d %d", &a, &b, &c);
+	//Processamento
+	d = (a + b) / c;
+	//Saída
+	printf("(a + b) / c = %d", d);
+	getch();
+}
+```
+ex02a.c
+```c
+#include <stdio.h>
+void main(){
+	int v, d, t;
+		
+	printf("Digite a velocidade em km/h:\n");
+	scanf("%d", &v);
+	printf("Digite a distância a ser percorrida em km\n");
+	scanf("%d", &d);
+	
+	t = d / v;
+	
+	printf("Você levará %d horas para percorrer.", t);
+	getch();
+}
+```
+ex02b.c com float e maior precisão
+```c
+#include <stdio.h>
+void main(){
+	float v, d, t;
+	
+	printf("Digite a velocidade em km/h:\n");
+	scanf("%f", &v);
+	printf("Digite a distância a ser percorrida em km\n");
+	scanf("%f", &d);
+	
+	t = d / v;
+	
+	printf("Você levará %.1f horas para percorrer.", t);
+	getch();	
+}
+```
+ex02c.c com horas e minutos
+```c
+#include <stdio.h>
+void main(){
+	float v, d, t;
+	int h, m;
+	
+	printf("Digite a velocidade em km/h:\n");
+	scanf("%f", &v);
+	printf("Digite a distância a ser percorrida em km\n");
+	scanf("%f", &d);
+	
+	t = d / v * 60;
+	h = t / 60;
+	m = t - h * 60;
+	
+	printf("Você levará %d horas e %d minutos para percorrer.", h, m);
+	getch();	
+}
+```
+ex03.c
+```c
+#include <stdio.h>
+void main(){
+	char nome[20];
+	float salario, reajuste, novoSalario;
+	printf("Digite seu nome:\n");
+	scanf(" %s", &nome);
+	printf("Digite seu salário:\n");
+	scanf("%f", &salario);
+	printf("Digite o percentual de reajuste:\n");
+	scanf("%f", &reajuste);
+	
+	novoSalario = salario + salario * reajuste / 100;
+	
+	printf("%s seu novo salário é R$ %.2f", nome, novoSalario);
+	getch();
+}
+```

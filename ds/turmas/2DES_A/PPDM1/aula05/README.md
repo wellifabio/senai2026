@@ -129,3 +129,60 @@ void main(){
     print(cachorra.tudoJunto());
 }
 ```
+-Agora vamos utilizar listas e encapsulamento com getters and setters, para isso crie um arquivo chamado **encapsulamento.dart**
+```dart
+class Animal {
+  //Atributos
+  int _id = 0;
+  String _nome = '';
+  String _especie = '';
+  String _raca = '';
+  double _peso = 0.0;
+
+  //Método construtor
+  Animal(this._id, this._nome, this._especie, this._raca, this._peso);
+
+  //Métodos getters
+  int get id => _id;
+  String get nome => _nome;
+  String get especie => _especie;
+  String get raca => _raca;
+  double get peso => _peso;
+
+  //Método setter peso
+  set peso(double peso) {
+    _peso = peso;
+  }
+
+  //Mpetodo de saída
+  String tudoJunto() {
+    return "$_id, $_nome, $_especie, $_raca, $_peso";
+  }
+}
+
+void main() {
+  List<Animal> animais = [];
+  animais.add(new Animal(1, "Totó", "Canino", "Caramelo", 2.5));
+  animais.add(new Animal(2, "Pipoca", "Canino", "Caramelo", 1.5));
+  animais.add(new Animal(3, "Sultão", "Canino", "Pit Bull", 25.8));
+  animais.add(new Animal(4, "Mini", "Felino", "Vira latas", 1.7));
+  animais.add(new Animal(5, "Tico", "Felino", "Angorá", 1.5));
+
+  print("O primeiro animal da lista chama-se ${animais[0].nome}");
+  print(
+    "O peso do ${animais[0].nome} é ${animais[0].peso.toStringAsFixed(3)} kgs",
+  );
+
+  animais[0].peso = 2.8;
+
+  print(
+    "O novo peso do ${animais[0].nome} é ${animais[0].peso.toStringAsFixed(3)} kgs\n",
+  );
+
+  print("Lista de aminais");
+  animais.forEach((a) {
+    print(a.tudoJunto());
+  });
+}
+```
+O encapsulamento é fundamental para restringir o acesso a dados sensíveis, garantindo que regras de negócio sejam respeitadas.

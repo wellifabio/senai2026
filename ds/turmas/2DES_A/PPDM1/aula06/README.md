@@ -5,7 +5,7 @@ Após instalar o ambiente flutter vamos criar um alô mundo:
 - Selecione a pasta de origem e coloque o nome do projeto.
 - Pronto, um Alô Mundo será criado. basta executar em um navegador como o Chrome ou no Emulador.
 
-## Alterando o código
+## Criando um novo app e alterando o código do main.dart
 Vamos criar um botão e um **alert** que abre ao clicar no botão
 ```dart
 import 'package:flutter/material.dart';

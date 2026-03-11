@@ -5,8 +5,96 @@ Após instalar o ambiente flutter vamos criar um alô mundo:
 - Selecione a pasta de origem e coloque o nome do projeto.
 - Pronto, um Alô Mundo será criado. basta executar em um navegador como o Chrome ou no Emulador.
 
-## Alterando o código
+## Demonstração de um novo aplicativo
 Vamos criar um botão e um **alert** que abre ao clicar no botão
+```dart
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MainApp());
+}
+
+class MainApp extends StatefulWidget {
+  const MainApp({super.key});
+
+  @override
+  State<MainApp> createState() => _MainAppState();
+}
+
+class _MainAppState extends State<MainApp> {
+  String? nome;
+  double peso = 0.0;
+  double altura = 0.0;
+  double imc = 0.0;
+  String? resultado = 'Resultado';
+
+  void processar() {
+    setState(() {
+      imc = peso / (altura * altura);
+      if (imc < 20) {
+        resultado =
+            "$nome seu IMC é ${imc.toStringAsFixed(1)} você é magrinho(a)";
+      } else {
+        resultado =
+            "$nome seu IMC é ${imc.toStringAsFixed(1)} você é gordinho(a)";
+      }
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            spacing: 22.0,
+            children: [
+              Text(
+                'Índice de Massa Corpórea',
+                style: TextStyle(
+                  color: Color.fromARGB(255, 100, 0, 0),
+                  fontWeight: FontWeight.bold,
+                  fontSize: 22.0,
+                ),
+              ),
+              TextField(
+                decoration: InputDecoration(labelText: 'Nome'),
+                onChanged: (value) {
+                  nome = value;
+                },
+              ),
+              TextField(
+                decoration: InputDecoration(labelText: 'Peso'),
+                keyboardType: TextInputType.numberWithOptions(),
+                onChanged: (value) {
+                  peso = double.parse(value);
+                },
+              ),
+              TextField(
+                decoration: InputDecoration(labelText: 'Altura'),
+                keyboardType: TextInputType.numberWithOptions(),
+                onChanged: (value) {
+                  altura = double.parse(value);
+                },
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  processar();
+                },
+                child: Text("Calcuar"),
+              ),
+              Text("$resultado"),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+```
+![Screenshot02](./screenshot02.png)
+### Exemplo abrindo uma mensagem tipo caixa de diálogo "alert"
 ```dart
 import 'package:flutter/material.dart';
 

@@ -144,6 +144,8 @@ class _MainAppState extends State<MainApp> {
 - Estamos utilizando o navegador "Chrome para testar", tente utilizar o Emulador do Android Studio para testar desta vez.
 - A primeira vez que o utilizamos pode demorar um pouco, porém aos poucos vai ficando mais rápido.
 
+## Demonstração em aula [Calculadora de IMC](https://github.com/wellifabio/flutter-imc-2026.git)
+
 ### Desafios, formulários com uma tela
 - A Utilizando o Figma crie protótipos funcionais para cada um dos três desafios.
 - B Utilizando o framework flutter desenvolva as três interfaces de apenas uma tela usando formulário.

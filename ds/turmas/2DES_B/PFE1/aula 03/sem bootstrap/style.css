@@ -1,0 +1,42 @@
+/* Muito código para coisas simples */
+body { font-family: sans-serif; margin: 0; }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+.links { display: flex; list-style: none; gap: 20px; }
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.btn-comprar {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* O pesadelo: Responsividade na mão */
+@media (max-width: 768px) {
+    .grid-produtos {
+        grid-template-columns: 1fr; /* 1 coluna no celular */
+    }
+    .navbar { flex-direction: column; align-items: center; }
+}

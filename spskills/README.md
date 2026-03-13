@@ -20,4 +20,4 @@
 - 2º Navegação entre telas
     - Exemplo de um [SplashScreen](https://github.com/wellifabio/flutter-splash00-2025.git), siga as instruções em README.md para testar, estude o App e faça as atividades propostas.
 - 3º Login e listas
-    - Exemplo de um [app com tela de login e home com listas], siga as instruções em README.md para testar, estude o App e faça as atividades propostas.
+    - Exemplo de um [app com tela de login e home com listas](https://github.com/wellifabio/flutter-login-lista-json-2026.git), siga as instruções em README.md para testar, estude o App e faça as atividades propostas.

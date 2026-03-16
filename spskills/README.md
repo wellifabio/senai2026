@@ -17,9 +17,9 @@
 - 1º Semana - Flutter e Figma Aplicativo de uma tela com formulário
     - Exemplo de uma [calculadora de IMC](https://github.com/wellifabio/flutter-imc-2026.git)
     - Desenvolver os três aplicativos da [aula06 de flutter](https://github.com/wellifabio/senai2026/tree/main/ds/turmas/2DES_A/PPDM1/aula06) em Figma e Flutter
-- 2º Semana - Flutter Objetos e Listas
+- 2º Semana - Flutter Navegação, Objetos e Listas
     - Exemplo de um [App com listas de Pessoas](https://github.com/wellifabio/flutter_listas_objetos_2026.git), siga as instruções em README.md para testar, estude o App e faça as atividades propostas.
-- 3º Semana - Navegação entre telas
+- 3º Semana - Navegação automática com Splash
     - Exemplo de um [SplashScreen](https://github.com/wellifabio/flutter-splash00-2025.git), siga as instruções em README.md para testar, estude o App e faça as atividades propostas.
 - 4º Login e Arquios e Gestos
     - Exemplo de um [app com tela de login e home com listas](https://github.com/wellifabio/flutter-login-lista-json-2026.git), siga as instruções em README.md para testar, estude o App e faça as atividades propostas.

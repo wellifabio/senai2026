@@ -19,8 +19,9 @@
     - Desenvolver os três aplicativos da [aula06 de flutter](https://github.com/wellifabio/senai2026/tree/main/ds/turmas/2DES_A/PPDM1/aula06) em Figma e Flutter
 - 2º Semana - Flutter Navegação, Objetos e Listas
     - Exemplo e [Tutorial de navegação](https://github.com/wellifabio/flutter_navegacao_img_2026.git)
-    - Exemplo e [Tutorial de Listas](https://github.com/wellifabio/flutter_lista_produtos_2026.git)
-    - Exemplo de um [App com listas de Pessoas](https://github.com/wellifabio/flutter_listas_objetos_2026.git), siga as instruções em README.md para testar, estude o App e faça as atividades propostas.
+    - Exemplo e [Tutorial de Listas Objetos](https://github.com/wellifabio/flutter_lista_produtos_2026.git) siga as instruções em README.md para testar, estude o App e faça as atividades propostas.
+    - Exemplo e [Tutorial de Listas Seleção](https://github.com/wellifabio/flutter_listas_objetos_2026.git)
+    - Exemplo e [Tutorial de Listas Mockup JSON](https://github.com/wellifabio/flutter_listas_json_2026.git) siga as instruções em README.md para testar, estude o App e faça as atividades propostas.
 - 3º Semana - Navegação automática com Splash
     - Exemplo de um [SplashScreen](https://github.com/wellifabio/flutter-splash00-2025.git), siga as instruções em README.md para testar, estude o App e faça as atividades propostas.
 - 4º Login e Arquios e Gestos

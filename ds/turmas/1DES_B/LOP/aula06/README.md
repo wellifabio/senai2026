@@ -1,4 +1,4 @@
-# Aula06 - if
+# Aula06 - if / SE
 
 ## Exemplos:
 If sem Else

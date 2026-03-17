@@ -1,4 +1,53 @@
-# Aula06
+# Aula06 - if / SE
+
+## Exemplos:
+If sem Else
+```c
+#include<stdio.h>
+void main(){
+	int limite = 1000, peso;
+	printf("Digite o peso da carga do caminhão:\n");
+	scanf("%d", &peso);
+	if(peso > limite){
+		printf("Limite de peso excedido.\n");
+	}
+	printf("Boa viagem.\n");
+	getch();
+}
+```
+If com Else
+```c
+#include<stdio.h>
+void main(){
+	int limite = 1000, peso;
+	printf("Digite o peso da carga do caminhão:\n");
+	scanf("%d", &peso);
+	if(peso > limite){
+		printf("Limite de peso excedido.\n");
+	} else {
+		printf("Boa viagem.\n");
+	}
+	getch();
+}
+```
+If com Else If
+```c
+#include<stdio.h>
+void main(){
+	//Regra de negócio: podemos exceder em até 100 kilos o limite
+	int limite = 1000, peso;
+	printf("Digite o peso da carga do caminhão:\n");
+	scanf("%d", &peso);
+	if(peso < limite){
+		printf("Boa viagem.\n");
+	}else if(peso < limite + 100){
+		printf("Boa viagem, limite excedido dentro da tolerância.\n");
+	}else{
+		printf("Limite excedido, viagem proibida.\n");
+	}
+	getch();
+}
+```
 
 ## Atividades
 Agora desenvolva em linguagem C os 13 exercícios que fizemos os algoritmos e fluxogramas da ula04.

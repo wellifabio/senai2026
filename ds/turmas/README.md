@@ -3,15 +3,14 @@
 
 
 # Pesquisa de Caracterização
-# 👥 Lista de Participantes
 
-> Clique em **Acessar** para abrir o link 🚀
+> Clique em **Acessar** para abrir o link 
 
 ---
 
-## 🅰️ Turma 2A
+## Turma 2A
 
-| 👤 | Nome | 🔗 | 📌 Status |
+| 👤 | Nome | 🔗 | Status |
 |---|----------------|----|-----------|
 | ![](https://ui-avatars.com/api/?name=Vitória+Bueno+Da+Silva) | Vitória Bueno Da Silva | [Acessar](https://nam.dcv.ms/0rHPPMKx3E) | Enviado |
 | ![](https://ui-avatars.com/api/?name=Geovanna+Martins+Bertuol) | Geovanna Martins Bertuol | [Acessar](https://nam.dcv.ms/2piVthuTlk) | Enviado |
@@ -45,9 +44,9 @@
 
 ---
 
-## 🅱️ Turma 2B
+##  Turma 2B
 
-| 👤 | Nome | 🔗 | 📌 Status |
+| 👤 | Nome | 🔗 | Status |
 |---|----------------|----|-----------|
 | ![](https://ui-avatars.com/api/?name=Giulia+De+Godoi+Silveira) | Giulia De Godoi Silveira | [Acessar](https://nam.dcv.ms/6o7ZJzrUa2) | Enviado |
 | ![](https://ui-avatars.com/api/?name=Vitor+Rafael+Parisato) | Vitor Rafael Parisato | [Acessar](https://nam.dcv.ms/7aK5qSkns5) | Enviado |

@@ -67,3 +67,57 @@ Agora desenvolva em linguagem C os 13 exercícios que fizemos os algoritmos e fl
 |11. Desenvolva um programa que leia o turno em que um aluno estuda (M para matutino, V para vespertino, N para noturno).<br>- Se for M, mostre "Bom dia"<br>- Se for V, mostre "Boa tarde".<br>- Se for N, mostre "Boa noite".<br>- Caso contrário, mostre "Turno inválido".|
 |12. Desenvolva um programa que leia o ano de nascimento de uma pessoa e o ano atual. Calcule a idade.<br>- Se a idade for maior ou igual a 16, mostre "Pode votar".<br>- Caso contrário, mostre "Não pode votar".
 |13. Desenvolva um programa que leia três notas de um aluno e calcule a média.<br>- Se a média for maior ou igual a 7, mostre "Aprovado".<br>- Se a média for maior ou igual a 5 e menor que 7, mostre "Recuperação"<br>- Caso contrário, mostre "Reprovado".|
+
+### Correções
+ex01.c
+```c
+#include<stdio.h>
+void main(){
+	int n;
+	printf("Digite um número inteiro:\n");
+	scanf("%d",&n);
+	if(n > 0){
+		printf("Número positivo");
+	} else {
+		printf("Número negativo");
+	}
+	getch();
+}
+```
+ex08.c
+```c
+#include<stdio.h>
+void main(){
+	float valor, desconto;
+	printf("Digite o valor da compra:\n");
+	scanf("%f",&valor);
+	if(valor > 500){
+		desconto = valor * 10 / 100;
+		valor = valor - desconto;
+	}else if(valor > 200){
+		desconto = valor * 5 / 100;
+		valor = valor - desconto;
+	}
+	printf("O valor final da compra é R$ %.2f",valor);
+	getch();
+}
+```
+ex11.c
+```c
+#include<stdio.h>
+int main(){
+	char turno;
+	printf("Digite o turno em do aluno\nM para matutino\nV para vespertino\nN para noturno\n");
+	scanf("%c",&turno);
+	if(turno == 'M'){
+		printf("Bom dia");
+	}else if(turno == 'V'){
+		printf("Boa tarde");
+	}else if(turno =='N'){
+		printf("Boa noite");
+	}else{
+		printf("Turno inválido");
+	}
+	getch();
+}
+```

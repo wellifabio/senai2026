@@ -148,7 +148,7 @@ class _MainAppState extends State<MainApp> {
 
 ### Desafios, formulários com uma tela
 - A Utilizando o Figma crie protótipos funcionais para cada um dos três desafios.
-- B Utilizando o framework flutter desenvolva as três interfaces de apenas uma tela usando formulário.
+- B Utilizando o framework flutter desenvolva as três UIs em projetos separados, cada projeto deve conter uma pasta assets com as imagens utilizadas e um arquivo README.md com a descrição do projeto, print das telas, tecnologias e passo a passo de como executar.
 
 |Wireframes01|Wireframes02|Wireframes03|Desafios|
 |-|-|-|-|
@@ -164,7 +164,7 @@ Faça os exercícios utilizando a IDE **VsCode**, testando no Navegador ou no Em
   - financiamento2026
   - investimento2026
   - bitola2026
-- Os links dos repositórios devem ser enviados para o professor neste **[Form]()**.
+- Os links dos repositórios devem ser enviados para o professor neste **[Form](https://forms.gle/22yAfByNi16LATq3A)**.
 - Todos os repositórios devem ter no arquivo **README.md**
   - Descrição do projeto
   - Print das telas (salvos em uma pasta assets no projeto)

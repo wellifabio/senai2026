@@ -218,3 +218,45 @@ Para exutar o projeto, scolha o navegador **Chrome**, navegue até o **main.dart
 |Iniciar um novo projeto vazio|flutter create --empty nome_do_seu_app|
 |Iniciar um novo projeto com o template de aplicativo|flutter create --template=app nome_do_seu_app|
 |Atualizar o Flutter|flutter upgrade|
+
+### Desafios:
+- A Utilizando o Figma crie protótipos funcionais para cada um dos três desafios.
+- B Utilizando o framework flutter desenvolva as três UIs em projetos separados, cada projeto deve conter uma pasta assets com as imagens utilizadas e um arquivo README.md com a descrição do projeto, print das telas, tecnologias e passo a passo de como executar.
+
+#### Exemplo [Calculadora de IMC](https://github.com/wellifabio/flutter-imc-2026.git)
+
+
+|Wireframes01|Wireframes02|Wireframes03|Desafios|
+|-|-|-|-|
+|![Financ 0](./prints/financ0.png)|![Financ 1](./prints/financ1.png)|![Financ 2](./prints/financ2.png)|**Contextualização:** As taxas de juros continuam autíssimas dificultando a aquisição de bens e serviços. Antes de comprar um bem financiado como um carro, uma moto, um imóvel ou até mesmo um eletrodoméstico, é importante simular o valor das parcelas e o custo total do financiamento.<br>**Objetivo:** Desenvolver um aplicativo semelhante ao da imagem ao lado que recebe como entrada o valor do bem, o número de parcelas, a taxa de juros mensal e as taxas adicionais e exibe o valor da parcela e o Montante total do financiamento.|
+|![Invest 0](./prints/invest0.png)|![invest 1](./prints/invest1.png)|![Invest 2](./prints/invest2.png)|**Contextualização:** Uma alternativa ao financiamento é a paciência, quando a aquisição de um bem não é de necessidade básica ou essencial. Neste caso, é possível investir o dinheiro e esperar o tempo necessário para adquirir o bem à vista.<br>**Objetivo:** Desenvolver um aplicativo semelhante ao da imagem ao lado que recebe como entrada o valor mensal que podemos investir o número de meses e a taxa de juros mensal e exibe o montante acumulado sem juros e com juros compostos.|
+|![Bitola](./prints/bitola0.png)|![Bitola](./prints/bitola1.png)|![Bitola](./prints/bitola2.png)|**Contextualização:** O professor de instalações elétricas ensina seus alunos como calcular a bitola adequada para cada uso de uma instalação. Solicitou que os alunos de Desenvolvimento de sistemas criem um aplicativo que faça este cálculo.<br>**Objetivo:** Desenvolver um aplicativo semelhante ao da imagem ao lado que recebe como entrada a corrente elétrica em ampères e a distância em metros e exibe a bitola do fio em milímetros quadrados, tanto para tensão de 110V quanto para 220V.<br>**Fórmula:**<br>bitola110 = (2 * corrente * distância) / 294.64<br>bitola220 = (2 * corrente * distância) / 510.4|
+
+Faça os exercícios utilizando a IDE **VsCode**, testando no Navegador ou no Emulador do Android Studio, se preferir pode utilizar a IDE do Android Studio ou **IDX (Firebase Studio)**
+
+## Entregas
+- Cada projeto deve estar em um **repositório público separado no GitHub**.
+- Nomes sugeridos para os repositórios:
+  - financiamento2026
+  - investimento2026
+  - bitola2026
+- Os links dos repositórios devem ser enviados para o professor neste **[Form](https://forms.gle/22yAfByNi16LATq3A)**.
+- Todos os repositórios devem ter no arquivo **README.md**
+  - Descrição do projeto
+  - Print das telas (salvos em uma pasta assets no projeto)
+  - Tecnologias
+  - Passo a passo de como executar
+
+## Critérios de avaliação
+|Criticidade|Capacidades Básicas e Socioemocionais|Critérios|
+|-|:-:|-|
+|![Critico](https://raw.githubusercontent.com/wellifabio/senai2023/main/outros/assets/critico.png)|1 Identificar as características de programação de dispositivos móveis|Design: Criou o prototipo configurando um **dispositivo** mobile especificado|
+|![Critico](https://raw.githubusercontent.com/wellifabio/senai2023/main/outros/assets/critico.png)|2 Preparar o ambiente necessário ao desenvolvimento do sistema para a plataforma mobile|Configurou o abiente flutter, Android Studio no computador Local e/ou criou projeto remoto|
+|![Critico](https://raw.githubusercontent.com/wellifabio/senai2023/main/outros/assets/critico.png)|3 Interpretar os requisitos do sistema, tendo em vista a elaboração dos componentes em ambiente mobile|Implementou os componentes visuais conforme especificado|
+|![Critico](https://raw.githubusercontent.com/wellifabio/senai2023/main/outros/assets/critico.png)|4 Definir os elementos de entrada, processamento e saída para a codificação das funcionalidades mobile|Implementou os requisitos de design ou funcionais conforme descrito|
+|![Desejável](https://raw.githubusercontent.com/wellifabio/senai2023/main/outros/assets/desejavel.png)|5 Projetar interfaces para dispositivos móveis|Criou o protótipo funcional, Implementou as funcionalidades conforme wireframes|
+|![Desejável](https://raw.githubusercontent.com/wellifabio/senai2023/main/outros/assets/desejavel.png)|6. Implementar o código respeitando as características da linguagem na plataforma mobile|Implementou na linguagem **Dart** em ambiente local ou remoto|
+|![Desejável](https://raw.githubusercontent.com/wellifabio/senai2023/main/outros/assets/desejavel.png)|1 Demonstrar autogestão|Utilizou IA apenas como apoio tentando entender a solução, contou com ajuda de colegas ou ajudou com objetivo de melhorar o aprendizado|
+|![Desejável](https://raw.githubusercontent.com/wellifabio/senai2023/main/outros/assets/desejavel.png)|2 Demonstrar pensamento analítico|Compreende como o Wireframes, Protótipos e Ambientes de desenvolvimento Mobile se relacionam, Compreende o fluxo de dados entre API, App e Locais|
+|![Desejável](https://raw.githubusercontent.com/wellifabio/senai2023/main/outros/assets/desejavel.png)|3 Demonstrar inteligência emocional|Se dedicou ao aprendizado para compreender o mínimo do componente|
+|![Desejável](https://raw.githubusercontent.com/wellifabio/senai2023/main/outros/assets/desejavel.png)|4 Demonstrar autonomia|Questionou os intrutores ou colegas sobre dúvidas ou problemas ocorridos durante o desenvolvimento. Se propôs a resolver os problemas|

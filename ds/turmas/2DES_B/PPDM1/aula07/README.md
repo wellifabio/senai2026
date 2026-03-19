@@ -211,6 +211,7 @@ Para exutar o projeto, scolha o navegador **Chrome**, navegue até o **main.dart
 
 |Ação|Comando|
 |-|-|
+|Executar um projeto flutter|flutter run|
 |Verificar se está tudo OK|flutter doctor|
 |Verificar se está tudo OK com mais detalhes|flutter doctor -v|
 |Atualizar as dependencias do projeto|flutter pub get|

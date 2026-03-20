@@ -37,6 +37,8 @@ Em grupos com até 3 componentes (caso seja 4 faça dois Apps ou dois temas no m
 - Arquivo .apk (Aplicativo) Versão para instalar no celular do desenvolvedor
 - Connection QR Code (Aplicativo) Versão para instalar no celular do desenvolvedor. Utiliza o QR Code para conectar com o App Inventor
 
+## [Tutorial de exemplo com tela certo e errado](./quiz.md)
+
 ## Instruções para entrega
 - Ao concluir o projeto exportar o arquivo .aia e enviar para o repositório do github
 - Exportar o arquivo .apk e instalar no celular para uso didático

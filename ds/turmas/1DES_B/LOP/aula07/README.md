@@ -83,3 +83,94 @@ do{}while()
 - 11 Faça um programa que solicite que o usuário digite um valor inteiro, positivo e imprima todos os valores ímpares entre 0 e o número digitado;
 - 12 Faça um programa que imprima na tela a soma dos valores inteiros entre 0 e 100;
 - 13 Faça um programa que peça para o usuário digitar um número inteiro positivo e calcule o fatorial deste número;
+
+## Correções
+- ex01.c
+```c
+#include<stdio.h>
+
+void main(){
+	for(int i = 1; i <= 10; i++){
+		printf("%d colocada(o)\n",i);
+	}
+	getch();
+}
+```
+- ex02.c
+```c
+#include <stdio.h>
+#include <windows.h>
+
+void main(){
+	SetConsoleOutputCP(CP_UTF8);
+	for(int i = 1; i < 10; i+=2){
+		printf("%dº colocada(o)\n", i);
+	}
+	getch();
+}
+```
+- ex07.c
+```c
+#include <stdio.h>
+#include <windows.h>
+
+void main(){
+	SetConsoleOutputCP(CP_UTF8);
+	int n;
+	do{
+		printf("Digite o número 4:\n");
+		scanf("%d", &n);
+	}while(n != 4);
+	printf("Até que emfim, obrigado!");
+	getch();
+}
+```
+- ex08.c
+```c
+#include <stdio.h>
+#include <windows.h>
+
+void main(){
+	SetConsoleOutputCP(CP_UTF8);
+	int n;
+	do{
+		printf("Digite o número 4:\n");
+		scanf("%d", &n);
+		printf("O quadrado de %d é %d\n", n, n * n);
+	}while(n != 4);
+	printf("Até que emfim, obrigado!");
+	getch();
+}
+```
+- ex09.c
+```c
+#include <stdio.h>
+#include <windows.h>
+
+void main(){
+	SetConsoleOutputCP(CP_UTF8);
+	for(int x = 0; x <= 10; x++){
+		for(int y = 1; y <= 10; y++){
+			printf("%d x %d = %d\t", y, x, x * y);
+		}
+		printf("\n");
+	}
+	getch();
+}
+```
+- ex11.c
+```c
+#include <stdio.h>
+#include <windows.h>
+
+void main(){
+	SetConsoleOutputCP(CP_UTF8);
+	int n;
+	printf("Digite um número inteiro positivo:\n");
+	scanf("%d", &n);
+	for(int i = 1; i < n; i+=2){
+		printf("%d, ",i);	
+	}
+	getch();
+}
+```

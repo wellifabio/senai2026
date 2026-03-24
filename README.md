@@ -54,7 +54,7 @@ Para acesso a todos os recursos siga os passos (Intranet SENAI, Menu lateral **B
 
 # [Itinerário da área de TI](https://view.genial.ly/653809a786dac80010d6f675/interactive-content-itinerario-da-area-de-tecnologia-da-informacao)
 ## [Seu currículo](https://forms.gle/LFYviKyoqLpeJRcX9)
-Sita-se a vontade para enviar seu currículo para o professor Wellington no intúito de orientações sobre o conteúdo e redirecionamento caso alguma empresa peça indicações de alunos.
+Sinta-se a vontade para enviar seu currículo para o professor Wellington no intúito de orientações sobre o conteúdo e redirecionamento caso alguma empresa peça indicações de alunos.
 
 ## Algumas IAs
 |Link|Decrição|

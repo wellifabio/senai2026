@@ -107,3 +107,36 @@ Estatísticas do Ping para 8.8.8.8:
 Aproximar um número redondo de vezes em milissegundos:
     Mínimo = 6ms, Máximo = 6ms, Média = 6ms
 ```
+
+## Resumo sobre redes e internet
+
+- internet - Inerligação de Redes
+- intranet - Internet particular
+- Protocolos - http, tcp, ip
+- DNS - Domain Name Serice - Endereço nominal
+- www - (prefixo) wold wide web
+- web - (sufixo) World eletronic busines .com .net
+- deep - profunto, redes particulares
+
+- IP - Endereço Lógico numérioc v4 32bits v6 128bits
+- MAC - Endereço Físico 48 bits
+
+### Atividade:
+Abra o CMD de seu computador e dê o comando "ipconfig" e responda qual as seguintes perguntas sobre IPv4:
+
+- Qual o endereço IPv4 do seu computador? 192.168.0.155
+- Qual o endereço IPv4 Máscara de Subrede? 255.255.255.0
+- Qual o endereço IPv4 do Gateway? 192.168.0.1
+- Qual o endereço IPv4 do Broadcast? 192.168.0.255
+- Qual o endereço IPv4 de loop back de seu computador? 172.0.0.1 / DNS:localhost
+- Qual o endereço IPv4 APIPA? 169.254.NNN.NNN Fake:192.168.57.1
+
+### IPv4
+0.0.0.0 - 00000000 00000000 00000000 00000000
+255.255.255.255 - 11111111 11111111 11111111 11111111
+
+#### Converta este MAC adress para Binário: D0-94-66-D6-A9-8B
+84218421
+D0-94-66-D6-A9-8B
+11010000 10010100 01100110 11010110 10101001 10001011
+Bits 6 x 8 = 48bits

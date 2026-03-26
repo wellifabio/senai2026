@@ -24,6 +24,7 @@
     - Exemplo e [Tutorial de Listas Mockup JSON](https://github.com/wellifabio/flutter_listas_json_2026.git) siga as instruções em README.md para testar, estude o App e faça as atividades propostas.
 - 3º Semana - Navegação automática com Splash
     - Exemplo de um [SplashScreen](https://github.com/wellifabio/flutter-splash00-2025.git), siga as instruções em README.md para testar, estude o App e faça as atividades propostas.
-    - Exemplo de um App com [GridView e MediaQuery](https://github.com/wellifabio/flutter_produtos_cards_2026.git), siga as instruções em README.md para testar, estude o App e faça a atividade proposta.
+    - Exemplo de um App com [GridView, MediaQuery e Cards](https://github.com/wellifabio/flutter_produtos_cards_2026.git), siga as instruções em README.md para testar, estude o App e faça a atividade proposta.
 - 4º Login e Arquios e Gestos
     - Exemplo de um [app com tela de login e home com listas](https://github.com/wellifabio/flutter-login-lista-json-2026.git), siga as instruções em README.md para testar, estude o App e faça as atividades propostas.
+    - Exemplo de um [app com splash, login, gridview, Cards e carrinho de compras](https://github.com/wellifabio/flutter_cart_api_whats_2026.git), siga as instruções em README.md para testar, estude o App e faça a atividade proposta.

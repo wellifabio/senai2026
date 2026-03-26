@@ -64,7 +64,7 @@ Gateway:
 Broadcast:
 Escopo:
 ```
-- 9 IP: 172.16.32.99/8
+- 10 IP: 172.16.32.99/8
 ```
 Máscara:
 Gateway:

@@ -1,3 +1,28 @@
+# Exemplos
+
+Mascara classe C -> 255.255.255.0 11111111 11111111 11111111 00000000 /24
+Mascara classe B -> 255.255.0.0 11111111 11111111 00000000 00000000 /16
+Mascara classe A -> 255.0.0.0 11111111 00000000 00000000 00000000 /8
+
+10.0.85.17/8
+Máscara: 255.0.0.0
+Gateway: 10.0.0.1
+Broadcast: 10.255.255.255
+Range: 16.777.216
+
+
+172.16.10.53/16
+Máscara: 255.255.0.0
+Gateway:172.16.0.1
+Broadcast:172.16.255.255
+Range:65.536
+
+192.168.2.34/24
+Máscara:255.255.255.0
+Gateway:192.168.2.1
+Broadcast:192.168.2.255
+Range: 256
+
 # Exercícios
 A partir dos endereços IP a seguir informe: Gateway, Broadcast e Escopo/Range (Total de hosts)
 

@@ -27,6 +27,10 @@
     - Mostra o endereço IP, Máscara e outras informações do computador
 - ipconfig /all
     - Mostra o endereço IP, Máscara e outras informações do computador
+- ipconfig /renew
+    - Renova o IP
+- ipconfig /release
+    - Reseta o IP
 ```cmd
 Adaptador Ethernet Ethernet 2:
 

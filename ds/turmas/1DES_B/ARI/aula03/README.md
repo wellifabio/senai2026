@@ -140,3 +140,30 @@ Abra o CMD de seu computador e dê o comando "ipconfig" e responda qual as segui
 D0-94-66-D6-A9-8B
 11010000 10010100 01100110 11010110 10101001 10001011
 Bits 6 x 8 = 48bits
+
+# Ips Reservados Subredes LAN (internos)
+### IPs Classes A, B, C
+- A de 10.0.0.0 até 10.255.255.255 Range = 16.777.216
+- B de 172.16.0.0 até 172.32.255.255 Range = 1.048.576
+- C de 192.168.0.0 até 192.168.255.255 Range = 65.536
+Palávras siônimas escopo = range
+### Máscaras
+- A 255.0.0.0, Range de 256 elevado a 3
+- B 255.255.0.0, Range de 256 elevado a 2
+- C 255.255.255.0, Range de 256
+
+### Exemplo
+- IP: 192.168.0.171
+- Máscara: 255.255.255.0
+- Gateway: 192.168.0.1
+- Broadcast: 192.168.0.255
+- Range: 256
+
+### Abreviação de Máscara
+- A 255.255.255.0 = 11111111.11111111.11111111.00000000 =/24
+- B 255.255.0.0 = 11111111.11111111.00000000.00000000 =/16
+- B 255.0.0.0 = 11111111.00000000.00000000.00000000 =/8
+
+#### Meu IP interno e máscara abreviada: 192.168.0.117/24
+
+## [Lista de exercícios 01](lista01.md)

@@ -7,3 +7,4 @@ Para esta aula vamos consumir a [API](https://receitasapi-b-2025.vercel.app/) qu
 2 - Teste a API listando as receitas e enviando uma nova receita.
 
 ## Demonstração
+Acoga vamos criar uma UI Frontend para manipular estas receitas

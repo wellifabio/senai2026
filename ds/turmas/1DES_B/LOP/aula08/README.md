@@ -20,6 +20,8 @@ A Conjectura de Collatz, ou problema, é um enigma matemático simples: para qua
 |git init|Inicia um repositório git|
 |git add .|Adiciona os arquivos para o stage|
 |git commit -m "mensagem"|Realiza o commit dos arquivos|
+|git log|Exibe o histórico de commits|
+|git checkout <código do commit>|Permite voltar para um commit específico|
 |git remote add origin <url>|Adiciona o repositório remoto|
 |git push -u origin master|Envia os arquivos para o repositório remoto|
 

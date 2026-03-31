@@ -10,8 +10,7 @@
 		- 1.2.5.Rede em Anel (Ring)
 		- 1.2.6.Rede em Malha (Mesh)
 
-# Apresentação
-- ./apresentacao.pptx
+# [Apresentação](./apresentacao.pptx)
 
 # Atividade
 - 1 - Quando surgiu os fundamentos das redes de computadores?

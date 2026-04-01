@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+:root{
+    --p1: #ff6347;
+    --p2: #ffa500;
+    --p3: #ff4500;
+    --p4: #ff8c00;
+    --p5: #ff7f50;
+    --t1: rgba(255, 99, 71, 0.8);
+    --t2: rgba(255, 165, 0, 0.8);
+}
+
+body{
+    background-color: var(--t1);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}

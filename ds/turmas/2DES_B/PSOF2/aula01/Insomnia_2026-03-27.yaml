@@ -1,0 +1,166 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Scratch Pad
+meta:
+  id: wrk_receitas
+  created: 1774614762849
+  modified: 1774614762849
+  description: ""
+collection:
+  - name: API-Receitas-2025
+    meta:
+      id: fld_b1d214e8c8d34daabc5faab645a9c068
+      created: 1774614953519
+      modified: 1774614953519
+      sortKey: -1774614953519
+      description: ""
+    children:
+      - url: https://receitasapi-b-2025.vercel.app/
+        name: GERAL
+        meta:
+          id: req_f0337c24d27744ecb5e8e08759fb515b
+          created: 1774614963068
+          modified: 1774614988671
+          isPrivate: false
+          description: ""
+          sortKey: -1774614963068
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://receitasapi-b-2025.vercel.app/receitas
+        name: OBTER RECEITAS
+        meta:
+          id: req_17b0b630bf7d4a98bc06863dd16e7133
+          created: 1774615003797
+          modified: 1774615051601
+          isPrivate: false
+          description: ""
+          sortKey: -1774614963018
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://receitasapi-b-2025.vercel.app/receitas
+        name: CRIAR RECEITAS
+        meta:
+          id: req_6ff64424ac6e486bbf703785a2a1fc78
+          created: 1774615045522
+          modified: 1774615201716
+          isPrivate: false
+          description: ""
+          sortKey: -1774614962968
+        method: POST
+        body:
+          mimeType: application/json
+          text: >-
+            {
+            	"nome": "Miojinho",
+            	"tipo": "SALGADA",
+            	"ingredientes": "Um pacote de nissin miojo, renata ou outra marca",
+            	"modoFazer": "Ferva a água e coloque omacarrão por 3 minutos",
+            	"img": "https://s.zst.com.br/cms-assets/2024/12/como-fazer-miojo-no-microondas-capa.webp",
+            	"custoAproximado": 4
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://receitasapi-b-2025.vercel.app/receitas/25
+        name: ALTERAR RECEITAS
+        meta:
+          id: req_4385f23a466847d18927dfc98150a028
+          created: 1774615224179
+          modified: 1774615271120
+          isPrivate: false
+          description: ""
+          sortKey: -1774614962918
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "Miojinho legal"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://receitasapi-b-2025.vercel.app/receitas/27
+        name: EXCLUIR RECEITAS
+        meta:
+          id: req_358d1b0fda7240e38e7bce408ec1bd5d
+          created: 1774615298948
+          modified: 1774615311871
+          isPrivate: false
+          description: ""
+          sortKey: -1774614962868
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1774614921301
+    modified: 1774614921301
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1774614921289
+    modified: 1774614921289
+    isPrivate: false

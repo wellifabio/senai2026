@@ -6,11 +6,11 @@
 }
 
 :root{
-    --p1: #ff6347;
-    --p2: #ffa500;
-    --p3: #ff4500;
-    --p4: #ff8c00;
-    --p5: #ff7f50;
+    --p1: rgb(255, 255, 255);
+    --p2: rgb(255, 165, 0);
+    --p3: rgb(255, 215, 0);
+    --p4: rgb(255, 69, 0);
+    --p5: rgb(255, 0, 0);
     --t1: rgba(255, 99, 71, 0.8);
     --t2: rgba(255, 165, 0, 0.8);
 }
@@ -23,5 +23,13 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+}
+
+header, footer{
+    background-color: var(--p1);
+    width: 100%;
+    height: 10vh;
+    padding: 20px;
+    text-align: center;
+    color: white;
 }

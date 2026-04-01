@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Receitas da dona Benta</title>
 </head>
+
 <body>
-    <header><h1>Receitas da dona Benta</h1></header>
+    <header>
+        <h1>Receitas da dona Benta</h1><button onclick="cadastro.classList.remove('oculto')">Adicionar Receita</button>
+    </header>
     <main></main>
     <footer></footer>
+    <div id="cadastro" class="modal oculto">
+        <div class="janela">
+            <h2>Adicionar Receita</h2>
+            <form id="formCad">
+                <label for="nome">Nome da Receita:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="ingredientes">Ingredientes:</label>
+                <textarea id="ingredientes" name="ingredientes" required></textarea>
+                <label for="modoFazer">Modo de Preparo:</label>
+                <textarea id="modoFazer" name="modoFazer" required></textarea>
+                <label for="urlImagem">URL da imagem:</label>
+                <textarea id="urlImagem" name="urlImagem" required></textarea>
+                <label for="custoAproximado">Custo Aproximado:</label>
+                <input type="number" id="custoAproximado" name="custoAproximado" required>
+                <button type="reset" onclick="cadastro.classList.add('oculto')">Canelar</button>
+                <button type="submit">Salvar</button>
+            </form>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>

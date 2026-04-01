@@ -8,3 +8,7 @@ Para esta aula vamos consumir a [API](https://receitasapi-b-2025.vercel.app/) qu
 
 ## Demonstração
 Acoga vamos criar uma UI Frontend para manipular estas receitas.
+<br>![Screenshot01](./screenshot01.png)
+
+## Atividade
+Crie uma UI que liste as receitas em cards e um modal de cadastro semelhante ao da imagem acima

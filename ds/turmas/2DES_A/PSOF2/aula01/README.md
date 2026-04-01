@@ -12,3 +12,5 @@ Acoga vamos criar uma UI Frontend para manipular estas receitas.
 
 ## Atividade
 Crie uma UI que liste as receitas em cards e um modal de cadastro semelhante ao da imagem acima
+
+## Vamos criar as funcionalidades de Update e Delete

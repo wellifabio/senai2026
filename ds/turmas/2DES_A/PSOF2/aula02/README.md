@@ -94,8 +94,9 @@ Você deverá efetuar as entregas nos seguinte formato:
     - Pasta **./api** com os arquivos do back-end.
     - Pasta **./web** com os arquivos front-end das entregas 2, 3, 4, 5, 6, 7, 8, 9 e 10.
     - Arquivo README.md com a lista de *tecnologias/infraestrutura* e um passo a passo para executar o sistema (Back-end e Front-end) (entrega 11).
-- **[Formulário para colar o link do repositório](https://docs.google.com/forms/d/e/1FAIpQLSfbtTuEcvdlVqDglq1kiCUi4Yix0FOMYx-iAkbdFjU36g69sQ/viewform?usp=dialog)**
+- **[Formulário para colar o link do repositório]()**
 
+## Avaliação:
 |Nº|Nome da entrega|Pontos|Pontos obtidos|
 |-|-|:-:|:-:|
 |1|Back-end com conexão com o banco de dados|25||

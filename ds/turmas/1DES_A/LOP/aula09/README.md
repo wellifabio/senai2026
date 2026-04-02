@@ -7,7 +7,7 @@ Faça um programa que calcule o índice de massa corpórea de uma pessoa, obtend
 
 |IMC|Classificação|
 |-|:-:|
-|Abaixo de 15.5|Abaixo do peso|
+|Abaixo de 18.5|Abaixo do peso|
 |Entre 18.6 e 24.9|Peso normal|
 |Entre 25 e 29.9|Sobrepeso|
 |Entre 30 e 34.9|Obesidade grau I|

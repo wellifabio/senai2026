@@ -23,7 +23,6 @@ O Curso de Aperfeiçoamento Profissional Power BI tem por objetivo o desenvolvim
 - 2	Demonstrar pensamento analítico
 - 3	Demonstrar inteligência emocional
 - 4	Demonstrar autonomia
-
   
 ### Conhecimentos
 - 1 Preparação de dados 

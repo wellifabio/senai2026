@@ -1,5 +1,5 @@
 # Plano de Curso
-
+- [Diário FIC](https://diariofic.sp.senai.br/)
 ## Objetivo
 O Curso de Aperfeiçoamento Profissional Power BI tem por objetivo o desenvolvimento de competências relativas ao desenvolvimento de diversos tipos de indicadores e construção de painéis gerenciais, utilizando dados de fontes variadas por meio do software DataVisualization Microsoft Power BI.
 

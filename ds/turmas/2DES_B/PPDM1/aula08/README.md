@@ -3,15 +3,16 @@
 ## Objetivos
 - Splash Screen
     - Animações, movimento e escala
-- Navegação entre telas
-    - Navigator push, pushReplacement, pop
 - Passar informações entre telas
     - Biblioteca: shared_preferences.dart / SharedPreferences
+- Tema
+    - Paleta de cores
+    - Estilização de tema para o App
 - Leitura de dados de aquivo local de texto JSON
     - rootBundle.loadString()
 
 ## Projetos de exemplo
-- Primeiro desafio [SplashScreen](https://github.com/wellifabio/flutter-splash-shared-2026.git)
+- Primeiro desafio [SplashScreen](https://github.com/wellifabio/flutter-splash-shared-2026.git): Animação e passar dados entre telas
     - Teste este projeto
     - Estude os códigos do diretório **lib**
     - Apos testar com seu VsCode, feche o projeto e o VsCode

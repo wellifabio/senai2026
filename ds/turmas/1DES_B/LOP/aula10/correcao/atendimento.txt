@@ -1,0 +1,18 @@
+INÍCIO
+	VAR nome[20]:TEXTO, sexo:CARACTER, idade: INTEIRO;
+	ESCREVA("Digite seu nome, sexo m/f e idade:\n");
+	LEIA(nome, sexo, idade);
+	SE(sexo == 'm')ENTÃO
+		SE(idade > 65)ENTAO
+			ESCREVA("O atendimento do paciente %s é prioritário", nome);
+		SENÃO
+			ESCREVA("O atendimento do paciente %s é normal", nome);
+		FIMSE;
+	SENÃO
+		SE(idade > 60)ENTÃO
+			ESCREVA("O atendimento da paciente %s é prioritário", nome);
+		SENÃO
+			ESCREVA("O atendimento da paciente %s é normal", nome);
+		FIMSE;	
+	FIMSE;
+FIM

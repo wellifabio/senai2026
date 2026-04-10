@@ -7,7 +7,7 @@ Faça um programa que calcule o índice de massa corpórea de uma pessoa, obtend
 
 |IMC|Classificação|
 |-|:-:|
-|Abaixo de 15.5|Abaixo do peso|
+|Abaixo de 18.5|Abaixo do peso|
 |Entre 18.6 e 24.9|Peso normal|
 |Entre 25 e 29.9|Sobrepeso|
 |Entre 30 e 34.9|Obesidade grau I|
@@ -70,3 +70,24 @@ Faça um programa que faça 5 perguntas para uma pessoa sobre um crime. As pergu
 - Se a pessoa responder positivamente a 2 questões ela deve ser classificada como "Suspeita", entre 3 e 4 como "Cúmplice" e 5 como "Assassino". Caso contrário, ele será classificado como "Inocente".
 - Ao concluir as perguntas o programa deve perguntar se há mais algum suspeito se a resposta for sim, deve refazer todas as perguntas e classificar novamente.
 
+## Critérios de avaliação
+
+|Criticidade|Fundamentos e Capacidades|Critérios|Sim ou Não|
+|-|-|:-:|-|
+|![Critico](https://raw.githubusercontent.com/wellifabio/senai2023/main/outros/assets/critico.png)|1 Identificar a sequência lógica de passos em um algoritmo|Escreve algoritmos ou fluxogramas||
+|![Critico](https://raw.githubusercontent.com/wellifabio/senai2023/main/outros/assets/critico.png)|2 Utilizar tomada de decisão para elaboração do algoritmo|Expressa uma condição SE() em um algoritmo ou fluxograma||
+|![Critico](https://raw.githubusercontent.com/wellifabio/senai2023/main/outros/assets/critico.png)|3 Criar estruturas de repetição para executar um conjunto de instruções várias vezes|Escreveu ao menos uma estrutura de código com laço FOR ou WHILE||
+|![Desejável](https://raw.githubusercontent.com/wellifabio/senai2023/main/outros/assets/desejavel.png)|4 Representar algoritmos por meio de fluxogramas, seguindo as convenções de símbolos e conexões|Desenvolveu o fluxograma solicitado na entrega||
+|![Critico](https://raw.githubusercontent.com/wellifabio/senai2023/main/outros/assets/critico.png)|5 Utilizar variáveis para armazenar valores durante a execução de um programa|Definiu as variáveis de acordo com a linguagem de programação escolhida||
+|![Desejável](https://raw.githubusercontent.com/wellifabio/senai2023/main/outros/assets/desejavel.png)|6 Utilizar operadores aritméticos para realizar cálculos em expressões numéricas|Realizou ao menos um dos cálculos solicitados no desafio||
+|![Critico](https://raw.githubusercontent.com/wellifabio/senai2023/main/outros/assets/critico.png)|7 Aplicar operadores lógicos para avaliar e combinar condições booleanas|Utilizou IF() em algum trecho de código||
+|![Desejável](https://raw.githubusercontent.com/wellifabio/senai2023/main/outros/assets/desejavel.png)|8 Utilizar estruturas condicionais para executar instruções com base em uma condição|Utilizou IF() para seguimentar dados direcionando o fluxo da programação||
+|![Critico](https://raw.githubusercontent.com/wellifabio/senai2023/main/outros/assets/critico.png)|9 Utilizar lógica de programação para a resolução de problemas|Desenvolveu ao menos um dos requisitos||
+|![Desejável](https://raw.githubusercontent.com/wellifabio/senai2023/main/outros/assets/desejavel.png)|11 Aplicar técnicas de código limpo (clean code)|Removeu comentários desnecessários, redundâncias e códigos não utilizados||
+|![Critico](https://raw.githubusercontent.com/wellifabio/senai2023/main/outros/assets/critico.png)|12 Manipular os diferentes tipos de dados na elaboração de programas|Utilizou strings, ints e outros tipos de dados||
+|![Desejável](https://raw.githubusercontent.com/wellifabio/senai2023/main/outros/assets/desejavel.png)|13 Utilizar o ambiente integrado de desenvolvimento (IDE)|Utilizou VsCode, ou devC ou outra IDE estudada||
+|![Desejável](https://raw.githubusercontent.com/wellifabio/senai2023/main/outros/assets/desejavel.png)|14 Criar repositórios Git locais e remotos para controle de versionamento|Realizou as entregas conforme orientado||
+|![Desejável](https://raw.githubusercontent.com/wellifabio/senai2023/main/outros/assets/desejavel.png)|1 Demonstrar autogestão|Compreendeu a situação problema e tirou dúvidas se necessário com o instrutor||
+|![Desejável](https://raw.githubusercontent.com/wellifabio/senai2023/main/outros/assets/desejavel.png)|2 Demonstrar pensamento analítico |Relacionou os conceitos de lógica estudado ao desafio proposto||
+|![Desejável](https://raw.githubusercontent.com/wellifabio/senai2023/main/outros/assets/desejavel.png)|3 Demonstrar inteligência emocional|Desenvolveu todos os requisitos solicitados mesmo que apresente alguns erros durante a execução||
+|![Desejável](https://raw.githubusercontent.com/wellifabio/senai2023/main/outros/assets/desejavel.png)|4 Demonstrar autonomia|Pesquisou nas prórpias bases de conhecimento ou documentos externos oficiais da linguagem.||

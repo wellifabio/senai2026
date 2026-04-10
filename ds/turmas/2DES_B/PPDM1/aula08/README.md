@@ -12,3 +12,6 @@
 
 ## Projetos de exemplo
 - Primeiro desafio [SplashScreen](https://github.com/wellifabio/flutter-splash-shared-2026.git)
+    - Teste este projeto
+    - Estude os códigos do diretório **lib**
+    - Faça a atividade proposta

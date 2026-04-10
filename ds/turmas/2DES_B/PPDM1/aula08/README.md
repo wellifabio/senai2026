@@ -10,6 +10,8 @@
     - Estilização de tema para o App
 - Leitura de dados de aquivo local de texto JSON
     - rootBundle.loadString()
+- Builder
+    - Criar o arquivo **.apk** para testar em celular Android
 
 ## Projetos de exemplo
 - Primeiro desafio [SplashScreen](https://github.com/wellifabio/flutter-splash-shared-2026.git): Animação e passar dados entre telas

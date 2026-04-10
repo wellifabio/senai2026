@@ -20,7 +20,8 @@
     - Apos testar com seu VsCode, feche o projeto e o VsCode
     - Faça a atividade proposta criando um novo app do Zero
 
-## Iniciar um novo projeto flutter
+## Tutoriais
+#### Iniciar um novo projeto flutter
 - Abra o vscode, pressione CTRL + Shift + P e digite **flutter**, clique em **New Project**, escolha **"Empty..."** projeto vazio.
 - Selecione a pasta "Área de trabalho" por exemplo
 - Coloque o nome do projeto, todas em minúsculas sem espaços ex: "flutter_splash_aula08"

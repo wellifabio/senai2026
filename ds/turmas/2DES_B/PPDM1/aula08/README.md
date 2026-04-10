@@ -1,0 +1,14 @@
+# Aula08
+
+## Objetivos
+- Splash Screen
+    - Animações, movimento e escala
+- Navegação entre telas
+    - Navigator push, pushReplacement, pop
+- Passar informações entre telas
+    - Biblioteca: shared_preferences.dart / SharedPreferences
+- Leitura de dados de aquivo local de texto JSON
+    - rootBundle.loadString()
+
+## Projetos de exemplo
+    - [SplashScreen](https://github.com/wellifabio/flutter-splash-shared-2026.git)

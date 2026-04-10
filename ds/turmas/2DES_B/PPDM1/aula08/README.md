@@ -11,4 +11,4 @@
     - rootBundle.loadString()
 
 ## Projetos de exemplo
-    - [SplashScreen](https://github.com/wellifabio/flutter-splash-shared-2026.git)
+- Primeiro desafio [SplashScreen](https://github.com/wellifabio/flutter-splash-shared-2026.git)

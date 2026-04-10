@@ -19,6 +19,11 @@
     - Estude os códigos do diretório **lib**
     - Apos testar com seu VsCode, feche o projeto e o VsCode
     - Faça a atividade proposta criando um novo app do Zero
+- Segundo desafio [SplashScreen](https://github.com/wellifabio/flutter-estilo-mokup-json-2026.git): Carregar dados de arquivo de texto Mockup.
+    - Teste este projeto
+    - Estude os códigos do diretório **lib**
+    - Apos testar com seu VsCode, feche o projeto e o VsCode
+    - Faça a atividade proposta criando um novo app do Zero
 
 ## Tutoriais
 #### Iniciar um novo projeto flutter

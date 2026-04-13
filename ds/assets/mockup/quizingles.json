@@ -3,205 +3,253 @@
         "id": 1,
         "type": "mult",
         "question": "Why don't you speak English?",
-        "r1": "I like animals.",
-        "r2": "Because I don't know.",
-        "r3": "When it rains heavily.",
-        "r4": "Maybe tomorrow.",
+        "answers": [
+            "I like animals.",
+            "Because I don't know.",
+            "When it rains heavily.",
+            "Maybe tomorrow."
+        ],
         "correct": 2
     },
     {
         "id": 2,
         "type": "mult",
         "question": "The Vatican is located inside which other country?",
-        "r1": "The Vatican is located in France.",
-        "r2": "The Vatican is located in Germany.",
-        "r3": "The Vatican is located in Italy.",
-        "r4": "It is not located inside any other country.",
+        "answers": [
+            "The Vatican is located in France.",
+            "The Vatican is located in Germany.",
+            "The Vatican is located in Italy.",
+            "It is not located inside any other country."
+        ],
         "correct": 3
     },
     {
         "id": 3,
         "type": "complete",
         "question": "You need _r1 people as if there were no _r2, because if you stop to _r3 about it, there really isn't.",
-        "r1": "to love",
-        "r2": "tomorrow",
-        "r3": "think"
+        "answers": [
+            "to love",
+            "tomorrow",
+            "think"
+        ]
     },
     {
         "id": 4,
         "type": "complete",
         "question": "I should have _r2 more, cried _r1, seen the sunrise.",
-        "r1": "more",
-        "r2": "loved"
+        "answers": [
+            "more",
+            "loved"
+        ]
     },
     {
         "id": 5,
         "type": "mult",
         "question": "What time is it?",
-        "r1": "It is sunny today.",
-        "r2": "I like coffee.",
-        "r3": "It is three o'clock.",
-        "r4": "Tomorrow is Monday.",
+        "answers": [
+            "It is sunny today.",
+            "I like coffee.",
+            "It is three o'clock.",
+            "Tomorrow is Monday."
+        ],
         "correct": 3
     },
     {
         "id": 6,
         "type": "mult",
         "question": "Where are you going?",
-        "r1": "I am going to the store.",
-        "r2": "I went yesterday.",
-        "r3": "Because I can.",
-        "r4": "It is far away.",
+        "answers": [
+            "I am going to the store.",
+            "I went yesterday.",
+            "Because I can.",
+            "It is far away."
+        ],
         "correct": 1
     },
     {
         "id": 7,
         "type": "mult",
         "question": "Which one is a fruit?",
-        "r1": "Carrot",
-        "r2": "Apple",
-        "r3": "Potato",
-        "r4": "Onion",
+        "answers": [
+            "Carrot",
+            "Apple",
+            "Potato",
+            "Onion"
+        ],
         "correct": 2
     },
     {
         "id": 8,
         "type": "mult",
         "question": "How do you feel today?",
-        "r1": "I feel great.",
-        "r2": "At the park.",
-        "r3": "Yesterday evening.",
-        "r4": "Blue color.",
+        "answers": [
+            "I feel great.",
+            "At the park.",
+            "Yesterday evening.",
+            "Blue color."
+        ],
         "correct": 1
     },
     {
         "id": 9,
         "type": "mult",
         "question": "What is your favorite color?",
-        "r1": "I am tall.",
-        "r2": "Because it's nice.",
-        "r3": "Blue.",
-        "r4": "On the table.",
+        "answers": [
+            "I am tall.",
+            "Because it's nice.",
+            "Blue.",
+            "On the table."
+        ],
         "correct": 3
     },
     {
         "id": 10,
         "type": "complete",
         "question": "She _r1 to the gym every morning before _r2 work.",
-        "r1": "goes",
-        "r2": "starting"
+        "answers": [
+            "goes",
+            "starting"
+        ]
     },
     {
         "id": 11,
         "type": "complete",
         "question": "They have _r1 their homework and are ready to _r2.",
-        "r1": "finished",
-        "r2": "rest"
+        "answers": [
+            "finished",
+            "rest"
+        ]
     },
     {
         "id": 12,
         "type": "complete",
         "question": "If I _r1 more time, I would _r2 a new language.",
-        "r1": "had",
-        "r2": "learn"
+        "answers": [
+            "had",
+            "learn"
+        ]
     },
     {
         "id": 13,
         "type": "complete",
         "question": "He was _r1 tired to continue, so he decided to _r2.",
-        "r1": "too",
-        "r2": "stop"
+        "answers": [
+            "too",
+            "stop"
+        ]
     },
     {
         "id": 14,
         "type": "complete",
         "question": "We are planning to _r1 a trip next year if we _r2 enough money.",
-        "r1": "take",
-        "r2": "save"
+        "answers": [
+            "take",
+            "save"
+        ]
     },
     {
         "id": 15,
         "type": "mult",
         "question": "According to the sentence 'Technology has changed the way we communicate', what is implied?",
-        "r1": "Communication no longer exists.",
-        "r2": "Technology improved only business communication.",
-        "r3": "The form of communication is different now.",
-        "r4": "People stopped using technology.",
+        "answers": [
+            "Communication no longer exists.",
+            "Technology improved only business communication.",
+            "The form of communication is different now.",
+            "People stopped using technology."
+        ],
         "correct": 3
     },
     {
         "id": 16,
         "type": "mult",
         "question": "In the sentence 'She has been studying all day', the verb tense indicates:",
-        "r1": "A finished action in the past.",
-        "r2": "An action that started in the past and continues.",
-        "r3": "A future plan.",
-        "r4": "A repeated habit.",
+        "answers": [
+            "A finished action in the past.",
+            "An action that started in the past and continues.",
+            "A future plan.",
+            "A repeated habit."
+        ],
         "correct": 2
     },
     {
         "id": 17,
         "type": "mult",
         "question": "What is the main idea of the sentence: 'Despite the rain, they continued the match'?",
-        "r1": "The match was canceled.",
-        "r2": "The rain stopped the game.",
-        "r3": "The match continued even with difficulties.",
-        "r4": "They waited for better weather.",
+        "answers": [
+            "The match was canceled.",
+            "The rain stopped the game.",
+            "The match continued even with difficulties.",
+            "They waited for better weather."
+        ],
         "correct": 3
     },
     {
         "id": 18,
         "type": "mult",
         "question": "The word 'although' expresses:",
-        "r1": "Cause",
-        "r2": "Addition",
-        "r3": "Contrast",
-        "r4": "Time",
+        "answers": [
+            "Cause",
+            "Addition",
+            "Contrast",
+            "Time"
+        ],
         "correct": 3
     },
     {
         "id": 19,
         "type": "mult",
         "question": "Choose the correct option to complete the sentence: 'If I had known, I _____ earlier.'",
-        "r1": "will arrive",
-        "r2": "arrive",
-        "r3": "would have arrived",
-        "r4": "arrived",
+        "answers": [
+            "will arrive",
+            "arrive",
+            "would have arrived",
+            "arrived"
+        ],
         "correct": 3
     },
     {
         "id": 20,
         "type": "complete",
         "question": "The project was _r1 due to lack of funding, which _r2 the entire team.",
-        "r1": "canceled",
-        "r2": "affected"
+        "answers": [
+            "canceled",
+            "affected"
+        ]
     },
     {
         "id": 21,
         "type": "complete",
         "question": "Students are encouraged to _r1 critically and _r2 their own opinions.",
-        "r1": "think",
-        "r2": "develop"
+        "answers": [
+            "think",
+            "develop"
+        ]
     },
     {
         "id": 22,
         "type": "complete",
         "question": "Global warming is a serious issue that _r1 immediate action from governments and _r2.",
-        "r1": "requires",
-        "r2": "society"
+        "answers": [
+            "requires",
+            "society"
+        ]
     },
     {
         "id": 23,
         "type": "complete",
         "question": "He didn't _r1 the message because his phone had _r2 battery.",
-        "r1": "receive",
-        "r2": "no"
+        "answers": [
+            "receive",
+            "no"
+        ]
     },
     {
         "id": 24,
         "type": "complete",
         "question": "In order to succeed, one must _r1 focused and _r2 up easily.",
-        "r1": "stay",
-        "r2": "not give"
+        "answers": [
+            "stay",
+            "not give"
+        ]
     }
 ]

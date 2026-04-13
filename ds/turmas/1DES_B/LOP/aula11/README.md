@@ -117,3 +117,38 @@ Arquivos gerados durante a avaliação de Lógica de Programação, algoritmos e
     - Exemplo de código
     - Imagens do projeto
     - Link para o repositório remoto
+
+## Comandos git para controle de versão
+- Para criar um repositório git local, basta executar o comando `git init` no
+terminal, dentro da pasta do projeto.
+- Para adicionar os arquivos para o stage, execute o comando `git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico.
+- Para realizar o commit, execute o comando `git commit -m "mensagem do commit"` para adicionar uma mensagem ao commit, que deve ser clara e objetiva, descrevendo as alterações realizadas.
+- Para visualizar o histórico de commits, execute o comando `git log` para visualizar o histórico de commits, com o código do commit, a mensagem do commit, o autor do commit e a data do commit.
+- Para voltar para uma versão anterior do projeto, execute o comando `git checkout código_do_commit` para voltar para a versão do projeto correspondente ao código do commit.
+- Para voltar para a versão mais recente do projeto, execute o comando `git checkout main` para voltar para a versão mais recente do projeto, que é a branch main.
+
+## Comandos para envier o projeto para o repositório remoto
+- Para adicionar o repositório remoto, execute o comando `git remote add origin link_do_repositório_remoto` para adicionar o link do repositório remoto.
+- Para enviar os arquivos para o repositório remoto, execute o comando `git push -u origin main` para enviar os arquivos para a branch main do repositório remoto.
+
+## Comandos para enviar qualquer nova atualização do projeto para o repositório remoto
+- Para adicionar os arquivos para o stage, execute o comando `git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico.
+- Para realizar o commit, execute o comando `git commit -m "mensagem do commit"` para adicionar uma mensagem ao commit, que deve ser clara e objetiva, descrevendo as alterações realizadas.
+- Para enviar os arquivos para o repositório remoto, execute o comando `git push` para enviar os arquivos para a branch main do repositório remoto.
+- Resumo
+```bash
+git add .
+git commit -m "mensagem do commit"
+git push
+```
+- Para baixar atualizações do repositório remoto, execute o comando
+```bash
+git pull   
+```
+para baixar as atualizações do repositório remoto para o repositório local.
+
+## Clonar um repositório remoto
+- Para clonar um repositório remoto, execute o comando `git clone link_do_repositório_remoto` para clonar o repositório remoto para o repositório local.
+```bash
+git clone
+```

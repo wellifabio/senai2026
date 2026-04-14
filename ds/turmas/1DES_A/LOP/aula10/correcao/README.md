@@ -4,24 +4,35 @@
 - Não era necessário algoritmo, porém segue para tirar dúvidas:
 ```
 INICIO
-   ESCREVA("Digite seu nome, sexo m/f e idade");
-   LEIA(nome, sexo, idade);
-   SE(sexo == 'm')
-   ENTÃO
-      SE(idade > 65)
-      ENTÃO
-         ESCREVA("O atendimento do paciente %s é prioritário", nome);
-      SENÃO
-	 ESCREVA("O atendimento do paciente %s é normal", nome);
-      FIMSE
-   SENÃO
-      SE(idade > 60)
-      ENTÃO
-         ESCREVA("O atendimento do paciente %s é prioritário", nome);
-      SENÃO
-	 ESCREVA("O atendimento do paciente %s é normal", nome);
-      FIMSE
-    FIMSE
+	SENHA = 0;
+	FAÇA
+		ESCREVA("Possui pedido de exame? s/n: ");
+		LEIA(pedido);
+		SE(pedido == 's')
+		ENTÃO
+			SENHA = SENHA + 1;
+			ESCREVA("Sua senha é SENHA");
+			ESCREVA("Qual o tipo de exame?");
+			ESCREVA("a = Admnissional");
+			ESCREVA("d = demissional");
+			ESCREVA("p = Periódico");
+			ESCREVA("o = Outro");
+			LEIA(tipo);
+			SE(tipo == 'a')
+			ENTÃO
+				ESCREVA("Encaminhe-se para a sala 1");
+			SENÃO SE(tipo == 'd')
+			ENTÃO
+				ESCREVA("Encaminhe-se para a sala 2");
+			SENÃO SE(tipo == 'p')
+			ENTÃO
+				ESCREVA("Encaminhe-se para a sala 3");
+			SENÃO
+				ESCREVA("Encaminhe-se para a sala 4");
+			FIMSE
+		FIMSE
+	ENQUANTO(pedido == 's');
+	ESCREVA("Volte para a sua empresa.")
 FIM
 ```
 - triagem.c

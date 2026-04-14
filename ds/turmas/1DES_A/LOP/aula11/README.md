@@ -102,6 +102,18 @@ Arquivos gerados durante a avaliação de Lógica de Programação, algoritmos e
     }
     ```
 ![Fluxograma](./atendimento.png)
+
+## Expressões matemáticas
+
+|Operação|Código Markdown|Visão|
+|-|-|-|
+|Multiplicação|`$2 \times 3 = 6$`|$2 \times 3 = 6$|
+|Divisão|`$6 \div 2 = 3$`|$6 \div 2 = 3$|
+|Fração|`$\frac{1}{2}$`|$\frac{1}{2}$|
+|Raiz quadrada|`$\sqrt{4} = 2$`|$\sqrt{4} = 2$|
+|Exponenciação|`$2^3 = 8$`|$2^3 = 8$|
+|Logaritmo|`$\log_{10} 100 = 2$`|$\log_{10} 100 = 2$|
+
 ```
 - A visualização do arquivo README.md no repositório remoto ficará assim:
 - ![Readme.md](./print05.png)

@@ -8,6 +8,7 @@
 
 Para iniciarmos clone o repositório:
 ### https://github.com/robsonbsouzaa/receitas
-O site vai carregar desta forma
+
+
 
 

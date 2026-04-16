@@ -1,5 +1,5 @@
-# Aula11 - Github
-## Enviar o projeto para o repositório remoto
+# Aula11 - GitHub
+## Enviar o projeto/pasta para o repositório remoto
 
 ### Passo 01
 Precisamos ter uma pasta do projeto em nosso computador, com o projeto pronto ou em andamento

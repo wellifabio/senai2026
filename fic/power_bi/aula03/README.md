@@ -57,7 +57,7 @@
 |Entregas|
 |-|
 |![Atividade01](./atvd1.png)|
-|<i>Exemplo de dashboard do desafio1</i>|
+|*Exemplo de dashboard do desafio1* [Download do visual image grid](https://github.com/wellifabio/senai2025/blob/main/power_bi/visuais/ImageGrid_FC5183B9_926C_45E0_B5F7_0CE9EAF1DA9B.1.0.1.0.pbiviz)|
 
 |Desafio: 02|
 |-|

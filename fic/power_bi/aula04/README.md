@@ -17,3 +17,13 @@ Em seu computador crie uma pasta chamada **"sudeste"** e baixe para dentro dela 
   - 3.2 Uma de valor de venda do primeiro segmento.
   - 3.3 Um gráfico de valor de venda por vendedor
 ![varegista02](./prints/varegista2.png)
+
+# Atividade 02
+Vamos treinar o ajuste fino de um visual.
+<br>Baixe em seu computador a planilha **/logistica/dados.xlsx** com informações de pedidos e entregas.
+- 1 Abra o **Power BI** e crie um novo projeto, importe a planilha.
+- 2 Transforme os dados, alterando os tipos se necessário.
+- 3 Coloque o layout a seguir como plano de fundo.
+<br>![varegista02](./logistica/layout.jpg)
+- 4 Crie um dashboard semelhante ao da imagem a seguir:
+<br>![varegista02](./logistica/resultado.png)

@@ -1,4 +1,4 @@
-# Aula04 - Digialiszação do trabalho em gruos
+# Aula04 - Digitalização do trabalho em grupos
 Volte a grupo que fez em papel o trabalho da aula01 e utilizando o draw.io ilustre os requisitos funcionais com Diagramas de caso de uso e crie os wireframes.
 
 ### Identificar requisitos (Word)

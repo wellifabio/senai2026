@@ -17,4 +17,4 @@ Crie o fluxograma e um programa em C para testar a conjectura de Collatz, lendo 
 - Envie os arquivos para o **repósitório do github**.
 
 ## Entrega
-Mostre o repositório ao instrutor
+Mostre o repositório ao instrutor 

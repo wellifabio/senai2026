@@ -26,4 +26,4 @@ Vamos treinar o ajuste fino de um visual.
 - 3 Coloque o layout a seguir como plano de fundo.
 <br>![varegista02](./logistica/layout.jpg)
 - 4 Crie um dashboard semelhante ao da imagem a seguir:
-<br>![varegista02](./logistica/resultado.png)
+<br>![varegista02](./prints/logistica.png)

@@ -75,6 +75,7 @@
   - A tepa principal com as perguntas
   - Uma tela final com o resultado
 - Ao concluir **gere o arquivo de instalação .apk** envie o arquivo para o github e instale no seu celular android ou um da escola para testar.
+### [Formulário de entrega individual](https://forms.gle/eXB9xkfzFtZvyHY26)
 
 ## Tutoriais
 #### Iniciar um novo projeto flutter

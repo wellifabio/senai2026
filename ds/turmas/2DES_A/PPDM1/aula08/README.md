@@ -10,6 +10,8 @@
     - Estilização de tema para o App
 - Leitura de dados de aquivo local de texto JSON
     - rootBundle.loadString()
+- Escolha de opções com "radio button"
+    - RadioGroup()
 - Builder
     - Criar o arquivo **.apk** para testar em celular Android
 
@@ -24,6 +26,51 @@
     - Estude os códigos do diretório **lib**
     - Apos testar com seu VsCode, feche o projeto e o VsCode
     - Faça a atividade proposta criando um novo app do Zero
+- Desafio final desta aula
+    - Desenvolva o mesmo **quiz** que foi feito nas aulas de Mit App Inventor agora em flutter
+<br>![Imagem exemplo do quiz](./screenshot02.png)
+    - Transcreva as perguntas para um arquivo json no modelo abaixo e salve na pasta assets/mokup/ de seu projeto
+    - Abra as perguintas ná pagina principal do seu App e renderize as alternativas
+```json
+[
+    {
+        "id": 1,
+        "ilustracao":"https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/06/26776_1798DEE935286D54.jpg?w=1024",
+        "pergunta": "Qual o primeiro computador digital construído?",
+        "respostas": [
+            "Robotinic",
+            "ENIAC",
+            "ABACO",
+            "Máquina de calcular de Leibniz"
+        ],
+        "correta": 2
+    },
+    {
+        "id": 2,
+        "ilustracao":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbppAC3zloJbY5EaWYgEllsV-gaoSzMlzzNw&s",
+        "pergunta": "Quem é considerado o pai da computação?",
+        "respostas": [
+            "Alan Turing",
+            "Charles Babbage",
+            "Bill Gates",
+            "Steve Jobs"
+        ],
+        "correta": 2
+    },
+    {
+        "id": 3,
+        "pergunta": "Qual foi a primeira linguagem de programação de alto nível?",
+        "respostas": [
+            "Assembly",
+            "COBOL",
+            "Fortran",
+            "C"
+        ],
+        "correta": 3
+    }
+]
+```
+- Ao concluir **gere o arquivo de instalação .apk** envie o arquivo para o github e instale no seu celular android ou um da escola para testar.
 
 ## Tutoriais
 #### Iniciar um novo projeto flutter
@@ -128,3 +175,17 @@ class _HomeState extends State<Home> {
 </td>
 </tr>
 </table>
+
+## "Buildar" Gerar arquivo .APK
+Ao concluir uma parte significativa do seu app, você pode gerar um arquivo de instalação para testes em celular android. para isso:
+ - Acrescente a linha de comando a seguir
+    ```xml
+    <uses-permission android:name="android.permission.INTERNET"/>
+    ```
+    no arquivo ./android/app/src/main/AndroidManifest.xml para que as permissões de internet sejam habilitadas e caso utilize Imagens externas e API o flutter possa renderizar.
+ - No terminal digite o seguinte comando
+    ```bash
+    flutter build apk --release
+    ```
+ - O arquivo APK será gerado e o comando irá mostrar o caminho, copie ele e cole na raiz do seu projeto
+ - Envie para o github para que possa baixar e instalar em um celular Android.

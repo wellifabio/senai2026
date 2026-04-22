@@ -26,20 +26,29 @@
     {
         "id": 3,
         "type": "complete",
-        "question": "You need _r1 people as if there were no _r2, because if you stop to _r3 about it, there really isn't.",
+        "question": "You need _ people as if there were no _, because if you stop to _ about it, there really isn't.",
         "answers": [
             "to love",
             "tomorrow",
             "think"
+        ],
+        "correct": [
+            1,
+            2,
+            3
         ]
     },
     {
         "id": 4,
         "type": "complete",
-        "question": "I should have _r2 more, cried _r1, seen the sunrise.",
+        "question": "I should have _ more, cried _, seen the sunrise.",
         "answers": [
             "more",
             "loved"
+        ],
+        "correct": [
+            2,
+            1
         ]
     },
     {
@@ -105,46 +114,66 @@
     {
         "id": 10,
         "type": "complete",
-        "question": "She _r1 to the gym every morning before _r2 work.",
+        "question": "She _ to the gym every morning before _ work.",
         "answers": [
             "goes",
             "starting"
+        ],
+        "correct": [
+            1,
+            2
         ]
     },
     {
         "id": 11,
         "type": "complete",
-        "question": "They have _r1 their homework and are ready to _r2.",
+        "question": "They have _ their homework and are ready to _.",
         "answers": [
             "finished",
             "rest"
+        ],
+        "correct": [
+            1,
+            2
         ]
     },
     {
         "id": 12,
         "type": "complete",
-        "question": "If I _r1 more time, I would _r2 a new language.",
+        "question": "If I _ more time, I would _ a new language.",
         "answers": [
             "had",
             "learn"
+        ],
+        "correct": [
+            2,
+            1
         ]
     },
     {
         "id": 13,
         "type": "complete",
-        "question": "He was _r1 tired to continue, so he decided to _r2.",
+        "question": "He was _ tired to continue, so he decided to _.",
         "answers": [
             "too",
             "stop"
+        ],
+        "correct": [
+            1,
+            2
         ]
     },
     {
         "id": 14,
         "type": "complete",
-        "question": "We are planning to _r1 a trip next year if we _r2 enough money.",
+        "question": "We are planning to _ a trip next year if we _ enough money.",
         "answers": [
-            "take",
-            "save"
+            "save",
+            "take"
+        ],
+        "correct": [
+            2,
+            1
         ]
     },
     {
@@ -210,46 +239,66 @@
     {
         "id": 20,
         "type": "complete",
-        "question": "The project was _r1 due to lack of funding, which _r2 the entire team.",
+        "question": "The project was _ due to lack of funding, which _ the entire team.",
         "answers": [
-            "canceled",
-            "affected"
+            "affected",
+            "canceled"
+        ],
+        "correct": [
+            2,
+            1
         ]
     },
     {
         "id": 21,
         "type": "complete",
-        "question": "Students are encouraged to _r1 critically and _r2 their own opinions.",
+        "question": "Students are encouraged to _ critically and _ their own opinions.",
         "answers": [
             "think",
             "develop"
+        ],
+        "correct": [
+            1,
+            2
         ]
     },
     {
         "id": 22,
         "type": "complete",
-        "question": "Global warming is a serious issue that _r1 immediate action from governments and _r2.",
+        "question": "Global warming is a serious issue that _ immediate action from governments and _.",
         "answers": [
             "requires",
             "society"
+        ],
+        "correct": [
+            1,
+            2
         ]
     },
     {
         "id": 23,
         "type": "complete",
-        "question": "He didn't _r1 the message because his phone had _r2 battery.",
+        "question": "He didn't _ the message because his phone had _ battery.",
         "answers": [
-            "receive",
-            "no"
+            "no",
+            "receive"
+        ],
+        "correct": [
+            2,
+            1
         ]
     },
     {
         "id": 24,
         "type": "complete",
-        "question": "In order to succeed, one must _r1 focused and _r2 up easily.",
+        "question": "In order to succeed, one must _ focused and _ up easily.",
         "answers": [
-            "stay",
-            "not give"
+            "not give",
+            "stay"
+        ],
+        "correct": [
+            2,
+            1
         ]
     }
 ]

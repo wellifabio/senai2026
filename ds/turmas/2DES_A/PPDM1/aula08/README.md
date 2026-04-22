@@ -91,7 +91,7 @@
     flutter run
     ```
 ## RadioGroup
-Exemplo funcional de rario butons, com a lista ["Alternativa 1", "Alternativa 2", "Todas as alternativas", "Nenhuma das alternativas"]:
+Exemplo funcional de radio buttons, com a lista ["Alternativa 1", "Alternativa 2", "Todas as alternativas", "Nenhuma das alternativas"]:
 <table>
 <tr>
 <td>

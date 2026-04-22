@@ -30,7 +30,6 @@
     - Desenvolva o mesmo **quiz** que foi feito nas aulas de Mit App Inventor agora em flutter
 <br>![Imagem exemplo do quiz](./screenshot02.png)
     - Transcreva as perguntas para um arquivo json no modelo abaixo e salve na pasta assets/mokup/ de seu projeto
-    - Abra as perguintas ná pagina principal do seu App e renderize as alternativas
 ```json
 [
     {
@@ -70,6 +69,11 @@
     }
 ]
 ```
+- Abra as perguntas ná pagina principal do seu App e renderize as alternativas
+- O Aplicativo deve ter três telas:
+  - Uma Splash com animação e um campo para digitar o nome do participante
+  - A tepa principal com as perguntas
+  - Uma tela final com o resultado
 - Ao concluir **gere o arquivo de instalação .apk** envie o arquivo para o github e instale no seu celular android ou um da escola para testar.
 
 ## Tutoriais

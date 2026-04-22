@@ -38,3 +38,93 @@
     flutter pub get
     flutter run
     ```
+## RadioGroup
+Exemplo funcional de rario butons, com a lista ["Alternativa 1", "Alternativa 2", "Todas as alternativas", "Nenhuma das alternativas"]:
+<table>
+<tr>
+<td>
+
+<img src="./screenshot01.png"/>
+
+</td>
+<td>
+
+```dart
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MaterialApp(title: "Opçãoes", home: Home()));
+}
+
+class Home extends StatefulWidget {
+  final String? nome;
+  const Home({super.key, this.nome});
+
+  @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  // 1. Define a lista de opções
+  final List<String> opcoes = [
+    "Alternativa 1",
+    "Alternativa 2",
+    "Todas as alternativas",
+    "Nenhuma das alternativas",
+  ];
+
+  // 2. Variável para armazenar a seleção atual (inicia nula)
+  String? opcao;
+
+  void mostrarOpcao() {
+    if (opcao != null) {
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text("Você escolheu: $opcao")));
+    } else {
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text("Nenhuma opção selecionada.")));
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          spacing: 40,
+          children: [
+            Text(
+              "Escolha uma das alternativas:",
+              style: TextStyle(fontSize: 20),
+              textAlign: TextAlign.center,
+            ),
+            RadioGroup<String>(
+              onChanged: (value) => setState(() {
+                opcao = value!;
+              }),
+              groupValue: opcao,
+              child: Column(
+                children: [
+                  ...List.generate(
+                    opcoes.length,
+                    (i) =>
+                        RadioListTile(title: Text(opcoes[i]), value: opcoes[i]),
+                  ),
+                ],
+              ),
+            ),
+            ElevatedButton(onPressed: mostrarOpcao, child: Text("Escolher")),
+          ],
+        ),
+      ),
+    );
+  }
+}
+```
+
+</td>
+</tr>
+</table>

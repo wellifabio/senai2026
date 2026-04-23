@@ -5,8 +5,8 @@
     - Normal: tamanho 12, alinhamento justificado, espaçamento especial de 1,25
     - Título: tamanho 20, Negrito, todas em maiúsculas ou versalete, alinhamento centralizado, sem espaçamento especial.
     - Título1: tamanho 18 ou 20, Negrito, todas em maiúsculas ou versalete, alinhamento Á esquerda, sem espaçamento especial.
-    - Título1: tamanho 16, Negrito opcional, alinhamento Á esquerda, sem espaçamento especial.
-    - Título1: tamanho 14, Negrito opcional ou itálico, alinhamento Á esquerda, sem espaçamento especial.
+    - Título2: tamanho 16, Negrito opcional, alinhamento Á esquerda, sem espaçamento especial.
+    - Título3: tamanho 14, Negrito opcional ou itálico, alinhamento Á esquerda, sem espaçamento especial.
     - Citações e Legendas de rodapé: tamanho 10, alinhamento justificado, espaçamento especial de 1,25 e recuo até o meio da página.
     - Cores: Somente preto, permitido cor no nome da instituição.
 - Espaçamento: 1,5 entre linhas para o texto e simples para citações longas, notas de rodapé, legendas e fontes.

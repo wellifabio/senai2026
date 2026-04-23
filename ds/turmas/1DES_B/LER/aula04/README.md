@@ -29,6 +29,8 @@ Apresentando os custos da implantação do pojeto
     - Requisitos não funcionais.
 - Desenhar um esboço das telas do sistema
 ### [Formatação ABNT](./abnt.md)
+### [Exemplo de documento de requisitos em Word](./documento-requisitos.docx)
+### [Exemplo de documento de requisitos em PDF](./documento-requisitos.pdf)
 
 ## Entregas
 Exporte seu documento para PDF e envie neste [Formulário](https://forms.gle/A2NxXeZU1vasr9ft8)

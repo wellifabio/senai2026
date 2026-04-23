@@ -21,4 +21,4 @@ Inspirado no programa Shark Tank Brasil a proposta é ientificar um problema e p
 |Better Task|Matheus, Giuseppe, Nicolas, Davi e Maycon||
 
 ## [Envio das apresentações](https://forms.gle/ha7dy1w55wzknDSo7)
-Criar um repositório do github, adicinar os integrantes do grupo como colaboradores, enviar a apesentação do Power Point e formato PDF e criar um README.md com **Título**, breve descrição da ideia, nomes dos **integrantes** do grupo
+Criar um repositório do github, adicinar os integrantes do grupo como *colaboradores*, enviar a apesentação do Power Point e formato **PDF** e criar um README.md com **Título**, breve descrição da ideia, nomes dos **integrantes** do grupo.

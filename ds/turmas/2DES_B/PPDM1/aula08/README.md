@@ -197,7 +197,7 @@ flutter_launcher_icons:
   image_path: "assets/icone.png"
   remove_alpha_ios: true
 ```
-- Não esqueça de rodar o *flutter pub get** após salvar as configurações do pubspec.yaml
+- Não esqueça de rodar o *flutter pub get* após salvar as configurações do pubspec.yaml
 
 ## "Buildar" Gerar arquivo .APK
 Ao concluir uma parte significativa do seu app, você pode gerar um arquivo de instalação para testes em celular android. para isso:

@@ -181,6 +181,22 @@ class _HomeState extends State<Home> {
 </tr>
 </table>
 
+## Alterar o ícone do aplicativo
+Precizamos de uma imagem .png de no mínimo 1024 por 1024 pixels, coloque-a em assets:
+- Altere o pubspec.yaml acrescentando as dependências de ícone
+```yaml
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icone.png"
+```
+
 ## "Buildar" Gerar arquivo .APK
 Ao concluir uma parte significativa do seu app, você pode gerar um arquivo de instalação para testes em celular android. para isso:
  - Acrescente a linha de comando a seguir

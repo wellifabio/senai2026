@@ -28,14 +28,14 @@
         "type": "complete",
         "question": "You need _ people as if there were no _, because if you stop to _ about it, there really isn't.",
         "answers": [
-            "to love",
             "tomorrow",
+            "to love",
             "think"
         ],
         "correct": [
-            1,
-            2,
-            3
+            "to love",
+            "tomorrow",
+            "think"
         ]
     },
     {
@@ -47,8 +47,8 @@
             "loved"
         ],
         "correct": [
-            2,
-            1
+            "loved",
+            "more"
         ]
     },
     {
@@ -120,8 +120,8 @@
             "starting"
         ],
         "correct": [
-            1,
-            2
+            "goes",
+            "starting"
         ]
     },
     {
@@ -133,8 +133,8 @@
             "rest"
         ],
         "correct": [
-            1,
-            2
+            "finished",
+            "rest"
         ]
     },
     {
@@ -146,8 +146,8 @@
             "learn"
         ],
         "correct": [
-            2,
-            1
+            "learn",
+            "had"
         ]
     },
     {
@@ -159,8 +159,8 @@
             "stop"
         ],
         "correct": [
-            1,
-            2
+            "too",
+            "stop"
         ]
     },
     {
@@ -172,8 +172,8 @@
             "take"
         ],
         "correct": [
-            2,
-            1
+            "take",
+            "save"
         ]
     },
     {
@@ -245,8 +245,8 @@
             "canceled"
         ],
         "correct": [
-            2,
-            1
+            "canceled",
+            "affected"
         ]
     },
     {
@@ -258,8 +258,8 @@
             "develop"
         ],
         "correct": [
-            1,
-            2
+            "think",
+            "develop"
         ]
     },
     {
@@ -271,8 +271,8 @@
             "society"
         ],
         "correct": [
-            1,
-            2
+            "requires",
+            "society"
         ]
     },
     {
@@ -284,8 +284,8 @@
             "receive"
         ],
         "correct": [
-            2,
-            1
+            "receive",
+            "no"
         ]
     },
     {
@@ -297,8 +297,8 @@
             "stay"
         ],
         "correct": [
-            2,
-            1
+            "stay",
+            "not give"
         ]
     }
 ]

@@ -189,13 +189,15 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
-  flutter_launcher_icons: ^0.13.1
+  flutter_launcher_icons: ^0.14.1
 
-flutter_icons:
-  android: "launcher_icon"
+flutter_launcher_icons:
+  android: true
   ios: true
   image_path: "assets/icone.png"
+  remove_alpha_ios: true
 ```
+- Não esqueça de rodar o *flutter pub get** após salvar as configurações do pubspec.yaml
 
 ## "Buildar" Gerar arquivo .APK
 Ao concluir uma parte significativa do seu app, você pode gerar um arquivo de instalação para testes em celular android. para isso:

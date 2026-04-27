@@ -198,6 +198,10 @@ flutter_launcher_icons:
   remove_alpha_ios: true
 ```
 - Não esqueça de rodar o *flutter pub get* após salvar as configurações do pubspec.yaml
+- O comando principal para atualizar o ícone do aplicativo Flutter, após configurar o pacote flutter_launcher_icons no pubspec.yaml, é:
+```bash
+dart run flutter_launcher_icons
+```
 
 ## "Buildar" Gerar arquivo .APK
 Ao concluir uma parte significativa do seu app, você pode gerar um arquivo de instalação para testes em celular android. para isso:

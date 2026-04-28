@@ -28,8 +28,9 @@
     - Exemplo de um App com [GridView, MediaQuery e Cards](https://github.com/wellifabio/flutter_produtos_cards_2026.git), siga as instruções em README.md para testar, estude o App e faça a atividade proposta.
 - 4º Login, Arquivos e Gestos
     - Exemplo de um [app com tela de login e home com listas](https://github.com/wellifabio/flutter-login-lista-json-2026.git), siga as instruções em README.md para testar, estude o App e faça as atividades propostas.
-    - Exemplo de um [app com splash, login, gridview, Cards e carrinho de compras](https://github.com/wellifabio/flutter_cart_api_whats_2026.git), siga as instruções em README.md para testar, estude o App e faça a atividade proposta.
     - Exemplo de um [app de anotações com arquivos](https://github.com/wellifabio/flutter_anotacoes_file_2026.git), siga as instruções em README.md para testar, estude o App e faça a atividade proposta.
+    - Exemplo de um [app com splash, login, gridview, Cards e carrinho de compras](https://github.com/wellifabio/flutter_cart_api_whats_2026.git), siga as instruções em README.md para testar, estude o App e faça a atividade proposta.
+
 
 ## Simulados
 - [Prova de índice - Design Figma A2 Tablet](./provas-exemplo/case4you/design-A2.pdf)

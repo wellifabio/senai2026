@@ -129,8 +129,8 @@
         "type": "complete",
         "question": "They have _ their homework and are ready to _.",
         "answers": [
-            "finished",
-            "rest"
+            "rest",
+            "finished"
         ],
         "correct": [
             "finished",
@@ -146,8 +146,8 @@
             "learn"
         ],
         "correct": [
-            "learn",
-            "had"
+            "had",
+            "learn"
         ]
     },
     {

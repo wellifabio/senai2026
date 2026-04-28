@@ -5,6 +5,8 @@
 - Cantina: Online HTML https://wellifabio.github.io/cantina/
 - Mercearia: Excel Online https://1drv.ms/x/s!AiDjuTwZCwoIglankFeV27w6OVbU?e=dZGdmE
 - Entrega de lanches: Base de dados em arquivos CSV.
+- Indicadores/Bookmarks
+<br>Os Indicadores permitem uma apresentação dos seus dados de forma organizada, criando uma história a partir dos seus dashboards. Criar histórias com seus dados, facilita apresentar um painel para diversas audiencias, incluindo um roteiro dos indicadores que queremos demonstrar.
 
 # Bancos de dados
 ## Normalização de dados

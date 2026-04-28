@@ -38,6 +38,8 @@ Hoje foram atendidos 3 pacientes, 1 do sexo masculino e 2 do sexo feminino
 ## Entregas
 Faça os algoritmos e fluxogramas em uma folha de caderno e entregue ao instrutor, com o seu nome, data e turma.
 
+## [Recuperação](https://forms.gle/cXyt51URHqW9uYjq8)
+
 ## Autoavaliação
 |Criticidade|Fundamentos e Capacidades|Critérios|Sim ou Não|
 |-|-|:-:|-|

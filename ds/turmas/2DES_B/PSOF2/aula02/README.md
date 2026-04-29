@@ -25,5 +25,6 @@ DATABASE_URL="mysql://root@localhost:3306/mydb"
 - 4 Abrir o XAMPP, dar **start** em MySQL e instalar as dependências do **prisma**
 ```bash
 npm i @prisma/client
+npx prisma generate
 npx prisma migrate dev --name init
 ```

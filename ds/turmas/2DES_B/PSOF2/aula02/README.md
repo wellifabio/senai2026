@@ -41,7 +41,10 @@ model ...
 ```
 - 5 Abrir o XAMPP, dar **start** em MySQL e instalar as dependências do **prisma**
 ```bash
-npm i @prisma/client
-npx prisma generate
 npx prisma migrate dev --name init
+```
+- Caso de algum erro pode ser que seu banco já exista corrija com os comandos
+```bash
+npm i
+npx prisma migrate reset
 ```

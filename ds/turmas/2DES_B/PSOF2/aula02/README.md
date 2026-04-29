@@ -9,3 +9,15 @@ Um Pull Request (PR) no GitHub é uma solicitação formal para mesclar (fazer m
 
 ## Atividade desafiadora
 Faça fork [neste repositório](https://github.com/wellifabio/senai-full-stack-estacionamento-2026.git) desenvolva os requisitos, faça commits constantes e ao concluir faça o pull-request.
+
+## Criando Back-end com a dependência do prof Reenye
+- 1 Instalar globalmente a dependência e iniciar um novo backend
+```bash
+npm i -g backend-aula
+(npx) backend-aula api
+```
+- 2 Alterar o nome do banco de dados no .env
+```
+PORT=3000
+DATABASE_URL="mysql://root@localhost:3306/mydb"
+```

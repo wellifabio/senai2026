@@ -31,8 +31,14 @@ DATABASE_URL="mysql://root@localhost:3306/mydb"
 ```bash
 npx prisma migrate dev --name init
 ```
-- Caso de algum erro pode ser que seu banco já exista corrija com os comandos
+   
+   - Caso de algum erro pode ser que seu banco já exista corrija com os comandos
+    
+        ```bash
+            npm i
+            npx prisma migrate reset
+        ```
+- 6 Para executar o projeto
 ```bash
-npm i
-npx prisma migrate reset
-```
+npm run dev
+``` 

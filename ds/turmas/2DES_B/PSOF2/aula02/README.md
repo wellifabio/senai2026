@@ -16,13 +16,18 @@ Faça fork [neste repositório](https://github.com/wellifabio/senai-full-stack-e
 npm i -g backend-aula
 npx backend-aula api
 ```
-- 2 Alterar o nome do banco de dados no arquivo **.env**
+- 2 Acessar a pasta do back-end e instalar as dependências
+```bash
+cd api
+npm i
+```
+- 3 Alterar o nome do banco de dados no arquivo **.env**
 ```
 PORT=3000
 DATABASE_URL="mysql://root@localhost:3306/mydb"
 ```
-- 3 Editar o prisma/schema.prisma adicionando as tabelas e relacionamentos
-- 4 Abrir o XAMPP, dar **start** em MySQL e instalar as dependências do **prisma**
+- 4 Editar o prisma/schema.prisma adicionando as tabelas e relacionamentos
+- 5 Abrir o XAMPP, dar **start** em MySQL e instalar as dependências do **prisma**
 ```bash
 npm i @prisma/client
 npx prisma generate

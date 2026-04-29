@@ -8,7 +8,7 @@ No GitHub, um fork é uma cópia pessoal de um repositório (projeto) de terceir
 Um Pull Request (PR) no GitHub é uma solicitação formal para mesclar (fazer merge) alterações de código de um branch (ramificação) para outro, geralmente a base principal do projeto. Ele funciona como uma revisão colaborativa, permitindo que a equipe analise, comente e aprove as mudanças antes de integrá-las, garantindo a segurança e qualidade do código.
 
 ## Atividade desafiadora
-Faça fork [neste repositório](https://github.com/wellifabio/senai-full-stack-estacionamento-2026.git) desenvolva os requisitos, faça commits constantes e ao concluir faça o pull-request.
+Faça fork [neste repositório](https://github.com/wellifabio/senai-full-stack-estacionamento-a-2026.git) desenvolva os requisitos, faça commits constantes e ao concluir faça o pull-request.
 
 ## Criando Back-end com a dependência do prof Reenye
 - Instalar globalmente a dependência

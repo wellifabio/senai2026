@@ -57,4 +57,9 @@ npx backend-aula -insomnia
 - Execute o projeto e teste com insomnia
 ```bash
 npm run dev
-``` 
+```
+- Antes fazer **commit**, não esqueça de criar o arquivo **.gitignore** na raiz contendo o node_module e .env
+```
+node_module
+.env
+```

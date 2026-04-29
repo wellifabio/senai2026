@@ -32,6 +32,7 @@ DATABASE_URL="mysql://root@localhost:3306/mydb"
 - 4 Editar o prisma/schema.prisma adicionando os models (tabelas e relacionamentos)
 - 5 Abrir o XAMPP, dar **start** em MySQL e instalar as dependências do **prisma**
 ```bash
+npx prisma generate
 npx prisma migrate dev --name init
 ```
    
@@ -42,6 +43,18 @@ npx prisma migrate dev --name init
             npx prisma migrate reset
         ```
 - 6 Para executar o projeto
+```bash
+npm run dev
+``` 
+- 7 Para criar os controllers básicos (CRUD) e rotas, pare a execução do projeto, use o comando abaixo colocando o nome para cada tabela
+```bash
+npx backend-aula -r nometabela
+```
+- 8 Para criar o arquivo de testes do insomnia:
+```bash
+npx backend-aula -insomnia
+```
+- Execute o projeto e teste com insomnia
 ```bash
 npm run dev
 ``` 

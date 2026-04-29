@@ -26,19 +26,7 @@ npm i
 PORT=3000
 DATABASE_URL="mysql://root@localhost:3306/mydb"
 ```
-- 4 Editar o prisma/schema.prisma adicionando os models (tabelas e relacionamentos) e a url en datasource.
-```js
-generator client {
-    provider = "prisma-client-js"
-}
-
-datasource db{
-    provider = "mysql"
-    url = env("DATABASE_URL")
-}
-
-model ...
-```
+- 4 Editar o prisma/schema.prisma adicionando os models (tabelas e relacionamentos)
 - 5 Abrir o XAMPP, dar **start** em MySQL e instalar as dependências do **prisma**
 ```bash
 npx prisma migrate dev --name init

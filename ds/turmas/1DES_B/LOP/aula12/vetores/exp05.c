@@ -1,19 +1,20 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<time.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 void main(){
-	//Gerar números aleatórios
+	//Gerar 10 números pseudo aleatório a partir do tempo
 	float numeros[10];
-	//Pega o tempo atual
+	//Obtem um tempo aleatório do relógio do computador
 	srand(time(NULL));
-	//Gerar 10 números a partir do tempo
+	
+	//Preencher o vetor com os números
 	for(int i = 0; i < 10; i++){
-		float x = rand();
-		numeros[i] = x;
+		numeros[i] = rand();
 	}
-	//Mostar os números gerados
+		
+	//Mostrar os números gerados
 	for(int i = 0; i < 10; i++){
-		printf("%.2f\n",numeros[i]);
-	}		
+		printf("%f\n", numeros[i]);
+	}
 	getch();
 }

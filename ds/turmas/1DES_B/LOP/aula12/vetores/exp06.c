@@ -1,19 +1,20 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<time.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 void main(){
-	//Gerar 10 números aleatórios inteiros de 0 a 10
+	//Gerar 10 números inteiros aleatório de 0 a 100
 	int numeros[10];
-	//Pega o tempo atual
+	//Obtem um tempo aleatório do relógio do computador
 	srand(time(NULL));
-	//Gerar 10 números a partir do tempo
+	
+	//Preencher o vetor com os números de 0 a 100
 	for(int i = 0; i < 10; i++){
-		float x = rand() % 11; 
-		numeros[i] = x;
+		numeros[i] = rand() % 101;
 	}
-	//Mostar os números gerados
+		
+	//Mostrar os números gerados
 	for(int i = 0; i < 10; i++){
-		printf("%d\n",numeros[i]);
-	}		
+		printf("%d\n", numeros[i]);
+	}
 	getch();
 }

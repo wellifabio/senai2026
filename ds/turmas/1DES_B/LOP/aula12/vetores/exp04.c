@@ -1,8 +1,8 @@
-#include<stdio.h>
+#include <stdio.h>
 void main(){
-	int ns[8] = { 120, 219, 318, 417, 516, 615, 714, 813 };
-	for(int i = 0; i < 8; i++){ //Oito iterações
-		printf("%d\n", ns[i]);
+	int numeros[8] = { 65, 66, 67, 68, 69, 100, 200, 300};
+	for(int i = 0; i < 8; i++){
+		printf("%d\n", numeros[i]);
 	}
 	getch();
 }

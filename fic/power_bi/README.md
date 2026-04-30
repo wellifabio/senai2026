@@ -5,8 +5,22 @@ O Curso de Aperfeiçoamento Profissional Power BI tem por objetivo o desenvolvim
 
 ### Carga Horária Total - 32 horas
 
-|8|Aulas|4 horas aula(55minutos)|
-|-|-|-|
+|DIA|Aulas|horas aula(55minutos)|
+|-|:-:|-:|
+|TER|aula01|2,5|
+|QUI|aula01|2,5|
+|TER|aula02|2,5|
+|QUI|aula02|2,5|
+|TER|aula03|2,5|
+|QUI|aula03|2,5|
+|TER|aula03|2,5|
+|QUI|aula04|2,5|
+|TER|aula04|2,5|
+|QUI|aula04|2,5|
+|TER|aula05|2,5|
+|QUI|aula05|2,5|
+|TER|aula05|2,5|
+|QUI|aula05|2|
 
 - Critério de aprovação: 75% frequência (6 aulas)
 

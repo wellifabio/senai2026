@@ -1,0 +1,122 @@
+[
+    {
+        "placa": "ABC-1234",
+        "tipo": "carro",
+        "proprietario": "João Silva",
+        "telefone": "(11) 98765-4321",
+        "modelo": "Civic",
+        "marca": "Honda",
+        "cor": "Preto",
+        "ano": 2020
+    },
+    {
+        "placa": "XYZ-5678",
+        "tipo": "moto",
+        "proprietario": "Maria Oliveira",
+        "telefone": "(21) 91234-5678",
+        "modelo": "Ninja",
+        "marca": "Kawasaki",
+        "cor": "Verde",
+        "ano": 2019
+    },
+    {
+        "placa": "DEF-9012",
+        "tipo": "carro",
+        "proprietario": "Carlos Pereira",
+        "telefone": "(31) 99876-5432",
+        "modelo": "Corolla",
+        "marca": "Toyota",
+        "cor": "Branco",
+        "ano": 2021
+    },
+    {
+        "placa": "GHI-3456",
+        "tipo": "moto",
+        "proprietario": "Ana Costa",
+        "telefone": "(41) 98765-4321",
+        "modelo": "CB500",
+        "marca": "Honda",
+        "cor": "Vermelho",
+        "ano": 2018
+    },
+    {
+        "placa": "JKL-7890",
+        "tipo": "carro",
+        "proprietario": "Pedro Santos",
+        "telefone": "(51) 91234-5678",
+        "modelo": "Fiesta",
+        "marca": "Ford",
+        "cor": "Azul",
+        "ano": 2017
+    },
+    {
+        "placa": "MNO-2345",
+        "tipo": "moto",
+        "proprietario": "Luciana Almeida",
+        "telefone": "(61) 99876-5432",
+        "modelo": "MT-07",
+        "marca": "Yamaha",
+        "cor": "Cinza",
+        "ano": 2020
+    },
+    {
+        "placa": "PQR-6789",
+        "tipo": "carro",
+        "proprietario": "Rafael Lima",
+        "telefone": "(71) 98765-4321",
+        "modelo": "Onix",
+        "marca": "Chevrolet",
+        "cor": "Prata",
+        "ano": 2019
+    },
+    {
+        "placa": "STU-0123",
+        "tipo": "moto",
+        "proprietario": "Fernanda Rodrigues",
+        "telefone": "(81) 91234-5678",
+        "modelo": "Ducati Monster",
+        "marca": "Ducati",
+        "cor": "Vermelho e Preto",
+        "ano": 2021
+    },
+    {
+        "placa": "VWX-4567",
+        "tipo": "carro",
+        "proprietario": "Bruno Ferreira",
+        "telefone": "(91) 99876-5432",
+        "modelo": "HB20",
+        "marca": "Hyundai",
+        "cor": "Branco",
+        "ano": 2018
+    },
+    {
+        "placa": "YZA-8901",
+        "tipo": "moto",
+        "proprietario": "Carla Mendes",
+        "telefone": "(11) 98765-4321",
+        "modelo": "CBR500R",
+        "marca": "Honda",
+        "cor": "Azul",
+        "ano": 2019
+    },
+    {
+        "placa": "BCD-2345",
+        "tipo": "carro",
+        "proprietario": "Diego Souza",
+        "telefone": "(21) 91234-5678",
+        "modelo": "Gol",
+        "marca": "Volkswagen",
+        "cor": "Prata",
+        "ano": 2020
+    },
+    {
+        "placa": "EFG-6789",
+        "tipo": "moto",
+        "proprietario": "Mariana Lima",
+        "telefone": "(31) 99876-5432",
+        "modelo": "CB500X",
+        "marca": "Honda",
+        "cor": "Preto e Vermelho",
+        "ano": 2018
+    }
+]

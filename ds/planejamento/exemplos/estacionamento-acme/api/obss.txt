@@ -1,0 +1,6 @@
+O erro foi identificado e corrigido. O problema era um conflito de versão entre os pacotes Prisma:
+
+prisma (CLI) estava na v6.19.3
+@prisma/client estava na v7.8.0
+
+As versões do CLI e do client precisam ser iguais. A solução foi atualizar o prisma para v7 com `npm install prisma@7`, e após isso o `npx prisma generate` executou com sucesso, gerando o Prisma Client v7.8.0.

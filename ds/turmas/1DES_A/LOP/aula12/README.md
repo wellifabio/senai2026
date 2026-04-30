@@ -1,11 +1,11 @@
-# Aula12 - Becrowd, Vetores e Matrizes
+# Aula12 - Beecrowd, Vetores e Matrizes
 
-- [Becrowd](https://becrowd.com/)
+- [Beecrowd](https://becrowd.com/)
 - [Vetores](#vetores)
 - [Matrizes](#matrizes)
 
-## [Becrowd](https://becrowd.com/)
-Becrowd https://becrowd.com/ é uma plataforma online de programação competitiva que oferece uma variedade de problemas para os programadores resolverem. Os usuários podem submeter suas soluções em várias linguagens de programação e receber feedback imediato sobre a correção e eficiência de seus códigos.
+## [Beecrowd](https://beecrowd.com/)
+Becrowd https://beecrowd.com/ é uma plataforma online de programação competitiva que oferece uma variedade de problemas para os programadores resolverem. Os usuários podem submeter suas soluções em várias linguagens de programação e receber feedback imediato sobre a correção e eficiência de seus códigos.
 
 ## Vetores
 Um vetor é uma estrutura de dados que armazena uma coleção de elementos do mesmo tipo. Em muitas linguagens de programação, os vetores são implementados como arrays, que são blocos contíguos de memória.

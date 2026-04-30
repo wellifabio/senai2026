@@ -1,6 +1,6 @@
 # Aula12 - Beecrowd, Vetores e Matrizes
 
-- [Beecrowd](https://becrowd.com/)
+- [Beecrowd](https://beecrowd.com/)
 - [Vetores](#vetores)
 - [Matrizes](#matrizes)
 

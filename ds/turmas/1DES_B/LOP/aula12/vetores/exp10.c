@@ -9,6 +9,11 @@ void main(){
 	};
 	
 	//Percorra a matriz e mostre seu conteúdo
-	
+	for(int i = 0; i < 5; i++){ //Mostra as linhas
+		for(int j = 0; j < 5; j++){ //Mostra as colunas
+			printf("%d ", matriz[i][j]);
+		}
+		printf("\n");
+	}
 	getch();
 }

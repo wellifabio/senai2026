@@ -3,7 +3,7 @@
 #include<time.h>
 void main(){
 	//Sortear um nome aleatório
-	char nomes[7][50] = {
+	char nomes[7][50] = {//Vetor de Strings, todo vetor de string é uma matriz
 	"Jacinto Pena",
 	"Jacinto Paixão",
 	"Jacinto Amor",

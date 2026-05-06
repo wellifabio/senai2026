@@ -48,6 +48,8 @@ npm run dev
 ``` 
 - 7 Para criar os controllers básicos (CRUD) e rotas, pare a execução do projeto, use o comando abaixo colocando o nome para cada tabela
 ```bash
+npx backend-aula -models
+# ou para criar apenas uma tabela por vez
 npx backend-aula -r nometabela
 ```
 - 8 Para criar o arquivo de testes do insomnia:

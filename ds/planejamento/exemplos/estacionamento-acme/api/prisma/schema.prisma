@@ -9,7 +9,7 @@ datasource db {
 model Automovel {
   placa        String  @id
   proprietario String
-  tipo         TipoAutomovel @default(CARRO)
+  tipo         Tipo @default(CARRO)
   modelo       String
   marca        String?
   cor          String?
@@ -34,7 +34,7 @@ model Estadia {
   @@map("estadias")
 }
 
-enum TipoAutomovel {
+enum Tipo {
   CARRO
   MOTO
   CAMINHAO

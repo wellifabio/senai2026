@@ -2,7 +2,7 @@
     {
         "placa": "ABC-1234",
         "tipo": "CARRO",
-        "proprietario": "João Silva",
+        "proprietario": "Carlos Silva",
         "telefone": "(11) 98765-4321",
         "modelo": "Civic",
         "marca": "Honda",

@@ -11,13 +11,89 @@
 <body>
     <header>
         <h1>Automóveis</h1>
-        <button onclick="window.location.href='../'">Voltar</button>
+        <div>
+            <button onclick="modalAdd.classList.remove('oculto')">+</button>
+            <a href="../">Voltar</a>
+        </div>
     </header>
     <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Placa</th>
+                    <th>Tipo</th>
+                    <th>Proprietário</th>
+                    <th>Telefone</th>
+                    <th>Modelo</th>
+                    <th>Marca</th>
+                    <th>Cor</th>
+                    <th>Ano</th>
+                    <th style="text-align: center;">Ações</th>
+                </tr>
+            </thead>
+            <tbody id="corpo-automoveis">
+            </tbody>
+        </table>
     </main>
     <footer>
         <p>&copy; 2023 Estacionamento ACME. Todos os direitos reservados.</p>
     </footer>
+    <div id="modalAdd" class="modal oculto">
+        <div class="janela">
+            <h2 id="modal-titulo">Adicionar Automóvel</h2>
+            <form id="form-automovel">
+                <div>
+                    <label for="placa">Placa:</label>
+                    <input type="text" id="placa" name="placa" required>
+                </div>
+                <div>
+                    <label for="tipo">Tipo:</label>
+                    <select name="tipo" id="tipo" required>
+                        <option value="">Selecione o tipo</option>
+                        <option value="CARRO">Carro</option>
+                        <option value="MOTO">Moto</option>
+                        <option value="CAMINHAO">Caminhão</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="proprietario">Proprietário:</label>
+                    <input type="text" id="proprietario" name="proprietario" required>
+                </div>
+
+                <div>
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" name="telefone" required>
+                </div>
+
+                <div>
+                    <label for="modelo">Modelo:</label>
+                    <input type="text" id="modelo" name="modelo" required>
+                </div>
+
+                <div>
+                    <label for="marca">Marca:</label>
+                    <input type="text" id="marca" name="marca">
+                </div>
+
+                <div>
+                    <label for="cor">Cor:</label>
+                    <input type="text" id="cor" name="cor">
+                </div>
+
+                <div>
+                    <label for="ano">Ano:</label>
+                    <input type="number" id="ano" name="ano" step="1" min="1900" max="2100">
+                </div>
+
+                <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+                    <button type="button" onclick="modalAdd.classList.add('oculto')">Cancelar</button>
+                    <button type="submit">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

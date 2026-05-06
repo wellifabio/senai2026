@@ -17,10 +17,10 @@ const listar = async (req, res) => {
 };
 
 const buscar = async (req, res) => {
-    const { id } = req.params;
+    const { placa } = req.params;
 
     const item = await prisma.automovel.findUnique({
-        where: { id: Number(id) },
+        where: { placa },
         include: { estadias: true }
     });
 
@@ -28,11 +28,11 @@ const buscar = async (req, res) => {
 };
 
 const atualizar = async (req, res) => {
-    const { id } = req.params;
+    const { placa } = req.params;
     const dados = req.body;
 
     const item = await prisma.automovel.update({
-        where: { id: Number(id) },
+        where: { placa },
         data: dados
     });
 
@@ -40,10 +40,10 @@ const atualizar = async (req, res) => {
 };
 
 const excluir = async (req, res) => {
-    const { id } = req.params;
+    const { placa } = req.params;
 
     const item = await prisma.automovel.delete({
-        where: { id: Number(id) }
+        where: { placa }
     });
 
     res.json(item).status(200).end();

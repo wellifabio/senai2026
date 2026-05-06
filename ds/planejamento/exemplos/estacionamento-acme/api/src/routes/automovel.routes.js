@@ -11,8 +11,8 @@ const {
 
 router.post("/cadastrar", cadastrar);
 router.get("/listar", listar);
-router.get("/buscar/:id", buscar);
-router.put("/atualizar/:id", atualizar);
-router.delete("/excluir/:id", excluir);
+router.get("/buscar/:placa", buscar);
+router.put("/atualizar/:placa", atualizar);
+router.delete("/excluir/:placa", excluir);
 
 module.exports = router;

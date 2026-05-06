@@ -9,7 +9,7 @@ datasource db {
 model Automovel {
   placa        String  @id
   proprietario String
-  tipo         Tipo @default(CARRO)
+  tipo         Tipo    @default(CARRO)
   modelo       String
   marca        String?
   cor          String?
@@ -28,6 +28,7 @@ model Estadia {
   saida      DateTime?
   valorHora  Float
   valorTotal Float?
+  vaga       String?
 
   automovel Automovel @relation(fields: [placa], references: [placa])
 

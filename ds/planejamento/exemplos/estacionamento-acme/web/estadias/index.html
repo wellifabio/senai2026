@@ -11,13 +11,63 @@
 <body>
     <header>
         <h1>Estadias</h1>
-        <button onclick="window.location.href='../'">Voltar</button>
+        <div>
+            <button onclick="modalAdd.classList.remove('oculto')">+</button>
+            <a href="../">Voltar</a>
+        </div>
     </header>
     <main>
+        <input type="text" id="filtro" placeholder="Filtrar por placa ou entrada..."
+            onchange="filtrar(this.value)">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Placa</th>
+                    <th>Entrada</th>
+                    <th>Saída</th>
+                    <th>Valor Hora</th>
+                    <th>Valor Total</th>
+                    <th>Vaga</th>
+                    <th style="text-align: center;">Ações</th>
+                </tr>
+            </thead>
+            <tbody id="corpo-estadias">
+            </tbody>
+        </table>
     </main>
     <footer>
         <p>&copy; 2023 Estacionamento ACME. Todos os direitos reservados.</p>
     </footer>
+    <div id="modalAdd" class="modal oculto">
+        <div class="janela">
+            <h2 id="modal-titulo">Adicionar Estadia</h2>
+            <form id="form-estadia">
+                <div>
+                    <label for="placa">Tipo:</label>
+                    <select name="placa" id="tipo" required>
+                        <option value="">Selecione a placa</option>
+                        <option value="ABC-1234">ABC-1234</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="entrada">Entrada:</label>
+                    <input type="datetime-local" id="entrada" name="entrada" required>
+                </div>
+                <div>
+                    <label for="valorHora">Valor por Hora:</label>
+                    <input type="number" id="valorHora" name="valorHora" step="0.01" min="0" max="10000" required>
+                </div>
+
+                <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+                    <button type="button" onclick="modalAdd.classList.add('oculto')">Cancelar</button>
+                    <button type="submit">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

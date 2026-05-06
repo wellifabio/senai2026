@@ -58,6 +58,7 @@ form.addEventListener("submit", (e) => {
             if (response.ok) {
                 alert("Automóvel cadastrado com sucesso!");
                 init();
+                modalAdd.classList.add('oculto');
             } else {
                 alert("Erro ao cadastrar automóvel!");
             }
@@ -121,4 +122,20 @@ function excluirAutomovel(placa) {
         .catch(error => {
             console.error("Erro ao excluir automóvel:", error);
         });
+}
+
+function filtrar(valor) {
+    const tabela = document.getElementById("corpo-automoveis");
+    const linhas = tabela.getElementsByTagName("tr");
+    for (let i = 0; i < linhas.length; i++) {
+        const placa = linhas[i].children[0].textContent.toLowerCase();
+        const tipo = linhas[i].children[1].textContent.toLowerCase();
+        const modelo = linhas[i].children[4].textContent.toLowerCase();
+        const proprietario = linhas[i].children[2].textContent.toLowerCase();
+        if (placa.includes(valor.toLowerCase()) || tipo.includes(valor.toLowerCase()) || modelo.includes(valor.toLowerCase()) || proprietario.includes(valor.toLowerCase())) {
+            linhas[i].style.display = "";
+        } else {
+            linhas[i].style.display = "none";
+        }
+    }
 }

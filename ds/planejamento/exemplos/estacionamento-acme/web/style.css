@@ -7,10 +7,10 @@
 
 :root {
     --p1: #2c3e50;
-    --p2: #bdc3c7;
+    --p2: #95a5a6;
     --p3: #ecf0f1;
     --p4: #3498db;
-    --p5: #95a5a6;
+    --p5: #bdc3c7;
     --t1: rgba(44, 62, 80, 0.8);
     --t2: rgba(189, 195, 199, 0.8);
 }
@@ -64,16 +64,18 @@ button {
     background-color: var(--p4);
     color: var(--p3);
     border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
     background-color: var(--p5);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: var(--p1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 a {
@@ -88,11 +90,13 @@ a {
 table {
     width: 100%;
     border-collapse: collapse;
+    /* margin: 20px 0 20px 0; */
 }
 
 tr {
     background-color: var(--t1);
     color: var(--p3);
+    border-bottom: 1px solid var(--p2);
 }
 
 tr:nth-child(even) {
@@ -104,7 +108,6 @@ th,
 td {
     padding: 5px;
     text-align: left;
-    border-bottom: 1px solid var(--p2);
 }
 
 form {
@@ -116,6 +119,7 @@ form {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         label {
             flex: 1;
             text-align: left;
@@ -192,5 +196,9 @@ select {
         content: attr(data-label);
         float: left;
         font-weight: bold;
+    }
+
+    input {
+        width: 90%;
     }
 }

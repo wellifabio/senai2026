@@ -18,10 +18,9 @@ const listar = async (req, res) => {
 
 const buscar = async (req, res) => {
     const { placa } = req.params;
-
+    
     const item = await prisma.automovel.findUnique({
-        where: { placa },
-        include: { estadias: true }
+        where: { placa : placa }
     });
 
     res.json(item).status(200).end();
@@ -30,9 +29,9 @@ const buscar = async (req, res) => {
 const atualizar = async (req, res) => {
     const { placa } = req.params;
     const dados = req.body;
-
+    
     const item = await prisma.automovel.update({
-        where: { placa },
+        where: { placa : placa },
         data: dados
     });
 
@@ -41,9 +40,9 @@ const atualizar = async (req, res) => {
 
 const excluir = async (req, res) => {
     const { placa } = req.params;
-
+    
     const item = await prisma.automovel.delete({
-        where: { placa }
+        where: { placa : placa }
     });
 
     res.json(item).status(200).end();

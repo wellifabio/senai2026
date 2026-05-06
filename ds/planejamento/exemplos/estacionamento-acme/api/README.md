@@ -19,7 +19,7 @@ npm install
 - 3 Crie o arquivo .env contendo as variáveis de ambiente
 ```env
 PORT=3000
-DATABASE_URL="mysql://root@localhost:3306/estacionamento_acme"
+DATABASE_URL="mysql://root@localhost:3306/est_acme"
 ```
 - 4 Abra o XAMPP, de **Start** no MySQL, faça a migração do banco de dados e execute a API
 ```bash

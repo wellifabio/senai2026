@@ -1,5 +1,5 @@
-const { PrismaClient } = require('@prisma/client');
-const prisma = new PrismaClient();
+require('dotenv').config();
+const prisma = require("../src/data/prisma");
 
 const automoveis = require('./seed/automoveis.json');
 

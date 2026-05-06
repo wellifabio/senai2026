@@ -1,7 +1,7 @@
 [
     {
         "placa": "ABC-1234",
-        "tipo": "carro",
+        "tipo": "CARRO",
         "proprietario": "João Silva",
         "telefone": "(11) 98765-4321",
         "modelo": "Civic",
@@ -11,7 +11,7 @@
     },
     {
         "placa": "XYZ-5678",
-        "tipo": "moto",
+        "tipo": "MOTO",
         "proprietario": "Maria Oliveira",
         "telefone": "(21) 91234-5678",
         "modelo": "Ninja",
@@ -21,7 +21,7 @@
     },
     {
         "placa": "DEF-9012",
-        "tipo": "carro",
+        "tipo": "CARRO",
         "proprietario": "Carlos Pereira",
         "telefone": "(31) 99876-5432",
         "modelo": "Corolla",
@@ -31,7 +31,7 @@
     },
     {
         "placa": "GHI-3456",
-        "tipo": "moto",
+        "tipo": "MOTO",
         "proprietario": "Ana Costa",
         "telefone": "(41) 98765-4321",
         "modelo": "CB500",
@@ -41,7 +41,7 @@
     },
     {
         "placa": "JKL-7890",
-        "tipo": "carro",
+        "tipo": "CARRO",
         "proprietario": "Pedro Santos",
         "telefone": "(51) 91234-5678",
         "modelo": "Fiesta",
@@ -51,7 +51,7 @@
     },
     {
         "placa": "MNO-2345",
-        "tipo": "moto",
+        "tipo": "MOTO",
         "proprietario": "Luciana Almeida",
         "telefone": "(61) 99876-5432",
         "modelo": "MT-07",
@@ -61,7 +61,7 @@
     },
     {
         "placa": "PQR-6789",
-        "tipo": "carro",
+        "tipo": "CARRO",
         "proprietario": "Rafael Lima",
         "telefone": "(71) 98765-4321",
         "modelo": "Onix",
@@ -71,7 +71,7 @@
     },
     {
         "placa": "STU-0123",
-        "tipo": "moto",
+        "tipo": "MOTO",
         "proprietario": "Fernanda Rodrigues",
         "telefone": "(81) 91234-5678",
         "modelo": "Ducati Monster",
@@ -81,7 +81,7 @@
     },
     {
         "placa": "VWX-4567",
-        "tipo": "carro",
+        "tipo": "CARRO",
         "proprietario": "Bruno Ferreira",
         "telefone": "(91) 99876-5432",
         "modelo": "HB20",
@@ -91,7 +91,7 @@
     },
     {
         "placa": "YZA-8901",
-        "tipo": "moto",
+        "tipo": "MOTO",
         "proprietario": "Carla Mendes",
         "telefone": "(11) 98765-4321",
         "modelo": "CBR500R",
@@ -101,7 +101,7 @@
     },
     {
         "placa": "BCD-2345",
-        "tipo": "carro",
+        "tipo": "CARRO",
         "proprietario": "Diego Souza",
         "telefone": "(21) 91234-5678",
         "modelo": "Gol",
@@ -111,7 +111,7 @@
     },
     {
         "placa": "EFG-6789",
-        "tipo": "moto",
+        "tipo": "MOTO",
         "proprietario": "Mariana Lima",
         "telefone": "(31) 99876-5432",
         "modelo": "CB500X",

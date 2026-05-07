@@ -23,15 +23,44 @@ async function main() {
         console.log(`✓ ${count} automóveis inseridos com sucesso!`);
         console.log(`Gerando estadias a partir da data de ontem...`);
         for (const automovel of automoveis) {
-            let entrada = await Math.floor(Math.random() * 10) + 8 // Entre 8h e 18h
-            let horas = await Math.floor(Math.random() * 5) + 1; // Entre 1 e 5 horas            
+            let entrada = Math.floor(Math.random() * 10)
+            let horas = Math.floor(Math.random() * 5) + 1; // Entre 1 e 5 horas
+            let minutos = Math.floor(Math.random() * 20) + 40; // Entre 40 e 60 minutos
             await prisma.estadia.create({
                 data: {
                     placa: automovel.placa,
-                    entrada: await new Date(Date.now() - (24 + entrada) * 60 * 60 * 1000), // Data de ontem
-                    saida: await new Date(Date.now() - (24 + entrada + horas) * 60 * 60 * 1000), // Data de ontem
-                    valorHora: 10.0,
-                    valorTotal: 10.0 * horas,
+                    entrada: new Date(Date.now() - (72 + entrada) * 60 * 60 * 1000), // Data de ontem
+                    saida: new Date(Date.now() - (72 + entrada - horas) * 60 * 60 * 1000 - (minutos * 60 * 1000)), // Data de ontem
+                    valorHora: automovel.tipo === "CARRO" ? 10.0 : 5.0,
+                    valorTotal: automovel.tipo === "CARRO" ? 10.0 * horas : 5.0 * horas,
+                }
+            });
+        }
+        for (const automovel of automoveis) {
+            let entrada = Math.floor(Math.random() * 10)
+            let horas = Math.floor(Math.random() * 5) + 1; // Entre 1 e 5 horas
+            let minutos = Math.floor(Math.random() * 20) + 40; // Entre 40 e 60 minutos            
+            await prisma.estadia.create({
+                data: {
+                    placa: automovel.placa,
+                    entrada: new Date(Date.now() - (48 + entrada) * 60 * 60 * 1000), // Data de ontem
+                    saida: new Date(Date.now() - (48 + entrada - horas) * 60 * 60 * 1000 - (minutos * 60 * 1000)), // Data de ontem
+                    valorHora: automovel.tipo === "CARRO" ? 10.0 : 5.0,
+                    valorTotal: automovel.tipo === "CARRO" ? 10.0 * horas : 5.0 * horas,
+                }
+            });
+        }
+        for (const automovel of automoveis) {
+            let entrada = Math.floor(Math.random() * 10)
+            let horas = Math.floor(Math.random() * 5) + 1; // Entre 1 e 5 horas
+            let minutos = Math.floor(Math.random() * 20) + 40; // Entre 40 e 60 minutos            
+            await prisma.estadia.create({
+                data: {
+                    placa: automovel.placa,
+                    entrada: new Date(Date.now() - (24 + entrada) * 60 * 60 * 1000), // Data de ontem
+                    saida: new Date(Date.now() - (24 + entrada - horas) * 60 * 60 * 1000 - (minutos * 60 * 1000)), // Data de ontem
+                    valorHora: automovel.tipo === "CARRO" ? 10.0 : 5.0,
+                    valorTotal: automovel.tipo === "CARRO" ? 10.0 * horas : 5.0 * horas,
                 }
             });
         }
@@ -40,12 +69,12 @@ async function main() {
             data: [{
                 placa: automoveis[0].placa,
                 entrada: new Date(Date.now()), // Data de hoje
-                valorHora: 10,
+                valorHora: automoveis[0].tipo === "CARRO" ? 10.0 : 5.0,
             },
             {
                 placa: automoveis[2].placa,
                 entrada: new Date(Date.now()), // Data de hoje
-                valorHora: 10,
+                valorHora: automoveis[2].tipo === "CARRO" ? 10.0 : 5.0,
             }]
         });
         console.log('✓ Estadia de hoje gerada para 2 automóveis!');

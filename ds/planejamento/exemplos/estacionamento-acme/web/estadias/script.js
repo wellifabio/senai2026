@@ -23,11 +23,11 @@ async function montarTabela() {
         const row = document.createElement("tr");
         row.innerHTML = `
             <td data-label="Id">${estadia.id}</td>    
-            <td data-label="Placa">${estadia.placa}</td>
-            <td data-label="Entrada" contenteditable="true">${estadia.entrada}</td>
-            <td data-label="Saída" contenteditable="true">${estadia.saida}</td>
-            <td data-label="Valor hora" contenteditable="true">${estadia.valorHora}</td>
-            <td data-label="Valor Total" contenteditable="true">${estadia.valorTotal}</td>
+            <td data-label="Placa" contenteditable="true">${estadia.placa}</td>
+            <td data-label="Entrada">${new Date(estadia.entrada).toLocaleDateString('pt-BR')} - ${new Date(estadia.entrada).toLocaleTimeString('pt-BR')}</td>
+            <td data-label="Saída">${estadia.saida != null ? new Date(estadia.saida).toLocaleDateString('pt-BR') : 'N/A'} - ${estadia.saida !== null ? new Date(estadia.saida).toLocaleTimeString('pt-BR') : 'N/A'}</td>
+            <td data-label="Valor hora" contenteditable="true">${Number(estadia.valorHora).toFixed(2).replaceAll('.', ',')}</td>
+            <td data-label="Valor Total" contenteditable="true">${Number(estadia.valorTotal).toFixed(2).replaceAll('.', ',')}</td>
             <td data-label="Vaga" contenteditable="true">${estadia.vaga}</td>
             <td style="display: flex; justify-content: right;">
                 <div style="display: flex">
@@ -45,6 +45,13 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
     const formData = new FormData(form);
     const dados = Object.fromEntries(formData);
+    dados.entrada = new Date(dados.entrada);
+    if (dados.saida) {
+        dados.saida = new Date(dados.saida);
+    }else{
+        delete dados.saida;
+    }
+    dados.valorHora = parseFloat(dados.valorHora.replace(',', '.'));
     fetch(`${url}/cadastrar`, {
         method: "POST",
         headers: {
@@ -67,7 +74,7 @@ form.addEventListener("submit", (e) => {
 });
 
 function editarEstadia(id) {
-    const estadia = estadias.find(a => a.id === id);
+    const estadia = estadias.find(a => a.id == id);
     if (!estadia) {
         alert("Estadia não encontrada!");
         return;
@@ -76,11 +83,9 @@ function editarEstadia(id) {
     const [_, placa, entrada, saida, valorHora, valorTotal, vaga] = row.children;
     const dadosAtualizados = {
         placa: placa.textContent,
-        entrada: entrada.textContent,
-        saida: saida.textContent,
         valorHora: parseFloat(valorHora.textContent),
         valorTotal: parseFloat(valorTotal.textContent),
-        vaga: vaga.textContent
+        vaga: vaga.textContent != 'null' ? vaga.textContent : null,
     };
     fetch(`${url}/atualizar/${id}`, {
         method: "PUT",
@@ -95,14 +100,6 @@ function editarEstadia(id) {
                 init();
             } else {
                 alert("Erro ao atualizar estadia!");
-            }
-        })
-        .then(response => {
-            if (response.ok) {
-                alert("Automóvel atualizado com sucesso!");
-                init();
-            } else {
-                alert("Erro ao atualizar automóvel!");
             }
         })
         .catch(error => {

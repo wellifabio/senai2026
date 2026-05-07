@@ -17,8 +17,7 @@
         </div>
     </header>
     <main>
-        <input type="text" id="filtro" placeholder="Filtrar por placa ou entrada..."
-            onchange="filtrar(this.value)">
+        <input type="text" id="filtro" placeholder="Filtrar por placa ou entrada..." onchange="filtrar(this.value)">
 
         <table>
             <thead>
@@ -46,14 +45,15 @@
             <form id="form-estadia">
                 <div>
                     <label for="placa">Tipo:</label>
-                    <select name="placa" id="tipo" required>
-                        <option value="">Selecione a placa</option>
-                        <option value="ABC-1234">ABC-1234</option>
-                    </select>
+                    <input type="text" id="placa" name="placa" required>
                 </div>
                 <div>
                     <label for="entrada">Entrada:</label>
                     <input type="datetime-local" id="entrada" name="entrada" required>
+                </div>
+                <div>
+                    <label for="saida">Saída:</label>
+                    <input type="datetime-local" id="saida" name="saida">
                 </div>
                 <div>
                     <label for="valorHora">Valor por Hora:</label>

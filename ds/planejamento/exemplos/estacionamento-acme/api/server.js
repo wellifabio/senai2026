@@ -9,10 +9,8 @@ app.use(cors());
 const estadiaRoutes = require('./src/routes/estadia.routes');
 app.use('/estadia', estadiaRoutes);
 
-
 const automovelRoutes = require('./src/routes/automovel.routes');
 app.use('/automovel', automovelRoutes);
-
 
 const PORT = process.env.PORT || 3000;
 

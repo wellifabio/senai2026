@@ -32,8 +32,8 @@ async function montarTabela() {
             <td data-label="Ano" contenteditable="true">${automovel.ano}</td>
             <td style="display: flex; justify-content: right;">
                 <div style="display: flex">
-                    <button onclick="editarAutomovel('${automovel.placa}')">*</button>
-                    <button onclick="excluirAutomovel('${automovel.placa}')">-</button>
+                    <button onclick="editarAutomovel('${automovel.placa}')">✏️</button>
+                    <button onclick="excluirAutomovel('${automovel.placa}')">🗑️</button>
                 </div>
             </td>
         `;

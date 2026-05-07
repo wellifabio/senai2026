@@ -12,7 +12,7 @@
     <header>
         <h1>Estadias</h1>
         <div>
-            <button onclick="modalAdd.classList.remove('oculto')">+</button>
+            <button onclick="modalAdd.classList.remove('oculto')">+ Adicionar</button>
             <a href="../">Voltar</a>
         </div>
     </header>
@@ -44,7 +44,7 @@
             <h2 id="modal-titulo">Adicionar Estadia</h2>
             <form id="form-estadia">
                 <div>
-                    <label for="placa">Tipo:</label>
+                    <label for="placa">Placa:</label>
                     <input type="text" id="placa" name="placa" required>
                 </div>
                 <div>
@@ -59,9 +59,37 @@
                     <label for="valorHora">Valor por Hora:</label>
                     <input type="number" id="valorHora" name="valorHora" step="0.01" min="0" max="10000" required>
                 </div>
-
                 <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
                     <button type="button" onclick="modalAdd.classList.add('oculto')">Cancelar</button>
+                    <button type="submit">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+        <div id="modalEdit" class="modal oculto">
+        <div class="janela">
+            <h2 id="modal-titulo">Editar Estadia</h2>
+            <form id="form-estadia-edit">
+                <input type="hidden" id="id" name="id">
+                <div>
+                    <label for="placae">Placa:</label>
+                    <input type="text" id="placae" name="placae" disabled>
+                </div>
+                <div>
+                    <label for="entradae">Entrada:</label>
+                    <input type="datetime-local" id="entradae" name="entradae" required>
+                </div>
+                <div>
+                    <label for="saidae">Saída:</label>
+                    <input type="datetime-local" id="saidae" name="saidae">
+                </div>
+                <div>
+                    <label for="valorTotal">Valor Total:</label>
+                    <input type="number" id="valorTotal" name="valorTotal" step="0.01" min="0" max="10000" required>
+                </div>
+
+                <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+                    <button type="button" onclick="modalEdit.classList.add('oculto')">Cancelar</button>
                     <button type="submit">Salvar</button>
                 </div>
             </form>

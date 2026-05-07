@@ -166,4 +166,5 @@ Palávras siônimas escopo = range
 
 #### Meu IP interno e máscara abreviada: 192.168.0.117/24
 
-## [Lista de exercícios 01](lista01.md)
+### [Lista de exercícios 01](lista01.md)
+### [Correção da Lista de exercícios 01](correcao.md)

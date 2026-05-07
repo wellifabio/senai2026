@@ -1,5 +1,5 @@
 # Aula04 - Subredes de Computadores
-
+![Roteador](./roteador.png)
 ## Exemplo:
 - Comando ipconfig no meu computador retornou:
 ```

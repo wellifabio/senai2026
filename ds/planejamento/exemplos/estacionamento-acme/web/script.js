@@ -43,7 +43,7 @@ async function preencherSelectPlacas() {
     veiculos.forEach(veiculo => {
         const option = document.createElement("option");
         option.value = veiculo.placa;
-        option.textContent = veiculo.placa;
+        option.textContent = veiculo.tipo;
         select.appendChild(option);
     });
 }
@@ -148,7 +148,7 @@ async function salvarEntrada(event) {
 function abrirModalSaida(index) {
     modalSaida.classList.remove('oculto');
     let form = document.getElementById("form-saida");
-    let estadia = estadias[index];
+    let estadia = vagas[index].estadia;
     let valorTotalEstimado = estadia.valorHora * Math.ceil((new Date() - new Date(estadia.entrada)) / (1000 * 60 * 60));
     form.reset();
     form.id.value = estadia.id;

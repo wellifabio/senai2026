@@ -70,14 +70,22 @@ async function main() {
                 placa: automoveis[0].placa,
                 entrada: new Date(Date.now()), // Data de hoje
                 valorHora: automoveis[0].tipo === "CARRO" ? 10.0 : 5.0,
+                vaga: 'C1'
+            },
+            {
+                placa: automoveis[1].placa,
+                entrada: new Date(Date.now()), // Data de hoje
+                valorHora: automoveis[1].tipo === "CARRO" ? 10.0 : 5.0,
+                vaga: 'M1'
             },
             {
                 placa: automoveis[2].placa,
                 entrada: new Date(Date.now()), // Data de hoje
                 valorHora: automoveis[2].tipo === "CARRO" ? 10.0 : 5.0,
+                vaga: 'C3'
             }]
         });
-        console.log('✓ Estadia de hoje gerada para 2 automóveis!');
+        console.log('✓ Estadia de hoje gerada para 3 automóveis!');
     } catch (error) {
         console.error('❌ Erro ao semear dados:', error.message);
         throw error;

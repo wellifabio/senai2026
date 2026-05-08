@@ -30,7 +30,7 @@ O ESTACIONAMENTO ACME tem atuado em nossa cidade com ótimo atendimento e segura
 - [NF001] A API deve ser desenvolvida para responder tanto a UI Web como a futuros aplicativos.
 - [NF002] A UI pode ser desenvolvida com ou sem frameworks como bootstrap por exemplo.
 - [NF003] A documentação deve conter os três diagramas da UML [DC (Diagrama de Classes), DCU (Diagrama de Casos de Uso) e DA (Diagrama de Atividades)]
-- [NF004] O Reqdme.md principal do projeto deve conter esta documentação acrecida da lista das tecnologias utilizadas e um passo a passo de como executar e testar.
+- [NF004] O README.md principal do projeto deve conter esta documentação acrescida da lista das tecnologias utilizadas e um passo a passo de como executar e testar.
 
 ### Casos de teste: Ponto a Ponto
 - [CT001] Deve ser cadastrado pelo menos 5 veículos.
@@ -41,9 +41,51 @@ O ESTACIONAMENTO ACME tem atuado em nossa cidade com ótimo atendimento e segura
 - [CT004] Cadastre, altere e exclua uma estadia.
 - [CT005] Altere pelo menos duas estadias preenchendo a **saida** e verificando se calcula o **valorTotal**.
 
-## Print das telas
-
 ## Tecnologias
+- VsCode
+- BackEnd
+    - NodeJS
+    - MariaDB (XAMPP)
+    - Prisma
+    - Insomnia
+- FrontEnd
+    - HTML
+    - CSS
+    - JavaScript
 
 ## Passo a Passo de como executar e testar
+### BackEnd
+- 1 Acesse a pasta ./api
+- 2 Abra com o **VsCode** e em um terminal (CMD ou bash), navegue até a pasta /api, instale as dependências.
+```bash
+cd api
+npm install
+```
+- 3 Crie o arquivo .env contendo as variáveis de ambiente
+```env
+PORT=3000
+DATABASE_URL="mysql://root@localhost:3306/est_acme"
+```
+- 4 Abra o XAMPP, de **Start** no MySQL, faça a migração do banco de dados e execute a API
+```bash
+npx prisma migrate dev --name init
+npx prisma generate
+npx prisma db seed
+npm run dev
+```
 
+### BackEnd
+- 1 Acesse a pasta ./web
+- 2 Abra com VsCode e execute o index.html com Live Server
+
+## Print das telas
+ |Versão WEB|Responsivo|
+ |-|-|
+ |![Screenshot01](./docs/screenshot01.png)|![Screenshot09](./docs/screenshot09.png)|
+ |![Screenshot02](./docs/screenshot02.png)|![Screenshot10](./docs/screenshot10.png)|
+ |![Screenshot03](./docs/screenshot03.png)|![Screenshot11](./docs/screenshot11.png)|
+ |![Screenshot04](./docs/screenshot04.png)|![Screenshot12](./docs/screenshot12.png)|
+ |![Screenshot05](./docs/screenshot05.png)|![Screenshot13](./docs/screenshot13.png)|
+ |![Screenshot06](./docs/screenshot06.png)|![Screenshot14](./docs/screenshot14.png)|
+ |![Screenshot07](./docs/screenshot07.png)|![Screenshot15](./docs/screenshot15.png)|
+ |![Screenshot08](./docs/screenshot08.png)|![Screenshot16](./docs/screenshot16.png)|    

@@ -11,6 +11,9 @@ app.use('/estadia', estadiaRoutes);
 
 const automovelRoutes = require('./src/routes/automovel.routes');
 app.use('/automovel', automovelRoutes);
+app.use('/', (req, res)=>{
+    res.json("API do Estacionamento ACME");   
+})
 
 const PORT = process.env.PORT || 3000;
 

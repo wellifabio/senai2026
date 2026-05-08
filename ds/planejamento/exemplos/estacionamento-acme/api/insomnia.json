@@ -1,0 +1,187 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2026-05-08T22:50:33.149Z",
+  "__export_source": "backend-aula",
+  "resources": [
+    {
+      "_id": "wrk_backend",
+      "_type": "workspace",
+      "name": "Backend Aula"
+    },
+    {
+      "_id": "fld_api",
+      "_type": "request_group",
+      "parentId": "wrk_backend",
+      "name": "api"
+    },
+    {
+      "_id": "fld_Automovel",
+      "_type": "request_group",
+      "parentId": "fld_api",
+      "name": "Automovel"
+    },
+    {
+      "_id": "req_Automovel_GET_ALL",
+      "_type": "request",
+      "parentId": "fld_Automovel",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Listar",
+      "method": "GET",
+      "url": "http://localhost:3000/automovel/listar"
+    },
+    {
+      "_id": "req_Automovel_GET_ID",
+      "_type": "request",
+      "parentId": "fld_Automovel",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Buscar",
+      "method": "GET",
+      "url": "http://localhost:3000/automovel/buscar/:id"
+    },
+    {
+      "_id": "req_Automovel_POST",
+      "_type": "request",
+      "parentId": "fld_Automovel",
+      "name": "Cadastrar",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "method": "POST",
+      "url": "http://localhost:3000/automovel/cadastrar",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"placa\": \"string\",\n  \"proprietario\": \"string\",\n  \"modelo\": \"string\",\n  \"telefone\": \"string\"\n}"
+      }
+    },
+    {
+      "_id": "req_Automovel_PUT",
+      "_type": "request",
+      "parentId": "fld_Automovel",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Atualizar",
+      "method": "PUT",
+      "url": "http://localhost:3000/automovel/atualizar/:id",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"placa\": \"string\",\n  \"proprietario\": \"string\",\n  \"modelo\": \"string\",\n  \"telefone\": \"string\"\n}"
+      }
+    },
+    {
+      "_id": "req_Automovel_DELETE",
+      "_type": "request",
+      "parentId": "fld_Automovel",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Excluir",
+      "method": "DELETE",
+      "url": "http://localhost:3000/automovel/excluir/:id"
+    },
+    {
+      "_id": "fld_Estadia",
+      "_type": "request_group",
+      "parentId": "fld_api",
+      "name": "Estadia"
+    },
+    {
+      "_id": "req_Estadia_GET_ALL",
+      "_type": "request",
+      "parentId": "fld_Estadia",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Listar",
+      "method": "GET",
+      "url": "http://localhost:3000/estadia/listar"
+    },
+    {
+      "_id": "req_Estadia_GET_ID",
+      "_type": "request",
+      "parentId": "fld_Estadia",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Buscar",
+      "method": "GET",
+      "url": "http://localhost:3000/estadia/buscar/:id"
+    },
+    {
+      "_id": "req_Estadia_POST",
+      "_type": "request",
+      "parentId": "fld_Estadia",
+      "name": "Cadastrar",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "method": "POST",
+      "url": "http://localhost:3000/estadia/cadastrar",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"placa\": \"string\",\n  \"entrada\": \"2026-05-08T22:50:33.148Z\",\n  \"valorHora\": 0\n}"
+      }
+    },
+    {
+      "_id": "req_Estadia_PUT",
+      "_type": "request",
+      "parentId": "fld_Estadia",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Atualizar",
+      "method": "PUT",
+      "url": "http://localhost:3000/estadia/atualizar/:id",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"placa\": \"string\",\n  \"entrada\": \"2026-05-08T22:50:33.148Z\",\n  \"valorHora\": 0\n}"
+      }
+    },
+    {
+      "_id": "req_Estadia_DELETE",
+      "_type": "request",
+      "parentId": "fld_Estadia",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Excluir",
+      "method": "DELETE",
+      "url": "http://localhost:3000/estadia/excluir/:id"
+    }
+  ]
+}

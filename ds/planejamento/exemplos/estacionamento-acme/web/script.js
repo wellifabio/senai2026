@@ -177,9 +177,8 @@ function salvarSaida(event) {
     })
         .then(response => {
             if (response.ok) {
-                alert("Estadia atualizada com sucesso!");
                 init();
-                modalEdit.classList.add('oculto');
+                modalSaida.classList.add('oculto');
             } else {
                 alert("Erro ao atualizar estadia!");
             }

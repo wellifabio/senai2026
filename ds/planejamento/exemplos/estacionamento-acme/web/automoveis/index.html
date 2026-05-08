@@ -11,13 +11,14 @@
 <body>
     <header>
         <h1>Automóveis</h1>
-        <div>
+        <nav>
+            <a href="../">Home</a>
             <button onclick="modalAdd.classList.remove('oculto')">+ Adicionar</button>
-            <a href="../">Voltar</a>
-        </div>
+            <button onclick="window.location.href='../estadias/'">Estadias</button>
+        </nav>
     </header>
     <main>
-        <input type="text" id="filtro" placeholder="Filtrar por placa, tipo, modelo ou proprietário..."
+        <input type="text" style="width: 100%; padding: 10px;" id="filtro" placeholder="Filtrar por placa, tipo, modelo ou proprietário..."
             onchange="filtrar(this.value)">
 
         <table>

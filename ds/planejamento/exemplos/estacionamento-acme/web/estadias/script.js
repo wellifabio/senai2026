@@ -31,7 +31,7 @@ async function montarTabela() {
             <td data-label="Vaga" contenteditable="true">${estadia.vaga}</td>
             <td style="display: flex; justify-content: right;">
                 <div style="display: flex">
-                    <button onclick="editar('${i}')">🚗</button>
+                    <button onclick="editar('${i}')">→🚪</button>
                     <button onclick="editarEstadia('${estadia.id}')">✏️</button>
                     <button onclick="excluirEstadia('${estadia.id}')">🗑️</button>
                 </div>
@@ -114,8 +114,8 @@ function editar(index) {
     const valorTotalEstimado = estadia.valorHora * Math.ceil((new Date() - new Date(estadia.entrada)) / (1000 * 60 * 60));
     form.id.value = estadia.id;
     form.placae.value = estadia.placa;
-    form.entradae.value = estadia.entrada.split('T')[0] + ' ' + estadia.entrada.split('T')[1].split(':')[0] + ':' + estadia.entrada.split('T')[1].split(':')[1];
-    form.saidae.value = estadia.saida ? estadia.saida.split('T')[0] + ' ' + estadia.saida.split('T')[1].split(':')[0] + ':' + estadia.saida.split('T')[1].split(':')[1] : new Date().toISOString().slice(0, 16);
+    form.entradae.value = estadia.entrada.split('T')[0] + ' ' + (Number(estadia.entrada.split('T')[1].split(':')[0])-3) + ':' + estadia.entrada.split('T')[1].split(':')[1];
+    form.saidae.value = estadia.saida ? estadia.saida.split('T')[0] + ' ' + (Number(estadia.saida.split('T')[1].split(':')[0])-3) + ':' + estadia.saida.split('T')[1].split(':')[1] : new Date().toISOString().slice(0, 16);
     form.valorTotal.value = estadia.valorTotal ? Number(estadia.valorTotal).toFixed(2) : Number(valorTotalEstimado).toFixed(2);
 }
 

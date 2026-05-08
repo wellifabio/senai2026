@@ -7,7 +7,8 @@ const {
     listar, 
     buscar, 
     atualizar, 
-    excluir } = require("../controllers/automovel.controller");
+    excluir, 
+    listarAtivos} = require("../controllers/automovel.controller");
 
 router.post("/cadastrar", cadastrar);
 router.get("/listar", listar);

@@ -18,6 +18,14 @@ const listar = async (req, res) => {
     res.json(lista).status(200).end();
 };
 
+const listarAtivos = async (req, res) => {
+    const lista = await prisma.estadia.findMany({
+        where: { saida: null }, include: { automovel: true }, orderBy: { id: 'desc' }
+    });
+
+    res.json(lista).status(200).end();
+};
+
 const buscar = async (req, res) => {
     const { id } = req.params;
 
@@ -53,6 +61,7 @@ const excluir = async (req, res) => {
 module.exports = {
     cadastrar,
     listar,
+    listarAtivos,
     buscar,
     atualizar,
     excluir

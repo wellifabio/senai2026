@@ -38,5 +38,7 @@ model Estadia {
 enum Tipo {
   CARRO
   MOTO
+  VAN
   CAMINHAO
+  ONIBUS
 }

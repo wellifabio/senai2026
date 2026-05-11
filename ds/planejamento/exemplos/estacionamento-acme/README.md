@@ -19,12 +19,15 @@ O ESTACIONAMENTO ACME tem atuado em nossa cidade com ótimo atendimento e segura
 - [RF001] O sistema deve permitir o CRUD de veículos.
     - [RF001.1] Os campos cor e ano não são obrigatórios, podem ser nulos.
     - [RF001.2] Ao enviar a placa de um veículo deve retornar os dados específicos e seus **estacionamentos**.
+-![DCU01](./docs/uml-dcu-01.png)
+
 - [RF002] O sistema deve permitir o CRUD de estadias (estacionamentos).
     - [RF002.1] O sistema deve associar a estadia a um veículo.
     - [RF002.2] Ao cadastrar uma nova estadia **create** no controller, a data e hora da **entrada** deve ser gerada pelo Banco de Dados @dedault(now()).
     - [RF002.3] Ao cadastrar uma nova estadia **create** no controller, a **saida**, pode ser nula **"?"** pois será preenchida na rota **update** quando o veículo saír do estacionamento.
     - [RF002.4] Ao cadastrar uma nova estadia **create** no controller, o **valorTotal**, deve ser nulo **"?"** pois será calculado na rota **update** quando o veículo saír do estacionamento.
     - [RF002.5] Se ao realizar **update** o campo **saida** for enviado/preenchido o sistema deve calcular a **valorTotal** com a formula **"valorHora * (saida - entrada)"**.
+-![DCU02](./docs/uml-dcu-02.png)
 
 ### Requisitos não funcionais
 - [NF001] A API deve ser desenvolvida para responder tanto a UI Web como a futuros aplicativos.

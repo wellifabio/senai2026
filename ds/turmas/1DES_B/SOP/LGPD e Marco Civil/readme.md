@@ -28,7 +28,5 @@ Foco: Verificação e validação.
 
 Dica de pesquisa: Como ele verifica se os registros (logs) estão sendo guardados corretamente e se as políticas de privacidade não são apenas "enfeite".
 
-Dicas para a Apresentação:
-Sejam Visuais: Usem esquemas ou tabelas para mostrar onde a lei entra no trabalho de vocês.
-
-Pensem no Futuro: Como essas profissões mudaram depois que essas leis passaram a existir?
+## Dicas para a Apresentação:
+Explicar brevemente a LGPD e o Marco Civil e demostrar como estas leis se aplicam ao perfis especificados

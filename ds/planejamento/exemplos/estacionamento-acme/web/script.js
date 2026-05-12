@@ -153,7 +153,7 @@ function abrirModalSaida(index) {
     form.reset();
     form.id.value = estadia.id;
     form.placas.value = estadia.placa;
-    form.entradas.value = estadia.entrada.split('T')[0] + ' ' + (Number(estadia.entrada.split('T')[1].split(':')[0]) - 3) + ':' + estadia.entrada.split('T')[1].split(':')[1];
+    form.entradas.value = new Date(estadia.entrada).toLocaleString('pt-BR');
     form.saidas.value = new Date(new Date().getTime() - 3 * 60 * 60 * 1000).toISOString().slice(0, 16);
     form.valorTotal.value = estadia.valorTotal ? Number(estadia.valorTotal).toFixed(2) : Number(valorTotalEstimado).toFixed(2);
 }
@@ -164,10 +164,10 @@ function salvarSaida(event) {
     let form = event.target;
     let id = form.id.value;
     let estadia = estadias.find(e => e.id == id);
-    estadia.entrada = new Date(form.entradas.value);
     estadia.saida = new Date(form.saidas.value);
     estadia.valorTotal = Number(form.valorTotal.value);
     delete estadia.automovel;
+    delete estadia.entrada;
     fetch(`${url}/estadia/atualizar/${estadia.id}`, {
         method: "PUT",
         headers: {

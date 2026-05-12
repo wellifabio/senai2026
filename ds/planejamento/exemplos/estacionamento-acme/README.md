@@ -27,7 +27,7 @@ O ESTACIONAMENTO ACME tem atuado em nossa cidade com ótimo atendimento e segura
     - [RF002.3] Ao cadastrar uma nova estadia **create** no controller, a **saida**, pode ser nula **"?"** pois será preenchida na rota **update** quando o veículo saír do estacionamento.
     - [RF002.4] Ao cadastrar uma nova estadia **create** no controller, o **valorTotal**, deve ser nulo **"?"** pois será calculado na rota **update** quando o veículo saír do estacionamento.
     - [RF002.5] Se ao realizar **update** o campo **saida** for enviado/preenchido o sistema deve calcular a **valorTotal** com a formula **"valorHora * (saida - entrada)"**.
--![DCU02](./docs/uml-dcu-02.png)
+- ![DCU02](./docs/uml-dcu-02.png)
 
 ### Requisitos não funcionais
 - [NF001] A API deve ser desenvolvida para responder tanto a UI Web como a futuros aplicativos.
@@ -43,6 +43,12 @@ O ESTACIONAMENTO ACME tem atuado em nossa cidade com ótimo atendimento e segura
     - [CT003.1] Pelo menos dois veículos devem ter duas ou mais Estadias cadastradas.
 - [CT004] Cadastre, altere e exclua uma estadia.
 - [CT005] Altere pelo menos duas estadias preenchendo a **saida** e verificando se calcula o **valorTotal**.
+
+|Diagramas de atividades|
+|-|
+|![Diagrama de Atividades 01](./docs/uml-da-01.png)|
+|![Diagrama de Atividades 02](./docs/uml-da-02.png)|
+|![Diagrama de Atividades 03](./docs/uml-da-03.png)|
 
 ## Tecnologias
 - VsCode
@@ -77,7 +83,7 @@ npx prisma db seed
 npm run dev
 ```
 
-### BackEnd
+### FrontEnd
 - 1 Acesse a pasta ./web
 - 2 Abra com VsCode e execute o index.html com Live Server
 

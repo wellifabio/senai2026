@@ -22,7 +22,7 @@ async function montarTabela() {
     automoveis.forEach(automovel => {
         const row = document.createElement("tr");
         row.innerHTML = `
-            <td data-label="Placa">${automovel.placa}</td>
+            <td data-label="Placa"><b><button onclick="mostrarDetalhes('${automovel.placa}')">${automovel.placa}</button></b></td>
             <td data-label="Tipo">${automovel.tipo}</td>
             <td data-label="Proprietário" contenteditable="true">${automovel.proprietario}</td>
             <td data-label="Telefone" contenteditable="true">${automovel.telefone}</td>
@@ -67,6 +67,29 @@ form.addEventListener("submit", (e) => {
             console.error("Erro ao cadastrar automóvel:", error);
         });
 });
+
+async function mostrarDetalhes(placa) {
+    const automovel = automoveis.find(a => a.placa === placa);
+    if (!automovel) {
+        alert("Automóvel não encontrado!");
+        return;
+    }
+    document.getElementById("estadias-titulo").innerHTML = `Estadias - ${automovel.placa}`;
+    const cards = document.getElementById("cards-estadias");
+    cards.innerHTML = ""; // Limpar cards existentes
+    const busca = await fetch(`${url}/buscar/${placa}`).then(res => res.json());
+    busca.estadias.forEach(estadia => {
+        const card = document.createElement("div");
+        card.classList.add("card");
+        card.innerHTML = `
+            <h3>Data: ${new Date(estadia.entrada).toLocaleDateString('pt-BR')}</h3>
+            <p><strong>Entrada:</strong>  ${new Date(estadia.entrada).toLocaleTimeString('pt-BR')} - <strong>Saída:</strong> ${estadia.saida ? new Date(estadia.saida).toLocaleTimeString('pt-BR') : 'Estacionado'}</p>
+            <p><strong>Valor total:</strong> R$ ${estadia.valorTotal ? estadia.valorTotal.toFixed(2) : 'N/A'}</p>
+        `;
+        cards.appendChild(card);
+    });
+    document.getElementById("modalDealhes").classList.remove("oculto");
+}
 
 function editarAutomovel(placa) {
     const automovel = automoveis.find(a => a.placa === placa);

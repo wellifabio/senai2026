@@ -35,6 +35,7 @@
 - 5º Testes de integração automatizados
     - Exemplo de um [app com uma calculadora de financiamentos, POO, Salvar arquivo local e testes automatizados](https://github.com/wellifabio/flutter_testes_simples_financiamentos_2026.git), siga as instruções em README.md para testar, estude o App e faça a atividade proposta.
 
+## [1º WorkShop, Pompéia SP](./workshop-popeia.md)
 
 ## Simulados
 - [Prova de índice - Design Figma A2 Tablet](./provas-exemplo/case4you/design-A2.pdf)

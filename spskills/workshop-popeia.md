@@ -18,3 +18,23 @@
 - 2025 - Renan de Pompéia, ganhou o Brasileiro
 - 2026 - Renan disputa a WorldSkills em Xangai, China
 - 2026 - Nova competição SPSkills rumo ao Japão
+
+## 12/05 - Módulos
+
+|Módulo|Avaliação|Tepo<br>(horas)|
+|-|-|:-:|
+|Funcionalidades(A1 celular e A2 tablet)|Emulador ou Dispositivo Físico<br>(API, Login JWT, Splash com efeitos, CRUD, Navegação, Form, Listas, Cards, Charts [Gráficos]...)|5|
+|Design(B1 celular e B2 tablet)|Figma<br>(Componentes, Navegação, Eeitos, Modais, Efeitos de Entrada e Saída, Tema Claro, Escuro)|5|
+|Implementações(C1 celular)|Emulador ou Dispositivo Físico<br>(JSON e/u XML, SQLite, Firebase, Mapas, Sensores [Vertical, Hoizontal, Bateria, Wi-Fi, Digital, ...], Carrocel, Câmera, Mapas, GPS, ... )|3|
+|Testes(D1)|Emulador ou Dispositivo Físico<br>Formulário, Navegação, ..., Script de testes de integração|3|
+
+Todos os móduos são de um mesmo tema.
+### Agenda oficial
+
+|Data|Atividades|
+|-|-|
+|13/07|Ambientação|
+|14/07|Provas, dois Modulos|
+|15/07|Correção e resultados|
+
+Será utlizada a prova do último [nacioal 2025](./), sorteio de **dois** módulos de **código flutter**

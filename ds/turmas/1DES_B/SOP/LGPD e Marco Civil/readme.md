@@ -1,4 +1,4 @@
-### https://meet.google.com/zdh-fsen-qqy
+
 
 ## **Analista de TI**
 Foco: Implementação técnica.

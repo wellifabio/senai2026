@@ -13,6 +13,8 @@
 |JORNAL VIRTUAL|BEATRIZ, LUIZA, PIETRA, CLARA, JULIA NOVO, GIOVANA|3ºA|- Apresentação<br>- Protótipo WEB<br>- DER<br>- Protótipo funcional Mobile|
 |SAUDE MENDAL|MATHIAS, BRUNO e MATHEUS|3ºA|- Apresentação<br>- Protótipo  Mobile|
 |Code Champ | LUIS P, ITALO, MIGUEL GERBI, OTAVIO|3ºA|-Apresentação<br>- Site|
-|PERSONA SESI | CARLOS, HELOA, LIVIA G, KAUÃ,VINICIUS,|3ºB|-Apresentação<br>- PROTOTIPO WEB e Mobile|
+|PERSONA SESI | CARLOS, HELOA, LIVIA G, KAUÃ, VINICIUS|3ºB|-Apresentação<br>- PROTOTIPO WEB e Mobile|
 |MALHARIA SÃO JOSE | ALICE, LETICIA, NATALIA, PIETRA, NICOLAS, MURIOLO, HENRIQUE|3ºB|-Apresentação<br>- Protótipo Mobile e WEB (Cliente/Funcionario)|
+|EDUCA FINANÇA| SAYURI, MIRELLA, JULIA G|3ºA|-Apresentação<br>- PROTOTIPO FIGMA (Mobile) <br> - Site|
+|BIBLIOTECH | ANA LIVIA, CAROLINE, ISABELA, STEFFANI|3ºB|-Apresentação<br>- PROTOTIPO WEB e Mobile|
 

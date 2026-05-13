@@ -1,4 +1,4 @@
-# Aula04 - Digialiszação do trabalho em gruos
+# Aula04 - Digitalização do trabalho em grupos
 Volte a grupo que fez em papel o trabalho da aula01 e utilizando o draw.io ilustre os requisitos funcionais com Diagramas de caso de uso e crie os wireframes.
 
 ### Identificar requisitos (Word)
@@ -28,7 +28,9 @@ Apresentando os custos da implantação do pojeto
     - Requisitos funcionais.
     - Requisitos não funcionais.
 - Desenhar um esboço das telas do sistema
+### [Formatação ABNT](./abnt.md)
+### [Exemplo de documento de requisitos em Word](./documento-requisitos.docx)
+### [Exemplo de documento de requisitos em PDF](./documento-requisitos.pdf)
 
 ## Entregas
-Exporte seu documento para PDF e envie neste [Formulário]()
-
+Exporte seu documento para PDF e envie neste [Formulário](https://forms.gle/A2NxXeZU1vasr9ft8)

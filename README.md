@@ -1,5 +1,7 @@
 # Repositório com materiais de aulas (códigos, exercícios, desafios e atividades)
 
+## [Pesquisa: Como é estudar na sua escola](https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fforms.cloud.microsoft%2Fr%2FVnaL8LbrDw&data=05%7C02%7Cwellington.martins%40sp.senai.br%7Cab1f4b10cb5d4063fe2b08deaba061ca%7C4148a6de0dd14d04a4c578e374e4f6d6%7C0%7C0%7C639136902487397830%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=4BgJBWQZH0NTqfk96nCZOrQ2g6KfzaXVGJVZxlYJZUg%3D&reserved=0)
+
 ## Tópicos
 - [Manual do Aluno](https://github.com/wellifabio/senai2025/blob/main/assets/ManualdoAluno2025_V.1.pdf)
 - Acesso ao [Meu SENAI](https://meusenai.senai.br/)

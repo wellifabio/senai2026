@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Estacionamento ACME</title>
+</head>
+
+<body>
+    <header>
+        <h1>Estacionamento ACME</h1>
+        <nav>
+            <button onclick="window.location.href='./estadias/'">Estadias</button>
+            <button onclick="window.location.href='./automoveis/'">Automóveis</button>
+        </nav>
+    </header>
+    <main>
+        <div id="vagas">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Estacionamento ACME. Todos os direitos reservados.</p>
+    </footer>
+    <div id="modalEntrada" class="modal oculto">
+        <div class="janela">
+            <h2 id="modal-titulo">Registrar estadia</h2>
+            <form id="form-entrada" onsubmit="salvarEntrada(event)">
+                <input type="hidden" id="vaga" name="vaga">
+                <div>
+                    <label for="placa">Placa:</label>
+                    <input type="text" id="placa" name="placa" list="placas" placeholder="Digite ou selecione a placa" required>
+                    <datalist id="placas">
+                    </datalist>
+                </div>
+                <div>
+                    <label for="entrada">Entrada:</label>
+                    <input type="datetime-local" id="entrada" name="entrada" required>
+                </div>
+                <div>
+                    <label for="valorHora">Valor por Hora:</label>
+                    <input type="number" id="valorHora" name="valorHora" step="0.01" min="0" max="10000" required>
+                </div>
+                <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+                    <button type="button" onclick="modalEntrada.classList.add('oculto')">Cancelar</button>
+                    <button type="submit">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="modalSaida" class="modal oculto">
+        <div class="janela">
+            <h2 id="modal-titulo">Registrar Saída</h2>
+            <form id="form-saida" onsubmit="salvarSaida(event)">
+                <input type="hidden" id="id" name="id">
+                <div>
+                    <label for="placas">Placa:</label>
+                    <input type="text" id="placas" name="placas" disabled>
+                </div>
+                <div>
+                    <label for="entradas">Entrada:</label>
+                    <input type="text" id="entradas" name="entradas" disabled>
+                </div>
+                <div>
+                    <label for="saidas">Saída:</label>
+                    <input type="datetime-local" id="saidas" name="saidas">
+                </div>
+                <div>
+                    <label for="valorTotal">Valor Total:</label>
+                    <input type="number" id="valorTotal" name="valorTotal" step="0.01" min="0" max="10000" required>
+                </div>
+
+                <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+                    <button type="button" onclick="modalSaida.classList.add('oculto')">Cancelar</button>
+                    <button type="submit">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -28,7 +28,7 @@ Broadcast:192.168.2.255
 Range: 256
 ```
 
-# Exercícios
+## Exercícios com máscadas básicas
 A partir dos endereços IP a seguir informe: Gateway, Broadcast e Escopo/Range (Total de hosts)
 
 - 1 IP: 192.168.0.3/24

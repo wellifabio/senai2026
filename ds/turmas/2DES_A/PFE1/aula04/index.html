@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify SESI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <h2 class="logo">Spotify SESI</h2>
+            <nav class="menu">
+                <input type="text" id="busca" placeholder="Buscar musica..." class="search-input">
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header>
+                <h1>Resultados da Busca</h1>
+            </header>
+            <section id="grid-musicas" class="music-grid"></section>
+        </main>
+    </div>
+    <footer class="player-bar">
+        <div class="now-playing">
+            <p id="track-info">Nenhuma música tocando</p>
+        </div>
+        <div class="audio-controls">
+            <audio id="audio-player" controls></audio>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

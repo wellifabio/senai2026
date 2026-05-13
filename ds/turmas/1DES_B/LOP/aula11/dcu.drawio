@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="hG0RAqh0jLYIEBzMeRsc">
+    <mxGraphModel dx="1414" dy="777" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mWYCp9e6NlQQsNRwGxeB-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;" value="Cliente" vertex="1">
+          <mxGeometry height="60" width="30" x="150" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="mWYCp9e6NlQQsNRwGxeB-2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;" value="Assistente" vertex="1">
+          <mxGeometry height="60" width="30" x="150" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="mWYCp9e6NlQQsNRwGxeB-3" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;" value="Gerente" vertex="1">
+          <mxGeometry height="60" width="30" x="150" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="mWYCp9e6NlQQsNRwGxeB-4" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;" value="Cliente" vertex="1">
+          <mxGeometry height="60" width="30" x="150" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="mWYCp9e6NlQQsNRwGxeB-8" edge="1" parent="1" source="mWYCp9e6NlQQsNRwGxeB-5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;dashed=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;" target="mWYCp9e6NlQQsNRwGxeB-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mWYCp9e6NlQQsNRwGxeB-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;" value="&lt;div&gt;[RF001]&lt;/div&gt;Cadastrar produtos" vertex="1">
+          <mxGeometry height="70" width="140" x="270" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="mWYCp9e6NlQQsNRwGxeB-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;" value="&lt;div&gt;[RF002]&lt;/div&gt;Fazer Login" vertex="1">
+          <mxGeometry height="70" width="140" x="500" y="69" as="geometry" />
+        </mxCell>
+        <mxCell id="mWYCp9e6NlQQsNRwGxeB-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;" value="&lt;div&gt;[RF002]&lt;/div&gt;Preencher dados obrigatórios" vertex="1">
+          <mxGeometry height="70" width="140" x="490" y="186" as="geometry" />
+        </mxCell>
+        <mxCell id="mWYCp9e6NlQQsNRwGxeB-9" edge="1" parent="1" source="mWYCp9e6NlQQsNRwGxeB-5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;dashed=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;entryX=0;entryY=0;entryDx=0;entryDy=0;" target="mWYCp9e6NlQQsNRwGxeB-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mWYCp9e6NlQQsNRwGxeB-10" edge="1" parent="1" source="mWYCp9e6NlQQsNRwGxeB-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="mWYCp9e6NlQQsNRwGxeB-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="458" y="147" as="sourcePoint" />
+            <mxPoint x="554" y="125" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

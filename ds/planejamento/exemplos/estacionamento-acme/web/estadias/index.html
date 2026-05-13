@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Estacionamento ACME</title>
+</head>
+
+<body>
+    <header>
+        <h1>Estadias</h1>
+        <nav>
+            <a href="../">Home</a>
+            <button onclick="modalAdd.classList.remove('oculto')">+ Adicionar</button>
+            <button onclick="window.location.href='../automoveis/'">Automóveis</button>
+        </nav>
+    </header>
+    <main>
+        <input type="text" style="width: 100%; padding: 10px;" id="filtro" placeholder="Filtrar por placa ou entrada..."
+            onchange="filtrar(this.value)">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Placa</th>
+                    <th>Entrada</th>
+                    <th>Saída</th>
+                    <th>Valor Hora</th>
+                    <th>Valor Total</th>
+                    <th>Vaga</th>
+                    <th style="text-align: center;">Ações</th>
+                </tr>
+            </thead>
+            <tbody id="corpo-estadias">
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2023 Estacionamento ACME. Todos os direitos reservados.</p>
+    </footer>
+    <div id="modalAdd" class="modal oculto">
+        <div class="janela">
+            <h2 id="modal-titulo">Adicionar Estadia</h2>
+            <form id="form-estadia">
+                <div>
+                    <label for="placa">Placa:</label>
+                    <input type="text" id="placa" name="placa" required>
+                </div>
+                <div>
+                    <label for="entrada">Entrada:</label>
+                    <input type="datetime-local" id="entrada" name="entrada" required>
+                </div>
+                <div>
+                    <label for="saida">Saída:</label>
+                    <input type="datetime-local" id="saida" name="saida">
+                </div>
+                <div>
+                    <label for="valorHora">Valor por Hora:</label>
+                    <input type="number" id="valorHora" name="valorHora" step="0.01" min="0" max="10000" required>
+                </div>
+                <div>
+                    <label for="vaga">Vaga:</label>
+                    <select name="vaga" id="vaga">
+                        <option value="">Selecione uma vaga</option>
+                        <option value="C1">Carro C1</option>
+                        <option value="C2">Carro C2</option>
+                        <option value="C3">Carro C3</option>
+                        <option value="C4">Carro C4</option>
+                        <option value="C5">Carro C5</option>
+                        <option value="C6">Carro C6</option>
+                        <option value="C7">Carro C7</option>
+                        <option value="C8">Carro C8</option>
+                        <option value="C9">Carro C9</option>
+                        <option value="C10">Carro C10</option>
+                        <option value="M1">Moto M1</option>
+                        <option value="M2">Moto M2</option>
+                        <option value="M3">Moto M3</option>
+                        <option value="M4">Moto M4</option>
+                        <option value="M5">Moto M5</option>
+                    </select>
+                </div>
+                <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+                    <button type="button" onclick="modalAdd.classList.add('oculto')">Cancelar</button>
+                    <button type="submit">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="modalEdit" class="modal oculto">
+        <div class="janela">
+            <h2 id="modal-titulo">Editar Estadia</h2>
+            <form id="form-estadia-edit">
+                <input type="hidden" id="id" name="id">
+                <div>
+                    <label for="placae">Placa:</label>
+                    <input type="text" id="placae" name="placae" disabled>
+                </div>
+                <div>
+                    <label for="entradae">Entrada:</label>
+                    <input type="datetime-local" id="entradae" name="entradae" required>
+                </div>
+                <div>
+                    <label for="saidae">Saída:</label>
+                    <input type="datetime-local" id="saidae" name="saidae">
+                </div>
+                <div>
+                    <label for="valorTotal">Valor Total:</label>
+                    <input type="number" id="valorTotal" name="valorTotal" step="0.01" min="0" max="10000" required>
+                </div>
+
+                <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+                    <button type="button" onclick="modalEdit.classList.add('oculto')">Cancelar</button>
+                    <button type="submit">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

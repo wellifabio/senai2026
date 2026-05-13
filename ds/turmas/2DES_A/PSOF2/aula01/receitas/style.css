@@ -118,3 +118,10 @@ button {
 .oculto {
     display: none;
 }
+#imgReceita{
+    max-width: 100%;
+    max-height: 250px;
+    display: block;
+    margin: 10px auto;
+    object-fit: cover;
+}

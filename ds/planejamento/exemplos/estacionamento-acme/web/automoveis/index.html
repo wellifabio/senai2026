@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Estacionamento ACME</title>
+</head>
+
+<body>
+    <header>
+        <h1>Automóveis</h1>
+        <nav>
+            <a href="../">Home</a>
+            <button onclick="modalAdd.classList.remove('oculto')">+ Adicionar</button>
+            <button onclick="window.location.href='../estadias/'">Estadias</button>
+        </nav>
+    </header>
+    <main>
+        <input type="text" style="width: 100%; padding: 10px;" id="filtro" placeholder="Filtrar por placa, tipo, modelo ou proprietário..."
+            onchange="filtrar(this.value)">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Placa</th>
+                    <th>Tipo</th>
+                    <th>Proprietário</th>
+                    <th>Telefone</th>
+                    <th>Modelo</th>
+                    <th>Marca</th>
+                    <th>Cor</th>
+                    <th>Ano</th>
+                    <th style="text-align: center;">Ações</th>
+                </tr>
+            </thead>
+            <tbody id="corpo-automoveis">
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2023 Estacionamento ACME. Todos os direitos reservados.</p>
+    </footer>
+    <div id="modalAdd" class="modal oculto">
+        <div class="janela">
+            <h2 id="modal-titulo">Adicionar Automóvel</h2>
+            <form id="form-automovel">
+                <div>
+                    <label for="placa">Placa:</label>
+                    <input type="text" id="placa" name="placa" required>
+                </div>
+                <div>
+                    <label for="tipo">Tipo:</label>
+                    <select name="tipo" id="tipo" required>
+                        <option value="">Selecione o tipo</option>
+                        <option value="CARRO">Carro</option>
+                        <option value="MOTO">Moto</option>
+                        <option value="VAN">Van</option>
+                        <option value="CAMINHAO">Caminhão</option>
+                        <option value="ONIBUS">Ônibus</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="proprietario">Proprietário:</label>
+                    <input type="text" id="proprietario" name="proprietario" required>
+                </div>
+
+                <div>
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" name="telefone" required>
+                </div>
+
+                <div>
+                    <label for="modelo">Modelo:</label>
+                    <input type="text" id="modelo" name="modelo" required>
+                </div>
+
+                <div>
+                    <label for="marca">Marca:</label>
+                    <input type="text" id="marca" name="marca">
+                </div>
+
+                <div>
+                    <label for="cor">Cor:</label>
+                    <input type="text" id="cor" name="cor">
+                </div>
+
+                <div>
+                    <label for="ano">Ano:</label>
+                    <input type="number" id="ano" name="ano" step="1" min="1900" max="2100">
+                </div>
+
+                <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+                    <button type="button" onclick="modalAdd.classList.add('oculto')">Cancelar</button>
+                    <button type="submit">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="modalDealhes" class="modal oculto">
+        <div class="janela">
+            <h2 id="estadias-titulo">Estadias</h2>
+            <div id="cards-estadias">
+                <!-- Estadias do automóvel serão inseridas aqui dinamicamente -->
+            </div>
+            <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+                <button type="button" onclick="modalDealhes.classList.add('oculto')">Fechar</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+const prisma = require("../data/prisma");
+
+const cadastrar = async (req, res) => {
+    const data = req.body;
+
+    const item = await prisma.estadia.create({
+        data
+    });
+
+    res.json(item).status(201).end();
+};
+
+const listar = async (req, res) => {
+    const lista = await prisma.estadia.findMany({
+        orderBy: { id: 'desc' }
+    });
+
+    res.json(lista).status(200).end();
+};
+
+const listarAtivos = async (req, res) => {
+    const lista = await prisma.estadia.findMany({
+        where: { saida: null }, include: { automovel: true }, orderBy: { id: 'desc' }
+    });
+
+    res.json(lista).status(200).end();
+};
+
+const buscar = async (req, res) => {
+    const { id } = req.params;
+
+    const item = await prisma.estadia.findUnique({
+        where: { id: Number(id) }
+    });
+
+    res.json(item).status(200).end();
+};
+
+const atualizar = async (req, res) => {
+    const { id } = req.params;
+    const dados = req.body;
+
+    const item = await prisma.estadia.update({
+        where: { id: Number(id) },
+        data: dados
+    });
+
+    res.json(item).status(200).end();
+};
+
+const excluir = async (req, res) => {
+    const { id } = req.params;
+
+    const item = await prisma.estadia.delete({
+        where: { id: Number(id) }
+    });
+
+    res.json(item).status(200).end();
+};
+
+module.exports = {
+    cadastrar,
+    listar,
+    listarAtivos,
+    buscar,
+    atualizar,
+    excluir
+}

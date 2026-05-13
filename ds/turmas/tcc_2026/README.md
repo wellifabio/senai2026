@@ -1,6 +1,7 @@
 # Apresentações
 
-## Apresentação inicial 08/05/2026
+## Apresentação Inicial 08/05/2026
+## Apresentação Final 13/05/2026
 
 |Tema|Grupo|Turma|OBSs|
 |-|-|-|-|
@@ -16,5 +17,5 @@
 |PERSONA SESI | CARLOS, HELOA, LIVIA G, KAUÃ, VINICIUS|3ºB|-Apresentação<br>- PROTOTIPO WEB e Mobile|
 |MALHARIA SÃO JOSE | ALICE, LETICIA, NATALIA, PIETRA, NICOLAS, MURIOLO, HENRIQUE|3ºB|-Apresentação<br>- Protótipo Mobile e WEB (Cliente/Funcionario)|
 |EDUCA FINANÇA| SAYURI, MIRELLA, JULIA G|3ºA|-Apresentação<br>- PROTOTIPO FIGMA (Mobile) <br> - Site|
-|BIBLIOTECH | ANA LIVIA, CAROLINE, ISABELA, STEFFANI|3ºB|-Apresentação<br>- PROTOTIPO WEB e Mobile|
+|BIBLIOTECH | ANA LIVIA, CAROLINE, ISABELA, STEFFANI|3ºB|-Apresentação<br>- PROTOTIPO Mobile (Canva e Figma|
 

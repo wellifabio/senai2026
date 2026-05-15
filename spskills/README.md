@@ -11,7 +11,9 @@
 - 3º A - Beatriz Albuquerque Marcondes dos Santos
 
 ## [Desafios seletiva local](./preselecao.md)
-## [Cronograma de treinamentos - seletiva paulista](./cronograma.md)
+## [Cronograma inicial de treinamentos](./cronograma.md) até a 1ª seletiva
+## Simulados
+- [Prova de índice - Design Figma A2 Tablet](./provas-exemplo/case4you/design-A2.pdf)
 
 ## Treinamento
 - 1º Semana - Flutter e Figma Aplicativo de uma tela com formulário
@@ -32,10 +34,24 @@
     - Exemplo de um [app de arrastar e soltar (drag 7 drop) com listas](https://github.com/wellifabio/flutter_drag_listas_2026.git).
     - Exemplo de un [app de quiz com mockup api, drag and drop e outros recursos](https://github.com/wellifabio/flutter_quiz_mock_api_drag_2026.git), siga as instruções em README.md para testar, estude o App e faça a atividade proposta.
     - Exemplo de um [app com splash, login, gridview, Cards e carrinho de compras](https://github.com/wellifabio/flutter_cart_api_whats_2026.git), siga as instruções em README.md para testar, estude o App e faça a atividade proposta.
-- 5º Testes de integração automatizados
+- 5º Semana - Testes de integração automatizados
     - Exemplo de um [app com uma calculadora de financiamentos, POO, Salvar arquivo local e testes automatizados](https://github.com/wellifabio/flutter_testes_simples_financiamentos_2026.git), siga as instruções em README.md para testar, estude o App e faça a atividade proposta.
 
 ## [1º WorkShop, Pompéia SP](./workshop-popeia.md)
-
-## Simulados
-- [Prova de índice - Design Figma A2 Tablet](./provas-exemplo/case4you/design-A2.pdf)
+- 6º Semana - Projeto **Aprender +**
+    - Avaliação A1, acesse o repositório do [projeto teste](https://github.com/wellifabio/senai_prep_seletiva_spskills_2026.git) clone o repositório, Acesse o arquivo A1_Funcionalidades/A1_Funcionalidades.pdf desenvolva um novo App flutter com as especificações e requisitos, utilize a guia de estilos e os Media-Files.
+    - Tirar dúvidas com colegas, professores e avaliador
+    - Entregar em um repositório do github, gerar o aquivo .apk e deixar na raíz do projeto para o avaliador testar no celular android.
+- 7º Semana - Projeto **Aprender +**
+    - Avaliação A2, acesse o repositório do [projeto teste](https://github.com/wellifabio/senai_prep_seletiva_spskills_2026.git) clone o repositório, Acesse o arquivo A2_Funcionalidades/A2_Funcionalidades.pdf desenvolva um novo App flutter com as especificações e requisitos, instale e execute a **API** no seu computador, utilize a guia de estilos e os Media-Files.
+    - Tirar dúvidas com colegas, professores e avaliador
+    - Entregar em um repositório do github, gerar o aquivo .apk e deixar na raíz do projeto para o avaliador testar no celular android.
+- 8º Semana - Projeto **Aprender +**
+    - Avaliação D1, acesse o repositório do [projeto teste](https://github.com/wellifabio/senai_prep_seletiva_spskills_2026.git) clone o repositório, Acesse o arquivo D1_Testes/D1_Testes.pdf desenvolva um novo App flutter com as especificações e requisitos, utilize a guia de estilos e os Media-Files.
+    - Crie um script de testes chamado **integration_test/teste_script.dart**
+    - Tirar dúvidas com colegas, professores e avaliador
+    - Entregar em um repositório do github, gerar o aquivo .apk e deixar na raíz do projeto para o avaliador testar no celular android.
+- 9º Semana - Projeto **Aprender +**
+    - Avaliação C1, acesse o repositório do [projeto teste](https://github.com/wellifabio/senai_prep_seletiva_spskills_2026.git) clone o repositório, Acesse o arquivo C1_Implementações/C1_Implementacoes.pdf desenvolva um novo App flutter com as especificações e requisitos, utilize a guia de estilos e os Media-Files.
+    - Tirar dúvidas com colegas, professores e avaliador
+    - Entregar em um repositório do github, gerar o aquivo .apk e deixar na raíz do projeto para o avaliador testar no celular android.

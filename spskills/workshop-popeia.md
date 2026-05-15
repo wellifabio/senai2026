@@ -37,7 +37,13 @@ Todos os móduos são de um mesmo tema.
 |14/07|Provas, dois Modulos|
 |15/07|Correção e resultados|
 
-Será utlizada a prova do último [nacioal 2025 A1, A2, C1 ou D1](./provas-exemplo/nacional2025/), sorteio de **dois** módulos de **código flutter**
+Será utlizada a prova do último [nacioal 2025 A1, A2, C1 ou D1](https://github.com/wellifabio/senai_prep_seletiva_spskills_2026.git), sorteio de **dois** módulos de **código flutter**
 
 ### Para o estadual, quem passar na seletiva.
-- Figma, treinar na versão free.
+- **Figma**, treinar na versão free.
+
+## 13, 14 e 15/05 Desenvolvimento das avaliações
+- Três temas
+    - Rede Social
+    - Coleta Seletiva
+    - Delivery de comida

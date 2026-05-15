@@ -29,6 +29,3 @@ Dica de pesquisa: Quais são os direitos fundamentais que ele pode exigir e como
 Foco: Verificação e validação.
 
 Dica de pesquisa: Como ele verifica se os registros (logs) estão sendo guardados corretamente e se as políticas de privacidade não são apenas "enfeite".
-
-## Dicas para a Apresentação:
-Explicar brevemente a LGPD e o Marco Civil e demostrar como estas leis se aplicam ao perfis especificados

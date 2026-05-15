@@ -4,7 +4,6 @@ Tecnologia aplicada à qualidade, rastreabilidade e segurança industrial
 
 ---
 <br>
-<br>
 
 # Contextualização
 
@@ -50,7 +49,6 @@ Estimular os alunos a aplicarem conhecimentos de:
 por meio da construção de soluções voltadas para desafios industriais reais.
 
 ---
-<br>
 <br>
 
 # Entregas Solicitadas
@@ -137,7 +135,6 @@ O pitch deverá seguir os 5 elementos fundamentais abaixo:
 
 ---
 <br>
-<br>
 
 # Critérios de Avaliação
 
@@ -153,7 +150,6 @@ O pitch deverá seguir os 5 elementos fundamentais abaixo:
 **Total: 10,0 pontos**
 
 ---
-<br>
 <br>
 
 # Competências Desenvolvidas

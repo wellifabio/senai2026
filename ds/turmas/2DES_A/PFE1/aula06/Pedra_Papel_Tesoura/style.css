@@ -72,4 +72,109 @@ body{
     animation: opacidade 2s linear;
     animation: rotatez 1s linear;
 }
+.opcao:hover{
+    animation: luzDeFundo 2s ease infinite;
+}
+.teste, .teste1{
+    border-radius: 50%;
+}
+.container-papel{
+    position: absolute;
+    top: -130px;
+    left: -60px;
+}
+.container-tesoura{
+    position: absolute;
+    top: -130px;
+    right: -60px;
+}
+.container-pedra{
+    position: absolute;
+    bottom: -90px;
+}
+.opcao img{
+    width: 100px;
+    transition: 0.5s;
+}
+.opcao :hover{
+    transform: rotateY(360deg);
+}
+.papel{
+    border-color: #07d99d;
+    box-shadow: 0px 7px 0px #71e89a, inset 0px 7px #d6d6d6;
+}
+.pedra{
+    border-color: #dd04ae;
+    box-shadow: 0px 7px 0px #eb31c3, inset 0px 7px #d6d6d6;
+}
+.tesoura{
+    border-color: #f7f316;
+    box-shadow: 0px 7px 0px #e5f369, inset 0px 7px #d6d6d6;
+}
+.regras{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    position:absolute;
+    left: calc(50% - 235px);
+    top: 200px;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    box-shadow: 0px 0px 0px 3000px rgba(0, 0, 0, 0.664);
+    z-index: 2;
+}
+.regras-titulo{
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+.regras-titulo h1{
+    font-family: sans-serif;
+}
+.regras-titulo button{
+    border: none;
+    background-color: transparent;
+}
+.regras-button{
+    position: fixed;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 15px;
+    color: white;
+    transition: linear 0.5s;
+}
+.regras-button:hover{
+    background-color: white;
+    color:#102243;
+
+}
+
+.gameplay{
+    display: none;
+    width: 100%;
+    max-width: 600px;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    z-index: -1;
+}
+.display{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
 

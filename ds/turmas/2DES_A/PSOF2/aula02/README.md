@@ -65,3 +65,6 @@ npm run dev
 node_module
 .env
 ```
+
+## Exemplo de UML
+![UML](./UML.png)

@@ -1,5 +1,6 @@
+<div>
 <video controls src="Hackathon  Uso Consciente do Celular na Escola.mp4" title="Title"></video>
-
+</div>
 # Hackathon — Tecnologia aplicada ao uso consciente do celular no ambiente escolar
 
 ## Sobre o Projeto

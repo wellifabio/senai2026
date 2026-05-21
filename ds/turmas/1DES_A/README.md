@@ -1,7 +1,45 @@
 
-https://forms.office.com/r/Pf4jtFemqR
-
 # 1DES-A (Segundo ano A)
+
+## Alunos
+# 1DES-B (Segundo ano B) [Resultados](https://wellifabio.github.io/resultados/)
+
+## Alunos
+|Matrícula|Nome|
+|-|-|
+|26132246|Ana Beatriz Alves de Lima|
+|26132200|Bianca Giovedy Pagotto|
+|26132302|Breno Frazão Callegari|
+|26132277|Davi Cruz Oliveira|
+|26132197|Eduardo Moretti Varotti|
+|26132286|Gabriela Leticia da Silva|
+|26132281|Geovanna Martins Bertuol|
+|26132340|Giulia de Godoi Silveira|
+|26133020|Giuseppe de Moraes Vieira|
+|26132271|Gustavo Ferelli|
+|26132244|Heitor Dorigan de Angeli|
+|26132204|Helena Politti Rossi|
+|26132220|Isabela Marchiori Ferreira|
+|26132184|Isabelle Caroline Vizeu de Salles|
+|26133029|Larissa Guarizo Tolloto|
+|26132288|Leandro Imenes de Oliveira|
+|26132330|Letícia Aparecida Pinto de Souza|
+|26133024|Liara Guarizo Tolloto|
+|26132248|Luana Gabrielle de Oliveira|
+|26132180|Marina Henrique Moretti|
+|26132269|Matheus Dorigan Paiato|
+|26132202|Maycon Silva Gonçalves de Lima|
+|26132265|Nicolas Augusto dos Reis Lira|
+|26132252|Otávio Augusto Barbosa|
+|26132242|Pedro Henrique Souza Guarizo|
+|26132240|Renan Pavan Fazullo|
+|26133022|Samyra Leite da Silva Ferreira|
+|26132250|Sara de Paula Souza|
+|26132238|Sofia Ohashi Faria|
+|26132275|Tobias Gabriel Bueno de Godoi|
+|26132256|Víctor Henrique Santana Alves|
+|26132304|Vitória Bueno da Silva|
+
 
 ## Emails educacionais
 |Nome|Email

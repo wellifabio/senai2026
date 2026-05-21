@@ -1,8 +1,4 @@
-
-# 1DES-A (Segundo ano A)
-
-## Alunos
-# 1DES-A (Segundo ano B) [Resultados](https://wellifabio.github.io/resultados/)
+# 1DES-A (Segundo ano A) [Resultados](https://wellifabio.github.io/resultados/)
 
 ## Alunos
 |Matrícula|Nome|

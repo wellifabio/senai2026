@@ -1,4 +1,4 @@
-# 2DES A
+# 2DES B
 
 ## Alunos
 |Matrícula|Nome|

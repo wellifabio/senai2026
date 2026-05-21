@@ -1,8 +1,8 @@
-# Hackatohn — Tecnologia aplicada ao uso consciente do celular no ambiente escolar
+# Hackathon — Tecnologia aplicada ao uso consciente do celular no ambiente escolar
 
 ## Sobre o Projeto
 
-O Hackatohn é uma atividade educacional em formato de Hackathon voltada para o desenvolvimento de soluções tecnológicas inovadoras aplicadas ao ambiente escolar.
+O Hackathon é uma atividade educacional em formato de Hackathon voltada para o desenvolvimento de soluções tecnológicas inovadoras aplicadas ao ambiente escolar.
 
 Nesta edição, os alunos terão como desafio criar sistemas, aplicativos, plataformas ou soluções digitais capazes de auxiliar escolas no uso consciente do celular dentro da sala de aula, promovendo equilíbrio entre tecnologia, aprendizagem e convivência escolar.
 

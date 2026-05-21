@@ -1,3 +1,9 @@
+<div>
+  <video>
+ <source src="/shared-assets/videos/flower.mp4" type="video/mp4" />
+</video>
+</div>
+
 # Hackathon — Tecnologia aplicada ao uso consciente do celular no ambiente escolar
 
 ## Sobre o Projeto

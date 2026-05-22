@@ -1,9 +1,14 @@
 # Pedra Papel Tesoura
+Atividade de front-end para aprenser github fork e pullrequest
 
-Vamos criar o jogo Pedra Papel Tesoura utilizando JavaScript
+## Tecnologias
+- VsCode
+- HTML, CSS, JavaScript
 
-Para começarmos clone o repositório
+## Passo a passo para testar
+- Clone o repositório
+- Abra com VsCode
+- Execute o index.html com o Live Server
 
-https://github.com/robsonbsouzaa/Pedra_Papel_Tesoura
-
-## Meet: https://teams.microsoft.com/meet/220055648803576?p=83EkTx4NGgGWmxHGFz
+## Print
+![Print](./images/print.png)

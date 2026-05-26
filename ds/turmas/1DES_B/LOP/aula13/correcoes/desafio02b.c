@@ -13,7 +13,6 @@ int fat(int x){
 void main(){
 	SetConsoleOutputCP(CP_UTF8);
 	int n;
-	char op;
 	printf("Digite um número inteiro maior que 0:\n");
 	scanf("%d", &n);
 	printf("%d! = %d", n, fat(n));

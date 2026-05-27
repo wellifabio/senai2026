@@ -29,10 +29,19 @@
 - Página de login
 - Página home, potegida pelas credenciais
 - Listar Animais enviando o *Bearear token*
-## Agora desenvolver uma UI Flutter
-- Com base nos wireframes.
+- [Site Web Basico de demonstração](./agroweb/)
 
-## Adicionar fontes ao aplicativo
+## Agora desenvolver uma UI Flutter para consumir a API
+- Clone, abra a API e execute o **Swagger** em um VsCode
+- Em sua área de trabalho abra o VsCode, pressione:
+    - CTRL + SHIFT + P
+    - Digite: flutter: New Project
+    - Empty Project
+    - Local: Área de trabalho
+    - Nome: **flutter_agrotech**
+- 
+
+### Adicionar dependencias, fontes e ícone ao aplicativo
 Baixe no google fonts ou deste repositório o arquivo de fonte [PatrickHands](./PatrickHand-Regular.ttf) e salve em /assets/fonts em seu aplicativo
 - Baixe o ícone do aplicativo também e salve em /assets/icone.png
 - Altere o arquivo pubspec.yaml para habilitar baixar as dependências

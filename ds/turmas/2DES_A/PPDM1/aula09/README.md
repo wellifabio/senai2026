@@ -49,7 +49,6 @@ flutter_launcher_icons:
   android: true
   ios: true
   image_path: "assets/icone.png"
-  remove_alpha_ios: true
 
 flutter:
   uses-material-design: true
@@ -59,4 +58,9 @@ flutter:
     - family: PatrickHand
       fonts:
         - asset: assets/fonts/PatrickHand-Regular.ttf
+```
+- De o comando a seguir para atualizar o ícone do aplicativo:
+
+```bash
+dart run flutter_launcher_icons
 ```

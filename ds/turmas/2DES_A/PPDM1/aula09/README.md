@@ -1,4 +1,4 @@
-# [Aula09 - Consumo de API](https://teams.microsoft.com/meet/241313939186417?p=3mYn5S5UvjmDFRMePG)
+# [Aula09 - Consumo de API](https://meet.google.com/nhx-wcmc-tqs)
 ## Assuntos estudados
 - Consumir API REST
 - Estudar documentação de API com Swagger
@@ -31,3 +31,36 @@
 - Listar Animais enviando o *Bearear token*
 ## Agora desenvolver uma UI Flutter
 - Com base nos wireframes.
+
+## Adicionar fontes ao aplicativo
+Baixe no google fonts ou deste repositório o arquivo de fonte [PatrickHands](./PatrickHand-Regular.ttf)
+Salve em /assets/fonts em seu aplicativo
+- Baixe o ícone do aplicativo também
+- Altere o arquivo pubspec.yaml para habilitar o ícone e a fonte
+
+```dart
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icone.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+  fonts:
+    - family: PatrickHand
+      fonts:
+        - asset: assets/fonts/PatrickHand-Regular.ttf
+```
+- De o comando a seguir para atualizar o ícone do aplicativo:
+
+```bash
+dart run flutter_launcher_icons
+```

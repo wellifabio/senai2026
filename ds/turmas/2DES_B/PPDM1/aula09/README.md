@@ -1,4 +1,4 @@
-# [Aula09 - Consumo de API](https://teams.microsoft.com/meet/241313939186417?p=3mYn5S5UvjmDFRMePG)
+# [Aula09 - Consumo de API](https://meet.google.com/nhx-wcmc-tqs)
 ## Assuntos estudados
 - Consumir API REST
 - Estudar documentação de API com Swagger
@@ -31,3 +31,48 @@
 - Listar Animais enviando o *Bearear token*
 ## Agora desenvolver uma UI Flutter
 - Com base nos wireframes.
+
+## Adicionar fontes ao aplicativo
+Baixe no google fonts ou deste repositório o arquivo de fonte [PatrickHands](./PatrickHand-Regular.ttf) e salve em /assets/fonts em seu aplicativo
+- Baixe o ícone do aplicativo também e salve em /assets/icone.png
+- Altere o arquivo pubspec.yaml para habilitar baixar as dependências
+  - ícone - flutter_launcher_icons:
+  - fonte - fonts:
+  - http: metodos CRUD RESC (get, post, put/patch e delete)
+  - shared_preferences: salvar dados localmente entre as telas
+  - intl: conversão de dados JSON
+
+```dart
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.6.0
+  shared_preferences: ^2.5.5
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icone.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+  fonts:
+    - family: PatrickHand
+      fonts:
+      - asset: assets/fonts/PatrickHand-Regular.ttf
+```
+- De os comando a seguir para atualizar as dependências e o ícone do aplicativo:
+
+```bash
+flutter pub get
+dart run flutter_launcher_icons
+```

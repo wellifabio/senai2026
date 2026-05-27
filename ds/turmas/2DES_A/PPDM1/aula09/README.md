@@ -33,12 +33,23 @@
 - Com base nos wireframes.
 
 ## Adicionar fontes ao aplicativo
-Baixe no google fonts ou deste repositório o arquivo de fonte [PatrickHands](./PatrickHand-Regular.ttf)
-Salve em /assets/fonts em seu aplicativo
-- Baixe o ícone do aplicativo também
-- Altere o arquivo pubspec.yaml para habilitar o ícone e a fonte
+Baixe no google fonts ou deste repositório o arquivo de fonte [PatrickHands](./PatrickHand-Regular.ttf) e salve em /assets/fonts em seu aplicativo
+- Baixe o ícone do aplicativo também e salve em /assets/icone.png
+- Altere o arquivo pubspec.yaml para habilitar baixar as dependências
+  - ícone - flutter_launcher_icons:
+  - fonte - fonts:
+  - http: metodos CRUD RESC (get, post, put/patch e delete)
+  - shared_preferences: salvar dados localmente entre as telas
+  - intl: conversão de dados JSON
 
 ```dart
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.6.0
+  shared_preferences: ^2.5.5
+  intl: ^0.20.2
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -57,10 +68,11 @@ flutter:
   fonts:
     - family: PatrickHand
       fonts:
-        - asset: assets/fonts/PatrickHand-Regular.ttf
+      - asset: assets/fonts/PatrickHand-Regular.ttf
 ```
-- De o comando a seguir para atualizar o ícone do aplicativo:
+- De os comando a seguir para atualizar as dependências e o ícone do aplicativo:
 
 ```bash
+flutter pub get
 dart run flutter_launcher_icons
 ```

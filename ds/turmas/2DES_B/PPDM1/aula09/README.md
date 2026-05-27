@@ -99,3 +99,118 @@ flutter:
 flutter pub get
 dart run flutter_launcher_icons
 ```
+
+- Vamos editar os arquivos básicos de cores e estilo estilo
+- colors.dart
+```dart
+import 'package:flutter/material.dart';
+//Escala de Cinza
+abstract class AppColors {
+  static const Color p1 = Color(0xFF000000); // Preto
+  static const Color p2 = Color(0xFF333333); // Cinza esc
+  static const Color p3 = Color(0xFF666666); // Cinza médio
+  static const Color p4 = Color(0xFF999999); // Cinza claro
+  static const Color p5 = Color(0xFFCCCCCC); // Cinza muito claro
+  static const Color p6 = Color(0xFFFFFFFF); // Branco
+}
+```
+- theme.dart
+```dart
+import 'package:flutter/material.dart';
+import 'colors.dart';
+
+abstract class AppTheme {
+  static ThemeData appTheme = ThemeData.light().copyWith(
+    scaffoldBackgroundColor: AppColors.p4,
+    primaryColor: AppColors.p1,
+    appBarTheme: AppBarTheme(
+      backgroundColor: AppColors.p1,
+      foregroundColor: AppColors.p4,
+      titleTextStyle: TextStyle(
+        fontFamily: 'PatrickHand',
+        color: AppColors.p4,
+        fontSize: 26,
+        fontWeight: FontWeight.bold,
+      ),
+    ),
+    textTheme: TextTheme(
+      bodyMedium: TextStyle(
+        fontFamily: 'PatrickHand',
+        color: AppColors.p3,
+        fontSize: 16,
+      ),
+      displayMedium: TextStyle(
+        fontFamily: 'PatrickHand',
+        color: AppColors.p3,
+        fontSize: 16,
+      ),
+      labelMedium: TextStyle(
+        fontFamily: 'PatrickHand',
+        color: AppColors.p3,
+        fontSize: 16,
+      ),
+      titleMedium: TextStyle(
+        fontFamily: 'PatrickHand',
+        color: AppColors.p3,
+        fontSize: 18,
+        fontWeight: FontWeight.bold,
+      ),
+    ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: AppColors.p2,
+        foregroundColor: AppColors.p4,
+        textStyle: TextStyle(fontFamily: 'PatrickHand', fontSize: 22),
+        elevation: 5,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+      ),
+    ),
+    dialogTheme: DialogThemeData(
+      backgroundColor: AppColors.p4,
+      titleTextStyle: TextStyle(
+        fontFamily: 'PatrickHand',
+        color: AppColors.p1,
+        fontSize: 22,
+        fontWeight: FontWeight.bold,
+      ),
+      contentTextStyle: TextStyle(
+        fontFamily: 'PatrickHand',
+        color: AppColors.p2,
+        fontSize: 16,
+      ),
+    ),
+    inputDecorationTheme: InputDecorationTheme(
+      filled: true,
+      fillColor: AppColors.p4,
+      hintStyle: TextStyle(
+        fontFamily: 'PatrickHand',
+        color: AppColors.p2,
+        fontSize: 16,
+      ),
+      labelStyle: TextStyle(
+        fontFamily: 'PatrickHand',
+        color: AppColors.p1,
+        fontSize: 16,
+      ),
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(12),
+        borderSide: BorderSide(color: AppColors.p2, width: 2),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(12),
+        borderSide: BorderSide(color: AppColors.p1, width: 2),
+      ),
+    ),
+    textButtonTheme: TextButtonThemeData(
+      style: TextButton.styleFrom(
+        foregroundColor: AppColors.p1,
+        textStyle: TextStyle(
+          fontFamily: 'PatrickHand',
+          fontSize: 16,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+    ),
+  );
+}
+```

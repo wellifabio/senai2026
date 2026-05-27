@@ -32,102 +32,31 @@
 ## Agora desenvolver uma UI Flutter
 - Com base nos wireframes.
 
-```dart
-import 'package:flutter/material.dart';
-import 'colors.dart';
+## Adicionar fontes ao aplicativo
+Baixe no google fonts ou deste repositório o arquivo de fonte [PatrickHands](./PatrickHand-Regular.ttf)
+Salve em /assets/fonts em seu aplicativo
+- Baixe o ícone do aplicativo também
+- Altere o arquivo pubspec.yaml para habilitar o ícone e a fonte
 
-abstract class AppTheme {
-  static ThemeData appTheme = ThemeData.light().copyWith(
-    scaffoldBackgroundColor: AppColors.p4,
-    primaryColor: AppColors.p1,
-    appBarTheme: AppBarTheme(
-      backgroundColor: AppColors.p1,
-      foregroundColor: AppColors.p4,
-      titleTextStyle: TextStyle(
-        fontFamily: 'PatrickHand',
-        color: AppColors.p4,
-        fontSize: 26,
-        fontWeight: FontWeight.bold,
-      ),
-    ),
-    textTheme: TextTheme(
-      bodyMedium: TextStyle(
-        fontFamily: 'PatrickHand',
-        color: AppColors.p3,
-        fontSize: 16,
-      ),
-      displayMedium: TextStyle(
-        fontFamily: 'PatrickHand',
-        color: AppColors.p3,
-        fontSize: 16,
-      ),
-      labelMedium: TextStyle(
-        fontFamily: 'PatrickHand',
-        color: AppColors.p3,
-        fontSize: 16,
-      ),
-      titleMedium: TextStyle(
-        fontFamily: 'PatrickHand',
-        color: AppColors.p3,
-        fontSize: 18,
-        fontWeight: FontWeight.bold,
-      ),
-    ),
-    elevatedButtonTheme: ElevatedButtonThemeData(
-      style: ElevatedButton.styleFrom(
-        backgroundColor: AppColors.p2,
-        foregroundColor: AppColors.p4,
-        textStyle: TextStyle(fontFamily: 'PatrickHand', fontSize: 22),
-        elevation: 5,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-      ),
-    ),
-    dialogTheme: DialogThemeData(
-      backgroundColor: AppColors.p4,
-      titleTextStyle: TextStyle(
-        fontFamily: 'PatrickHand',
-        color: AppColors.p1,
-        fontSize: 22,
-        fontWeight: FontWeight.bold,
-      ),
-      contentTextStyle: TextStyle(
-        fontFamily: 'PatrickHand',
-        color: AppColors.p2,
-        fontSize: 16,
-      ),
-    ),
-    inputDecorationTheme: InputDecorationTheme(
-      filled: true,
-      fillColor: AppColors.p4,
-      hintStyle: TextStyle(
-        fontFamily: 'PatrickHand',
-        color: AppColors.p2,
-        fontSize: 16,
-      ),
-      labelStyle: TextStyle(
-        fontFamily: 'PatrickHand',
-        color: AppColors.p1,
-        fontSize: 16,
-      ),
-      border: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(12),
-        borderSide: BorderSide(color: AppColors.p2, width: 2),
-      ),
-      focusedBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(12),
-        borderSide: BorderSide(color: AppColors.p1, width: 2),
-      ),
-    ),
-    textButtonTheme: TextButtonThemeData(
-      style: TextButton.styleFrom(
-        foregroundColor: AppColors.p1,
-        textStyle: TextStyle(
-          fontFamily: 'PatrickHand',
-          fontSize: 16,
-          fontWeight: FontWeight.bold,
-        ),
-      ),
-    ),
-  );
-}
+```dart
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icone.png"
+  remove_alpha_ios: true
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+  fonts:
+    - family: PatrickHand
+      fonts:
+        - asset: assets/fonts/PatrickHand-Regular.ttf
 ```

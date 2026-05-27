@@ -39,7 +39,21 @@
     - Empty Project
     - Local: Área de trabalho
     - Nome: **flutter_agrotech**
-- 
+- Agora com dois VsCodes abertos, vamos editar o do **flutter**
+- Crie a seguinte estrutura de pastas e arquivos dentro da pasta **lib**
+```cmd
+lib
+    |-main.dart
+    |-ui
+        |-login.dart 
+        |-home.dart 
+        |-style
+            |-colors.dart 
+            |-theme.dart 
+    |-root
+        |-api.dart
+
+```
 
 ### Adicionar dependencias, fontes e ícone ao aplicativo
 Baixe no google fonts ou deste repositório o arquivo de fonte [PatrickHands](./PatrickHand-Regular.ttf) e salve em /assets/fonts em seu aplicativo
@@ -79,7 +93,7 @@ flutter:
       fonts:
       - asset: assets/fonts/PatrickHand-Regular.ttf
 ```
-- De os comando a seguir para atualizar as dependências e o ícone do aplicativo:
+- De os comandos a seguir para atualizar as dependências e o ícone do aplicativo:
 
 ```bash
 flutter pub get

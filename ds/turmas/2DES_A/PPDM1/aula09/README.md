@@ -71,9 +71,9 @@ flutter:
       - asset: assets/fonts/PatrickHand-Regular.ttf
 ```
 - De os comando a seguir para atualizar as dependências e o ícone do aplicativo:
-- [Projeto iniciado](https://github.com/wellifabio/flutter_agrotech_api_jwt_lista_detalhes_2026.git)
 
 ```bash
 flutter pub get
 dart run flutter_launcher_icons
 ```
+- Aqui está o projeto iniciado em aula anterior[Projeto iniciado](https://github.com/wellifabio/flutter_agrotech_api_jwt_lista_detalhes_2026.git)

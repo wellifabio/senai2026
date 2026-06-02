@@ -1,4 +1,4 @@
-# Aula 14 - Estruturas
+# Aula 14 - [Estruturas](https://meet.google.com/wye-njof-zve)
 
 ## Estruturas
 Estruturas são tipos de dados compostos que permitem agrupar diferentes tipos de dados sob um mesmo nome. Em C, as estruturas são definidas usando a palavra-chave `struct`. Elas são úteis para organizar e representar dados complexos de forma mais clara e eficiente.

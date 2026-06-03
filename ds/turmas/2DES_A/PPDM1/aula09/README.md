@@ -1,4 +1,4 @@
-# [Aula09 - Consumo de API](https://meet.google.com/dgk-rqer-hcg)
+# Aula09 - Consumo de API
 ## Assuntos estudados
 - Consumir API REST
 - Estudar documentação de API com Swagger
@@ -213,4 +213,4 @@ abstract class AppTheme {
 }
 ```
 
-- Aqui está o [projeto iniciado na aula anterior](https://github.com/wellifabio/flutter_agrotech_api_jwt_lista_detalhes_2026.git) somente as telas e o **http.post** de login
+- Aqui está o [projeto iniciado na aula anterior](https://github.com/wellifabio/flutter_agrotech_api_jwt_lista_detalhes_2026.git) somente as telas e o **http.post** de login.

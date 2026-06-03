@@ -1,4 +1,4 @@
-# [Aula09 - Consumo de API](https://meet.google.com/dgk-rqer-hcg)
+# Aula09 - Consumo de API
 ## Assuntos estudados
 - Consumir API REST
 - Estudar documentação de API com Swagger

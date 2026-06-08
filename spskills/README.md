@@ -55,3 +55,5 @@
     - Avaliação C1, acesse o repositório do [projeto teste](https://github.com/wellifabio/senai_prep_seletiva_spskills_2026.git) clone o repositório, Acesse o arquivo C1_Implementações/C1_Implementacoes.pdf desenvolva um novo App flutter com as especificações e requisitos, utilize a guia de estilos e os Media-Files.
     - Tirar dúvidas com colegas, professores e avaliador
     - Entregar em um repositório do github, gerar o aquivo .apk e deixar na raíz do projeto para o avaliador testar no celular android.
+ 
+  ## [Link OneDrive - Avaliador](https://outlook.cloud.microsoft/host/377c982d-9686-450e-9a7c-22aeaf1bc162/7211f19f-262a-42eb-a02e-289956491741)

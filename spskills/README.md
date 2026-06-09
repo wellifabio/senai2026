@@ -1,6 +1,9 @@
 # [SpSkills 2026](https://hgestaoolimpiadaconhecimento.sp.senai.br/Login)
 
-## [Regulamento e Descritivo técnico](https://github.com/wellifabio/senai2024/tree/main/spskills/00-regulamento)
+- [Regulamento](./Regulamento_2026_v5.pdf)
+- [Descritivo técnico](./DT_Estadual.pdf)
+- [Lista de Infraestrutura](./LI_Estadual.pdf)
+- [Lista de Sites Bibliotecas e Documentos](./Lista_de_Sites_Bibliotecas_e_Documentaes_PermitidasV126022026.pdf)
 
 ## Competidores locais SESI Amparo + SENAI Jaguariúna
 - 3º B - Nicollas Felisbelo da Silva

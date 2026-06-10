@@ -1,4 +1,4 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
 import { 
     getAuth, 
     createUserWithEmailAndPassword, 
@@ -7,7 +7,7 @@ import {
     GoogleAuthProvider, 
     onAuthStateChanged, 
     signOut 
-} from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+} from "https://www.gstatic.com/firebasejs/12.14.0/firebase-auth.js";
 import { 
     getFirestore, 
     collection, 
@@ -15,10 +15,15 @@ import {
     query, 
     orderBy, 
     onSnapshot 
-} from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+} from "https://www.gstatic.com/firebasejs/12.14.0/firebase-firestore.js";
 
  const firebaseConfig = {
- //Colocar as informações do firebase
+    apiKey: "AIzaSyC9LSd8f-C2rbgRY5NUoYkRpNJnWhCQdDw",
+    authDomain: "sesi3a-48009.firebaseapp.com",
+    projectId: "sesi3a-48009",
+    storageBucket: "sesi3a-48009.firebasestorage.app",
+    messagingSenderId: "801379985934",
+    appId: "1:801379985934:web:2095cab9d0190316c6ea5f"
   };
 
   const app = initializeApp(firebaseConfig);
@@ -123,3 +128,37 @@ onAuthStateChanged(auth,(user) =>{
             console.error(e);
         }
     });
+
+    function carregarCardapio(){
+        const q = query(collection(db,"pizzas"), orderBy("nome", "asc"));
+
+        onSnapshot(q,(snapshot)=>{
+            pizzaGrid.innerHTML='';
+            if(snapshot.empty){
+                pizzaGrid.innerHTML = '<p class = "loading-text">Nenhuma pizza encontrada</p>';
+                return;
+            }
+
+            snapshot.forEach((doc)=>{
+                const p = doc.data();
+                const imgUrl = p.imagem || 'https://cdn0.tudoreceitas.com/pt/posts/9/8/3/pizza_calabresa_e_mussarela_4389_600.jpg';
+
+                const classeBadge = p.tipo === 'Doce' ? 'badge doce' : 'badge';
+
+                const card = document.createElement('div');
+                card.classList.add('pizza-card');
+                card.innerHTML = `
+                <img src = "${imgUrl}" class="pizza-img" alt = "${p.nome}">
+                <div class = "pizza-info">
+                <h4>${p.nome}</h4>
+                <p class = "pizza-desc">${p.ingredientes}</p>
+                <div class = "pizza-meta">
+                    <span class = "pizza-price"> R$ ${parseFloat(p.preco).toFixed(2)}</span>
+                    <span class = "${classeBadge}">${p.tipo}</span>
+                </div>
+                </div>
+                `;
+                pizzaGrid.appendChild(card);
+            });
+        });
+    }

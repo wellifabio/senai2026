@@ -59,6 +59,14 @@
 ### 3 Resumo
 Além das horas específicas dedicadas a treinamento, também serão 8 horas semanais de aulas de programação mobile e front-end trabalhando competências relevantes para a modalidade somando **88 horas** até a seletiva.
 Carga estimada até final de **maio**: aproximadamente **72 horas** estruturadas de treinamento, mais 88 horas de componentes correlatos, totalizando **160 horas**.
+
+## Modalidade #08 - Alteração na tabela
+|Conteúdos das provas|Provas|
+|-|-|
+|Desenvolvimento/Funcionalidade - Consumo de APIs, JSON, Firebase|A1 Celular, A2 Tablet|
+|Design/Figma - Somente no estadual, para quem passar na seletiva|B1 Celular, B2 Tablet|
+|Implementações - Sensores, GPS, Localização, Câmera ...|C1 celular|
+
 ### WorkShop - Sâo Caetano
 - Simulados
 ### Cronograma até Seletiva (Provas da seletiva - Tema: Educação)

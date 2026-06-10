@@ -18,12 +18,7 @@ import {
 } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-firestore.js";
 
  const firebaseConfig = {
-    apiKey: "AIzaSyC9LSd8f-C2rbgRY5NUoYkRpNJnWhCQdDw",
-    authDomain: "sesi3a-48009.firebaseapp.com",
-    projectId: "sesi3a-48009",
-    storageBucket: "sesi3a-48009.firebasestorage.app",
-    messagingSenderId: "801379985934",
-    appId: "1:801379985934:web:2095cab9d0190316c6ea5f"
+   //colocar as suas keys e auth
   };
 
   const app = initializeApp(firebaseConfig);

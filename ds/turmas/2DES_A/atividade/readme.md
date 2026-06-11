@@ -1,6 +1,5 @@
-# Aula02 - Projeto Full Stack
-
-### Situação de aprendizagem desafiadora
+# Atividade
+## Situação de aprendizagem desafiadora
 
 ## Objetivo
 

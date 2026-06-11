@@ -203,19 +203,3 @@ Você deverá efetuar as entregas no seguinte formato:
   - Arquivo **README.md** com a documentação do projeto.
 
 ---
-
-## Avaliação
-
-| Nº | Nome da entrega | Pontos | Pontos obtidos |
-|----|-----------------|:------:|:--------------:|
-| 1 | Back-end com conexão com banco de dados | 25 | |
-| 2 | Tela principal do sistema | 10 | |
-| 3 | Cadastro de quarto | 10 | |
-| 4 | Listagem de quartos | 10 | |
-| 5 | Exclusão de quarto | 10 | |
-| 6 | Tela de reservas do quarto | 10 | |
-| 7 | Listagem de reservas | 10 | |
-| 8 | Cadastro de reserva | 10 | |
-| 9 | Exclusão de reserva | 5 | |
-| 10 | Lista de requisitos de infraestrutura | 10 | |
-| **Total** | | **100** | **0** |

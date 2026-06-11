@@ -177,7 +177,7 @@ Você deverá documentar:
 
 # Relacionamento
 
-- Um quarto pode possuir várias reservas.
+- Um quarto pode possuir várias reservas..
 - Uma reserva pertence a apenas um quarto.
 
 ---
@@ -186,7 +186,9 @@ Você deverá documentar:
 
 A imagem abaixo apresenta uma proposta visual para o sistema e pode ser utilizada como referência para o desenvolvimento das telas.
 
-![Protótipo Hotel Reservas](/telas.png)
+<div align = "center">
+<img src = "telas.png">
+</div>
 
 ---
 

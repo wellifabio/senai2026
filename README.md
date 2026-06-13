@@ -46,7 +46,7 @@ Para acesso a todos os recursos siga os passos (Intranet SENAI, Menu lateral **B
     - aluno do SENAI em faze final de formação
     - aluno de graduação ou já se formou em qualquer instituição de ensino.
     - possui conhecimentos ou habilidades e deseja trabalhar no SENAI.
-- [Banco de Talentos]([https://sesisenaisp.jobs.recrut.ai/](https://www.senai.portaldaindustria.com.br/para-voce/vagas-e-carreira)
+- [Banco de Talentos](https://www.senai.portaldaindustria.com.br/para-voce/vagas-e-carreira)
 - [Banco de Talentos PCD](https://sesisenaisp.jobs.recrut.ai/job/LKJV4W)
 
 ## GitHub dos outros professores do SENAI Jaguariúna

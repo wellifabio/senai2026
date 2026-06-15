@@ -9,3 +9,4 @@ Cursos de curta duração
 ## Cursos
 - [PowerBI](./power_bi/)
 - [Office](./office/)
+- [ChatGPT](./chatgpt/)

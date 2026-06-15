@@ -19,7 +19,7 @@
     - Hardware, Redes, Iot
 
 ## OBS
-Os códigos fonte, exemplos e materiais didáticos serão adicionados a este repositório ao longo do ano de 2025, consulte também os repositórios senai2024, senai2023 e senai2022 pois estão repletos de materiais dos anos passados.
+Os códigos fonte, exemplos e materiais didáticos serão adicionados a este repositório ao longo do ano, consulte também os repositórios senai2025, senai2024, senai2023 e senai2022 pois estão repletos de materiais dos anos passados.
 
 ## Plataformas SENAI para acesso a conteúdos digitais
 Para acesso a todos os recursos siga os passos (Intranet SENAI, Menu lateral **Blogs & Wikis, GED - SENAI (Na página vá até o link **Recursos Didáticos**) Rolar a página até o fim.
@@ -46,7 +46,7 @@ Para acesso a todos os recursos siga os passos (Intranet SENAI, Menu lateral **B
     - aluno do SENAI em faze final de formação
     - aluno de graduação ou já se formou em qualquer instituição de ensino.
     - possui conhecimentos ou habilidades e deseja trabalhar no SENAI.
-- [Banco de Talentos](https://sesisenaisp.jobs.recrut.ai/)
+- [Banco de Talentos](https://www.senai.portaldaindustria.com.br/para-voce/vagas-e-carreira)
 - [Banco de Talentos PCD](https://sesisenaisp.jobs.recrut.ai/job/LKJV4W)
 
 ## GitHub dos outros professores do SENAI Jaguariúna

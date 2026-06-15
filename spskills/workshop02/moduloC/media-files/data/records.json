@@ -1,0 +1,62 @@
+[
+  {
+    "id": "REC-20260412-A",
+    "date": "2026-04-12",
+    "status": "completed",
+    "totalCashIn": 438500,
+    "totalDistanceKm": 6.42,
+    "stops": [
+      {
+        "time": "09:10",
+        "spotName": "IFC Tower Loading Bay",
+        "cashInAmount": 120000,
+        "latitude": 22.285522,
+        "longitude": 114.158144
+      },
+      {
+        "time": "10:05",
+        "spotName": "Pacific Place Service Road",
+        "cashInAmount": 166500,
+        "latitude": 22.277813,
+        "longitude": 114.166221
+      },
+      {
+        "time": "11:25",
+        "spotName": "Times Square Cargo Lift",
+        "cashInAmount": 152000,
+        "latitude": 22.278235,
+        "longitude": 114.182853
+      }
+    ]
+  },
+  {
+    "id": "REC-20260413-A",
+    "date": "2026-04-13",
+    "status": "completed",
+    "totalCashIn": 527800,
+    "totalDistanceKm": 7.18,
+    "stops": [
+      {
+        "time": "08:55",
+        "spotName": "Harbour City Gate 3",
+        "cashInAmount": 208000,
+        "latitude": 22.296397,
+        "longitude": 114.168571
+      },
+      {
+        "time": "10:20",
+        "spotName": "Olympian City Delivery Point",
+        "cashInAmount": 145800,
+        "latitude": 22.317847,
+        "longitude": 114.160072
+      },
+      {
+        "time": "11:40",
+        "spotName": "Langham Place Back Entrance",
+        "cashInAmount": 174000,
+        "latitude": 22.319622,
+        "longitude": 114.169626
+      }
+    ]
+  }
+]

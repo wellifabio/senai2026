@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Simon",
+    "avatar": "/images/portrait1.png"
+  },
+  {
+    "name": "Dion",
+    "avatar": "/images/portrait2.png"
+  },
+  {
+    "name": "Sam",
+    "avatar": "/images/portrait3.png"
+  },
+  {
+    "name": "Chris",
+    "avatar": "/images/portrait4.png"
+  },
+  {
+    "name": "Alex",
+    "avatar": "/images/portrait5.png"
+  },
+  {
+    "name": "Ryan",
+    "avatar": "/images/portrait6.png"
+  },
+  {
+    "name": "Kevin",
+    "avatar": "/images/portrait7.png"
+  }
+]

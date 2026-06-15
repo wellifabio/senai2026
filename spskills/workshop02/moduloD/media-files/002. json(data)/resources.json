@@ -1,0 +1,1134 @@
+[
+  {
+    "id": "prop-001",
+    "name": "Alarm Clock",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-01"
+    ]
+  },
+  {
+    "id": "prop-002",
+    "name": "Coffee Maker",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-01"
+    ]
+  },
+  {
+    "id": "prop-003",
+    "name": "Vintage Camera",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-05"
+    ],
+    "description": "Sourced and ready"
+  },
+  {
+    "id": "prop-004",
+    "name": "Family Photo Frame",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-22"
+    ]
+  },
+  {
+    "id": "prop-005",
+    "name": "Smartphone",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-01"
+    ]
+  },
+  {
+    "id": "prop-006",
+    "name": "Kitchen Knife Set",
+    "category": "props",
+    "status": "reserved",
+    "usedInScenes": [
+      "sc-12"
+    ]
+  },
+  {
+    "id": "prop-007",
+    "name": "Dining Table",
+    "category": "props",
+    "status": "reserved",
+    "usedInScenes": [
+      "sc-12"
+    ]
+  },
+  {
+    "id": "prop-008",
+    "name": "Wine Glasses",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-12"
+    ]
+  },
+  {
+    "id": "prop-009",
+    "name": "Sofa Set",
+    "category": "props",
+    "status": "unavailable",
+    "usedInScenes": [
+      "sc-22"
+    ],
+    "description": "Delivery delayed"
+  },
+  {
+    "id": "prop-010",
+    "name": "Car Keys",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-03"
+    ]
+  },
+  {
+    "id": "prop-011",
+    "name": "Briefcase",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-03"
+    ]
+  },
+  {
+    "id": "prop-012",
+    "name": "Park Bench",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-05"
+    ]
+  },
+  {
+    "id": "prop-013",
+    "name": "Laptop Computer",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-18"
+    ]
+  },
+  {
+    "id": "prop-014",
+    "name": "Conference Table",
+    "category": "props",
+    "status": "reserved",
+    "usedInScenes": [
+      "sc-18"
+    ]
+  },
+  {
+    "id": "prop-015",
+    "name": "Reading Lamp",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-22"
+    ]
+  },
+  {
+    "id": "prop-016",
+    "name": "Fine China Set",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-25"
+    ]
+  },
+  {
+    "id": "prop-017",
+    "name": "Champagne Bottle",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-25"
+    ]
+  },
+  {
+    "id": "prop-018",
+    "name": "Breakfast Plates",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-02"
+    ]
+  },
+  {
+    "id": "prop-019",
+    "name": "Coffee Mugs",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-02"
+    ]
+  },
+  {
+    "id": "prop-020",
+    "name": "Coffee Shop Menu",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-04"
+    ]
+  },
+  {
+    "id": "prop-021",
+    "name": "Espresso Machine",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-04"
+    ]
+  },
+  {
+    "id": "prop-022",
+    "name": "Hospital Charts",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-06"
+    ]
+  },
+  {
+    "id": "prop-023",
+    "name": "Waiting Room Magazines",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-06"
+    ]
+  },
+  {
+    "id": "prop-024",
+    "name": "Blanket",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-07"
+    ]
+  },
+  {
+    "id": "prop-025",
+    "name": "Old Books",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-08"
+    ]
+  },
+  {
+    "id": "prop-026",
+    "name": "Research Notebook",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-08"
+    ]
+  },
+  {
+    "id": "prop-027",
+    "name": "Car Dashboard Camera",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-09"
+    ]
+  },
+  {
+    "id": "prop-028",
+    "name": "Warehouse Crates",
+    "category": "props",
+    "status": "reserved",
+    "usedInScenes": [
+      "sc-10"
+    ]
+  },
+  {
+    "id": "prop-029",
+    "name": "Industrial Chains",
+    "category": "props",
+    "status": "reserved",
+    "usedInScenes": [
+      "sc-10"
+    ]
+  },
+  {
+    "id": "prop-030",
+    "name": "Record Player",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-11"
+    ]
+  },
+  {
+    "id": "prop-031",
+    "name": "Basketball",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-13"
+    ]
+  },
+  {
+    "id": "prop-032",
+    "name": "School Banner",
+    "category": "props",
+    "status": "unavailable",
+    "usedInScenes": [
+      "sc-13"
+    ],
+    "description": "Needs custom design"
+  },
+  {
+    "id": "prop-033",
+    "name": "Vintage Suitcase",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-14"
+    ]
+  },
+  {
+    "id": "prop-034",
+    "name": "Train Tickets",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-14"
+    ]
+  },
+  {
+    "id": "prop-035",
+    "name": "Beach Towel",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-15"
+    ]
+  },
+  {
+    "id": "prop-036",
+    "name": "Legal Documents",
+    "category": "props",
+    "status": "reserved",
+    "usedInScenes": [
+      "sc-16"
+    ]
+  },
+  {
+    "id": "prop-037",
+    "name": "Judge Gavel",
+    "category": "props",
+    "status": "reserved",
+    "usedInScenes": [
+      "sc-16"
+    ]
+  },
+  {
+    "id": "prop-038",
+    "name": "News Desk",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-17"
+    ]
+  },
+  {
+    "id": "prop-039",
+    "name": "Studio Microphone",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-17"
+    ]
+  },
+  {
+    "id": "prop-040",
+    "name": "Flower Bouquet",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-19"
+    ]
+  },
+  {
+    "id": "prop-041",
+    "name": "Boarding Pass",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-20"
+    ]
+  },
+  {
+    "id": "prop-042",
+    "name": "Carry-on Luggage",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-20"
+    ]
+  },
+  {
+    "id": "prop-043",
+    "name": "Garden Tables",
+    "category": "props",
+    "status": "reserved",
+    "usedInScenes": [
+      "sc-21"
+    ]
+  },
+  {
+    "id": "prop-044",
+    "name": "Party Decorations",
+    "category": "props",
+    "status": "unavailable",
+    "usedInScenes": [
+      "sc-21"
+    ],
+    "description": "In storage"
+  },
+  {
+    "id": "prop-045",
+    "name": "Champagne Glasses",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-21"
+    ]
+  },
+  {
+    "id": "prop-046",
+    "name": "Envelope",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-23"
+    ]
+  },
+  {
+    "id": "prop-047",
+    "name": "Hospital Bed",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-24"
+    ]
+  },
+  {
+    "id": "prop-048",
+    "name": "Get Well Card",
+    "category": "props",
+    "status": "available",
+    "usedInScenes": [
+      "sc-24"
+    ]
+  },
+  {
+    "id": "cast-001",
+    "name": "Alex Morgan",
+    "category": "cast",
+    "status": "available",
+    "usedInScenes": [
+      "sc-01",
+      "sc-02",
+      "sc-03",
+      "sc-04",
+      "sc-05",
+      "sc-06",
+      "sc-07",
+      "sc-08",
+      "sc-09",
+      "sc-10",
+      "sc-11",
+      "sc-12",
+      "sc-13",
+      "sc-14",
+      "sc-15",
+      "sc-16",
+      "sc-17",
+      "sc-18",
+      "sc-19",
+      "sc-20",
+      "sc-21",
+      "sc-22",
+      "sc-23",
+      "sc-24",
+      "sc-25"
+    ],
+    "description": "Lead Role"
+  },
+  {
+    "id": "cast-002",
+    "name": "Sarah Chen",
+    "category": "cast",
+    "status": "available",
+    "usedInScenes": [
+      "sc-01",
+      "sc-02",
+      "sc-06",
+      "sc-12",
+      "sc-14",
+      "sc-19",
+      "sc-21",
+      "sc-22",
+      "sc-24",
+      "sc-25"
+    ],
+    "description": "Supporting Role"
+  },
+  {
+    "id": "cast-003",
+    "name": "Michael Torres",
+    "category": "cast",
+    "status": "available",
+    "usedInScenes": [
+      "sc-03",
+      "sc-07",
+      "sc-09",
+      "sc-10",
+      "sc-16",
+      "sc-18",
+      "sc-21",
+      "sc-23"
+    ],
+    "description": "Supporting Role"
+  },
+  {
+    "id": "cast-004",
+    "name": "Emma Wilson",
+    "category": "cast",
+    "status": "available",
+    "usedInScenes": [
+      "sc-04",
+      "sc-05",
+      "sc-13",
+      "sc-15",
+      "sc-20",
+      "sc-21",
+      "sc-25"
+    ],
+    "description": "Supporting Role"
+  },
+  {
+    "id": "cast-005",
+    "name": "David Park",
+    "category": "cast",
+    "status": "unavailable",
+    "usedInScenes": [
+      "sc-08",
+      "sc-12"
+    ],
+    "description": "Scheduling conflict"
+  },
+  {
+    "id": "cast-006",
+    "name": "Lisa Johnson",
+    "category": "cast",
+    "status": "available",
+    "usedInScenes": [
+      "sc-10",
+      "sc-18"
+    ],
+    "description": "Minor Role"
+  },
+  {
+    "id": "cast-007",
+    "name": "Robert Kim",
+    "category": "cast",
+    "status": "available",
+    "usedInScenes": [
+      "sc-02"
+    ],
+    "description": "Family Member"
+  },
+  {
+    "id": "cast-008",
+    "name": "Dr. Martinez",
+    "category": "cast",
+    "status": "available",
+    "usedInScenes": [
+      "sc-06",
+      "sc-24"
+    ],
+    "description": "Doctor Role"
+  },
+  {
+    "id": "cast-009",
+    "name": "Young Double",
+    "category": "cast",
+    "status": "available",
+    "usedInScenes": [
+      "sc-13"
+    ],
+    "description": "Flashback version"
+  },
+  {
+    "id": "cast-010",
+    "name": "Judge Harrison",
+    "category": "cast",
+    "status": "available",
+    "usedInScenes": [
+      "sc-16"
+    ],
+    "description": "Judge"
+  },
+  {
+    "id": "cast-011",
+    "name": "Attorney Blake",
+    "category": "cast",
+    "status": "available",
+    "usedInScenes": [
+      "sc-16"
+    ],
+    "description": "Lawyer"
+  },
+  {
+    "id": "cast-012",
+    "name": "News Anchor",
+    "category": "cast",
+    "status": "available",
+    "usedInScenes": [
+      "sc-17"
+    ],
+    "description": "TV Anchor"
+  },
+  {
+    "id": "extra-001",
+    "name": "Street Pedestrian Group A",
+    "category": "extras",
+    "status": "available",
+    "usedInScenes": [
+      "sc-03"
+    ],
+    "description": "10 people"
+  },
+  {
+    "id": "extra-002",
+    "name": "Street Pedestrian Group B",
+    "category": "extras",
+    "status": "available",
+    "usedInScenes": [
+      "sc-03"
+    ],
+    "description": "8 people"
+  },
+  {
+    "id": "extra-003",
+    "name": "Street Vendor",
+    "category": "extras",
+    "status": "available",
+    "usedInScenes": [
+      "sc-03"
+    ],
+    "description": "2 people"
+  },
+  {
+    "id": "extra-004",
+    "name": "Park Joggers",
+    "category": "extras",
+    "status": "available",
+    "usedInScenes": [
+      "sc-05"
+    ],
+    "description": "5 people"
+  },
+  {
+    "id": "extra-005",
+    "name": "Park Family",
+    "category": "extras",
+    "status": "available",
+    "usedInScenes": [
+      "sc-05"
+    ],
+    "description": "4 people"
+  },
+  {
+    "id": "extra-006",
+    "name": "Office Workers",
+    "category": "extras",
+    "status": "available",
+    "usedInScenes": [
+      "sc-18"
+    ],
+    "description": "6 people"
+  },
+  {
+    "id": "extra-007",
+    "name": "Office Secretary",
+    "category": "extras",
+    "status": "available",
+    "usedInScenes": [
+      "sc-18"
+    ],
+    "description": "1 person"
+  },
+  {
+    "id": "extra-008",
+    "name": "Restaurant Diners",
+    "category": "extras",
+    "status": "available",
+    "usedInScenes": [
+      "sc-25"
+    ],
+    "description": "12 people"
+  },
+  {
+    "id": "extra-009",
+    "name": "Restaurant Staff",
+    "category": "extras",
+    "status": "available",
+    "usedInScenes": [
+      "sc-25"
+    ],
+    "description": "3 people"
+  },
+  {
+    "id": "extra-010",
+    "name": "Restaurant Musician",
+    "category": "extras",
+    "status": "available",
+    "usedInScenes": [
+      "sc-25"
+    ],
+    "description": "1 person"
+  },
+  {
+    "id": "extra-011",
+    "name": "Coffee Shop Customers",
+    "category": "extras",
+    "status": "available",
+    "usedInScenes": [
+      "sc-04"
+    ],
+    "description": "8 people"
+  },
+  {
+    "id": "extra-012",
+    "name": "Coffee Shop Barista",
+    "category": "extras",
+    "status": "available",
+    "usedInScenes": [
+      "sc-04"
+    ],
+    "description": "2 people"
+  },
+  {
+    "id": "extra-013",
+    "name": "Hospital Nurses",
+    "category": "extras",
+    "status": "available",
+    "usedInScenes": [
+      "sc-06"
+    ],
+    "description": "3 people"
+  },
+  {
+    "id": "extra-014",
+    "name": "Hospital Visitors",
+    "category": "extras",
+    "status": "available",
+    "usedInScenes": [
+      "sc-06"
+    ],
+    "description": "5 people"
+  },
+  {
+    "id": "extra-015",
+    "name": "Library Patrons",
+    "category": "extras",
+    "status": "available",
+    "usedInScenes": [
+      "sc-08"
+    ],
+    "description": "6 people"
+  },
+  {
+    "id": "extra-016",
+    "name": "Librarian",
+    "category": "extras",
+    "status": "available",
+    "usedInScenes": [
+      "sc-08"
+    ],
+    "description": "1 person"
+  },
+  {
+    "id": "extra-017",
+    "name": "Warehouse Guard",
+    "category": "extras",
+    "status": "available",
+    "usedInScenes": [
+      "sc-10"
+    ],
+    "description": "2 people"
+  },
+  {
+    "id": "extra-018",
+    "name": "High School Students A",
+    "category": "extras",
+    "status": "reserved",
+    "usedInScenes": [
+      "sc-13"
+    ],
+    "description": "15 people"
+  },
+  {
+    "id": "extra-019",
+    "name": "High School Students B",
+    "category": "extras",
+    "status": "reserved",
+    "usedInScenes": [
+      "sc-13"
+    ],
+    "description": "12 people"
+  },
+  {
+    "id": "extra-020",
+    "name": "Coach",
+    "category": "extras",
+    "status": "available",
+    "usedInScenes": [
+      "sc-13"
+    ],
+    "description": "1 person"
+  },
+  {
+    "id": "extra-021",
+    "name": "Train Passengers A",
+    "category": "extras",
+    "status": "available",
+    "usedInScenes": [
+      "sc-14"
+    ],
+    "description": "20 people"
+  },
+  {
+    "id": "extra-022",
+    "name": "Train Passengers B",
+    "category": "extras",
+    "status": "available",
+    "usedInScenes": [
+      "sc-14"
+    ],
+    "description": "15 people"
+  },
+  {
+    "id": "extra-023",
+    "name": "Station Staff",
+    "category": "extras",
+    "status": "available",
+    "usedInScenes": [
+      "sc-14"
+    ],
+    "description": "3 people"
+  },
+  {
+    "id": "extra-024",
+    "name": "Jury Members",
+    "category": "extras",
+    "status": "reserved",
+    "usedInScenes": [
+      "sc-16"
+    ],
+    "description": "12 people"
+  },
+  {
+    "id": "extra-025",
+    "name": "Courtroom Audience",
+    "category": "extras",
+    "status": "reserved",
+    "usedInScenes": [
+      "sc-16"
+    ],
+    "description": "20 people"
+  },
+  {
+    "id": "extra-026",
+    "name": "Court Reporter",
+    "category": "extras",
+    "status": "available",
+    "usedInScenes": [
+      "sc-16"
+    ],
+    "description": "1 person"
+  },
+  {
+    "id": "extra-027",
+    "name": "Camera Crew",
+    "category": "extras",
+    "status": "available",
+    "usedInScenes": [
+      "sc-17"
+    ],
+    "description": "4 people"
+  },
+  {
+    "id": "extra-028",
+    "name": "Airport Travelers A",
+    "category": "extras",
+    "status": "available",
+    "usedInScenes": [
+      "sc-20"
+    ],
+    "description": "30 people"
+  },
+  {
+    "id": "extra-029",
+    "name": "Airport Travelers B",
+    "category": "extras",
+    "status": "available",
+    "usedInScenes": [
+      "sc-20"
+    ],
+    "description": "25 people"
+  },
+  {
+    "id": "extra-030",
+    "name": "Airport Staff",
+    "category": "extras",
+    "status": "available",
+    "usedInScenes": [
+      "sc-20"
+    ],
+    "description": "5 people"
+  },
+  {
+    "id": "extra-031",
+    "name": "Garden Party Guests A",
+    "category": "extras",
+    "status": "reserved",
+    "usedInScenes": [
+      "sc-21"
+    ],
+    "description": "20 people"
+  },
+  {
+    "id": "extra-032",
+    "name": "Garden Party Guests B",
+    "category": "extras",
+    "status": "reserved",
+    "usedInScenes": [
+      "sc-21"
+    ],
+    "description": "18 people"
+  },
+  {
+    "id": "extra-033",
+    "name": "Waiters",
+    "category": "extras",
+    "status": "available",
+    "usedInScenes": [
+      "sc-21"
+    ],
+    "description": "6 people"
+  },
+  {
+    "id": "extra-034",
+    "name": "Musicians",
+    "category": "extras",
+    "status": "unavailable",
+    "usedInScenes": [
+      "sc-21"
+    ],
+    "description": "Not yet booked"
+  },
+  {
+    "id": "loc-001",
+    "name": "Studio A",
+    "category": "locations",
+    "status": "available",
+    "usedInScenes": [
+      "sc-01",
+      "sc-02",
+      "sc-09",
+      "sc-11",
+      "sc-22"
+    ],
+    "description": "Interior sets"
+  },
+  {
+    "id": "loc-002",
+    "name": "Studio B",
+    "category": "locations",
+    "status": "available",
+    "usedInScenes": [
+      "sc-06", 
+      "sc-12", 
+      "sc-17", 
+      "sc-24"
+    ],
+    "description": "Convertible multi-purpose studio set"
+  },
+  {
+    "id": "loc-003",
+    "name": "Downtown City Street",
+    "category": "locations",
+    "status": "available",
+    "usedInScenes": [
+      "sc-03"
+    ],
+    "description": "Permit approved"
+  },
+  {
+    "id": "loc-004",
+    "name": "Central Park",
+    "category": "locations",
+    "status": "available",
+    "usedInScenes": [
+      "sc-05"
+    ],
+    "description": "Weather-dependent"
+  },
+  {
+    "id": "loc-005",
+    "name": "Corporate Office Building",
+    "category": "locations",
+    "status": "reserved",
+    "usedInScenes": [
+      "sc-18"
+    ],
+    "description": "Permit pending"
+  },
+  {
+    "id": "loc-006",
+    "name": "Italian Restaurant",
+    "category": "locations",
+    "status": "reserved",
+    "usedInScenes": [
+      "sc-25"
+    ],
+    "description": "After-hours booking"
+  },
+  {
+    "id": "loc-007",
+    "name": "Coffee Shop",
+    "category": "locations",
+    "status": "available",
+    "usedInScenes": [
+      "sc-04"
+    ],
+    "description": "Permit approved"
+  },
+  {
+    "id": "loc-008",
+    "name": "Building Rooftop",
+    "category": "locations",
+    "status": "available",
+    "usedInScenes": [
+      "sc-07"
+    ],
+    "description": "Safety clearance needed"
+  },
+  {
+    "id": "loc-009",
+    "name": "Public Library",
+    "category": "locations",
+    "status": "available",
+    "usedInScenes": [
+      "sc-08"
+    ],
+    "description": "Quiet hours required"
+  },
+  {
+    "id": "loc-010",
+    "name": "Warehouse",
+    "category": "locations",
+    "status": "reserved",
+    "usedInScenes": [
+      "sc-10"
+    ],
+    "description": "Security arranged"
+  },
+  {
+    "id": "loc-011",
+    "name": "High School Gym",
+    "category": "locations",
+    "status": "reserved",
+    "usedInScenes": [
+      "sc-13"
+    ],
+    "description": "Weekend access"
+  },
+  {
+    "id": "loc-012",
+    "name": "Train Station",
+    "category": "locations",
+    "status": "available",
+    "usedInScenes": [
+      "sc-14"
+    ],
+    "description": "Schedule coordinated"
+  },
+  {
+    "id": "loc-013",
+    "name": "Beach",
+    "category": "locations",
+    "status": "available",
+    "usedInScenes": [
+      "sc-15"
+    ],
+    "description": "Weather-dependent"
+  },
+  {
+    "id": "loc-014",
+    "name": "Courthouse",
+    "category": "locations",
+    "status": "reserved",
+    "usedInScenes": [
+      "sc-16"
+    ],
+    "description": "Official clearance"
+  },
+  {
+    "id": "loc-015",
+    "name": "Cemetery",
+    "category": "locations",
+    "status": "available",
+    "usedInScenes": [
+      "sc-19"
+    ],
+    "description": "Respectful access"
+  },
+  {
+    "id": "loc-016",
+    "name": "Airport Terminal",
+    "category": "locations",
+    "status": "reserved",
+    "usedInScenes": [
+      "sc-20"
+    ],
+    "description": "Security clearance pending"
+  },
+  {
+    "id": "loc-017",
+    "name": "Estate Garden",
+    "category": "locations",
+    "status": "available",
+    "usedInScenes": [
+      "sc-21"
+    ],
+    "description": "Private property"
+  },
+  {
+    "id": "loc-018",
+    "name": "City Bridge",
+    "category": "locations",
+    "status": "reserved",
+    "usedInScenes": [
+      "sc-23"
+    ],
+    "description": "Night permit required"
+  }
+]

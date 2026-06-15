@@ -1,0 +1,47 @@
+{
+  "cards": [
+    {
+      "id": "card_1",
+      "bankName": "Bank of China",
+      "cardNumber": "**** **** **** 4821",
+      "expiry": "12/28",
+      "balance": 8560.75
+    },
+    {
+      "id": "card_2",
+      "bankName": "ICBC",
+      "cardNumber": "**** **** **** 7392",
+      "expiry": "06/27",
+      "balance": 15230.2
+    },
+    {
+      "id": "card_3",
+      "bankName": "China Merchants Bank",
+      "cardNumber": "**** **** **** 1056",
+      "expiry": "09/29",
+      "balance": 4320.5
+    }
+  ],
+  "transactions": [
+    { "type": "expense", "title": "Starbucks", "date": "2026-04-15 09:12", "amount": -38.5, "cardId": "card_1" },
+    { "type": "expense", "title": "7-Eleven", "date": "2026-04-15 08:05", "amount": -18.2, "cardId": "card_2" },
+    { "type": "income", "title": "Salary", "date": "2026-04-14 18:00", "amount": 12000, "cardId": "card_2" },
+    { "type": "expense", "title": "McDonald's", "date": "2026-04-14 12:23", "amount": -45, "cardId": "card_1" },
+    { "type": "expense", "title": "Taxi", "date": "2026-04-13 21:10", "amount": -62.3, "cardId": "card_3" },
+    { "type": "expense", "title": "Amazon", "date": "2026-04-13 16:45", "amount": -230, "cardId": "card_1" },
+    { "type": "income", "title": "Freelance", "date": "2026-04-12 20:30", "amount": 1800, "cardId": "card_3" },
+    { "type": "expense", "title": "Supermarket", "date": "2026-04-12 18:40", "amount": -156.7, "cardId": "card_2" },
+    { "type": "expense", "title": "Netflix", "date": "2026-04-11 19:00", "amount": -55, "cardId": "card_3" },
+    { "type": "income", "title": "Bonus", "date": "2026-04-10 10:00", "amount": 3000, "cardId": "card_2" },
+    { "type": "expense", "title": "Dinner", "date": "2026-04-09 20:15", "amount": -210, "cardId": "card_1" },
+    { "type": "expense", "title": "Gas", "date": "2026-04-08 09:05", "amount": -300, "cardId": "card_2" },
+    { "type": "income", "title": "Dividend", "date": "2026-04-07 11:00", "amount": 520, "cardId": "card_3" },
+    { "type": "expense", "title": "Gym", "date": "2026-04-06 07:30", "amount": -120, "cardId": "card_1" },
+    { "type": "expense", "title": "Bookstore", "date": "2026-04-05 16:10", "amount": -88, "cardId": "card_2" },
+    { "type": "income", "title": "Refund", "date": "2026-04-03 13:45", "amount": 75, "cardId": "card_1" },
+    { "type": "expense", "title": "Electric Bill", "date": "2026-04-02 22:00", "amount": -340, "cardId": "card_2" },
+    { "type": "expense", "title": "Water Bill", "date": "2026-03-30 21:50", "amount": -120, "cardId": "card_3" },
+    { "type": "expense", "title": "Online Course", "date": "2026-03-28 14:20", "amount": -499, "cardId": "card_1" },
+    { "type": "income", "title": "Part-time Job", "date": "2026-03-20 19:00", "amount": 900, "cardId": "card_2" }
+  ]
+}

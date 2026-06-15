@@ -1,0 +1,1285 @@
+[
+  {
+    "id": "sc-01",
+    "sceneNumber": "SC-01",
+    "title": "Opening Scene - Morning Routine",
+    "description": "Protagonist wakes up and prepares for an important day",
+    "location": "Studio A - Interior",
+    "status": "completed",
+    "duration": "5 min",
+    "shotCount": 12,
+    "props": [
+      "prop-001",
+      "prop-002",
+      "prop-005"
+    ],
+    "cast": [
+      "cast-001",
+      "cast-002"
+    ],
+    "extras": [],
+    "locations": [
+      "loc-001"
+    ],
+    "checklist": [
+      {
+        "id": "cl-01-1",
+        "title": "Camera setup complete",
+        "category": "equipment",
+        "status": "completed"
+      },
+      {
+        "id": "cl-01-2",
+        "title": "Bedroom set dressed",
+        "category": "props",
+        "status": "completed"
+      },
+      {
+        "id": "cl-01-3",
+        "title": "Lead actor in costume",
+        "category": "cast",
+        "status": "completed"
+      },
+      {
+        "id": "cl-01-4",
+        "title": "Lighting setup verified",
+        "category": "equipment",
+        "status": "completed"
+      }
+    ],
+    "notes": "Natural morning light required",
+    "pdfUrl": "/conti/sc-01.pdf"
+  },
+  {
+    "id": "sc-02",
+    "sceneNumber": "SC-02",
+    "title": "Breakfast Table",
+    "description": "Family breakfast scene with tension building",
+    "location": "Studio A - Kitchen Set",
+    "status": "completed",
+    "duration": "4 min",
+    "shotCount": 8,
+    "props": [
+      "prop-018",
+      "prop-019"
+    ],
+    "cast": [
+      "cast-001",
+      "cast-002",
+      "cast-007"
+    ],
+    "extras": [],
+    "locations": [
+      "loc-001"
+    ],
+    "checklist": [
+      {
+        "id": "cl-02-1",
+        "title": "Kitchen props setup",
+        "category": "props",
+        "status": "completed"
+      },
+      {
+        "id": "cl-02-2",
+        "title": "Food styling complete",
+        "category": "props",
+        "status": "completed"
+      },
+      {
+        "id": "cl-02-3",
+        "title": "Cast in position",
+        "category": "cast",
+        "status": "completed"
+      },
+      {
+        "id": "cl-02-4",
+        "title": "Audio levels checked",
+        "category": "equipment",
+        "status": "completed"
+      }
+    ],
+    "notes": "Continuity important for following scenes"
+  },
+  {
+    "id": "sc-03",
+    "sceneNumber": "SC-03",
+    "title": "City Street - Chase Sequence",
+    "description": "Fast-paced chase through busy city streets",
+    "location": "Location - City Street",
+    "status": "completed",
+    "duration": "8 min",
+    "shotCount": 24,
+    "props": [
+      "prop-010",
+      "prop-011"
+    ],
+    "cast": [
+      "cast-001",
+      "cast-003"
+    ],
+    "extras": [
+      "extra-001",
+      "extra-002",
+      "extra-003"
+    ],
+    "locations": [
+      "loc-003"
+    ],
+    "checklist": [
+      {
+        "id": "cl-03-1",
+        "title": "Street permits approved",
+        "category": "location",
+        "status": "completed"
+      },
+      {
+        "id": "cl-03-2",
+        "title": "Stunt coordinator briefed",
+        "category": "other",
+        "status": "completed"
+      },
+      {
+        "id": "cl-03-3",
+        "title": "Safety equipment ready",
+        "category": "equipment",
+        "status": "completed"
+      },
+      {
+        "id": "cl-03-4",
+        "title": "Extras in position",
+        "category": "cast",
+        "status": "completed"
+      }
+    ],
+    "notes": "Early morning shoot to avoid crowds"
+  },
+  {
+    "id": "sc-04",
+    "sceneNumber": "SC-04",
+    "title": "Coffee Shop Encounter",
+    "description": "Chance meeting that changes everything",
+    "location": "Location - Coffee Shop",
+    "status": "completed",
+    "duration": "3 min",
+    "shotCount": 9,
+    "props": [
+      "prop-020",
+      "prop-021"
+    ],
+    "cast": [
+      "cast-001",
+      "cast-004"
+    ],
+    "extras": [
+      "extra-011",
+      "extra-012"
+    ],
+    "locations": [
+      "loc-007"
+    ],
+    "checklist": [
+      {
+        "id": "cl-04-1",
+        "title": "Location secured",
+        "category": "location",
+        "status": "completed"
+      },
+      {
+        "id": "cl-04-2",
+        "title": "Coffee shop dressed",
+        "category": "props",
+        "status": "completed"
+      },
+      {
+        "id": "cl-04-3",
+        "title": "Background extras briefed",
+        "category": "cast",
+        "status": "completed"
+      },
+      {
+        "id": "cl-04-4",
+        "title": "Sound baffles installed",
+        "category": "equipment",
+        "status": "completed"
+      }
+    ],
+    "notes": "Intimate atmosphere required"
+  },
+  {
+    "id": "sc-05",
+    "sceneNumber": "SC-05",
+    "title": "Park Confrontation",
+    "description": "Emotional confrontation between two main characters",
+    "location": "Location - Exterior Park",
+    "status": "completed",
+    "duration": "6 min",
+    "shotCount": 15,
+    "props": [
+      "prop-003",
+      "prop-012"
+    ],
+    "cast": [
+      "cast-001",
+      "cast-004"
+    ],
+    "extras": [
+      "extra-004",
+      "extra-005"
+    ],
+    "locations": [
+      "loc-004"
+    ],
+    "checklist": [
+      {
+        "id": "cl-05-1",
+        "title": "Park location secured",
+        "category": "location",
+        "status": "completed"
+      },
+      {
+        "id": "cl-05-2",
+        "title": "Vintage camera available",
+        "category": "props",
+        "status": "completed"
+      },
+      {
+        "id": "cl-05-3",
+        "title": "Period costumes ready",
+        "category": "cast",
+        "status": "completed"
+      },
+      {
+        "id": "cl-05-4",
+        "title": "Sound equipment setup",
+        "category": "equipment",
+        "status": "completed"
+      }
+    ],
+    "notes": "Weather-dependent shoot"
+  },
+  {
+    "id": "sc-06",
+    "sceneNumber": "SC-06",
+    "title": "Hospital Waiting Room",
+    "description": "Anxious waiting for news about a loved one",
+    "location": "Studio B - Hospital Set",
+    "status": "completed",
+    "duration": "5 min",
+    "shotCount": 11,
+    "props": [
+      "prop-022",
+      "prop-023"
+    ],
+    "cast": [
+      "cast-001",
+      "cast-002",
+      "cast-008"
+    ],
+    "extras": [
+      "extra-013",
+      "extra-014"
+    ],
+    "locations": [
+      "loc-002"
+    ],
+    "checklist": [
+      {
+        "id": "cl-06-1",
+        "title": "Hospital set ready",
+        "category": "props",
+        "status": "completed"
+      },
+      {
+        "id": "cl-06-2",
+        "title": "Medical props prepared",
+        "category": "props",
+        "status": "completed"
+      },
+      {
+        "id": "cl-06-3",
+        "title": "Cast in wardrobe",
+        "category": "cast",
+        "status": "completed"
+      },
+      {
+        "id": "cl-06-4",
+        "title": "Fluorescent lighting adjusted",
+        "category": "equipment",
+        "status": "completed"
+      }
+    ],
+    "notes": "Subdued emotional tone"
+  },
+  {
+    "id": "sc-07",
+    "sceneNumber": "SC-07",
+    "title": "Rooftop Confession",
+    "description": "Truth revealed under the night sky",
+    "location": "Location - Building Rooftop",
+    "status": "completed",
+    "duration": "7 min",
+    "shotCount": 13,
+    "props": [
+      "prop-024"
+    ],
+    "cast": [
+      "cast-001",
+      "cast-003"
+    ],
+    "extras": [],
+    "locations": [
+      "loc-008"
+    ],
+    "checklist": [
+      {
+        "id": "cl-07-1",
+        "title": "Rooftop access secured",
+        "category": "location",
+        "status": "completed"
+      },
+      {
+        "id": "cl-07-2",
+        "title": "Night lighting setup",
+        "category": "equipment",
+        "status": "completed"
+      },
+      {
+        "id": "cl-07-3",
+        "title": "Safety harnesses checked",
+        "category": "equipment",
+        "status": "completed"
+      },
+      {
+        "id": "cl-07-4",
+        "title": "Wind protection ready",
+        "category": "equipment",
+        "status": "completed"
+      }
+    ],
+    "notes": "Evening shoot required"
+  },
+  {
+    "id": "sc-08",
+    "sceneNumber": "SC-08",
+    "title": "Library Research Scene",
+    "description": "Uncovering crucial information",
+    "location": "Location - Public Library",
+    "status": "completed",
+    "duration": "4 min",
+    "shotCount": 10,
+    "props": [
+      "prop-025",
+      "prop-026"
+    ],
+    "cast": [
+      "cast-001",
+      "cast-005"
+    ],
+    "extras": [
+      "extra-015",
+      "extra-016"
+    ],
+    "locations": [
+      "loc-009"
+    ],
+    "checklist": [
+      {
+        "id": "cl-08-1",
+        "title": "Library permission granted",
+        "category": "location",
+        "status": "completed"
+      },
+      {
+        "id": "cl-08-2",
+        "title": "Book props organized",
+        "category": "props",
+        "status": "completed"
+      },
+      {
+        "id": "cl-08-3",
+        "title": "Silent equipment ready",
+        "category": "equipment",
+        "status": "completed"
+      },
+      {
+        "id": "cl-08-4",
+        "title": "Extras positioned",
+        "category": "cast",
+        "status": "completed"
+      }
+    ],
+    "notes": "Quiet atmosphere essential"
+  },
+  {
+    "id": "sc-09",
+    "sceneNumber": "SC-09",
+    "title": "Car Interior - Night Drive",
+    "description": "Tense conversation during nighttime drive",
+    "location": "Studio A - Car Interior",
+    "status": "in-progress",
+    "duration": "5 min",
+    "shotCount": 12,
+    "props": [
+      "prop-027"
+    ],
+    "cast": [
+      "cast-001",
+      "cast-003"
+    ],
+    "extras": [],
+    "locations": [
+      "loc-001"
+    ],
+    "checklist": [
+      {
+        "id": "cl-09-1",
+        "title": "Car rig setup",
+        "category": "equipment",
+        "status": "completed"
+      },
+      {
+        "id": "cl-09-2",
+        "title": "Process plates ready",
+        "category": "equipment",
+        "status": "completed"
+      },
+      {
+        "id": "cl-09-3",
+        "title": "Interior lighting mounted",
+        "category": "equipment",
+        "status": "pending"
+      },
+      {
+        "id": "cl-09-4",
+        "title": "Sound recording tested",
+        "category": "equipment",
+        "status": "pending"
+      }
+    ],
+    "notes": "Green screen work required"
+  },
+  {
+    "id": "sc-10",
+    "sceneNumber": "SC-10",
+    "title": "Warehouse Standoff",
+    "description": "Climactic confrontation in abandoned warehouse",
+    "location": "Location - Warehouse",
+    "status": "in-progress",
+    "duration": "9 min",
+    "shotCount": 22,
+    "props": [
+      "prop-028",
+      "prop-029"
+    ],
+    "cast": [
+      "cast-001",
+      "cast-003",
+      "cast-006"
+    ],
+    "extras": [
+      "extra-017"
+    ],
+    "locations": [
+      "loc-010"
+    ],
+    "checklist": [
+      {
+        "id": "cl-10-1",
+        "title": "Warehouse cleared and secured",
+        "category": "location",
+        "status": "completed"
+      },
+      {
+        "id": "cl-10-2",
+        "title": "Atmospheric lighting setup",
+        "category": "equipment",
+        "status": "completed"
+      },
+      {
+        "id": "cl-10-3",
+        "title": "Props weapons ready",
+        "category": "props",
+        "status": "pending"
+      },
+      {
+        "id": "cl-10-4",
+        "title": "Stunt choreography rehearsed",
+        "category": "other",
+        "status": "pending"
+      }
+    ],
+    "notes": "Complex action sequence"
+  },
+  {
+    "id": "sc-11",
+    "sceneNumber": "SC-11",
+    "title": "Apartment Aftermath",
+    "description": "Processing events in quiet solitude",
+    "location": "Studio A - Apartment Set",
+    "status": "completed",
+    "duration": "3 min",
+    "shotCount": 7,
+    "props": [
+      "prop-030"
+    ],
+    "cast": [
+      "cast-001"
+    ],
+    "extras": [],
+    "locations": [
+      "loc-001"
+    ],
+    "checklist": [
+      {
+        "id": "cl-11-1",
+        "title": "Apartment set dressed",
+        "category": "props",
+        "status": "completed"
+      },
+      {
+        "id": "cl-11-2",
+        "title": "Natural lighting setup",
+        "category": "equipment",
+        "status": "completed"
+      },
+      {
+        "id": "cl-11-3",
+        "title": "Actor prepared",
+        "category": "cast",
+        "status": "completed"
+      },
+      {
+        "id": "cl-11-4",
+        "title": "Camera movements planned",
+        "category": "equipment",
+        "status": "completed"
+      }
+    ],
+    "notes": "Minimal dialogue, focus on emotion"
+  },
+  {
+    "id": "sc-12",
+    "sceneNumber": "SC-12",
+    "title": "Kitchen Confrontation",
+    "description": "Tense dinner scene with family conflict",
+    "location": "Studio B - Kitchen Set",
+    "status": "in-progress",
+    "duration": "7 min",
+    "shotCount": 18,
+    "props": [
+      "prop-006",
+      "prop-007",
+      "prop-008"
+    ],
+    "cast": [
+      "cast-001",
+      "cast-002",
+      "cast-005"
+    ],
+    "extras": [],
+    "locations": [
+      "loc-002"
+    ],
+    "checklist": [
+      {
+        "id": "cl-12-1",
+        "title": "Kitchen set ready",
+        "category": "props",
+        "status": "pending"
+      },
+      {
+        "id": "cl-12-2",
+        "title": "Lead actor available",
+        "category": "cast",
+        "status": "pending"
+      },
+      {
+        "id": "cl-12-3",
+        "title": "Food props prepared",
+        "category": "props",
+        "status": "completed"
+      },
+      {
+        "id": "cl-12-4",
+        "title": "Lighting adjusted",
+        "category": "equipment",
+        "status": "completed"
+      }
+    ],
+    "notes": "Multiple takes expected"
+  },
+  {
+    "id": "sc-13",
+    "sceneNumber": "SC-13",
+    "title": "School Gymnasium",
+    "description": "Flashback to high school memories",
+    "location": "Location - High School Gym",
+    "status": "not-started",
+    "duration": "5 min",
+    "shotCount": 14,
+    "props": [
+      "prop-031",
+      "prop-032"
+    ],
+    "cast": [
+      "cast-001",
+      "cast-004",
+      "cast-009"
+    ],
+    "extras": [
+      "extra-018",
+      "extra-019",
+      "extra-020"
+    ],
+    "locations": [
+      "loc-011"
+    ],
+    "checklist": [
+      {
+        "id": "cl-13-1",
+        "title": "School access arranged",
+        "category": "location",
+        "status": "pending"
+      },
+      {
+        "id": "cl-13-2",
+        "title": "Period props sourced",
+        "category": "props",
+        "status": "pending"
+      },
+      {
+        "id": "cl-13-3",
+        "title": "Younger cast doubles confirmed",
+        "category": "cast",
+        "status": "pending"
+      },
+      {
+        "id": "cl-13-4",
+        "title": "Lighting for flashback tone",
+        "category": "equipment",
+        "status": "pending"
+      }
+    ],
+    "notes": "Visual tone shift required"
+  },
+  {
+    "id": "sc-14",
+    "sceneNumber": "SC-14",
+    "title": "Train Station Goodbye",
+    "description": "Emotional farewell at train platform",
+    "location": "Location - Train Station",
+    "status": "not-started",
+    "duration": "6 min",
+    "shotCount": 16,
+    "props": [
+      "prop-033",
+      "prop-034"
+    ],
+    "cast": [
+      "cast-001",
+      "cast-002"
+    ],
+    "extras": [
+      "extra-021",
+      "extra-022",
+      "extra-023"
+    ],
+    "locations": [
+      "loc-012"
+    ],
+    "checklist": [
+      {
+        "id": "cl-14-1",
+        "title": "Station permit confirmed",
+        "category": "location",
+        "status": "pending"
+      },
+      {
+        "id": "cl-14-2",
+        "title": "Luggage props ready",
+        "category": "props",
+        "status": "completed"
+      },
+      {
+        "id": "cl-14-3",
+        "title": "Train schedule coordinated",
+        "category": "location",
+        "status": "pending"
+      },
+      {
+        "id": "cl-14-4",
+        "title": "Crowd control planned",
+        "category": "other",
+        "status": "pending"
+      }
+    ],
+    "notes": "Early morning shoot required"
+  },
+  {
+    "id": "sc-15",
+    "sceneNumber": "SC-15",
+    "title": "Beach Walk",
+    "description": "Reflective moment by the ocean",
+    "location": "Location - Beach",
+    "status": "not-started",
+    "duration": "4 min",
+    "shotCount": 11,
+    "props": [
+      "prop-035"
+    ],
+    "cast": [
+      "cast-001",
+      "cast-004"
+    ],
+    "extras": [],
+    "locations": [
+      "loc-013"
+    ],
+    "checklist": [
+      {
+        "id": "cl-15-1",
+        "title": "Beach access secured",
+        "category": "location",
+        "status": "completed"
+      },
+      {
+        "id": "cl-15-2",
+        "title": "Weather conditions checked",
+        "category": "location",
+        "status": "pending"
+      },
+      {
+        "id": "cl-15-3",
+        "title": "Equipment waterproofed",
+        "category": "equipment",
+        "status": "pending"
+      },
+      {
+        "id": "cl-15-4",
+        "title": "Tidal schedule reviewed",
+        "category": "location",
+        "status": "completed"
+      }
+    ],
+    "notes": "Golden hour timing critical"
+  },
+  {
+    "id": "sc-16",
+    "sceneNumber": "SC-16",
+    "title": "Courtroom Drama",
+    "description": "Testimony that changes everything",
+    "location": "Location - Courthouse",
+    "status": "not-started",
+    "duration": "8 min",
+    "shotCount": 19,
+    "props": [
+      "prop-036",
+      "prop-037"
+    ],
+    "cast": [
+      "cast-001",
+      "cast-003",
+      "cast-010",
+      "cast-011"
+    ],
+    "extras": [
+      "extra-024",
+      "extra-025",
+      "extra-026"
+    ],
+    "locations": [
+      "loc-014"
+    ],
+    "checklist": [
+      {
+        "id": "cl-16-1",
+        "title": "Courtroom access granted",
+        "category": "location",
+        "status": "pending"
+      },
+      {
+        "id": "cl-16-2",
+        "title": "Legal props prepared",
+        "category": "props",
+        "status": "pending"
+      },
+      {
+        "id": "cl-16-3",
+        "title": "Judge and lawyer cast ready",
+        "category": "cast",
+        "status": "pending"
+      },
+      {
+        "id": "cl-16-4",
+        "title": "Courtroom acoustics tested",
+        "category": "equipment",
+        "status": "pending"
+      }
+    ],
+    "notes": "Formal atmosphere essential"
+  },
+  {
+    "id": "sc-17",
+    "sceneNumber": "SC-17",
+    "title": "News Station Interview",
+    "description": "Public statement to the media",
+    "location": "Studio B - News Set",
+    "status": "not-started",
+    "duration": "3 min",
+    "shotCount": 8,
+    "props": [
+      "prop-038",
+      "prop-039"
+    ],
+    "cast": [
+      "cast-001",
+      "cast-012"
+    ],
+    "extras": [
+      "extra-027"
+    ],
+    "locations": [
+      "loc-002"
+    ],
+    "checklist": [
+      {
+        "id": "cl-17-1",
+        "title": "News set constructed",
+        "category": "props",
+        "status": "pending"
+      },
+      {
+        "id": "cl-17-2",
+        "title": "TV lighting setup",
+        "category": "equipment",
+        "status": "pending"
+      },
+      {
+        "id": "cl-17-3",
+        "title": "Teleprompter ready",
+        "category": "equipment",
+        "status": "pending"
+      },
+      {
+        "id": "cl-17-4",
+        "title": "Anchor cast confirmed",
+        "category": "cast",
+        "status": "completed"
+      }
+    ],
+    "notes": "Broadcast quality lighting"
+  },
+  {
+    "id": "sc-18",
+    "sceneNumber": "SC-18",
+    "title": "Office Meeting",
+    "description": "Corporate meeting scene with multiple characters",
+    "location": "Location - Office Building",
+    "status": "not-started",
+    "duration": "4 min",
+    "shotCount": 10,
+    "props": [
+      "prop-013",
+      "prop-014"
+    ],
+    "cast": [
+      "cast-001",
+      "cast-003",
+      "cast-006"
+    ],
+    "extras": [
+      "extra-006",
+      "extra-007"
+    ],
+    "locations": [
+      "loc-005"
+    ],
+    "checklist": [
+      {
+        "id": "cl-18-1",
+        "title": "Location permit pending",
+        "category": "location",
+        "status": "pending"
+      },
+      {
+        "id": "cl-18-2",
+        "title": "Conference room reserved",
+        "category": "location",
+        "status": "pending"
+      },
+      {
+        "id": "cl-18-3",
+        "title": "Business attire ready",
+        "category": "cast",
+        "status": "completed"
+      },
+      {
+        "id": "cl-18-4",
+        "title": "Office props setup",
+        "category": "props",
+        "status": "pending"
+      }
+    ],
+    "notes": "Schedule around building hours"
+  },
+  {
+    "id": "sc-19",
+    "sceneNumber": "SC-19",
+    "title": "Cemetery Visit",
+    "description": "Paying respects and finding closure",
+    "location": "Location - Cemetery",
+    "status": "not-started",
+    "duration": "5 min",
+    "shotCount": 12,
+    "props": [
+      "prop-040"
+    ],
+    "cast": [
+      "cast-001",
+      "cast-002"
+    ],
+    "extras": [],
+    "locations": [
+      "loc-015"
+    ],
+    "checklist": [
+      {
+        "id": "cl-19-1",
+        "title": "Cemetery permission granted",
+        "category": "location",
+        "status": "completed"
+      },
+      {
+        "id": "cl-19-2",
+        "title": "Floral arrangements ready",
+        "category": "props",
+        "status": "pending"
+      },
+      {
+        "id": "cl-19-3",
+        "title": "Overcast conditions preferred",
+        "category": "location",
+        "status": "pending"
+      },
+      {
+        "id": "cl-19-4",
+        "title": "Sound equipment ready",
+        "category": "equipment",
+        "status": "pending"
+      }
+    ],
+    "notes": "Respectful atmosphere required"
+  },
+  {
+    "id": "sc-20",
+    "sceneNumber": "SC-20",
+    "title": "Airport Terminal",
+    "description": "Last-minute decision at departure gate",
+    "location": "Location - Airport",
+    "status": "not-started",
+    "duration": "6 min",
+    "shotCount": 15,
+    "props": [
+      "prop-041",
+      "prop-042"
+    ],
+    "cast": [
+      "cast-001",
+      "cast-004"
+    ],
+    "extras": [
+      "extra-028",
+      "extra-029",
+      "extra-030"
+    ],
+    "locations": [
+      "loc-016"
+    ],
+    "checklist": [
+      {
+        "id": "cl-20-1",
+        "title": "Airport filming permit",
+        "category": "location",
+        "status": "pending"
+      },
+      {
+        "id": "cl-20-2",
+        "title": "Security clearance obtained",
+        "category": "location",
+        "status": "pending"
+      },
+      {
+        "id": "cl-20-3",
+        "title": "Travel props prepared",
+        "category": "props",
+        "status": "pending"
+      },
+      {
+        "id": "cl-20-4",
+        "title": "Crowd management plan",
+        "category": "other",
+        "status": "pending"
+      }
+    ],
+    "notes": "Busy location challenges"
+  },
+  {
+    "id": "sc-21",
+    "sceneNumber": "SC-21",
+    "title": "Garden Party",
+    "description": "Social gathering with hidden tensions",
+    "location": "Location - Estate Garden",
+    "status": "not-started",
+    "duration": "7 min",
+    "shotCount": 17,
+    "props": [
+      "prop-043",
+      "prop-044",
+      "prop-045"
+    ],
+    "cast": [
+      "cast-001",
+      "cast-002",
+      "cast-003",
+      "cast-004"
+    ],
+    "extras": [
+      "extra-031",
+      "extra-032",
+      "extra-033",
+      "extra-034"
+    ],
+    "locations": [
+      "loc-017"
+    ],
+    "checklist": [
+      {
+        "id": "cl-21-1",
+        "title": "Garden location secured",
+        "category": "location",
+        "status": "completed"
+      },
+      {
+        "id": "cl-21-2",
+        "title": "Party decorations setup",
+        "category": "props",
+        "status": "pending"
+      },
+      {
+        "id": "cl-21-3",
+        "title": "Catering props ready",
+        "category": "props",
+        "status": "pending"
+      },
+      {
+        "id": "cl-21-4",
+        "title": "Multiple camera setup",
+        "category": "equipment",
+        "status": "pending"
+      }
+    ],
+    "notes": "Ensemble scene coordination"
+  },
+  {
+    "id": "sc-22",
+    "sceneNumber": "SC-22",
+    "title": "Living Room Revelation",
+    "description": "Major plot twist revealed in intimate setting",
+    "location": "Studio A - Living Room",
+    "status": "not-started",
+    "duration": "5 min",
+    "shotCount": 14,
+    "props": [
+      "prop-004",
+      "prop-009",
+      "prop-015"
+    ],
+    "cast": [
+      "cast-001",
+      "cast-002"
+    ],
+    "extras": [],
+    "locations": [
+      "loc-001"
+    ],
+    "checklist": [
+      {
+        "id": "cl-22-1",
+        "title": "Living room set dressed",
+        "category": "props",
+        "status": "pending"
+      },
+      {
+        "id": "cl-22-2",
+        "title": "Furniture delivered",
+        "category": "props",
+        "status": "pending"
+      },
+      {
+        "id": "cl-22-3",
+        "title": "Lighting equipment ready",
+        "category": "equipment",
+        "status": "pending"
+      },
+      {
+        "id": "cl-22-4",
+        "title": "Camera operator confirmed",
+        "category": "other",
+        "status": "pending"
+      }
+    ],
+    "notes": "Critical emotional scene"
+  },
+  {
+    "id": "sc-23",
+    "sceneNumber": "SC-23",
+    "title": "Bridge Encounter",
+    "description": "Midnight meeting at the bridge",
+    "location": "Location - City Bridge",
+    "status": "not-started",
+    "duration": "5 min",
+    "shotCount": 13,
+    "props": [
+      "prop-046"
+    ],
+    "cast": [
+      "cast-001",
+      "cast-003"
+    ],
+    "extras": [],
+    "locations": [
+      "loc-018"
+    ],
+    "checklist": [
+      {
+        "id": "cl-23-1",
+        "title": "Bridge access arranged",
+        "category": "location",
+        "status": "pending"
+      },
+      {
+        "id": "cl-23-2",
+        "title": "Night lighting rigged",
+        "category": "equipment",
+        "status": "pending"
+      },
+      {
+        "id": "cl-23-3",
+        "title": "Safety equipment ready",
+        "category": "equipment",
+        "status": "pending"
+      },
+      {
+        "id": "cl-23-4",
+        "title": "Traffic control coordinated",
+        "category": "location",
+        "status": "pending"
+      }
+    ],
+    "notes": "Night shoot with safety priority"
+  },
+  {
+    "id": "sc-24",
+    "sceneNumber": "SC-24",
+    "title": "Hospital Reunion",
+    "description": "Emotional reunion after recovery",
+    "location": "Studio B - Hospital Room",
+    "status": "not-started",
+    "duration": "4 min",
+    "shotCount": 9,
+    "props": [
+      "prop-047",
+      "prop-048"
+    ],
+    "cast": [
+      "cast-001",
+      "cast-002",
+      "cast-008"
+    ],
+    "extras": [],
+    "locations": [
+      "loc-002"
+    ],
+    "checklist": [
+      {
+        "id": "cl-24-1",
+        "title": "Hospital room set ready",
+        "category": "props",
+        "status": "pending"
+      },
+      {
+        "id": "cl-24-2",
+        "title": "Medical equipment props",
+        "category": "props",
+        "status": "pending"
+      },
+      {
+        "id": "cl-24-3",
+        "title": "Soft lighting setup",
+        "category": "equipment",
+        "status": "pending"
+      },
+      {
+        "id": "cl-24-4",
+        "title": "Cast emotional prep",
+        "category": "cast",
+        "status": "pending"
+      }
+    ],
+    "notes": "Hopeful tone required"
+  },
+  {
+    "id": "sc-25",
+    "sceneNumber": "SC-25",
+    "title": "Restaurant Finale",
+    "description": "Final scene bringing resolution to the story",
+    "location": "Location - Restaurant",
+    "status": "not-started",
+    "duration": "6 min",
+    "shotCount": 16,
+    "props": [
+      "prop-016",
+      "prop-017"
+    ],
+    "cast": [
+      "cast-001",
+      "cast-002",
+      "cast-004"
+    ],
+    "extras": [
+      "extra-008",
+      "extra-009",
+      "extra-010"
+    ],
+    "locations": [
+      "loc-006"
+    ],
+    "checklist": [
+      {
+        "id": "cl-25-1",
+        "title": "Restaurant location booked",
+        "category": "location",
+        "status": "pending"
+      },
+      {
+        "id": "cl-25-2",
+        "title": "Evening attire ready",
+        "category": "cast",
+        "status": "pending"
+      },
+      {
+        "id": "cl-25-3",
+        "title": "Background actors briefed",
+        "category": "cast",
+        "status": "pending"
+      },
+      {
+        "id": "cl-25-4",
+        "title": "Camera setup planned",
+        "category": "equipment",
+        "status": "pending"
+      }
+    ],
+    "notes": "After-hours shoot required"
+  }
+]

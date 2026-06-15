@@ -1,0 +1,202 @@
+[
+  {
+    "id": "sch-001",
+    "time": "07:00 AM",
+    "sceneId": "sc-01",
+    "location": "Studio A - Interior",
+    "status": "complete",
+    "date": "2026-04-25"
+  },
+  {
+    "id": "sch-002",
+    "time": "09:00 AM",
+    "sceneId": "sc-02",
+    "location": "Studio A - Kitchen Set",
+    "status": "complete",
+    "date": "2026-04-25"
+  },
+  {
+    "id": "sch-003",
+    "time": "11:00 AM",
+    "sceneId": "sc-03",
+    "location": "Location - City Street",
+    "status": "complete",
+    "date": "2026-04-25"
+  },
+  {
+    "id": "sch-004",
+    "time": "02:00 PM",
+    "sceneId": "sc-04",
+    "location": "Location - Coffee Shop",
+    "status": "complete",
+    "date": "2026-04-25"
+  },
+  {
+    "id": "sch-005",
+    "time": "08:00 AM",
+    "sceneId": "sc-05",
+    "location": "Location - Exterior Park",
+    "status": "complete",
+    "date": "2026-04-26"
+  },
+  {
+    "id": "sch-006",
+    "time": "11:00 AM",
+    "sceneId": "sc-06",
+    "location": "Studio B - Hospital Set",
+    "status": "complete",
+    "date": "2026-04-26"
+  },
+  {
+    "id": "sch-007",
+    "time": "03:00 PM",
+    "sceneId": "sc-07",
+    "location": "Location - Building Rooftop",
+    "status": "complete",
+    "date": "2026-04-26"
+  },
+  {
+    "id": "sch-008",
+    "time": "09:00 AM",
+    "sceneId": "sc-08",
+    "location": "Location - Public Library",
+    "status": "complete",
+    "date": "2026-04-27"
+  },
+  {
+    "id": "sch-009",
+    "time": "12:00 PM",
+    "sceneId": "sc-09",
+    "location": "Studio A - Car Interior",
+    "status": "in-progress",
+    "date": "2026-04-27"
+  },
+  {
+    "id": "sch-010",
+    "time": "03:00 PM",
+    "sceneId": "sc-10",
+    "location": "Location - Warehouse",
+    "status": "delayed",
+    "date": "2026-04-27"
+  },
+  {
+    "id": "sch-011",
+    "time": "07:00 AM",
+    "sceneId": "sc-11",
+    "location": "Studio A - Apartment Set",
+    "status": "complete",
+    "date": "2026-04-28"
+  },
+  {
+    "id": "sch-012",
+    "time": "10:00 AM",
+    "sceneId": "sc-12",
+    "location": "Studio B - Kitchen Set",
+    "status": "in-progress",
+    "date": "2026-04-28"
+  },
+  {
+    "id": "sch-013",
+    "time": "02:00 PM",
+    "sceneId": "sc-13",
+    "location": "Location - High School Gym",
+    "status": "pending",
+    "date": "2026-04-28"
+  },
+  {
+    "id": "sch-014",
+    "time": "06:30 AM",
+    "sceneId": "sc-14",
+    "location": "Location - Train Station",
+    "status": "pending",
+    "date": "2026-04-29"
+  },
+  {
+    "id": "sch-015",
+    "time": "09:00 AM",
+    "sceneId": "sc-15",
+    "location": "Location - Beach",
+    "status": "pending",
+    "date": "2026-04-29"
+  },
+  {
+    "id": "sch-016",
+    "time": "12:00 PM",
+    "sceneId": "sc-16",
+    "location": "Location - Courthouse",
+    "status": "pending",
+    "date": "2026-04-29"
+  },
+  {
+    "id": "sch-017",
+    "time": "04:00 PM",
+    "sceneId": "sc-17",
+    "location": "Studio B - News Set",
+    "status": "pending",
+    "date": "2026-04-29"
+  },
+  {
+    "id": "sch-018",
+    "time": "08:00 AM",
+    "sceneId": "sc-18",
+    "location": "Location - Office Building",
+    "status": "pending",
+    "date": "2026-04-30"
+  },
+  {
+    "id": "sch-019",
+    "time": "10:00 AM",
+    "sceneId": "sc-19",
+    "location": "Location - Cemetery",
+    "status": "pending",
+    "date": "2026-04-30"
+  },
+  {
+    "id": "sch-020",
+    "time": "12:00 PM",
+    "sceneId": "sc-20",
+    "location": "Location - Airport",
+    "status": "pending",
+    "date": "2026-04-30"
+  },
+  {
+    "id": "sch-021",
+    "time": "02:00 PM",
+    "sceneId": "sc-21",
+    "location": "Location - Estate Garden",
+    "status": "pending",
+    "date": "2026-04-30"
+  },
+  {
+    "id": "sch-022",
+    "time": "04:00 PM",
+    "sceneId": "sc-22",
+    "location": "Studio A - Living Room",
+    "status": "pending",
+    "date": "2026-04-30"
+  },
+  {
+    "id": "sch-023",
+    "time": "06:00 PM",
+    "sceneId": "sc-23",
+    "location": "Location - City Bridge",
+    "status": "pending",
+    "date": "2026-04-30"
+  },
+  {
+    "id": "sch-024",
+    "time": "07:00 PM",
+    "sceneId": "sc-24",
+    "location": "Studio B - Hospital Room",
+    "status": "pending",
+    "date": "2026-04-30"
+  },
+  {
+    "id": "sch-025",
+    "time": "08:30 PM",
+    "sceneId": "sc-25",
+    "location": "Location - Restaurant",
+    "status": "pending",
+    "date": "2026-04-30"
+  }
+]

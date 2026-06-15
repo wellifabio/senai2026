@@ -60,3 +60,6 @@
     - Entregar em um repositório do github, gerar o aquivo .apk e deixar na raíz do projeto para o avaliador testar no celular android.
  
   ## [Link OneDrive - Avaliador](https://outlook.cloud.microsoft/host/377c982d-9686-450e-9a7c-22aeaf1bc162/7211f19f-262a-42eb-a02e-289956491741)
+
+  ## [2º WorkShop, São Caetano do Sul](./workshop02/README.md)
+  ![Foto](./workshop01.jpg)

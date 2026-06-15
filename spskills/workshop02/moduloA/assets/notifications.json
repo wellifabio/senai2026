@@ -1,0 +1,108 @@
+{
+  "notifications": {
+    "weekly": [
+      {
+        "type": "expense",
+        "title": "Starbucks purchase -38.5",
+        "date": "2026-04-15 09:12"
+      },
+      {
+        "type": "expense",
+        "title": "7-Eleven purchase -18.2",
+        "date": "2026-04-15 08:05"
+      },
+      {
+        "type": "income",
+        "title": "Salary received +12000",
+        "date": "2026-04-14 18:00"
+      },
+      {
+        "type": "expense",
+        "title": "McDonald's purchase -45",
+        "date": "2026-04-14 12:23"
+      },
+      {
+        "type": "expense",
+        "title": "Taxi fare -62.3",
+        "date": "2026-04-13 21:10"
+      },
+      {
+        "type": "expense",
+        "title": "Amazon shopping -230",
+        "date": "2026-04-13 16:45"
+      },
+      {
+        "type": "income",
+        "title": "Freelance income +1800",
+        "date": "2026-04-12 20:30"
+      },
+      {
+        "type": "expense",
+        "title": "Supermarket purchase -156.7",
+        "date": "2026-04-12 18:40"
+      }
+    ],
+    "monthly": [
+      {
+        "type": "expense",
+        "title": "Netflix subscription -55",
+        "date": "2026-04-11 19:00"
+      },
+      {
+        "type": "income",
+        "title": "Bonus received +3000",
+        "date": "2026-04-10 10:00"
+      },
+      {
+        "type": "expense",
+        "title": "Restaurant -210",
+        "date": "2026-04-09 20:15"
+      },
+      {
+        "type": "expense",
+        "title": "Gas refueling -300",
+        "date": "2026-04-08 09:05"
+      },
+      {
+        "type": "income",
+        "title": "Dividend income +520",
+        "date": "2026-04-07 11:00"
+      },
+      {
+        "type": "expense",
+        "title": "Gym membership -120",
+        "date": "2026-04-06 07:30"
+      },
+      {
+        "type": "expense",
+        "title": "Bookstore purchase -88",
+        "date": "2026-04-05 16:10"
+      },
+      {
+        "type": "income",
+        "title": "Refund received +75",
+        "date": "2026-04-03 13:45"
+      },
+      {
+        "type": "expense",
+        "title": "Electricity bill -340",
+        "date": "2026-04-02 22:00"
+      },
+      {
+        "type": "expense",
+        "title": "Water bill -120",
+        "date": "2026-03-30 21:50"
+      },
+      {
+        "type": "expense",
+        "title": "Online course -499",
+        "date": "2026-03-28 14:20"
+      },
+      {
+        "type": "income",
+        "title": "Part-time income +900",
+        "date": "2026-03-20 19:00"
+      }
+    ]
+  }
+}

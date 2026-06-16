@@ -38,6 +38,7 @@ Você faz parte de uma equipe de desenvolvimento de software e foi designado par
 |Sofia Ohashi Faria|[Desafio 2](https://github.com/wellifabio/sesi-lop-desafio02-2026.git)|
 |Tobias Gabriel Bueno de Godoi|[Desafio 3](https://github.com/wellifabio/sesi-lop-desafio03-2026.git)|
 |Víctor Henrique Santana Alves|[Desafio 4](https://github.com/wellifabio/sesi-lop-desafio04-2026.git)|
+|Vitória Bueno da Silva|[Desafio 1](https://github.com/wellifabio/sesi-lop-desafio01-2026.git)|
 
 ## Como resolver os desafios
 - O aluno deve criar um programa em C que **leia** o arquivo correspondente, processe os dados e gere o relatório solicitado.

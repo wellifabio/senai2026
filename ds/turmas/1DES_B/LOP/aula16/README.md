@@ -39,7 +39,7 @@ Você faz parte de uma equipe de desenvolvimento de software e foi designado par
 |Yasmin Drudi|[Desafio 3](https://github.com/wellifabio/sesi-lop-desafio03-2026.git)|
 
 ## Como resolver os desafios
-- O instrutor vai sortear um dos desafios para cada aluno. O aluno deve criar um programa em C que leia o arquivo correspondente, processe os dados e gere o relatório solicitado.
+- O aluno deve criar um programa em C que **leia** o arquivo correspondente, processe os dados e gere o relatório solicitado.
 - O programa deve ser bem estruturado, utilizando funções para organizar o código e facilitar a leitura e manutenção.
 - O aluno deve apresentar o programa funcionando, mostrando a leitura do arquivo, o processamento dos dados e a geração do relatório na tela.
 - O aluno deve explicar o código, destacando as principais partes e a lógica utilizada para resolver o desafio.

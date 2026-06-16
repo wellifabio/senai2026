@@ -47,3 +47,5 @@ Você faz parte de uma equipe de desenvolvimento de software e foi designado par
 
 ## Entrega
 Além de mostrar o programa funcionando durante a aula, o aluno deve criar um repositório no GitHub chamado lop_vpf02, adicionar o código do programa e o arquivo CSV correspondente, e compartilhar o link do repositório com o instrutor para avaliação através deste [formulário](https://forms.gle/QZCF5MqLrpgfMD1U8).
+
+## [Exemplo de entrega](https://github.com/wellifabio/sesi-lop-clientes-exemplo-vpf02-2026.git)

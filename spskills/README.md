@@ -5,8 +5,6 @@
 - [Lista de Infraestrutura](./LI_Estadual.pdf)
 - [Lista de Sites Bibliotecas e Documentos](./Lista_de_Sites_Bibliotecas_e_Documentaes_PermitidasV126022026.pdf)
 
- - referente a viagem 2090002716 do dia 08/06 a 12/06  que está com problemas de lançamento (apagar)
-
 ## Competidores locais SESI Amparo + SENAI Jaguariúna
 - 3º B - Nicollas Felisbelo da Silva
 - 3º A - Pietra Vitória Fernandes Lopes

@@ -28,7 +28,7 @@
 |BIBLIOSESI|GRIELA, JOÃO, MARIANA, TAMIRES, ELISA|3ºA|Atualizaram Apresentação<br>Mobile(Protótipo Figma)<br>Front-end (Home, Criar conta, Login,Perfil, Não conectado com Backend)|
 |JFOREN|VICENZO, FRANCISCO, MURILO, JULIANO|3ºA|E-commerce<br>FAQ: Frases prontas<br>Apresentação direta no site<br>Front-end (Home, Login, Cadastro, Perfil)<br>Back-end ainda não conectado|
 |COPA|THOMAS, LAÍS, LIVIA MORAIS, EDUARDA, GABRIELLY TEIXEIRA|3ºA|Atualizaram Apresentação<br>Prototipo funcional WEB<br>Front-end (Home, Login, Figurinhas...)<br>Back-end ainda não conectado|
-|FINANCEIRO|MATHEUS, LEANDRO, KAIQUE, LUIS OTÁVIO|3ºA||
+|FINAN-PLAN|MATHEUS, LEANDRO, KAIQUE, LUIS OTÁVIO|3ºA|Apresentação no protótipo funcional WEB (Dashboad, Transações, Orçamentos, Metas, Configurações do sistema)<br>Front-end (Dashboad, Cadastro de transações CRUD)<br>Back-end ainda não conectado|
 |JORNAL VIRTUAL|BEATRIZ, LUIZA, PIETRA, CLARA, JULIA NOVO, GIOVANA|3ºA||
 |SAUDE MENDAL|MATHIAS, BRUNO e MATHEUS|3ºA||
 |Code Champ | LUIS P, ITALO, MIGUEL GERBI, OTAVIO|3ºA||

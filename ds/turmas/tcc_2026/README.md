@@ -15,7 +15,7 @@
 |SAUDE MENDAL|MATHIAS, BRUNO e MATHEUS|3ºA|- Apresentação<br>- Protótipo  Mobile|
 |Code Champ | LUIS P, ITALO, MIGUEL GERBI, OTAVIO|3ºA|-Apresentação<br>- Site|
 |PERSONA SESI | CARLOS, HELOA, LIVIA G, KAUÃ, VINICIUS|3ºB|-Apresentação<br>- PROTOTIPO WEB e Mobile|
-|MALHARIA SÃO JOSE | ALICE, LETICIA, NATALIA, PIETRA, NICOLAS, MURIOLO, HENRIQUE|3ºB|-Apresentação<br>- Protótipo Mobile e WEB (Cliente/Funcionario)|
+|MALHARIA SÃO JOSE | ALICE, LETICIA, NATALIA, PIETRA, NICOLAS, MURILO, HENRIQUE|3ºB|-Apresentação<br>- Protótipo Mobile e WEB (Cliente/Funcionario)|
 |EDUCA FINANÇA| SAYURI, MIRELLA, JULIA G|3ºA|-Apresentação<br>- PROTOTIPO FIGMA (Mobile) <br> - Site|
 |BIBLIOTECH | ANA LIVIA, CAROLINE, ISABELA, STEFFANI|3ºB|-Apresentação<br>- PROTOTIPO Mobile (Canva e Figma)|
 
@@ -33,7 +33,7 @@
 |SAUDE MENDAL|MATHIAS, BRUNO e MATHEUS|3ºA|Apresentaram o protótio do MOBILE, Front-end (Home com funcionalidades básicas)<br>Back-end conectado com o Front-end|
 |CODE CHAMP|LUIS P, ITALO, MIGUEL GERBI, OTAVIO|3ºA|Apresentaram Front-End: (Home com desafios, sala de aula, conquistas, progresso, loja, moedas)<br>Back-end ainda não conectado|
 |PERSONA SESI| CARLOS, HELOA, LIVIA G, KAUÃ, VINICIUS|3ºB|Apresentação atualizada<br>Mobile:Mesmas fncionalidades do front (flutter)<br>Front-end(Áreas do aluno, professores, coordenadores, pais)(Login, Dashoard)<br>Back-end CRUD ainda não conectado|
-|MALHARIA SÃO JOSE| ALICE, LETICIA, NATALIA, PIETRA, NICOLAS, MURIOLO, HENRIQUE|3ºB||
+|MALHARIA SÃO JOSE|ALICE, LETICIA, NATALIA, PIETRA, NICOLAS, MURILO, HENRIQUE|3ºB|Apresentação com Mapa mental interativo<br>Documentação: DER, Regras de Negócio<br>Mobile: Protótipo funcional Figma(Usuário e Administrador) Flutter:Login, Home Cards, Menu<br>Front-end: Protótipo funcional Figma(Usuário e Administrador) Web: Login, Dashboard, Clientes, Cadastro conectado com back-end, Roupas, Pedidos (total, bloqueio de exclusão após 24 horas)|
 |EDUCA FINANÇA| SAYURI, MIRELLA, JULIA G|3ºA||
 |BIBLIOTECH | ANA LIVIA, CAROLINE, ISABELA, STEFFANI|3ºB||
 

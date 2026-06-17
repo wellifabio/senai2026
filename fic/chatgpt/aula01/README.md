@@ -8,8 +8,8 @@
 - 5 Cadastro na ferramenta de versionamento de código (**GitHub**);
 - 6 Preparação do ambiente de desenvolvimento;
     - 6.1 Instalação do **Visual Studio Code**;
-    - 6.2 Instalação do **Git**;
-    - 6.3 Configuração do **Git**; 
+    - 6.2 Instalação do **Git for Windows**;
+    - 6.3 Configuração do **Git**;
 - 7 Apresentação do conteúdo programático do curso;
 - 8 Apresentação do plano de ensino;
 

@@ -29,7 +29,7 @@
 |JFOREN|VICENZO, FRANCISCO, MURILO, JULIANO|3ºA|E-commerce<br>FAQ: Frases prontas<br>Apresentação direta no site<br>Front-end (Home, Login, Cadastro, Perfil)<br>Back-end ainda não conectado|
 |COPA|THOMAS, LAÍS, LIVIA MORAIS, EDUARDA, GABRIELLY TEIXEIRA|3ºA|Atualizaram Apresentação<br>Prototipo funcional WEB<br>Front-end (Home, Login, Figurinhas...)<br>Back-end ainda não conectado|
 |FINAN-PLAN|MATHEUS, LEANDRO, KAIQUE, LUIS OTÁVIO|3ºA|Apresentação no protótipo funcional WEB (Dashboad, Transações, Orçamentos, Metas, Configurações do sistema)<br>Front-end (Dashboad, Cadastro de transações CRUD)<br>Back-end ainda não conectado|
-|JORNAL VIRTUAL|BEATRIZ, LUIZA, PIETRA, CLARA, JULIA NOVO, GIOVANA|3ºA||
+|SOBRE NÓS<br>JORNAL VIRTUAL|BEATRIZ, LUIZA, PIETRA, CLARA, JULIA NOVO, GIOVANA|3ºA|Atualizaram Apresentação<br>Protótipo WEB: Canva<br>Protótio Mobile atualizado: Figma<br>Mobile Flutter (Splash Screen, Login, Home:[Menu, Cards],Detahes da notícia Mural, Perfil, Configurações, Logout)<br>Front-end (Login, Home,Perfis:[Admin, Alunos autores, Alunos], Publicações, Curtidas, Perfil, Somente o admin cadastra autores)<br>Back-end ainda não conectado|
 |SAUDE MENDAL|MATHIAS, BRUNO e MATHEUS|3ºA||
 |Code Champ | LUIS P, ITALO, MIGUEL GERBI, OTAVIO|3ºA||
 |PERSONA SESI | CARLOS, HELOA, LIVIA G, KAUÃ, VINICIUS|3ºB||

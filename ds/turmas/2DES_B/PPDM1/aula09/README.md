@@ -216,3 +216,5 @@ abstract class AppTheme {
 ```
 
 - Aqui está o [projeto iniciado na aula anterior](https://github.com/wellifabio/flutter_agrotech_api_jwt_lista_detalhes_2026.git) somente as telas e o **http.post** de login
+- Aqui está o projeto com as funcionalidades de [listar e detalhes](https://github.com/wellifabio/flutter_agrotech_api_jwt_crud_2026.git)
+- Aqui está o projeto com as funcionalidades de [listar, detalhes, Criar, alterar e Câmera](https://github.com/wellifabio/flutter_agrotech_api_jwt_crud_camera_2026.git)

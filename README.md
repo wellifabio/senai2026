@@ -6,6 +6,7 @@
 - Acesso a [IA MSEP](https://github.com/wellifabio/senai2025/tree/main/msep)
 - [Portal educacional TEC - CAI](https://pess.sesisenaispedu.org.br/)
 - [Diário FIC](https://diariofic.sp.senai.br/)
+
 ## Cursos
 - TC - TÉCNICOS
     - **[Técnico em Desenvolvimento de Sistemas (1200 horas)](./ds/README.md)**

@@ -25,8 +25,8 @@
 |-|-|-|-|
 |LADVET|Maria Fernanda, Marina, Letícia|3ºA|Protótipo Mobile<br>Front-end(Login usuario,Favoritos)<br>(Login Veteriário, Cadastro de animais)<br>Back-end(JWT)|
 |SABORÉ|DUDA, MIRELLA, ISABELLE, DAVI, ENZO, GABRIELY SOUZA|3ºB|Atualizaram Apresentação<br>Open Router (API de IA treinada por eles para receitas)<br>Documentação: DER<br>Mobile (Login, Cadastre-se, Listar Receitas)<br>Firebase<br>Front-end (Home Carrocel, Criar conta, Login, Perfil, Biografia, Receita gerada pela IA, chat)<br>Back-end (JWT, Controllers e Rotas conforme DER)|
-|BIBLIOSESI|GRIELA, JOÃO, MARIANA, TAMIRES, ELISA|3ºA||
-|JFOREN|VICENZO, FRANCISCO, MURILO, JULIANO|3ºA||
+|BIBLIOSESI|GRIELA, JOÃO, MARIANA, TAMIRES, ELISA|3ºA|Atualizaram Apresentação<br>Mobile(Protótipo Figma)<br>Front-end (Home, Criar conta, Login,Perfil, Não conectado com Backend)|
+|JFOREN|VICENZO, FRANCISCO, MURILO, JULIANO|3ºA|E-commerce<br>FAQ: Frases prontas<br>Apresentação direta no site<br>Front-end (Home, Login, Cadastro, Perfil)<br>Back-end ainda não conectado|
 |COPA|THOMAS, LAÍS, LIVIA MORAIS, EDUARDA, GABRIELLY TEIXEIRA|3ºA||
 |FINANCEIRO|MATHEUS, LEANDRO, KAIQUE, LUIS OTÁVIO|3ºA||
 |JORNAL VIRTUAL|BEATRIZ, LUIZA, PIETRA, CLARA, JULIA NOVO, GIOVANA|3ºA||

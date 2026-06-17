@@ -35,5 +35,5 @@
 |PERSONA SESI| CARLOS, HELOA, LIVIA G, KAUÃ, VINICIUS|3ºB|Apresentação atualizada<br>Mobile:Mesmas fncionalidades do front (flutter)<br>Front-end(Áreas do aluno, professores, coordenadores, pais)(Login, Dashoard)<br>Back-end CRUD ainda não conectado|
 |MALHARIA SÃO JOSE|ALICE, LETICIA, NATALIA, PIETRA, NICOLAS, MURILO, HENRIQUE|3ºB|Apresentação com Mapa mental interativo<br>Documentação: DER, Regras de Negócio<br>Mobile: Protótipo funcional Figma(Usuário e Administrador) Flutter:Login, Home Cards, Menu<br>Front-end: Protótipo funcional Figma(Usuário e Administrador) Web: Login, Dashboard, Clientes, Cadastro conectado com back-end, Roupas, Pedidos (total, bloqueio de exclusão após 24 horas)|
 |EDUCA FINANÇA| SAYURI, MIRELLA, JULIA G|3ºA|Protótipo funcional Mobile: Cursos, Relatórios, Investimentos<br>Front-end (Home, Login, Cadastro, Perfil, Cursos, Relatórios, Investimentos, Metas)<br>Back-end conectado com funcionalidades básicas|
-|BIBLIOTECH | ANA LIVIA, CAROLINE, ISABELA, STEFFANI|3ºB||
+|BIBLIOTECH | ANA LIVIA, CAROLINE, ISABELA, STEFFANI|3ºB|Atualização da apresentação<br>Front-end (Home, Cadastro de Livros)<br>Back-end ainda não conectado|
 

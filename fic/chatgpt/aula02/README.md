@@ -17,7 +17,7 @@ A Conjectura de Collatz, ou problema, é um enigma matemático simples: para qua
 
 ## Baixe o git bash (Git for Windows) em seu computador
 ![Git](./git.png)
-Esta é a o shell do git, que permite executar os comandos do git em seu computador.
+- Este é o shell do git, que permite executar os comandos do git em seu computador.
 
 ### Principais comandos git
 

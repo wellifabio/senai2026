@@ -30,10 +30,10 @@
 |COPA|THOMAS, LAÍS, LIVIA MORAIS, EDUARDA, GABRIELLY TEIXEIRA|3ºB|Atualizaram Apresentação<br>Prototipo funcional WEB<br>Front-end (Home, Login, Figurinhas...)<br>Back-end ainda não conectado|
 |FINAN-PLAN|MATHEUS, LEANDRO, KAIQUE, LUIS OTÁVIO|3ºA|Apresentação no protótipo funcional WEB (Dashboad, Transações, Orçamentos, Metas, Configurações do sistema)<br>Front-end (Dashboad, Cadastro de transações CRUD)<br>Back-end ainda não conectado|
 |SOBRE NÓS<br>JORNAL VIRTUAL|BEATRIZ, LUIZA, PIETRA, CLARA, JULIA NOVO, GIOVANA|3ºA|Atualizaram Apresentação<br>Protótipo WEB: Canva<br>Protótio Mobile atualizado: Figma<br>Mobile Flutter (Splash Screen, Login, Home:[Menu, Cards],Detahes da notícia Mural, Perfil, Configurações, Logout)<br>Front-end (Login, Home,Perfis:[Admin, Alunos autores, Alunos], Publicações, Curtidas, Perfil, Somente o admin cadastra autores)<br>Back-end ainda não conectado|
-|SAUDE MENDAL|MATHIAS, BRUNO e MATHEUS|3ºA||
-|Code Champ | LUIS P, ITALO, MIGUEL GERBI, OTAVIO|3ºA||
-|PERSONA SESI | CARLOS, HELOA, LIVIA G, KAUÃ, VINICIUS|3ºB||
-|MALHARIA SÃO JOSE | ALICE, LETICIA, NATALIA, PIETRA, NICOLAS, MURIOLO, HENRIQUE|3ºB||
+|SAUDE MENDAL|MATHIAS, BRUNO e MATHEUS|3ºA|Apresentaram o protótio do MOBILE, Front-end (Home com funcionalidades básicas)<br>Back-end conectado com o Front-end|
+|CODE CHAMP|LUIS P, ITALO, MIGUEL GERBI, OTAVIO|3ºA|Apresentaram Front-End: (Home com desafios, sala de aula, conquistas, progresso, loja, moedas)<br>Back-end ainda não conectado|
+|PERSONA SESI| CARLOS, HELOA, LIVIA G, KAUÃ, VINICIUS|3ºB|Apresentação atualizada<br>Mobile:Mesmas fncionalidades do front (flutter)<br>Front-end(Áreas do aluno, professores, coordenadores, pais)(Login, Dashoard)<br>Back-end CRUD ainda não conectado|
+|MALHARIA SÃO JOSE| ALICE, LETICIA, NATALIA, PIETRA, NICOLAS, MURIOLO, HENRIQUE|3ºB||
 |EDUCA FINANÇA| SAYURI, MIRELLA, JULIA G|3ºA||
 |BIBLIOTECH | ANA LIVIA, CAROLINE, ISABELA, STEFFANI|3ºB||
 

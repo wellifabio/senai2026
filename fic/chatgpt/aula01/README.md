@@ -2,15 +2,16 @@
 
 ## Atividades realizadas:
 - 1 Apresentação da instituição SENAI;
-- 2 Apresentação do curso e do professor;
-- 3 Apresentação dos alunos;
-- 4 Cadastro na ferramenta de versionamento de código (**GitHub**);
-- 5 Preparação do ambiente de desenvolvimento;
-    - 5.1 Instalação do **Visual Studio Code**;
-    - 5.2 Instalação do **Git**;
-    - 5.3 Configuração do **Git**; 
-- 6 Apresentação do conteúdo programático do curso;
-- 7 Apresentação do plano de ensino do curso;
+- 2 Emails educacionais dos alunos;
+- 3 Apresentação do curso e do professor;
+- 4 Apresentação dos alunos;
+- 5 Cadastro na ferramenta de versionamento de código (**GitHub**);
+- 6 Preparação do ambiente de desenvolvimento;
+    - 6.1 Instalação do **Visual Studio Code**;
+    - 6.2 Instalação do **Git**;
+    - 6.3 Configuração do **Git**; 
+- 7 Apresentação do conteúdo programático do curso;
+- 8 Apresentação do plano de ensino;
 
 ## Conhecimentos:
 - 1 Inteligência Artificial: 
@@ -27,12 +28,12 @@
         - 1.3.5 Redes Neurais
 
 ## O que é inteligência artificial?
-
 - **Dado** (Informação bruta, sem contexto)
 - **Informação** (Conjunto de dados organizados, com contexto)
 - **Conhecimento** (Informação processada, com significado e aplicabilidade)
 - **Inteligência** (Capacidade de aplicar conhecimento para resolver problemas, tomar decisões e se adaptar a novas situações)
 - **Consciência** (Estado de percepção e autoconsciência, onde o indivíduo tem consciência de si mesmo e do ambiente ao seu redor)
+
 ### Definição de inteligência artificial
 Inteligência Artificial (IA) é um ramo da ciência da computação que se concentra na criação de sistemas capazes de realizar tarefas que normalmente exigiriam inteligência humana. Isso inclui a capacidade de aprender, raciocinar, resolver problemas, compreender a linguagem natural e perceber o ambiente ao redor. A IA pode ser dividida em várias categorias, como aprendizado supervisionado, não supervisionado e por reforço, cada uma com suas próprias técnicas e aplicações. A IA tem sido amplamente utilizada em diversas áreas, como saúde, finanças, transporte e entretenimento, transformando a maneira como vivemos e trabalhamos.
 ## Modelos de inteligência artificial

@@ -12,6 +12,13 @@ Inspirado no programa Shark Tank Brasil a proposta é ientificar um problema e p
 
 |Nome da ideia|Grupo|Github do grupo|
 |-|:-:|-|
+|Cantina Digital|||
+|SINA|||
+|InovaTech|||
+|Quinta Auxiliar|||
+|Cerebro em Ação|||
+|Sesi Esporte|||
+|Gestão de Refeitório|||
 
 
 ## [Envio das apresentações](https://forms.gle/ha7dy1w55wzknDSo7)

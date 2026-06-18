@@ -78,5 +78,6 @@ Implementa soluções de desenvolvimento através de inteligência artificial ge
     - 4.5 Avaliação; 
     - 4.6 Testes; 
     - 4.7 Publicação;
+
 ## Referências Bibliográficas:
 Documentação oficial da OpenAI: https://platform.openai.com/docs/api-reference

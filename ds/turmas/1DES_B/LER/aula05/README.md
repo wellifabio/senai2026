@@ -12,13 +12,13 @@ Inspirado no programa Shark Tank Brasil a proposta é ientificar um problema e p
 
 |Nome da ideia|Grupo|Github do grupo|
 |-|:-:|-|
-|Cantina Digital|||
-|SINA|||
-|InovaTech|||
-|Quinta Auxiliar|||
-|Cerebro em Ação|||
-|Sesi Esporte|||
-|Gestão de Refeitório|||
+|Cantina Digital|Samuel, João Henrique, Breno||
+|SINA|Vitor, Pietro, Bruno, Guilherme, Felipe||
+|InovaTech|Alícia, Carolina, Letícia, Mariana||
+|Quinta Auxiliar|Giovana Remorini, Giovana Cezar, Gabriel, Kamilly||
+|Cerebro em Ação|Maria Eduarda, Mirella, Yasmin, Ana Klara, Isabelle||
+|Sesi Esporte|Miguel, Enzo, Davi, Thiago||
+|Gestão de Refeitório|Leonardo, Jéssica, João Victor, Lívia, Eloísa||
 
 
 ## [Envio das apresentações](https://forms.gle/ha7dy1w55wzknDSo7)

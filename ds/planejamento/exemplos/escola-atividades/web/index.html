@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Escola Atividades</title>
+</head>
+
+<body>
+    <header>
+        <h1>Gestão de Atividades</h1>
+        <button>Sair</button>
+    </header>
+    <main>
+        <button style="align-self: flex-end;">Cadastrar turma</button>
+        <h2>Turmas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Número</th>
+                    <th>Nome</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTurmas">
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; wellifabio 2026 Escola Atividades. Todos os direitos reservados.</p>
+    </footer>
+    <div id="modalLogin" class="modal">
+        <div class="janela">
+            <h2>Login</h2>
+            <form id="formLogin">
+                <input type="text" name="nome" placeholder="Usuário" required>
+                <input type="password" name="senha" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

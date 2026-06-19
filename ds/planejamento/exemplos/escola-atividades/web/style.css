@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --p1: #0000ff;
+    --p2: #00ff00;
+    --p3: #ff0000;
+    --p4: #ffffff;
+}
+
+body {
+    background-color: var(--p4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    background-color: var(--p1);
+    color: var(--p4);
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    overflow: auto;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--p1);
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    background-color: var(--p1);
+    width: fit-content;
+    color: var(--p4);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btExcluir {
+    background-color: var(--p3);
+}
+
+.btEVizualizar {
+    background-color: var(--p2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+tr{
+    width: 100%;
+    border-bottom: 1px solid var(--p1);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.janela {
+    background-color: var(--p4);
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+.oculto {
+    display: none;
+}

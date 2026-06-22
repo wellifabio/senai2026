@@ -53,7 +53,7 @@ npm run dev
 ## Print das telas
  |Versão WEB|Responsivo|
  |-|-|
- |![Screenshot01](./docs/screenshot01.png)|![Screenshot09](./docs/screenshot09.png)|
- |![Screenshot02](./docs/screenshot02.png)|![Screenshot10](./docs/screenshot10.png)|
- |![Screenshot03](./docs/screenshot03.png)|![Screenshot11](./docs/screenshot11.png)|
- |![Screenshot04](./docs/screenshot04.png)|![Screenshot12](./docs/screenshot12.png)|
+ |![Screenshot01](./docs/screenshot01.png)|![Screenshot05](./docs/screenshot09.png)|
+ |![Screenshot02](./docs/screenshot02.png)|![Screenshot06](./docs/screenshot10.png)|
+ |![Screenshot03](./docs/screenshot03.png)|![Screenshot07](./docs/screenshot11.png)|
+ |![Screenshot04](./docs/screenshot04.png)|![Screenshot08](./docs/screenshot12.png)|

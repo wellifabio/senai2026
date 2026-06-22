@@ -10,11 +10,11 @@
 
 <body>
     <header>
-        <h1>Gestão de Atividades</h1>
-        <button>Sair</button>
+        <h1 id="titulo">Gestão de Atividades</h1>
+        <button onclick="logout()">Sair</button>
     </header>
     <main>
-        <button style="align-self: flex-end;">Cadastrar turma</button>
+        <button style="align-self: flex-end;" onclick="modalTurma.classList.remove('oculto')">Cadastrar turma</button>
         <h2>Turmas</h2>
         <table>
             <thead>
@@ -35,9 +35,19 @@
         <div class="janela">
             <h2>Login</h2>
             <form id="formLogin">
-                <input type="text" name="nome" placeholder="Usuário" required>
+                <input type="email" name="email" placeholder="E-mail" required>
                 <input type="password" name="senha" placeholder="Senha" required>
                 <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+    <div id="modalTurma" class="modal oculto">
+        <div class="janela">
+            <h2>Turma</h2>
+            <form id="formTurma">
+                <input type="text" name="nome" placeholder="Nome da turma" required>
+                <button class="bt-excluir" type="reset" onclick="modalTurma.classList.add('oculto')">Cancelar</button>
+                <button class="bt-visualizar" type="submit">Salvar</button>
             </form>
         </div>
     </div>

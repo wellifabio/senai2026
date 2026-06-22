@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Escola Atividades</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="titulo">Gestão de Atividades</h1>
+        <button onclick="logout()">Sair</button>
+    </header>
+    <main>
+        <button style="align-self: flex-end;" onclick="modalAtividade.classList.remove('oculto')">Cadastrar atividade</button>
+        <h2 id="nomeTurma">Turma: {nomeTurma}</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Número</th>
+                    <th>Nome</th>
+                </tr>
+            </thead>
+            <tbody id="corpoAtividades">
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; wellifabio 2026 Escola Atividades. Todos os direitos reservados.</p>
+    </footer>
+    <div id="modalAtividade" class="modal oculto">
+        <div class="janela">
+            <h2>Atividade</h2>
+            <form id="formAtividade">
+                <input type="text" name="nome" placeholder="Nome da atividade" required>
+                <button class="bt-excluir" type="reset" onclick="modalAtividade.classList.add('oculto')">Cancelar</button>
+                <button class="bt-visualizar" type="submit">Salvar</button>
+            </form>
+        </div>
+    </div>
+    <script src="atividades.js"></script>
+</body>
+
+</html>

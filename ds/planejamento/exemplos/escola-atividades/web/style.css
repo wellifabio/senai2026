@@ -7,8 +7,8 @@
 
 :root {
     --p1: #0000ff;
-    --p2: #00ff00;
-    --p3: #ff0000;
+    --p2: #aaffaa;
+    --p3: #ff6666;
     --p4: #ffffff;
 }
 
@@ -43,6 +43,14 @@ main {
     overflow: auto;
 }
 
+footer {
+    border-top: 1px solid var(--p1);
+    color: var(--p1);
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
 input,
 select,
 textarea {
@@ -63,12 +71,13 @@ button {
     cursor: pointer;
 }
 
-.btExcluir {
+.bt-excluir {
     background-color: var(--p3);
 }
 
-.btEVizualizar {
+.bt-visualizar {
     background-color: var(--p2);
+    color: black;
 }
 
 table {

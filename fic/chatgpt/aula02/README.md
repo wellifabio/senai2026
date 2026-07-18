@@ -42,18 +42,35 @@ A Conjectura de Collatz, ou problema, é um enigma matemático simples: para qua
 - Após criar a conta, clique em "New repository" para criar um repositório,informe o nome do repositório e clique em "Create repository".
 
 ### Principais comandos git
-
+#### Apenas na primeira vez após instalar o Git ou em um novo computador
 | Comando | Descrição |
 |-|-|
 |git config --global user.name "seu_user_name"|Configura sua conta do github no git|
 |git config --global user.email "seu_email@dogithub"|Configura sua conta do github no git|
+
+#### Comandos de versionamento
+| Comando | Descrição |
+|-|-|
 |git init|Inicia um repositório git|
 |git add .|Adiciona os arquivos para o stage|
 |git commit -m "mensagem"|Realiza o commit dos arquivos|
 |git log|Exibe o histórico de commits|
 |git checkout <código do commit>|Permite voltar para um commit específico|
+
+#### Comandos para envio ao Github
+| Comando | Descrição |
+|-|-|
 |git remote add origin <url>|Adiciona o repositório remoto|
 |git push -u origin master|Envia os arquivos para o repositório remoto|
+
+#### Sequência básica
+| Comando | Descrição |
+|-|-|
+|git clone enderec0_do_repositorio_github| Clona um repositorio do github|
+|git add .|Adiciona os arquivos para o stage|
+|git commit -m "mensagem"|Realiza o commit dos arquivos|
+|git pull|Baixa atualizações do repositório no github|
+|git push|Envia os dados para o github|
 
 ## [Exemplo prático de versionamento de um programa no git](./versionamento.md)
 ## Passos para enviar um projeto para o github

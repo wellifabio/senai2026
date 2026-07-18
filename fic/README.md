@@ -10,3 +10,5 @@ Cursos de curta duração
 - [PowerBI](./power_bi/)
 - [Office](./office/)
 - [ChatGPT](./chatgpt/)
+## Cursos online
+- Matricule-se no [curso de básico de C da CISCO Net Academy](https://www.netacad.com/pt/courses/c-essentials-1?courseLang=en-US&instance_id=5a096dfc-0f7f-4962-869c-698b6702b1a2)

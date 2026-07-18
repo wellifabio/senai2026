@@ -2,10 +2,15 @@
 - Colaboração
 - Projetos de código aberto
 - Controle de versão
+- Enviar dados para a nuvem github
+- Clonar repositórios
 
 ## Atividades realizadas:
 - 1 Criação de conta no Github;
 - 2 Criação de repositório no Github;
+- 3 Enviar um projeto (Programa, site ...) para um repositório do github
+
+## [Exemplo prático de versionamento de um programa no git](./versionamento.md)
 
 ## Prática:
 
@@ -66,13 +71,13 @@ A Conjectura de Collatz, ou problema, é um enigma matemático simples: para qua
 #### Sequência básica
 | Comando | Descrição |
 |-|-|
-|git clone enderec0_do_repositorio_github| Clona um repositorio do github|
+|git clone endereco_do_repositorio_github| Clona um repositorio do github|
 |git add .|Adiciona os arquivos para o stage|
 |git commit -m "mensagem"|Realiza o commit dos arquivos|
 |git pull|Baixa atualizações do repositório no github|
 |git push|Envia os dados para o github|
 
-## [Exemplo prático de versionamento de um programa no git](./versionamento.md)
+
 ## Passos para enviar um projeto para o github
 - Para enviar os arquivos para o repositório remoto, após iniciar um repositório local `git init`, execute os comandos abaixo para adicionar o repositório remoto e enviar os arquivos para o github:
 ```bash

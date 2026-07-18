@@ -45,6 +45,8 @@ A Conjectura de Collatz, ou problema, é um enigma matemático simples: para qua
 
 | Comando | Descrição |
 |-|-|
+|git config --global user.name "seu_user_name"|Configura sua conta do github no git|
+|git config --global user.email "seu_email@dogithub"|Configura sua conta do github no git|
 |git init|Inicia um repositório git|
 |git add .|Adiciona os arquivos para o stage|
 |git commit -m "mensagem"|Realiza o commit dos arquivos|

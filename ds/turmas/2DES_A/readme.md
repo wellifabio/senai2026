@@ -2,6 +2,7 @@
 
 ## Alunos
 |Matrícula|Nome|
+|-|-|
 |25130313|Beatriz Albuquerque Marcondes Dos Santos|
 |25129077|Clara Andrzejewky Antonacci|
 |25129045|Elisa Marielle de Oliveira Carvalho|
@@ -31,8 +32,6 @@
 |25129103|Sayury de Moraes Araujo|
 |25129131|Tamires Guarizzo|
 |25129099|Vicenzo Vieira Varandas|
-
-
 
 # Cargos comuns em empresas de tecnologia relacionados à privacidade de dados:
 

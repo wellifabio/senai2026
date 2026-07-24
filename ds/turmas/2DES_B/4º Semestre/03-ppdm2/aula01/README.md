@@ -45,7 +45,7 @@ construir um App simples em flutter de um bloco de anotações personalizado que
 - [Calendar](./calendar.md)
 - [SQLite](./sqlite.md)
 
-## [Vamos iniciar juntos](https://meet.google.com/dwf-hifp-yja)
+## [Vamos iniciar juntos](https://meet.google.com/ifd-whhw-zyw)
 - Inicie un novo projeto em flutter chamado flutter_anotacoes
 - Baixe deste repositório os arquivos em Assets com imagens e fontes
 - Crie a estrutura de pastas em lib e configure o pubspec.yaml da seguinte forma:

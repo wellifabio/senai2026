@@ -33,6 +33,8 @@
 flutter clean
 flutter doctor
 flutter upgrade
+# caso apresente erro no upgrade
+flutter upgrade --force
 ```
 
 ## Atividade: App de Anotações

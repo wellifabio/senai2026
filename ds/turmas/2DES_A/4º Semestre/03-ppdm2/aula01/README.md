@@ -43,8 +43,8 @@ Com o constate uso de celular, sempre precisamos anotar alguma informação e ut
 ### Desafio
 construir um App simples em flutter de um bloco de anotações personalizado que armazene os dados internamente
 - Funcionalidade CRUD com arquivo de texto CSV
-- Uma tela de Splas com alguma animação de entrada e/ou saída
-- Uma tela com a lista de anotações contendo data, hora e texto_da_anotacao
+- Uma tela de Splash com alguma animação de entrada e/ou saída
+- Uma tela Home com a lista de anotações contendo data, hora e texto_da_anotacao
 ### Telas de um App de exemplo
 |Splash Screen|Home|
 |-|-|

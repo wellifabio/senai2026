@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Pizza - Painel Administrativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="auth-screen" class="container">
+        <div class="auth-box">
+            <h1>Bella Pizza Admin</h1>
+            <p class="subtitle">Gerenciador de Cardápio</p>
+            
+            <div class="form-group">
+                <input type="email" id="auth-email" placeholder="E-mail">
+                <input type="password" id="auth-senha" placeholder="Senha">
+            </div>
+
+            <div class="auth-buttons">
+                <button id="btn-login" class="btn-primary">Entrar com E-mail</button>
+                <button id="btn-cadastro" class="btn-secondary">Criar Conta</button>
+                <div class="divider">ou</div>
+                <button id="btn-google" class="btn-google">
+                    <!-- <img src="https://lh3.googleusercontent.com/COxitRowZbgHe1303Yi8AJuA5hc30dIFJv2jiJa40jaAsCD2Cj1s7wC7lc797mW0Componentes" alt="" style="width:18px; margin-right:8px; display:none;"> -->
+                    Entrar com o Google
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="dashboard-screen" class="container wide hidden">
+        <header class="main-header">
+            <h2>Painel Bella Pizza</h2>
+            <div class="user-info">
+                <span id="user-display-name">Carregando...</span>
+                <button id="btn-logout" class="btn-logout">Sair</button>
+            </div>
+        </header>
+
+        <div class="dashboard-layout">
+            <section class="admin-sidebar">
+                <h3>Cadastrar Nova Pizza</h3>
+                <div class="form-group">
+                    <label for="pizza-nome">Nome da Pizza</label>
+                    <input type="text" id="pizza-nome" placeholder="Ex: Calabresa Especial">
+
+                    <label for="pizza-ingredientes">Ingredientes</label>
+                    <input type="text" id="pizza-ingredientes" placeholder="Ex: Molho, mussarela, calabresa e cebola">
+
+                    <label for="pizza-tipo">Tipo da Pizza</label>
+                    <select id="pizza-tipo">
+                        <option value="Salgada">Salgada</option>
+                        <option value="Doce">Doce</option>
+                    </select>
+
+                    <label for="pizza-preco">Valor (R$)</label>
+                    <input type="number" id="pizza-preco" placeholder="Ex: 49.90" step="0.01">
+
+                    <label for="pizza-imagem">Link da Imagem (Opcional)</label>
+                    <input type="url" id="pizza-imagem" placeholder="http://...">
+                </div>
+                <button id="btn-cadastrar" class="btn-primary">Adicionar ao Cardápio</button>
+            </section>
+
+            <section class="menu-view">
+                <h3>Pizzas Cadastradas</h3>
+                <div class="pizza-grid" id="pizza-grid">
+                    </div>
+            </section>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

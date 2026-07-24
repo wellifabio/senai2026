@@ -26,6 +26,17 @@
 |Botões de controle de conteúdos em tela|ElevatedButton()|
 |Animação|Splash Screen, Transform.rotate e opacidade|
 
+### Limpar o ambiente de desenvolvimento
+- Limpar cache do flutter, abra o power shell como administrador e execute os comandos:
+
+```bash
+flutter clean
+flutter doctor
+flutter upgrade
+# caso apresente erro no upgrade
+flutter upgrade --force
+```
+
 ## Atividade: App de Anotações
 ### Contextualização
 Com o constate uso de celular, sempre precisamos anotar alguma informação e utilizamos diversos meios como alternativa

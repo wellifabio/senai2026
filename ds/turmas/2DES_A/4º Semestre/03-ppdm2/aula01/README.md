@@ -152,6 +152,18 @@ class _SplashState extends State<Splash> {
   }
 }
 ```
+- models/anotacao.dart
+```dart
+class Anotacao {
+  String data;
+  String texto;
+  Anotacao({required this.data, required this.texto});
+  String toCSV() {
+    return '$data,$texto';
+  }
+}
+```
+
 - ui/home.dart
 ```dart
 import 'package:flutter/material.dart';

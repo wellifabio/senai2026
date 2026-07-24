@@ -189,7 +189,13 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         title: Text("Anotações"),
         actions: [
-          Container(margin: EdgeInsets.all(20), child: Icon(Icons.add)),
+          GestureDetector(
+            onTap: () => modalCadastro(),
+            child: Container(
+              margin: EdgeInsets.all(20),
+              child: Icon(Icons.add),
+            ),
+          ),
         ],
       ),
       body: Center(
@@ -205,5 +211,21 @@ class _HomeState extends State<Home> {
       ),
     );
   }
+
+  void modalCadastro() {
+    if (mounted) {
+      showDialog(
+        context: context,
+        builder: (context) => AlertDialog(
+          title: Text("Adicionar anotação"),
+          content: TextField(
+            decoration: InputDecoration(hintText: "Digite sua anotação aqui."),
+          ),
+          actions: [TextButton(onPressed: () {}, child: Text("Ok"))],
+        ),
+      );
+    }
+  }
 }
+
 ```

@@ -3,7 +3,7 @@
 Para realizarmos uma revisão sobre frontend, crie o site conforme wireframe abaixo
 
 <div assign = "center">
-<img src = "cafeteria.png">
+<img src = "Cafeteria.png">
 </div>
 
 # Paleta de Cores - Cafeteria Aroma

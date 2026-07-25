@@ -35,7 +35,7 @@ A Conjectura de Collatz, ou problema, é um enigma matemático simples: para qua
 
 ### Entrega:
 - O programa deve ser enviado para o github, e deixado como público, para que o instrutor e outros colegas possam acessar e aprender com o seu código.
-
+#### [Exemplo de entrega](https://github.com/wellifabio/collatz_chatgpt_2026.git)
 ---
 
 ## Git e Github

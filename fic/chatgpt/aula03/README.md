@@ -1,5 +1,5 @@
 # Aula03 - Portifólio e GitHub
-Antes de iniciar nosso portifólio, vamos dsenvolvr alguns projetos com a ajuda de IA como ChatGPT, para que possamos ter projetos para incluir em nosso portifólio.
+Antes de iniciar nosso portifólio, vamos dsenvolver alguns projetos com a ajuda de IA como ChatGPT, para que possamos ter projetos para incluir em nosso portifólio.
 
 ## Projetos:
 Segue algumas sujestões de temas baseados no [portifolio do instrutor](https://wellifabio.github.io) e de outros profissionais da área, para que possam se inspirar e desenvolver seus projetos:
@@ -60,3 +60,6 @@ O programador a era da IA Generativa deve ser capaz de utilizar as ferramentas d
 
 ## Guia de estudos:
 - IAs podem ser utilizadas para criar guias de estudo personalizados, com base nas necessidades e objetivos do usuário, fornecendo recursos, exercícios e avaliações para ajudar no aprendizado.
+
+## Desafios com IA
+- [Packman retrô](https://github.com/wellifabio/packman_chatgpt_2026.git)

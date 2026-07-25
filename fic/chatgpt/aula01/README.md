@@ -167,5 +167,7 @@ STT (Speech-to-Text) e TTS (Text-to-Speech) são tecnologias de inteligência ar
 A visão computacional é um campo da inteligência artificial que se concentra na capacitação dos computadores para interpretar e compreender o mundo visual. Isso inclui tarefas como reconhecimento de objetos, detecção de rostos, segmentação de imagens e análise de vídeo. A visão computacional é amplamente utilizada em áreas como segurança, saúde, automação industrial e veículos autônomos.
 ### Sistemas especialistas
 Sistemas especialistas são sistemas de inteligência artificial projetados para imitar a tomada de decisão humana em áreas específicas de conhecimento. Eles utilizam uma base de conhecimento e um mecanismo de inferência para resolver problemas complexos e fornecer recomendações ou diagnósticos. Os sistemas especialistas são amplamente utilizados em áreas como medicina, engenharia e finanças.
+
+## [Projeto gerado](https://github.com/wellifabio/fakebot2026.git)
 ### Redes neurais
 Redes neurais são modelos de inteligência artificial inspirados na estrutura do cérebro humano. Elas consistem em camadas de nós (neurônios) que processam informações e aprendem a partir de dados. As redes neurais são amplamente utilizadas em tarefas como reconhecimento de imagem, processamento de linguagem natural e previsão de séries temporais. Elas são a base para muitas técnicas avançadas de aprendizado profundo (deep learning).

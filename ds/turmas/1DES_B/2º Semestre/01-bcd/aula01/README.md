@@ -247,3 +247,31 @@ Envie os dados para este formulário: [Formulário de coleta de dados](https://f
 - **MongoDB** - Não relacional, Open Source, Gratuito
 - **Firebase Firestore** - Não relacional, Proprietário, Pago
 - **SQLite** - Não relacional, Open Source, Gratuito
+
+### SGBD - Sistema Gerenciador de Banco de Dados
+- É um software que permite a criação, manutenção e manipulação de bancos de dados.
+### Exemplos de SGBD
+- **MySQL** - Relacional, Open Source, Gratuito
+- **PostgreSQL** - Relacional, Open Source, Gratuito
+- **Oracle** - Relacional, Proprietário, Pago
+- **Microsoft SQL Server** - Relacional, Proprietário, Pago
+- **MongoDB** - Não relacional, Open Source, Gratuito
+- **Firebase Firestore** - Não relacional, Proprietário, Pago
+- **SQLite** - Não relacional, Open Source, Gratuito
+
+## Acessando e explorando o SGBD (XAMPP - MariaDB) via linhas de código (Terminal)
+- 1 Abra o XAMPP Control Panel e inicie o **Apache** e o **MySQL**
+- 2 Abra o terminal (Prompt de Comando ou PowerShell) e digite o comando para acessar o MySQL:
+```bash
+mysql -u root -p
+```
+- 3 Digite a senha do usuário root (se não tiver senha, apenas pressione Enter)
+- 4 Agora você está no prompt do MySQL, onde pode executar comandos SQL para criar, modificar e consultar bancos de dados.
+
+|Comando SQL|Descrição|
+|-|-|
+|show databases;|Mostra todos os bancos de dados disponíveis|
+|use nome_do_banco;|Seleciona um banco de dados específico|
+|show tables;|Mostra todas as tabelas de um banco de dados|
+|describe nome_da_tabela;|Mostra a estrutura de uma tabela|
+|select * from nome_da_tabela;|Mostra todos os registros de uma tabela|

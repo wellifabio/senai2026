@@ -4,8 +4,7 @@
 ### Contextualização:
 O objetivo desta atividade é coletar dados de diferentes fontes e formatos, para que possamos analisar e compreender a importância da estruturação dos dados.
 ### Desafio:
-Colete dados de três colegas de turma e anote em um bloco de notas.
-
+Colete dados de três colegas de turma e anote em um bloco de notas, ou word, ou excel, ou qualquer outro formato que desejar, salve e envie para o professor
 ### Entrega
 Envie os dados para este formulário: [Formulário de coleta de dados](https://forms.gle/4LLZpbvsPoDqPcSC6)
 

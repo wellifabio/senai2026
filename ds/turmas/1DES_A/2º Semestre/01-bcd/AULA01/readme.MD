@@ -3,7 +3,7 @@
 ## Atividade 01 - Coleta de dados
 ### Contextualização:
 O objetivo desta atividade é coletar dados de diferentes fontes e formatos, para que possamos analisar e compreender a importância da estruturação dos dados.
-### Desafio:
+### Desafio A:
 Colete dados de três colegas de turma e anote em um bloco de notas, ou word, ou excel, ou qualquer outro formato que desejar, salve e envie para o professor
 ### Entrega
 Envie os dados para este formulário: [Formulário de coleta de dados](https://forms.gle/4LLZpbvsPoDqPcSC6)
@@ -68,6 +68,9 @@ O Sol que no cume ardia.
 ```
 
 ##### Semi Estruturados
+- XML
+- JSON
+###### Exemplos
 ```xml
 <possoas>
     <pessoa1>
@@ -153,6 +156,17 @@ Porque permite modificações nos campos
 ```
 
 ##### Estruturados
+- CSV - Não relacional, Linguagem de estruturação universal de dados sem (SGBD)
+- SQL - Relacional, Linguagem de Banco de dados (SGBD)
+###### Exemplos
+- CSV, Linguagem de estruturação universal de dados sem (SGBD)
+```csv
+id,nome,nascimento
+1,Ana Maria,2000-01-01
+2,Maria silva,2002-03-18
+3,Marcos Paulo,2003-04-25
+4,Mariana Lima,2001-01-13
+```
 - SQL, Linguagem de Banco de dados (SGBD)
 ```sql
 CREATE TABLE(
@@ -161,11 +175,10 @@ CREATE TABLE(
     nascimento date
 );
 ```
-- CSV, Linguagem de estruturação universal de dados sem (SGBD)
-```csv
-id;nome;nascimento
-1;Ana Maria; 2000-01-01
-2;Maria silva; 2002-03-18
-3;Marcos Paulo; 2003-04-25
-4;Mariana Lima; 2001-01-13
-```
+
+### Desafio B:
+ - Estruture os dados coletados de seus colegas em um arquivo JSON e envie para o professor.
+ - Estruture os dados coletados de seus colegas em um arquivo CSV e envie para o professor.
+
+### Entrega
+Envie os dados para este formulário: [Formulário de coleta de dados](https://forms.gle/gqxfHr3bA8AiacH97)

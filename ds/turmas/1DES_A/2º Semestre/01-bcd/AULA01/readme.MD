@@ -283,3 +283,66 @@ mysql -u root -p
         - Mariana Lima, 2001-01-13
 - 5 Consulte os dados da tabela clicando com o botão direito na tabela e selecionando "Select Rows - Limit 1000" para visualizar os registros inseridos.
     - Repare que os comandos SQL gerados pelo MySQL Workbench podem ser visualizados na aba "Action Output" e podem ser copiados e colados no terminal do MySQL para execução.
+
+## Consultando os dados do banco de dados via Shell (Terminal)
+- 1 Abra o terminal (Prompt de Comando ou PowerShell) e digite o comando para acessar o MySQL:
+- 2 Siga o script abaixo para consultar os dados do banco de dados "dados_de_amigos" e da tabela "contatos":
+```bash
+c:\xampp
+# mysql -u root
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 19
+Server version: 12.3.2-MariaDB MariaDB Server
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| dados_de_amigos    |
+| escola             |
+| hotelreservas      |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
+| test               |
++--------------------+
+8 rows in set (0.001 sec)
+
+MariaDB [(none)]> use dados_de_amigos;
+Database changed
+MariaDB [dados_de_amigos]> show tables;
++---------------------------+
+| Tables_in_dados_de_amigos |
++---------------------------+
+| contatos                  |
++---------------------------+
+1 row in set (0.001 sec)
+
+MariaDB [dados_de_amigos]> describe contatos;
++------------+--------------+------+-----+---------+----------------+
+| Field      | Type         | Null | Key | Default | Extra          |
++------------+--------------+------+-----+---------+----------------+
+| id         | int(11)      | NO   | PRI | NULL    | auto_increment |
+| nome       | varchar(100) | NO   |     | NULL    |                |
+| nascimento | date         | NO   |     | NULL    |                |
+| telefone   | varchar(20)  | NO   |     | NULL    |                |
++------------+--------------+------+-----+---------+----------------+
+4 rows in set (0.029 sec)
+
+MariaDB [dados_de_amigos]> select * from contatos;
++----+-----------------+------------+------------------+
+| id | nome            | nascimento | telefone         |
++----+-----------------+------------+------------------+
+|  1 | Jo├úo da Silva   | 2000-01-01 | 55 19 97877-7898 |
+|  2 | Maria da Silva  | 2000-01-01 | 55 19 99877-7789 |
+|  3 | Marcos Oliveira | 1998-08-01 | 55 11 99778-8789 |
+|  4 | Alfredo godoi   | 1990-02-25 | 55 11 99987-7778 |
++----+-----------------+------------+------------------+
+4 rows in set (0.000 sec)
+```
+![MySQL Workbench](./print01.png)

@@ -41,3 +41,153 @@ Envie os dados para este formulário: [Formulário de coleta de dados](https://f
 - Consciência - Autoconhecimento
 - Sabedoria - Saber o que fazer com tudo isso
 
+## Tipos de dados
+- Não Estruturados
+- Semi Estruturados
+- Estruturados
+
+#### Exemplo de tipos de dados
+#### Não estruturados
+- PDF
+- DOCX (Word)
+- XLSX (Excel)
+- TXT
+- Imagens
+
+```txt
+Poema do Cume
+
+No alto daquele cume,
+Plantei uma roseira.
+O vento no cume bate,
+A rosa no cume cheira.
+
+Quando vem a chuva fina,
+Salpicos no cume caem.
+Formigas no cume entram,
+Abelhas do cume saem.
+
+Quando cai a chuva grossa,
+A água do cume desce.
+O barro do cume escorre,
+O mato no cume cresce.
+
+Então, quando cessa a chuva,
+No cume volta a alegria.
+Pois torna a brilhar de novo,
+O Sol que no cume ardia. 
+```
+
+##### Semi Estruturados
+- XML
+- JSON
+###### Exemplos
+```xml
+<possoas>
+    <pessoa1>
+        <id>1</id>
+        <nome>Ana Maria</nome>
+        <nascimento>2000-01-01</nascimento>
+    </pessoa1>
+    <pessoa2>
+        <id>2</id>
+        <nome>Maria silva</nome>
+        <nascimento>2002-03-18</nascimento>
+    </pessoa2>
+    <pessoa3>
+        <id>3</id>
+        <nome>Marcos Paulo</nome>
+        <nascimento>2003-04-25</nascimento>
+    </pessoa3>
+    <pessoa4>
+        <id>4</id>
+        <nome>Mariana Lima</nome>
+        <nascimento>2001-01-13</nascimento>
+    </pessoa4>
+</pessoas>
+```
+```json
+[
+    {   
+        "id": 1,
+        "nome": "Ana Maria",
+        "nascimento": "2000-01-01"
+    },
+    {   
+        "id": 2,
+        "nome": "Maria silva",
+        "nascimento": "2002-03-18"
+    },
+    {   
+        "id": 3,
+        "nome": "Marcos Paulo",
+        "nascimento": "2003-04-25"
+    },
+    {   
+        "id": 4,
+        "nome": "Mariana Lima",
+        "nascimento": "2001-01-13"
+    }
+]
+```
+#### Por que JSON é Semi estruturado?
+Porque permite modificações nos campos
+```json
+[
+    {   
+        "id": 1,
+        "nome": "Ana Maria",
+        "nascimento": "2000-01-01"
+    },
+    {   
+        "id": 2,
+        "nome": "Maria silva",
+    },
+    {   
+        "id": 3,
+        "nome": "Marcos Paulo",
+        "nascimento": "2003-04-25",
+        "telefone": "19 44577-7897"
+    },
+        {   
+        "id": 4,
+        "nome": "Mariana Lima",
+        "pedidos":[
+            {
+                "data":"2023-01-02",
+                "valor":5000.00
+            },
+            {
+                "data":"2023-01-20",
+                "valor":505.50
+            },
+        ]
+    }
+]
+```
+
+##### Estruturados
+- CSV - Não relacional, Linguagem de estruturação universal de dados sem (SGBD)
+- SQL - Relacional, Linguagem de Banco de dados (SGBD)
+###### Exemplos
+- CSV, Linguagem de estruturação universal de dados sem (SGBD)
+```csv
+id,nome,nascimento
+1,Ana Maria,2000-01-01
+2,Maria silva,2002-03-18
+3,Marcos Paulo,2003-04-25
+4,Mariana Lima,2001-01-13
+```
+- SQL, Linguagem de Banco de dados relacional (SGBD)
+```sql
+CREATE TABLE(
+    id int primary key,
+    nome varchar(100),
+    nascimento date
+);
+INSERT INTO tabela (id, nome, nascimento) VALUES
+(1, 'Ana Maria', '2000-01-01'),
+(2, 'Maria silva', '2002-03-18'),
+(3, 'Marcos Paulo', '2003-04-25'),
+(4, 'Mariana Lima', '2001-01-13');
+```

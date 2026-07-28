@@ -191,3 +191,43 @@ INSERT INTO tabela (id, nome, nascimento) VALUES
 (3, 'Marcos Paulo', '2003-04-25'),
 (4, 'Mariana Lima', '2001-01-13');
 ```
+
+### Desafio B:
+ - Estruture os dados coletados de seus colegas em um arquivo **JSON** e envie para o professor.
+ - Exemplo: nome, nascimento, idade, musica_favorita, time_de_futebol:
+ ```json
+[
+    {   
+        "nome": "Ana Maria",
+        "nascimento": "2000-01-01",
+        "idade": 23,
+        "musica_favorita": "Imagine",
+        "time_de_futebol": "Palmeiras"
+    },
+    {   
+        "nome": "Maria silva",
+        "nascimento": "2002-03-18",
+        "idade": 21,
+        "musica_favorita": "Bohemian Rhapsody",
+        "time_de_futebol": "Corinthians"
+    },
+    {   
+        "nome": "Marcos Paulo",
+        "nascimento": "2003-04-25",
+        "idade": 20,
+        "musica_favorita": "Stairway to Heaven",
+        "time_de_futebol": "Santos"
+    }
+]
+ ```
+ - Estruture os dados coletados de seus colegas em um arquivo **CSV** e envie para o professor.
+ - Exemplo: nome, nascimento, idade, musica_favorita, time_de_futebol:
+ ```csv
+nome,nascimento,idade,musica_favorita,time_de_futebol
+Ana Maria,2000-01-01,23,Imagine,Palmeiras
+Maria silva,2002-03-18,21,Bohemian Rhapsody,Corinthians
+Marcos Paulo,2003-04-25,20,Stairway to Heaven,Santos
+ ```
+
+### Entrega
+Envie os dados para este formulário: [Formulário de coleta de dados](https://forms.gle/gqxfHr3bA8AiacH97)

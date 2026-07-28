@@ -231,3 +231,19 @@ Marcos Paulo,2003-04-25,20,Stairway to Heaven,Santos
 
 ### Entrega
 Envie os dados para este formulário: [Formulário de coleta de dados](https://forms.gle/gqxfHr3bA8AiacH97)
+
+## Configurar o ambiente para utilização de banco de dados relacional
+- Baixe e instale o XAMPP: [XAMPP](https://www.apachefriends.org/pt_br/download.html) ou MariaDB: [MariaDB](https://mariadb.org/download/)
+- Baixe e instale o MySQL Workbench: [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
+- Baixe e instale o VsCode: [VsCode](https://code.visualstudio.com/download)
+
+### SGBD - Sistema Gerenciador de Banco de Dados
+- É um software que permite a criação, manutenção e manipulação de bancos de dados.
+### Exemplos de SGBD
+- **MySQL** - Relacional, Open Source, Gratuito
+- **PostgreSQL** - Relacional, Open Source, Gratuito
+- **Oracle** - Relacional, Proprietário, Pago
+- **Microsoft SQL Server** - Relacional, Proprietário, Pago
+- **MongoDB** - Não relacional, Open Source, Gratuito
+- **Firebase Firestore** - Não relacional, Proprietário, Pago
+- **SQLite** - Não relacional, Open Source, Gratuito

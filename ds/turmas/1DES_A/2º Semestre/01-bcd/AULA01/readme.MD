@@ -247,3 +247,39 @@ Envie os dados para este formulário: [Formulário de coleta de dados](https://f
 - **MongoDB** - Não relacional, Open Source, Gratuito
 - **Firebase Firestore** - Não relacional, Proprietário, Pago
 - **SQLite** - Não relacional, Open Source, Gratuito
+
+## Acessando e explorando o SGBD (XAMPP - MariaDB) via linhas de código (Terminal)
+- 1 Abra o XAMPP Control Panel e inicie o **Apache** e o **MySQL**
+- 2 Abra o terminal (Prompt de Comando ou PowerShell) e digite o comando para acessar o MySQL:
+```bash
+mysql -u root -p
+```
+- 3 Digite a senha do usuário root (se não tiver senha, apenas pressione Enter)
+- 4 Agora você está no prompt do MySQL, onde pode executar comandos SQL para criar, modificar e consultar bancos de dados.
+
+|Comando SQL|Descrição|
+|-|-|
+|show databases;|Mostra todos os bancos de dados disponíveis|
+|use nome_do_banco;|Seleciona um banco de dados específico|
+|show tables;|Mostra todas as tabelas de um banco de dados|
+|describe nome_da_tabela;|Mostra a estrutura de uma tabela|
+|select * from nome_da_tabela;|Mostra todos os registros de uma tabela|
+
+## Exploração do SGBD (MySQL Workbench)
+- 1 Abra o MySQL Workbench e conecte-se ao servidor local (localhost)
+- 2 Crie um novo banco de dados (schema) clicando com o botão direito em "Schemas" e selecionando "Create Schema"
+    - Nome do banco de dados: "dados_de_amigos"
+- 3 Crie uma nova tabela clicando com o botão direito no banco de dados criado
+    - Vamos criar uma tabela chamada "contatos" com os seguintes campos:
+        - id (INT, Primary Key, Auto Increment)
+        - nome (VARCHAR(100))
+        - nascimento (DATE)
+        - telefone (VARCHAR(20))
+- 4 Insira dados na tabela clicando com o botão direito na tabela e selecionando "Select Rows - Limit 1000" e depois clicando em "Apply" para salvar os dados inseridos.
+    - Vamos inserir os seguintes dados:
+        - Ana Maria, 2000-01-01
+        - Maria Silva, 2002-03-18
+        - Marcos Paulo, 2003-04-25
+        - Mariana Lima, 2001-01-13
+- 5 Consulte os dados da tabela clicando com o botão direito na tabela e selecionando "Select Rows - Limit 1000" para visualizar os registros inseridos.
+    - Repare que os comandos SQL gerados pelo MySQL Workbench podem ser visualizados na aba "Action Output" e podem ser copiados e colados no terminal do MySQL para execução.

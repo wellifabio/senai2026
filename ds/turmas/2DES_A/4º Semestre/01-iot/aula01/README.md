@@ -1,5 +1,19 @@
 # Aula01 - Iot (internet of things - internet das coisas)
 ## [ThinkerCad](https://www.tinkercad.com/)
+## Conhecimentos
+- 1 Automação em IoT 
+  - 1.1 Residencial  
+  - 1.2 Pessoal 
+  - 1.3 Industriais  
+  - 1.4 Aplicações 
+- 2 Requisitos para Instalação 
+  - 2.1 Hardware 
+    - 2.1.1 Conectividade 
+    - 2.1.2 Periféricos 
+  - 2.2 Sensores e Atuadores 
+    - 2.2.1 Interfaces de I/O 
+    - 2.2.2 Analógica
+## Tópicos abordados
 - Eletricidade
 - Microcontroladores
 - Sensores

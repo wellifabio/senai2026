@@ -130,3 +130,6 @@ Ligue vários leds em paralelo, utilizando uma bateria de 3.0 Volts.
 Ligue vários leds em série, utilizando uma bateria de 9.0 Volts e um interruptor.
 <br>![Experiência 05](./experiencia05.png)
 - Resultado: Anote os resultados observados utilizando baterias diferentes, interruptor e dois leds por bateria.
+
+### Entregas
+- Salve a imagem do seu projeto e envie para o professor respondendo as questões deste [formulário](https://forms.gle/baWDacV88yEY53Bw9).

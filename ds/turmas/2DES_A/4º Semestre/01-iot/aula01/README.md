@@ -131,5 +131,10 @@ Ligue vários leds em série, utilizando uma bateria de 9.0 Volts e um interrupt
 <br>![Experiência 05](./experiencia05.png)
 - Resultado: Anote os resultados observados utilizando baterias diferentes, interruptor e dois leds por bateria.
 
+### Desafio
+|Imagem|Descrição|
+|-|-|
+|![Desafio](./desafio.png)|Monte o circuito ao lado, utilizando uma bateria de 9.0 Volts, um interruptor, um motor e um Rele DPDT. O motor precisa girar para ambos os sentidos controlado pelo interruptor.|
+
 ### Entregas
 - Salve a imagem do seu projeto e envie para o professor respondendo as questões deste [formulário](https://forms.gle/baWDacV88yEY53Bw9).

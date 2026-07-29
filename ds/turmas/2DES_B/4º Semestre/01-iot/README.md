@@ -2,9 +2,7 @@
 
 |Objetivo:|
 |-|
-|Desenvolver capacidades técnicas e socioemocionais necessárias à implementação de 
-soluções com tecnologias de IoT para a integração de sistemas, por meio de sensores, atuadores e 
-aplicações de interfaces gráficas.|
+|Desenvolver capacidades técnicas e socioemocionais necessárias à implementação de soluções com tecnologias de IoT para a integração de sistemas, por meio de sensores, atuadores e aplicações de interfaces gráficas.|
 
 - Carga Horária (**Mínimo 75%** de Frequência)
 

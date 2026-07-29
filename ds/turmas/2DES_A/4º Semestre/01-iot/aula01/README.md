@@ -1,6 +1,11 @@
 # Aula01 - Iot (internet of things - internet das coisas)
 ## [ThinkerCad](https://www.tinkercad.com/)
-## Conhecimentos
+
+### Capacidades Técnicas
+- 1 Identificar as diferenças entre as aplicações do IoT e IIoT 
+- 2 Identificar os tipos de hardwares e soluções disponíveis 
+
+### Conhecimentos
 - 1 Automação em IoT 
   - 1.1 Residencial  
   - 1.2 Pessoal 
@@ -13,11 +18,17 @@
   - 2.2 Sensores e Atuadores 
     - 2.2.1 Interfaces de I/O 
     - 2.2.2 Analógica
+
 ## Tópicos abordados
+- Iot e IIot
 - Eletricidade
 - Microcontroladores
 - Sensores
 - Atuadores
+
+## Iot e IIot
+- Iot (Internet of Things) é a interconexão de dispositivos físicos, veículos, edifícios e outros itens incorporados com eletrônica, software, sensores e conectividade de rede que permite que esses objetos coletem e troquem dados.
+- IIot (Industrial Internet of Things) é a aplicação da tecnologia IoT em ambientes industriais, permitindo a coleta e análise de dados em tempo real para otimizar processos, aumentar a eficiência e reduzir custos.
 
 ## Eletricidade
 - Corrente elétrica: fluxo de elétrons em um circuito.

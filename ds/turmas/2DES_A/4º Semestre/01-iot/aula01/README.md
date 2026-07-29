@@ -134,7 +134,7 @@ Ligue vários leds em série, utilizando uma bateria de 9.0 Volts e um interrupt
 ### Desafio
 |Imagem|Descrição|
 |-|-|
-|![Desafio](./desafio.png)|Monte o circuito ao lado, utilizando uma bateria de 9.0 Volts, um interruptor, um motor, um resistor de 1kΩ para que o motor gire proximo a 1000 RPM e um Rele DPDT.<br>**Desafio:** O motor precisa girar para ambos os sentidos controlado pelo interruptor.|
+|![Desafio](./desafio.png)|Monte o circuito ao lado, utilizando uma bateria de 9.0 Volts, um interruptor, um motor, um resistor de 1kΩ para que o motor gire proximo a 1000 RPM e um Relé DPDT.<br>**Desafio:** O motor precisa girar para ambos os sentidos controlado pelo interruptor.|
 
 ### Entregas
 - Salve a imagem do seu projeto e envie para o professor respondendo as questões deste [formulário](https://forms.gle/baWDacV88yEY53Bw9).

@@ -210,8 +210,8 @@ frutas.forEach((fruta, indice) => {
 4: abacaxi 	 R$ 5.00
 ```
 ## Exemplo de objetos com JavaScript no Node.js
-- 1. Criar um arquivo chamado `objetos.js` dentro da pasta `back-aula01`
-- 2. Digitar o seguinte código dentro do arquivo `objetos.js`:
+- 1. Criar um arquivo chamado `objeto.js` dentro da pasta `back-aula01`
+- 2. Digitar o seguinte código dentro do arquivo `objeto.js`:
 ```javascript
 //Definição de variáveis tipo objeto
 const fruta = {
@@ -226,7 +226,7 @@ console.log(`O preço da fruta é: R$ ${fruta.preco.toFixed(2)}`)
 console.log(`O tipo da fruta é: ${fruta.tipo}`)
 console.log(`A cor da fruta é: ${fruta.cor}`)
 ```
-- Compile o programa com o comando `node objetos.js` no terminal do Visual Studio Code.
+- Compile o programa com o comando `node objeto.js` no terminal do Visual Studio Code.
 - Saída
 ```
 O nome da fruta é: Maçã
@@ -234,8 +234,8 @@ O preço da fruta é: R$ 2.50
 O tipo da fruta é: Macã Fuji
 A cor da fruta é: Vermelha
 ```
-- 3. Criar um arquivo chamado `objetos_lista.js` dentro da pasta `back-aula01`
-- 4. Digitar o seguinte código dentro do arquivo `objetos_lista.js`:
+- 3. Criar um arquivo chamado `objetos.js` dentro da pasta `back-aula01`
+- 4. Digitar o seguinte código dentro do arquivo `objetos.js`:
 ```javascript
 //Definição de variáveis tipo lista de objetos
 const frutas = [
@@ -250,7 +250,7 @@ frutas.forEach(fruta => {
     console.log(`Nome: ${fruta.nome}, Preço: R$ ${fruta.preco.toFixed(2)}, Tipo: ${fruta.tipo}, Cor: ${fruta.cor}`)
 })
 ```
-- Compile o programa com o comando `node objetos_lista.js` no terminal do Visual Studio Code.
+- Compile o programa com o comando `node objetos.js` no terminal do Visual Studio Code.
 - Saída
 ```
 Nome: Maçã, Preço: R$ 2.50, Tipo: Macã Fuji, Cor: Vermelha

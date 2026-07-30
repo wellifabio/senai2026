@@ -180,8 +180,8 @@ O elemento 2 do vetor é: laranja
 O elemento 3 do vetor é: uva
 O elemento 4 do vetor é: abacaxi
 ```
-- 4. Criar um arquivo chamado `duas_listas.js` dentro da pasta `back-aula01`
-- 5. Digitar o seguinte código dentro do arquivo `duas_listas.js`:
+- 3. Criar um arquivo chamado `duas_listas.js` dentro da pasta `back-aula01`
+- 4. Digitar o seguinte código dentro do arquivo `duas_listas.js`:
 ```javascript
 //Atribuição de variáveis
 var frutas = ["maçã", "banana", "laranja", "uva", "abacaxi"]
@@ -233,6 +233,31 @@ O nome da fruta é: Maçã
 O preço da fruta é: R$ 2.50
 O tipo da fruta é: Macã Fuji
 A cor da fruta é: Vermelha
+```
+- 3. Criar um arquivo chamado `objetos_lista.js` dentro da pasta `back-aula01`
+- 4. Digitar o seguinte código dentro do arquivo `objetos_lista.js`:
+```javascript
+//Definição de variáveis tipo objeto
+const frutas = [
+    { nome: "Maçã", preco: 2.5, tipo: "Macã Fuji", cor: "Vermelha" },
+    { nome: "Banana", preco: 3.0, tipo: "Banana Prata", cor: "Amarela" },
+    { nome: "Laranja", preco: 1.5, tipo: "Laranja Pera", cor: "Laranja" },
+    { nome: "Uva", preco: 4.0, tipo: "Uva Itália", cor: "Roxa" },
+    { nome: "Abacaxi", preco: 5.0, tipo: "Abacaxi Pérola", cor: "Amarela" }
+]
+//Exibindo informações do objeto
+frutas.forEach(fruta => {
+    console.log(`Nome: ${fruta.nome}, Preço: R$ ${fruta.preco.toFixed(2)}, Tipo: ${fruta.tipo}, Cor: ${fruta.cor}`)
+})
+```
+- Compile o programa com o comando `node objetos_lista.js` no terminal do Visual Studio Code.
+- Saída
+```
+Nome: Maçã, Preço: R$ 2.50, Tipo: Macã Fuji, Cor: Vermelha
+Nome: Banana, Preço: R$ 3.00, Tipo: Banana Prata, Cor: Amarela
+Nome: Laranja, Preço: R$ 1.50, Tipo: Laranja Pera, Cor: Laranja
+Nome: Uva, Preço: R$ 4.00, Tipo: Uva Itália, Cor: Roxa
+Nome: Abacaxi, Preço: R$ 5.00, Tipo: Abacaxi Pérola, Cor: Amarela
 ```
 
 ## Lista de Exercícios

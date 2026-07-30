@@ -237,13 +237,13 @@ A cor da fruta é: Vermelha
 - 3. Criar um arquivo chamado `objetos_lista.js` dentro da pasta `back-aula01`
 - 4. Digitar o seguinte código dentro do arquivo `objetos_lista.js`:
 ```javascript
-//Definição de variáveis tipo objeto
+//Definição de variáveis tipo lista de objetos
 const frutas = [
     { nome: "Maçã", preco: 2.5, tipo: "Macã Fuji", cor: "Vermelha" },
     { nome: "Banana", preco: 3.0, tipo: "Banana Prata", cor: "Amarela" },
     { nome: "Laranja", preco: 1.5, tipo: "Laranja Pera", cor: "Laranja" },
     { nome: "Uva", preco: 4.0, tipo: "Uva Itália", cor: "Roxa" },
-    { nome: "Abacaxi", preco: 5.0, tipo: "Abacaxi Pérola", cor: "Amarela" }
+    { nome: "Abacaxi", preco: 5.0, tipo: "Pérola", cor: "Amarela" }
 ]
 //Exibindo informações do objeto
 frutas.forEach(fruta => {
@@ -257,7 +257,7 @@ Nome: Maçã, Preço: R$ 2.50, Tipo: Macã Fuji, Cor: Vermelha
 Nome: Banana, Preço: R$ 3.00, Tipo: Banana Prata, Cor: Amarela
 Nome: Laranja, Preço: R$ 1.50, Tipo: Laranja Pera, Cor: Laranja
 Nome: Uva, Preço: R$ 4.00, Tipo: Uva Itália, Cor: Roxa
-Nome: Abacaxi, Preço: R$ 5.00, Tipo: Abacaxi Pérola, Cor: Amarela
+Nome: Abacaxi, Preço: R$ 5.00, Tipo: Pérola, Cor: Amarela
 ```
 
 ## Lista de Exercícios

@@ -5,7 +5,8 @@
     - API (Application Programming Interface) intermediário entre cliente e servidor
 
 ## Capacidades Técnicas
-- 1 Utilizar o paradigma da programação orientada a objetos
+- 5 Preparar o ambiente necessário ao desenvolvimento back-end para a plataforma web
+- 6 Definir os elementos de entrada, processamento e saída para a programação da aplicação web
 
 ## Conhecimentos
 - 1 Ambiente de desenvolvimento web

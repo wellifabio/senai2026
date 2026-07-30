@@ -218,7 +218,7 @@ const fruta = {
     nome: "Maçã",
     preco: 2.5,
     tipo: "Macã Fuji",
-    cor: "vermelha"
+    cor: "Vermelha"
 }
 //Acessando propriedades do objeto
 console.log(`O nome da fruta é: ${fruta.nome}`)
@@ -232,7 +232,7 @@ console.log(`A cor da fruta é: ${fruta.cor}`)
 O nome da fruta é: Maçã
 O preço da fruta é: R$ 2.50
 O tipo da fruta é: Macã Fuji
-A cor da fruta é: vermelha
+A cor da fruta é: Vermelha
 ```
 
 ## Lista de Exercícios

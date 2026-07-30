@@ -111,3 +111,56 @@ console.log(`A raiz quadrada de ${y} = ${raiz.toFixed(2)}`)
 console.log(`A potência de ${x}² = ${potencia}`)
 ```
 - Compile o programa com o comando `node matematica.js` no terminal do Visual Studio Code.
+- Saída
+```
+A soma de 10 + 25 = 35
+A subtração de 10 - 25 = -15
+A multiplicação de 10 * 25 = 250
+A divisão de 10 / 25 = 0.40
+O resto da divisão de 10 % 25 = 10
+A raiz quadrada de 25 = 5.00
+A potência de 10² = 100
+```
+## Exemplo de lógica de programação com JavaScript no Node.js
+- 1. Criar um arquivo chamado `logica.js` dentro da pasta `back-aula01`
+- 2. Digitar o seguinte código dentro do arquivo `logica.js`:
+```javascript
+//Atribuição de variáveis
+var nome = "João";
+var idade = 25;
+var cidade = "São Paulo";
+//Comparação de variáveis
+if (idade >= 18) console.log(nome + " é maior de idade.");
+if (cidade == "São Paulo")
+    console.log(`${nome} mora em São Paulo.`);
+if (idade == "25")
+    console.log(`${nome} tem ${idade} anos.`);
+if (idade === 25)
+    console.log(`${nome} tem exatamente 25 anos.`);
+```
+- Compile o programa com o comando `node logica.js` no terminal do Visual Studio Code.
+- Saída
+```
+João é maior de idade.
+João mora em São Paulo.
+João tem 25 anos.
+João tem exatamente 25 anos.
+```
+## Exemplo de listas (Vetores) com JavaScript no Node.js
+- 1. Criar um arquivo chamado `vetores.js` dentro da pasta `back-aula01`
+- 2. Digitar o seguinte código dentro do arquivo `vetores.js`:
+```javascript
+//Atribuição de variáveis
+var frutas = ["maçã", "banana", "laranja", "uva", "abacaxi"]
+//Acessando elementos do vetor
+console.log("O primeiro elemento do vetor é: " + frutas[0])
+console.log("O segundo elemento do vetor é: " + frutas[1])
+//Acessando com laço de repetição
+for (var i = 0; i < frutas.length; i++) {
+    console.log(`O elemento ${i} do vetor é: ${frutas[i]}`)
+}
+//Acessando com forEach (Para cada elemento do vetor)
+frutas.forEach((fruta, indice) => {
+    console.log(`O elemento ${indice} do vetor é: ${fruta}`)
+})
+```

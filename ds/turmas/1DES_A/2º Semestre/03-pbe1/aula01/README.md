@@ -64,7 +64,12 @@ npm --version
 ```
 - Caso o node esteja em uma versão inferior a v24, desinstale e instale a versão mais recente.
 - Caso o NPM esteja em uma versão inferior a 11, desinstale e instale a versão mais recente.
-- Como utilizamos windows, após a instalação do Node.js e do Visual Studio Code, reinicie o computador.
+- Como utilizamos windows, **após a instalação do Node.js** e do Visual Studio Code, **reinicie o computador**.
+- Após reiniciar abra o terminal e digite novamente:
+```
+node --version
+npm --version
+```
 
 ## Testando nossos primeiros códigos com JavaScript no Node.js
 - 1. Criar uma pasta chamada `back-aula01` em seu computador

@@ -188,26 +188,26 @@ var frutas = ["maçã", "banana", "laranja", "uva", "abacaxi"]
 var precos = [2.5, 3.0, 1.5, 4.0, 5.0]
 //Acessando com laço de repetição
 for (var i = 0; i < frutas.length; i++) {
-    console.log(`O elemento ${i} do vetor frutas é: ${frutas[i]} e o preço é: R$ ${precos[i].toFixed(2)}`)
+    console.log(`${i}: ${frutas[i]}\t R$ ${precos[i].toFixed(2)}`)
 }
 //Acessando com forEach (Para cada elemento do vetor)
 frutas.forEach((fruta, indice) => {
-    console.log(`O elemento ${indice} do vetor frutas é: ${fruta} e o preço é: R$ ${precos[indice].toFixed(2)}`)
+    console.log(`${indice}: ${fruta} \t R$ ${precos[indice].toFixed(2)}`)
 })
 ```
 - Compile o programa com o comando `node duas_listas.js` no terminal do Visual Studio Code.
 - Saída
 ```
-O elemento 0 do vetor frutas é: maçã e o preço é: R$ 2.50
-O elemento 1 do vetor frutas é: banana e o preço é: R$ 3.00
-O elemento 2 do vetor frutas é: laranja e o preço é: R$ 1.50
-O elemento 3 do vetor frutas é: uva e o preço é: R$ 4.00
-O elemento 4 do vetor frutas é: abacaxi e o preço é: R$ 5.00
-O elemento 0 do vetor frutas é: maçã e o preço é: R$ 2.50
-O elemento 1 do vetor frutas é: banana e o preço é: R$ 3.00
-O elemento 2 do vetor frutas é: laranja e o preço é: R$ 1.50
-O elemento 3 do vetor frutas é: uva e o preço é: R$ 4.00
-O elemento 4 do vetor frutas é: abacaxi e o preço é: R$ 5.00
+0: maçã	 R$ 2.50
+1: banana	 R$ 3.00
+2: laranja	 R$ 1.50
+3: uva	 R$ 4.00
+4: abacaxi	 R$ 5.00
+0: maçã 	 R$ 2.50
+1: banana 	 R$ 3.00
+2: laranja 	 R$ 1.50
+3: uva 	 R$ 4.00
+4: abacaxi 	 R$ 5.00
 ```
 ## Exemplo de objetos com JavaScript no Node.js
 - 1. Criar um arquivo chamado `objetos.js` dentro da pasta `back-aula01`

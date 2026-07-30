@@ -234,3 +234,9 @@ O preço da fruta é: R$ 2.50
 O tipo da fruta é: Macã Fuji
 A cor da fruta é: vermelha
 ```
+
+## Lista de Exercícios
+- 1 Crie um programa que chamado `alunos.js` que contenha uma lista de alunos com as seguintes informações: nome, idade, cidade e nota final. O programa deve exibir a lista de alunos e suas informações no console.
+- 2 Crie um programa chamado `produtos.js` que contenha uma lista de produtos com as seguintes informações: nome, preço e quantidade. O programa deve exibir a lista de produtos e suas informações no console.
+- 3 Altere o programa `produtos.js` para calcular o valor total de cada produto (preço * quantidade) e exibir no console.
+- 4 Crie um programa chamado `funcionarios.js` que contenha uma lista de funcionários com as seguintes informações: nome, cargo, salário e tempo de serviço. O programa deve exibir a lista de funcionários e suas informações no console.

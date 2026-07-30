@@ -88,3 +88,83 @@ Saída
 ```
 Olá, mundo!
 ```
+## Testando nossos primeiros códigos com JavaScript no Node.js
+- 1. Criar uma pasta chamada `back-aula01` em seu computador
+- 2. Abrir o Visual Studio Code e abrir a pasta `back-aula01`
+- 3. Criar um arquivo chamado `index.js` dentro da pasta `back-aula01`
+- 4. Digitar o seguinte código dentro do arquivo `index.js`:
+```javascript
+console.log("Olá, mundo!");
+```
+- 5. Abrir o terminal **CTRL + `** do Visual Studio Code e digitar o seguinte comando:
+```
+node index.js
+```
+Saída
+
+```
+Olá, mundo!
+```
+
+## Programando com JavaScript no Node.js
+- 1. Criar um arquivo chamado `matematica.js` dentro da pasta `back-aula01`
+- 2. Digitar o seguinte código dentro do arquivo `matematica.js`:
+```javascript
+//Variáveis
+x = 10
+y = 2
+//Operações
+soma = x + y
+sub = x - y
+mult = x * y
+div = x / y
+resto = x % y
+raiz = Math.sqrt(x)
+potencia = Math.pow(x, y)
+//Saídas com concatenação
+console.log("A soma de " + x + " + " + y + " = " + soma)
+console.log("A subtração de " + x + " - " + y + " = " + sub)
+//Saídas com aspas simples (apóstrofe)
+console.log('A multiplicação de ' + x + ' * ' + y + ' = ' + mult)
+console.log('A divisão de ' + x + ' / ' + y + ' = ' + div.toFixed(2))
+console.log('O resto da divisão de ' + x + ' % ' + y + ' = ' + resto)
+//Saídas com template string (crase)
+console.log(`A raiz quadrada de ${x} = ${raiz.toFixed(2)}`)
+console.log(`A potência de ${x} elevado a ${y} = ${potencia}`)
+```
+- Compile o programa com o comando `node matematica.js` no terminal do Visual Studio Code.
+- Saída
+```
+A soma de 10 + 2 = 12
+A subtração de 10 - 2 = 8
+A multiplicação de 10 * 2 = 20
+A divisão de 10 / 2 = 5.00
+O resto da divisão de 10 % 2 = 0
+A raiz quadrada de 10 = 3.16
+A potência de 10 elevado a 2 = 100
+```
+## Exemplo de lógica de programação com JavaScript no Node.js
+- 1. Criar um arquivo chamado `logica.js` dentro da pasta `back-aula01`
+- 2. Digitar o seguinte código dentro do arquivo `logica.js`:
+```javascript
+//Atribuição de variáveis
+var nome = "João";
+var idade = 25;
+var cidade = "São Paulo";
+//Comparação de variáveis
+if (idade >= 18) console.log(nome + " é maior de idade.");
+if (cidade == "São Paulo")
+    console.log(`${nome} mora em São Paulo.`);
+if (idade == "25")
+    console.log(`${nome} tem ${idade} anos.`);
+if (idade === 25)
+    console.log(`${nome} tem exatamente 25 anos.`);
+```
+- Compile o programa com o comando `node logica.js` no terminal do Visual Studio Code.
+- Saída
+```
+João é maior de idade.
+João mora em São Paulo.
+João tem 25 anos.
+João tem exatamente 25 anos.
+```

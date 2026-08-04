@@ -357,3 +357,30 @@ MariaDB [dados_de_amigos]> select * from contatos;
 4 rows in set (0.000 sec)
 ```
 ![MySQL Workbench](./print01.png)
+
+## Atividades
+Utilizando o MySQL Workbench, crie os seguintes bancos de dados:
+- 1 Um banco de dados chamado **concessionaria** e uma tabela chamada **veiculos** com os seguintes campos:
+    - id (INT, Primary Key, Auto Increment)
+    - marca (VARCHAR(50))
+    - modelo (VARCHAR(50))
+    - cor (VARCHAR(20))
+    - ano (INT)
+    - valor (DECIMAL(10,2))
+- Preencha a tabela com pelo menos 10 registros de veículos diferentes.
+- 2 Um banco de dados chamado **biblioteca** e uma tabela chamada **livros** com os seguintes campos:
+    - id (INT, Primary Key, Auto Increment)
+    - titulo (VARCHAR(100))
+    - autor (VARCHAR(100))
+    - ano (INT)
+    - genero (VARCHAR(50))
+- Preencha a tabela com pelo menos 10 registros de livros diferentes.
+- 3 Um banco de dados chamado **escola** e uma tabela chamada **alunos** com os seguintes campos:
+    - id (INT, Primary Key, Auto Increment)
+    - nome (VARCHAR(100))
+    - nascimento (DATE)
+    - serie (VARCHAR(20))
+    - nota_final (DECIMAL(4,2))
+- Preencha a tabela com pelo menos 10 registros de alunos diferentes.
+### Entrega
+- Exporte os dados dos bancos de dados criados em arquivos .CSV e envie para o professor, neste formulário: [Formulário de entrega de atividades](https://forms.gle/gqxfHr3bA8AiacH97)

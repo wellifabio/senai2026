@@ -276,12 +276,6 @@ mysql -u root -p
 |describe nome_da_tabela;|Mostra a estrutura de uma tabela|
 |select * from nome_da_tabela;|Mostra todos os registros de uma tabela|
 
-
-# Paramos aqui na última aula
-
-
-
-
 ## Exploração do SGBD (MySQL Workbench)
 - 1 Abra o MySQL Workbench e conecte-se ao servidor local (localhost)
 - 2 Crie um novo banco de dados (schema) clicando com o botão direito em "Schemas" e selecionando "Create Schema"

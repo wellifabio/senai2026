@@ -383,4 +383,4 @@ Utilizando o MySQL Workbench, crie os seguintes bancos de dados:
     - nota_final (DECIMAL(4,2))
 - Preencha a tabela com pelo menos 10 registros de alunos diferentes.
 ### Entrega
-- Exporte os dados dos bancos de dados criados em arquivos .CSV e envie para o professor, neste formulário: [Formulário de entrega de atividades](https://forms.gle/gqxfHr3bA8AiacH97)
+- Exporte os dados dos bancos de dados criados em arquivos .CSV e envie para o professor, neste formulário: [Formulário de entrega de atividades](https://forms.gle/PxQxJy5uFn8MYrtC9)

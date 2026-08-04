@@ -154,13 +154,11 @@
 
 ## Atividade / Tarefa
 
-- Desenvolva um site que contenha três páginas que navegem entre si. O conteudo do site pode ser escolhido por você e o site deve ser minimamente estilizado utilizando somente as tags vistas em sala.
-- CSS só poderá ser utilizado INLINE e através de pesquisa.
+- Desenvolva um site de acordo com os prints abaixo
 
-# Html Online
+  
 
-https://www.w3schools.com/html/html_editor.asp
-# Aplicativo para Programar
-https://play.google.com/store/apps/details?id=io.spck&pcampaignid=web_share
+
+
 
 

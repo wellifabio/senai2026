@@ -154,9 +154,13 @@
 
 ## Atividade / Tarefa
 
+- Crie um repositoria chamado TINews
 - Desenvolva um site de acordo com os prints abaixo
+- Publique o site no github pages e mande o link no meu email
+- 💻🖥️💾
 
-  
+  <img src = "noticia1.png">
+  <img src = "noticia2.png">
 
 
 

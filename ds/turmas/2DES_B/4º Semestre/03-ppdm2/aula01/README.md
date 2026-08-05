@@ -74,6 +74,12 @@ lib
     models
         anotacao.dart
 ```
+```
+assets
+    icone.png
+    fonts
+        PatrickHand-Regular.ttf
+```
 - pubspec.yaml
 ```yaml
 dependencies:
@@ -211,7 +217,7 @@ class _HomeState extends State<Home> {
       ),
     );
   }
-
+}
 ```
 ### Criando funcionailidades de cadastro e exclusão
 - ui/home.dart

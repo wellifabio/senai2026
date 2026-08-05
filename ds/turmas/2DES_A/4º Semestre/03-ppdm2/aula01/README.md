@@ -342,5 +342,131 @@ abstract class AppColors {
   static const Color c4 = Color(0xFF99AADD);
   static const Color c5 = Color(0xFFF1FFFF);
 }
-
 ```
+- ui/style/theme.dart
+```dart
+import 'package:flutter/material.dart';
+import 'colors.dart';
+
+abstract class AppTheme {
+  static ThemeData temaClaro = ThemeData.light().copyWith(
+    scaffoldBackgroundColor: AppColors.c5,
+    primaryColor: AppColors.c1,
+    appBarTheme: AppBarTheme(
+      backgroundColor: AppColors.c1,
+      foregroundColor: AppColors.c4,
+      titleTextStyle: TextStyle(
+        color: AppColors.c5,
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
+        fontFamily: 'PatrickHand',
+      ),
+    ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: AppColors.c1,
+        foregroundColor: AppColors.c5,
+        textStyle: TextStyle(
+          fontSize: 16,
+          fontWeight: FontWeight.bold,
+          fontFamily: 'PatrickHand',
+        ),
+      ),
+    ),
+    dialogTheme: DialogThemeData(
+      backgroundColor: AppColors.c5,
+      titleTextStyle: TextStyle(
+        color: AppColors.c1,
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
+        fontFamily: 'PatrickHand',
+      ),
+      contentTextStyle: TextStyle(
+        color: AppColors.c1,
+        fontSize: 16,
+        fontFamily: 'PatrickHand',
+      ),
+    ),
+    listTileTheme: ListTileThemeData(
+      textColor: AppColors.c1,
+      iconColor: AppColors.c2,
+      style: ListTileStyle.list,
+      titleTextStyle: TextStyle(
+        color: AppColors.c1,
+        fontSize: 16,
+        fontWeight: FontWeight.bold,
+        fontFamily: 'PatrickHand',
+      ),
+    ),
+  );
+
+  static ThemeData temaEscuro = ThemeData.dark().copyWith(
+    scaffoldBackgroundColor: AppColors.c1,
+    primaryColor: AppColors.c5,
+    appBarTheme: AppBarTheme(
+      backgroundColor: AppColors.c5,
+      foregroundColor: AppColors.c2,
+      titleTextStyle: TextStyle(
+        color: AppColors.c1,
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
+        fontFamily: 'PatrickHand',
+      ),
+    ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: AppColors.c5,
+        foregroundColor: AppColors.c1,
+        textStyle: TextStyle(
+          fontSize: 16,
+          fontWeight: FontWeight.bold,
+          fontFamily: 'PatrickHand',
+        ),
+      ),
+    ),
+    dialogTheme: DialogThemeData(
+      backgroundColor: AppColors.c1,
+      titleTextStyle: TextStyle(
+        color: AppColors.c5,
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
+        fontFamily: 'PatrickHand',
+      ),
+      contentTextStyle: TextStyle(
+        color: AppColors.c5,
+        fontSize: 16,
+        fontFamily: 'PatrickHand',
+      ),
+    ),
+    listTileTheme: ListTileThemeData(
+      textColor: AppColors.c5,
+      iconColor: AppColors.c4,
+      style: ListTileStyle.list,
+      titleTextStyle: TextStyle(
+        color: AppColors.c5,
+        fontSize: 16,
+        fontWeight: FontWeight.bold,
+        fontFamily: 'PatrickHand',
+      ),
+    ),
+  );
+}
+```
+- Paramos aqui criando os dois temas, falta apenas aplicar o tema no main.dart, para isso altere o arquivo main.dart da seguinte forma:
+- main.dart
+```dart
+import 'package:flutter/material.dart';
+import 'ui/splash.dart';
+import 'ui/style/theme.dart';
+
+void main() {
+  runApp(MaterialApp(
+    title: "Anotações",
+    theme: AppTheme.temaClaro,
+    darkTheme: AppTheme.temaEscuro,
+    themeMode: ThemeMode.system,
+    home: Splash(),
+  ));
+}
+```
+Desta forma o App irá utilizar o tema claro ou escuro de acordo com a configuração do sistema operacional do celular.

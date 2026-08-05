@@ -110,9 +110,23 @@ flutter:
 import 'package:flutter/material.dart';
 
 import 'ui/splash.dart';
+import 'ui/style/theme.dart';
 
 void main() {
-  runApp(MaterialApp(title: "Anotações", home: Splash()));
+  runApp(
+    ValueListenableBuilder<ThemeMode>(
+      valueListenable: AppTheme.modo,
+      builder: (context, themeMode, _) {
+        return MaterialApp(
+          title: "Anotações",
+          theme: AppTheme.temaClaro,
+          darkTheme: AppTheme.temaEscuro,
+          themeMode: themeMode,
+          home: Splash(),
+        );
+      },
+    ),
+  );
 }
 ```
 - ui/splash.dart
@@ -120,6 +134,7 @@ void main() {
 import 'package:flutter/material.dart';
 
 import 'home.dart';
+import 'style/theme.dart';
 
 class Splash extends StatefulWidget {
   const Splash({super.key});
@@ -131,19 +146,32 @@ class Splash extends StatefulWidget {
 class _SplashState extends State<Splash> {
   @override
   Widget build(BuildContext context) {
+    final temaEscuro = AppTheme.modo.value == ThemeMode.light ? false : true;
+
     return Scaffold(
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          spacing: 40,
+          spacing: 20,
           children: [
-            Image.asset("./assets/icone.png", width: 200),
+            Image.asset('./assets/icone.png', width: 200),
+            SwitchListTile(
+              title: const Text("Tema escuro"),
+              value: temaEscuro,
+              onChanged: (value) {
+                setState(() {
+                  AppTheme.modo.value = value
+                      ? ThemeMode.dark
+                      : ThemeMode.light;
+                });
+              },
+            ),
             ElevatedButton(
               onPressed: () => Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Home()),
+                MaterialPageRoute(builder: (context) => const Home()),
               ),
-              child: Text("Iniciar"),
+              child: const Text("Iniciar"),
             ),
           ],
         ),
@@ -151,6 +179,7 @@ class _SplashState extends State<Splash> {
     );
   }
 }
+
 ```
 - models/anotacao.dart
 ```dart

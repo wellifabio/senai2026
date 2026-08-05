@@ -74,6 +74,12 @@ lib
     models
         anotacao.dart
 ```
+```
+assets
+    icone.png
+    fonts
+        PatrickHand-Regular.ttf
+```
 - pubspec.yaml
 ```yaml
 dependencies:

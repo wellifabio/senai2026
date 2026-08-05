@@ -165,6 +165,7 @@ class Anotacao{
 ```
 - ui/home.dart
 ```dart
+import '../models/anotacao.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -175,34 +176,90 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  List<dynamic> anotacoes = [
-    {"data": "2026-07-24 10:00", "texto": "Tomar café da manhã"},
-    {"data": "2026-07-24 12:00", "texto": "Almoçar"},
-    {"data": "2026-07-24 15:00", "texto": "Tomar café da tarde"},
-    {"data": "2026-07-24 17:00", "texto": "Ir para a casa"},
-  ];
+  List<Anotacao> anotacoes = [];
+  String texto = "";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("Anotações"),
         actions: [
-          Container(
-              margin: EdgeInsets.all(20),
-              child: Icon(Icons.add),
+          GestureDetector(
+            onTap: () {
+              cadastrar();
+            },
+            child: Container(
+              margin: EdgeInsets.only(right: 20),
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: Colors.black,
+              ),
+              child: Icon(Icons.add, size: 40, color: Colors.white),
             ),
+          ),
         ],
       ),
       body: Center(
         child: ListView.separated(
           itemBuilder: (context, i) => ListTile(
-            title: Text(anotacoes[i]["data"]),
-            subtitle: Text(anotacoes[i]["texto"]),
-            trailing: Icon(Icons.delete),
+            title: Text(anotacoes[i].data),
+            subtitle: Text(anotacoes[i].texto),
+            trailing: GestureDetector(
+              onTap: () => excluir(i),
+              child: Icon(Icons.delete),
+            ),
           ),
           separatorBuilder: (_, _) => Divider(),
           itemCount: anotacoes.length,
         ),
+      ),
+    );
+  }
+
+  void cadastrar() {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text('Nova anotação'),
+        content: TextField(
+          decoration: InputDecoration(hintText: "Digite sua anotação"),
+          onChanged: (value) => setState(() {
+            texto = value;
+          }),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () {
+              Navigator.of(context).pop();
+              String data = DateTime.now().toString().substring(0, 16);
+              setState(() {
+                anotacoes.add(Anotacao(data: data, texto: texto));
+              });
+            },
+            child: Text("Cadastrar"),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void excluir(int indice) {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text('Excluir anotação'),
+        content: Text('Confirma a exclusão desta anotação'),
+        actions: [
+          TextButton(
+            onPressed: () {
+              Navigator.of(context).pop();
+              setState(() {
+                anotacoes.removeAt(indice);
+              });
+            },
+            child: Text("Ok"),
+          ),
+        ],
       ),
     );
   }

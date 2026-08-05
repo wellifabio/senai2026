@@ -155,7 +155,6 @@ class _SplashState extends State<Splash> {
 - ui/home.dart
 ```dart
 import 'package:flutter/material.dart';
-import '../models/anotacao.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -166,10 +165,10 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   List<dynamic> anotacoes = [
-    {data: "2026-07-24 10:00", texto: "Tomar café da manhã"},
-    {data: "2026-07-24 12:00", texto: "Almoçar"},
-    {data: "2026-07-24 15:00", texto: "Tomar café da tarde"},
-    {data: "2026-07-24 17:00", texto: "Ir para a casa"},
+    {"data": "2026-07-24 10:00", "texto": "Tomar café da manhã"},
+    {"data": "2026-07-24 12:00", "texto": "Almoçar"},
+    {"data": "2026-07-24 15:00", "texto": "Tomar café da tarde"},
+    {"data": "2026-07-24 17:00", "texto": "Ir para a casa"},
   ];
   @override
   Widget build(BuildContext context) {
@@ -186,8 +185,8 @@ class _HomeState extends State<Home> {
       body: Center(
         child: ListView.separated(
           itemBuilder: (context, i) => ListTile(
-            title: Text(anotacoes[i].data),
-            subtitle: Text(anotacoes[i].texto),
+            title: Text(anotacoes[i]["data"]),
+            subtitle: Text(anotacoes[i]["texto"]),
             trailing: Icon(Icons.delete),
           ),
           separatorBuilder: (_, _) => Divider(),

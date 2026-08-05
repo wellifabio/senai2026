@@ -221,6 +221,7 @@ class _HomeState extends State<Home> {
 ```
 ![Parte01](./info/parte01.png)
 ### Criando funcionailidades de cadastro e exclusão
+Altere o arquivo a seguir:
 - ui/home.dart
 ```dart
 import '../models/anotacao.dart';
@@ -323,7 +324,7 @@ class _HomeState extends State<Home> {
   }
 }
 ```
-
+![Parte02](./info/parte02.png)
 ### Configuramdo paleta de cores e temas
 Preencha os arquivos a seguir:
 - ui/style/colors.dart

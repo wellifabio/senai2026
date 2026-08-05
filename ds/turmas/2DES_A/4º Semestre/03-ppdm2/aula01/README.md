@@ -222,6 +222,7 @@ class _HomeState extends State<Home> {
 ![Parte01](./info/parte01.png)
 ## Acrescentar os modais de cadastro e exclusão de anotações
 Altere o arquivo home.dart para incluir os modais de cadastro e exclusão de anotações, utilizando showDialog() e AlertDialog().
+- ui/home.dart
 ```dart
 import 'package:flutter/material.dart';
 import '../models/anotacao.dart';
@@ -328,3 +329,18 @@ class _HomeState extends State<Home> {
 }
 ```
 ![Parte02](./info/parte02.png)
+### Configuramdo paleta de cores e temas
+Preencha os arquivos a seguir:
+- ui/style/colors.dart
+```dart
+import 'package:flutter/material.dart';
+
+abstract class AppColors {
+  static const Color c1 = Color(0xFF001133);
+  static const Color c2 = Color(0xFF334499);
+  static const Color c3 = Color(0xFF7788AA);
+  static const Color c4 = Color(0xFF99AADD);
+  static const Color c5 = Color(0xFFF1FFFF);
+}
+
+```

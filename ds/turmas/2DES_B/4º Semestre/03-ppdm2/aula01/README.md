@@ -219,6 +219,7 @@ class _HomeState extends State<Home> {
   }
 }
 ```
+![Parte01](./info/parte01.png)
 ### Criando funcionailidades de cadastro e exclusão
 - ui/home.dart
 ```dart

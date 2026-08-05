@@ -219,3 +219,4 @@ class _HomeState extends State<Home> {
   }
 }
 ```
+![Parte01](./info/parte01.png)

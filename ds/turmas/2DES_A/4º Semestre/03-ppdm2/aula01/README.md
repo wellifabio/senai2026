@@ -220,3 +220,111 @@ class _HomeState extends State<Home> {
 }
 ```
 ![Parte01](./info/parte01.png)
+## Acrescentar os modais de cadastro e exclusão de anotações
+Altere o arquivo home.dart para incluir os modais de cadastro e exclusão de anotações, utilizando showDialog() e AlertDialog().
+```dart
+import 'package:flutter/material.dart';
+import '../models/anotacao.dart';
+
+class Home extends StatefulWidget {
+  const Home({super.key});
+
+  @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  List<Anotacao> anotacoes = [
+    Anotacao(data: "2026-08-05 10:00", texto: "Tomar café da manhã"),
+    Anotacao(data: "2026-08-05 12:00", texto: "Almoçar"),
+    Anotacao(data: "2026-08-05 15:00", texto: "Tomar café da tarde"),
+    Anotacao(data: "2026-08-05 17:00", texto: "Ir para a casa"),
+    Anotacao(data: "2026-08-05 22:00", texto: "Ir dormir"),
+  ];
+  String texto = "";
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Anotações"),
+        actions: [
+          GestureDetector(
+            onTap: cadastrar,
+            child: Container(
+              margin: EdgeInsets.only(right: 20),
+              child: Icon(Icons.add),
+            ),
+          ),
+        ],
+      ),
+      body: Center(
+        child: ListView.separated(
+          itemBuilder: (context, i) => ListTile(
+            title: Text(anotacoes[i].data),
+            subtitle: Text(anotacoes[i].texto),
+            trailing: GestureDetector(
+              onTap: () => excluir(i),
+              child: Icon(Icons.delete),
+            ),
+          ),
+          separatorBuilder: (_, _) => Divider(),
+          itemCount: anotacoes.length,
+        ),
+      ),
+    );
+  }
+
+  void cadastrar() {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text("Nova anotação"),
+        content: TextField(
+          onChanged: (value) => setState(() {
+            texto = value;
+          }),
+          decoration: InputDecoration(hintText: "Digite sua anotação"),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () {
+              Navigator.of(context).pop();
+              setState(() {
+                anotacoes.add(
+                  Anotacao(
+                    data: DateTime.now().toString().substring(0, 16),
+                    texto: texto,
+                  ),
+                );
+              });
+            },
+            child: Text("Salvar"),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void excluir(int indice) {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text("Excluir anotação"),
+        content: Text("Confirma exclusão"),
+        actions: [
+          TextButton(
+            onPressed: () {
+              Navigator.of(context).pop();
+              setState(() {
+                anotacoes.removeAt(indice);
+              });
+            },
+            child: Text("Ok"),
+          ),
+        ],
+      ),
+    );
+  }
+}
+```
+![Parte02](./info/parte02.png)

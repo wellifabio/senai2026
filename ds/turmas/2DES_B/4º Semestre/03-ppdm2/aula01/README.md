@@ -456,6 +456,25 @@ abstract class AppTheme {
   );
 }
 ```
+Vamos configurar o main.dart para que o App utilize o tema claro ou escuro de acordo com a configuração do sistema operacional do celular.
+
+- main.dart
+```dart
+import 'package:flutter/material.dart';
+import 'ui/splash.dart';
+import 'ui/style/theme.dart';
+
+void main() {
+  runApp(MaterialApp(
+    title: "Anotações",
+    theme: AppTheme.temaClaro,
+    darkTheme: AppTheme.temaEscuro,
+    themeMode: ThemeMode.system,
+    home: Splash(),
+  ));
+}
+```
+
 ### Tema claro e tema escuro com alternância de tema
 Altere os arquivos a seguir: 
 - main.dart

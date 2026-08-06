@@ -527,23 +527,26 @@ class _SplashState extends State<Splash> {
           spacing: 20,
           children: [
             Image.asset('./assets/icone.png', width: 200),
-            SwitchListTile(
-              title: const Text("Tema escuro"),
-              value: temaEscuro,
-              onChanged: (value) {
-                setState(() {
-                  AppTheme.modo.value = value
-                      ? ThemeMode.dark
-                      : ThemeMode.light;
-                });
-              },
+            SizedBox(
+              width: 200,
+              child: SwitchListTile(
+                title: Text("Tema escuro"),
+                value: temaEscuro,
+                onChanged: (value) {
+                  setState(() {
+                    AppTheme.modo.value = value
+                        ? ThemeMode.dark
+                        : ThemeMode.light;
+                  });
+                },
+              ),
             ),
             ElevatedButton(
               onPressed: () => Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const Home()),
+                MaterialPageRoute(builder: (context) => Home()),
               ),
-              child: const Text("Iniciar"),
+              child: Text("Iniciar"),
             ),
           ],
         ),
@@ -551,5 +554,5 @@ class _SplashState extends State<Splash> {
     );
   }
 }
-
 ```
+![Parte03](./info/parte03.png)

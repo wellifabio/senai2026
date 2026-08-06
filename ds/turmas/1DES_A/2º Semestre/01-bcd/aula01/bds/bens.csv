@@ -1,4 +1,4 @@
-"id";"nome";"descricao";"valor";"data"
-1;"Apartamento";"Apartamento no Jd. São Dimas";50000.0;"2020-01-01"
-2;"Casa";"Casa n Pq. Modelo";200000.0;"2019-01-30"
-3;"Carro";"BYD - Sei lá";110000.0;"2024-08-13"
+"id","nome","descricao","valor","data"
+1,"Apartamento","Apartamento no Jd. Sï¿½o Dimas",50000.0,"2020-01-01"
+2,"Casa","Casa n Pq. Modelo",200000.0,"2019-01-30"
+3,"Carro","BYD - Sei lï¿½",110000.0,"2024-08-13"

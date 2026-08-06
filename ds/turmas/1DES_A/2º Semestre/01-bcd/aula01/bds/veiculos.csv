@@ -1,11 +1,11 @@
-"id";"marca";"modelo";"cor";"ano";"valor"
-1;"BMW";"Carro Caro 1";"Branco";2020;200000.0
-2;"Porsche";"Porsche 911";"Prata";2014;400000.0
-3;"Mercedes";"Caminhão bom";"Preto";2019;20000.0
-4;"Volkswagen";"Fusca";"Azul";1964;999999.0
-5;"Ferrari";"Carro Caro 2";"Vermelho";2024;500000.0
-6;"Lamborghini";"Carro Caro 3";"Verde";2026;600000.0
-7;"BYD";"Carro Eletrico";"Azul Escuro";2026;130000.0
-8;"Toyota";"Caminhonete";"Prata";2015;190000.0
-9;"Ford";"Modelo T";"Preto";1910;999999.0
-10;"VrumVrum";"Modelo F";"Khaki";1765;1000000.0
+"id","marca","modelo","cor","ano","valor"
+1,"BMW","Carro Caro 1","Branco",2020,200000.0
+2,"Porsche","Porsche 911","Prata",2014,400000.0
+3,"Mercedes","Caminhï¿½o bom","Preto",2019,20000.0
+4,"Volkswagen","Fusca","Azul",1964,999999.0
+5,"Ferrari","Carro Caro 2","Vermelho",2024,500000.0
+6,"Lamborghini","Carro Caro 3","Verde",2026,600000.0
+7,"BYD","Carro Eletrico","Azul Escuro",2026,130000.0
+8,"Toyota","Caminhonete","Prata",2015,190000.0
+9,"Ford","Modelo T","Preto",1910,999999.0
+10,"VrumVrum","Modelo F","Khaki",1765,1000000.0

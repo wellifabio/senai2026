@@ -1,11 +1,11 @@
-"id";"nome";"nascimento";"serie";"nota_final"
-1;"Jessíca Guedes Vaz";"2010-01-19";"2";9.0
-2;"João Victor Moraes Lopes";"2009-10-20";"2";9.0
-3;"Eloísa Macedo da Silva";"2010-02-21";"2";8.0
-4;"Leonardo Canina Marchiori";"2009-10-28";"2";10.0
-5;"Maria Eduarda Betim Gomes de Moraes";"2009-11-23";"2";9.0
-6;"Jesga Vaz Guedes Martins";"2010-01-20";"2";4.0
-7;"Juliano Ferdandes de Morais";"2009-10-10";"2";2.0
-8;"Fyodor Dostoiévsky";"1821-11-11";"2";10.0
-9;"Liev Tolstói";"1828-09-09";"2";10.0
-10;"Franz Kafka";"1883-07-03";"2";10.0
+"id","nome","nascimento","serie","nota_final"
+1,"Jessï¿½ca Guedes Vaz","2010-01-19","2",9.0
+2,"Joï¿½o Victor Moraes Lopes","2009-10-20","2",9.0
+3,"Eloï¿½sa Macedo da Silva","2010-02-21","2",8.0
+4,"Leonardo Canina Marchiori","2009-10-28","2",10.0
+5,"Maria Eduarda Betim Gomes de Moraes","2009-11-23","2",9.0
+6,"Jesga Vaz Guedes Martins","2010-01-20","2",4.0
+7,"Juliano Ferdandes de Morais","2009-10-10","2",2.0
+8,"Fyodor Dostoiï¿½vsky","1821-11-11","2",10.0
+9,"Liev Tolstï¿½i","1828-09-09","2",10.0
+10,"Franz Kafka","1883-07-03","2",10.0

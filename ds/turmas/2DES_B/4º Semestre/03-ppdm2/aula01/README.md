@@ -24,7 +24,6 @@
 |Conversão de dados, classe Model de MVC|CSV|
 |Utilização de fontes de texto externas .ttf|assets/fonts|
 |Botões de controle de conteúdos em tela|ElevatedButton()|
-|Animação|Splash Screen, Transform.rotate e opacidade|
 
 ### Limpar o ambiente de desenvolvimento
 - Limpar cache do flutter, abra o power shell como administrador e execute os comandos:

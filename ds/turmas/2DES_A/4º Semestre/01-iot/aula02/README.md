@@ -28,7 +28,7 @@ Simule um sinalizador de saída de garagem que usa um transistor NPN como chave 
 - 2 resistores de 220 Ω (para os LEDs)
 - 1 resistor de 10 kΩ (polarização da base)
 - 1 capacitor eletrolítico de 470 µF a 1000 µF
-- Fonte de 5 V
+- Bateria de 9 V
 
 ### Esquema de ligação
 ```

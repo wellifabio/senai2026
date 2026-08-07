@@ -30,50 +30,25 @@
 Simule um sinalizador de saída de garagem que usa um transistor NPN como chave e um capacitor para criar um atraso na troca dos LEDs e utiliza apenas componentes básicos.
 
 ### Componentes
-- 2 transistores NPN (BC548, BC547 ou 2N2222)
+- 1 transistores NPN (BC548, BC547 ou 2N2222)
 - 2 LEDs (vermelho e verde)
-- 2 resistores de 220 Ω (para os LEDs)
+- 2 resistores de 470 Ω (para os LEDs)
 - 1 resistor de 10 kΩ (polarização da base)
 - 1 capacitor eletrolítico de 470 µF a 1000 µF
 - Bateria de 9 V
 
 ### Esquema de ligação
-```
-              +5V
-               |
-      +--------+---------+
-      |                  |
-    220Ω              220Ω
-      |                  |
- LED Verde          LED Vermelho
-      |                  |
-      |             Coletor
-      |                  |
-      |             Transistor NPN
-      |             Emissor
-      |                  |
-     GND-----------------+
-
-Base do transistor
-      |
-     10kΩ
-      |
-     +5V
-      |
-   Capacitor
-  (+)      (-)
-  +5V     Base
-  ```
+![Esquema de ligação](./garagem02.png)
 
 ## Funcionamento
 - Ao ligar a alimentação:
 - O capacitor inicialmente está descarregado.
 - A base do transistor demora alguns instantes para atingir a tensão de - condução.
-- Durante esse tempo o LED verde permanece aceso.
+- O LED verde permanece aceso.
 - Após alguns segundos:
 - O capacitor carrega.
 - O transistor satura.
-- O LED vermelho acende e o verde apaga.
+- O LED vermelho acende também.
 - O tempo aproximado é dado por:
 ```
 Tempo ≈ R × C

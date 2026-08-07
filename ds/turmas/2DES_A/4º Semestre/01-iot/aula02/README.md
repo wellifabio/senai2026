@@ -18,12 +18,19 @@
   - 2.2 Sensores e Atuadores 
     - 2.2.1 Interfaces de I/O 
     - 2.2.2 Analógica
+## Cricuito simples com interruptor e dois leds
+### Componentes
+- 1 Bateria de 9 V
+- 1 Interruptor
+- 2 LEDs (vermelho e verde)
+- 2 resistores de 470 Ω (para os LEDs)
+![Esquema de ligação](./garagem01.png)
 
 ## Desafio01
 Simule um sinalizador de saída de garagem que usa um transistor NPN como chave e um capacitor para criar um atraso na troca dos LEDs e utiliza apenas componentes básicos.
 
 ### Componentes
-- 1 transistor NPN (BC548, BC547 ou 2N2222)
+- 2 transistores NPN (BC548, BC547 ou 2N2222)
 - 2 LEDs (vermelho e verde)
 - 2 resistores de 220 Ω (para os LEDs)
 - 1 resistor de 10 kΩ (polarização da base)

@@ -16,6 +16,8 @@
 ## Portas lógicas
 Transistores, diodos e capacitores são amplamente utilizados para a execução de portas lógicas AND, OR, NOT e também como memória na eletrônica e base da computação.
 ![lousa](./lousa.png)
+- Crie os sircuitos abaixo para testar as portas
+![Portas](./portas.png)
 
 ## Simulação01 - Trabalhando com mais alguns componentes
 

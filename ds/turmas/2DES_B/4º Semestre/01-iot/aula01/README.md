@@ -145,4 +145,5 @@ Ligue vários leds em série, utilizando uma bateria de 9.0 Volts e um interrupt
 ![Potenciometro](./potenciometro.png)
 - Circuito para trocar a rotação de dois motores e acelerar
 ![Potenciometro2](./potenciometro2.png)
-
+- A a seguir o gabarito do desafio com Relé para fazer o circuito de troca de tenção e girar o motor para um lado e outro
+![Gabarito](./gabarito01.png)

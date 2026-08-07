@@ -138,3 +138,9 @@ Ligue vários leds em série, utilizando uma bateria de 9.0 Volts e um interrupt
 
 ### Entregas
 - Salve a imagem do seu projeto e envie para o professor respondendo as questões deste [formulário](https://forms.gle/baWDacV88yEY53Bw9).
+
+## Resolução
+### Exemplo do uso de potenciometro
+Usando para acelerar e reduzir a velocidade de um motor
+![Potenciometro](./potenciometro.png)
+Circuito para trocar a rotação do motor

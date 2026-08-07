@@ -3,15 +3,9 @@
 ## [ThinkerCad](https://www.tinkercad.com/)
 
 ### Capacidades Técnicas
-- 1 Identificar as diferenças entre as aplicações do IoT e IIoT 
 - 2 Identificar os tipos de hardwares e soluções disponíveis 
 
 ### Conhecimentos
-- 1 Automação em IoT 
-  - 1.1 Residencial  
-  - 1.2 Pessoal 
-  - 1.3 Industriais  
-  - 1.4 Aplicações 
 - 2 Requisitos para Instalação 
   - 2.1 Hardware 
     - 2.1.1 Conectividade 
@@ -19,7 +13,61 @@
   - 2.2 Sensores e Atuadores 
     - 2.2.1 Interfaces de I/O 
     - 2.2.2 Analógica
-## Simulação 01 - Cricuito simples com interruptor e dois leds
+- 5 Preparação de dispositivo IoT
+
+## Simulação01 - Trabalhando com mais alguns componentes
+
+- Transistores
+    - NPN
+- Sensores
+    - Fotoresistor
+    - Botão (Pushbutton)
+
+### Usando um transistor NPN (recomendado)
+Os transistores amplificam a potência e podem atuar como interruptores eletricamente controlados. Os transistores de junção bipolar (BJTs, bipolar function transistors) possuem três camadas de silício, cuja disposição determina a direção do fluxo de corrente.
+#### Como funciona
+Os transistores amplificam a potência e podem atuar como interruptores eletricamente controlados. Os transistores de junção bipolar (BJTs, bipolar junction transistors) possuem três camadas de silício, cuja disposição determina a direção do fluxo de corrente.
+
+#### Laboratório [ThinkerCad](https://www.tinkercad.com/)
+Vamos montar um circuito semelhante ao dos postes da CPFL que a noite acendem a luz ee de dia a apagam com:
+
+- 1 bateria de 9 V
+- 1 LED
+- 1 resistor de 330 Ω (para o LED)
+- 1 fotoresistor (LDR)
+- 1 resistor de 10 kΩ
+- 1 transistor NPN (por exemplo, 2N2222 ou BC547)
+
+##### Ligações
+```
++9V
+ │
+ ├── Resistor 330 Ω ───► LED ─── Coletor (2N2222)
+ │                               Emissor
+ │                                  │
+ │                                 GND
+ │
+ └── LDR ─────┐
+              ├──── Base do transistor
+Resistor 10k ─┘
+      │
+     GND
+```
+![Poste](./poste.png)
+##### Como funciona
+- Com muita luz:
+    - A resistência do LDR diminui.
+    - A tensão na base do transistor fica baixa.
+    - O transistor conduz pouco.
+    - O LED fica apagado ou fraco.
+- No escuro:
+    - A resistência do LDR aumenta.
+    - A tensão na base aumenta.
+    - O transistor conduz mais.
+    - O LED acende mais forte.
+- Se o comportamento ficar invertido no Tinkercad, basta trocar a posição do LDR e do resistor de 10 kΩ no divisor de tensão.
+
+## Simulação 02 - Cricuito simples com interruptor e dois leds
 ### Componentes
 - 1 Bateria de 9 V
 - 1 Interruptor
@@ -27,7 +75,7 @@
 - 2 resistores de 470 Ω (para os LEDs)
 ![Esquema de ligação](./garagem01.png)
 
-## Simulação 02 - Circuito com atraso na troca dos LEDs
+## Simulação 03 - Circuito com atraso na troca dos LEDs
 Simule um sinalizador de saída de garagem que usa um transistor NPN como chave e um capacitor para criar um atraso na troca dos LEDs e utiliza apenas componentes básicos.
 
 ### Componentes

@@ -1,5 +1,4 @@
 # Aula02 - Componentes eletrônicos básicos
-![lousa](./lousa.png)
 ## [ThinkerCad](https://www.tinkercad.com/)
 
 ### Capacidades Técnicas
@@ -66,6 +65,9 @@ Resistor 10k ─┘
     - O transistor conduz mais.
     - O LED acende mais forte.
 - Se o comportamento ficar invertido no Tinkercad, basta trocar a posição do LDR e do resistor de 10 kΩ no divisor de tensão.
+## Portas lógicas
+Transistores, diodos e capacitores são amplamente utilizados para a execução de portas lógicas AND, OR, NOT e também como memória na eletrônica e base da computação.
+![lousa](./lousa.png)
 
 ## Simulação 02 - Cricuito simples com interruptor e dois leds
 ### Componentes
@@ -75,7 +77,7 @@ Resistor 10k ─┘
 - 2 resistores de 470 Ω (para os LEDs)
 ![Esquema de ligação](./garagem01.png)
 
-## Simulação 03 - Circuito com atraso na troca dos LEDs
+## Simulação 03 - Circuito utilizando capacitor para causar um atraso na troca dos LEDs
 Simule um sinalizador de saída de garagem que usa um transistor NPN como chave e um capacitor para criar um atraso na troca dos LEDs e utiliza apenas componentes básicos.
 
 ### Componentes

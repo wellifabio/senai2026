@@ -13,12 +13,16 @@
     - 2.2.2 Analógica
 - 5 Preparação de dispositivo IoT
 
-## Trabalhando com mais alguns componentes
+## Portas lógicas
+Transistores, diodos e capacitores são amplamente utilizados para a execução de portas lógicas AND, OR, NOT e também como memória na eletrônica e base da computação.
+![lousa](./lousa.png)
+
+## Simulação01 - Trabalhando com mais alguns componentes
 
 - Transistores
     - NPN
 - Sensores
-    - Fotoresistor
+    - Fotoresistorv
     - Botão (Pushbutton)
 
 ### Usando um transistor NPN (recomendado)

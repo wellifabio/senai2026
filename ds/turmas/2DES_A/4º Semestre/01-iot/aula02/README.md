@@ -18,7 +18,7 @@
   - 2.2 Sensores e Atuadores 
     - 2.2.1 Interfaces de I/O 
     - 2.2.2 Analógica
-## Cricuito simples com interruptor e dois leds
+## Simulação 01 - Cricuito simples com interruptor e dois leds
 ### Componentes
 - 1 Bateria de 9 V
 - 1 Interruptor
@@ -26,7 +26,7 @@
 - 2 resistores de 470 Ω (para os LEDs)
 ![Esquema de ligação](./garagem01.png)
 
-## Desafio01
+## Simulação 02 - Circuito com atraso na troca dos LEDs
 Simule um sinalizador de saída de garagem que usa um transistor NPN como chave e um capacitor para criar um atraso na troca dos LEDs e utiliza apenas componentes básicos.
 
 ### Componentes

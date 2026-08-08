@@ -13,10 +13,10 @@ Segue algumas sujestões de temas baseados no [portifolio do instrutor](https://
 - Livro de receitas utilizando [HTML], [CSS] e [JavaScript] e Firebase para armazenamento de dados.
 
 ## Projetos desenvolvidos em aula
-- [Fake Chatbot com JavaScript, HTML e CSS](https://wellifabio.github.io/senai_fake_chatgpt_2026/) Introdução a programação.
+- [Fake Chatbot com JavaScript, HTML e CSS](https://wellifabio.github.io/senai_fake_chatgpt_2026/) Introdução a programação com IA, [Repositorio](https://github.com/wellifabio/senai_fake_chatgpt_2026.git)
 - [Conjectura de collatz, desafio resolvido com IA chatGPT](https://github.com/wellifabio/senai_collatz_chatgpt_2026.git)
-- [Carrinho de compras com Copilot](https://wellifabio.github.io/senai_chatgpt_carrinho_copilot_2026/)
-- [Jogo PackMan com auxilio do ChatGPT](https://wellifabio.github.io/senai_packman_chatgpt_2026/)
+- [Carrinho de compras com Copilot](https://wellifabio.github.io/senai_chatgpt_carrinho_copilot_2026/), [Repositorio](https://github.com/wellifabio/senai_chatgpt_carrinho_copilot_2026.git)
+- [Jogo PackMan com auxilio do ChatGPT](https://wellifabio.github.io/senai_packman_chatgpt_2026/), [Repositorio](https://github.com/wellifabio/senai_packman_chatgpt_2026.git)
 
 ## Missão
 - Vamos escolher dois projetos para desenvolver, utilizando as tecnologias que você domina ou deseja aprender. Utilize o ChatGPT para te ajudar a desenvolver os projetos, seja para gerar código, corrigir erros, refatorar códigos, aprender novas tecnologias, entre outros.

@@ -54,7 +54,7 @@ O DER é uma representação gráfica do MER. O DER é composto por entidades, a
 ### Dicionário de Dados - Caixeiro Viajante
 ![Dicionário de Dados](./caixeiro/dd.png)
 
-## Atividades
+## Atividades (Será sorteado uma das atividades abaixo para cada aluno)
 1. Uma empresa de transporte deseja criar um sistema para gerenciar suas rotas e motoristas. Crie o MER, DER e Dicionário de Dados para este sistema. Simule no excel dados fictícios para as entidades criadas.
 
 2. Uma escola deseja criar um sistema para gerenciar seus alunos, professores e disciplinas. Crie o MER, DER e Dicionário de Dados para este sistema. Simule no excel dados fictícios para as entidades criadas.

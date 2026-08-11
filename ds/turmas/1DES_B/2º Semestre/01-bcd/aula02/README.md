@@ -47,3 +47,20 @@ O DER é uma representação gráfica do MER. O DER é composto por entidades, a
 ![Escola](./escola1.0.png)
 ### Exemplo do DER - Escola 2.0
 ![Escola 2.0](./escola2.0.png)
+
+
+## Exemplo Caixeiro Viajante
+![MER DER](./caixeiro/mer_der.png)
+### Dicionário de Dados - Caixeiro Viajante
+![Dicionário de Dados](./caixeiro/dd.png)
+
+## Atividades
+1. Uma empresa de transporte deseja criar um sistema para gerenciar suas rotas e motoristas. Crie o MER, DER e Dicionário de Dados para este sistema. Simule no excel dados fictícios para as entidades criadas.
+
+2. Uma escola deseja criar um sistema para gerenciar seus alunos, professores e disciplinas. Crie o MER, DER e Dicionário de Dados para este sistema. Simule no excel dados fictícios para as entidades criadas.
+
+3. Uma livraria deseja criar um sistema para gerenciar seus livros, autores e clientes. Crie o MER, DER e Dicionário de Dados para este sistema. Simule no excel dados fictícios para as entidades criadas.
+
+4. Uma clínica deseja criar um sistema para gerenciar seus pacientes, médicos e consultas. Crie o MER, DER e Dicionário de Dados para este sistema. Simule no excel dados fictícios para as entidades criadas.
+
+5. Um plano de saúde veterinário deseja criar um sistema para gerenciar seus clientes (Donos de pets e Veterinários credenciados), animais e consultas. Crie o MER, DER e Dicionário de Dados para este sistema. Simule no excel dados fictícios para as entidades criadas.

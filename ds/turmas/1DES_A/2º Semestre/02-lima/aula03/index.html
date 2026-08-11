@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Comando para comentar e descomentar linha (CTRL + ;) -->
+
+    <!-- TAG para formulário 
+		       action => para onde os dados do formulario irão
+		       method => maneira que será enviado
+		-->
+    <form action="" method="">
+        <label for="nome"> Nome </label>
+        <!-- TAG Input - Entrada de dados
+			       type => Define o tipo do dado
+			       id => Identificador do input
+			       placeholder => Texto de identificação do input
+			-->
+
+        <input type="text" id="nome" placeholder="Digite o seu nome: " required />
+        <br>
+
+        <label for="datanascimento">Data de Nascimento</label>
+        <input type="date" id="datanascimento">
+
+        <br>
+
+        <label for="email">E-mail</label>
+        <!-- Exemplo: lucaspaiva@sp.senai.br -->
+        <input type="email" placeholder="Digite o seu e-mail" id="email">
+
+        <br>
+
+        <label for="cor">Cor favorita</label>
+        <input type="color" id="cor">
+
+        <br>
+
+        <label for="volume">Selecione um volume: </label>
+        <input type="range" id="volume" min="0" max="100" />
+
+        <br>
+
+        <!-- TAG Fieldset conjunto de campos-->
+        <fieldset>
+            <legend>Gênero</legend>
+            <input type="radio" id="masc" name="genero">
+            <label for="masc">Masculino</label>
+
+            <input type="radio" id="fem" name="genero">
+            <label for="fem">Feminino</label>
+
+            <input type="radio" id="outros" name="genero">
+            <label for="outros">Outros</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Monte seu lanche</legend>
+
+            <input type="checkbox" id="salada" />
+            <label for="salada">Salada</label>
+
+            <input type="checkbox" id="hamb" />
+            <label for="hamb">Hamburguer</label>
+
+            <input type="checkbox" id="bac" />
+            <label for="bac">Bacon</label>
+
+            <input type="checkbox" id="mc" />
+            <label for="mc">Maionese Caseira da Casa</label>
+        </fieldset>
+
+        <br>
+
+        <label for="info">Informações Adicionais</label>
+        <textarea id="info"></textarea>
+
+        <br>
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" placeholder="Digite a sua senha: ">
+
+        <br>
+
+        <label for="cidade">Cidade</label>
+        <select id="cidade">
+            <option>Jaguariúna</option>
+            <option>Pedreira</option>
+            <option>Amparo</option>
+            <option>Arcadas</option>
+        </select>
+
+        <br>
+
+        <input type="reset" value="Limpar formulario">
+        <input type="submit" value="Enviar">
+
+
+
+    </form>
+
+</body>
+
+</html>

@@ -47,3 +47,7 @@ O DER é uma representação gráfica do MER. O DER é composto por entidades, a
 ![Escola](./escola1.0.png)
 ### Exemplo do DER - Escola 2.0
 ![Escola 2.0](./escola2.0.png)
+## Exemplo - Projeto Pedidos do Elizeu
+![MER DER](./pedidos/mer_der.png)
+### Dicionário de dados
+![MER DER](./pedidos/dd.png)

@@ -5,6 +5,8 @@ Crie uma pasta e junte as listas de exercícios de LOP (Linguagem de Programaç�
 - Lista02 - da aula 06 - Condicionais
 - Lista03 - da aula 07 - Laços de Repetição
 - Lista04 - da aula 12 - Vetores e Matrizes
+
+## Instruções
 Envie para o github em um repositório chamado `listas-lop` e compartilhe o link do repositório com o professor.
 ## Readme
 Crie um arquivo README.md com as instruções de como executar os exercícios e o que cada lista contém.

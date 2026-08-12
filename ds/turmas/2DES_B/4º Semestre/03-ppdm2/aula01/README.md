@@ -717,3 +717,17 @@ class _HomeState extends State<Home> {
   }
 }
 ```
+### Testando o Aplicativo
+- Por envolver arquivo local, não é possível testar no navegador WEB a persistência de dados
+- Abra o emulador do Android Studio e execute o aplicativo para testar.
+
+## Gerando o arquivo .apk para testar em dispositivo Android
+Execute o comando no terminal do VsCode:
+```bash
+flutter build apk --release
+```
+O arquivo será gerado na pasta `build/app/outputs/flutter-apk/app-release.apk` e poderá ser instalado em qualquer dispositivo Android.
+- Compie este arquivo e salve na pasta `assets` deste repositório para que possamos instalar em nossos celulares e testar a persistência de dados.
+- Em seguida faça commit e push para o repositório remoto.
+  - Não se esqueça de criar um bom Readme.md para o seu projeto, com imagens e explicações de como utilizar o aplicativo.
+

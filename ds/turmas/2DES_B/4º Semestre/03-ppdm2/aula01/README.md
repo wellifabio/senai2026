@@ -159,12 +159,16 @@ class _SplashState extends State<Splash> {
 ```
 - models/anotacao.dart
 ```dart
-class Anotacao {
+class Anotacao{
   String data;
   String texto;
   Anotacao({required this.data, required this.texto});
-  String toCSV() {
-    return '$data,$texto';
+  String toCSV(){
+    return '$data;$texto';
+  }
+  factory Anotacao.fromCSV(String csv){
+    List<String> partes = csv.split(';');
+    return Anotacao(data: partes[0], texto: partes[1]);
   }
 }
 ```

@@ -739,3 +739,12 @@ O arquivo será gerado na pasta `build/app/outputs/flutter-apk/app-release.apk` 
   - Não se esqueça de criar um bom Readme.md para o seu projeto, com imagens e explicações de como utilizar o aplicativo.
 - Obs:
   - Antes de fazer commit, de o comando `flutter clean` para limpar o cache do projeto e não enviar arquivos desnecessários para o repositório remoto.
+
+## [Exemplo do aplicativo em repositório público no github](https://github.com/wellifabio/sesi_ppdm2_flutter_anotacoes_arquivo_local_2026.git)
+
+## Desafio: Melhorar o aplicativo
+- Adicionar a funcionalidade de editar uma anotação
+- Adicionar a funcionalidade de pesquisar uma anotação
+
+## Referências
+- [Flutter](https://flutter.dev/)

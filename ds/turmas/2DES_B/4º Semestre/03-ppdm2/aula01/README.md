@@ -721,7 +721,14 @@ class _HomeState extends State<Home> {
 - Por envolver arquivo local, não é possível testar no navegador WEB a persistência de dados
 - Abra o emulador do Android Studio e execute o aplicativo para testar.
 
-## Gerando o arquivo .apk para testar em dispositivo Android
+#### Comando para configurar o ícone do aplicativo
+Ao instalar o APK ou testar no emulador, mesmo já configurado no pubspec.yaml, o ícone do aplicativo ainda é o padrão do Flutter, para alterar o ícone do aplicativo, siga os passos:
+- Execute o comando no terminal do VsCode:
+```bash
+flutter pub run flutter_launcher_icons:main
+```
+
+## Gerar o arquivo .apk para testar em dispositivo Android
 Execute o comando no terminal do VsCode:
 ```bash
 flutter build apk --release
@@ -732,4 +739,3 @@ O arquivo será gerado na pasta `build/app/outputs/flutter-apk/app-release.apk` 
   - Não se esqueça de criar um bom Readme.md para o seu projeto, com imagens e explicações de como utilizar o aplicativo.
 - Obs:
   - Antes de fazer commit, de o comando `flutter clean` para limpar o cache do projeto e não enviar arquivos desnecessários para o repositório remoto.
-

@@ -730,4 +730,6 @@ O arquivo será gerado na pasta `build/app/outputs/flutter-apk/app-release.apk` 
 - Compie este arquivo e salve na pasta `assets` deste repositório para que possamos instalar em nossos celulares e testar a persistência de dados.
 - Em seguida faça commit e push para o repositório remoto.
   - Não se esqueça de criar um bom Readme.md para o seu projeto, com imagens e explicações de como utilizar o aplicativo.
+- Obs:
+  - Antes de fazer commit, de o comando `flutter clean` para limpar o cache do projeto e não enviar arquivos desnecessários para o repositório remoto.
 

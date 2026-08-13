@@ -92,9 +92,13 @@ class _HomeState extends State<Home> {
               itemBuilder: (context, i) {
                 final anotacao = anotacoesFiltradas[i];
                 final indice = anotacoes.indexOf(anotacao);
-
                 return ListTile(
-                  title: Text(anotacao.data),
+                  title: Text(
+                    DateFormat(
+                      'dd/MM/yyyy HH:mm',
+                      'pt-BR',
+                    ).format(DateTime.parse(anotacao.data)),
+                  ),
                   subtitle: Text(anotacao.texto),
                   trailing: GestureDetector(
                     onTap: () => excluir(indice),
@@ -113,6 +117,9 @@ class _HomeState extends State<Home> {
   }
 
   void cadastrar() {
+    setState(() {
+      texto = '';
+    });
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
@@ -196,11 +203,8 @@ class _HomeState extends State<Home> {
                   TextField(
                     maxLines: null,
                     controller: TextEditingController(text: texto),
-                    decoration: InputDecoration(
-                      hintText: "Digite sua anotação",
-                    ),
                     onChanged: (value) {
-                      setDialogState(() {
+                      setState(() {
                         texto = value;
                       });
                     },

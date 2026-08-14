@@ -94,8 +94,9 @@ O sensor de luminosidade, como a maioria dos sensores é analógico, significa q
 - 6 leds (2 verdes, 2 amarelos e 2 vermelhos)
 - 6 resistores de 150 ohms
 ![desafio](./semaforo.png)
--  Pode replicar o mesmo esquema para o seu semáforo, lembrando que os dois semáforos devem ser controlados pelo mesmo Arduíno UNO.
+- Pode replicar o mesmo esquema para o seu semáforo, lembrando que os dois semáforos devem ser controlados pelo mesmo Arduíno UNO.
 - Desenvolva a programação para o Arduíno UNO, garantindo que os dois semáforos funcionem de forma sincronizada, evitando que ambos fiquem verdes ao mesmo tempo.
+- Acrescente mais dois leds para simular a travessia de pedestres, garantindo que o semáforo de pedestres fique verde apenas quando o semáforo de veículos estiver vermelho.
 
 ## Situação Problema 02 - Acendendo as luzes da pista de pouso
 |Contextualização|

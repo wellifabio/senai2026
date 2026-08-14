@@ -3,11 +3,13 @@
 
 ## Demonstrações
 ### Obtendo o click de um botão de comando - Arduino UNO
-Para esta demosntração, vamos montar um circuito com um led e um botão, também precisaremos de dois resistores de 150 ohms para o led e de 4.7 khms para o botão.
-<br>![Circuito 01](./circuito1.png)
-O mesmo circuito pode ser montado sem a utilização do Arduino porém fica limitado apenas a pressionar o botão e segurar para acender o led
-<br>![Circuito 00](./circuito0.png)
-A programação a seguir acende o led ao clicar no botão, e se estiver aceso apaga o led ao clicar no botão, caso o botão seja mantido pressionado o led ficará piscando.
+
+|![Circuito 01](./circuito1.png)|Para esta demosntração, vamos montar um circuito com um Arduino UNO, uma placa de ensaios, 1 led e um botão, também precisaremos de dois resistores de 150 ohms para o led e de 4.7 khms para o botão.|
+|-|-|
+|![Circuito 00](./circuito0.png)|O mesmo circuito pode ser montado sem a utilização do Arduino porém fica limitado apenas a pressionar o botão e segurar para acender o led|
+
+- A programação a seguir acende o led ao clicar no botão, e se estiver aceso apaga o led ao clicar no botão, caso o botão seja mantido pressionado o led ficará piscando.
+
 ```c
 /* 1 BOTAO LIGA DESLIGA LED */
 int led = 13; // Variável led assume o valor do pino 3

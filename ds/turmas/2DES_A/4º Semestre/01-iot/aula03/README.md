@@ -1,6 +1,30 @@
 # Aula03 - Desafios com Arduíno
 ## [TinkerCad](https://www.tinkercad.com/)
 
+## Capacidades Técnicas
+- 1 Identificar as diferenças entre as aplicações do IoT e IIoT 
+- 2 Identificar os tipos de hardwares e soluções disponíveis 
+- 3 Configurar ambientes de desenvolvimento
+
+## Conhecimentos
+- 1 Automação em IoT 
+  - 1.1 Residencial  
+  - 1.2 Pessoal 
+  - 1.3 Industriais  
+  - 1.4 Aplicações 
+- 2 Requisitos para Instalação 
+  - 2.1 Hardware 
+    - 2.1.1 Conectividade 
+    - 2.1.2 Periféricos 
+  - 2.2 Sensores e Atuadores 
+    - 2.2.1 Interfaces de I/O 
+    - 2.2.2 Analógica 
+- 3 Ambiente de desenvolvimento 
+  - 3.1 IDE (Integrated Development Enviroment) 
+    - 3.1.1. Tipos 
+    - 3.1.2. Seleção 
+  - 3.2. Configuração
+
 ## Demonstrações
 ### Obtendo o click de um botão de comando - Arduino UNO
 

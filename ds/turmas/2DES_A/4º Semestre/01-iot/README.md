@@ -2,9 +2,7 @@
 
 |Objetivo:|
 |-|
-|Desenvolver capacidades técnicas e socioemocionais necessárias à implementação de 
-soluções com tecnologias de IoT para a integração de sistemas, por meio de sensores, atuadores e 
-aplicações de interfaces gráficas.|
+|Desenvolver capacidades técnicas e socioemocionais necessárias à implementação de soluções com tecnologias de IoT para a integração de sistemas, por meio de sensores, atuadores e aplicações de interfaces gráficas.|
 
 - Carga Horária (**Mínimo 75%** de Frequência)
 
@@ -26,9 +24,9 @@ aplicações de interfaces gráficas.|
 - 1 Identificar as diferenças entre as aplicações do IoT e IIoT 
 - 2 Identificar os tipos de hardwares e soluções disponíveis 
 - 3 Configurar ambientes de desenvolvimento
-- 4 Implementar protocolos de comunicação  
+- 4 Implementar protocolos de comunicação 
 - 5 Integrar a automação em plataforma na nuvem 
-- 6 Conectar as aplicações gráficas  
+- 6 Conectar as aplicações gráficas
 
 ### Capacidades Socioemocionais
 - 1 Demonstrar autogestão

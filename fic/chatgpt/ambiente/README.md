@@ -22,8 +22,16 @@ senha: ********
 ![Print04](./print04.png)
 - 5 Altere algum arquivo.
 - 6 Em um terminal configure seu github
-```
+```bash
 git config --global user.mame "username"
 git config --global user.email "useremail@dogit.com"
 ```
 ![Print05](./print05.png)
+- 7 Faça um novo commit
+```bash
+git add .
+git commit -m "novo ambiente configurado"
+git push
+```
+![Print06](./print06.png)
+- Copie e cole a URL em uma nova aba anônima para autenticar. 

@@ -1,13 +1,13 @@
 # Configurar novo ambiente DEV
 Quando estamos usando uma nova estação de trabalho devemos configurar nosso ambiente DEV, se estação for compartilhada com outros usuários devemos:
 - 1 Criar um novo usuário e definir como administrador exemplo:
-    - Obs: Só é ppssível fazer este procedimento com um usuário que ja é administrador do computador.
-```
+    - Obs: Só é possível fazer este procedimento com um usuário que ja é administrador do computador.
+```bash
 usuario: chatgpt
 senha: ********
 ```
-    - Abrindo qualquer pasta e clicando com o botão direito em `Este computador`, `Mostrar mais opções` -> **Gerenciar**.
-![Print01](./print01.png)
+- Abrindo qualquer pasta e clicando com o botão direito em `Este computador`, `Mostrar mais opções` -> **Gerenciar**.
+- ![Print01](./print01.png)
     - Navegar por `Usuários e Grupos Locais`, `Usuários`, botão direito na área vazia `Novo usuário`, marque a opção [x]A senha nunca expira, somente se for autorizado.
 ![Print02](./print02.png)
     - Configure o usuário como administrador

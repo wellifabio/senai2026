@@ -7,7 +7,7 @@ usuario: chatgpt
 senha: ********
 ```
 - Abrindo qualquer pasta e clicando com o botão direito em `Este computador`, `Mostrar mais opções` -> **Gerenciar**.
-- ![Print01](./print01.png)
+![Print01](./print01.png)
     - Navegar por `Usuários e Grupos Locais`, `Usuários`, botão direito na área vazia `Novo usuário`, marque a opção [x]A senha nunca expira, somente se for autorizado.
 ![Print02](./print02.png)
     - Configure o usuário como administrador
@@ -33,5 +33,8 @@ git add .
 git commit -m "novo ambiente configurado"
 git push
 ```
+- Clique em Sign in with your browser
 ![Print06](./print06.png)
-- Copie e cole a URL em uma nova aba anônima para autenticar. 
+- Copie e cole a URL em uma nova aba anônima para autenticar.
+
+## Pronto

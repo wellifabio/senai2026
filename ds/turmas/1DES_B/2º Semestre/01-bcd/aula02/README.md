@@ -64,3 +64,38 @@ O DER é uma representação gráfica do MER. O DER é composto por entidades, a
 4. Uma clínica deseja criar um sistema para gerenciar seus pacientes, médicos e consultas. Crie o MER, DER e Dicionário de Dados para este sistema. Simule no excel dados fictícios para as entidades criadas.
 
 5. Um plano de saúde veterinário deseja criar um sistema para gerenciar seus clientes (Donos de pets e Veterinários credenciados), animais e consultas. Crie o MER, DER e Dicionário de Dados para este sistema. Simule no excel dados fictícios para as entidades criadas.
+
+|Aluno|Atividade|
+|-|:-:|
+|Alicia Coelho Gomes de Oliveira|3|
+|Ana Klara do Carmo|4|
+|Breno Franco de Lima|1|
+|Bruno Vascon|4|
+|Carolina da Silva Santos|2|
+|Davi Parreira Cardeal|2|
+|Eloísa Macedo da Silva|1|
+|Enzo Casadei Macedo|5|
+|Felipe Martins|4|
+|Gabriel Pereira de Oliveira|4|
+|Giovana Ferreira Remorini|4|
+|Giovana Luísa Cezar|2|
+|Guilherme Enrico Barichello|5|
+|Isabele Hilary Reis Silva|2|
+|Isabelle Moreira Cezar Barichello|5|
+|Jéssica Guedes Vaz|3|
+|Joana Fernandes Fabrin|5|
+|João Henrique Leme da Silva|1|
+|João Victor Moraes Lopes|5|
+|Kamilly Vitoria Ferreira Silvério|3|
+|Leonardo Canina Marchiori|5|
+|Letícia Guarizo Tolloto|1|
+|Lívia Fernandes Morais|1|
+|Maria Eduarda Betim Gomes de Moraes|2|
+|Mariana Correia Santos|5|
+|Miguel Cardoso Pignata|5|
+|Mirella Camilotti Perez|3|
+|Pietro Cardoso Broleze|4|
+|Samuel Gomes Silva|1|
+|Thiago Lima Amaral|4|
+|Vitor Rafael Parisato|1|
+|Yasmin Drudi|2|

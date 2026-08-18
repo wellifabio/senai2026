@@ -1,6 +1,23 @@
 # Aula 02 - MER x DER e Dicionário de Dados
+
+## Capacidades Técnicas
+- 3 Utilizar tipos de dados para definição dos atributos do banco de dados
+- 4 Elaborar diagramas de modelagem do banco de dados de acordo com a arquitetura definida
+- 5 Utilizar relacionamentos entre as tabelas do banco de dados
+
+## Capacidades Socioemocionais
+- 1 Demonstrar autogestão
+- 2 Demonstrar pensamento analítico
+
+## Conhecimentos
+- 2 Modelo relacional
+    - 2.1 Modelagem
+        - 2.1.1 Dicionário de dados
+        - 2.1.2 Modelo Entidade Relacionamento - MER
+        - 2.1.3 Diagrama Entidade Relacionamento - DER
+
 ![Gif](./90223.gif)
-## Tipos
+## Modelo relacional
 - MER - Modelo Entidade Relacionamento
 - DER - Diagrama Entidade Relacionamento
 - Dicionário de Dados
@@ -17,7 +34,7 @@ Atributos são características das entidades. Exemplo: Aluno possui os atributo
 ### Relacionamentos
 Relacionamentos são as ligações entre as entidades. Exemplo: Aluno está matriculado em um Curso.
 
-## Níveis
+## Tipos de modelagem
 - Conceitual - Mais abstrato, próximo ao problema
 - Lógico - Mais detalhado, próximo a solução
 - Físico - Detalhes de implementação (SQL)
@@ -99,3 +116,9 @@ O DER é uma representação gráfica do MER. O DER é composto por entidades, a
 |Thiago Lima Amaral|4|
 |Vitor Rafael Parisato|1|
 |Yasmin Drudi|2|
+
+- Ao executar as atividades o aluno adquire e demonstra suas capacidades técnicas e socioemocionais.
+- Utilize Draw.io ou a ferramenta de desenho de sua preferência para os modelar os diagramas MER DER conceitual e lógico, utilize o Excel para criar as planilhas com dados de teste para as tabelas e para o dicionário de dados, conforme o exemplo demonstrado em aula.
+
+## Entregas
+- Ao concluir suas atividades crie um repositório no github chamado `bd_mer_der_aula02` e envie para ele diagramas exportados no formato `.png` a planilha do excel com os dados de teste e o dicionário de dados. Na próxima aula teremos mais instruções de entrega após aplicarmos as formas de **normalização** no banco de dados.

@@ -62,3 +62,38 @@ O DER é uma representação gráfica do MER. O DER é composto por entidades, a
 4. Uma clínica deseja criar um sistema para gerenciar seus pacientes, médicos e consultas. Crie o MER, DER e Dicionário de Dados para este sistema. Simule no excel dados fictícios para as entidades criadas.
 
 5. Um plano de saúde veterinário deseja criar um sistema para gerenciar seus clientes (Donos de pets e Veterinários credenciados), animais e consultas. Crie o MER, DER e Dicionário de Dados para este sistema. Simule no excel dados fictícios para as entidades criadas.
+
+|Aluno|Atividade|
+|-|:-:|
+|Ana Beatriz Alves de Lima|4|
+|Bianca Giovedy Pagotto|4|
+|Breno Frazão Callegari|2|
+|Davi Cruz Oliveira|3|
+|Eduardo Moretti Varotti|4|
+|Gabriela Leticia da Silva|5|
+|Geovanna Martins Bertuol|4|
+|Giulia de Godoi Silveira|2|
+|Giuseppe de Moraes Vieira|4|
+|Gustavo Ferelli|4|
+|Heitor Dorigan de Angeli|3|
+|Helena Politti Rossi|3|
+|Isabela Marchiori Ferreira|5|
+|Isabelle Caroline Vizeu de Salles|3|
+|Larissa Guarizo Tolloto|3|
+|Leandro Imenes de Oliveira|3|
+|Letícia Aparecida Pinto de Souza|3|
+|Liara Guarizo Tolloto|5|
+|Luana Gabrielle de Oliveira|2|
+|Marina Henrique Moretti|5|
+|Matheus Dorigan Paiato|5|
+|Maycon Silva Gonçalves de Lima|4|
+|Nicolas Augusto dos Reis Lira|3|
+|Otávio Augusto Barbosa|3|
+|Pedro Henrique Souza Guarizo|3|
+|Renan Pavan Fazullo|5|
+|Samyra Leite da Silva Ferreira|2|
+|Sara de Paula Souza|5|
+|Sofia Ohashi Faria|3|
+|Tobias Gabriel Bueno de Godoi|1|
+|Víctor Henrique Santana Alves|4|
+|Vitória Bueno da Silva|1|

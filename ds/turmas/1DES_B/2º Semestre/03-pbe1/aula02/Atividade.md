@@ -60,7 +60,7 @@ A entrega deverá ser realizada **através do Git**, contendo:
 Após realizar a entrega no Git, preencha o formulário abaixo informando os dados solicitados e o link do seu repositório:
 
 **Formulário de entrega:**  
-https://forms.cloud.microsoft/r/znJeKSKfEJ
+https://forms.cloud.microsoft/r/96Emb8Xg3A
 
 ### Atenção
 

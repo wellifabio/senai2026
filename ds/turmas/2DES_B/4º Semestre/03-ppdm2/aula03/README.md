@@ -263,7 +263,7 @@ class _HomeState extends State<Home> {
 ```
 <img alt="Print02" src="./assets/print02.png" width=350>
 
-## Habilitando a câmera
+## Habilitando a Câmera
 Capturar uma foto com a câmera, salvá-la na galeria do celular e exibi-la no corpo de um Scaffold em Flutter.
 - Pacote image_picker (para abrir a câmera)
 - Pacote gal ou gallery_saver_plus (para salvar nas imagens do dispositivo).

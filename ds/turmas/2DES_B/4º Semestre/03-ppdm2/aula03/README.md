@@ -370,6 +370,6 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 }
 ```
-## Exemplo [flutter_pedal](https://github.com/wellifabio/sesi_flutter_pedal_gps_2026.git)
+## Exemplo [flutter_pedal](https://github.com/wellifabio/sesi_ppdm2_flutter_pedal_gps_2026.git)
 
 

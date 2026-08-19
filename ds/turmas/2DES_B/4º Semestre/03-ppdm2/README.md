@@ -72,7 +72,7 @@
   - 3.4 Acelerômetro 
   - 3.5 Multimídia 
     - 3.5.1 Áudio 
-    - 3.5.2 Câmera 
+    - 3.5.2 Câmera
 - 4 APIs 
   - 4.1 Mapa e localização 
   - 4.2 Push notification

@@ -22,7 +22,98 @@
     - 3.5.2 Câmera
 
 ## Menu sadwish
-Para criar um menu sanduíche (conhecido como Drawer no Flutter) que navega entre telas e possui um botão para sair do aplicativo, utilize o widget Scaffold com a propriedade drawer combinada com Navigator.push e SystemNavigator.pop() para fechar o app.
+Para criar um menu sanduíche (conhecido como Drawer no Flutter) que navega entre telas e possui um botão para sair do aplicativo, utilize o widget **Scaffold** com a propriedade **drawer** combinada com ListView e ListTile para os ítens do menu com Navigator.push() ou Navigator.pushReplacement() para navegar entre as telas.
+- SystemNavigator.pop() para fechar o app.
+- ListView e ListTile para os ítens do menu
+- Navigator.push() ou Navigator.pushReplacement() para navegar entre as telas.
+- Abaixo segue um exemplo de uma pagina `home.dart` com menu para navegar para outras duas telas (splash.dart e trajetos.dart) e fechar o aplicativo.
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'splash.dart';
+import 'trajetos.dart';
+
+class Home extends StatefulWidget {
+  const Home({super.key});
+
+  @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text("Home")),
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            ListTile(
+              trailing: Icon(Icons.chevron_left, size: 50),
+              onTap: () => Navigator.pop(context),
+            ),
+            DrawerHeader(child: Icon(Icons.person, size: 100)),
+            ListTile(
+              leading: Icon(Icons.splitscreen),
+              title: Text('Splash'),
+              onTap: () => Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => Splash()),
+              ),
+            ),
+            ListTile(
+              leading: Icon(Icons.home),
+              title: Text('Home'),
+              onTap: () => Navigator.pop(context),
+            ),
+            ListTile(
+              leading: Icon(Icons.directions_bike),
+              title: Text('Trajetos'),
+              onTap: () => Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => Trajetos()),
+              ),
+            ),
+            ListTile(
+              leading: Icon(Icons.exit_to_app),
+              title: Text('Sair'),
+              onTap: () => SystemNavigator.pop(),
+            ),
+          ],
+        ),
+      ),
+      body: Center(child: Text("Home")),
+    );
+  }
+}
+
+```
+![Print01](./assets/print01.png)
+
+## Geolocalização
+### Passos para implementar a geolocalização.
+- 1 Adicionar a dependênciaAdicione o pacote no arquivo **pubspec.yaml** do seu projeto:
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  geolocator: ^13.0.2
+```
+- 2 Configurar as permissões nativas
+  - Android (android/app/src/main/AndroidManifest.xml):
+    - Adicione antes da tag `<application>`
+```xml
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+```
+  - iOS (ios/Runner/Info.plist):
+    - Adicione dentro da tag <dict> principal:
+```xml
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>Precisamos da sua localização para mostrar sua posição no app.</string>
+```
 
 ## Exemplo (flutter_pedaladas) - App flutter com menu sandwish
 Inicie um novo projeto flutter, abrindo o VsCode (CTRL + Shift + P) *Flutter:Create New Project*, Empty Project, escolha o local e nomeie o aplicativo como `flutter_pedal`

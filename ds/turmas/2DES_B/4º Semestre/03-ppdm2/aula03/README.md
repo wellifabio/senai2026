@@ -263,6 +263,113 @@ class _HomeState extends State<Home> {
 ```
 <img alt="Print02" src="./assets/print02.png" width=350>
 
+## Habilitando a câmera
+Capturar uma foto com a câmera, salvá-la na galeria do celular e exibi-la no corpo de um Scaffold em Flutter.
+- Pacote image_picker (para abrir a câmera)
+- Pacote gal ou gallery_saver_plus (para salvar nas imagens do dispositivo).
+- O código abaixo implementa essa solução completa.
+- **pubspec.yaml**
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  image_picker: ^1.1.2
+  gal: ^2.2.1 # ou gallery_saver_plus
+  path_provider: ^2.1.4
+```
+#### Configurações Nativas Importantes
+- **Android** (android/app/src/main/AndroidManifest.xml): O plugin gal lida bem com gravações modernas, mas certifique-se de testar em um aparelho físico (emuladores Android podem falhar dependendo da versão da API e ausência de câmera física)
+- **iOS** (ios/Runner/Info.plist): Adicione a permissão para uso da câmera e acesso às fotos para evitar fechamentos forçados:
+```xml
+<key>NSCameraUsageDescription</key>
+<string>Este aplicativo precisa acessar a câmera para tirar fotos.</string>
+<key>NSPhotoLibraryAddUsageDescription</key>
+<string>Este aplicativo precisa salvar fotos na sua galeria.</string>
+```
+- **main.dart**
+```dart
+import 'dart:io';
+import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:gal/gal.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomeScreen(),
+    );
+  }
+}
+
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  File? _imageFile;
+  final ImagePicker _picker = ImagePicker();
+
+  Future<void> _takePhotoAndSave() async {
+    try {
+      // 1. Abrir a câmera para tirar a foto
+      final XFile? pickedImage = await _picker.pickImage(
+        source: ImageSource.camera,
+        imageQuality: 80,
+      );
+
+      if (pickedImage == null) return;
+
+      // 2. Salvar a foto na galeria de imagens do celular
+      await Gal.putImage(pickedImage.path);
+
+      // 3. Atualizar o estado para exibir a imagem no Scaffold
+      setState(() {
+        _imageFile = File(pickedImage.path);
+      });
+
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Foto salva na galeria e exibida!')),
+      );
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Erro ao tirar ou salvar foto: $e')),
+      );
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Câmera no Flutter')),
+      body: Center(
+        child: _imageFile == null
+            . ? const Text('Nenhuma foto tirada ainda.')
+            : Image.file(
+                _imageFile!,
+                height: 400,
+                fit: BoxFit.cover,
+              ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _takePhotoAndSave,
+        child: const Icon(Icons.camera_alt),
+      ),
+    );
+  }
+}
+```
 ## Exemplo [flutter_pedal](https://github.com/wellifabio/sesi_flutter_pedal_gps_2026.git)
 
 

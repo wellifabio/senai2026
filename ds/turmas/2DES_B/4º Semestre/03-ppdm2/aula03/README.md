@@ -114,6 +114,42 @@ dependencies:
 <key>NSLocationWhenInUseUsageDescription</key>
 <string>Precisamos da sua localização para mostrar sua posição no app.</string>
 ```
+Segue o exemplo de uma função assíncrona que valida os serviços, pede permissão e captura as coordenadas.
+```dart
+import 'package:geolocator/geolocator.dart';
+
+Future<Position?> obterCoordenadasGPS() async {
+  bool servicoAtivo;
+  LocationPermission permissao;
+
+  // Verifica se o GPS está ligado no celular
+  servicoAtivo = await Geolocator.isLocationServiceEnabled();
+  if (!servicoAtivo) {
+    return Future.error('O serviço de localização está desativado.');
+  }
+
+  // Verifica o status da permissão
+  permissao = await Geolocator.checkPermission();
+  if (permissao == LocationPermission.denied) {
+    permissao = await Geolocator.requestPermission();
+    if (permissao == LocationPermission.denied) {
+      return Future.error('Permissão de localização negada.');
+    }
+  }
+
+  if (permissao == LocationPermission.deniedForever) {
+    return Future.error('Permissão negada permanentemente. Altere nas configurações.');
+  }
+
+  // Retorna a posição atual
+  Position position = await Geolocator.getCurrentPosition(
+    desiredAccuracy: LocationAccuracy.high,
+  );
+  
+  print("Latitude: ${position.latitude}, Longitude: ${position.longitude}");
+  return position;
+}
+```
 
 ## Exemplo (flutter_pedaladas) - App flutter com menu sandwish
 Inicie um novo projeto flutter, abrindo o VsCode (CTRL + Shift + P) *Flutter:Create New Project*, Empty Project, escolha o local e nomeie o aplicativo como `flutter_pedal`

@@ -114,3 +114,34 @@ app.get("/", mostrarPedidos)
 
 app.listen(porta, () => { console.log(`Servidor: http://127.0.0.1:${porta}`) })
 ```
+- Execute o back-end com o comando
+```cmd
+nom run dev
+```
+- Segure o CTRL e clique sobre o link do servidor http://127.0.0.1:3000
+- Ira abrir uma página web com os dados dos pedidos:
+```cmd
+[
+  {
+    "id": 1,
+    "nome": "Banana",
+    "unidade": "Kg",
+    "precoUnitario": 2.55,
+    "quantidade": 2
+  },
+  {
+    "id": 2,
+    "nome": "Repolho",
+    "unidade": "Unidade",
+    "pecoUnitario": 4.9,
+    "quantidade": 3
+  },
+  {
+    "id": 3,
+    "nome": "Manga",
+    "unidade": "Kg",
+    "pecoUnitario": 12.5,
+    "quantidade": 1
+  }
+]
+```

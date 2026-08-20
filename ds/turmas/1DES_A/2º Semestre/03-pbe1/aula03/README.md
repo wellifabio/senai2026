@@ -137,6 +137,7 @@ Servidor: http://127.0.0.1:3000
 Pronto o verbo GET foi respondido na primeira rota do back end "/" com os dados de pedidos
 
 ## Front-End - Formulário para novo pedido
+Agora vamos criar uma UI(User Interface) HTML com um formulário para cadastrar novo pedido e enviar para o servidor, edite o arquivo **cliente/index.html**
 ```html
 <!DOCTYPE html>
 <html lang="en">

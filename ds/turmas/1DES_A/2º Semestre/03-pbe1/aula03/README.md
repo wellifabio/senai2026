@@ -6,8 +6,8 @@ Os verbos do protocolo HTTP é maneira como o Back-end(Servidor) se comunica com
 - Web Services
     - HTTP (Protocolo)
     - REST (Representational State Transfer, ou Transferência de Estado Representacional)
-    - GET (Verbo para obter dados do servidor)
-    - POST (Verbo para enviar dados para o servidor)
+        - GET (Verbo para obter dados do servidor)
+        - POST (Verbo para enviar dados para o servidor)
     - JSON (Padrão de dados)
 
 
@@ -89,4 +89,28 @@ npm init -y
     }
 ]
 ```
+- Vamos importar o pacote express para o nosso projeto ele controla o protocolo REST HTTP e os vermos GET e POST
+```cmd
+npm install express
+```
+- Será criada uma pasta no seu projeto chamada: node_modules
+- Vamos ignorar esta pasta no github criando o arquivo **.gitignore** e escrevendo o nome dela
+```
+node_modules
+```
+- Agora editar o servidor/server.js para responder as requisições REST
+```js
+const express = require("express")
+const pedidos = require("../dados.json")
 
+const mostrarPedidos = (req, res) => {
+    res.send(pedidos)
+}
+
+const app = express()
+const porta = 3000
+
+app.get("/", mostrarPedidos)
+
+app.listen(porta, () => { console.log(`Servidor: http://127.0.0.1:${porta}`) })
+```

@@ -135,3 +135,32 @@ Servidor: http://127.0.0.1:3000
 ]
 ```
 Pronto o verbo GET foi respondido na primeira rota do back end "/" com os dados de pedidos
+
+## Front-End - Formulário para novo pedido
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos Quitanda</title>
+</head>
+<body>
+    <center>
+        <H1>Novo Pedido</H1>
+        <form action="http://127.0.0.1:3000" method="post">
+            <input type="number" placeholder="Identificacao" name="id" required><br><br>
+            <input type="text" placeholder="Nome do produto" name="nome" required><br><br>
+            <select name="unidade" required>
+                <option value="Kg">Kg</option>
+                <option value="Unidade">Unidade</option>
+            </select><br><br>
+            <input type="number" placeholder="Preço unitário" name="precoUnitario" required><br><br>
+            <input type="number" placeholder="Quantidade do produto" name="quantidade" required><br><br>
+            <button type="reset">Limpar</button>
+            <button type="submit">Enviar</button>
+        </form>
+    </center>
+</body>
+</html>
+```

@@ -63,4 +63,30 @@ npm init -y
   "type": "commonjs"
 }
 ```
+- Vamos preencher alguns dados no formato JSON no arquivo **dados.json**
+```json
+[
+    {
+        "id":1,
+        "nome":"Banana",
+        "unidade":"Kg",
+        "precoUnitario":2.55,
+        "quantidade":2
+    },
+    {
+        "id":2,
+        "nome":"Repolho",
+        "unidade":"Unidade",
+        "pecoUnitario":4.9,
+        "quantidade":3
+    },
+    {
+        "id":3,
+        "nome":"Manga",
+        "unidade":"Kg",
+        "pecoUnitario":12.5,
+        "quantidade":1
+    }
+]
+```
 

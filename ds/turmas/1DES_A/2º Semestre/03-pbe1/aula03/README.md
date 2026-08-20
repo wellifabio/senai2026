@@ -77,14 +77,14 @@ npm init -y
         "id":2,
         "nome":"Repolho",
         "unidade":"Unidade",
-        "pecoUnitario":4.9,
+        "precoUnitario":4.9,
         "quantidade":3
     },
     {
         "id":3,
         "nome":"Manga",
         "unidade":"Kg",
-        "pecoUnitario":12.5,
+        "precoUnitario":12.5,
         "quantidade":1
     }
 ]
@@ -130,8 +130,8 @@ Servidor: http://127.0.0.1:3000
 ```
 [
     {"id":1,"nome":"Banana","unidade":"Kg","precoUnitario":2.55,"quantidade":2},
-    {"id":2,"nome":"Repolho","unidade":"Unidade","pecoUnitario":4.9,"quantidade":3},
-    {"id":3,"nome":"Manga","unidade":"Kg","pecoUnitario":12.5,"quantidade":1}
+    {"id":2,"nome":"Repolho","unidade":"Unidade","precoUnitario":4.9,"quantidade":3},
+    {"id":3,"nome":"Manga","unidade":"Kg","precoUnitario":12.5,"quantidade":1}
 ]
 ```
 Pronto o verbo GET foi respondido na primeira rota do back end "/" com os dados de pedidos

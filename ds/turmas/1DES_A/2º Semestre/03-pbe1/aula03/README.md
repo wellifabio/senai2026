@@ -32,4 +32,35 @@ Os verbos do protocolo HTTP é maneira como o Back-end(Servidor) se comunica com
     - 2.3.3. Formatação
     - 2.3.4. Coleção de objetos JSON
 
-## Demonstração
+## Demonstração -  Projeto: Produtos Quitanda
+- Vamos criar uma estrutura de pastas para o projeto full-stack (Pilha completa)
+```
+produtos_quitanda
+|-- dados.json
+|-- servidor
+    |-- server.js
+|-- cliente
+    |-- index.html
+```
+- Abra sua pasta com VsCode, e em um terminal **CMD**
+- Vamos usar o **npm** (Node Package Manager) para criar um novo projeto
+```cmd
+npm init -y
+```
+- Será criado o arquivo de configuração **package.json** semelhanta ao abaixo
+```json
+{
+  "name": "produtos_quitanda",
+  "version": "1.0.0",
+  "description": "Exemplo de cliente x servidor full-stack",
+  "main": "servidor/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["quitanda","produtos"],
+  "author": "wellifabio",
+  "license": "ISC",
+  "type": "commonjs"
+}
+```
+

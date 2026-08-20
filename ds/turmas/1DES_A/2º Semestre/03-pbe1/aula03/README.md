@@ -155,7 +155,7 @@ Pronto o verbo GET foi respondido na primeira rota do back end "/" com os dados 
                 <option value="Kg">Kg</option>
                 <option value="Unidade">Unidade</option>
             </select><br><br>
-            <input type="number" placeholder="Preço unitário" name="precoUnitario" required><br><br>
+            <input type="number" step="0.01" placeholder="Preço unitário" name="precoUnitario" required><br><br>
             <input type="number" placeholder="Quantidade do produto" name="quantidade" required><br><br>
             <button type="reset">Limpar</button>
             <button type="submit">Enviar</button>

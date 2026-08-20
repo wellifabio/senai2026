@@ -55,7 +55,7 @@ npm init -y
   "description": "Exemplo de cliente x servidor full-stack",
   "main": "servidor/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node servidor/server.js"
   },
   "keywords": ["quitanda","produtos"],
   "author": "wellifabio",

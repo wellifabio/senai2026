@@ -32,7 +32,7 @@ Os verbos do protocolo HTTP é maneira como o Back-end(Servidor) se comunica com
     - 2.3.3. Formatação
     - 2.3.4. Coleção de objetos JSON
 
-## Demonstração -  Projeto: Produtos Quitanda
+## Demonstração -  Projeto: Pedidos Quitanda
 - Vamos criar uma estrutura de pastas para o projeto full-stack (Pilha completa)
 ```
 pedidos_quitanda

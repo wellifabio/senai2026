@@ -35,7 +35,7 @@ Os verbos do protocolo HTTP é maneira como o Back-end(Servidor) se comunica com
 ## Demonstração -  Projeto: Produtos Quitanda
 - Vamos criar uma estrutura de pastas para o projeto full-stack (Pilha completa)
 ```
-pedidos_quitanda
+pedidos_medieval
 |-- dados.json
 |-- servidor
     |-- server.js

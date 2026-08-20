@@ -242,4 +242,7 @@ app.listen(porta, () => {
 
 ## Projetos (Desafios)
 Baseado neste exemplo visto em aula desenvolva os seguintes projetos
-- Agenda de Consultas com Nutricionista com os dados(id, data, paciente, peso, altura)
+- Agenda de Consultas com Nutricionista com os dados: (id, data, paciente, peso, altura)
+    - Calcule o IMC do paciente antes de listar os dados
+- Cadastro de clubes de futebol com os dados: (id, nome, vitorias, empates, derrotas)
+    - Calcule quantos jogos e quantos pontos cada clube fez

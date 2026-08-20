@@ -199,3 +199,16 @@ app.listen(porta, () => {
 - Para testar, vá até o terminal, pare o servidor `CTRL + C` e execute novamente `npm run dev`
 - Repare que agora aparece os dois endereços agora, cliente e servidor. Teste também o index.html via live server.
 - Abra os dois endereçõs clicando neles com o CTRL pressionado e faça testes.
+
+### Calculando o subtotal
+- Vamos calcular os subtotais dos pedidos para facilitar a vida do cliente
+- Acrescente uma função no server.js
+```js
+```
+
+## Projetos (Desafios)
+Baseado neste exemplo visto em aula desenvolva os seguintes projetos
+- Agenda de Consultas com Nutricionista com os dados: (id, data, paciente, peso, altura)
+    - Calcule o IMC do paciente antes de listar os dados
+- Cadastro de clubes de futebol com os dados: (id, nome, vitorias, empates, derrotas)
+    - Calcule quantos jogos e quantos pontos cada clube fez

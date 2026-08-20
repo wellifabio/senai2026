@@ -117,3 +117,58 @@ app.listen(porta, () => { console.log(`Servidor: http://127.0.0.1:${porta}`) })
 ```cmd
 nom run dev
 ```
+- O resultado aparece no terminal semelhanta ao abaixo:
+```cmd
+> produtos_quitanda@1.0.0 dev
+> node servidor/server.js
+
+Servidor: http://127.0.0.1:3000
+```
+- Segure o **CTRL** e clique sobre o link do servidor http://127.0.0.1:3000
+- Ira abrir uma página web com os dados dos pedidos:
+```
+[
+    {"id":1,"nome":"Espada flamejante","peso":5.5,"quantidade":1,"preco":3250.9},
+    {"id":2,"nome":"Escudo Viking","peso":12,"quantidade":3,"preco":750},
+    {"id":3,"nome":"Arco Arcano","peso":1.2,"quantidade":1,"preco":1890.5}
+]
+```
+Pronto o verbo GET foi respondido na primeira rota do back end "/" com os dados de pedidos
+
+## Front-End - Formulário para novo pedido
+Agora vamos criar uma UI(User Interface) HTML com um formulário para cadastrar novo pedido e enviar para o servidor, edite o arquivo **cliente/index.html**
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido Medieval</title>
+</head>
+
+<body>
+    <center>
+        <h1>Novo Pedido</h1>
+        <form action="http://127.0.0.1:3000" method="post">
+            <input type="number" placeholder="Identidade" name="id" required><br><br>
+            <input type="text" placeholder="Nome do produto" name="nome" required><br><br>
+            <input type="number" placeholder="Peso em Kg" name="peso" step="0.01" required><br><br>
+            <input type="number" placeholder="Quantidade" name="quantidade" required><br><br>
+            <input type="number" placeholder="Preço" name="preco" step="0.01" required><br><br>
+            <button type="reset">Limpar</button>
+            <button type="submit">Enviar</button>
+        </form>
+    </center>
+</body>
+
+</html>
+```
+- Vamos ajustar o servidor para receber o novo pedido
+- Altere o arquivo servidor/server.js com o código a seguir
+```js
+
+```
+- Para testar, vá até o terminal, pare o servidor `CTRL + C` e execute novamente `npm run dev`
+- Repare que agora aparece os dois endereços agora, cliente e servidor. Teste também o index.html via live server.
+- Abra os dois endereçõs clicando neles com o CTRL pressionado e faça testes.

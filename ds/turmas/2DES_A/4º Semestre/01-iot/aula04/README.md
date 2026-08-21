@@ -1,10 +1,14 @@
 # Aula04 - Desafios com Arduíno
 ## [TinkerCad](https://www.tinkercad.com/)
 
-## Capacidades Técnicas
+### Capacidades Técnicas
 - 1 Identificar as diferenças entre as aplicações do IoT e IIoT 
 - 2 Identificar os tipos de hardwares e soluções disponíveis 
-- 3 Configurar ambientes de desenvolvimento
+- 6 Conectar as aplicações gráficas
+
+### Capacidades Socioemocionais
+- 1 Demonstrar autogestão
+- 2 Demonstrar pensamento analítico
 
 ## Conhecimentos
 - 1 Automação em IoT 
@@ -24,6 +28,15 @@
     - 3.1.1. Tipos 
     - 3.1.2. Seleção 
   - 3.2. Configuração
+- 6 Interfaces com elementos visuais 
+  - interativos 
+  - 6.1 Linguagens 
+    - 6.1.1 HTML 
+    - 6.1.2 CSS  
+    - 6.1.3 JavaScript 
+  - 6.2 Aplicações  
+    - 6.2.1 Visualização de Dados 
+    - 6.2.2 Interatividade 
 
 ## Práticas com Arduino
 ### Demonstração: Potenciômetro
@@ -79,11 +92,11 @@ void numero(int coluna) {
 	}
 }
 ```
-## Desafio 01:
+#### Desafio:
 - 1 Troque o **botão** por um **potenciômetro** que quando girado aumente de 0 a 9 e mostre no display.
 - 2 Acrescente mais um **display** e amplie o escopo para de 00 a 99
 
-## Desafio 02:
+## Situação desafiadora:
 
 |Contextualização|
 |-|
@@ -102,9 +115,25 @@ void numero(int coluna) {
 
 ## Análise de dados - WEB UI (User interfaca)
 
-|Situação desafiadora|
+## Conhecimentos
+- 6 Interfaces com elementos visuais 
+  - interativos 
+  - 6.1 Linguagens 
+    - 6.1.1 HTML 
+    - 6.1.2 CSS  
+    - 6.1.3 JavaScript 
+  - 6.2 Aplicações  
+    - 6.2.1 Visualização de Dados 
+    - 6.2.2 Interatividade 
+## Situação desafiadora:
+
+|Contextualização|
 |-|
-|Esta pasata de aula possui um arquivo chamado **dados.csv**, nele está uma tabela com dados que representam o histórico de quantas vezes o portão foi aberto durante o mês de maio de 2026, Crie uma UI Web com um Dashboard de pelo menos dois Gráficos:<br>- Um que mostre a atividade do portão diáriamente<br>- e um que mostre semanalmente.|
+|Após concluir o protótipo do portão com Arduino, apenas controlamos o portão, porém se trocarmos pou um microcontrolador que possua conectividade com rede/internet via Wifi como ESP32, os dados de abertura e fechamento do portão podem ser enviados para um banco de dados e podem ser facilmente analizados gerando informações importantes para a Gestão|
+
+|Desafio|
+|-|
+|Esta pasta de aula possui um arquivo chamado **dados.csv**, nele está uma tabela com dados que representam o histórico de quantas vezes o portão foi aberto durante o mês de maio de 2026, Crie uma UI Web com um Dashboard de pelo menos dois Gráficos:<br>- Um que mostre a atividade do portão diáriamente<br>- e um que mostre semanalmente.|
 |Utilize HTML, CSS e JavaScript ou um framework a sua escolha como React Vite por exemplo|
 |Os gráficos devem ficar semelhantes aos do wireframe, porém os valores são um pouco diferentes, pois a imagem é apens um esboço|
 

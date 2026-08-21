@@ -65,6 +65,7 @@ Controlando um servo motor (Micro Servo) ao girar um potenciômetro de 1Kohm, pa
 <br>![Micro servo](./print2.png)
 <br> **Desafio:** Codifique um programa para controlar o giro do Micro servo ao girar o potenciômetro.
 
+### Experimento 02
 #### Visor de sete seguimentos
 A seguir temos um Arduino UNO conectado a um display de 7 seguimentos para isso será necessário 8 resistores de 470ohms, um resistor de 4.7 Kohms ligado ao Botão de comando.
 <br>![Micro servo](./print3.png)

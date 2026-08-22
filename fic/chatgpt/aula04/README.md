@@ -363,3 +363,5 @@ td {
     display: none;
 }
 ```
+#### Resultado
+![Print01](./print01.png)

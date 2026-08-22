@@ -22,6 +22,7 @@ Pense na API como um garçom em um restaurante: o cliente (aplicação) faz um p
 - Faça login com sua conta gmail em uma janela anonima, 
 - Acesse o [Google AI Studio](https://aistudio.google.com/app/api-keys)
 - Clique em **Criar chave de API**, dê um nome para ela, mantenha segura, e não se esqueça de excluí-lá após usar.
+- Teste no [ChatBot do professor](https://wellifabio.github.io/chatbot_gemini_eu_prof_2026/)
 
 ## Exemplos de APIs externas públicas
 - [Via CEP](https://viacep.com.br/) - Obter endereços através do CEP

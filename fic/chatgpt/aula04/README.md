@@ -9,7 +9,7 @@ O termo REST vem de Representational State Transfer (Transferência de Estado Re
 ## Analogia
 Pense na API como um garçom em um restaurante: o cliente (aplicação) faz um pedido, o garçom (API) leva o pedido até a cozinha (servidor), e depois traz o prato pronto de volta para o cliente.
 
-## Exemplo de APIs externa públicas
+## Exemplos de APIs externas públicas
 - [Via CEP](https://viacep.com.br/) - Obter endereços através do CEP
 - [Banco Central do Brasil](https://bcb.gov.br/) - Obter dados financeiros
 - [JSONPlaceholder](https://jsonplaceholder.typicode.com/) - API educacional

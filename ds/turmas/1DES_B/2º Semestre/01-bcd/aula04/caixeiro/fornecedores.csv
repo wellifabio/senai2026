@@ -1,6 +1,5 @@
-;;Endereço;;;;
-id;Nome;Cidade;Estado;País;Referência;Observação
-1;Socrates;Atenas;Atenas;Grécia;Panteão;Fornecedor de Lã
-2;Leônidas;Atenas;Atenas;Grécia;Porto;Sal e especiarias
-3;Hefesto;Sparta;Sparta;Grécia;Fonte;Ferreiro do baum
-4;Pitágoras;Olímpia;Olímpia;Grécia;Estádio;Especiarias
+id,nome,cidade,estado,pais,referencia,observacao
+1,Socrates,Atenas,Atenas,Grï¿½cia,Panteï¿½o,Fornecedor de Lï¿½
+2,Leï¿½nidas,Atenas,Atenas,Grï¿½cia,Porto,Sal e especiarias
+3,Hefesto,Sparta,Sparta,Grï¿½cia,Fonte,Ferreiro do baum
+4,Pitï¿½goras,Olï¿½mpia,Olï¿½mpia,Grï¿½cia,Estï¿½dio,Especiarias

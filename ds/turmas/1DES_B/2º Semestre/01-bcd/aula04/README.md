@@ -94,8 +94,8 @@ create table compra(
     custo_unitario decimal(10,2) not null
 );
 -- Criar as chaves estrangeiras (Relacionamentos)
-alter table compra add constraint fk_produto foreign key (id_produto) references produto(id);
-alter table compra add constraint fk_fornecedor foreign key (id_fornecedor) references fornecedor(id);
+alter table compra add constraint possui foreign key (id_produto) references produto(id);
+alter table compra add constraint fornece foreign key (id_fornecedor) references fornecedor(id);
 
 -- Vendo as tabelas criadas
 show tables;
@@ -103,6 +103,14 @@ describe produto;
 describe fornecedor;
 describe compra;
 ```
+- Para executar o script, abra o MySQL Workbench, conecte-se ao servidor, copie e cole o script na janela de consulta (query) e clique no botão de raio para executar o script.
+![Print02](./print02.png)
+- Ou abra o terminal do MySQL, conecte-se ao servidor e execute o script com o comando `source caminho/para/o/arquivo/caixeiro_ddl.sql`.
+- Ou abra o XAMPP e clique em start no MySQL e em terminal, digite `mysql -u root`, copie e cole o script
+![Print01](./print01.png)
+- Ou abra o Xampp, clique no botão Admin do MySQL, abra o PhpMyAdmin, clique no banco de dados compras_caixeiro, clique na aba SQL, copie e cole o script e clique no botão Executar.
+- Clique em Designer para ver o DER Lógico
+![Print01](./print03.png)
 
 # Atividades
 - Crie o script ddl.sql para criar o banco de dados do **[Projeto: Gestão de Pedidos](https://github.com/wellifabio/sesi_bcd_aula03_mer_der_dd_dados_2026.git)**

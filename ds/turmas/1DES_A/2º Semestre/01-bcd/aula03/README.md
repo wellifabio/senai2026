@@ -196,9 +196,9 @@ Quais problemas de tabelas não normalizadas?
 No mesmo tema sorteado na aula anterior, aplique as regras de normalização no seu banco de dados e conclua a entrega através do github.
 - Crie um arquivo README.md contendo:
     - Título do projeto
-    - Imagem do MER DER Conceitual
-    - Imagem do MER DER Lógico
-    - Dicionário de dados em formato tabela tipo MarkDown
-    - Dados de teste em tabelas tipo markdow.
+    - Imagem do MER DER Conceitual **.PNG**
+    - Imagem do MER DER Lógico **.PNG**
+    - Dicionário de dados em formato tabela tipo **MarkDown**
+    - Dados de teste em tabelas tipo **.CSV**
 ## Entrega
-Envie o link do seu repositório do github para **[este formulário]()**
+Envie o link do seu repositório do github para **[este formulário](https://forms.gle/7GGDZd4S9efA6ode7)**

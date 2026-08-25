@@ -202,3 +202,4 @@ No mesmo tema sorteado na aula anterior, aplique as regras de normalização no 
     - Dados de teste em tabelas tipo **.CSV**
 ## Entrega
 Envie o link do seu repositório do github para **[este formulário](https://forms.gle/7GGDZd4S9efA6ode7)**
+- [Exemplo de envio](https://github.com/wellifabio/sesi_bcd_aula03_mer_der_dd_dados_2026.git)

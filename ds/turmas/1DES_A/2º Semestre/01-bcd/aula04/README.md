@@ -53,6 +53,59 @@ Vamos criar com SQL o banco de dados do: **Sistema de Vendas/Pedidos** cujo MER 
 
 ## Script de criação do banco de dados DDL
 Crie uma pasta chamada **bd_pedidos** e dentro dela crie um arquivo chamado `pedidos_ddl.sql` com o seguinte conteúdo:
+```sql
+-- CRUD (Criar, Ler, Atualizar e Deletar)
+-- DDL (Data Definition Language)
+-- CRUD DDL (Create, [Show, Describe], Alter, Drop)
+
+-- Para criar do zero podemos excluir o banco se já existe e criar novamente
+DROP DATABASE IF EXISTS pedidos;
+-- Criar um banco de dados chamado "pedidos"
+CREATE DATABASE pedidos;
+-- Selecionar o banco de dados "pedidos" para uso
+USE pedidos;
+-- Criar a tabela de Produtos
+CREATE TABLE produtos (
+    id int primary key not null auto_increment,
+    nome varchar(40) not null,
+    descricao varchar(200) not null,
+    volume decimal(10,2) not null,
+    valor decimal(10,2) not null
+);
+-- Criar a tabela de Pedidos
+CREATE TABLE pedidos (
+    id int primary key not null auto_increment,
+    cliente varchar(40) not null,
+    cep varchar(10) not null,
+    numero varchar(10),
+    complemento varchar(20),
+    data DATE not null default(CURDATE())
+);
+-- Criar a tabela de Itens do Pedido
+CREATE TABLE itens (
+    id int primary key not null auto_increment,
+    id_pedido int not null,
+    id_produto int not null,
+    preco decimal(10,2) not null,
+    quantidade int not null
+);
+-- Criando os relacionamentos, alterando a tabela de itens
+alter table itens add constraint eh foreign key (id_produto) references produtos(id);
+alter table itens add constraint possui foreign key (id_pedido) references pedidos(id);
+-- Exibir os resultados
+describe produtos;
+describe pedidos;
+describe itens;
+show tables;
+```
+- Para executar o script, abra o MySQL Workbench, conecte-se ao servidor, copie e cole o script na janela de consulta (query) e clique no botão de raio para executar o script.
+![Print02](../../../../1DES_B/2º%20Semestre/01-bcd/aula04/print02.png)
+- Ou abra o terminal do MySQL, conecte-se ao servidor e execute o script com o comando `source caminho/para/o/arquivo/caixeiro_ddl.sql`.
+- Ou abra o XAMPP e clique em start no MySQL e em terminal, digite `mysql -u root`, copie e cole o script
+![Print01](../../../../1DES_B/2º%20Semestre/01-bcd/aula04/print01.png)
+- Ou abra o Xampp, clique no botão Admin do MySQL, abra o PhpMyAdmin, clique no banco de dados compras_caixeiro, clique na aba SQL, copie e cole o script e clique no botão Executar.
+- Clique em Designer para ver o DER Lógico
+![Print01](./print03.png)
 
 # Atividades
 - Crie o script ddl.sql para criar o banco de dados do **[Projeto: Gestão de Pedidos](https://github.com/wellifabio/sesi_bcd_aula03_mer_der_dd_dados_2026.git)**

@@ -6,6 +6,7 @@ Aplicar normas de criação e gerenciamento de banco de dados
 - 4 Elaborar diagramas de modelagem do banco de dados de acordo com a arquitetura definida
 - 5 Utilizar relacionamentos entre as tabelas do banco de dados
 - 6 Normalizar a estrutura do banco de dados
+- 7 Documentar a estrutura do banco de dados por meio de dicionário de dados
 
 ## Capacidades Socioemocionais
 - 1 Demonstrar autogestão

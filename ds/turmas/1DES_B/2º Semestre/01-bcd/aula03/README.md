@@ -201,4 +201,4 @@ No mesmo tema sorteado na aula anterior, aplique as regras de normalização no 
     - Dicionário de dados em formato tabela tipo **MarkDown**
     - Dados de teste em tabelas tipo **.CSV**
 ## Entrega
-Envie o link do seu repositório do github para **[este formulário]()**
+Envie o link do seu repositório do github para **[este formulário](https://forms.gle/7GGDZd4S9efA6ode7)**

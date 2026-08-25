@@ -52,5 +52,5 @@ Vamos criar com SQL o banco de dados do: **Sistema de Vendas/Pedidos** cujo MER 
 ![MER DER](./pedidos/mer_der_logico.png)
 
 # Atividades
-- Crie o banco de dados do **[Projeto: Gestão de Pedidos](https://github.com/wellifabio/sesi_bcd_aula03_mer_der_dd_dados_2026.git)**
-- Crie o banco de dados do sistema que você desenvolveu na aula03
+- Crie o script ddl.sql para criar o banco de dados do **[Projeto: Gestão de Pedidos](https://github.com/wellifabio/sesi_bcd_aula03_mer_der_dd_dados_2026.git)**
+- Crie o script dml.sql para inserir dados no banco de dados do sistema que você desenvolveu na aula03

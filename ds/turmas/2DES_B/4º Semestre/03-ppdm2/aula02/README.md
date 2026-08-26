@@ -21,9 +21,11 @@ Com o intúito de nos capacitar a desenvolver pequenos aplicativos de uso local 
 
 ## Entregas
 - Cada aplicativo em um repositório github separado com README.md contendo:
-    - Título do Aoo
+    - Título do App
     - Tecnologias
     - Passos para testar
     - Prints das telas.
     - Arquivo .apk em /assets
 - Envie os links dos repositórios neste [formulário](https://forms.gle/Yub8ux5j2xdCEQjv5)
+
+## [Exemplo de App e entrega](https://github.com/wellifabio/sesi_ppdm2_flutter_anotacoes_arquivo_local_2026.git)

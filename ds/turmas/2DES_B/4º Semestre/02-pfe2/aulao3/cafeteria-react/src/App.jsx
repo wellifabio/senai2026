@@ -1,20 +1,20 @@
 import Header from './components/Header'
-import Banner from './components/Banner'
+import Hero from './components/Hero'
 import Sobre from './components/Sobre'
 import Cardapio from './components/Cardapio'
-import Contato from './components/Contato'
+
 
 function App(){
     return (
         <>
         <Header />
         <main>
-            < Banner />
-            < Sobre />
-            < Cardapio />
-            <Contato />
+            <Hero />
+            <Sobre />
+            <Cardapio />
         </main>
         </>
     )
 }
+
 export default App

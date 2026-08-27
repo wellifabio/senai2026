@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: red;
+}
+/*Cabeçalho*/
+header{
+    background: #333;
+    color:#fff;
+    text-align: center;
+    padding: 16px 0;
+}
+header h1{
+    margin-bottom: 8px;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin:0 10px
+}
+nav ul li a{
+    color:#fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    /* transition: background 0.3s ease; */
+}
+nav ul li a:hover{
+    /* background: linear-gradient(100deg,#58a4f0,#58f092); */
+    color:crimson;
+    cursor:pointer;
+}
+
+section{
+    padding:24px;
+    margin:16px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}

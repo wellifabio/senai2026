@@ -223,7 +223,7 @@ const novoPedido = (req, res) => {
 
 const calcularSubtotais = () => {
     pedidos.forEach(p=>{
-        p.subtotal = p.precoUnitario * p.quantidade
+        p.subtotal = p.preco * p.quantidade
     })
 }
 

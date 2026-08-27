@@ -204,6 +204,40 @@ app.listen(porta, () => {
 - Vamos calcular os subtotais dos pedidos para facilitar a vida do cliente
 - Acrescente uma função no server.js
 ```js
+const express = require("express")
+const pedidos = require("../dados.json")
+
+const mostrarPedidos = (req, res) => {
+    calcularSubtotais()
+    res.send(pedidos)
+}
+
+const novoPedido = (req, res) => {
+    if (req.body) {
+        res.send("Pedido recebido, em análise")
+        pedidos.push(req.body)
+    } else {
+        res.send("Erro ao receber pedido")
+    }
+}
+
+const calcularSubtotais = () => {
+    pedidos.forEach(p=>{
+        p.subtotal = p.precoUnitario * p.quantidade
+    })
+}
+
+const app = express()
+app.use(express.urlencoded({ extended: true }))
+const porta = 3000
+
+app.post("/", novoPedido)
+app.get("/", mostrarPedidos)
+
+app.listen(porta, () => {
+    console.log(`Cliente: http://127.0.0.1:5500/cliente/`)
+    console.log(`Servidor: http://127.0.0.1:${porta}`)
+})
 ```
 
 ## Projetos (Desafios)
@@ -212,3 +246,7 @@ Baseado neste exemplo visto em aula desenvolva os seguintes projetos
     - Calcule o IMC do paciente antes de listar os dados
 - Cadastro de clubes de futebol com os dados: (id, nome, vitorias, empates, derrotas)
     - Calcule quantos jogos e quantos pontos cada clube fez
+
+
+### Link formulário
+[Envio dos repositórios das atividades](https://forms.cloud.microsoft/r/8d4jdUFVbx)

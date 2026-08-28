@@ -154,8 +154,8 @@ Tire print de todos os seus experimentos dede a aula02 até a aula04.
   - Virando um servo motor com potenciômetro, capacitor e Arduino
   - Experimento com display de 7 segmentos e Arduino e Desafio de display duplo
   - Desafio do simulador de portão eletrônico com Arduino
-  - Dashboard Web com gráficos de abertura do portão, publicado com github pages
+  - Dashboard Web com gráficos de abertura do portão, publicado com github pages e preenchido o caminho em About (Sobre) do repositório
 ### Instruções para entrega
 - 1 No mesmo repositório do Dashboard Web, crie uma pasta chamada **prints** e coloque todas as imagens dos experimentos.
 - 2 No arquivo **README.md** do repositório, descreva cada experimento e coloque a imagem correspondente.
-- Envie o link do repositório no **[formulário de entrega]()**.
+- Envie o link do repositório no **[formulário de entrega](https://forms.gle/7uiLscum4khxrV4o6)**.

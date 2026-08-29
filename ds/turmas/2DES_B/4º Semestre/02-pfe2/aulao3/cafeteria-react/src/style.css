@@ -1,0 +1,300 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2f241f;
+  background: #fffaf4;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.container {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+}
+
+.cabecalho {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #3a2418;
+  color: #fff;
+  box-shadow: 0 2px 12px #0002;
+}
+
+.menu {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.navegacao {
+  display: flex;
+  gap: 24px;
+}
+
+.navegacao a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.navegacao a:hover {
+  color: #f2c078;
+}
+
+.menu-botao {
+  display: none;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.hero {
+  min-height: 72vh;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: linear-gradient(#2b1609cc, #2b1609cc), radial-gradient(circle at 70% 30%, #b7773c, #422719 65%);
+}
+
+.hero-conteudo {
+  max-width: 720px;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 10px 0 18px;
+  font-size: clamp(2.4rem, 7vw, 4.8rem);
+  line-height: 1.05;
+}
+
+.hero p {
+  font-size: 1.1rem;
+}
+
+.destaque {
+  color: #b96b2c;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.hero .destaque {
+  color: #f2c078;
+}
+
+.botao {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 12px 22px;
+  border: 0;
+  border-radius: 8px;
+  background: #b96b2c;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background: #8f4d1c;
+}
+
+.secao {
+  padding: 80px 0;
+}
+
+.fundo-claro {
+  background: #f4eadf;
+}
+
+.secao h2 {
+  margin: 6px 0 20px;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.centro {
+  text-align: center;
+}
+
+.sobre,
+.contato {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 48px;
+}
+
+.sobre p+p {
+  margin-top: 12px;
+}
+
+.ilustracao {
+  display: grid;
+  place-items: center;
+  min-height: 300px;
+  border-radius: 24px;
+  background: #6b3d24;
+  font-size: 8rem;
+  box-shadow: 0 20px 50px #5b321c33;
+}
+
+.filtros {
+  margin: 26px 0 34px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filtro {
+  padding: 9px 16px;
+  border: 2px solid #b96b2c;
+  border-radius: 999px;
+  background: transparent;
+  color: #7b421b;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.filtro.ativo,
+.filtro:hover {
+  background: #b96b2c;
+  color: #fff;
+}
+
+.grade {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.card {
+  padding: 26px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 24px #4c2f1c16;
+}
+
+.icone-produto {
+  font-size: 3rem;
+}
+
+.categoria {
+  display: inline-block;
+  margin: 12px 0 6px;
+  color: #b96b2c;
+  font-size: .85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.card h3 {
+  margin-bottom: 8px;
+}
+
+.card strong {
+  display: block;
+  margin-top: 16px;
+  color: #8f4d1c;
+  font-size: 1.15rem;
+}
+
+.formulario {
+  display: grid;
+  gap: 10px;
+  padding: 26px;
+  border-radius: 16px;
+  background: #f4eadf;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d2bca9;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.formulario .botao {
+  margin-top: 8px;
+}
+
+.retorno {
+  min-height: 24px;
+  color: #386b35;
+  font-weight: 700;
+}
+
+.rodape {
+  padding: 28px 20px;
+  text-align: center;
+  background: #3a2418;
+  color: #fff;
+}
+
+@media (max-width: 760px) {
+  .menu-botao {
+    display: block;
+  }
+
+  .navegacao {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    padding: 20px 5%;
+    flex-direction: column;
+    background: #3a2418;
+  }
+
+  .navegacao.aberta {
+    display: flex;
+  }
+
+  .sobre,
+  .contato {
+    grid-template-columns: 1fr;
+  }
+
+  .grade {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: 65vh;
+  }
+}

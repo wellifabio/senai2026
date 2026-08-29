@@ -20,5 +20,12 @@ Com o intúito de nos capacitar a desenvolver pequenos aplicativos de uso local 
 ### Desafio 03: [Abastecimento de Veículos](https://github.com/wellifabio/senai_desafio_abastecimento_ui_mobile_persistencia_local_2026.git)
 
 ## Entregas
-- Cada aplicativo em um repositório github separado com README.md com os prints das telas.
-- Envie os links dos repositórios neste [formulário]()
+- Cada aplicativo em um repositório github separado com README.md contendo:
+    - Título do App
+    - Tecnologias
+    - Passos para testar
+    - Prints das telas.
+    - Arquivo .apk em /assets
+- Envie os links dos repositórios neste [formulário](https://forms.gle/Yub8ux5j2xdCEQjv5)
+
+## [Exemplo de App e entrega](https://github.com/wellifabio/sesi_ppdm2_flutter_anotacoes_arquivo_local_2026.git)

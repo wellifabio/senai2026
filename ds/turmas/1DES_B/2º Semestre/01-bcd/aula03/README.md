@@ -6,6 +6,7 @@ Aplicar normas de criação e gerenciamento de banco de dados
 - 4 Elaborar diagramas de modelagem do banco de dados de acordo com a arquitetura definida
 - 5 Utilizar relacionamentos entre as tabelas do banco de dados
 - 6 Normalizar a estrutura do banco de dados
+- 7 Documentar a estrutura do banco de dados por meio de dicionário de dados
 
 ## Capacidades Socioemocionais
 - 1 Demonstrar autogestão
@@ -196,9 +197,10 @@ Quais problemas de tabelas não normalizadas?
 No mesmo tema sorteado na aula anterior, aplique as regras de normalização no seu banco de dados e conclua a entrega através do github.
 - Crie um arquivo README.md contendo:
     - Título do projeto
-    - Imagem do MER DER Conceitual
-    - Imagem do MER DER Lógico
-    - Dicionário de dados em formato tabela tipo MarkDown
-    - Dados de teste em tabelas tipo markdow.
+    - Imagem do MER DER Conceitual **.PNG**
+    - Imagem do MER DER Lógico **.PNG**
+    - Dicionário de dados em formato tabela tipo **MarkDown**
+    - Dados de teste em tabelas tipo **.CSV**
 ## Entrega
-Envie o link do seu repositório do github para **[este formulário]()**
+Envie o link do seu repositório do github para **[este formulário](https://forms.gle/7GGDZd4S9efA6ode7)**
+- [Exemplo de envio](https://github.com/wellifabio/sesi_bcd_aula03_mer_der_dd_dados_2026.git)

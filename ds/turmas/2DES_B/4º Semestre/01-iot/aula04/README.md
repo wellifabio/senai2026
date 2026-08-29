@@ -159,3 +159,5 @@ Tire print de todos os seus experimentos dede a aula02 até a aula04.
 - 1 No mesmo repositório do Dashboard Web, crie uma pasta chamada **prints** e coloque todas as imagens dos experimentos.
 - 2 No arquivo **README.md** do repositório, descreva cada experimento e coloque a imagem correspondente.
 - Envie o link do repositório no **[formulário de entrega](https://forms.gle/7uiLscum4khxrV4o6)**.
+
+### [Exemplo de entrega](https://github.com/wellifabio/sesi_iot_thinkercad_portao_dashboard_2026.git)

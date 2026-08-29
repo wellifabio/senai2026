@@ -27,6 +27,10 @@ Pense na API como um garçom em um restaurante: o cliente (aplicação) faz um p
 ## Exemplos de APIs externas públicas
 - [Via CEP](https://viacep.com.br/) - Obter endereços através do CEP
 - [Banco Central do Brasil](https://bcb.gov.br/) - Obter dados financeiros
+    - Exemplo de rota que traz um histórico dos valores de CDI mês a mês des de 1986
+    ```
+    https://api.bcb.gov.br/dados/serie/bcdata.sgs.4391/dados?formato=json
+    ```
 - [JSONPlaceholder](https://jsonplaceholder.typicode.com/) - API educacional
 - [DummyJSON](https://dummyjson.com/docs/auth) - API de autenticação, para fazer login com segurança JWT(JSON Web Token)
 

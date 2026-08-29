@@ -17,6 +17,7 @@ Segue algumas sujestões de temas baseados no [portifolio do instrutor](https://
 - [Conjectura de collatz, desafio resolvido com IA chatGPT](https://github.com/wellifabio/senai_collatz_chatgpt_2026.git)
 - [Carrinho de compras com Copilot](https://wellifabio.github.io/senai_chatgpt_carrinho_copilot_2026/), [Repositorio](https://github.com/wellifabio/senai_chatgpt_carrinho_copilot_2026.git)
 - [Jogo Pac-Man com auxilio do ChatGPT](https://wellifabio.github.io/senai_pacman_chatgpt_2026/), [Repositorio](https://github.com/wellifabio/senai_packman_chatgpt_2026.git)
+- [Agenda de pesquisa de enderecos com ViaCEP](https://wellifabio.github.io/senai_chatgpt_agenda_viacep_2026/)
 
 ## Missão
 - Vamos escolher dois projetos para desenvolver, utilizando as tecnologias que você domina ou deseja aprender. Utilize o ChatGPT para te ajudar a desenvolver os projetos, seja para gerar código, corrigir erros, refatorar códigos, aprender novas tecnologias, entre outros.

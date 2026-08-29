@@ -370,10 +370,10 @@ td {
 #### Resultado
 ![Print01](./print01.png)
 
-## Desafio para agregar ao portfolio
+## Desafio 01 para agregar ao portfolio
 Semelhante ao [simulador de investimentos](https://wellifabio.github.io/siminvest/), desenvolva com o auxílio de IA generativa, chatGPT ou outra um simulador de financiamentos no sistema SAC e PRICE e uma forma fáciol de comparar os dois.
 - O usuário deve colocar quanto ele precisa;
-- Taxa de juros ao ano;
+- Taxa de juros ao ano (ou pesquisar alguma API que dê a SELIC);
 - Qual a sua renda mensal;
 - Sabendo que um financiamento não pode comprometer mais de 30% da renda mensal, crie um site que faça a sujestão de quantos mêses, valor da parcela e compare o formato price com sac.
 

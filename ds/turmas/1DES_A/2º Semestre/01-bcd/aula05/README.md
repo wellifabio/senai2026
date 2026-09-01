@@ -125,18 +125,18 @@ id;cliente;CEP;numero;complemento;data
 8;Gilberto Garcia;13903-333;50;;2026-07-20
 9;Dagoberto Silveira;13901-030;30;Ap 1501;2026-07-21
 ```
-- Agora vamos importar os dados do arquivo `produtos.csv` para a tabela `produto` do banco de dados `compras_caixeiro`. Para isso, execute o seguinte comando SQL no MySQL Workbench ou em outro cliente SQL:
+- Agora vamos importar os dados do arquivo `pedidos.csv` para a tabela `pedidos` do banco de dados `pedidos`. Para isso, execute o seguinte comando SQL no MySQL Workbench ou em outro cliente SQL:
 
 ```sql
--- Importar dados de produtos do aquivo produtos.csv
-load data infile 'Caminho do arquivo produtos.csv com as barras trocadas /'
-into table produto
+-- Importar dados de pedidos do aquivo pedidos.csv
+load data infile 'Caminho do arquivo pedidos.csv com as barras trocadas /'
+into table pedidos
 fields terminated by ';'
 lines terminated by '\n'
 ignore 1 rows;
 
 -- Listando os fornecedores
-select * from produto;
+select * from pedidos;
 ```
 ## Atividades
 - Crie o script dml.sql para inserir os dados no banco de dados do **[Projeto: Gestão de Pedidos](https://github.com/wellifabio/sesi_bcd_aula03_mer_der_dd_dados_2026.git)**

@@ -142,3 +142,35 @@ ignore 1 rows;
 -- Listando os fornecedores
 select * from produto;
 ```
+- Vamos importar também as compras do arquivo `compras.csv` com o conteúdo a seguir, retirado da planilha `dados_caixeiro.xlsx` que você baixou, e vamos importar os dados para a tabela `compra` do banco de dados `compras_caixeiro`.
+```csv
+Id;Nome;Descri��o;Peso;Volume;Valor
+1;L�;L� de ovelha;1;30;310
+2;L�;L� de alpaca;1;30;1800
+3;Martelo;Bellota de orelha;1;2;50
+4;Martelo;Sem orelha;1;2;50
+5;Alicate;Universal;0,4;0,1;40
+6;Alicate;De corte;0,25;0,1;30
+7;Alicate;De bico;0,25;0,1;30
+8;Sal;Marinho;1;0,725;4
+9;Pimenta;Preta;1;2;25,5
+10;Pimenta;Branca;1;2;100
+11;P�prica;Doce;1;2,5;16
+12;P�prica;Picante;1;2,5;20
+13;P�prica;Defumada;1;2,5;35
+14;Chimichurri;Mistura indiana;1;2,5;20
+15;Caf�;Ar�bico;1;2,5;80
+```
+- Agora vamos importar os dados do arquivo `compras.csv` para a tabela `compra` do banco de dados `compras_caixeiro`. Para isso, execute o seguinte comando SQL no MySQL Workbench ou em outro cliente SQL:
+
+```sql
+-- Importar dados de compras do aquivo compras.csv
+load data infile 'C:/Users/sn1057928/Desktop/compras_caixeiro/compras.csv'
+into table compra
+fields terminated by ';'
+lines terminated by '\n'
+ignore 1 rows;
+
+-- Listando os pedidos
+select * from compra;
+```

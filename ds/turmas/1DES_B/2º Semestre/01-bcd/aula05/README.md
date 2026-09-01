@@ -79,7 +79,7 @@ describe fornecedor;
 describe compra;
 ```
 - Execute o script no MySQL Workbench ou em outro cliente SQL, para criar o banco de dados e as tabelas.
-- Vamos criar outro arquivo chamado `dml.sql` e criar um script de manipulação de dados, para inserir os dados da [planilha](./dados_caixeiro.xlsx) que criamos na aula02 que agora está atualizada neste repositório. 
+- Vamos criar outro arquivo chamado `dml.sql` e criar um script de manipulação de dados, para inserir os dados da [planilha](./dados_caixeiro.xlsx) que criamos na aula02 que agora está atualizada neste repositório, baixe-a e coloque-a na sua pasta. 
 - Iniciaremos pelos dados da tabela `fornecedor`, inserindo um por vez.
 ```sql
 ```

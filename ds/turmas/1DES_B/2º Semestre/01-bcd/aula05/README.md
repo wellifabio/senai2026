@@ -133,7 +133,7 @@ Id;Nome;Descrição;Peso;Volume;Valor
 
 ```sql
 -- Importar dados de produtos do aquivo produtos.csv
-load data infile 'Caminho do arquivo produtos.csv com as barras invertidas /'
+load data infile 'Caminho do arquivo produtos.csv com as barras trocadas /'
 into table produto
 fields terminated by ';'
 lines terminated by '\n'
@@ -165,7 +165,7 @@ Id;Nome;Descri��o;Peso;Volume;Valor
 
 ```sql
 -- Importar dados de compras do aquivo compras.csv
-load data infile 'C:/Users/sn1057928/Desktop/compras_caixeiro/compras.csv'
+load data infile 'Caminho do arquivo produtos.csv com as barras trocadas /'
 into table compra
 fields terminated by ';'
 lines terminated by '\n'

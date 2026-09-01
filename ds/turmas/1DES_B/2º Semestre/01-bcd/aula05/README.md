@@ -129,3 +129,16 @@ Id;Nome;Descrição;Peso;Volume;Valor
 14;Chimichurri;Mistura indiana;1;2,5;20
 15;Café;Arábico;1;2,5;80
 ```
+- Agora vamos importar os dados do arquivo `produtos.csv` para a tabela `produto` do banco de dados `compras_caixeiro`. Para isso, execute o seguinte comando SQL no MySQL Workbench ou em outro cliente SQL:
+
+```sql
+-- Importar dados de produtos do aquivo produtos.csv
+load data infile 'Caminho do arquivo produtos.csv com as barras invertidas /'
+into table produto
+fields terminated by ';'
+lines terminated by '\n'
+ignore 1 rows;
+
+-- Listando os fornecedores
+select * from produto;
+```

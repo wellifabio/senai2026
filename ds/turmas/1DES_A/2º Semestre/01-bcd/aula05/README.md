@@ -114,6 +114,16 @@ SELECT * FROM produtos;
 ## importação de dados
 - Vamos criar um arquivo chamado `produtos.csv` com o conteúdo a seguir, retirado da planilha `dados_caixeiro.xlsx` que você baixou, e vamos importar os dados para a tabela `produto` do banco de dados `compras_caixeiro`.
 ```csv
+id;cliente;CEP;numero;complemento;data
+1;José Roberto;13904-302;60;Bloco 7, Ap 14;2026-07-13
+2;Adalberto Souza;13904-310;40;;2026-07-14
+3;Alberto Roberto;13903-235;80;Fundos;2026-07-15
+4;Humberto Silva;13905-522;20;;2026-07-16
+5;Felizberto Oliveira;13904-070;50;Bloco 2, Ap 114;2026-07-17
+6;Spiriquidiberto Silva;13905-521;30;Ap 310;2026-07-18
+7;Doisberto Oliveira;13905-302;50;;2026-07-19
+8;Gilberto Garcia;13903-333;50;;2026-07-20
+9;Dagoberto Silveira;13901-030;30;Ap 1501;2026-07-21
 ```
 - Agora vamos importar os dados do arquivo `produtos.csv` para a tabela `produto` do banco de dados `compras_caixeiro`. Para isso, execute o seguinte comando SQL no MySQL Workbench ou em outro cliente SQL:
 

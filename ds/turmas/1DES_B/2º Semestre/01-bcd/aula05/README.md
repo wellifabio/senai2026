@@ -174,3 +174,7 @@ ignore 1 rows;
 -- Listando os pedidos
 select * from compra;
 ```
+
+## Atividades
+- Crie o script dml.sql para inserir os dados no banco de dados do **[Projeto: Gestão de Pedidos](https://github.com/wellifabio/sesi_bcd_aula03_mer_der_dd_dados_2026.git)**
+- Crie o script dml.sql para inserir os dados no banco de dados do sistema que você desenvolveu na aula03

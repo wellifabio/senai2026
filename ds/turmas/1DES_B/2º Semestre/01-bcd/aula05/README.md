@@ -109,3 +109,23 @@ update fornecedor set estado = 'AT' where nome like 'Socrates';
 -- Listando os fornecedores
 select * from fornecedor;
 ```
+## importação de dados
+- Vamos criar um arquivo chamado `produtos.csv` com o conteúdo a seguir, retirado da planilha `dados_caixeiro.xlsx` que você baixou, e vamos importar os dados para a tabela `produto` do banco de dados `compras_caixeiro`.
+```csv
+Id;Nome;Descrição;Peso;Volume;Valor
+1;Lã;Lã de ovelha;1;30;310
+2;Lã;Lã de alpaca;1;30;1800
+3;Martelo;Bellota de orelha;1;2;50
+4;Martelo;Sem orelha;1;2;50
+5;Alicate;Universal;0,4;0,1;40
+6;Alicate;De corte;0,25;0,1;30
+7;Alicate;De bico;0,25;0,1;30
+8;Sal;Marinho;1;0,725;4
+9;Pimenta;Preta;1;2;25,5
+10;Pimenta;Branca;1;2;100
+11;Páprica;Doce;1;2,5;16
+12;Páprica;Picante;1;2,5;20
+13;Páprica;Defumada;1;2,5;35
+14;Chimichurri;Mistura indiana;1;2,5;20
+15;Café;Arábico;1;2,5;80
+```

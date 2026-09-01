@@ -15,6 +15,8 @@ Aplicar normas de criação e gerenciamento de banco de dados
 ## Conhecimentos
 - 2 Modelo relacional
     - 2.1.4 Formas normais
+  - 2.5 Migração de dados
+    - 2.5.1 Exportação de dados
 
 ## Formas normais (1ª, 2ª e 3ª)
 Normalização é o processo pelo qual se aplicam regras a todas as tabelas do banco de dados com o objetivo de evitar falhas no projeto, como redundância de dados e mistura de diferentes assuntos numa mesma tabela.

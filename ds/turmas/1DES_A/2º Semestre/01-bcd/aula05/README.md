@@ -108,6 +108,8 @@ INSERT INTO produtos (nome, descricao, volume, valor) VALUES
 ('Porta livros', 'Utilidade doméstica', 10, 20.00),
 ('Porta facas', 'Utilidade doméstica', 7, 15.00),
 ('Mini estante', 'Utilidade doméstica', 15, 15.00);
+-- Ver os dados para conferência
+SELECT * FROM produtos;
 ```
 ## importação de dados
 - Vamos criar um arquivo chamado `produtos.csv` com o conteúdo a seguir, retirado da planilha `dados_caixeiro.xlsx` que você baixou, e vamos importar os dados para a tabela `produto` do banco de dados `compras_caixeiro`.

@@ -82,4 +82,28 @@ describe compra;
 - Vamos criar outro arquivo chamado `dml.sql` e criar um script de manipulação de dados, para inserir os dados da [planilha](./dados_caixeiro.xlsx) que criamos na aula02 que agora está atualizada neste repositório, baixe-a e coloque-a na sua pasta. 
 - Iniciaremos pelos dados da tabela `fornecedor`, inserindo um por vez.
 ```sql
+-- Acessando o banco de dados
+use compras_caixeiro;
+-- inserindo um fornecedor
+insert into fornecedor (nome, cidade, estado, pais, referencia, observacao)
+values('Socrates', 'Atenas', 'Atenas', 'Grécia', 'Panteão', 'Fornecedor de Lã');
+-- Listando os fornecedores
+select * from fornecedor;
+-- Excluindo o fornecedor
+delete from fornecedor where nome like 'Socrates';
+-- Listando os fornecedores
+select * from fornecedor;
+
+-- Inserido os quatro fornecedores de uma vez
+insert into fornecedor (nome, cidade, estado, pais, referencia, observacao)
+values
+('Socrates', 'Atenas', 'Atenas', 'Grécia', 'Panteão', 'Fornecedor de Lã'),
+('Leônidas', 'Atenas', 'Atenas', 'Grécia', 'Porto', 'Sal e especiarias'),
+('Hefesto', 'Sparta', 'Sparta', 'Grécia', 'Fonte', 'Ferreiro do baum'),
+('Pitágoras', 'Olímpia', 'Olímpia', 'Grécia', 'Estádio', 'Especiarias');
+
+-- Alterando um registro de fornecedor
+update fornecedor set estado = 'AT' where nome like 'Socrates';
+-- Listando os fornecedores
+select * from fornecedor;
 ```

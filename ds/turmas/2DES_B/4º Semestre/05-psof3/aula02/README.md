@@ -42,8 +42,8 @@ model pedido {
   id          Int      @id @default(autoincrement())
   cliente     String
   cep         String
-  numero      String
-  complemento String
+  numero      String?
+  complemento String?
   data        DateTime @default(now())
   itens       item[]
 }
@@ -57,6 +57,7 @@ model item {
   pedido  pedido  @relation(fields: [pedidoId], references: [id])
   produto produto @relation(fields: [produtoId], references: [id])
 }
+
 ```
 - Esquema criado com base no MER abaixo:
 ![MER](./mer.png)

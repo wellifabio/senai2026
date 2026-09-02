@@ -42,8 +42,8 @@ model pedido {
   id          Int      @id @default(autoincrement())
   cliente     String
   cep         String
-  numero      String
-  complemento String
+  numero      String?
+  complemento String?
   data        DateTime @default(now())
   itens       item[]
 }

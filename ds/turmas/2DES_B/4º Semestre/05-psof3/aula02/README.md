@@ -67,7 +67,8 @@ cd backend
 npx prisma generate
 npx prisma migrate dev --name init
 ```
-- Caso de algum erro pode ser que seu banco já exista corrija com os comandos
+##### Casos de erro comuns
+- Pode ser que seu já exista um banco de dados com este nome no seu computador.
 ```bash
 npm i
 npx prisma migrate reset
@@ -108,12 +109,12 @@ async function main() {
     console.log('Pedidos inseridos com sucesso!');
     await prisma.item.createMany({
         data: [
-            { pedidoId: 1, produtoId: 1, quantidade: 50 },
-            { pedidoId: 2, produtoId: 2, quantidade: 15 },
-            { pedidoId: 3, produtoId: 3, quantidade: 25 },
-            { pedidoId: 1, produtoId: 1, quantidade: 10 },
-            { pedidoId: 2, produtoId: 2, quantidade: 10 },
-            { pedidoId: 3, produtoId: 3, quantidade: 5 },
+            { pedidoId: 1, produtoId: 1, quantidade: 50, preco: 2.50 },
+            { pedidoId: 1, produtoId: 2, quantidade: 15, preco: 15.00 },
+            { pedidoId: 2, produtoId: 3, quantidade: 25, preco: 1.00 },
+            { pedidoId: 2, produtoId: 4, quantidade: 10, preco: 2.50 },
+            { pedidoId: 2, produtoId: 5, quantidade: 10, preco: 15.00 },
+            { pedidoId: 3, produtoId: 1, quantidade: 5, preco: 2.50 },
         ],
     })
     console.log('Itens inseridos com sucesso!');
@@ -128,7 +129,7 @@ main()
         await prisma.$disconnect()
     })
 ```
-- Acrescente a referencia ao arquivo **seed: 'prisma/seed.js'** no arquivo **prisma.config.ts**
+- Acrescente a referencia ao arquivo **seed: 'node prisma/seed.js'** no arquivo **prisma.config.ts**
 ```js
 import "dotenv/config";
 import { defineConfig } from "prisma/config";
@@ -137,7 +138,7 @@ export default defineConfig({
   schema: "prisma/schema.prisma",
   migrations: {
     path: "prisma/migrations",
-    seed: 'prisma/seed.js',
+    seed: 'node prisma/seed.js',
   },
   datasource: {
     url: process.env["DATABASE_URL"],

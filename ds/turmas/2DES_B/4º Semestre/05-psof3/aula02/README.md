@@ -84,7 +84,7 @@ npm install prisma@7 @prisma/client@7
 #### 5 Semear dados de teste no banco de dados
 - Crie um arquivo chamado **seed.js** na pasta **api/prisma** com o conteúdo abaixo:
 ```js
-const prisma = require('../src/prisma')
+const prisma = require('../src/data/prisma')
 
 async function main() {
     await prisma.produto.createMany({
@@ -97,7 +97,7 @@ async function main() {
             { nome: "Estojo de Lápis", descricao: "Estojo de lápis com zíper" }
         ],
     })
-
+    console.log('Produtos inseridos com sucesso!');
     await prisma.pedido.createMany({
         data: [
             { cliente: "Ana Silva", cep: "13914552", numero: "100", complemento: "Apto 101" },
@@ -105,7 +105,7 @@ async function main() {
             { cliente: "Maria Santos", cep: "13476622", numero: "300", complemento: "Fundos" },
         ],
     })
-
+    console.log('Pedidos inseridos com sucesso!');
     await prisma.item.createMany({
         data: [
             { pedidoId: 1, produtoId: 1, quantidade: 50 },
@@ -116,6 +116,7 @@ async function main() {
             { pedidoId: 3, produtoId: 3, quantidade: 5 },
         ],
     })
+    console.log('Itens inseridos com sucesso!');
 }
 
 main()
@@ -143,8 +144,15 @@ export default defineConfig({
   },
 });
 ```
+- Acrescente o script de seed no package.json abaixo da sessão de scripts, ficando assim:
+```json
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  }
+```
 - Execute o comando para semear os dados no banco de dados
 ```bash
+npm install
 npx prisma db seed
 ```
 #### 6 Criar os controllers básicos (CRUD) e rotas, pare a execução do projeto, use o comando abaixo colocando o nome para cada tabela

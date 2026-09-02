@@ -6,9 +6,9 @@
 ```bash
 npm i -g backend-aula
 ```
-- 1 iniciar uma nova API backend
+- 1 iniciar um novo backend
 ```bash
-npx backend-aula api
+npx backend-aula backend
 ```
 #### 2 Alterar o nome do banco de dados no arquivo **.env**
 ```js
@@ -63,7 +63,7 @@ model item {
 #### 4 Se usar o XAMPP, abrir o Control Panel e dar **start** em MySQL, se usa o MariaDB diretamente, apenas instalar as dependências do **prisma**
 - Acesse a pasta API e rode os comandos abaixo:
 ```bash
-cd api
+cd backend
 npx prisma generate
 npx prisma migrate dev --name init
 ```

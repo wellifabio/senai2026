@@ -33,8 +33,8 @@ datasource db {
 model produto {
   id        Int    @id @default(autoincrement())
   nome      String
-  preco     Float
   descricao String
+  imagem    String?
   itens     item[]
 }
 
@@ -57,6 +57,7 @@ model item {
   pedido  pedido  @relation(fields: [pedidoId], references: [id])
   produto produto @relation(fields: [produtoId], references: [id])
 }
+
 ```
 - Esquema criado com base no MER abaixo:
 ![MER](./mer.png)

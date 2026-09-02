@@ -1,5 +1,8 @@
 # Aula01 - Persistência de dados no celular
 
+## Capacidades técnicas
+- 7 Persistir dados em dispositivos móveis
+
 ## Conhecimentos
 - 5 Persistência de dados em dispositivos móveis 
   - 5.1 Armazenamento 

@@ -1,5 +1,10 @@
 # Aula02 - Situações desafiadoras
 
+## Capacidades técnicas
+- 5 Projetar interfaces para dispositivos móveis
+- 6 Implementar o código respeitando as características da linguagem na plataforma mobile 
+- 7 Persistir dados em dispositivos móveis
+
 |Elementos e funcionalidades|WidGets|
 |-|:-:|
 |Temas|ThemeData.light().copyWith()<br>ThemeData.dark().copyWith()|

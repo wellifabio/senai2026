@@ -18,7 +18,7 @@ Um fabricante local de produtos em MDF (Medium Density Fiberboard) enfrenta desa
 Desenvolver um sistema Web Full-stack para gerenciar a produção de produtos em MDF, integrando funcionalidades de controle de acesso, cadastro de produtos armazenando nome, descrição, custo, quantidade em estoque e qual o mínimo o estoque deve conter, processamento de pedidos com quantidade de produtos (Saídas do estoque) e registro de produção com quantidade fabricado (Entrada no estoque). O sistema deve permitir que o comerciante registre e acompanhe o status da produção de produtos registrando as datas e quantidades de pedidos e quantidade produzida além de qual usuário realizou cada ação, contemplando as seguintes funcionalidades:
 
 ## Resultados e entregas esperadas
-### Repositório GitHub nomeado como: `just_in_time_01_2025`
+### Repositório GitHub nomeado como: `just_in_time_01_2026`
 |Nº|Nome da Entrega|Tipo de Entrega|Tempo Estimado (minutos)|
 |:-:|-|-|:-:|
 |1|Lista de requisitos funcionais|Documentação de requisitos|10|

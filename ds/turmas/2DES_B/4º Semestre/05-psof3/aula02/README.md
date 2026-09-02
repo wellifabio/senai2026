@@ -53,7 +53,7 @@ model item {
   pedidoId   Int
   produtoId  Int
   quantidade Int
-
+  preco      Decimal @db.Decimal(10, 2)
   pedido  pedido  @relation(fields: [pedidoId], references: [id])
   produto produto @relation(fields: [produtoId], references: [id])
 }
@@ -89,36 +89,40 @@ npm install prisma@7 @prisma/client@7
 const prisma = require('../src/data/prisma')
 
 async function main() {
-    await prisma.produto.createMany({
-        data: [
-            { nome: "Caneta Azul", descricao: "Caneta esferográfica azul" },
-            { nome: "Caderno 100 folhas", descricao: "Caderno brochura 100 folhas" },
-            { nome: "Lápis Preto", descricao: "Lápis preto nº 2" },
-            { nome: "Borracha Branca", descricao: "Borracha branca macia" },
-            { nome: "Mochila Escolar", descricao: "Mochila escolar com compartimentos" },
-            { nome: "Estojo de Lápis", descricao: "Estojo de lápis com zíper" }
-        ],
+    await prisma.$transaction(async (transaction) => {
+        await transaction.item.deleteMany()
+        await transaction.pedido.deleteMany()
+        await transaction.produto.deleteMany()
+
+        const produtos = await Promise.all([
+            transaction.produto.create({ data: { nome: "Caneta Azul", descricao: "Caneta esferográfica azul" } }),
+            transaction.produto.create({ data: { nome: "Caderno 100 folhas", descricao: "Caderno brochura 100 folhas" } }),
+            transaction.produto.create({ data: { nome: "Lápis Preto", descricao: "Lápis preto nº 2" } }),
+            transaction.produto.create({ data: { nome: "Borracha Branca", descricao: "Borracha branca macia" } }),
+            transaction.produto.create({ data: { nome: "Mochila Escolar", descricao: "Mochila escolar com compartimentos" } }),
+            transaction.produto.create({ data: { nome: "Estojo de Lápis", descricao: "Estojo de lápis com zíper" } })
+        ])
+        console.log('Produtos inseridos com sucesso!');
+
+        const pedidos = await Promise.all([
+            transaction.pedido.create({ data: { cliente: "Ana Silva", cep: "13914552", numero: "100", complemento: "Apto 101" } }),
+            transaction.pedido.create({ data: { cliente: "Carlos Oliveira", cep: "13905522", numero: "200", complemento: "Casa 2" } }),
+            transaction.pedido.create({ data: { cliente: "Maria Santos", cep: "13476622", numero: "300", complemento: "Fundos" } })
+        ])
+        console.log('Pedidos inseridos com sucesso!');
+
+        await transaction.item.createMany({
+            data: [
+                { pedidoId: pedidos[0].id, produtoId: produtos[0].id, quantidade: 50, preco: 1 },
+                { pedidoId: pedidos[0].id, produtoId: produtos[1].id, quantidade: 15, preco: 1 },
+                { pedidoId: pedidos[1].id, produtoId: produtos[2].id, quantidade: 25, preco: 1 },
+                { pedidoId: pedidos[1].id, produtoId: produtos[3].id, quantidade: 10, preco: 1 },
+                { pedidoId: pedidos[1].id, produtoId: produtos[4].id, quantidade: 10, preco: 1 },
+                { pedidoId: pedidos[2].id, produtoId: produtos[0].id, quantidade: 5, preco: 1 }
+            ]
+        })
+        console.log('Itens inseridos com sucesso!');
     })
-    console.log('Produtos inseridos com sucesso!');
-    await prisma.pedido.createMany({
-        data: [
-            { cliente: "Ana Silva", cep: "13914552", numero: "100", complemento: "Apto 101" },
-            { cliente: "Carlos Oliveira", cep: "13905522", numero: "200" },
-            { cliente: "Maria Santos", cep: "13476622", numero: "300", complemento: "Fundos" },
-        ],
-    })
-    console.log('Pedidos inseridos com sucesso!');
-    await prisma.item.createMany({
-        data: [
-            { pedidoId: 1, produtoId: 1, quantidade: 50, preco: 2.50 },
-            { pedidoId: 1, produtoId: 2, quantidade: 15, preco: 15.00 },
-            { pedidoId: 2, produtoId: 3, quantidade: 25, preco: 1.00 },
-            { pedidoId: 2, produtoId: 4, quantidade: 10, preco: 2.50 },
-            { pedidoId: 2, produtoId: 5, quantidade: 10, preco: 15.00 },
-            { pedidoId: 3, produtoId: 1, quantidade: 5, preco: 2.50 },
-        ],
-    })
-    console.log('Itens inseridos com sucesso!');
 }
 
 main()

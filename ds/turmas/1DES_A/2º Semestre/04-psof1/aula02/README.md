@@ -1,17 +1,29 @@
 
 # Aula02
 
+### Capacidades Técnicas
+- 1 Definir a sequência das atividades para desenvolvimento dos componentes, de acordo com os requisitos do sistema
+- 2 Definir a infraestrutura física a ser utilizada no desenvolvimento dos componentes
+- 4 Definir os recursos humanos e materiais para o desenvolvimento dos componentes
+- 5 Elaborar cronograma das etapas sequenciadas do desenvolvimento dos componentes, considerando a integração com outros profissionais envolvidos no projeto
+- 6 Definir o custo estimado para o desenvolvimento dos componentes
+
+### Capacidades Socioemocionais
+- 1 Demonstrar autogestão
+- 2 Demonstrar pensamento analítico
+
 ## Conhecimentos
 - 1 Qualidade de software
   - 1.1. Definição
   - 1.2. Ferramentas
   - 1.3. Processos de trabalho
-- 2 Metodologias de desenvolvimento
-  - 2.1. Clássicas
-    - 2.1.1. Definição
-    - 2.1.2. Características
-    - 2.1.3. Aplicabilidade
-    - 2.1.4. Fases de desenvolvimento
+- 3 Metodologia de gerenciamento de projeto
+  - 3.1. Escopo
+  - 3.2. Revisão dos objetivos
+  - 3.3. Análise de riscos
+  - 3.4. Cronograma
+  - 3.5. Recursos
+  - 3.6. Custos
 
 ## Projeto (Definição)
 Um projeto é um esforço temporário, único e planejado, com começo, meio e fim definidos, criado para entregar um produto, serviço ou resultado exclusivo.
@@ -61,21 +73,30 @@ Limites que já são conhecidos e impactarão no projeto em termos de prazo e or
 O mapeamento de riscos é muito importante, principalmente sob o ponto de vista de negócio, no termo de abertura de projeto, exemplo: “Caso a loja virtual retire clientes da loja física, poderá não compensar financeiramente”.
 - Orçamento
 Ideia do custos envolvidos no projeto, desde o seu inicio, até a finalização.
+
+#### Exemplo de TAP
 ![TAP](./tap.png)
+- Outro exemplo criado na aula
+![TAP](./tap_toto.png)
 ## Cronograma
 Um cronograma é uma ferramenta visual em forma de tabela, lista ou gráfico que organiza atividades e prazos em ordem de tempo.
 - Organização temporal: Mostra a data de início e de término de cada tarefa.
 - Sequência lógica: Define a ordem em que as coisas devem acontecer (o que vem antes e o que vem depois).
 - Gestão de prazos: Ajuda a cumprir o prazo final de um projeto ou rotina
+#### Exemplo de Cronograma
+![Cronograma](./cronograma.png)
 
 ### [Gráfico de Gantt](https://wellifabio.github.io/gantt/)
 O gráfico de Gantt é uma ferramenta visual de gerenciamento de projetos que mostra o cronograma, as tarefas e os prazos de um projeto em formato de barras horizontais ao longo de uma linha do tempo.
 
 ## Orçamento
 Um orçamento é um plano financeiro que calcula os ganhos e os gastos em um período determinado.
-### inicadores
-- Hora x Recurso (Programador)
 
+### inicadores
+- Materiais
+- Hora x Recurso (Programador)
+#### Exemplo de Orçamento
+![Orçamento](./orcamento.png)
 ## Atividade
 - Em grupos de até três pessoas
 - Defina um tema criativo para um projeto fictício

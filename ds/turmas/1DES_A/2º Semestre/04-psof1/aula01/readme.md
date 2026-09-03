@@ -1,5 +1,25 @@
 # Projeto de Software
 
+### Capacidades Técnicas
+- 1 Definir a sequência das atividades para desenvolvimento dos componentes, de acordo com os requisitos do sistema
+
+### Capacidades Socioemocionais
+- 1 Demonstrar autogestão
+- 2 Demonstrar pensamento analítico
+- 3 Demonstrar inteligência emocional
+- 6 Trabalhar em equipe 
+
+### Conhecimentos
+- 2 Metodologias de desenvolvimento
+  - 2.1. Clássicas
+    - 2.1.1. Definição
+    - 2.1.2. Características
+    - 2.1.3. Aplicabilidade
+    - 2.1.4. Fases de desenvolvimento
+- 2.2. Ágeis
+  - 2.2.1. Aplicabilidade
+  - 2.2.2. Fases de desenvolvimento
+
 # Metodologias Ágeis
 
 ## Objetivo

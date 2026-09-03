@@ -77,7 +77,7 @@ Ideia do custos envolvidos no projeto, desde o seu inicio, até a finalização.
 #### Exemplo de TAP
 ![TAP](./tap.png)
 - Outro exemplo criado na aula
-![TAP](./tap_toto.png)
+![TAP](./tap_tico.png)
 ## Cronograma
 Um cronograma é uma ferramenta visual em forma de tabela, lista ou gráfico que organiza atividades e prazos em ordem de tempo.
 - Organização temporal: Mostra a data de início e de término de cada tarefa.

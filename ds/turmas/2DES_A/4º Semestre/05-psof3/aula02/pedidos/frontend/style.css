@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+    --c1: #17212b;
+    --c2: #73808c;
+    --c3: #287b5a;
+    --c4: #f28b62;
+    --c5: #f1ffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-height: 100vh;
+    margin: 0;
+    color: var(--c1);
+    background: var(--c5);
+    font-family: 'DM Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+header,
+#faixa {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+header{
+    justify-content: space-around;
+}
+
+#faixa{
+    justify-content: center;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    width: fit-content;
+    max-width: 300px;
+    padding: 10px 20px;
+    margin: 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--c2);
+    color: var(--c5);
+    box-shadow: 5px 3px 7px var(--c2);
+}
+
+button {
+    width: fit-content;
+    max-width: 300px;
+    padding: 10px 20px;
+    margin: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--c3);
+    color: var(--c5);
+    box-shadow: 5px 3px 7px var(--c2);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: var(--c4);
+}
+
+#conteudo {
+    width: 100%;
+    height: 100%;
+    max-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: auto;
+}
+
+.pedido{
+    width: fit-content;
+    max-width: 650px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+}
+
+.item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--c2);
+}

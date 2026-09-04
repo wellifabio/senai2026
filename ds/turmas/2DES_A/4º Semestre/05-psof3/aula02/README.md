@@ -31,33 +31,32 @@ datasource db {
 }
 
 model produto {
-  id        Int    @id @default(autoincrement())
-  nome      String
-  descricao String
-  imagem    String?
+  id        Int     @id @default(autoincrement())
+  nome      String  @db.VarChar(40)
+  descricao String  @db.VarChar(200)
+  imagem    String? @db.VarChar(200)
   itens     item[]
 }
 
 model pedido {
   id          Int      @id @default(autoincrement())
-  cliente     String
-  cep         String
-  numero      String?
-  complemento String?
+  cliente     String   @db.VarChar(200)
+  cep         String   @db.VarChar(10)
+  numero      String?  @db.VarChar(10)
+  complemento String?  @db.VarChar(20)
   data        DateTime @default(now())
   itens       item[]
 }
 
 model item {
-  id         Int @id @default(autoincrement())
+  id         Int     @id @default(autoincrement())
   pedidoId   Int
   produtoId  Int
   quantidade Int
   preco      Decimal @db.Decimal(10, 2)
-  pedido  pedido  @relation(fields: [pedidoId], references: [id])
-  produto produto @relation(fields: [produtoId], references: [id])
+  pedido     pedido  @relation(fields: [pedidoId], references: [id])
+  produto    produto @relation(fields: [produtoId], references: [id])
 }
-
 ```
 - Esquema criado com base no MER abaixo:
 ![MER](./mer.png)

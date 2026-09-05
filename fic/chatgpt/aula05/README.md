@@ -1,5 +1,7 @@
 # Aula05 - Desafios
 
+## [Portfolio da turma](https://wellifabio.github.io/senai_portfolio_fic_chatgpt_2026/)
+
 ## Projetos desenvolvidos em aula
 - [Fake Chatbot com JavaScript, HTML e CSS](https://wellifabio.github.io/senai_fake_chatgpt_2026/) Introdução a programação com IA, [Repositorio](https://github.com/wellifabio/senai_fake_chatgpt_2026.git)
 - [Conjectura de collatz, desafio resolvido com IA chatGPT](https://github.com/wellifabio/senai_collatz_chatgpt_2026.git)

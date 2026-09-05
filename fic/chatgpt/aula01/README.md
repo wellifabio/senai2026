@@ -151,6 +151,13 @@ function funcao() {
 
 ### Definição de inteligência artificial
 Inteligência Artificial (IA) é um ramo da ciência da computação que se concentra na criação de sistemas capazes de realizar tarefas que normalmente exigiriam inteligência humana. Isso inclui a capacidade de aprender, raciocinar, resolver problemas, compreender a linguagem natural e perceber o ambiente ao redor. A IA pode ser dividida em várias categorias, como aprendizado supervisionado, não supervisionado e por reforço, cada uma com suas próprias técnicas e aplicações. A IA tem sido amplamente utilizada em diversas áreas, como saúde, finanças, transporte e entretenimento, transformando a maneira como vivemos e trabalhamos.
+## Alguns Termos
+### Vibe Coding
+Vibe coding é uma forma de criar softwares usando inteligência artificial, onde você descreve o que quer em linguagem natural por meio de prompts (comandos de texto), e a IA escreve, testa e corrige o código.
+- Em vez de programar escrevendo cada linha manualmente, a pessoa atua mais como um diretor ou revisor do produto final. O termo foi criado em fevereiro de 2025 pelo pesquisador e cofundador da OpenAI, Andrej Karpathy. Saiba mais sobre o assunto no artigo explicativo da Alura ou na matéria do TecMundo.
+### Spec-Driven Development (SDD)
+O Spec-Driven Development (SDD), ou desenvolvimento orientado por especificações, é uma metodologia de engenharia de software em que especificações detalhadas e estruturadas são criadas e validadas antes de qualquer linha de código ser escrita.
+- Nessa abordagem, a documentação deixa de ser algo passivo e se transforma em um "contrato executável" que orienta tanto humanos quanto agentes de inteligência artificial durante todo o ciclo de vida do projeto.
 ## Modelos de inteligência artificial
 ### Aprendizado supervisionado
 O aprendizado supervisionado é um tipo de aprendizado de máquina onde o modelo é treinado usando um conjunto de dados rotulado, ou seja, cada exemplo de treinamento é acompanhado por uma resposta correta. O objetivo do modelo é aprender a mapear as entradas para as saídas corretas, permitindo que ele faça previsões precisas em novos dados. Exemplos comuns de algoritmos de aprendizado supervisionado incluem regressão linear, árvores de decisão e redes neurais.

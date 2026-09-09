@@ -12,6 +12,9 @@ const cadastrar = async (req, res) => {
 
 const listar = async (req, res) => {
     const lista = await prisma.pedido.findMany({
+        orderBy: {
+            id: 'desc'
+        }, 
         include: {
             itens: true,
         }

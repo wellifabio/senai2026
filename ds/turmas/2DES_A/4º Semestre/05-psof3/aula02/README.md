@@ -187,6 +187,9 @@ Neste projeto foram alterados os arquivos:
 ```js
 const listar = async (req, res) => {
     const lista = await prisma.pedido.findMany({
+        orderBy: {
+            id: 'desc'
+        }, 
         include: {
             itens: true,
         }
@@ -310,24 +313,24 @@ Dentro do seu projeto crie uma pasta chamada **frontend** e dentro dela crie um 
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/icone.png" type="image/x-icon">
     <title>Gestão de Pedidos</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
-<body onload="montarPedidos()">
+<body onload="iniciar()">
     <div id="main" class="main">
         <header>
             <h1>Gestão de <span style="color:var(--c4)">Pedidos</span></h1>
-            <button>Novo pedido</button>
+            <button onclick="novoPedido.classList.remove('oculto')">Novo pedido</button>
         </header>
         <main>
             <section id="faixa">
-                <div class="card">
+                <div id="totPedidos" class="card">
                     <h2>Total de pedidos</h2>
                 </div>
-                <div class="card">
+                <div id="totItens" class="card">
                     <h2>Total de itens</h2>
                 </div>
-                <div class="card">
+                <div id="totDinheiro" class="card">
                     <h2>Total em dinheiro</h2>
                 </div>
             </section>
@@ -338,6 +341,28 @@ Dentro do seu projeto crie uma pasta chamada **frontend** e dentro dela crie um 
         <footer>
             <h3>By wellifabio</h3>
         </footer>
+        <div id="novoPedido" class="modal oculto">
+            <div class="janela">
+                <h2>Novo Pedido</h2>
+                <form id="formPedido">
+                    <input type="text" placeholder="Cliente" name="cliente" required>
+                    <input type="number" placeholder="CEP somente números" name="cep" required>
+                    <input type="text" placeholder="Número" name="numero">
+                    <input type="text" placeholder="Complemento" name="complemento">
+                    <span><label id="total">R$ total</label></span>
+                    <span>
+                        <select id="itens"></select>
+                        <button type="button" id="add" onclick="addCarrinho(itens.value)">+</button>
+                    </span>
+                    <span id="listItens"></span>
+                    <span>
+                        <label id="msg">Mensagens do sistema</label>
+                        <button type="reset" onclick="limpar()">Limpar</button>
+                        <button type="submit">Enviar</button>
+                    </span>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 
@@ -376,11 +401,11 @@ header,
     align-items: center;
 }
 
-header{
+header {
     justify-content: space-around;
 }
 
-#faixa{
+#faixa {
     justify-content: center;
 }
 
@@ -404,13 +429,20 @@ main {
 
 .card {
     width: fit-content;
-    max-width: 300px;
-    padding: 10px 20px;
+    max-width: 220px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
     margin: 20px;
     border: none;
     border-radius: 15px;
     background-color: var(--c2);
-    color: var(--c5);
+    h2{
+        color: var(--c5);
+        font-size: large;
+        text-align: center;
+    }
     box-shadow: 5px 3px 7px var(--c2);
 }
 
@@ -418,7 +450,7 @@ button {
     width: fit-content;
     max-width: 300px;
     padding: 10px 20px;
-    margin: 20px;
+    margin: 5px;
     border: none;
     border-radius: 20px;
     background-color: var(--c3);
@@ -443,21 +475,99 @@ button:hover {
     overflow-y: auto;
 }
 
-.pedido{
+#msg{
+    color:var(--c4);
+    font-weight: bold;
+}
+
+.pedido {
     width: fit-content;
-    max-width: 650px;
+    max-width: 700px;
     height: fit-content;
     display: grid;
     grid-template-columns: 40% 60%;
     align-items: center;
 }
 
-.item{
+.item {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: solid 1px var(--c2);
+}
+
+.modal {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.janela {
+    width: 100%;
+    max-width: 800px;
+    background-color: var(--c5);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 3px 7px var(--c2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        input,
+        select {
+            padding: 10px;
+            border: none;
+            border-radius: 15px;
+        }
+
+        span {
+            text-align: right;
+
+            input {
+                max-width: 80px;
+            }
+        }
+    }
+}
+
+.oculto {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+
+    header,
+    #faixa {
+        flex-direction: column;
+        gap: 0;
+
+        div {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px;
+        }
+    }
+
+    .pedido {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
 }
 ```
 - Crie um arquivo chamado **script.js** com o conteúdo abaixo:
@@ -466,14 +576,30 @@ const API_URL = 'http://localhost:3000';
 const API_CEP = 'https://viacep.com.br/ws';
 const produtos = [];
 const pedidos = [];
+var nItens = 0, dinheiro = 0;
+const itensPedido = [];
+const formPedido = document.getElementById("formPedido");
+
+async function iniciar() {
+    nItens = 0;
+    dinheiro = 0;
+    await montarPedidos();
+    preencherSelect();
+    exibirTotais();
+}
 
 async function montarPedidos() {
+    produtos.length = 0;
+    pedidos.length = 0;
+
     await obterProdutos();
     await obterPedidos();
-    todosPedidos = document.getElementById("conteudo");
+
+    const todosPedidos = document.getElementById("conteudo");
     todosPedidos.innerHTML = "";
-    pedidos.forEach(async (p) => {
-        let e = await obterEndereco(p.cep);
+
+    for (const p of pedidos) {
+        const e = await obterEndereco(p.cep);
         const pedido = document.createElement("div");
         pedido.classList.add("pedido");
         pedido.innerHTML = `
@@ -490,29 +616,42 @@ async function montarPedidos() {
                 ${p.complemento != null ? p.complemento + "," : ""}
                 ${e != "" ? e.localidade : "CEP não encontrado"},
                 ${e != "" ? e.uf : "CEP não encontrado"}
+                ${e != "" ? e.cep : "CEP não encontrado"}
             </p>
+            
         </div>
         <div>
             ${await montarItens(p.itens)}
+            <h3 style="text-align:right">Total ${(await totalPedido(p.itens)).toFixed(2).replace('.', ',')}</h3>
         </div>
         `;
         todosPedidos.appendChild(pedido);
-    });
+    }
 }
 
 async function montarItens(itens) {
     let lista = "";
-    itens.forEach(i => {
-        const produto = produtos.find(p => p.id == i.produtoId)
+    for (const item of itens) {
+        const produto = produtos.find(p => p.id == item.produtoId)
         lista += `
         <div class="item">
             <img src="./assets/${produto.imagem}" width=50>
             <div>${produto.nome}</div>
-            <div>${i.quantidade}un</div>
-            <div>R$ ${Number(i.preco).toFixed(2).replace('.', ',')}</div>
+            <div>${item.quantidade}un</div>
+            <div>R$ ${Number(item.preco).toFixed(2).replace('.', ',')}</div>
         </div>`;
-    });
+        nItens++;
+        dinheiro += Number(item.quantidade) * Number(item.preco);
+    }
     return lista;
+}
+
+async function totalPedido(itens) {
+    let total = 0;
+    for (const item of itens) {
+        total += Number(item.quantidade) * Number(item.preco);
+    }
+    return total;
 }
 
 async function obterProdutos() {
@@ -544,11 +683,125 @@ async function obterEndereco(cep) {
         });
     return endereco;
 }
+
+function exibirTotais() {
+    document.getElementById("totPedidos").innerHTML = `
+        <h2>${pedidos.length} Pedidos ativos</h2>
+    `;
+    document.getElementById("totItens").innerHTML = `
+        <h2>${nItens} Ítens para postar</h2>
+    `;
+    document.getElementById("totDinheiro").innerHTML = `
+        <h2>Totalizando R$ ${dinheiro.toFixed(2).replace('.', ',')}</h2>
+    `;
+}
+
+function preencherSelect() {
+    const select = document.getElementById("itens")
+    produtos.forEach(p => {
+        const op = document.createElement("option");
+        op.innerHTML = p.nome;
+        op.value = p.id;
+        select.appendChild(op)
+    });
+}
+
+function addCarrinho(id) {
+    const produto = produtos.find(p => p.id == id);
+    const jaListado = itensPedido.find(p => p.produtoId == id);
+    if (jaListado == undefined) {
+        const listItens = document.getElementById("listItens");
+        const nItem = {
+            produtoId: Number(produto.id),
+            quantidade: 1,
+            preco: 0.0
+        }
+        const linha = document.createElement("div");
+        linha.innerHTML = `
+        <label>${produto.nome} R$</label>
+        <input type="number" step="0.01" id="preco${produto.id}" placeholder="Preço" onchange="calcSub('${produto.id}')">
+        <label>un</label>
+        <input type="number" id="quantidade${produto.id}" value="${nItem.quantidade}" onchange="calcSub('${produto.id}')">
+        <label id="subtotal${produto.id}"}>R$ 0,00</label>
+    `;
+        listItens.appendChild(linha);
+        itensPedido.push(nItem);
+    } else {
+        document.getElementById("msg").innerHTML = "Produto já adicionado";
+    }
+}
+
+function calcSub(id) {
+    const preco = Number(document.getElementById(`preco${id}`).value);
+    const quantidade = Number(document.getElementById(`quantidade${id}`).value);
+    document.getElementById(`subtotal${id}`).innerHTML = `R$ ${(preco * quantidade).toFixed(2).replace('.', ',')}`;
+    const indice = itensPedido.findIndex(p => p.produtoId == id);
+    itensPedido[indice].preco = preco;
+    itensPedido[indice].quantidade = quantidade;
+    let soma = 0;
+    itensPedido.forEach(item => {
+        soma += item.preco * item.quantidade;
+    });
+    document.getElementById("total").innerHTML = `R$ ${soma.toFixed(2).replace('.', ',')}`;
+}
+
+function limpar() {
+    document.getElementById("novoPedido").classList.add('oculto');
+    document.getElementById("listItens").innerHTML = '';
+    itensPedido.length = 0;
+}
+
+if (formPedido) {
+    formPedido.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        if (itensPedido.length == 0) {
+            document.getElementById("msg").innerHTML = "Adicione algum ítem no pedido";
+            return;
+        }
+        for (const item of itensPedido) {
+            if (item.preco == 0 || item.quantidade == 0) {
+                document.getElementById("msg").innerHTML = "Existe item zerado";
+                return;
+            }
+        }
+        const dados = {
+            cliente: formPedido.cliente.value,
+            cep: formPedido.cep.value
+        }
+        if (formPedido.numero.value.length > 0) dados.numero = formPedido.numero.value;
+        if (formPedido.complemento.value.length > 0) dados.complemento = formPedido.complemento.value;
+        const resp = await fetch(`${API_URL}/pedido/cadastrar`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(dados)
+        });
+        const data = await resp.json();
+        if (data) {
+            for (const item of itensPedido) {
+                item.pedidoId = Number(data.id);
+                const respo = await fetch(`${API_URL}/item/cadastrar`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(item)
+                });
+                const dat = await respo.json();
+                if (!dat) {
+                    document.getElementById("msg").innerHTML = `Erro ao processar o item: ${item.produtoId}`;
+                    return;
+                }
+            }
+            window.location.reload();
+        } else {
+            document.getElementById("msg").innerHTML = "Erro ao enviar pedido";
+        }
+    });
+}
 ```
 - Após isso, abra o arquivo **index.html** no navegador e veja o resultado.
   - Utilize o Live server do VsCode para abrir o arquivo, ou abra diretamente no navegador.
 #### Resultado
-![Resultado](./web.png)
+![Resultado](../../../../../planejamento/exemplos/pedidos/documentos/screenshot01.png)
+![Resultado](../../../../../planejamento/exemplos/pedidos/documentos/screenshot02.png)
 
 #### Estrutura de pastas do projeto
 ```

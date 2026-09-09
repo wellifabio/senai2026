@@ -4,6 +4,7 @@ const produtos = [];
 const pedidos = [];
 var nItens = 0, dinheiro = 0;
 const itensPedido = [];
+const formPedido = document.getElementById("formPedido");
 
 async function iniciar() {
     nItens = 0;
@@ -41,6 +42,7 @@ async function montarPedidos() {
                 ${p.complemento != null ? p.complemento + "," : ""}
                 ${e != "" ? e.localidade : "CEP não encontrado"},
                 ${e != "" ? e.uf : "CEP não encontrado"}
+                ${e != "" ? e.cep : "CEP não encontrado"}
             </p>
             
         </div>
@@ -150,8 +152,8 @@ function addCarrinho(id) {
     `;
         listItens.appendChild(linha);
         itensPedido.push(nItem);
-    }else{
-        alert("Produto já adicionado")
+    } else {
+        document.getElementById("msg").innerHTML = "Produto já adicionado";
     }
 }
 
@@ -159,11 +161,64 @@ function calcSub(id) {
     const preco = Number(document.getElementById(`preco${id}`).value);
     const quantidade = Number(document.getElementById(`quantidade${id}`).value);
     document.getElementById(`subtotal${id}`).innerHTML = `R$ ${(preco * quantidade).toFixed(2).replace('.', ',')}`;
-    console.log(itensPedido);
+    const indice = itensPedido.findIndex(p => p.produtoId == id);
+    itensPedido[indice].preco = preco;
+    itensPedido[indice].quantidade = quantidade;
+    let soma = 0;
+    itensPedido.forEach(item => {
+        soma += item.preco * item.quantidade;
+    });
+    document.getElementById("total").innerHTML = `R$ ${soma.toFixed(2).replace('.', ',')}`;
 }
 
 function limpar() {
     document.getElementById("novoPedido").classList.add('oculto');
     document.getElementById("listItens").innerHTML = '';
     itensPedido.length = 0;
+}
+
+if (formPedido) {
+    formPedido.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        if (itensPedido.length == 0) {
+            document.getElementById("msg").innerHTML = "Adicione algum ítem no pedido";
+            return;
+        }
+        for (const item of itensPedido) {
+            if (item.preco == 0 || item.quantidade == 0) {
+                document.getElementById("msg").innerHTML = "Existe item zerado";
+                return;
+            }
+        }
+        const dados = {
+            cliente: formPedido.cliente.value,
+            cep: formPedido.cep.value
+        }
+        if (formPedido.numero.value.length > 0) dados.numero = formPedido.numero.value;
+        if (formPedido.complemento.value.length > 0) dados.complemento = formPedido.complemento.value;
+        const resp = await fetch(`${API_URL}/pedido/cadastrar`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(dados)
+        });
+        const data = await resp.json();
+        if (data) {
+            for (const item of itensPedido) {
+                item.pedidoId = Number(data.id);
+                const respo = await fetch(`${API_URL}/item/cadastrar`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(item)
+                });
+                const dat = await respo.json();
+                if (!dat) {
+                    document.getElementById("msg").innerHTML = `Erro ao processar o item: ${item.produtoId}`;
+                    return;
+                }
+            }
+            window.location.reload();
+        } else {
+            document.getElementById("msg").innerHTML = "Erro ao enviar pedido";
+        }
+    });
 }

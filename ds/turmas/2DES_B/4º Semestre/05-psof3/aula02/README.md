@@ -95,9 +95,9 @@ async function main() {
 
         const produtos = await Promise.all([
             transaction.produto.create({ data: { nome: "Caneta Azul", descricao: "Caneta esferográfica azul", imagem:"caneta.png" } }),
-            transaction.produto.create({ data: { nome: "Caderno 100 folhas", descricao: "Caderno brochura 100 folhas", imagem:"caderno.png" } }),
+            transaction.produto.create({ data: { nome: "Caderno 100 folhas", descricao: "Caderno brochura 100 folhas", imagem:"caderno.webp" } }),
             transaction.produto.create({ data: { nome: "Lápis Preto", descricao: "Lápis preto nº 2", imagem:"lapis.png" } }),
-            transaction.produto.create({ data: { nome: "Borracha Branca", descricao: "Borracha branca macia", imagem:"borracha.png" } }),
+            transaction.produto.create({ data: { nome: "Borracha Branca", descricao: "Borracha branca macia", imagem:"borracha.webp" } }),
             transaction.produto.create({ data: { nome: "Mochila Escolar", descricao: "Mochila escolar com compartimentos", imagem:"mochila.png" } }),
             transaction.produto.create({ data: { nome: "Estojo de Lápis", descricao: "Estojo de lápis com zíper", imagem:"estojo.png" } })
         ])
@@ -105,8 +105,8 @@ async function main() {
 
         const pedidos = await Promise.all([
             transaction.pedido.create({ data: { cliente: "Ana Silva", cep: "13914552", numero: "100", complemento: "Apto 101" } }),
-            transaction.pedido.create({ data: { cliente: "Carlos Oliveira", cep: "13905522", numero: "200", complemento: "Casa 2" } }),
-            transaction.pedido.create({ data: { cliente: "Maria Santos", cep: "13476622", numero: "300", complemento: "Fundos" } })
+            transaction.pedido.create({ data: { cliente: "Carlos Oliveira", cep: "13905522", numero: "200" } }),
+            transaction.pedido.create({ data: { cliente: "Maria Santos", cep: "13476622", complemento: "Fundos" } })
         ])
         console.log('Pedidos inseridos com sucesso!');
 
@@ -187,6 +187,9 @@ Neste projeto foram alterados os arquivos:
 ```js
 const listar = async (req, res) => {
     const lista = await prisma.pedido.findMany({
+        orderBy: {
+            id: 'desc'
+        }, 
         include: {
             itens: true,
         }
@@ -302,77 +305,67 @@ const listar = async (req, res) => {
 Dentro do seu projeto crie uma pasta chamada **frontend** e dentro dela crie um arquivo chamado **index.html** com o conteúdo abaixo:
 ```html
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Acompanhamento de pedidos e itens">
-    <title>Pedidos | Painel</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/icone.png" type="image/x-icon">
+    <title>Gestão de Pedidos</title>
+    <script src="script.js" defer></script>
 </head>
-<body>
-    <main class="page-shell">
-        <header class="topbar">
-            <a class="brand" href="./" aria-label="Painel de pedidos">
-                <span class="brand-mark">P</span>
-                <span>pedidos<span class="brand-dot">.</span></span>
-            </a>
-            <div class="topbar-meta">
-                <span class="live-dot" aria-hidden="true"></span>
-                <span>Visão geral</span>
-            </div>
+
+<body onload="iniciar()">
+    <div id="main" class="main">
+        <header>
+            <h1>Gestão de <span style="color:var(--c4)">Pedidos</span></h1>
+            <button onclick="novoPedido.classList.remove('oculto')">Novo pedido</button>
         </header>
-
-        <section class="hero" aria-labelledby="page-title">
-            <div>
-                <p class="eyebrow">Operação diária</p>
-                <h1 id="page-title">Pedidos em foco<span class="title-accent">.</span></h1>
-                <p class="hero-copy">Acompanhe pedidos, itens e valores em um só lugar.</p>
-            </div>
-            <button class="refresh-button" id="refresh-button" type="button">
-                <span class="refresh-icon" aria-hidden="true">↻</span>
-                Atualizar
-            </button>
-        </section>
-
-        <section class="summary-grid" aria-label="Resumo dos pedidos">
-            <article class="summary-card summary-card--primary">
-                <span class="summary-label">Pedidos ativos</span>
-                <strong class="summary-value" id="orders-count">—</strong>
-                <span class="summary-note">na sua operação</span>
-            </article>
-            <article class="summary-card">
-                <span class="summary-label">Itens separados</span>
-                <strong class="summary-value" id="items-count">—</strong>
-                <span class="summary-note">unidades no total</span>
-            </article>
-            <article class="summary-card">
-                <span class="summary-label">Última atualização</span>
-                <strong class="summary-value summary-value--time" id="last-update">—</strong>
-                <span class="summary-note" id="connection-status">conectando à API</span>
-            </article>
-        </section>
-
-        <section class="orders-section" aria-labelledby="orders-title">
-            <div class="section-heading">
-                <div>
-                    <p class="eyebrow">Lista completa</p>
-                    <h2 id="orders-title">Todos os pedidos</h2>
+        <main>
+            <section id="faixa">
+                <div id="totPedidos" class="card">
+                    <h2>Total de pedidos</h2>
                 </div>
-                <span class="order-count" id="orders-caption">carregando...</span>
+                <div id="totItens" class="card">
+                    <h2>Total de itens</h2>
+                </div>
+                <div id="totDinheiro" class="card">
+                    <h2>Total em dinheiro</h2>
+                </div>
+            </section>
+            <section id="conteudo">
+                <p>Carregando dados...</p>
+            </section>
+        </main>
+        <footer>
+            <h3>By wellifabio</h3>
+        </footer>
+        <div id="novoPedido" class="modal oculto">
+            <div class="janela">
+                <h2>Novo Pedido</h2>
+                <form id="formPedido">
+                    <input type="text" placeholder="Cliente" name="cliente" required>
+                    <input type="number" placeholder="CEP somente números" name="cep" required>
+                    <input type="text" placeholder="Número" name="numero">
+                    <input type="text" placeholder="Complemento" name="complemento">
+                    <span><label id="total">R$ total</label></span>
+                    <span>
+                        <select id="itens"></select>
+                        <button type="button" id="add" onclick="addCarrinho(itens.value)">+</button>
+                    </span>
+                    <span id="listItens"></span>
+                    <span>
+                        <label id="msg">Mensagens do sistema</label>
+                        <button type="reset" onclick="limpar()">Limpar</button>
+                        <button type="submit">Enviar</button>
+                    </span>
+                </form>
             </div>
-            <div class="feedback" id="feedback" role="status" aria-live="polite">
-                <span class="spinner" aria-hidden="true"></span>
-                Buscando pedidos...
-            </div>
-            <div class="orders-list" id="orders-list"></div>
-        </section>
-    </main>
-    <script src="script.js"></script>
+        </div>
+    </div>
 </body>
+
 </html>
 ```
 - Crie um arquivo chamado **style.css** com o conteúdo abaixo:
@@ -380,239 +373,448 @@ Dentro do seu projeto crie uma pasta chamada **frontend** e dentro dela crie um 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
 
 :root {
-    --ink: #17212b;
-    --muted: #73808c;
-    --line: #dfe5e8;
-    --paper: #f6f8f7;
-    --white: #ffffff;
-    --mint: #bce8d5;
-    --mint-deep: #287b5a;
-    --orange: #f28b62;
-    --navy: #1e3545;
-    --shadow: 0 18px 45px rgba(28, 49, 59, 0.08);
+    --c1: #17212b;
+    --c2: #73808c;
+    --c3: #287b5a;
+    --c4: #f28b62;
+    --c5: #f1ffff;
 }
 
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
 body {
+    max-height: 100vh;
     margin: 0;
-    color: var(--ink);
-    background: var(--paper);
+    color: var(--c1);
+    background: var(--c5);
     font-family: 'DM Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
-body::before {
-    content: '';
-    position: fixed;
-    inset: 0 0 auto;
-    height: 420px;
-    z-index: -1;
-    background: linear-gradient(125deg, #e5f4ed 0%, #f6f8f7 56%, #fff3e7 100%);
+header,
+#faixa {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
 }
 
-.page-shell { width: min(1120px, calc(100% - 48px)); margin: 0 auto; padding: 28px 0 80px; }
-.topbar { display: flex; align-items: center; justify-content: space-between; }
-.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); font: 700 21px 'Space Grotesk', sans-serif; text-decoration: none; letter-spacing: -.4px; }
-.brand-mark { display: grid; width: 34px; height: 34px; place-items: center; color: var(--white); border-radius: 10px 10px 10px 3px; background: var(--navy); }
-.brand-dot, .title-accent { color: var(--orange); }
-.topbar-meta { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 13px; font-weight: 600; }
-.live-dot { width: 8px; height: 8px; border-radius: 50%; background: #46bd82; box-shadow: 0 0 0 4px rgba(70, 189, 130, .16); }
-.hero { display: flex; align-items: end; justify-content: space-between; gap: 24px; padding: 82px 0 43px; }
-.eyebrow { margin: 0 0 11px; color: var(--mint-deep); font-size: 11px; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; }
-h1, h2 { margin: 0; font-family: 'Space Grotesk', sans-serif; letter-spacing: -1.6px; }
-h1 { font-size: clamp(38px, 5vw, 60px); line-height: 1.02; }
-h2 { font-size: 30px; }
-.hero-copy { margin: 17px 0 0; color: var(--muted); font-size: 16px; }
-.refresh-button { display: inline-flex; align-items: center; gap: 9px; padding: 12px 17px; border: 1px solid var(--line); border-radius: 9px; color: var(--ink); background: rgba(255,255,255,.72); cursor: pointer; font: 600 14px 'DM Sans', sans-serif; transition: transform .2s, box-shadow .2s, background .2s; }
-.refresh-button:hover { background: var(--white); box-shadow: var(--shadow); transform: translateY(-2px); }
-.refresh-button:disabled { opacity: .6; cursor: wait; }
-.refresh-icon { display: inline-block; font-size: 20px; line-height: 12px; }
-.summary-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-.summary-card { min-height: 148px; padding: 24px; border: 1px solid var(--line); border-radius: 12px; background: rgba(255,255,255,.72); }
-.summary-card--primary { border-color: transparent; background: var(--navy); color: var(--white); box-shadow: var(--shadow); }
-.summary-label, .summary-note { display: block; font-size: 13px; }
-.summary-label { font-weight: 600; }
-.summary-note { margin-top: 8px; color: var(--muted); }
-.summary-card--primary .summary-note { color: #a9c4c4; }
-.summary-value { display: block; margin-top: 18px; font: 600 37px 'Space Grotesk', sans-serif; letter-spacing: -1px; }
-.summary-value--time { font-size: 28px; }
-.orders-section { margin-top: 70px; }
-.section-heading { display: flex; align-items: end; justify-content: space-between; gap: 20px; padding-bottom: 19px; border-bottom: 1px solid var(--line); }
-.order-count { color: var(--muted); font-size: 13px; }
-.feedback { display: flex; align-items: center; gap: 10px; padding: 28px 0; color: var(--muted); font-size: 14px; }
-.feedback[hidden] { display: none; }
-.feedback--error { color: #b85437; }
-.spinner { width: 15px; height: 15px; border: 2px solid #c9d8d3; border-top-color: var(--mint-deep); border-radius: 50%; animation: spin .8s linear infinite; }
-.orders-list { display: grid; gap: 15px; }
-.order-card { display: grid; grid-template-columns: minmax(190px, .9fr) 1.5fr; gap: 28px; padding: 25px 27px; border: 1px solid var(--line); border-radius: 12px; background: var(--white); box-shadow: 0 8px 24px rgba(28,49,59,.035); animation: rise .45s both; }
-.order-main { display: flex; flex-direction: column; justify-content: space-between; gap: 26px; }
-.order-number { color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; }
-.customer { margin: 7px 0 0; font: 600 23px 'Space Grotesk', sans-serif; letter-spacing: -.6px; }
-.order-details { display: flex; flex-wrap: wrap; gap: 8px 17px; color: var(--muted); font-size: 13px; }
-.order-detail { display: inline-flex; align-items: center; gap: 6px; }
-.detail-icon { color: var(--orange); font-size: 15px; }
-.items-box { padding-left: 27px; border-left: 1px solid var(--line); }
-.items-heading { display: flex; align-items: center; justify-content: space-between; margin-bottom: 13px; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
-.items-total { color: var(--mint-deep); letter-spacing: 0; text-transform: none; }
-.item-row { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; align-items: center; gap: 16px; padding: 13px 0; border-top: 1px solid #edf0f0; font-size: 14px; }
-.item-name { overflow: hidden; font-weight: 600; text-overflow: ellipsis; white-space: nowrap; }
-.item-quantity { color: var(--muted); font-size: 13px; }
-.item-price { font-weight: 700; }
-.empty-state { padding: 50px; color: var(--muted); text-align: center; }
+header {
+    justify-content: space-around;
+}
 
-@keyframes spin { to { transform: rotate(360deg); } }
-@keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+#faixa {
+    justify-content: center;
+}
 
-@media (max-width: 700px) {
-    .page-shell { width: min(100% - 32px, 540px); padding-top: 20px; }
-    .hero { align-items: start; flex-direction: column; padding: 64px 0 34px; }
-    .summary-grid { grid-template-columns: 1fr; }
-    .summary-card { min-height: auto; }
-    .summary-value { margin-top: 12px; }
-    .orders-section { margin-top: 52px; }
-    .section-heading { align-items: start; flex-direction: column; gap: 10px; }
-    .order-card { grid-template-columns: 1fr; gap: 22px; padding: 22px 19px; }
-    .items-box { padding: 20px 0 0; border-top: 1px solid var(--line); border-left: 0; }
-    .item-row { gap: 9px; }
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    width: fit-content;
+    max-width: 220px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    margin: 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--c2);
+    h2{
+        color: var(--c5);
+        font-size: large;
+        text-align: center;
+    }
+    box-shadow: 5px 3px 7px var(--c2);
+}
+
+button {
+    width: fit-content;
+    max-width: 300px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--c3);
+    color: var(--c5);
+    box-shadow: 5px 3px 7px var(--c2);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: var(--c4);
+}
+
+#conteudo {
+    width: 100%;
+    height: 100%;
+    max-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: auto;
+}
+
+#msg{
+    color:var(--c4);
+    font-weight: bold;
+}
+
+.pedido {
+    width: fit-content;
+    max-width: 700px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+}
+
+.item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--c2);
+}
+
+.modal {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.janela {
+    width: 100%;
+    max-width: 800px;
+    background-color: var(--c5);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 3px 7px var(--c2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        input,
+        select {
+            padding: 10px;
+            border: none;
+            border-radius: 15px;
+        }
+
+        span {
+            text-align: right;
+
+            input {
+                max-width: 80px;
+            }
+        }
+    }
+}
+
+.oculto {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+
+    header,
+    #faixa {
+        flex-direction: column;
+        gap: 0;
+
+        div {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px;
+        }
+    }
+
+    .pedido {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
 }
 ```
 - Crie um arquivo chamado **script.js** com o conteúdo abaixo:
 ```js
 const API_URL = 'http://localhost:3000';
+const API_CEP = 'https://viacep.com.br/ws';
+const produtos = [];
+const pedidos = [];
+var nItens = 0, dinheiro = 0;
+const itensPedido = [];
+const formPedido = document.getElementById("formPedido");
 
-const ordersList = document.querySelector('#orders-list');
-const feedback = document.querySelector('#feedback');
-const refreshButton = document.querySelector('#refresh-button');
-const ordersCount = document.querySelector('#orders-count');
-const itemsCount = document.querySelector('#items-count');
-const lastUpdate = document.querySelector('#last-update');
-const connectionStatus = document.querySelector('#connection-status');
-const ordersCaption = document.querySelector('#orders-caption');
+async function iniciar() {
+    nItens = 0;
+    dinheiro = 0;
+    await montarPedidos();
+    preencherSelect();
+    exibirTotais();
+}
 
-const formatCurrency = (value) => new Intl.NumberFormat('pt-BR', {
-    style: 'currency',
-    currency: 'BRL'
-}).format(Number(value) || 0);
+async function montarPedidos() {
+    produtos.length = 0;
+    pedidos.length = 0;
 
-const formatDate = (value) => new Intl.DateTimeFormat('pt-BR', {
-    dateStyle: 'short',
-    timeStyle: 'short'
-}).format(new Date(value));
+    await obterProdutos();
+    await obterPedidos();
 
-const escapeHtml = (value) => String(value ?? '')
-    .replaceAll('&', '&amp;')
-    .replaceAll('<', '&lt;')
-    .replaceAll('>', '&gt;')
-    .replaceAll('"', '&quot;')
-    .replaceAll("'", '&#039;');
+    const todosPedidos = document.getElementById("conteudo");
+    todosPedidos.innerHTML = "";
 
-const renderOrders = (orders, products) => {
-    const productMap = new Map(products.map((product) => [product.id, product]));
-    const totalItems = orders.reduce((total, order) => total + order.itens.reduce((sum, item) => sum + item.quantidade, 0), 0);
-
-    ordersCount.textContent = orders.length;
-    itemsCount.textContent = totalItems;
-    ordersCaption.textContent = `${orders.length} ${orders.length === 1 ? 'pedido encontrado' : 'pedidos encontrados'}`;
-    lastUpdate.textContent = new Intl.DateTimeFormat('pt-BR', { timeStyle: 'short' }).format(new Date());
-    connectionStatus.textContent = 'dados atualizados agora';
-
-    if (!orders.length) {
-        ordersList.innerHTML = '<div class="empty-state">Nenhum pedido encontrado.</div>';
-        return;
+    for (const p of pedidos) {
+        const e = await obterEndereco(p.cep);
+        const pedido = document.createElement("div");
+        pedido.classList.add("pedido");
+        pedido.innerHTML = `
+        <div>
+            <h3>
+                Id: ${p.id}
+                - ${new Date(p.data).toLocaleDateString('pt-BR')}
+                - ${new Date(p.data).toLocaleTimeString('pt-BR')}
+            </h3>
+            <p>Cliente: ${p.cliente}</p>
+            <p>
+                Endereço: ${e != "" ? e.logradouro : "CEP não encontrado"},
+                ${p.numero != null ? p.numero : "sem numero"},
+                ${p.complemento != null ? p.complemento + "," : ""}
+                ${e != "" ? e.localidade : "CEP não encontrado"},
+                ${e != "" ? e.uf : "CEP não encontrado"}
+                ${e != "" ? e.cep : "CEP não encontrado"}
+            </p>
+            
+        </div>
+        <div>
+            ${await montarItens(p.itens)}
+            <h3 style="text-align:right">Total ${(await totalPedido(p.itens)).toFixed(2).replace('.', ',')}</h3>
+        </div>
+        `;
+        todosPedidos.appendChild(pedido);
     }
+}
 
-    ordersList.innerHTML = orders.map((order, orderIndex) => {
-        const itemCount = order.itens.reduce((sum, item) => sum + item.quantidade, 0);
-        const items = order.itens.map((item) => {
-            const product = productMap.get(item.produtoId);
-            const productName = product ? product.nome : `Produto #${item.produtoId}`;
-            return `
-                <div class="item-row">
-                    <span class="item-name" title="${escapeHtml(productName)}">${escapeHtml(productName)}</span>
-                    <span class="item-quantity">${item.quantidade} un.</span>
-                    <strong class="item-price">${formatCurrency(item.preco)}</strong>
-                </div>`;
-        }).join('');
+async function montarItens(itens) {
+    let lista = "";
+    for (const item of itens) {
+        const produto = produtos.find(p => p.id == item.produtoId)
+        lista += `
+        <div class="item">
+            <img src="./assets/${produto.imagem}" width=50>
+            <div>${produto.nome}</div>
+            <div>${item.quantidade}un</div>
+            <div>R$ ${Number(item.preco).toFixed(2).replace('.', ',')}</div>
+        </div>`;
+        nItens++;
+        dinheiro += Number(item.quantidade) * Number(item.preco);
+    }
+    return lista;
+}
 
-        return `
-            <article class="order-card" style="animation-delay: ${orderIndex * 70}ms">
-                <div class="order-main">
-                    <div>
-                        <span class="order-number">Pedido #${order.id}</span>
-                        <h3 class="customer">${escapeHtml(order.cliente)}</h3>
-                    </div>
-                    <div class="order-details">
-                        <span class="order-detail"><span class="detail-icon">⌖</span>${escapeHtml(order.cep)}</span>
-                        <span class="order-detail"><span class="detail-icon">□</span>${escapeHtml(order.numero || 'Sem número')}</span>
-                        <span class="order-detail"><span class="detail-icon">◷</span>${formatDate(order.data)}</span>
-                    </div>
-                </div>
-                <div class="items-box">
-                    <div class="items-heading">
-                        <span>Itens do pedido</span>
-                        <span class="items-total">${itemCount} un.</span>
-                    </div>
-                    ${items || '<div class="empty-state">Este pedido não possui itens.</div>'}
-                </div>
-            </article>`;
-    }).join('');
-};
+async function totalPedido(itens) {
+    let total = 0;
+    for (const item of itens) {
+        total += Number(item.quantidade) * Number(item.preco);
+    }
+    return total;
+}
 
-const loadOrders = async () => {
-    refreshButton.disabled = true;
-    feedback.hidden = false;
-    feedback.classList.remove('feedback--error');
-    feedback.innerHTML = '<span class="spinner" aria-hidden="true"></span>Buscando pedidos...';
+async function obterProdutos() {
+    await fetch(`${API_URL}/produto/listar`)
+        .then(resp => resp.json())
+        .then(resp => {
+            resp.forEach(p => {
+                produtos.push(p);
+            });
+        })
+}
 
-    try {
-        const [ordersResponse, productsResponse] = await Promise.all([
-            fetch(`${API_URL}/pedido/listar`),
-            fetch(`${API_URL}/produto/listar`)
-        ]);
+async function obterPedidos() {
+    await fetch(`${API_URL}/pedido/listar`)
+        .then(resp => resp.json())
+        .then(resp => {
+            resp.forEach(p => {
+                pedidos.push(p);
+            });
+        })
+}
 
-        if (!ordersResponse.ok || !productsResponse.ok) {
-            throw new Error('A API retornou um erro.');
+async function obterEndereco(cep) {
+    let endereco = "";
+    await fetch(`${API_CEP}/${cep}/json`)
+        .then(resp => resp.json())
+        .then(resp => {
+            endereco = resp;
+        });
+    return endereco;
+}
+
+function exibirTotais() {
+    document.getElementById("totPedidos").innerHTML = `
+        <h2>${pedidos.length} Pedidos ativos</h2>
+    `;
+    document.getElementById("totItens").innerHTML = `
+        <h2>${nItens} Ítens para postar</h2>
+    `;
+    document.getElementById("totDinheiro").innerHTML = `
+        <h2>Totalizando R$ ${dinheiro.toFixed(2).replace('.', ',')}</h2>
+    `;
+}
+
+function preencherSelect() {
+    const select = document.getElementById("itens")
+    produtos.forEach(p => {
+        const op = document.createElement("option");
+        op.innerHTML = p.nome;
+        op.value = p.id;
+        select.appendChild(op)
+    });
+}
+
+function addCarrinho(id) {
+    const produto = produtos.find(p => p.id == id);
+    const jaListado = itensPedido.find(p => p.produtoId == id);
+    if (jaListado == undefined) {
+        const listItens = document.getElementById("listItens");
+        const nItem = {
+            produtoId: Number(produto.id),
+            quantidade: 1,
+            preco: 0.0
         }
-
-        const [orders, products] = await Promise.all([
-            ordersResponse.json(),
-            productsResponse.json()
-        ]);
-
-        renderOrders(orders, products);
-        feedback.hidden = true;
-    } catch (error) {
-        ordersCount.textContent = '—';
-        itemsCount.textContent = '—';
-        ordersCaption.textContent = 'não foi possível carregar';
-        connectionStatus.textContent = 'verifique se a API está rodando';
-        feedback.classList.add('feedback--error');
-        feedback.innerHTML = 'Não foi possível carregar os pedidos. Inicie o backend em <strong>http://localhost:3000</strong> e tente novamente.';
-        ordersList.innerHTML = '';
-    } finally {
-        refreshButton.disabled = false;
+        const linha = document.createElement("div");
+        linha.innerHTML = `
+        <label>${produto.nome} R$</label>
+        <input type="number" step="0.01" id="preco${produto.id}" placeholder="Preço" onchange="calcSub('${produto.id}')">
+        <label>un</label>
+        <input type="number" id="quantidade${produto.id}" value="${nItem.quantidade}" onchange="calcSub('${produto.id}')">
+        <label id="subtotal${produto.id}"}>R$ 0,00</label>
+    `;
+        listItens.appendChild(linha);
+        itensPedido.push(nItem);
+    } else {
+        document.getElementById("msg").innerHTML = "Produto já adicionado";
     }
-};
+}
 
-refreshButton.addEventListener('click', loadOrders);
-loadOrders();
+function calcSub(id) {
+    const preco = Number(document.getElementById(`preco${id}`).value);
+    const quantidade = Number(document.getElementById(`quantidade${id}`).value);
+    document.getElementById(`subtotal${id}`).innerHTML = `R$ ${(preco * quantidade).toFixed(2).replace('.', ',')}`;
+    const indice = itensPedido.findIndex(p => p.produtoId == id);
+    itensPedido[indice].preco = preco;
+    itensPedido[indice].quantidade = quantidade;
+    let soma = 0;
+    itensPedido.forEach(item => {
+        soma += item.preco * item.quantidade;
+    });
+    document.getElementById("total").innerHTML = `R$ ${soma.toFixed(2).replace('.', ',')}`;
+}
+
+function limpar() {
+    document.getElementById("novoPedido").classList.add('oculto');
+    document.getElementById("listItens").innerHTML = '';
+    itensPedido.length = 0;
+}
+
+if (formPedido) {
+    formPedido.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        if (itensPedido.length == 0) {
+            document.getElementById("msg").innerHTML = "Adicione algum ítem no pedido";
+            return;
+        }
+        for (const item of itensPedido) {
+            if (item.preco == 0 || item.quantidade == 0) {
+                document.getElementById("msg").innerHTML = "Existe item zerado";
+                return;
+            }
+        }
+        const dados = {
+            cliente: formPedido.cliente.value,
+            cep: formPedido.cep.value
+        }
+        if (formPedido.numero.value.length > 0) dados.numero = formPedido.numero.value;
+        if (formPedido.complemento.value.length > 0) dados.complemento = formPedido.complemento.value;
+        const resp = await fetch(`${API_URL}/pedido/cadastrar`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(dados)
+        });
+        const data = await resp.json();
+        if (data) {
+            for (const item of itensPedido) {
+                item.pedidoId = Number(data.id);
+                const respo = await fetch(`${API_URL}/item/cadastrar`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(item)
+                });
+                const dat = await respo.json();
+                if (!dat) {
+                    document.getElementById("msg").innerHTML = `Erro ao processar o item: ${item.produtoId}`;
+                    return;
+                }
+            }
+            window.location.reload();
+        } else {
+            document.getElementById("msg").innerHTML = "Erro ao enviar pedido";
+        }
+    });
+}
 ```
 - Após isso, abra o arquivo **index.html** no navegador e veja o resultado.
   - Utilize o Live server do VsCode para abrir o arquivo, ou abra diretamente no navegador.
 #### Resultado
-![Resultado](./web.png)
+![Resultado](../../../../../planejamento/exemplos/pedidos/documentos/screenshot01.png)
+![Resultado](../../../../../planejamento/exemplos/pedidos/documentos/screenshot02.png)
 
 #### Estrutura de pastas do projeto
 ```
 pedidos
--- backend
-  -- src
-    -- controllers
-    -- data
-    -- routes
--- frontend
+-- backend/
+  -- src/
+    -- controllers/
+    -- data/
+    -- routes/
+-- frontend/
+   -- assets/
    -- index.html
    -- script.js
    -- style.css
 ```
+Você vai precisar dos [assets/ aqui](../../../../../planejamento/exemplos/pedidos/frontend/assets/)

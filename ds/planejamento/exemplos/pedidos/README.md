@@ -1,5 +1,12 @@
 # Gestão de Pedidos
+Sistema de gestão de pedidos genérico que utiliza como exemplo produtos de uma papelaria CRUD(Listar e Cadastrar). Exemplo full stack para alunos do curso de desenvolvimento de sistemas do SESI SENAI Amparo, 2026.
 
+## Tecnologias
+- VsCode
+- Node.js
+- Prisma 7
+- XAMPP MySQL MariaDB
+- HTML, CSS, JS
 
 # Passos para executar o projeto
 - 1 Clone este repositório
@@ -23,3 +30,10 @@ npx prisma db seed
 npm run dev
 ```
 - 5 Na pasta frontend execute o index.html com live server do VsCode.
+
+## Documentos
+![MER DER](./documentos/mer.png)
+
+## Resultados
+![Sreenshot01](./documentos/screenshot01.png)
+![Sreenshot02](./documentos/screenshot02.png)

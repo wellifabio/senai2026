@@ -10,21 +10,21 @@
     <script src="script.js"></script>
 </head>
 
-<body onload="montarPedidos()">
+<body onload="iniciar()">
     <div id="main" class="main">
         <header>
             <h1>Gestão de <span style="color:var(--c4)">Pedidos</span></h1>
-            <button>Novo pedido</button>
+            <button onclick="novoPedido.classList.remove('oculto')">Novo pedido</button>
         </header>
         <main>
             <section id="faixa">
-                <div class="card">
+                <div id="totPedidos" class="card">
                     <h2>Total de pedidos</h2>
                 </div>
-                <div class="card">
+                <div id="totItens" class="card">
                     <h2>Total de itens</h2>
                 </div>
-                <div class="card">
+                <div id="totDinheiro" class="card">
                     <h2>Total em dinheiro</h2>
                 </div>
             </section>
@@ -35,6 +35,26 @@
         <footer>
             <h3>By wellifabio</h3>
         </footer>
+        <div id="novoPedido" class="modal oculto">
+            <div class="janela">
+                <h2>Novo Pedido</h2>
+                <form id="formPedido">
+                    <input type="text" placeholder="Cliente" name="cliente" required>
+                    <input type="number" placeholder="CEP somente números" name="cep" reqired>
+                    <input type="text" placeholder="Número" name="numero">
+                    <input type="text" placeholder="Complemento" name="complemento">
+                    <span>
+                        <select id="itens"></select>
+                        <button type="button" id="add" onclick="addCarrinho(itens.value)">+</button>
+                    </span>
+                    <span id="listItens"></span>
+                    <span>
+                        <button type="reset" onclick="limpar()">Limpar</button>
+                        <button type="submit">Enviar</button>
+                    </span>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 

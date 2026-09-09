@@ -2,14 +2,29 @@ const API_URL = 'http://localhost:3000';
 const API_CEP = 'https://viacep.com.br/ws';
 const produtos = [];
 const pedidos = [];
+var nItens = 0, dinheiro = 0;
+const itensPedido = [];
+
+async function iniciar() {
+    nItens = 0;
+    dinheiro = 0;
+    await montarPedidos();
+    preencherSelect();
+    exibirTotais();
+}
 
 async function montarPedidos() {
+    produtos.length = 0;
+    pedidos.length = 0;
+
     await obterProdutos();
     await obterPedidos();
-    todosPedidos = document.getElementById("conteudo");
+
+    const todosPedidos = document.getElementById("conteudo");
     todosPedidos.innerHTML = "";
-    pedidos.forEach(async (p) => {
-        let e = await obterEndereco(p.cep);
+
+    for (const p of pedidos) {
+        const e = await obterEndereco(p.cep);
         const pedido = document.createElement("div");
         pedido.classList.add("pedido");
         pedido.innerHTML = `
@@ -27,28 +42,40 @@ async function montarPedidos() {
                 ${e != "" ? e.localidade : "CEP não encontrado"},
                 ${e != "" ? e.uf : "CEP não encontrado"}
             </p>
+            
         </div>
         <div>
             ${await montarItens(p.itens)}
+            <h3 style="text-align:right">Total ${(await totalPedido(p.itens)).toFixed(2).replace('.', ',')}</h3>
         </div>
         `;
         todosPedidos.appendChild(pedido);
-    });
+    }
 }
 
 async function montarItens(itens) {
     let lista = "";
-    itens.forEach(i => {
-        const produto = produtos.find(p => p.id == i.produtoId)
+    for (const item of itens) {
+        const produto = produtos.find(p => p.id == item.produtoId)
         lista += `
         <div class="item">
             <img src="./assets/${produto.imagem}" width=50>
             <div>${produto.nome}</div>
-            <div>${i.quantidade}un</div>
-            <div>R$ ${Number(i.preco).toFixed(2).replace('.', ',')}</div>
+            <div>${item.quantidade}un</div>
+            <div>R$ ${Number(item.preco).toFixed(2).replace('.', ',')}</div>
         </div>`;
-    });
+        nItens++;
+        dinheiro += Number(item.quantidade) * Number(item.preco);
+    }
     return lista;
+}
+
+async function totalPedido(itens) {
+    let total = 0;
+    for (const item of itens) {
+        total += Number(item.quantidade) * Number(item.preco);
+    }
+    return total;
 }
 
 async function obterProdutos() {
@@ -79,4 +106,64 @@ async function obterEndereco(cep) {
             endereco = resp;
         });
     return endereco;
+}
+
+function exibirTotais() {
+    document.getElementById("totPedidos").innerHTML = `
+        <h2>${pedidos.length} Pedidos ativos</h2>
+    `;
+    document.getElementById("totItens").innerHTML = `
+        <h2>${nItens} Ítens para postar</h2>
+    `;
+    document.getElementById("totDinheiro").innerHTML = `
+        <h2>Totalizando R$ ${dinheiro.toFixed(2).replace('.', ',')}</h2>
+    `;
+}
+
+function preencherSelect() {
+    const select = document.getElementById("itens")
+    produtos.forEach(p => {
+        const op = document.createElement("option");
+        op.innerHTML = p.nome;
+        op.value = p.id;
+        select.appendChild(op)
+    });
+}
+
+function addCarrinho(id) {
+    const produto = produtos.find(p => p.id == id);
+    const jaListado = itensPedido.find(p => p.produtoId == id);
+    if (jaListado == undefined) {
+        const listItens = document.getElementById("listItens");
+        const nItem = {
+            produtoId: Number(produto.id),
+            quantidade: 1,
+            preco: 0.0
+        }
+        const linha = document.createElement("div");
+        linha.innerHTML = `
+        <label>${produto.nome} R$</label>
+        <input type="number" step="0.01" id="preco${produto.id}" placeholder="Preço" onchange="calcSub('${produto.id}')">
+        <label>un</label>
+        <input type="number" id="quantidade${produto.id}" value="${nItem.quantidade}" onchange="calcSub('${produto.id}')">
+        <label id="subtotal${produto.id}"}>R$ 0,00</label>
+    `;
+        listItens.appendChild(linha);
+        itensPedido.push(nItem);
+    }else{
+        alert("Produto já adicionado")
+    }
+}
+
+function calcSub(id) {
+    const preco = Number(document.getElementById(`preco${id}`).value);
+    const quantidade = Number(document.getElementById(`quantidade${id}`).value);
+    document.getElementById(`subtotal${id}`).innerHTML = `R$ ${(preco * quantidade).toFixed(2).replace('.', ',')}`;
+    console.log(itensPedido);
+}
+
+function limpar() {
+    document.getElementById("novoPedido").classList.add('oculto');
+    document.getElementById("listItens").innerHTML = '';
+    itensPedido.length = 0;
 }

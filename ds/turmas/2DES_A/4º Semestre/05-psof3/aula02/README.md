@@ -553,13 +553,15 @@ async function obterEndereco(cep) {
 #### Estrutura de pastas do projeto
 ```
 pedidos
--- backend
-  -- src
-    -- controllers
-    -- data
-    -- routes
--- frontend
+-- backend/
+  -- src/
+    -- controllers/
+    -- data/
+    -- routes/
+-- frontend/
+   -- assets/
    -- index.html
    -- script.js
    -- style.css
 ```
+Você vai precisar dos [assets/ aqui](../../../../../planejamento/exemplos/pedidos/frontend/assets/)

@@ -59,7 +59,7 @@ model item {
 }
 ```
 - Esquema criado com base no MER abaixo:
-![MER](./mer.png)
+![MER](../../../../../planejamento/exemplos/pedidos/documentos/mer.png)
 #### 4 Se usar o XAMPP, abrir o Control Panel e dar **start** em MySQL, se usa o MariaDB diretamente, apenas instalar as dependências do **prisma**
 - Acesse a pasta API e rode os comandos abaixo:
 ```bash

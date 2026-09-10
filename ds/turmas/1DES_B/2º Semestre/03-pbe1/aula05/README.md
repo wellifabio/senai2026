@@ -92,21 +92,22 @@ Criar uma rota que permita remover um item do inventário.
 
 Após a exclusão, o registro não deverá mais aparecer na listagem.
 
-Requisitos
+### Requisitos
 
-O backend deverá:
+**O backend deverá:**
 
-Utilizar uma API HTTP/REST;
-Utilizar um arquivo .json para armazenar os dados;
-Implementar as operações POST, GET, PUT e DELETE;
-Utilizar os campos id, item, local, dataRegistro, valor e patrimonio;
-Retornar respostas em formato JSON;
-Utilizar códigos HTTP adequados para sucesso e erro;
-Validar os dados recebidos nas requisições;
-Informar ao cliente quando um registro não for encontrado;
-Manter os dados durante a execução da aplicação por meio do arquivo JSON;
-Organizar o projeto de forma que as responsabilidades do código estejam separadas adequadamente.
-Estrutura sugerida para o arquivo JSON
+- Utilizar uma API HTTP/REST;
+- Utilizar um arquivo .json para armazenar os dados;
+- Implementar as operações POST, GET, PUT e DELETE;
+- Utilizar os campos id, item, local, dataRegistro, valor e patrimonio;
+- Retornar respostas em formato JSON;
+- Utilizar códigos HTTP adequados para sucesso e erro;
+- Informar ao cliente quando um registro não for encontrado;
+- Manter os dados durante a execução da aplicação por meio do arquivo JSON;
+- Organizar o projeto de forma que as responsabilidades do código estejam separadas adequadamente.
+
+
+### Estrutura sugerida para o arquivo JSON
 
 O arquivo inventario.json poderá iniciar com alguns registros para testes:
 

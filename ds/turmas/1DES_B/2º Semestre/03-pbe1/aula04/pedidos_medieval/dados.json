@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "nome": "Espada flamejante",
+        "peso": 5.5,
+        "quantidade": 1,
+        "preco": 3250.9
+    },
+    {
+        "id": 2,
+        "nome": "Escudo Viking",
+        "peso": 12,
+        "quantidade": 3,
+        "preco": 750
+    },
+    {
+        "id": 3,
+        "nome": "Arco Arcano",
+        "peso": 1.2,
+        "quantidade": 1,
+        "preco": 1890.5
+    }
+]

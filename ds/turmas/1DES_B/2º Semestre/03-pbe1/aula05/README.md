@@ -25,13 +25,13 @@ Cada item do inventário deverá possuir os seguintes atributos:
 
 O sistema deverá implementar as quatro operações básicas de um CRUD:
 
-1. Criar um item
+### 1. Criar um item
 
 Criar uma rota que permita cadastrar um novo item no inventário.
 
-Método: POST
+**Método**: POST
 
-Exemplo de rota:
+**Exemplo de rota**:
 /inventario
 
 Exemplo de dados enviados:
@@ -47,46 +47,46 @@ Exemplo de dados enviados:
 
 O sistema deverá gerar um id para o novo registro.
 
-2. Listar os itens
+### 2. Listar os itens
 
 Criar uma rota que permita consultar todos os itens cadastrados.
 
-Método: GET
+**Método**: GET
 
-Exemplo de rota:
+**Exemplo de rota**:
 /inventario
 
 A resposta deverá apresentar os registros armazenados no arquivo JSON.
 
-3. Consultar um item específico
+### 3. Consultar um item específico
 
 Criar uma rota que permita buscar um item utilizando seu id.
 
-Método: GET
+**Método**: GET
 
-Exemplo de rota:
+**Exemplo de rota**:
 /inventario/1
 
 Caso o item não exista, a API deverá retornar uma resposta HTTP adequada, como 404 Not Found.
 
-4. Atualizar um item
+### 4. Atualizar um item
 
 Criar uma rota que permita alterar os dados de um item existente.
 
-Método: PUT
+***Método***: PUT
 
-Exemplo de rota:
+***Exemplo de rota***:
 /inventario/1
 
 O aluno deverá permitir a alteração dos dados do registro, mantendo o mesmo id.
 
-5. Excluir um item
+### 5. Excluir um item
 
 Criar uma rota que permita remover um item do inventário.
 
-Método: DELETE
+**Método**: DELETE
 
-Exemplo de rota:
+**Exemplo de rota**:
 /inventario/1
 
 Após a exclusão, o registro não deverá mais aparecer na listagem.
@@ -109,6 +109,7 @@ Estrutura sugerida para o arquivo JSON
 
 O arquivo inventario.json poderá iniciar com alguns registros para testes:
 
+``` markdown
 [
   {
     "id": 1,
@@ -127,24 +128,28 @@ O arquivo inventario.json poderá iniciar com alguns registros para testes:
     "patrimonio": "PAT-00126"
   }
 ]
+```
 
-Entrega
+### Entrega
 
-O aluno deverá entregar:
+**O aluno deverá entregar**:
 
-Código-fonte completo do backend;
-Arquivo inventario.json contendo os dados utilizados nos testes;
-Arquivo README.md contendo:
-descrição do projeto;
-instruções para instalação e execução;
-tecnologias utilizadas;
-lista das rotas disponíveis;
-exemplos de requisições;
-exemplos de respostas;
-Evidências dos testes realizados nas rotas da API.
-Critérios de avaliação
+- Código-fonte completo do backend;
+- Arquivo inventario.json contendo os dados utilizados nos testes;
+- Arquivo README.md contendo:
+  - descrição do projeto;
+  - instruções para instalação e execução;
+  - tecnologias utilizadas;
+  - lista das rotas disponíveis;
+  - exemplos de requisições;
+  - exemplos de respostas;
+- Evidências dos testes realizados nas rotas da API.
 
-A atividade poderá ser avaliada considerando:
+[Envio do repositório da atividade](https://forms.cloud.microsoft/r/8d4jdUFVbx)
+
+### Critérios de avaliação
+
+A atividade será avaliada considerando:
 
 CRUD funcionando corretamente: 40%;
 Organização e qualidade do código: 20%;

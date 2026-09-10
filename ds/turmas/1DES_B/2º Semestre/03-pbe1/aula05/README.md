@@ -36,6 +36,7 @@ Criar uma rota que permita cadastrar um novo item no inventário.
 
 Exemplo de dados enviados:
 
+``` json
 {
   "item": "Notebook Dell",
   "local": "Laboratório 01",
@@ -43,7 +44,7 @@ Exemplo de dados enviados:
   "valor": 3500.00,
   "patrimonio": "PAT-00125"
 }
-
+```
 
 O sistema deverá gerar um id para o novo registro.
 
@@ -109,7 +110,7 @@ Estrutura sugerida para o arquivo JSON
 
 O arquivo inventario.json poderá iniciar com alguns registros para testes:
 
-``` markdown
+``` json
 [
   {
     "id": 1,

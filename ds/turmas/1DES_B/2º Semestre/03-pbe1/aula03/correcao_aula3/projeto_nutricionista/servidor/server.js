@@ -5,7 +5,17 @@ const PORT = 3000;
 
 const app = express();
 
+const cadastrar = (req, res) {
+
+};
+
+const listar = (req, res) {
+
+};
+
 app.use(express.urlencoded());
+
+
 
 app.listen(PORT, () => {
     console.log(`Servidor online na porta ${PORT}`);

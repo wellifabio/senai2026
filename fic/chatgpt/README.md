@@ -7,6 +7,8 @@
 |horas|48|
 |Dias|12|
 
+## [Portfolio da turma](https://wellifabio.github.io/senai_portfolio_fic_chatgpt_2026/)
+
 ## Tipo
 Curso de Aperfeiçoamento Profissional
 ## FIC - Formação Inicial e Continuada

@@ -148,21 +148,12 @@ O arquivo inventario.json poderá iniciar com alguns registros para testes:
 
 [Envio do repositório da atividade](https://forms.cloud.microsoft/r/8d4jdUFVbx)
 
-### Critérios de avaliação
 
-A atividade será avaliada considerando:
 
-CRUD funcionando corretamente: 40%;
-Organização e qualidade do código: 20%;
-Validação e tratamento de erros: 15%;
-Utilização correta dos métodos HTTP e códigos de status: 15%;
-Documentação e evidências dos testes: 10%.
-Desafio extra
+### Para os alunos que concluírem a atividade antes do prazo, implementar funcionalidades adicionais, como:
 
-Para os alunos que concluírem a atividade antes do prazo, implementar funcionalidades adicionais, como:
-
-Buscar itens pelo nome;
-Filtrar itens por local;
-Listar itens acima de determinado valor;
-Verificar se um número de patrimônio já está cadastrado;
-Criar uma rota para retornar o valor total dos itens do inventário.
+- Buscar itens pelo nome;
+- Filtrar itens por local;
+- Listar itens acima de determinado valor;
+- Verificar se um número de patrimônio já está cadastrado;
+- Criar uma rota para retornar o valor total dos itens do inventário.

@@ -96,6 +96,7 @@ npx prisma migrate dev --name init
 npx backend-aula -models
 npx backend-aula -insomnia
 ```
+
 - Se preferir abra o **prisma studio** para testar diretamente.
 ```bash
 npx prisma studio

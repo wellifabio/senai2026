@@ -203,35 +203,40 @@ datasource db {
 - O `server.js` passa a ter utilizade apenas para testar localmente.
 - Crie o arquivo `api/index.js` que será o novo servidor que a **Vercel** vai utilizar
 ```js
-require('dotenv').config();
-const express = require('express');
-const cors = require('cors');
+require("dotenv").config();
+const express = require("express");
+const cors = require("cors");
 
 const app = express();
 
 app.use(express.json());
 app.use(cors());
 
-const estadiaRoutes = require('../src/routes/estadia.routes');
-app.use('/estadia', estadiaRoutes);
+const estadiaRoutes = require("../src/routes/estadia.routes");
+app.use("/estadia", estadiaRoutes);
 
-const veiculoRoutes = require('../src/routes/veiculo.routes');
-app.use('/veiculo', veiculoRoutes);
+const veiculoRoutes = require("../src/routes/veiculo.routes");
+app.use("/veiculo", veiculoRoutes);
 
-app.get('/', (req, res) => {
-  res.json({ message: 'API estacionamento online', rotas:[
-    '/':'GET',
-    '/veiculo/cadastrar':'POST',
-    '/veiculo/listar':'GET',
-    '/veiculo/buscar/:placa':'GET',
-    '/veiculo/atualizar/:placa':'PUT',
-    '/veiculo/excluir/:placa':'DELETE',
-    '/estadia/cadastrar':'POST',
-    '/estadia/listar':'GET',
-    '/estadia/buscar/:id':'GET',
-    '/estadia/atualizar/:id':'PUT',
-    '/estadia/excluir/:id':'DELETE',
-  ] });
+const rotas = {
+  message: "API estacionamento online",
+  rotas: [
+    { rota: "/", verbo: "GET" },
+    { rota: "/veiculo/cadastrar", verbo: "POST" },
+    { rota: "/veiculo/listar", verbo: "GET" },
+    { rota: "/veiculo/buscar/:placa", verbo: "GET" },
+    { rota: "/veiculo/atualizar/:placa", verbo: "PUT" },
+    { rota: "/veiculo/excluir/:placa", verbo: "DELETE" },
+    { rota: "/estadia/cadastrar", verbo: "POST" },
+    { rota: "/estadia/listar", verbo: "GET" },
+    { rota: "/estadia/buscar/:id", verbo: "GET" },
+    { rota: "/estadia/atualizar/:id", verbo: "PUT" },
+    { rota: "/estadia/excluir/:id", verbo: "DELETE" }
+  ]
+}
+
+app.get("/", (req, res) => {
+  res.json(rotas);
 });
 
 module.exports = app;
@@ -293,7 +298,7 @@ Após criar uma conta na Vercel, acesse e crie um novo projeto, **importando** o
 }
 ```
 ## Pronto API Back-end implantada com sucesso
-Esta API
+Esta API é apenas um exemplo, está segura na implantação, porém completamente aberta, qualquer usiário mal intencionado pode alterar os dados do banco de dados, para uma maior segurança, seria necessário uma chave de API em todas as rotas ou ao menos nas de CRUD que geram alteração e/ou uma rota de autenticação JWT.
 ## [Exemplo do estacionamento implantado](https://github.com/wellifabio/sesi_psof3_aula3_estacionamento_api_vercel_2026.git)
 
 ## Atividades

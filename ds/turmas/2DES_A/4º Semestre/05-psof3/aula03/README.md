@@ -262,6 +262,8 @@ Ainda na **Vercel**, crie um novo serviço de banco de dados com Prisma. Clique 
 - ![Prisma 2](./screenshots/neon2.png)
 - Todas as variáveis de ambiente necessárias serão criadas automaticamente.
 
+## [Exemplo do estacionamento implantado](https://github.com/wellifabio/sesi_psof3_aula3_estacionamento_api_vercel_2026.git)
+
 ## 4 Configurar o projeto para Deploy com a Vercel
 Volte ao seu **projeto Node.js** no VsCode abra um terminal **CTRL + '** tipo **CMD** e instale o interpretador de comandos vercel
 ```bash

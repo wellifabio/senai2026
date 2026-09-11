@@ -20,7 +20,26 @@ A seguir temos um projeto de um simples estacionamento pronto para ser utilizado
 
 - A. Em sua área de trabalho abra um terminal e inicie um novo projeto back-end com a extensão backend-aula coloque o nome `estacionamentoSeuNome`
 ```bash
-npx bacnend-aula estacionamentoSeuNome
+npx backend-aula estacionamentoSeuNome
+```
+- Será criado seu projeto, atualize o `package.json` para um semelhante ao a seguir:
+```json
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "@prisma/adapter-mariadb": "^7.10.0",
+    "@prisma/client": "^7.10.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "prisma": "^7.10.0"
+  }
+}
 ```
 - B. Abra a pasta criada com **VsCode**, abra um terminal `CTRL + '` e continue a criação da API conforme shema a seguir:
 

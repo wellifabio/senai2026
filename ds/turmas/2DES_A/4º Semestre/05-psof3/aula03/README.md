@@ -171,10 +171,10 @@ datasource db {
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "api/index.js",
+  "main": "server.js",
   "scripts": {
-    "dev": "node --watch api/index.js",
-    "postinstall": "prisma migrate dev --name init &&prisma generate"
+    "dev": "node --watch server.js",
+    "postinstall": "prisma migrate dev --name init && prisma generate"
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.10.0",
@@ -186,26 +186,7 @@ datasource db {
   }
 }
 ```
-```json
-{
-  "name": "backend",
-  "version": "1.0.0",
-  "main": "api/index.js",
-  "scripts": {
-    "dev": "node --watch api/index.js",
-    "postinstall": "prisma generate"
-  },
-  "dependencies": {
-    "@prisma/adapter-pg": "^7.10.0",
-    "@prisma/client": "^7.10.0",
-    "cors": "^2.8.6",
-    "dotenv": "^17.4.2",
-    "express": "^5.2.1",
-    "prisma": "^7.10.0"
-  }
-}
-```
-    - Acrescente o arquivo `vercel.json` na raiz do projeto, apontando para o `api/server.js`
+- Acrescente o arquivo `vercel.json` na raiz do projeto, apontando para o `api/server.js`
 ```js
 {
   "version": 2,
@@ -264,49 +245,34 @@ Ainda na **Vercel**, crie um novo serviço de banco de dados com Prisma. Clique 
 
 ## [Exemplo do estacionamento implantado](https://github.com/wellifabio/sesi_psof3_aula3_estacionamento_api_vercel_2026.git)
 
-## 4 Configurar o projeto para Deploy com a Vercel
-Volte ao seu **projeto Node.js** no VsCode abra um terminal **CTRL + '** tipo **CMD** e instale o interpretador de comandos vercel
-```bash
-npm i -g vercel@latest
-```
-- Link o seu projeto com a vercel e baixe as variáveis de ambiente
-```bash
-vercel link
-vercel env pull .env
-```
-- Altere o `package.json` para incluir o script p`"postinstall": "prisma migrate dev --name init && prisma generate"` e o prisma como devDependencies:
+- Altere o `package.json` removendo p`"postinstall": "prisma generate"`:
 - Exemplo:
 ```json
+```json
 {
-  "name": "estacionamentoapi",
+  "name": "backend",
   "version": "1.0.0",
-  "main": "api/server.js",
+  "main": "api/index.js",
   "scripts": {
-    "dev": "npx nodemon api/server.js",
-    "postinstall": "prisma migrate dev --name init && prisma generate"
+    "dev": "node --watch api/index.js",
+    "postinstall": "prisma generate"
   },
-  "keywords": [],
-  "author": "wellifabio",
-  "license": "ISC",
-  "description": "Projeto de Estacionamento API, para aulas de Node.js",
   "dependencies": {
-    "@prisma/client": "^6.14.0",
-    "cors": "^2.8.5",
-    "dotenv": "^17.2.1",
-    "express": "^5.1.0",
-    "prisma": "^6.14.0"
-  },
-  "devDependencies": {
-    "prisma": "^6.14.0"
+    "@prisma/adapter-pg": "^7.10.0",
+    "@prisma/client": "^7.10.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "prisma": "^7.10.0"
   }
 }
+```
 ```
 ![Pastas02](./screenshots/pastas2.png)
 - Para **fazer deploy**, com o ambiente configurado corretamente, basta **fazer commit das alterações** e executar o comando:
 ```bash
 vercel --prod
 ```
-
 ## Pronto API Back-end implantado com sucesso
 
 ## Atividades

@@ -22,26 +22,7 @@ A seguir temos um projeto de um simples estacionamento pronto para ser utilizado
 ```bash
 npx backend-aula estacionamentoSeuNome
 ```
-- Será criado seu projeto, atualize o `package.json` para um semelhante ao a seguir:
-```json
-{
-  "name": "backend",
-  "version": "1.0.0",
-  "main": "server.js",
-  "scripts": {
-    "dev": "node --watch server.js",
-    "start":"node server.js"
-  },
-  "dependencies": {
-    "@prisma/adapter-mariadb": "^7.10.0",
-    "@prisma/client": "^7.10.0",
-    "cors": "^2.8.6",
-    "dotenv": "^17.4.2",
-    "express": "^5.2.1",
-    "prisma": "^7.10.0"
-  }
-}
-```
+- Se der erro após alguns minutos pare o script `CTRL + C` e siga adiante.
 - B. Abra a pasta criada com **VsCode**, abra um terminal `CTRL + '` e continue a criação da API conforme shema a seguir:
 
 ```js
@@ -82,6 +63,30 @@ model Estadia {
   valorTotal Float?
   automovel  Veiculo?  @relation(fields: [placa], references: [placa], onUpdate: Cascade, onDelete: SetNull)
 }
+```
+- Atualize o `package.json` para um semelhante ao a seguir:
+```json
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start":"node server.js"
+  },
+  "dependencies": {
+    "@prisma/adapter-mariadb": "^7.10.0",
+    "@prisma/client": "^7.10.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "prisma": "^7.10.0"
+  }
+}
+```
+- No terminal de o comando para atualizar as dependências
+```bash
+npm i
 ```
 - C. Implante e teste localmente com **Insomnia**.
 - Se preferir abra o **prisma studio** para testar diretamente.

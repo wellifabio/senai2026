@@ -159,7 +159,7 @@ const listar = async (req, res) => {
 A extenção backend-aula cria id como padrão para todas as tabelas/models, a tabela **veiculo** não possui **id** e sim**placa** como chave, altere as rotas e controlers de id para placa.
 ## 2 Implantação
 - 1. Para implantar o SGBD para **Postgre**, pois o vercel só da suporte gratuito para este **SGBD**.
-    - Altere o prisma/schema.prisma para `postgres`
+    - Altere o prisma/schema.prisma para `postgresql`
 ```js
 datasource db {
   provider = "postgresql"
@@ -171,13 +171,32 @@ datasource db {
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "api/index.js",
   "scripts": {
-    "dev": "node --watch server.js",
-    "start":"node server.js",
-    "postinstall": "prisma migrate dev --name init && prisma generate"
+    "dev": "node --watch api/index.js",
+    "postinstall": "prisma migrate dev --name init &&prisma generate"
   },
   "dependencies": {
+    "@prisma/adapter-pg": "^7.10.0",
+    "@prisma/client": "^7.10.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "prisma": "^7.10.0"
+  }
+}
+```
+```json
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "api/index.js",
+  "scripts": {
+    "dev": "node --watch api/index.js",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.10.0",
     "@prisma/client": "^7.10.0",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
@@ -189,14 +208,37 @@ datasource db {
     - Acrescente o arquivo `vercel.json` na raiz do projeto, apontando para o `api/server.js`
 ```js
 {
-    "version": 2,
-    "rewrites": [
-        {
-            "source": "/(.*)",
-            "destination": "/server.js"
-        }
-    ]
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api/index"
+    }
+  ]
 }
+```
+- Remova o `server.js` que passa a ser api/index.js
+```js
+require('dotenv').config();
+const express = require('express');
+const cors = require('cors');
+
+const app = express();
+
+app.use(express.json());
+app.use(cors());
+
+const estadiaRoutes = require('../src/routes/estadia.routes');
+app.use('/estadia', estadiaRoutes);
+
+const veiculoRoutes = require('../src/routes/veiculo.routes');
+app.use('/veiculo', veiculoRoutes);
+
+app.get('/', (req, res) => {
+  res.json({ message: 'API estacionamento online' });
+});
+
+module.exports = app;
 ```
 - H. Criar um repositório no github e enviar o projeto, não esqueça do arquivo `.gitignore` contendo:
 ```
@@ -211,8 +253,6 @@ Após criar uma conta na Vercel, acesse e crie um novo projeto, **importando** o
 - ![Vercel tela 1](./screenshots/vercel1.png)
 - ![Vercel tela 2](./screenshots/vercel2.png)
 - ![Vercel tela 3](./screenshots/vercel3.png)
-- ![Vercel tela 4](./screenshots/vercel4.png)
-- ![Vercel tela 5](./screenshots/vercel5.png)
 - Seu projeto ainda não vai funcionar, para isso é necessário criar o serviço de banco de dados com Prisma e algumas configurações adicionais.
 
 ## 3 Criando o serviço de banco de dados com Prisma

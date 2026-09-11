@@ -159,9 +159,29 @@ const listar = async (req, res) => {
 A extenção backend-aula cria id como padrão para todas as tabelas/models, a tabela **veiculo** não possui **id** e sim**placa** como chave, altere as rotas e controlers de id para placa.
 ## 2 Implantação
 - 1. Para implantar o SGBD para **Postgre**, pois o vercel só da suporte gratuito para este **SGBD**.
+    - Altere o prisma/schema.prisma para `postgres`
 ```js
 datasource db {
   provider = "postgresql"
+}
+```
+    - Pode remover o `"@prisma/adapter-mariadb": "^7.10.0",` do `package.json`
+```json
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start":"node server.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^7.10.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "prisma": "^7.10.0"
+  }
 }
 ```
 - H. Criar um repositório no github e enviar o projeto, não esqueça do arquivo `.gitignore` contendo:

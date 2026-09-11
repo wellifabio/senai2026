@@ -84,6 +84,10 @@ model Estadia {
   }
 }
 ```
+- Este será o .env para o endereço local, será alterado para o remoto
+```js
+DATABASE_URL="mysql://root@localhost:3306/estacionamentoapi?schema=public&timezone=UTC"
+```
 - No terminal de o comando para atualizar as dependências
 ```bash
 npm i
@@ -126,9 +130,30 @@ app.listen(PORT, () => {
 ```bash
 npx prisma studio
 ```
-- Este será o .env para o endereço local, será alterado para o remoto
+#### Opcional, podemos alterar os controllers para mostrar mais dados
+- veiculo.controller.js
 ```js
-DATABASE_URL="mysql://root@localhost:3306/estacionamentoapi?schema=public&timezone=UTC"
+const listar = async (req, res) => {
+    const lista = await prisma.veiculo.findMany({
+        include:{
+            estadias:true
+        }
+    });
+
+    res.json(lista).status(200).end();
+};
+```
+- estadia.controller.js
+```js
+const listar = async (req, res) => {
+    const lista = await prisma.estadia.findMany({
+        include:{
+            automovel:true
+        }
+    });
+
+    res.json(lista).status(200).end();
+};
 ```
 ## 2 Implantação
 - 1. Para implantar o SGBD para **Postgre**, pois o vercel só da suporte gratuito para este **SGBD**.

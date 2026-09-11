@@ -166,6 +166,7 @@ datasource db {
 }
 ```
     - Pode remover o `"@prisma/adapter-mariadb": "^7.10.0",` do `package.json`
+    - E adicionar o `"postinstall": "prisma migrate dev --name init && prisma generate"` no script
 ```json
 {
   "name": "backend",
@@ -173,7 +174,8 @@ datasource db {
   "main": "server.js",
   "scripts": {
     "dev": "node --watch server.js",
-    "start":"node server.js"
+    "start":"node server.js",
+    "postinstall": "prisma migrate dev --name init && prisma generate"
   },
   "dependencies": {
     "@prisma/client": "^7.10.0",
@@ -182,6 +184,18 @@ datasource db {
     "express": "^5.2.1",
     "prisma": "^7.10.0"
   }
+}
+```
+    - Acrescente o arquivo `vercel.json` na raiz do projeto, apontando para o `api/server.js`
+```js
+{
+    "version": 2,
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/server.js"
+        }
+    ]
 }
 ```
 - H. Criar um repositório no github e enviar o projeto, não esqueça do arquivo `.gitignore` contendo:
@@ -243,18 +257,6 @@ vercel env pull .env
   "devDependencies": {
     "prisma": "^6.14.0"
   }
-}
-```
-- Acrescente o arquivo `vercel.json` na raiz do projeto, apontando para o `api/server.js`
-```js
-{
-    "version": 2,
-    "rewrites": [
-        {
-            "source": "/(.*)",
-            "destination": "/api/server.js"
-        }
-    ]
 }
 ```
 ![Pastas02](./screenshots/pastas2.png)

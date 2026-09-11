@@ -87,8 +87,15 @@ model Estadia {
 - No terminal de o comando para atualizar as dependências
 ```bash
 npm i
+npx prisma generate
 ```
 - C. Implante e teste localmente com **Insomnia**.
+    - Certifique-se do **MySQL MariaDB** estar online (start)
+```bash
+npx prisma migrate dev --name init
+npx backend-aula -models
+npx backend-aula -insomnia
+```
 - Se preferir abra o **prisma studio** para testar diretamente.
 ```bash
 npx prisma studio

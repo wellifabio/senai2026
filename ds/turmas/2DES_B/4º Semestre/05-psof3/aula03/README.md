@@ -200,7 +200,8 @@ datasource db {
   ]
 }
 ```
-- Remova o `server.js` que passa a ser api/index.js
+- O `server.js` passa a ter utilizade apenas para testar localmente.
+- Crie o arquivo `api/index.js` que será o novo servidor que a **Vercel** vai utilizar
 ```js
 require('dotenv').config();
 const express = require('express');

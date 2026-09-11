@@ -29,7 +29,8 @@ npx backend-aula estacionamentoSeuNome
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "dev": "node --watch server.js"
+    "dev": "node --watch server.js",
+    "start":"node server.js"
   },
   "dependencies": {
     "@prisma/adapter-mariadb": "^7.10.0",

@@ -224,6 +224,19 @@ app.get('/', (req, res) => {
 
 module.exports = app;
 ```
+= Altere o adaptador no prisma em `src/data/prisma.js`, comente o MariaDB e acrescente o Postgres
+```js
+const { PrismaClient } = require("@prisma/client");
+// const { PrismaMariaDb } = require("@prisma/adapter-mariadb");
+const { PrismaPg } = require("@prisma/adapter-pg");
+
+// const adapter = new PrismaMariaDb(process.env.DATABASE_URL);
+const adapter = new PrismaPg({ connectionString: process.env.DATABASE_URL });
+
+const prisma = new PrismaClient({ adapter });
+
+module.exports = prisma;
+```
 - H. Criar um repositório no github e enviar o projeto, não esqueça do arquivo `.gitignore` contendo:
 ```
 node_modules

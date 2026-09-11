@@ -155,6 +155,8 @@ const listar = async (req, res) => {
     res.json(lista).status(200).end();
 };
 ```
+### Obs:
+A extenção backend-aula cria id como padrão para todas as tabelas/models, a tabela **veiculo** não possui **id** e sim**placa** como chave, altere as rotas e controlers de id para placa.
 ## 2 Implantação
 - 1. Para implantar o SGBD para **Postgre**, pois o vercel só da suporte gratuito para este **SGBD**.
 ```js

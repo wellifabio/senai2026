@@ -235,15 +235,19 @@ node_modules
 ### Criando o projeto na Vercel
 Após criar uma conta na Vercel, acesse e crie um novo projeto, **importando** o seu projeto do **github**.
 - ![Vercel tela 1](./screenshots/vercel1.png)
+- Copie e cole o nome do repositório, se ele não aparecer clique em `Configure GitHub App`
+- Busque seu repositorio no github
 - ![Vercel tela 2](./screenshots/vercel2.png)
 - ![Vercel tela 3](./screenshots/vercel3.png)
-- Seu projeto ainda não vai funcionar, para isso é necessário criar o serviço de banco de dados com Prisma e algumas configurações adicionais.
-
-## [Exemplo do estacionamento implantado](https://github.com/wellifabio/sesi_psof3_aula3_estacionamento_api_vercel_2026.git)
-
+- Clique em "Create Project"
+- ![Vercel tela 4](./screenshots/vercel4.png)
+- Clique em **Add** para adicionar o SGBD PostgreSQL e confirme até o fim
+- ![Vercel tela 5](./screenshots/vercel5.png)
+- ![Vercel tela 6](./screenshots/vercel6.png)
+- Clique em `Continue to Dashboard`
+- Se apresentar algum erro, verifique as configurações ou refaça o processo
 - Altere o `package.json` removendo p`"postinstall": "prisma generate"`:
 - Exemplo:
-```json
 ```json
 {
   "name": "backend",
@@ -263,13 +267,8 @@ Após criar uma conta na Vercel, acesse e crie um novo projeto, **importando** o
   }
 }
 ```
-```
-![Pastas02](./screenshots/pastas2.png)
-- Para **fazer deploy**, com o ambiente configurado corretamente, basta **fazer commit das alterações** e executar o comando:
-```bash
-vercel --prod
-```
 ## Pronto API Back-end implantado com sucesso
+## [Exemplo do estacionamento implantado](https://github.com/wellifabio/sesi_psof3_aula3_estacionamento_api_vercel_2026.git)
 
 ## Atividades
 Desenvolva uma UI front-end para consumir sua API implantada conforme wireframes e requisitos a seguir:

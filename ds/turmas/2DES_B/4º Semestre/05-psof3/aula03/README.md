@@ -239,13 +239,6 @@ Após criar uma conta na Vercel, acesse e crie um novo projeto, **importando** o
 - ![Vercel tela 3](./screenshots/vercel3.png)
 - Seu projeto ainda não vai funcionar, para isso é necessário criar o serviço de banco de dados com Prisma e algumas configurações adicionais.
 
-## 3 Criando o serviço de banco de dados com Prisma
-Ainda na **Vercel**, crie um novo serviço de banco de dados com Prisma. Clique em **Storage** procure por **Neon** e clique em **Create**.
-- ![Prisma 1](./screenshots/neon1.png)
-- Escolha uma região e de um nome ao servidor de banco de dados, depois conecte seu projeto back-end com o **Neon**.
-- ![Prisma 2](./screenshots/neon2.png)
-- Todas as variáveis de ambiente necessárias serão criadas automaticamente.
-
 ## [Exemplo do estacionamento implantado](https://github.com/wellifabio/sesi_psof3_aula3_estacionamento_api_vercel_2026.git)
 
 - Altere o `package.json` removendo p`"postinstall": "prisma generate"`:

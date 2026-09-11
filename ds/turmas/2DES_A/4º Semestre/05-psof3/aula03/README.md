@@ -126,8 +126,10 @@ app.listen(PORT, () => {
 });
 
 ```
+- Agora vamos testar o back-end com **Insomnia** ou
 - Se preferir abra o **prisma studio** para testar diretamente.
 ```bash
+npm run dev
 npx prisma studio
 ```
 #### Opcional, podemos alterar os controllers para mostrar mais dados
@@ -156,7 +158,7 @@ const listar = async (req, res) => {
 };
 ```
 ### Obs:
-A extenção backend-aula cria id como padrão para todas as tabelas/models, a tabela **veiculo** não possui **id** e sim**placa** como chave, altere as rotas e controlers de id para placa.
+A extenção backend-aula cria id como padrão para todas as tabelas/models, a tabela **veiculo** não possui **id**, mas sim **placa** como chave, altere as rotas e controlers de id para placa somente nos modelos *veiculo*.
 ## 2 Implantação
 - 1. Para implantar o SGBD para **Postgre**, pois o vercel só da suporte gratuito para este **SGBD**.
     - Altere o prisma/schema.prisma para `postgresql`
@@ -198,7 +200,8 @@ datasource db {
   ]
 }
 ```
-- Remova o `server.js` que passa a ser api/index.js
+- O `server.js` passa a ter utilizade apenas para testar localmente.
+- Crie o arquivo `api/index.js` que será o novo servidor que a **Vercel** vai utilizar
 ```js
 require('dotenv').config();
 const express = require('express');
@@ -235,13 +238,6 @@ Após criar uma conta na Vercel, acesse e crie um novo projeto, **importando** o
 - ![Vercel tela 2](./screenshots/vercel2.png)
 - ![Vercel tela 3](./screenshots/vercel3.png)
 - Seu projeto ainda não vai funcionar, para isso é necessário criar o serviço de banco de dados com Prisma e algumas configurações adicionais.
-
-## 3 Criando o serviço de banco de dados com Prisma
-Ainda na **Vercel**, crie um novo serviço de banco de dados com Prisma. Clique em **Storage** procure por **Neon** e clique em **Create**.
-- ![Prisma 1](./screenshots/neon1.png)
-- Escolha uma região e de um nome ao servidor de banco de dados, depois conecte seu projeto back-end com o **Neon**.
-- ![Prisma 2](./screenshots/neon2.png)
-- Todas as variáveis de ambiente necessárias serão criadas automaticamente.
 
 ## [Exemplo do estacionamento implantado](https://github.com/wellifabio/sesi_psof3_aula3_estacionamento_api_vercel_2026.git)
 

@@ -126,8 +126,10 @@ app.listen(PORT, () => {
 });
 
 ```
+- Agora vamos testar o back-end com **Insomnia** ou
 - Se preferir abra o **prisma studio** para testar diretamente.
 ```bash
+npm run dev
 npx prisma studio
 ```
 #### Opcional, podemos alterar os controllers para mostrar mais dados

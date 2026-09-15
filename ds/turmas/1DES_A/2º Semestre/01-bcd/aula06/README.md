@@ -10,7 +10,7 @@
 |MER DER Lógico|
 |-|
 |![MER DER Lógico](./amparo_taxi/der_logico.png)|
-## Atividade
+## Atividade 01 - DDL
 - 1 Crie uma pasta na área de trabalho chamada `amparo_taxi` e abra com VsCode
 - 2 Crie um arquivo chamado `ddl.sql` e crie o script de criação do Banco de dados, tabelas e relacionamentos:
 ```sql

@@ -20,3 +20,11 @@ USE amparo_taxi;
 CREATE TABLE ...
 ```
 - 3 Copie o script e cole no Shell do XAMPP ou MySQL WorkBanck
+## Atividade 02 - DML
+- 1 Crie um arquivo chamado `dml.sql` nesta mesma pasta.
+- 2 Crie um script que cadastre pelo menos 3 registros em cada tabela.
+```sql
+USE amparo_taxi;
+INSERT INTO motorista(...) values (),(),();
+```
+- Preferencialmente três viagens para cada passageiro.

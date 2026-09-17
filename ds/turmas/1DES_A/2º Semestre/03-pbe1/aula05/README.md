@@ -163,3 +163,6 @@ O arquivo inventario.json poderá iniciar com alguns registros para testes:
 
 # MVC (Model, View, Controller)
 - Demonstração [Inventário MVC e Full Stack](https://github.com/wellifabio/sesi_pbe1_aula05_inventario_full_mvc_2026)
+## atividade
+- Desenvolva uma estilização CSS
+- Crie um README semelhante ao exemplo com print da tela

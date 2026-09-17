@@ -160,3 +160,6 @@ O arquivo inventario.json poderá iniciar com alguns registros para testes:
 - Listar itens acima de determinado valor;
 - Verificar se um número de patrimônio já está cadastrado;
 - Criar uma rota para retornar o valor total dos itens do inventário.
+
+# MVC (Model, View, Controller)
+- Demonstração [Inventário MVC e Full Stack](https://github.com/wellifabio/sesi_pbe1_aula05_inventario_full_mvc_2026)

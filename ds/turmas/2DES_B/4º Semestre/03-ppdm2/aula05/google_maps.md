@@ -91,10 +91,7 @@ class _MainAppState extends State<MainApp> {
           Expanded(
             child: GoogleMap(
               initialCameraPosition: const CameraPosition(
-                target: LatLng(
-                  -23.550520,
-                  -46.633308,
-                ), // Coordenadas iniciais (ex: São Paulo)
+                target: LatLng(-22.7130000,-46.8180000), // Coordenadas iniciais (ex: SESI Amparo)
                 zoom: 14.0,
               ),
               onTap: (LatLng latLng) {

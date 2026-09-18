@@ -66,7 +66,7 @@
 
 |Mais instruções|
 |-|
-|Os wireframes são apenas ilustrativos para fornecer um norte ao desenvolvedor, posicione os elementos como preferir, utilize listas, ou cards ou outro tipo de UI, porém deixe a aparência intuitiva e profissional.<br>Para qualquer um dos três desafios:<br> - importe uma Fonte a sua escolha do [google fonts](https://fonts.google.com/),<br> - aplique um tema com paleta de cores a sua escolha, tema claro e escuro com ou sem botão para alternar,<br> - desenhe um ícone para o aplicativo (pode utilizar IA para ajudar nesta tarefa)<br>Caso utilize auxilio de IA generativa **no seu código**, procure entender o código gerado, pois o instrutor pode pedir sua explicação e pode ter dificuldade de te dar suporte|
+|Os wireframes são apenas ilustrativos para fornecer um norte ao desenvolvedor, posicione os elementos como preferir, utilize listas, ou cards ou outro tipo de UI, porém deixe a aparência intuitiva e profissional.<br>Para qualquer um dos três desafios:<br> - importe uma **Fonte** a sua escolha do [google fonts](https://fonts.google.com/),<br> - aplique um tema com paleta de cores a sua escolha, tema **claro e escuro** com o botão para alternar (Opcional) ou obter o tema do sistema ao iniciar o aplicativo,<br> - desenhe um **ícone** para o aplicativo (pode utilizar IA para ajudar nesta tarefa)<br>Caso utilize auxilio de **IA generativa no seu código**, procure entender o código gerado, pois o instrutor pode pedir sua explicação e pode ter dificuldade de te dar suporte|
 
 |Entregas|
 |-|

@@ -11,6 +11,10 @@ dependencies:
   flutter_map: ^3.0.0
   latlong2: ^0.8.2
 ```
+- Por linha de comando:
+```bash
+flutter pub add flutter_map latlong2
+```
 - Ou Adicione o flutter_map e o latlong2 (pacote necessário para manipular coordenadas geográficas neste plugin) ao seu projeto. No terminal, execute:
 ```bash
 flutter pub add flutter_map latlong2

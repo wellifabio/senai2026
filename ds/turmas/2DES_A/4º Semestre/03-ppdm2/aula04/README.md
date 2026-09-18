@@ -42,7 +42,7 @@
 |Desenvolva um aplicativo de cadastro de pessoas que possua os seguintes requisitos funcionais:|
 |RF001 - Tela Splash com animação de entrada e saída|
 |RF002 - Tela Home com cabeçalho, Menu lateral sandwish, uma lista de pessoas cadastradas e um botão [+] para adicionar novo cadastro|
- RF003 - Tela de Cadastro com os campos CEP:, Número e Complemento editáveis e traga os campos (Rua:,Bairro:,Cidade:,Estado:) da API ViaCEP quando o campo CEP for preenchido, Botão para salvar o cadastro localmente no Celular|
+ RF003 - Tela de Cadastro com os campos Nome, CEP, Número e Complemento editáveis e traga os campos (Rua:,Bairro:,Cidade:,Estado:) da API ViaCEP quando o campo CEP for preenchido, Botão para salvar o cadastro localmente no Celular|
 
 |Desafio 02|
 |-|

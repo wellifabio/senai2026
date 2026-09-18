@@ -3,7 +3,7 @@
 ## Tutorial para obter Latitude e Longitude de um endereço usando o Google Maps API
 Para obter a latitude e longitude ao clicar em um mapa no Flutter, utilize a propriedade onTap do widget GoogleMap provido pelo pacote oficial google_maps_flutter.
 
-## Passos
+## Passo a passo
 - Com o **VsCode** crie um **novo aplicativo flutter**
 - Abra o terminal e Instale a dependência:
 ```bash
@@ -17,55 +17,8 @@ dependencies:
     sdk: flutter
   google_maps_flutter: ^2.2.0
 ```
-ANtes deve obter uma chave de API do Google Maps, que pode ser obtida no [Google Cloud Console](https://console.cloud.google.com/). Certifique-se de habilitar o serviço de Maps e gerar uma chave de API para o seu projeto.
-- main.dart
-```dart
-import 'package:flutter/material.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
-
-class MapScreen extends StatefulWidget {
-  const MapScreen({super.key});
-
-  @override
-  State<MapScreen> createState() => _MapScreenState();
-}
-
-class _MapScreenState extends State<MapScreen> {
-  LatLng? _pontoClicado;
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Obter Coordenadas no Mapa')),
-      body: GoogleMap(
-        initialCameraPosition: const CameraPosition(
-          target: LatLng(-23.550520, -46.633308), // Coordenadas iniciais (ex: São Paulo)
-          zoom: 14.0,
-        ),
-        onTap: (LatLng latLng) {
-          // Callback acionado ao clicar em qualquer lugar do mapa
-          setState(() {
-            _pontoClicado = latLng;
-          });
-          
-          print('Latitude: ${latLng.latitude}, Longitude: ${latLng.longitude}');
-        },
-        markers: _pontoClicado == null
-            ? {}
-            : {
-                Marker(
-                  markerId: const MarkerId('clicado'),
-                  position: _pontoClicado!,
-                ),
-              },
-      ),
-    );
-  }
-}
-```
-## Explicação dos pontos principais:
-- **onTap**: Retorna um objeto `LatLng` contendo exatamente a latitude e a longitude do ponto exato onde o usuário tocou na tela.
-- **markers**: Opcional, mas útil para adicionar um marcador visual (Marker) no local que acabou de ser pressionado.
+Antes de iniciar a codificação do App, obtenha uma **chave de API** do Google Maps através do [Google Cloud Console](https://console.cloud.google.com/).
+- Certifique-se de habilitar o serviço de Maps e gerar uma chave de API para o seu projeto.
 
 ### Passos para Obter a Chave de API do Google Maps
 - Acesse o Google Cloud Console.
@@ -73,6 +26,12 @@ class _MapScreenState extends State<MapScreen> {
 - Ative a Maps SDK for Android na biblioteca de APIs.
 - Vá em Credenciais, clique em Criar Credenciais e selecione Chave de API.
 - Copie a chave gerada (recomenda-se restringir a chave para uso exclusivo do seu app Android antes de publicar).
+
+#### Caso já possua uma chave, para encontrá-la:
+- Acesse o [Google Cloud Console](https://console.cloud.google.com/)
+- Abra o menu do console do google cloud [ⲷ]
+- APIs e serviços > Credenciais
+- Na sessão Chaves de API, procure sua chave e clique em `Exibir chave`
 
 ### Configurar o AndroidManifest.xml
 - Abra o arquivo localizado em: `android/app/src/main/AndroidManifest.xml`
@@ -102,6 +61,76 @@ class _MapScreenState extends State<MapScreen> {
     </application>
 </manifest>
 ```
+### Corifique o Aplicativo
+- lib/main.dart
+```dart
+import 'package:flutter/material.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+
+void main() {
+  runApp(MainApp());
+}
+
+class MainApp extends StatefulWidget {
+  const new({super.key});
+
+  @override
+  State<MainApp> createState() => _MainAppState();
+}
+
+class _MainAppState extends State<MainApp> {
+  LatLng? _pontoClicado;
+  String mensagem = "Clique em algum lugar no mapa";
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Obter Coordenadas no Mapa')),
+      body: Column(
+        children: [
+          Text(mensagem),
+          Expanded(
+            child: GoogleMap(
+              initialCameraPosition: const CameraPosition(
+                target: LatLng(
+                  -23.550520,
+                  -46.633308,
+                ), // Coordenadas iniciais (ex: São Paulo)
+                zoom: 14.0,
+              ),
+              onTap: (LatLng latLng) {
+                // Callback acionado ao clicar em qualquer lugar do mapa
+                setState(() {
+                  _pontoClicado = latLng;
+                });
+                setState(() {
+                  mensagem =
+                      'Latitude: ${latLng.latitude}, Longitude: ${latLng.longitude}';
+                });
+              },
+              markers: _pontoClicado == null
+                  ? {}
+                  : {
+                      Marker(
+                        markerId: const MarkerId('clicado'),
+                        position: _pontoClicado!,
+                      ),
+                    },
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+```
+Execute em um **Emulador**
+```bash
+flutter pub get
+flutter run
+```
+## Explicação dos pontos principais:
+- **onTap**: Retorna um objeto `LatLng` contendo exatamente a latitude e a longitude do ponto exato onde o usuário tocou na tela.
+- **markers**: Opcional, mas útil para adicionar um marcador visual (Marker) no local que acabou de ser pressionado.
 
 ## Verificar a versão do SDK (Geralmente necessário)
 O plugin do Google Maps exige uma versão mínima do SDK do Android (MinSdkVersion). Se o seu app falhar ao compilar, ajuste o arquivo `android/app/build.gradle`

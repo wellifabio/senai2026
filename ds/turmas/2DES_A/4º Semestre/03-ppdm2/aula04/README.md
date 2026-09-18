@@ -58,6 +58,10 @@
 |RF002 - Tela de Loguin que utilize a API DummyJSON como autenticador, com os campos usuário [username] e senha[password], envio de dados para a API e se autenticado seguir para a proxima tela, senão exibir mensagem de acesso negado|
 |RF003 - Tela Home com cabeçalho, Menu lateral sandwish, uma lista de anotações e um botão [+] para adicionar nova anotação|
 
+|Mais instruções|
+|-|
+|Para qualquer um dos três desafios, importe uma Fonte a sua escolha do [google fonts](https://fonts.google.com/), aplique um tema com paleta de cores a sua escolha, tema claro e escuro com ou sem botão para alternar, desenhe um ícone do aplicativo (pode utilizar IA para ajudar)|
+
 |Entregas|
 |-|
 |O projeto escolhido deve ser entregue em um repositório **GitHub**, contendo o código-fonte completo do aplicativo, incluindo todas as dependências e instruções para execução. Além disso, deve ser incluído um arquivo README.md detalhando as funcionalidades implementadas, **Print das telas** e um link para baixar o **arquivo.APK**|

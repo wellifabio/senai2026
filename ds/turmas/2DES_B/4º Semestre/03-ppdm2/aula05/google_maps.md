@@ -125,9 +125,10 @@ Execute em um **Emulador**
 flutter pub get
 flutter run
 ```
-## Explicação dos pontos principais:
-- **onTap**: Retorna um objeto `LatLng` contendo exatamente a latitude e a longitude do ponto exato onde o usuário tocou na tela.
-- **markers**: Opcional, mas útil para adicionar um marcador visual (Marker) no local que acabou de ser pressionado.
+
+|Resultado|Conclusão|
+|-|-|
+|![Screenshot Flutter Maps](./google_maps.png)|O código acima cria uma tela exibindo uma mensagem inicial iformando para clicar em um ponto do mapa e um mapa com o centro posicionado próximo ao SESI Amparo.<br> - **onTap**: Retorna um objeto `LatLng` contendo exatamente a latitude e a longitude do ponto exato onde o usuário tocou na tela.<br> - **markers**: Opcional, mas útil para adicionar um marcador visual (Marker) no local que acabou de ser pressionado.|
 
 ## Verificar a versão do SDK (Geralmente necessário)
 O plugin do Google Maps exige uma versão mínima do SDK do Android (MinSdkVersion). Se o seu app falhar ao compilar, ajuste o arquivo `android/app/build.gradle`

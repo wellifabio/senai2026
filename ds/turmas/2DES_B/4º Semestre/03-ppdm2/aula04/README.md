@@ -1,196 +1,73 @@
-# Aula04 - Mapas
+# Aula04 - Consumo de APIs externas
 
-## Google Maps para Flutter
+- API [ViaCEP](https://viacep.com.br/)
+    - Exemplo com [JavaScript](https://viacep.com.br/exemplo/javascript/)
+- API [Dummy JSON](https://dummyjson.com/docs/auth) Autenticação
+- API [BCB - Banco Central do Brasil](https://bcb.gov.br/)
+    - Exemplo de [requisição](https://api.bcb.gov.br/dados/serie/bcdata.sgs.4391/dados?formato=json), esta traz o histórico do CDI mensal desde 1986
 
-### Tutorial para obter Latitude e Longitude de um endereço usando o Google Maps API
-Para obter a latitude e longitude ao clicar em um mapa no Flutter, utilize a propriedade onTap do widget GoogleMap provido pelo pacote oficial google_maps_flutter.
-- pubspec.yaml
-```yaml
-dependencies:
-  flutter:
-    sdk: flutter
-  google_maps_flutter: ^2.2.0
-```
-ANtes deve obter uma chave de API do Google Maps, que pode ser obtida no [Google Cloud Console](https://console.cloud.google.com/). Certifique-se de habilitar o serviço de Maps e gerar uma chave de API para o seu projeto.
-- main.dart
-```dart
-import 'package:flutter/material.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
+### Capacidades Técnicas
+- 7 Persistir dados em dispositivos móveis
+- 8 Realizar a integração de dispositivos móveis aos serviços web
+- 11 Utilizar os elementos da programação orientada a objetos em aplicações para dispositivos móveis
 
-class MapScreen extends StatefulWidget {
-  const MapScreen({super.key});
+### Capacidades Socioemocionais
+- 1 Demonstrar autogestão
+- 2 Demonstrar pensamento analítico
+- 3 Demonstrar inteligência emocional
+- 4 Demonstrar autonomia
 
-  @override
-  State<MapScreen> createState() => _MapScreenState();
-}
+### Conhecimentos
+- 6 Consumo de RESTfull web service 
+  - 6.1 Envio de requisições
+    - 6.1.1 GET 
+    - 6.1.2 POST 
+    - 6.1.3 PUT 
+    - 6.1.4 DELETE 
+  - 6.2 Manipulação de dados 
+    - 6.2.1 JSON
+    - 6.2.2 XML
 
-class _MapScreenState extends State<MapScreen> {
-  LatLng? _pontoClicado;
+## Exemplo de [consumo de API RESTfull - Agrotech](https://github.com/wellifabio/flutter_agrotech_api_jwt_crud_camera_2026.git)
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Obter Coordenadas no Mapa')),
-      body: GoogleMap(
-        initialCameraPosition: const CameraPosition(
-          target: LatLng(-23.550520, -46.633308), // Coordenadas iniciais (ex: São Paulo)
-          zoom: 14.0,
-        ),
-        onTap: (LatLng latLng) {
-          // Callback acionado ao clicar em qualquer lugar do mapa
-          setState(() {
-            _pontoClicado = latLng;
-          });
-          
-          print('Latitude: ${latLng.latitude}, Longitude: ${latLng.longitude}');
-        },
-        markers: _pontoClicado == null
-            ? {}
-            : {
-                Marker(
-                  markerId: const MarkerId('clicado'),
-                  position: _pontoClicado!,
-                ),
-              },
-      ),
-    );
-  }
-}
-```
-### Explicação dos pontos principais:
-- **onTap**: Retorna um objeto `LatLng` contendo exatamente a latitude e a longitude do ponto exato onde o usuário tocou na tela.
-- **markers**: Opcional, mas útil para adicionar um marcador visual (Marker) no local que acabou de ser pressionado.
+## Situações desafiadoras
+- **Escolha um** dos desafios e apresente concluído ao final da aula para o **instutor vistar**.
 
-### Passos para Obter a Chave de API do Google Maps
-- Acesse o Google Cloud Console.
-- Crie um projeto ou selecione um existente.
-- Ative a Maps SDK for Android na biblioteca de APIs.
-- Vá em Credenciais, clique em Criar Credenciais e selecione Chave de API.
-- Copie a chave gerada (recomenda-se restringir a chave para uso exclusivo do seu app Android antes de publicar).
+|Contextualização|
+|-|
+|Em qualquer App que possua uma tela de cadastro a utilização de uma API que consulte o CEP e preencha automaticamente os dados de endereço é essencial, também outras APIs públicas podem trazer informações importantes|
 
-### Configurar o AndroidManifest.xml
-- Abra o arquivo localizado em: `android/app/src/main/AndroidManifest.xml`
-- Insira a tag <meta-data> com a sua chave dentro do bloco <application>. Certifique-se também de que as permissões de internet estão ativas.
-```xml
-<manifest xmlns:android="http://android.com">
-    
-    <!-- Permissões necessárias para carregar o mapa -->
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+|Desafio 01|
+|-|
+|Desenvolva um aplicativo de cadastro de pessoas que possua os seguintes requisitos funcionais:|
+|RF001 - Tela Splash com animação de entrada e saída|
+|RF002 - Tela Home com cabeçalho, Menu lateral sandwish, uma lista de pessoas cadastradas e um botão [+] para adicionar novo cadastro|
+ RF003 - Tela de Cadastro com os campos Nome, CEP, Número e Complemento editáveis e traga os campos (Rua:,Bairro:,Cidade:,Estado:) da API ViaCEP quando o campo CEP for preenchido, Botão para salvar o cadastro localmente no Celular|
+|Wireframes|
+|![Pessoas](./pessoas.png)|
 
-    <application
-        android:label="nome_do_seu_app"
-        android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
-        
-        <!-- INSIRA ESTE BLOCO ABAIXO COM A SUA CHAVE DE API -->
-        <meta-data 
-            android:name="com.google.android.geo.API_KEY"
-            android:value="SUA_CHAVE_DE_API_AQUI"/>
-            
-        <activity
-            android:name=".MainActivity"
-            ... >
-            <!-- Configurações padrão da activity -->
-        </activity>
-    </application>
-</manifest>
-```
+|Desafio 02|
+|-|
+|Desenvo um aolicativo simulador de financiamentos com os seguintes requisitos funcionais:|
+|RF001 - Tela Splash com animação de entrada e saída|
+|RF002 - Tela Home com cabeçalho, Menu lateral sandwish, uma lista de financiamentos simulados e um botão [+] para adicionar nova simulação|
+|RF003 - Tela de simulação com os campos, Valor desejado: e Número de parcelas:, O App deve obter a taxa de juros ao mês com base no DCI do mês atual obtido da API do Banco Central e calcular o Montante e o valor das parcelas, Botão para salvar a simulação localmente no celular|
+|Wireframes|
+|![Simulações](./simulacoes.png)|
 
-### Verificar a versão do SDK (Geralmente necessário)
-O plugin do Google Maps exige uma versão mínima do SDK do Android (MinSdkVersion). Se o seu app falhar ao compilar, ajuste o arquivo `android/app/build.gradle`
-- Abra android/app/build.gradle.
-- Certifique-se de que o minSdkVersion seja 21 ou superior:
+|Desafio 03|
+|-|
+|Desenvo um aplicativo de bloco de anotações, semelhante ao criado na aula01 porçem com os seguintes requisitos funcionais:|
+|RF001 - Tela Splash com animação de entrada e saída|
+|RF002 - Tela de Loguin que utilize a API DummyJSON como autenticador, com os campos usuário [username] e senha[password], envio de dados para a API e se autenticado seguir para a proxima tela, senão exibir mensagem de acesso negado|
+|RF003 - Tela Home com cabeçalho, Menu lateral sandwish, uma lista de anotações e um botão [+] para adicionar nova anotação|
+|Wireframes|
+|![Anotações](./login.png)|
 
-```gradle
-android {
-    defaultConfig {
-        // ...
-        minSdkVersion 21 // Altere de flutter.minSdkVersion se for menor que 21
-        // ...
-    }
-}
-```
+|Mais instruções|
+|-|
+|Os wireframes são apenas ilustrativos para fornecer um norte ao desenvolvedor, posicione os elementos como preferir, utilize listas, ou cards ou outro tipo de UI, porém deixe a aparência intuitiva e profissional.<br>Para qualquer um dos três desafios:<br> - importe uma Fonte a sua escolha do [google fonts](https://fonts.google.com/),<br> - aplique um tema com paleta de cores a sua escolha, tema claro e escuro com ou sem botão para alternar,<br> - desenhe um ícone para o aplicativo (pode utilizar IA para ajudar nesta tarefa)<br>Caso utilize auxilio de IA generativa **no seu código**, procure entender o código gerado, pois o instrutor pode pedir sua explicação e pode ter dificuldade de te dar suporte|
 
-## Outra alternativa: flutter_map - Gratuito e Open Source
-- [flutter_map](https://pub.dev/packages/flutter_map) é um pacote gratuito e open source para Flutter que permite a integração de mapas em aplicativos móveis. Ele é baseado na biblioteca Leaflet.js, que é amplamente utilizada para criar mapas interativos na web.
-- O pacote `flutter_map` oferece uma ampla gama de recursos, incluindo suporte para diferentes provedores de mapas, camadas personalizadas, marcadores, pop-ups e muito mais. Ele é altamente configurável e permite que os desenvolvedores criem experiências de mapa ricas e interativas em seus aplicativos Flutter.
-- Para começar a usar o `flutter_map`, você precisa adicioná-lo ao seu arquivo `pubspec.yaml` e importar o pacote em seu código Dart. Em seguida, você pode criar um widget `FlutterMap` e configurar as opções de mapa, como a posição inicial, o nível de zoom e as camadas de mapa que deseja exibir.
-- O `flutter_map` é uma excelente escolha para desenvolvedores Flutter que desejam adicionar funcionalidades de mapa aos seus aplicativos de forma rápida e fácil, sem a necessidade de depender de serviços pagos ou proprietários.
-
-## Tutorial para obter Latitude e Longitude de um endereço
-- Instalar as dependências necessárias no arquivo `pubspec.yaml`:
-```yaml
-dependencies:
-  flutter_map: ^3.0.0
-  latlong2: ^0.8.2
-```
-- Ou Adicione o flutter_map e o latlong2 (pacote necessário para manipular coordenadas geográficas neste plugin) ao seu projeto. No terminal, execute:
-```bash
-flutter pub add flutter_map latlong2
-```
-O código a seguir obtem a latitude e longitude de um endereço local clicado no mapa.
-
-```dart
-import 'package:flutter/material.dart';
-import 'package:flutter_map/flutter_map.dart';
-import 'package:latlong2/latlong2.dart'; // Importante para usar as coordenadas LatLng
-
-class MapScreenOSM extends StatefulWidget {
-  const MapScreenOSM({super.key});
-
-  @override
-  State<MapScreenOSM> createState() => _MapScreenOSMState();
-}
-
-class _MapScreenOSMState extends State<MapScreenOSM> {
-  LatLng? _pontoClicado;
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Obter Coordenadas (flutter_map)')),
-      body: FlutterMap(
-        options: MapOptions(
-          initialCenter: const LatLng(-23.550520, -46.633308), // São Paulo
-          initialZoom: 14.0,
-          // Callback acionado ao clicar no mapa
-          onTap: (tapPosition, latLng) {
-            setState(() {
-              _pontoClicado = latLng;
-            });
-
-            print('Latitude: ${latLng.latitude}, Longitude: ${latLng.longitude}');
-          },
-        ),
-        children: [
-          // Camada que renderiza o mapa visual (TileLayer)
-          TileLayer(
-            urlTemplate: 'https://openstreetmap.org{z}/{x}/{y}.png',
-            userAgentPackageName: 'com.example.seu_app', // Substitua pelo ID do seu app
-          ),
-          // Camada que renderiza o marcador se houver um ponto clicado
-          if (_pontoClicado != null)
-            MarkerLayer(
-              markers: [
-                Marker(
-                  point: _pontoClicado!,
-                  width: 40,
-                  height: 40,
-                  child: const Icon(
-                    Icons.location_on,
-                    color: Colors.red,
-                    size: 40,
-                  ),
-                ),
-              ],
-            ),
-        ],
-      ),
-    );
-  }
-}
-```
-O código acima cria um aplicativo Flutter que exibe um mapa usando o pacote `flutter_map`. Quando o usuário clica em um ponto do mapa, a latitude e longitude desse ponto são capturadas e exibidas no console. Além disso, um marcador é adicionado ao ponto clicado para indicar visualmente a localização selecionada.
-
-## App de Exemplo [flutter_pedal](https://github.com/wellifabio/sesi_ppdm2_flutter_pedal_gps_2026.git) utilizando Google Maps.
+|Entregas|
+|-|
+|O projeto escolhido deve ser entregue em um repositório **GitHub**, contendo o código-fonte completo do aplicativo, incluindo todas as dependências e instruções para execução. Além disso, deve ser incluído um arquivo README.md detalhando as funcionalidades implementadas, **Print das telas** e um link para baixar o **arquivo.APK**|

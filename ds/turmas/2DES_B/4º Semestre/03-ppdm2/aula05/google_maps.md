@@ -2,6 +2,14 @@
 
 ## Tutorial para obter Latitude e Longitude de um endereço usando o Google Maps API
 Para obter a latitude e longitude ao clicar em um mapa no Flutter, utilize a propriedade onTap do widget GoogleMap provido pelo pacote oficial google_maps_flutter.
+
+## Passos
+- Com o **VsCode** crie um **novo aplicativo flutter**
+- Abra o terminal e Instale a dependência:
+```bash
+flutter pub add google_maps_flutter
+flutter pub get
+```
 - pubspec.yaml
 ```yaml
 dependencies:

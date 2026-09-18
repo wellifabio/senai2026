@@ -31,7 +31,7 @@
 ## Exemplo de [consumo de API RESTfull - Agrotech](https://github.com/wellifabio/flutter_agrotech_api_jwt_crud_camera_2026.git)
 
 ## Situações desafiadoras
-- Escolha um dos desafios e apresente concluído ao final da aula para o instutor vistar.
+- **Escolha um** dos desafios e apresente concluído ao final da aula para o **instutor vistar**.
 
 |Contextualização|
 |-|
@@ -43,6 +43,8 @@
 |RF001 - Tela Splash com animação de entrada e saída|
 |RF002 - Tela Home com cabeçalho, Menu lateral sandwish, uma lista de pessoas cadastradas e um botão [+] para adicionar novo cadastro|
  RF003 - Tela de Cadastro com os campos Nome, CEP, Número e Complemento editáveis e traga os campos (Rua:,Bairro:,Cidade:,Estado:) da API ViaCEP quando o campo CEP for preenchido, Botão para salvar o cadastro localmente no Celular|
+|Wireframes|
+|![Pessoas](./pessoas.png)|
 
 |Desafio 02|
 |-|
@@ -50,6 +52,8 @@
 |RF001 - Tela Splash com animação de entrada e saída|
 |RF002 - Tela Home com cabeçalho, Menu lateral sandwish, uma lista de financiamentos simulados e um botão [+] para adicionar nova simulação|
 |RF003 - Tela de simulação com os campos, Valor desejado: e Número de parcelas:, O App deve obter a taxa de juros ao mês com base no DCI do mês atual obtido da API do Banco Central e calcular o Montante e o valor das parcelas, Botão para salvar a simulação localmente no celular|
+|Wireframes|
+|![Simulações](./simulacoes.png)|
 
 |Desafio 03|
 |-|
@@ -57,10 +61,12 @@
 |RF001 - Tela Splash com animação de entrada e saída|
 |RF002 - Tela de Loguin que utilize a API DummyJSON como autenticador, com os campos usuário [username] e senha[password], envio de dados para a API e se autenticado seguir para a proxima tela, senão exibir mensagem de acesso negado|
 |RF003 - Tela Home com cabeçalho, Menu lateral sandwish, uma lista de anotações e um botão [+] para adicionar nova anotação|
+|Wireframes|
+|![Anotações](./login.png)|
 
 |Mais instruções|
 |-|
-|Para qualquer um dos três desafios, importe uma Fonte a sua escolha do [google fonts](https://fonts.google.com/), aplique um tema com paleta de cores a sua escolha, tema claro e escuro com ou sem botão para alternar, desenhe um ícone do aplicativo (pode utilizar IA para ajudar)|
+|Os wireframes são apenas ilustrativos para fornecer um norte ao desenvolvedor, posicione os elementos como preferir, utilize listas, ou cards ou outro tipo de UI, porém deixe a aparência intuitiva e profissional.<br>Para qualquer um dos três desafios:<br> - importe uma Fonte a sua escolha do [google fonts](https://fonts.google.com/),<br> - aplique um tema com paleta de cores a sua escolha, tema claro e escuro com ou sem botão para alternar,<br> - desenhe um ícone para o aplicativo (pode utilizar IA para ajudar nesta tarefa)<br>Caso utilize auxilio de IA generativa **no seu código**, procure entender o código gerado, pois o instrutor pode pedir sua explicação e pode ter dificuldade de te dar suporte|
 
 |Entregas|
 |-|

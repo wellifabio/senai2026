@@ -14,17 +14,38 @@ dependencies:
 - Por linha de comando:
 ```bash
 flutter pub add flutter_map latlong2
+flutter pub get
 ```
 - Ou Adicione o flutter_map e o latlong2 (pacote necessário para manipular coordenadas geográficas neste plugin) ao seu projeto. No terminal, execute:
 ```bash
 flutter pub add flutter_map latlong2
 ```
 O código a seguir obtem a latitude e longitude de um endereço local clicado no mapa.
-
+- Copie e cole no arquivo `lib/main.dart`
 ```dart
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
-import 'package:latlong2/latlong2.dart'; // Importante para usar as coordenadas LatLng
+import 'package:latlong2/latlong.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Obter Posição no Mapa',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+        useMaterial3: true,
+      ),
+      home: MapScreenOSM(),
+    );
+  }
+}
 
 class MapScreenOSM extends StatefulWidget {
   const MapScreenOSM({super.key});
@@ -39,27 +60,30 @@ class _MapScreenOSMState extends State<MapScreenOSM> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Obter Coordenadas (flutter_map)')),
+      appBar: AppBar(title: Text('Obter Coordenadas (flutter_map)')),
       body: FlutterMap(
         options: MapOptions(
-          initialCenter: const LatLng(-23.550520, -46.633308), // São Paulo
-          initialZoom: 14.0,
-          // Callback acionado ao clicar no mapa
+          initialCenter: LatLng(-22.7130000,-46.8180000), // SESI Amparo
+          initialZoom: 17.0,
           onTap: (tapPosition, latLng) {
             setState(() {
               _pontoClicado = latLng;
             });
-
-            print('Latitude: ${latLng.latitude}, Longitude: ${latLng.longitude}');
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Text(
+                  'Latitude: ${latLng.latitude}, Longitude: ${latLng.longitude}',
+                ),
+                duration: Duration(seconds: 3),
+              ),
+            );
           },
         ),
         children: [
-          // Camada que renderiza o mapa visual (TileLayer)
           TileLayer(
-            urlTemplate: 'https://openstreetmap.org{z}/{x}/{y}.png',
-            userAgentPackageName: 'com.example.seu_app', // Substitua pelo ID do seu app
+            urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+            userAgentPackageName: 'com.example.flutter_obter_posicao_map',
           ),
-          // Camada que renderiza o marcador se houver um ponto clicado
           if (_pontoClicado != null)
             MarkerLayer(
               markers: [
@@ -67,7 +91,7 @@ class _MapScreenOSMState extends State<MapScreenOSM> {
                   point: _pontoClicado!,
                   width: 40,
                   height: 40,
-                  child: const Icon(
+                  child: Icon(
                     Icons.location_on,
                     color: Colors.red,
                     size: 40,
@@ -81,4 +105,12 @@ class _MapScreenOSMState extends State<MapScreenOSM> {
   }
 }
 ```
-O código acima cria um aplicativo Flutter que exibe um mapa usando o pacote `flutter_map`. Quando o usuário clica em um ponto do mapa, a latitude e longitude desse ponto são capturadas e exibidas no console. Além disso, um marcador é adicionado ao ponto clicado para indicar visualmente a localização
+- Execute o App em um emulador ou navegador.
+```bash
+flutter pub get
+flutter run
+```
+
+|Resultado|Conclusão|
+|-|-|
+|![Screenshot Flutter Maps](./flutter_maps.png)|O código acima cria um aplicativo Flutter que exibe um mapa usando o pacote `flutter_map`.<br> - Quando o usuário clica em um ponto do mapa, a latitude e longitude desse ponto são capturadas e exibidas no console.<br> - Além disso, um marcador é adicionado ao ponto clicado para indicar visualmente a localização|

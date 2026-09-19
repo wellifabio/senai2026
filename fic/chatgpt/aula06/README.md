@@ -1,6 +1,6 @@
 # Aula06
 Nesta etapa vamos concluir o principal objetivo do curso, que é capacitar os alunos a utilizar o ChatGPT e outras ferramentas de IA para aumentar sua produtividade e eficiência em diversas áreas, como desenvolvimento de software, atendimento ao cliente, entre outras. Para isso, vamos desenvolver um projeto prático utilizando o Gemini, uma plataforma de chatbot baseada em IA, e o GitHub Pages, um serviço de hospedagem gratuito para criar e publicar sites estáticos.
-
+### [Portfolio da turma](https://github.com/wellifabio/senai_portfolio_fic_chatgpt_2026.git)
 ---
 
 ## Situação Desafiadora: Chatbot com Gemini								
@@ -28,6 +28,8 @@ Criar um chatbot utilizando o Gemini, que seja capaz de responder a perguntas e 
     - 4.5 Avaliação; 
     - 4.6 Testes; 
     - 4.7 Publicação;
+
+## [Prompts para Chatbot com GEMINI](https://github.com/wellifabio/chatbot_gemini_eu_prof_2026.git)
 
 ## Modelos Personalizados:
 Modelos personalizados são modelos de IA generativa que são treinados e ajustados para atender as necessidades específicas de um projeto ou aplicação. Eles podem ser criados utilizando a API da OpenAI, que fornece ferramentas e recursos para criar, treinar, avaliar e implementar modelos personalizados.

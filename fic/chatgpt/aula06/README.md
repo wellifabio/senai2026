@@ -3,7 +3,7 @@ Nesta etapa vamos concluir o principal objetivo do curso, que é capacitar os al
 ### [Portfolio da turma](https://github.com/wellifabio/senai_portfolio_fic_chatgpt_2026.git)
 ---
 
-## Situação Desafiadora: Chatbot com Gemini								
+## Situação Desafiadora: [Chatbot com Gemini](gemini.google.com)								
 ### Contextualização: 									
 Nossas interações por smartphones, redes sociais via internet estão em constante mudanças que quase não percebemos se estamos interagindo com outras pessoas ou IA, muitos cargos e funções como telefonista, acessorista e outros se tornaram obsoletos, mas a tecnologia de IA tem se tornado cada vez mais presente em nossas vidas, e é importante que os profissionais estejam preparados para lidar com essas tecnologias e utilizá-las de forma eficiente. O ChatGPT é uma ferramenta poderosa que pode ser utilizada para melhorar a produtividade e eficiência em diversas áreas, como desenvolvimento de software, atendimento ao cliente, entre outras. Por isso, é fundamental que os profissionais estejam capacitados para utilizar o ChatGPT e outras ferramentas de IA de forma eficaz, para aproveitar ao máximo seus benefícios e se destacar no mercado de trabalho.
 							
@@ -30,6 +30,11 @@ Criar um chatbot utilizando o Gemini, que seja capaz de responder a perguntas e 
     - 4.7 Publicação;
 
 ## [Prompts para Chatbot com GEMINI](https://github.com/wellifabio/chatbot_gemini_eu_prof_2026.git)
+
+## Passos para Obter a Chave de API do Google Maps
+Acesse o [Google Cloud Console](https://console.cloud.google.com/).
+Faça Login com sua conta gmail, "não é necessário colocar cartão de crédito".
+Pesquise por **Criar chave da API GEMINI**
 
 ## Modelos Personalizados:
 Modelos personalizados são modelos de IA generativa que são treinados e ajustados para atender as necessidades específicas de um projeto ou aplicação. Eles podem ser criados utilizando a API da OpenAI, que fornece ferramentas e recursos para criar, treinar, avaliar e implementar modelos personalizados.

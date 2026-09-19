@@ -32,9 +32,9 @@ Criar um chatbot utilizando o Gemini, que seja capaz de responder a perguntas e 
 ## [Prompts para Chatbot com GEMINI](https://github.com/wellifabio/chatbot_gemini_eu_prof_2026.git)
 
 ## Passos para Obter a Chave de API do Google Maps
-Acesse o [Google Cloud Console](https://console.cloud.google.com/).
-Faça Login com sua conta gmail, "não é necessário colocar cartão de crédito".
-Pesquise por **Criar chave da API GEMINI**
+- 1 Acesse o [Google Cloud Console](https://console.cloud.google.com/).
+- 2 Faça Login com sua conta gmail, "não é necessário colocar cartão de crédito".
+- 3 Pesquise por **Criar chave da API GEMINI**
 
 ## Modelos Personalizados:
 Modelos personalizados são modelos de IA generativa que são treinados e ajustados para atender as necessidades específicas de um projeto ou aplicação. Eles podem ser criados utilizando a API da OpenAI, que fornece ferramentas e recursos para criar, treinar, avaliar e implementar modelos personalizados.

@@ -32,9 +32,14 @@ Criar um chatbot utilizando o Gemini, que seja capaz de responder a perguntas e 
 ## [Prompts para Chatbot com GEMINI](https://github.com/wellifabio/chatbot_gemini_eu_prof_2026.git)
 
 ## Passos para Obter a Chave de API do Google Maps
-- 1 Acesse o [Google Cloud Console](https://console.cloud.google.com/).
-- 2 Faça Login com sua conta gmail, "não é necessário colocar cartão de crédito".
-- 3 Pesquise por **Criar chave da API GEMINI**
+- 1 Acesse o [Google AI Studio](https://aistudio.google.com/prompts/new_chat).
+	- Faça Login com sua conta gmail.
+- 2 Abra a seção de chaves
+	- No menu lateral (geralmente no canto inferior esquerdo ou no painel principal), clique no botão Get API key (ou Criar chave de API).
+- 3 Crie a nova chave
+	- Clique em Create API key. Escolha se deseja criar a chave em um projeto existente do Google Cloud ou se prefere que a plataforma crie um projeto novo automaticamente.
+- 4 Copie e armazene a chave com segurança:
+	- Após a geração, copie o texto da chave gerada e salve-o em um local seguro.
 
 ## Modelos Personalizados:
 Modelos personalizados são modelos de IA generativa que são treinados e ajustados para atender as necessidades específicas de um projeto ou aplicação. Eles podem ser criados utilizando a API da OpenAI, que fornece ferramentas e recursos para criar, treinar, avaliar e implementar modelos personalizados.

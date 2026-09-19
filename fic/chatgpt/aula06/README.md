@@ -3,7 +3,7 @@ Nesta etapa vamos concluir o principal objetivo do curso, que é capacitar os al
 ### [Portfolio da turma](https://github.com/wellifabio/senai_portfolio_fic_chatgpt_2026.git)
 ---
 
-## Situação Desafiadora: [Chatbot com Gemini](gemini.google.com)								
+## Situação Desafiadora: [Chatbot com Gemini](https://gemini.google.com)								
 ### Contextualização: 									
 Nossas interações por smartphones, redes sociais via internet estão em constante mudanças que quase não percebemos se estamos interagindo com outras pessoas ou IA, muitos cargos e funções como telefonista, acessorista e outros se tornaram obsoletos, mas a tecnologia de IA tem se tornado cada vez mais presente em nossas vidas, e é importante que os profissionais estejam preparados para lidar com essas tecnologias e utilizá-las de forma eficiente. O ChatGPT é uma ferramenta poderosa que pode ser utilizada para melhorar a produtividade e eficiência em diversas áreas, como desenvolvimento de software, atendimento ao cliente, entre outras. Por isso, é fundamental que os profissionais estejam capacitados para utilizar o ChatGPT e outras ferramentas de IA de forma eficaz, para aproveitar ao máximo seus benefícios e se destacar no mercado de trabalho.
 							

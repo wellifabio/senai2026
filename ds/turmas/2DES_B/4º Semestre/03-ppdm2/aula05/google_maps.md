@@ -68,7 +68,7 @@ import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 void main() {
-  runApp(MainApp());
+  runApp(MaterialApp(title: "Pontos no Mapa", home: MainApp()));
 }
 
 class MainApp extends StatefulWidget {
@@ -79,6 +79,10 @@ class MainApp extends StatefulWidget {
 }
 
 class _MainAppState extends State<MainApp> {
+  final _pontoInicial = LatLng(
+    -22.7130000,
+    -46.8180000,
+  ); //ex: posição do SESI Amparo
   LatLng? _pontoClicado;
   String mensagem = "Clique em algum lugar no mapa";
   @override
@@ -87,11 +91,12 @@ class _MainAppState extends State<MainApp> {
       appBar: AppBar(title: const Text('Obter Coordenadas no Mapa')),
       body: Column(
         children: [
+          Text("Origem @${_pontoInicial.latitude},${_pontoInicial.longitude}"),
           Text(mensagem),
           Expanded(
             child: GoogleMap(
-              initialCameraPosition: const CameraPosition(
-                target: LatLng(-22.7130000,-46.8180000), // Coordenadas iniciais (ex: SESI Amparo)
+              initialCameraPosition: CameraPosition(
+                target: _pontoInicial,
                 zoom: 14.0,
               ),
               onTap: (LatLng latLng) {
@@ -100,15 +105,23 @@ class _MainAppState extends State<MainApp> {
                   _pontoClicado = latLng;
                 });
                 setState(() {
-                  mensagem =
-                      'Latitude: ${latLng.latitude}, Longitude: ${latLng.longitude}';
+                  mensagem = 'Destino: @${latLng.latitude},${latLng.longitude}';
                 });
               },
               markers: _pontoClicado == null
-                  ? {}
+                  ? {
+                      Marker(
+                        markerId: MarkerId('origem'),
+                        position: _pontoInicial,
+                      ),
+                    }
                   : {
                       Marker(
-                        markerId: const MarkerId('clicado'),
+                        markerId: MarkerId('origem'),
+                        position: _pontoInicial,
+                      ),
+                      Marker(
+                        markerId: MarkerId('destino'),
                         position: _pontoClicado!,
                       ),
                     },
@@ -119,6 +132,7 @@ class _MainAppState extends State<MainApp> {
     );
   }
 }
+
 ```
 Execute em um **Emulador**
 ```bash

@@ -88,35 +88,33 @@ Um banco de dados de manutenção de equipamentos em uma fábrica, onde o objeti
 ## Anexo01: Tema designado
 |Aluno|Tema|
 |-|:-:|
-|Ana Beatriz Alves de Lima||
-|Bianca Giovedy Pagotto||
-|Breno Frazão Callegari||
-|Davi Cruz Oliveira||
-|Eduardo Moretti Varotti||
-|Gabriela Leticia da Silva||
-|Geovanna Martins Bertuol||
-|Giulia de Godoi Silveira||
-|Giuseppe de Moraes Vieira||
-|Gustavo Ferelli||
-|Heitor Dorigan de Angeli||
-|Helena Politti Rossi||
-|Isabela Marchiori Ferreira||
-|Isabelle Caroline Vizeu de Salles||
-|Larissa Guarizo Tolloto||
-|Leandro Imenes de Oliveira||
-|Letícia Aparecida Pinto de Souza||
-|Liara Guarizo Tolloto||
-|Luana Gabrielle de Oliveira||
-|Marina Henrique Moretti||
-|Matheus Dorigan Paiato||
-|Maycon Silva Gonçalves de Lima||
-|Nicolas Augusto dos Reis Lira||
-|Otávio Augusto Barbosa||
-|Pedro Henrique Souza Guarizo||
-|Renan Pavan Fazullo||
-|Samyra Leite da Silva Ferreira||
-|Sara de Paula Souza||
-|Sofia Ohashi Faria||
-|Tobias Gabriel Bueno de Godoi||
-|Víctor Henrique Santana Alves||
-|Vitória Bueno da Silva||
+|Alicia Coelho Gomes de Oliveira|3|
+|Ana Klara do Carmo|4|
+|Breno Franco de Lima|1|
+|Bruno Vascon|4|
+|Carolina da Silva Santos|2|
+|Davi Parreira Cardeal|2|
+|Eloísa Macedo da Silva|1|
+|Enzo Casadei Macedo|2|
+|Felipe Martins|4|
+|Gabriel Pereira de Oliveira|4|
+|Giovana Ferreira Remorini|4|
+|Giovana Luísa Cezar|2|
+|Guilherme Enrico Barichello|2|
+|Isabelle Moreira Cezar Barichello|2|
+|Jéssica Guedes Vaz|3|
+|João Henrique Leme da Silva|1|
+|João Victor Moraes Lopes|2|
+|Kamilly Vitoria Ferreira Silvério|3|
+|Leonardo Canina Marchiori|2|
+|Letícia Guarizo Tolloto|1|
+|Lívia Fernandes Morais|1|
+|Maria Eduarda Betim Gomes de Moraes|2|
+|Mariana Correia Santos|2|
+|Miguel Cardoso Pignata|2|
+|Mirella Camilotti Perez|3|
+|Pietro Cardoso Broleze|4|
+|Samuel Gomes Silva|1|
+|Thiago Lima Amaral|4|
+|Vitor Rafael Parisato|1|
+|Yasmin Drudi|2|

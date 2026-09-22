@@ -88,35 +88,35 @@ Um banco de dados de manutenção de equipamentos em uma fábrica, onde o objeti
 ## Anexo01: Tema designado
 |Aluno|Tema|
 |-|:-:|
-|Ana Beatriz Alves de Lima||
-|Bianca Giovedy Pagotto||
-|Breno Frazão Callegari||
-|Davi Cruz Oliveira||
-|Eduardo Moretti Varotti||
-|Gabriela Leticia da Silva||
-|Geovanna Martins Bertuol||
-|Giulia de Godoi Silveira||
-|Giuseppe de Moraes Vieira||
-|Gustavo Ferelli||
-|Heitor Dorigan de Angeli||
-|Helena Politti Rossi||
-|Isabela Marchiori Ferreira||
-|Isabelle Caroline Vizeu de Salles||
-|Larissa Guarizo Tolloto||
-|Leandro Imenes de Oliveira||
-|Letícia Aparecida Pinto de Souza||
-|Liara Guarizo Tolloto||
-|Luana Gabrielle de Oliveira||
-|Marina Henrique Moretti||
-|Matheus Dorigan Paiato||
-|Maycon Silva Gonçalves de Lima||
-|Nicolas Augusto dos Reis Lira||
-|Otávio Augusto Barbosa||
-|Pedro Henrique Souza Guarizo||
-|Renan Pavan Fazullo||
-|Samyra Leite da Silva Ferreira||
-|Sara de Paula Souza||
-|Sofia Ohashi Faria||
-|Tobias Gabriel Bueno de Godoi||
-|Víctor Henrique Santana Alves||
-|Vitória Bueno da Silva||
+|Ana Beatriz Alves de Lima|4|
+|Bianca Giovedy Pagotto|3|
+|Breno Frazão Callegari|2|
+|Davi Cruz Oliveira|1|
+|Eduardo Moretti Varotti|1|
+|Gabriela Leticia da Silva|2|
+|Geovanna Martins Bertuol|3|
+|Giulia de Godoi Silveira|4|
+|Giuseppe de Moraes Vieira|4|
+|Gustavo Ferelli|3|
+|Heitor Dorigan de Angeli|2|
+|Helena Politti Rossi|1|
+|Isabela Marchiori Ferreira|1|
+|Isabelle Caroline Vizeu de Salles|1|
+|Larissa Guarizo Tolloto|2|
+|Leandro Imenes de Oliveira|2|
+|Letícia Aparecida Pinto de Souza|2|
+|Liara Guarizo Tolloto|3|
+|Luana Gabrielle de Oliveira|3|
+|Marina Henrique Moretti|3|
+|Matheus Dorigan Paiato|4|
+|Maycon Silva Gonçalves de Lima|4|
+|Nicolas Augusto dos Reis Lira|4|
+|Otávio Augusto Barbosa|1|
+|Pedro Henrique Souza Guarizo|1|
+|Renan Pavan Fazullo|2|
+|Samyra Leite da Silva Ferreira|2|
+|Sara de Paula Souza|3|
+|Sofia Ohashi Faria|4|
+|Tobias Gabriel Bueno de Godoi|4|
+|Víctor Henrique Santana Alves|1|
+|Vitória Bueno da Silva|2|

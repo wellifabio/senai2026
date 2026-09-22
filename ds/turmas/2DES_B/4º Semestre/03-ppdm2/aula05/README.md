@@ -7,7 +7,10 @@
 - Gratuito e Open Source
 - Tutorial que mostra uum mapa e obtém a latitude e longitude ao clicar em um ponto do mapa.
 
-## Apps de Exemplo utilizando Google Maps.
+## Flutter GPS [Tutorial](./gps.md)]
+Obter dados do sensor GPS do aparelho celular, útil com mapas
+
+## Apps de Exemplo utilizando Google Maps e GPS.
 ### - [Traçar trajeto](https://github.com/wellifabio/sesi_ppdm2_flutter_maps_tracar_trajeto_2026.git)
 Aplicativo que traça um trajeto do seu local atual até um ponto clicado no mapa
 ### - [Flutter Pedal](https://github.com/wellifabio/sesi_ppdm2_flutter_pedal_gps_2026.git)

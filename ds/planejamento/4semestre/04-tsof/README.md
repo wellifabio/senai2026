@@ -1,4 +1,4 @@
-#  TESTE DE SOFTWARE 3
+#  TESTE DE SOFTWARE
 
 |Objetivo:|
 |-|

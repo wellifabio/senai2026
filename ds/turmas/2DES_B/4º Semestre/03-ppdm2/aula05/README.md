@@ -10,6 +10,9 @@
 ## Flutter GPS [Tutorial](./gps.md)
 Obter dados do sensor GPS do aparelho celular, útil com mapas
 
+## Traçar rotas Google Maps [Tutorial](google_maps_rotas.md)
+- Tutorial para traçar rotas entre dois pontos no mapa
+
 ## Apps de Exemplo utilizando Google Maps e GPS.
 ### - [Traçar trajeto](https://github.com/wellifabio/sesi_ppdm2_flutter_maps_tracar_trajeto_2026.git)
 Aplicativo que traça um trajeto do seu local atual até um ponto clicado no mapa

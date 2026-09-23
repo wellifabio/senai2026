@@ -154,6 +154,23 @@ class _MapScreenState extends State<MapScreen> {
   }
 }
 ```
+## Obtenha a chave de API Directions API
+- Como obter e configurar a chave de API
+- Acesse o [Google Cloud Console](https://console.cloud.google.com/):
+  - Entre no Google Cloud Console com a sua conta Google.
+  - Crie ou selecione um projeto:
+    - No painel superior, clique em selecionar um projeto ou crie um novo projeto para o seu aplicativo.
+  - Ative as APIs necessárias:
+    - Vá no menu lateral em APIs e Serviços > Biblioteca.
+    - Pesquise e ative a **Directions API** (ou a *Routes API*, dependendo de qual você for usar no pacote).
+    - Ative também o Maps SDK for Android e o Maps SDK for iOS, caso vá exibir o mapa no seu app.
+- Gere a chave de API:
+  - Vá em APIs e Serviços > Credenciais.
+  - Clique em Criar Credenciais e selecione Chave de API (API Key).
+- Restrinja a sua chave (Recomendado):
+  - Clique na chave criada para editá-la.
+  - Em Restrições de aplicativos, selecione os aplicativos (Android/iOS) e adicione o nome do pacote e a assinatura SHA-1 (no Android) para proteger sua chave contra uso não autorizado.
+- Copie sua chave e API e cole no local indicado no códiogo.
 - Execute em um emulador
 ```bash
 flutter run

@@ -1,4 +1,6 @@
 ## Geolocalização GPS
+Obter dados do sensor GPS do aparelho celular.
+- Funciona também no navegador Google Chrome
 ### Passos para implementar a geolocalização.
 - 1 Adicionar a dependênciaAdicione o pacote no arquivo **pubspec.yaml** do seu projeto:
 ```bash

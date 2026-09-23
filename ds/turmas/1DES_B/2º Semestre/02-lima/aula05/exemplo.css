@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+body {
+    /* viewport width | viewport height */
+    width: 100vw;
+    height: 100vh;
+    background-color: yellow;
+
+    display: flex;
+    flex-direction: row; /*orientacao row ou column*/
+    /* align-items | justify-content */
+    align-items: center;
+    justify-content: space-evenly;
+
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #000;
+}
+
+/* #dois {
+    align-self: flex-end;
+}
+
+#tres {
+    align-self: flex-start;
+} */
+

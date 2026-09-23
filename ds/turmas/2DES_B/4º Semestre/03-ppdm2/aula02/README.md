@@ -15,7 +15,10 @@
 |Botões de controle de conteúdos em tela|ElevatedButton()|
 |Listas e / ou cards|ListView, Cards|
 
-## Contextualização
+### Tutorial [GPS](./geolocation.md)
+
+### Desafios práticos
+### Contextualização
 Com o intúito de nos capacitar a desenvolver pequenos aplicativos de uso local com alguns recursos nativos do framework Flutter, desenvolva os três aplicativos a seguir, como novos projetos.
 
 ### Desafio 01: [Caminhadas x calorias](https://github.com/wellifabio/senai_desafio_caminhadas_ui_mobile_persistencia_local_2026.git)

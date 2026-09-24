@@ -1,5 +1,54 @@
 # Aula07 - VPF01
-Verificação Prática Formativa
+## Verificação Prática Formativa
+
+### Capacidades Técnicas
+- 1 Identificar as características de banco de dados relacionais e não-relacionais
+- 2 Configurar o ambiente para utilização de banco de dados relacional
+- 3 Utilizar tipos de dados para definição dos atributos do banco de dados
+- 4 Elaborar diagramas de modelagem do banco de dados de acordo com a arquitetura definida
+- 5 Utilizar relacionamentos entre as tabelas do banco de dados
+- 6 Normalizar a estrutura do banco de dados
+- 7 Documentar a estrutura do banco de dados por meio de dicionário de dados
+
+### Capacidades Socioemocionais
+- 1 Demonstrar autogestão
+- 2 Demonstrar pensamento analítico
+- 3 Demonstrar inteligência emocional
+- 4 Demonstrar autonomia
+
+## Conhecimentos
+- 1 Sistema Gerenciador de Banco de Dados (SGBD)
+  - 1.1 Definição
+  - 1.2 Tipos
+    - 1.2.1 Relacional
+    - 1.2.2 Não relacional
+  - 1.3  Características
+  - 1.4  Estrutura
+    - 1.4.1 Tabela
+    - 1.4.2 Registro
+    - 1.4.3 Campo
+    - 1.4.4 Tipos de dados
+  - 1.5  Instalação e configuração
+- 2  Modelo relacional
+  - 2.1 Modelagem
+    - 2.1.1 Dicionário de dados
+    - 2.1.2 Modelo Entidade Relacionamento - MER
+    - 2.1.3 Diagrama Entidade Relacionamento - DER
+    - 2.1.4 Formas normais
+  - 2.2 SQL (Structured Query Language)
+    - 2.4  DDL (Data Definition Language)
+    - 2.4.1 CREATE DATABASE
+    - 2.4.2 DROP DATABASE
+    - 2.4.3 USE
+    - 2.4.4 CREATE TABLE
+    - 2.4.5 ALTER TABLE
+    - 2.4.6 DROP TABLE
+  - 2.6  DML (Data Manipulation Language)
+    - 2.6.1 INSERT
+    - 2.6.2 UPDATE
+    - 2.6.3 DELETE
+    - 2.6.4 SELECT
+    
 ## Contextualização
 Você presta serviços para uma empresa de desenvolvimento de softwares e foi designado para uma das quatro demandas de projeto, desenvolvimento e cadastro de testes de um banco de dados.
 - Verifique na abela anexa, qual tema você deve trabalhar

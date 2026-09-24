@@ -141,39 +141,3 @@ O SESI precisa de um sistema para registrar equipamentos ou locais e acompanhar 
 |Reositório no github com README.md conforme instruções de entrega|10|
 |Responder corretamente as questões do *[formuário de entrega](https://forms.gle/oRWteYCd2p1yn1Te9)*|30|
 |Total|100|
-
-## Anexo01: Tema designado
-|Aluno|Tema|
-|-|:-:|
-|Ana Beatriz Alves de Lima|4|
-|Bianca Giovedy Pagotto|3|
-|Breno Frazão Callegari|2|
-|Davi Cruz Oliveira|1|
-|Eduardo Moretti Varotti|1|
-|Gabriela Leticia da Silva|2|
-|Geovanna Martins Bertuol|3|
-|Giulia de Godoi Silveira|4|
-|Giuseppe de Moraes Vieira|4|
-|Gustavo Ferelli|3|
-|Heitor Dorigan de Angeli|2|
-|Helena Politti Rossi|1|
-|Isabela Marchiori Ferreira|1|
-|Isabelle Caroline Vizeu de Salles|1|
-|Larissa Guarizo Tolloto|2|
-|Leandro Imenes de Oliveira|2|
-|Letícia Aparecida Pinto de Souza|2|
-|Liara Guarizo Tolloto|3|
-|Luana Gabrielle de Oliveira|3|
-|Marina Henrique Moretti|3|
-|Matheus Dorigan Paiato|4|
-|Maycon Silva Gonçalves de Lima|4|
-|Nicolas Augusto dos Reis Lira|4|
-|Otávio Augusto Barbosa|1|
-|Pedro Henrique Souza Guarizo|1|
-|Renan Pavan Fazullo|2|
-|Samyra Leite da Silva Ferreira|2|
-|Sara de Paula Souza|3|
-|Sofia Ohashi Faria|4|
-|Tobias Gabriel Bueno de Godoi|4|
-|Víctor Henrique Santana Alves|1|
-|Vitória Bueno da Silva|2|

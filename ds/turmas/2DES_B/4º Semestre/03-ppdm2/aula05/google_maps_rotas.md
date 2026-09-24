@@ -158,6 +158,8 @@ class _MapScreenState extends State<MapScreen> {
 }
 
 ```
+
+
 ## Obtenha a chave de API Directions API
 - Como obter e configurar a chave de API
 - Acesse o [Google Cloud Console](https://console.cloud.google.com/):
@@ -181,3 +183,166 @@ flutter run
 ```
 ## Resultado
 O app abrirá um Mapa com uma rota taçada.
+
+
+## Outro exeplo de códiogo mais atual, com a própria chave do MAPS porém Ativando a conta de faturamento com Cartão
+```dart
+import 'package:flutter/material.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:flutter_polyline_points/flutter_polyline_points.dart';
+
+void main() => runApp(const MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(home: MapScreen());
+  }
+}
+
+class MapScreen extends StatefulWidget {
+  const MapScreen({super.key});
+
+  @override
+  State<MapScreen> createState() => _MapScreenState();
+}
+
+class _MapScreenState extends State<MapScreen> {
+  // 1. Chave da API do Google Cloud
+  final String googleApiKey = "SUA_CHAVE_DE_API_AKI_ATIVE_O_FATURAMENTO";
+
+  // 2. Pontos de Origem e Destino
+  static const LatLng _pontoOrigem = LatLng(
+    -23.55052,
+    -46.633308,
+  ); // São Paulo (Sé)
+  static const LatLng _pontoDestino = LatLng(
+    -23.55552,
+    -46.643308,
+  ); // Exemplo de destino próximo
+
+  // 3. Controladores e coleções do mapa
+  late GoogleMapController mapController;
+  bool _isMapReady = false;
+  final Map<PolylineId, Polyline> _polylines = {};
+  final Set<Marker> _markers = {};
+
+  @override
+  void initState() {
+    super.initState();
+    _addMarkers();
+    _getRoutePolyline();
+  }
+
+  // Adiciona os marcadores visuais de início e fim no mapa
+  void _addMarkers() {
+    _markers.add(
+      const Marker(
+        markerId: MarkerId('origem'),
+        position: _pontoOrigem,
+        infoWindow: InfoWindow(title: 'Origem'),
+      ),
+    );
+    _markers.add(
+      const Marker(
+        markerId: MarkerId('destino'),
+        position: _pontoDestino,
+        infoWindow: InfoWindow(title: 'Destino'),
+      ),
+    );
+  }
+
+  // Busca as coordenadas da rota e gera a linha
+  Future<void> _getRoutePolyline() async {
+    final polylinePoints = PolylinePoints(apiKey: googleApiKey);
+
+    try {
+      final result = await polylinePoints.getRouteBetweenCoordinatesV2(
+        request: RoutesApiRequest(
+          origin: PointLatLng(_pontoOrigem.latitude, _pontoOrigem.longitude),
+          destination: PointLatLng(
+            _pontoDestino.latitude,
+            _pontoDestino.longitude,
+          ),
+          travelMode: TravelMode.driving,
+        ),
+      );
+
+      if (result.primaryRoute?.polylinePoints case List<PointLatLng> points) {
+        final polylineCoordinates = points
+            .map((point) => LatLng(point.latitude, point.longitude))
+            .toList();
+
+        _generatePolyline(polylineCoordinates);
+
+        if (_isMapReady) {
+          final bounds = LatLngBounds(
+            southwest: LatLng(
+              _pontoOrigem.latitude < _pontoDestino.latitude
+                  ? _pontoOrigem.latitude
+                  : _pontoDestino.latitude,
+              _pontoOrigem.longitude < _pontoDestino.longitude
+                  ? _pontoOrigem.longitude
+                  : _pontoDestino.longitude,
+            ),
+            northeast: LatLng(
+              _pontoOrigem.latitude > _pontoDestino.latitude
+                  ? _pontoOrigem.latitude
+                  : _pontoDestino.latitude,
+              _pontoOrigem.longitude > _pontoDestino.longitude
+                  ? _pontoOrigem.longitude
+                  : _pontoDestino.longitude,
+            ),
+          );
+
+          mapController.animateCamera(CameraUpdate.newLatLngBounds(bounds, 48));
+        }
+      } else {
+        debugPrint(
+          'Erro ao buscar rota: ${result.errorMessage ?? 'Nenhuma rota encontrada'}',
+        );
+      }
+    } catch (e, stackTrace) {
+      debugPrint('Erro ao buscar rota: $e');
+      debugPrintStack(stackTrace: stackTrace);
+    }
+  }
+
+  // Cria o objeto Polyline e atualiza a tela
+  void _generatePolyline(List<LatLng> coordinates) {
+    PolylineId id = const PolylineId("rota_decorada");
+    Polyline polyline = Polyline(
+      polylineId: id,
+      color: Colors.blue, // Cor da linha da rota
+      points: coordinates,
+      width: 5, // Espessura da linha
+    );
+
+    setState(() {
+      _polylines[id] = polyline;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Traçando Rotas no Mapa')),
+      body: GoogleMap(
+        initialCameraPosition: const CameraPosition(
+          target: _pontoOrigem,
+          zoom: 14.5,
+        ),
+        markers: _markers,
+        polylines: Set<Polyline>.of(_polylines.values),
+        onMapCreated: (GoogleMapController controller) {
+          mapController = controller;
+          _isMapReady = true;
+        },
+      ),
+    );
+  }
+}
+
+```

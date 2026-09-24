@@ -75,7 +75,7 @@ class _MapScreenState extends State<MapScreen> {
   void initState() {
     super.initState();
     _addMarkers();
-    // _getRoutePolyline();
+    _getRoutePolyline();
   }
 
   // Adiciona os marcadores visuais de início e fim no mapa

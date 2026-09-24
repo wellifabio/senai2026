@@ -41,9 +41,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: MapScreen(),
-    );
+    return const MaterialApp(home: MapScreen());
   }
 }
 
@@ -56,11 +54,17 @@ class MapScreen extends StatefulWidget {
 
 class _MapScreenState extends State<MapScreen> {
   // 1. Chave da API do Google Cloud
-  final String googleApiKey = "SUA_CHAVE_API_AQUI";
+  final String googleApiKey = "SUA_CHAVE_DE_API_AQUI";
 
   // 2. Pontos de Origem e Destino
-  static const LatLng _pontoOrigem = LatLng(-23.55052, -46.633308); // São Paulo (Sé)
-  static const LatLng _pontoDestino = LatLng(-23.55552, -46.643308); // Exemplo de destino próximo
+  static const LatLng _pontoOrigem = LatLng(
+    -23.55052,
+    -46.633308,
+  ); // São Paulo (Sé)
+  static const LatLng _pontoDestino = LatLng(
+    -23.55552,
+    -46.643308,
+  ); // Exemplo de destino próximo
 
   // 3. Controladores e coleções do mapa
   late GoogleMapController mapController;
@@ -94,14 +98,18 @@ class _MapScreenState extends State<MapScreen> {
 
   // Busca as coordenadas da rota e gera a linha
   Future<void> _getRoutePolyline() async {
-    PolylinePoints polylinePoints = PolylinePoints();
+    PolylinePoints polylinePoints = PolylinePoints(
+      apiKey: googleApiKey,
+    );
 
     // Faz a requisição para a Directions API de forma simplificada
     PolylineResult result = await polylinePoints.getRouteBetweenCoordinates(
-      googleApiKey: googleApiKey,
       request: PolylineRequest(
         origin: PointLatLng(_pontoOrigem.latitude, _pontoOrigem.longitude),
-        destination: PointLatLng(_pontoDestino.latitude, _pontoDestino.longitude),
+        destination: PointLatLng(
+          _pontoDestino.latitude,
+          _pontoDestino.longitude,
+        ),
         mode: TravelMode.driving, // Modo de viagem (dirigindo, andando, etc.)
       ),
     );

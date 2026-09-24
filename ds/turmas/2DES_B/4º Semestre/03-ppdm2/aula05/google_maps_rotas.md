@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: MapScreen());
+    return MaterialApp(home: MapScreen());
   }
 }
 
@@ -54,7 +54,7 @@ class MapScreen extends StatefulWidget {
 
 class _MapScreenState extends State<MapScreen> {
   // 1. Chave da API do Google Cloud
-  final String googleApiKey = "SUA_CHAVE_DE_API_AQUI";
+  final String googleApiKey = "AIzaSyBPbLx2MIcbUacRcA7yFNT4vNNWKQtn8Uk";
 
   // 2. Pontos de Origem e Destino
   static const LatLng _pontoOrigem = LatLng(
@@ -75,7 +75,7 @@ class _MapScreenState extends State<MapScreen> {
   void initState() {
     super.initState();
     _addMarkers();
-    _getRoutePolyline();
+    // _getRoutePolyline();
   }
 
   // Adiciona os marcadores visuais de início e fim no mapa
@@ -98,9 +98,7 @@ class _MapScreenState extends State<MapScreen> {
 
   // Busca as coordenadas da rota e gera a linha
   Future<void> _getRoutePolyline() async {
-    PolylinePoints polylinePoints = PolylinePoints(
-      apiKey: googleApiKey,
-    );
+    PolylinePoints polylinePoints = PolylinePoints(apiKey: googleApiKey);
 
     // Faz a requisição para a Directions API de forma simplificada
     PolylineResult result = await polylinePoints.getRouteBetweenCoordinates(
@@ -146,12 +144,9 @@ class _MapScreenState extends State<MapScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Traçando Rotas no Mapa')),
+      appBar: AppBar(title: Text('Traçando Rotas no Mapa')),
       body: GoogleMap(
-        initialCameraPosition: const CameraPosition(
-          target: _pontoOrigem,
-          zoom: 14.5,
-        ),
+        initialCameraPosition: CameraPosition(target: _pontoOrigem, zoom: 14.5),
         markers: _markers,
         polylines: Set<Polyline>.of(_polylines.values),
         onMapCreated: (GoogleMapController controller) {
@@ -161,6 +156,7 @@ class _MapScreenState extends State<MapScreen> {
     );
   }
 }
+
 ```
 ## Obtenha a chave de API Directions API
 - Como obter e configurar a chave de API

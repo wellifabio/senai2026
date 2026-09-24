@@ -321,4 +321,5 @@ class _MapScreenState extends State<MapScreen> {
 
 ```
 ### Resulado
-![Print](./google_maps_rotas.png)
+|![Print](./google_maps_rotas.png)|Este app envia uma requisição com origem e destino para a API OSRM que responde com um vetor de ojetos com latitudes e longitudes, em seguida o google maps converte os dados e traça o trajeto nas ruas do mapa|
+|-|-|

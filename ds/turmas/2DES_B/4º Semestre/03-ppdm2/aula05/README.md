@@ -1,17 +1,42 @@
 # Aula05 - Mapas
 
+---
 ## Google Maps [Tutorial](./google_maps.md)
 - Tutorial que mostra uum mapa e obtém a latitude e longitude ao clicar em um ponto do mapa.
+### Atividade
+- 1 Crie o Projeto do tutorial.
+    - Teste no **Emulador** (Não funciona no navegador) e tire **print**
+    - Crie um ícone para o aplicativo
+    - Crie o arquivo APK e copie para a pasta `assets/`
+    - Envie para um repositório do github com o print no README.md
+---
 
 ## Flutter Map [Tutorial](./flutter_maps.md)
-- Gratuito e Open Source
-- Tutorial que mostra uum mapa e obtém a latitude e longitude ao clicar em um ponto do mapa.
+- Gratuito, Open Source e funciona no navegador (Google Chrome)
+- Tutorial que mostra um mapa e obtém a latitude e longitude ao clicar em um ponto do mapa.
+### Atividade
+- 1 Crie o Projeto do tutorial.
+    - Teste e tire **print**
+    - Crie um ícone para o aplicativo
+    - Crie o arquivo APK e copie para a pasta `assets/`
+    - Envie para um repositório do github com o print no README.md
+---
 
 ## Flutter GPS [Tutorial](./gps.md)
 Obter dados do sensor GPS do aparelho celular, útil com mapas
+### Atividade
+- 1 Crie o Projeto do tutorial.
+    - Apenas teste
 
 ## Traçar rotas Google Maps [Tutorial](google_maps_rotas.md)
 - Tutorial para traçar rotas entre dois pontos no mapa
+### Atividade
+- 1 Crie o Projeto do tutorial (Obtendo as rotas da API OSRM)
+    - Teste e tire **print**
+    - Crie um ícone para o aplicativo
+    - Crie o arquivo APK e copie para a pasta `assets/`
+    - Envie para um repositório do github com o print no README.md
+---
 
 ## Apps de Exemplo utilizando Google Maps, GPS, OSRM e Flutter Maps.
 ### - [Traçar trajeto Google MAPS](https://github.com/wellifabio/sesi_ppdm2_flutter_maps_tracar_trajeto_2026.git)

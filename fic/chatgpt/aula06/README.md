@@ -31,7 +31,7 @@ Criar um chatbot utilizando o Gemini, que seja capaz de responder a perguntas e 
 
 ## [Prompts para Chatbot com GEMINI](https://github.com/wellifabio/chatbot_gemini_eu_prof_2026.git)
 
-## Passos para Obter a Chave de API do Google Maps
+## Obter a Chave de API do GEMINI
 - 1 Acesse o [Google AI Studio](https://aistudio.google.com/prompts/new_chat).
 	- Faça Login com sua conta gmail.
 - 2 Abra a seção de chaves

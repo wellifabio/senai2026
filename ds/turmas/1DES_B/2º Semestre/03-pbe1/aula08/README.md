@@ -12,3 +12,5 @@ Os relacionamentos em diagramas de classe UML mostram como o código se organiza
 • **Associação**: Uma conexão geral onde objetos de uma classe conhecem e usam objetos de outra classe (ex.: uma Pessoa que usa um Carro).
 • **Agregação**: Um tipo de associação em que uma classe contém outra, mas elas podem existir de forma independente (ex.: um Time tem Jogadores).
 • **Composição**: Uma relação de "parte-todo" mais forte, onde a parte não existe sem o todo (ex.: uma Casa tem Cômodos; se a casa acaba, os cômodos deixam de existir no contexto).
+
+### [Tutorial para iniciar um novo backEnd](https://github.com/wellifabio/sesi_pbe1_aula05_times_api_2026/blob/main/tutorial_novo.md)

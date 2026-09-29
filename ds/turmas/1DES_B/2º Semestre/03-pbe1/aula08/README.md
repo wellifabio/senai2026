@@ -20,4 +20,79 @@ Os relacionamentos em diagramas de classe UML mostram como o código se organiza
 ## Atividades
 - 1 Conclua os CRUDs de clientes e pedidos desenvolvendo os controllers e rotas **alterar** e **excluir** no exemplo visto em aula.
     - Anexe print dos testes com o Tunder no README.md do seu repositório no Github.
-- 2 
+- 2 Acrescente uma nova coleção mockup JSON chamada `produtos.json` dentro da pasta `dados/`, desenvolva as rotas e controlers CRUD para esta coleçao ex:
+```json
+[
+    {
+        "id":1,
+        "nome":"Chia",
+        "preco":30
+    },
+    {
+        "id":1,
+        "nome":"Chia",
+        "preco":30
+    },
+]
+```
+![Produto DC](./imgs/dc_produto.png)
+- 3 Acrescente uma nova coleção mockup JSON chamada `itens.json` dentro da pasta `dados/`, desenvolva as rotas e controlers CRUD para esta coleçao ex:
+```json
+[
+    {
+        "id": 1,
+        "pedido_id": 1,
+        "produto_id": 1,
+        "preco": 30,
+        "quantidade": 2
+    },
+    {
+        "id": 2,
+        "pedido_id": 1,
+        "produto_id": 2,
+        "preco": 45,
+        "quantidade": 2
+    },
+    {
+        "id": 3,
+        "pedido_id": 2,
+        "produto_id": 1,
+        "preco": 30,
+        "quantidade": 1
+    },
+    {
+        "id": 4,
+        "pedido_id": 3,
+        "produto_id": 2,
+        "preco": 45,
+        "quantidade": 3
+    }
+]
+```
+![Item DC](./imgs/dc_item.png)
+- Calcule o subtotal neste controller
+- 4 Altere os dados em `dados/pedidos.json` conforme o diagrama de classe a seguir:
+<br>![Pedido DC](./imgs/dc_pedido.png)
+```json
+[
+    {
+        "id": 1,
+        "cliente_id": 1,
+        "data":"2026-09-29"
+    },
+    {
+        "id": 2,
+        "cliente_id": 2,
+        "data":"2026-09-29"
+    },
+    {
+        "id": 3,
+        "cliente_id": 3,
+        "data":"2026-09-29"
+    }
+]
+```
+- 5 Remova a função subtotais do controller `pedidos.js` e suas chamadas.
+#### Desafio
+Crie uma função chamada `calcTotais` que calcule o total de cada pedido e faça a chamada no CRUD listar.
+    - Teste com Thunder e anexe o print no README.md

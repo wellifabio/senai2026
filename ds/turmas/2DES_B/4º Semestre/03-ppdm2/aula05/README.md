@@ -53,4 +53,6 @@ Aplicativo de registros de passeios de bicicleta
 - Utiliza mapas para marcar o destino
 - Tira foto e registra os passeios armazenando os dados localmente
 
+---
+
 ## Desafios

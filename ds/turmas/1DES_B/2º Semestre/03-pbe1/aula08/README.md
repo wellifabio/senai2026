@@ -93,6 +93,8 @@ Os relacionamentos em diagramas de classe UML mostram como o código se organiza
 ]
 ```
 - 5 Remova a função subtotais do controller `pedidos.js` e suas chamadas.
+- Diagrama de Classes Completo
+<br>![UML DC](./imgs/uml_dc_pedidos.png)
 #### Desafio
 Crie uma função chamada `calcTotais` que calcule o total de cada pedido e faça a chamada no CRUD listar.
     - Teste com Thunder e anexe o print no README.md

@@ -54,7 +54,7 @@ Os relacionamentos em diagramas de classe UML mostram como o código se organiza
         "id":1,
         "nome":"Chia",
         "preco":30
-    },
+    }
 ]
 ```
 ![Produto DC](./imgs/dc_produto.png)

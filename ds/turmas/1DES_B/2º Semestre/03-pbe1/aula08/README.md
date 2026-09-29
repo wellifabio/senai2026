@@ -1,4 +1,28 @@
 # Aula08 - UML DC (Diagrama de Classes)
+
+### [Tutorial Novo backEnd MVC](https://github.com/wellifabio/sesi_pbe1_aula08_pedidos_mvc_uml_dc_2026/blob/main/docs/tutorial_mvc.md)
+
+### Capacidades Técnicas
+- 1 Utilizar o paradigma da programação orientada a objetos
+- 2 Elaborar diagramas de classe
+- 3 Aplicar técnicas de código limpo (clean code)
+- 4 Identificar as características de programação back-end em ambiente web
+- 5 Preparar o ambiente necessário ao desenvolvimento back-end para a plataforma web
+- 6 Definir os elementos de entrada, processamento e saída para a programação da aplicação web
+
+### Conhecimentos
+- 4 Programação orientada a objetos
+  - 4.1. Definição
+  - 4.2. Pacotes
+  - 4.3. Classes
+    - 4.3.1. Abstrata
+    - 4.3.2. Interna
+    - 4.3.3. Anônima
+    - 4.3.4. Atributos
+    - 4.3.5. Métodos
+    - 4.3.6. Modificadores de acesso (encapsulamento)
+
+## UML DC (Diagrama de Classes)
 - UML (Unified Modeling Language)
 - DC (Diagrama de Classes)
 ![UML](./imgs/dc.png)
@@ -14,8 +38,6 @@ Os relacionamentos em diagramas de classe UML mostram como o código se organiza
 • **Composição**: Uma relação de "parte-todo" mais forte, onde a parte não existe sem o todo (ex.: uma Casa tem Cômodos; se a casa acaba, os cômodos deixam de existir no contexto).
 
 ### [Exemplo: Pedidos MVC - Composição](https://github.com/wellifabio/sesi_pbe1_aula08_pedidos_mvc_uml_dc_2026.git)
-
-### [Tutorial para iniciar um novo backEnd](https://github.com/wellifabio/sesi_pbe1_aula08_pedidos_mvc_uml_dc_2026/blob/main/docs/tutorial_mvc.md)
 
 ## Atividades
 - 1 Conclua os CRUDs de clientes e pedidos desenvolvendo os controllers e rotas **alterar** e **excluir** no exemplo visto em aula.
@@ -95,6 +117,6 @@ Os relacionamentos em diagramas de classe UML mostram como o código se organiza
 - 5 Remova a função subtotais do controller `pedidos.js` e suas chamadas.
 - Diagrama de Classes Completo
 <br>![UML DC](./imgs/uml_dc_pedidos.png)
-#### Desafio
+## Desafio
 Crie uma função chamada `calcTotais` que calcule o total de cada pedido e faça a chamada no CRUD listar.
     - Teste com Thunder e anexe o print no README.md

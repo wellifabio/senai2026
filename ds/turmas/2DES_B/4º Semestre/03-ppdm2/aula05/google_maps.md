@@ -21,7 +21,7 @@ Antes de iniciar a codificação do App, obtenha uma **chave de API** do Google 
 - Certifique-se de habilitar o serviço de Maps e gerar uma chave de API para o seu projeto.
 
 ### Passos para Obter a Chave de API do Google Maps
-- Acesse o Google Cloud Console.
+- Acesse o [Google Cloud Console](https://console.cloud.google.com/).
 - Crie um projeto ou selecione um existente.
 - Ative a Maps SDK for Android na biblioteca de APIs.
 - Vá em Credenciais, clique em Criar Credenciais e selecione Chave de API.

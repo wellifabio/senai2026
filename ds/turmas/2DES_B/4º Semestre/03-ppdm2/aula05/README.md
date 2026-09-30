@@ -12,7 +12,7 @@
 ---
 
 ## Flutter Map [Tutorial](./flutter_maps.md)
-- Gratuito, Open Source e funciona no navegador (Google Chrome)
+- Gratuito, Open Source e **funciona no navegador** (Google Chrome)
 - Tutorial que mostra um mapa e obtém a latitude e longitude ao clicar em um ponto do mapa.
 ### Atividade
 - 1 Crie o Projeto do tutorial.
@@ -28,8 +28,14 @@ Obter dados do sensor GPS do aparelho celular, útil com mapas
 - 1 Crie o Projeto do tutorial.
     - Apenas teste
 
-## Traçar rotas Google Maps [Tutorial](google_maps_rotas.md)
-- Tutorial para traçar rotas entre dois pontos no mapa
+--- 
+
+## Traçar rotas
+### Google Maps [Tutorial](google_maps_rotas.md)
+- Tutorial para traçar rotas entre dois pontos no mapa com google maps, **Funciona no Emulador**
+### Google Maps [Tutorial](flutter_maps_rotas.md)
+- Tutorial para traçar rotas entre dois pontos no mapa com flutter maps, **Funciona no Navegador**
+
 ### Atividade
 - 1 Crie o Projeto do tutorial (Obtendo as rotas da API OSRM)
     - Teste e tire **print**

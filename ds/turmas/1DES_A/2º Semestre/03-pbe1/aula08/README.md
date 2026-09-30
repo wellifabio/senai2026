@@ -43,6 +43,9 @@ Os relacionamentos em diagramas de classe UML mostram como o código se organiza
 - 1 Conclua os CRUDs de clientes e pedidos desenvolvendo os controllers e rotas **alterar** e **excluir** no exemplo visto em aula.
     - Anexe print dos testes com o Tunder no README.md do seu repositório no Github.
 - 2 Acrescente uma nova coleção mockup JSON chamada `produtos.json` dentro da pasta `dados/`, desenvolva as rotas e controlers CRUD para esta coleçao ex:
+
+<table><tr><td>
+
 ```json
 [
     {
@@ -51,14 +54,23 @@ Os relacionamentos em diagramas de classe UML mostram como o código se organiza
         "preco":30
     },
     {
-        "id":2,
-        "nome":"Psyllium",
-        "preco":44.9
+        "id":1,
+        "nome":"Chia",
+        "preco":30
     }
 ]
 ```
+</td><td>
+
 ![Produto DC](./imgs/dc_produto.png)
+
+</td></tr></table>
+
+
 - 3 Acrescente uma nova coleção mockup JSON chamada `itens.json` dentro da pasta `dados/`, desenvolva as rotas e controlers CRUD para esta coleçao ex:
+
+<table><tr><td>
+
 ```json
 [
     {
@@ -91,10 +103,22 @@ Os relacionamentos em diagramas de classe UML mostram como o código se organiza
     }
 ]
 ```
+
+</td><td>
+
 ![Item DC](./imgs/dc_item.png)
+
+</td></tr></table>
+
 - Calcule o subtotal neste controller
 - 4 Altere os dados em `dados/pedidos.json` conforme o diagrama de classe a seguir:
-<br>![Pedido DC](./imgs/dc_pedido.png)
+
+<table><tr><td>
+
+![Pedido DC](./imgs/dc_pedido.png)
+
+</td><td>
+
 ```json
 [
     {
@@ -114,11 +138,75 @@ Os relacionamentos em diagramas de classe UML mostram como o código se organiza
     }
 ]
 ```
+</td></tr></table>
+
 - 5 Remova a função subtotais do controller `pedidos.js` e suas chamadas.
 - Diagrama de Classes Completo
     - 
 <br>![UML DC](./imgs/uml_dc_pedidos.png)
+- O diagrama apresenta dois relacionamentos de **composição**:
+    - O pedido é composto pelo cliente
+    - O Ítem é composto pelo Produto
+- E um relacionamento de **agregação**:
+    - O pedido possui no mínimo 1 e máximo N* ítens agregados
+
 ## Desafio
 Crie uma função chamada `calcTotais` que calcule o total de cada pedido e faça a chamada no CRUD listar.
     - Teste com Thunder e anexe o print no README.md
     - Faça commit com as alterações
+
+## Programando os relacionamentos com JavaScript
+- Com listas podemos utilizar o método **find** para composição e **filter** para agregação, conforme os exemplos a seguir:
+- Arquivo: `src/controlles/pedido.js`
+```js
+const pedidos = require("../../dados/pedidos.json")
+const clientes = require("../../dados/clientes.json")
+const itens = require("../../dados/itens.json")
+
+//Composição
+function comporCliente() {
+    pedidos.forEach(p => {
+        p.cliente = clientes.find(c => c.id == p.id)
+    })
+}
+
+//Agregação
+function agregarItens() {
+    pedidos.forEach(p => {
+        p.itens = itens.filter(item => item.pedido_id == p.id)
+    })
+}
+```
+- Arquivo: `src/controlles/pedido.js`
+```js
+const itens = require("../../dados/itens.json")
+const produtos = require("../../dados/produtos.json")
+
+//Composição
+function comporProduto() {
+    itens.forEach(item => {
+        item.produto = produtos.find(p => p.id == item.produto_id)
+    })
+}
+```
+### Outros exemplos de buscas e filtros
+Podemos usar os métodos **find** e **filter** para buscas conforme exemplos a seguir:
+```js
+const clientes = require("../../dados/clientes.json")
+
+const listar = (req, res) => {
+    res.json(clientes)
+}
+
+const buscarPorId = (req, res) => {
+    const filtrado = clientes.find(c => c.id == req.params.id)
+    if (filtrado) res.json(filtrado)
+    else res.status(404).json("Id não encontrado")
+}
+
+const buscarPorNome = (req, res) => {
+    const filtrados = clientes.filter(c => c.nome.toUpperCase().includes(req.params.nome.toUpperCase()))
+    if (filtrados.length > 0) res.json(filtrados)
+    else res.status(404).json("Nome não encontrado")
+}
+```

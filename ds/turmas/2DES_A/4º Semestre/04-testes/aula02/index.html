@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja SENAI - Teste de Caixa Branca</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h1>Loja SENAI</h1>
+      <p class="subtitle">Sistema de finalização de pedido</p>
+
+      <label for="produto">Produto</label>
+      <select id="produto">
+        <option value="notebook">Notebook - R$ 3000,00</option>
+        <option value="mouse">Mouse - R$ 80,00</option>
+        <option value="teclado">Teclado - R$ 150,00</option>
+      </select>
+
+      <label for="quantidade">Quantidade</label>
+      <input id="quantidade" type="number" min="1" value="1">
+
+      <label for="cupom">Cupom</label>
+      <input id="cupom" type="text" placeholder="Ex.: SENAI10">
+
+      <label for="frete">Frete</label>
+      <select id="frete">
+        <option value="normal">Normal - R$ 30,00</option>
+        <option value="expresso">Expresso - R$ 60,00</option>
+        <option value="retirada">Retirada na loja - Grátis</option>
+      </select>
+
+      <button id="calcular">Calcular pedido</button>
+
+      <div id="resultado" class="resultado">
+        <p>Preencha os dados e clique em calcular.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

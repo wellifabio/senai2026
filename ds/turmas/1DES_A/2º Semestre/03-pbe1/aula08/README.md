@@ -150,11 +150,6 @@ Os relacionamentos em diagramas de classe UML mostram como o código se organiza
 - E um relacionamento de **agregação**:
     - O pedido possui no mínimo 1 e máximo N* ítens agregados
 
-## Desafio
-Crie uma função chamada `calcTotais` que calcule o total de cada pedido e faça a chamada no CRUD listar.
-    - Teste com Thunder e anexe o print no README.md
-    - Faça commit com as alterações
-
 ## Programando os relacionamentos com JavaScript
 - Com listas podemos utilizar o método **find** para composição e **filter** para agregação, conforme os exemplos a seguir:
 - Arquivo: `src/controlles/pedido.js`
@@ -210,3 +205,8 @@ const buscarPorNome = (req, res) => {
     else res.status(404).json("Nome não encontrado")
 }
 ```
+
+## Desafio
+Crie uma função chamada `calcTotais` que calcule o total de cada pedido e faça a chamada no CRUD listar.
+    - Teste com Thunder e anexe o print no README.md
+    - Faça commit com as alterações

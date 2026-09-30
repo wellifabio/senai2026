@@ -222,28 +222,14 @@ A documentação deve iniciar com uma capa contendo as informações da atividad
 - Curso;
 - Unidade curricular;
 - Nome da atividade;
-- Nome do(s) aluno(s);
+- Nome do aluno;
 - Turma;
 - Professor;
 - Data.
 
 ---
 
-## 1. Identificação do Aluno e da Turma
-
-Apresente as informações dos responsáveis pelo desenvolvimento da atividade.
-
-Informe:
-
-- Nome do aluno ou integrantes do grupo;
-- Turma;
-- Unidade curricular;
-- Professor;
-- Data de realização da atividade.
-
----
-
-## 2. Contextualização sobre Teste de Caixa Branca
+## 1. Contextualização sobre Teste de Caixa Branca
 
 Apresente uma breve explicação sobre o que é o teste de caixa branca e qual é sua finalidade no desenvolvimento de software.
 
@@ -253,7 +239,7 @@ Também deve apresentar o código que será utilizado durante a atividade e expl
 
 ---
 
-## 3. Análise das Estruturas de Decisão
+## 2. Análise das Estruturas de Decisão
 
 Analise o código-fonte identificando as estruturas que influenciam o fluxo de execução.
 
@@ -270,7 +256,7 @@ Para cada estrutura identificada, explique qual condição está sendo avaliada 
 
 ---
 
-## 4. Fluxograma do Exemplo
+## 3. Fluxograma do Exemplo
 
 Represente visualmente o fluxo de execução do código por meio de um fluxograma.
 
@@ -290,7 +276,7 @@ O fluxograma deve estar relacionado diretamente ao código analisado, permitindo
 
 ---
 
-## 5. Casos de Teste
+## 4. Casos de Teste
 
 A partir da análise do código e dos caminhos identificados, desenvolva os casos de teste necessários para verificar o funcionamento do programa.
 
@@ -306,7 +292,7 @@ Os casos de teste devem contemplar os diferentes caminhos identificados na anál
 
 ---
 
-## 6. Resultados dos Testes
+## 5. Resultados dos Testes
 
 Execute os casos de teste definidos anteriormente e registre os resultados obtidos.
 
@@ -322,7 +308,7 @@ Quando necessário, inclua evidências da execução, como capturas de tela do p
 
 ---
 
-## 7. Análise dos Resultados
+## 6. Análise dos Resultados
 
 Após executar os testes, analise os resultados obtidos.
 
@@ -340,7 +326,7 @@ A análise deve relacionar os resultados obtidos com a estrutura do código e os
 
 ---
 
-## 8. Conclusão
+## 7. Conclusão
 
 Apresente uma conclusão sobre a atividade realizada.
 

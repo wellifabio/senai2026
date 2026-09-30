@@ -5,6 +5,7 @@
 - O `flutter_map` é uma excelente escolha para desenvolvedores Flutter que desejam adicionar funcionalidades de mapa aos seus aplicativos de forma rápida e fácil, sem a necessidade de depender de serviços pagos ou proprietários.
 
 ## Tutorial para obter Latitude e Longitude de um endereço
+- Iniciar um novo app/projeto flutter
 - Instalar as dependências necessárias no arquivo `pubspec.yaml`:
 ```yaml
 dependencies:

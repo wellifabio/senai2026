@@ -5,23 +5,20 @@
 - O `flutter_map` é uma excelente escolha para desenvolvedores Flutter que desejam adicionar funcionalidades de mapa aos seus aplicativos de forma rápida e fácil, sem a necessidade de depender de serviços pagos ou proprietários.
 
 ## Tutorial para obter Latitude e Longitude de um endereço
-- Iniciar um novo app/projeto flutter
-- Instalar as dependências necessárias no arquivo `pubspec.yaml`:
+- Iniciar um novo app/projeto flutter, nome sujerido `flutter_maps_nativo`
+- Instalar as dependências necessárias:
+  - Por linha de comando no terminal:
+```bash
+flutter pub add flutter_map latlong2
+flutter pub get
+```
+- O arquivo `pubspec.yaml` agregará um trecho semelhante ao abaixo:
 ```yaml
 dependencies:
   flutter_map: ^3.0.0
   latlong2: ^0.8.2
 ```
-- Por linha de comando:
-```bash
-flutter pub add flutter_map latlong2
-flutter pub get
-```
-- Ou Adicione o flutter_map e o latlong2 (pacote necessário para manipular coordenadas geográficas neste plugin) ao seu projeto. No terminal, execute:
-```bash
-flutter pub add flutter_map latlong2
-```
-O código a seguir obtem a latitude e longitude de um endereço local clicado no mapa.
+- O código a seguir obtem a latitude e longitude de um endereço local clicado no mapa.
 - Copie e cole no arquivo `lib/main.dart`
 ```dart
 import 'package:flutter/material.dart';

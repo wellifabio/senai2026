@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "nome":"Fulano da Silva",
+        "telefone":"(11) 1111-1111",
+        "email":"fulano@email.com"
+    },
+    {
+        "id":2,
+        "nome":"Beltrano da Silva",
+        "telefone":"(22) 2222-2222",
+        "email":"beltrano@email.com"
+    },
+    {
+        "id":3,
+        "nome":"Ciclano da Silva",
+        "telefone":"(33) 3333-3333",
+        "email":"ciclano@email.com"
+    }
+]

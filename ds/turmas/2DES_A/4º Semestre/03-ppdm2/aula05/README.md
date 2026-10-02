@@ -42,6 +42,9 @@ Obter dados do sensor GPS do aparelho celular, útil com mapas
     - Crie um ícone para o aplicativo
     - Crie o arquivo APK e copie para a pasta `assets/`
     - Envie para um repositório do github com o print no README.md
+
+### Flutter Maps Distância [Tutorial](./flutter_maps_rotas_distancia.md)
+- Mesmo tutorial acima com a adição de cálculo de distância entre os pontos do mapa.
 ---
 
 ## Apps de Exemplo utilizando Google Maps, GPS, OSRM e Flutter Maps.

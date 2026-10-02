@@ -1,5 +1,5 @@
 # Flutter Maps e API OSRM
-## Tutorial para traçar rotas entre dois pontos
+Tutorial para traçar rotas entre dois pontos e calcular a distância entre eles no mapa com flutter maps, **Funciona no Navegador**
 - Iniciar um novo app/projeto flutter, nome sujerido `flutter_rotas_nativo`
 - Instalar as dependências necessárias:
   - Por linha de comando no terminal:

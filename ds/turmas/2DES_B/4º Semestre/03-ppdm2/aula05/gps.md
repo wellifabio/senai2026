@@ -48,11 +48,7 @@ void main() {
 - Arquivo `lib/home.dart` utilizando a função para obter a localização, latitude e longitude:
 ```dart
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:geolocator/geolocator.dart';
-
-import 'splash.dart';
-import 'trajetos.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});

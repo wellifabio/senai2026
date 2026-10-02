@@ -15,6 +15,8 @@ flutter pub get
 - O arquivo `pubspec.yaml` agregará um trecho semelhante ao abaixo:
 ```yaml
 dependencies:
+  flutter:
+    sdk: flutter
   flutter_map: ^3.0.0
   latlong2: ^0.8.2
 ```

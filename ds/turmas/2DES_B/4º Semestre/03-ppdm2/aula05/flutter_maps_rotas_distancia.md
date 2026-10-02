@@ -29,6 +29,16 @@ import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:http/http.dart' as http;
 
+String formatarDistancia(double distanciaMetros) {
+  if (distanciaMetros < 1000) {
+    return '${distanciaMetros.round()} m';
+  }
+
+  final distanciaKm = distanciaMetros / 1000;
+  final casasDecimais = distanciaKm >= 10 ? 0 : 1;
+  return '${distanciaKm.toStringAsFixed(casasDecimais)} km';
+}
+
 void main() {
   runApp(MyApp());
 }
@@ -61,6 +71,7 @@ class _MapScreenOSMState extends State<MapScreenOSM> {
   final _pontoOrigem = LatLng(-22.7120000, -46.8170000); // SESI Amparo
   Set<Polyline> _Rotas = {};
   String mensagem = 'Destino: Clique em um ponto no mapa';
+  String distanciaTexto = 'Distância: --';
 
   @override
   Widget build(BuildContext context) {
@@ -73,6 +84,7 @@ class _MapScreenOSMState extends State<MapScreenOSM> {
               'Origem: @${_pontoOrigem.latitude}, ${_pontoOrigem.longitude}',
             ),
             Text(mensagem),
+            Text(distanciaTexto),
             Expanded(
               child: FlutterMap(
                 options: MapOptions(
@@ -83,6 +95,7 @@ class _MapScreenOSMState extends State<MapScreenOSM> {
                       _pontoClicado = latLng;
                       mensagem =
                           'Destino: @${latLng.latitude}, ${latLng.longitude}';
+                      distanciaTexto = 'Distância: calculando...';
                       buscarRota(_pontoOrigem, latLng);
                     });
                   },
@@ -142,6 +155,8 @@ class _MapScreenOSMState extends State<MapScreenOSM> {
     if (response.statusCode == 200) {
       final data = jsonDecode(response.body);
       final coords = data['routes'][0]['geometry']['coordinates'] as List;
+      final distanciaMetros =
+          (data['routes'][0]['distance'] as num?)?.toDouble() ?? 0.0;
 
       final pontos = coords.map((c) {
         return LatLng(c[1].toDouble(), c[0].toDouble());
@@ -151,12 +166,16 @@ class _MapScreenOSMState extends State<MapScreenOSM> {
         _Rotas = {
           Polyline(points: pontos, color: Colors.blue, strokeWidth: 5.0),
         };
+        distanciaTexto = 'Distância: ${formatarDistancia(distanciaMetros)}';
+      });
+    } else {
+      setState(() {
+        distanciaTexto = 'Distância: indisponível';
       });
     }
   }
 }
-
 ```
 ### Resultado
-|![Print](./flutter_maps_rotas1.png)|![Print](./flutter_maps_rotas2.png)|Este app envia uma requisição com origem e destino para a API OSRM que responde com um vetor de ojetos com latitudes e longitudes, em seguida o google maps converte os dados e traça o trajeto nas ruas do mapa|
-|-|-|-|
+|![Print](./flutter_maps_rotas_distancia.png)|Este app envia uma requisição com origem e destino para a API OSRM que responde com um vetor de ojetos com latitudes e longitudes, em seguida o google maps converte os dados e traça o trajeto nas ruas do mapa, calculando também a distância em metros, km ...|
+|-|-|

@@ -1,5 +1,6 @@
 # Aula05 - Mapas
 
+## Update Flutter - [Instalar](./update_flutter.exe)
 ---
 ## Google Maps [Tutorial](./google_maps.md)
 - Tutorial que mostra uum mapa e obtém a latitude e longitude ao clicar em um ponto do mapa.

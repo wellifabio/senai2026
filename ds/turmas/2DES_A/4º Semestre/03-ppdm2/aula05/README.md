@@ -33,7 +33,7 @@ Obter dados do sensor GPS do aparelho celular, útil com mapas
 ## Traçar rotas
 ### Google Maps [Tutorial](google_maps_rotas.md)
 - Tutorial para traçar rotas entre dois pontos no mapa com google maps, **Funciona no Emulador**
-### Google Maps [Tutorial](flutter_maps_rotas.md)
+### Flutter Maps [Tutorial](flutter_maps_rotas.md)
 - Tutorial para traçar rotas entre dois pontos no mapa com flutter maps, **Funciona no Navegador**
 
 ### Atividade

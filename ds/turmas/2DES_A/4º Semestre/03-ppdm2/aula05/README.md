@@ -61,4 +61,3 @@ Aplicativo de registros de passeios de bicicleta
 
 ---
 
-## Desafios

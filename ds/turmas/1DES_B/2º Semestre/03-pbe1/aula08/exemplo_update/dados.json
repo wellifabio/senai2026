@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "nome":"fulano da silva",
+        "endereco":"Rua Sem Saida, 123",
+        "cidade":"Fulanolandia"
+    },
+    {
+        "id":2,
+        "nome":"ciclano da silva",
+        "endereco":"Rua das Avenidas, 123",
+        "cidade":"Fulanolandia"
+    },
+    {
+        "id":3,
+        "nome":"beltrano da silva",
+        "endereco":"Av. Das Ruas, 123",
+        "cidade":"Fulanolandia"
+    }
+]

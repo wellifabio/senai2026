@@ -1,3 +1,5 @@
+#  Atualização VSCode = [Instalar](./update_vscode.exe)
+
 # LINGUAGEM DE MARCACAO
 
 |Objetivo:|

@@ -12,3 +12,9 @@
 ### [Portal educacional](https://pess.sesisenaispedu.org.br/)
 ### Lista de e-mails
 ![E-mails](./emails.png)
+
+## Aula
+- Acessar o [Outlook.com](https://outlook.live.com/mail/)
+- Entrar
+- Email e senha
+- Pontinhos - Excel

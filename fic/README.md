@@ -1,6 +1,7 @@
 # FIC - Formação Inicial ou Continuada
 Cursos de curta duração
 - [Diário FIC](https://diariofic.sp.senai.br/)
+- Secretaria Digital **[Certificados](https://secretariadigital.sp.senai.br/WebForms/Login.aspx?ReturnUrl=%2f)**
 ## Tipos de curso
 - Formação Inicial
 - Aperfeiçoamento Proficional

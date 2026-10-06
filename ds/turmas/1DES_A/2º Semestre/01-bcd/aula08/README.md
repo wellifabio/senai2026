@@ -128,3 +128,38 @@ select date_add(now(),interval 72 hour);
 select date_sub(now(),interval 10 day);
 select date_sub(now(),interval 72 hour);
 ```
+
+## Subconsultas e alias (apelido)
+- Juntar cliente com telefone
+```sql
+select *, (
+    select t.numero from telefone t
+    where t.id_cliente = c.id limit 1)
+from cliente c;
+
+select c.nome, c.cep, (
+    select t.numero from telefone t
+    where t.id_cliente = c.id limit 1)
+from cliente c;
+```
+
+## JOIN (Juntar)
+- Vamos juntar cliente com telefone
+```sql
+select * from cliente join telefone;
+```
+- O comando acima seria um full join, todas as combinações possíveis
+- left join, rigth join ou inner join
+```sql
+select * from cliente inner join telefone;
+select * from cliente left join telefone on cliente.id = telefone.id_cliente;
+select * from cliente c left join telefone t on c.id = t.id_cliente;
+select * from cliente c right join telefone t on c.id = t.id_cliente;
+select * from cliente c inner join telefone t on c.id = t.id_cliente;
+```
+
+## Atividades 01
+- 1 Junte os pedidos com seus respectivos produtos
+- 2 Junte os clientes com seus respectivos pedidos
+- 3 Mostre somente os pedidos junto com o cliente número 1
+- 4 Mostre somente os ultimos 2 pedidos e seus respectivos produtos

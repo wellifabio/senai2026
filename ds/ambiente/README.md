@@ -13,6 +13,9 @@ Acesse seu **e-mail educacional**, baixe e instale o **office**
 - [XAMPP](https://www.apachefriends.org/pt_br/index.html)
     - Baixar (XAMPP para Windows)
         - NNF - Next,  Next, Finish
+- [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
+    - Baixar (Windows (x86, 64-bit), MSI Installer)
+        - NNF - Next,  Next, Finish
 - [Git For Windows](https://git-scm.com/install/windows)
     - Windows (Click here to download)
         - NNF - Next,  Next, Finish

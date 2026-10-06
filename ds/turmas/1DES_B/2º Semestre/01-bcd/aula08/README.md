@@ -19,6 +19,6 @@
 |Hugo Silva Alves|13904-452|1010|BL10 AP14|celular: 19-54195-3946, residencial: 19-09467-9337|
 |Valter Martins|13904-071|1245||celular: 19-85553-5217|
 |Antônio Martins|13905-520|2345||celular: 19-76827-0808|
-|Zélia Júnior|13901-329|13||celular: 19-03094-9372,19-87797-0571, comercial: 19-06019-6601|
+|Zélia Júnior|13901-329|13||celular: 19-03094-9372, residencial: 19-87797-0571, comercial: 19-06019-6601|
 |Evandro Martins de Oliveira|13905-682|17|BL12 AP44|celular: 19-53922-8414|
 

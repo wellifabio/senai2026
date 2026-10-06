@@ -57,3 +57,36 @@ insert into Telefone (id_cliente, tipo, numero) values
 (13, "celular", "19-53922-8414");
 select * from telefone;
 ```
+
+## Queries
+- 1 Mostrar apenas os primeiros 10 clientes;
+```sql
+SELECT * FROM cliente LIMIT 10;
+```
+- 2 Organizar por
+```sql
+SELECT * FROM cliente ORDER BY id;
+SELECT * FROM cliente ORDER BY id desc;
+SELECT * FROM cliente ORDER BY nome;
+SELECT * FROM cliente ORDER BY nome desc;
+```
+- 3 Mostrar somente os ultimos 10 clientes;
+```sql
+select * from cliente order by id desc limit 10;
+```
+- 4 Mostrar somente as colunas nome e cep de todos os clientes;
+```sql
+select nome, cep from cliente;
+```
+- 4 Mostrar somente as colunas nome e cep dos clientes que tenham "Silva" no sobrenome
+```sql
+select nome, cep from cliente where id = 1;
+select nome, cep from cliente where id = 1 or id = 9;
+select nome, cep from cliente where nome = "Ana Maria Silva";
+select nome, cep from cliente where nome = "ana maria silva";
+select nome, cep from cliente where nome = "ana maria silva" or nome = "hugo silva alves";
+select nome, cep from cliente where nome like "%silva%";
+```
+
+
+

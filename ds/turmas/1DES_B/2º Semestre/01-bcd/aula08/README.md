@@ -59,11 +59,11 @@ select * from telefone;
 ```
 
 ## Queries
-- 1 Mostrar apenas os primeiros 10 clientes;
+- 1 Mostrar apenas os primeiros 10 clientes // **limit**;
 ```sql
 SELECT * FROM cliente LIMIT 10;
 ```
-- 2 Organizar por
+- 2 Organizar por // **order by** com ou sen **desc**
 ```sql
 SELECT * FROM cliente ORDER BY id;
 SELECT * FROM cliente ORDER BY id desc;
@@ -78,15 +78,90 @@ select * from cliente order by id desc limit 10;
 ```sql
 select nome, cep from cliente;
 ```
-- 4 Mostrar somente as colunas nome e cep dos clientes que tenham "Silva" no sobrenome
+- 5 Mostrar somente as colunas nome e cep dos clientes que tenham "Silva" no sobrenome // **where** permite **or** (ou), **and** (e)
 ```sql
 select nome, cep from cliente where id = 1;
 select nome, cep from cliente where id = 1 or id = 9;
 select nome, cep from cliente where nome = "Ana Maria Silva";
 select nome, cep from cliente where nome = "ana maria silva";
 select nome, cep from cliente where nome = "ana maria silva" or nome = "hugo silva alves";
+-- termina com silva
+select nome, cep from cliente where nome like "%silva";
+-- inicia com silva
+select nome, cep from cliente where nome like "silva%";
+-- possui silva em qualquer lugar
 select nome, cep from cliente where nome like "%silva%";
 ```
+- 6 Todos os clientes que não possuem "silva" no nome // **not**
+```sql
+select * from cliente where nome not like "%silva%";
+```
 
+## Funções nativas
+- curdate(), curtime(), now()
+```sql
+select curdate();
+select curtime();
+select now();
+```
+### formulas
+- Operadores aritméticos e lógicos
+```sql
+select 10 + 10;
+select 10 + 10 as soma;
+select 10 * 10 as "multiplicação";
+select 10 - 10 as "subtração";
+select 10 / 10 as "divisão";
+select 10 > 10 as Booleano;
+select 10 > 9 as Booleano;
+```
+### Outras funções
+- datediff() diferença de datas em dias
+```sql
+select datediff("2026-10-06","2026-10-03");
+select datediff(now(),"1980-09-08");
+select truncate(datediff(now(),"1980-09-08") / 365, 0);
+select floor(datediff(now(),"1980-09-08") / 365);
+select round(datediff(now(),"1980-09-08") / 365,1);
+```
+- date_add() date_sub
+```sql
+select date_add(now(),interval 10 day);
+select date_add(now(),interval 72 hour);
+select date_sub(now(),interval 10 day);
+select date_sub(now(),interval 72 hour);
+```
+## Subconsultas e alias (apelido)
+- Juntar cliente com telefone
+```sql
+select *, (
+    select t.numero from telefone t
+    where t.id_cliente = c.id limit 1)
+from cliente c;
 
+select c.nome, c.cep, (
+    select t.numero from telefone t
+    where t.id_cliente = c.id limit 1)
+from cliente c;
+```
 
+## JOIN (Juntar)
+- Vamos juntar cliente com telefone
+```sql
+select * from cliente join telefone;
+```
+- O comando acima seria um full join, todas as combinações possíveis
+- left join, rigth join ou inner join
+```sql
+select * from cliente inner join telefone;
+select * from cliente left join telefone on cliente.id = telefone.id_cliente;
+select * from cliente c left join telefone t on c.id = t.id_cliente;
+select * from cliente c right join telefone t on c.id = t.id_cliente;
+select * from cliente c inner join telefone t on c.id = t.id_cliente;
+```
+
+## Atividades
+- 1 Junte os pedidos com seus respectivos produtos
+- 2 Junte os clientes com seus respectivos pedidos
+- 3 Mostre somente os pedidos junto com o cliente número 1
+- 4 Mostre somente os ultimos 2 pedidos e seus respectivos produtos

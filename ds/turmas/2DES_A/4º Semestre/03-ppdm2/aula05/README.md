@@ -85,5 +85,5 @@ Aplicativo de registros de passeios de bicicleta
 
 |Entregas|
 |-|
-|Publique em um repositório do **GitHub**, contendo o código-fonte completo do aplicativo, incluindo todas as dependências e instruções para execução. Além disso, deve ser incluído um arquivo README.md com uma breve descrição, tecnologias utilizadas, **Print das telas** e um link para baixar o **arquivo.apk**|
+|Publique em um repositório do **GitHub**, contendo o código-fonte completo do aplicativo, incluindo todas as dependências e instruções para execução. Além disso, deve ser incluído um arquivo README.md com uma breve descrição, tecnologias utilizadas, **Print das telas** e um link para baixar o **[arquivo.apk](../aula02/README.md)**|
 |Apresente o projeto ao instrutor, executando em um dos aparelhos de celular disponibilizados pelo **SESI**|

@@ -186,4 +186,78 @@ module.exports = connection
 ```
 - Edite o arquivo `´src/controllers/usuario.js`
 ```javascript
+const con = require('../db')
+
+const cadastrar = (req, res) => {
+    const { nome, email, senha } = req.body
+    try {
+        const query = 'INSERT INTO usuario (nome, email, senha) VALUES (?, ?, password(?));'
+        con.query(query, [nome, email, senha], (err, results) => {
+            if (err) {
+                console.error(err)
+                res.status(500).json({ error: 'Erro ao cadastrar usuário' })
+            } else {
+                const novoUsuario = req.body
+                novoUsuario.id = results.insertId
+                res.status(201).json({ message: 'Usuário cadastrado com sucesso', user: novoUsuario })
+            }
+        })
+    } catch (error) {
+        console.error(error)
+        res.status(400).json({ error: 'Erro ao cadastrar usuário', details: 'Informe { nome, email, senha }' })
+    }
+}
+
+const listar = (req, res) => {
+    const query = 'SELECT * FROM usuario;'
+    con.query(query, (err, results) => {
+        if (err) {
+            console.error(err)
+            res.status(500).json({ error: 'Erro ao buscar usuários' })
+        } else {
+            res.json(results)
+        }
+    })
+}
+
+module.exports = {
+    cadastrar,
+    listar
+}
 ```
+- Edite o arquivo `src/routes.js` para definir as rotas da aplicação:
+```javascript
+const express = require("express")
+const router = express.Router()
+
+const Usuario = require('./controllers/usuario')
+
+const rotaInicial = (req, res) => {
+    res.json("Back-end Eventos Climáticos respondendo")
+}
+
+router.get('/',rotaInicial)
+router.post('/usuarios', Usuario.cadastrar)
+router.get('/usuarios', Usuario.listar)
+
+module.exports = router
+```
+#### Realizar teste unitário com o Thunder Client
+- Instale a extensão **Thunder Client** no VS Code.
+- Abra o Thunder Client e crie uma nova requisição POST para cadastrar um usuário:
+    - URL: `http://localhost:3000/usuarios`
+    - Body (JSON):
+```json
+{
+    "nome": "Carlos Pereira",
+    "email": "carlos.pereira@example.com",
+    "senha": "senha123"
+}
+```
+- Clique em **Send** e verifique se o usuário foi cadastrado com sucesso.
+- Crie uma nova requisição GET para listar todos os usuários:  
+    - URL: `http://localhost:3000/usuarios`
+- Clique em **Send** e verifique se a lista de usuários é retornada corretamente.
+
+## Implemente os dois CRUDs listar e cadastrar para a tabela `evento` seguindo o mesmo padrão utilizado para a tabela `usuario`.
+- Mostre o resultado dos testes para o professor, incluindo prints das requisições e respostas do Thunder Client. 

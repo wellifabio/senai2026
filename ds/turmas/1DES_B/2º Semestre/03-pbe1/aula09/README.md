@@ -272,6 +272,7 @@ module.exports = router
         - instruções para testar
         - e prints das requisições e respostas do Thunder Client, salvas em `docs/prints`.
 - Mostre o repositorio para o professor **VISTAR**
+- [Exemplo de entrega](https://github.com/wellifabio/sesi_pbe1_aula09_eventos_climaticos_2026.git)
 
 ## Desafio - Para a proxima aula
 - 1 Implemente os **CRUDs** de `atualizar` e `excluir` para as tabelas `usuario` e `evento`.

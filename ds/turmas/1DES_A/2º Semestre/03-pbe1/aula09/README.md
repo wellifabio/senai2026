@@ -107,9 +107,9 @@ Conectar o back-end da aplicação web com um banco de dados relacional, utiliza
     - criar um banco de dados chamado `registos_climaticos` (DDL)
     - e popular com os dados fornecidos para as tabelas `Usuários` e `Eventos` (DML).
 ```sql
-drop database if exists registos_climaticos;
-create database registos_climaticos;
-use registos_climaticos;
+drop database if exists registros_climaticos;
+create database registros_climaticos;
+use registros_climaticos;
 -- DDL para criar as tabelas do banco de dados
 create table usuario (
     id int not null auto_increment primary key,
@@ -168,3 +168,22 @@ eventos_climaticos/
 ```
 - Siga este **[tutorial](https://github.com/wellifabio/sesi_pbe1_aula08_pedidos_mvc_uml_dc_2026/blob/main/docs/tutorial_mvc.md)** para implementar o back-end da aplicação web
 ##### Programando os controllers e rotas
+- Após concluir o tutorial e iniciar um novo Back-end MVC, instale a dependência `mysql` para conectar o Node.js com o banco de dados MariaDB.
+```bash
+npm install mysql
+```
+- Crie um arquivo de conexão com o banco de dados chamado `db.js` na pasta `src`:
+```javascript
+const mysql = require('mysql')
+
+const connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    database: 'registros_climaticos'
+})
+
+module.exports = connection
+```
+- Edite o arquivo `´src/controllers/usuario.js`
+```javascript
+```

@@ -22,7 +22,7 @@ Conectar o back-end da aplicação web com um banco de dados relacional, utiliza
 ### Sistema: Registro de eventos climáticos
 - Duas tabelas:
 - Usuários: id, nome, email, senha
-- Eventos: id, cidade, tipoEvento, temperaturaMaxima, data, nivelImpacto, usuarioId (chave estrangeira referenciando a tabela Usuários)
+- Eventos: id, cidade, tipoEvento, temperaturaMaxima, data, nivelImpacto (Baixo, Médio, Alto), usuarioId (chave estrangeira referenciando a tabela Usuários)
 
 ### Exemplo de dados para a tabela Usuários:
 ```json

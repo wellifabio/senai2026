@@ -144,6 +144,7 @@ insert into evento (usuarioId, cidade, tipoEvento, temperaturaMaxima, data, nive
 
 select * from usuario;
 select * from evento;
+
 ```
 ### 2 Back-end com Node.js
 #### Documentação

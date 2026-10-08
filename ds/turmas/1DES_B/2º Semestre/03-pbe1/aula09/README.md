@@ -119,14 +119,15 @@ create table usuario (
 );
 create table evento (
     id int not null auto_increment primary key,
-    clienteId int not null,
+    usuarioId int not null,
     cidade varchar(100) not null,
+    tipoEvento varchar(100) not null,
     temperaturaMaxima decimal(10,2) not null,
-    data Date default(now()) not null,
+    data Date default(curdate()) not null,
     nivelImpacto enum('Baixo', 'Médio', 'Alto') default('Médio') not null
 );
 alter table evento add constraint fk_registra
-foreign key (clienteId) references usuario(id);
+foreign key (usuarioId) references usuario(id);
 
 -- DML para inserir dados de exemplo nas tabelas
 insert into usuario (nome, email, senha) values

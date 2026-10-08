@@ -98,7 +98,19 @@ Conectar o back-end da aplicação web com um banco de dados relacional, utiliza
 ]
 ```
 ## Atividades práticas:
+### 1 Banco de dados relacional
+#### Documentação
+![Diagrama de Entidade-Relacionamento](./mer_der_conceitual.png)
+#### Script SQL
 - Crie uma pasta na área de trabalho chamada `eventos_climaticos` e dentro dela crie uma outra pasta chamada `db`.
 - Na pasta `db`, criar um script para chamado `script.sql` para:
     - criar um banco de dados chamado `registos_climaticos` (DDL)
     - e popular com os dados fornecidos para as tabelas `Usuários` e `Eventos` (DML).
+### 2 Back-end com Node.js
+#### Documentação
+![Diagrama de classes](./uml_dc.png)
+#### Desenvolvimento JavaScript
+- Ainda na pasta `eventos_climaticos`, crie um arquivo `server.js` para implementar o back-end da aplicação web, utilizando Node.js e o framework Express.
+    - Crie uma pasta `src` e dentro dela crie uma pasta `controllers` para implementar os controladores da aplicação.
+    - crie o arquivo `routes.js` para definir as rotas da aplicação.
+    

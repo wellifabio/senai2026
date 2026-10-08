@@ -260,4 +260,20 @@ module.exports = router
 - Clique em **Send** e verifique se a lista de usuários é retornada corretamente.
 
 ## Implemente os dois CRUDs listar e cadastrar para a tabela `evento` seguindo o mesmo padrão utilizado para a tabela `usuario`.
-- Mostre o resultado dos testes para o professor, incluindo prints das requisições e respostas do Thunder Client. 
+- Mostre o resultado dos testes para o professor, incluindo prints das requisições e respostas do Thunder Client.
+- Envie o projeto para o github em um repositorio chamado `sesi_pbe1_aula09_eventos_climaticos_2026`.
+    - Crie uma pasta `docs` e dentro dela salve as imagens do MER_DER e do Diagrama de Classes.
+    - Crie um README.md com:
+        - o título do projeto,
+        - descrição (Mostrando o DER e o Diagrama de Classes),
+        - tecnologias utilizadas,
+        - instruções para testar
+        - e prints das requisições e respostas do Thunder Client, salvas em `docs/prints`.
+
+## Desafio
+- Implemente os **CRUDs** de atualizar e excluir para as tabelas `usuario` e `evento`.
+- Implemente uma rota `post` de **login** e uma funcionalidade de **login** no conroller `usuario.js` que receba { **email**, **senha** } cadastrados e retorne os dados do usuário se os credenciais forem válidos, se não retorne um erro 404.
+
+## Entregas
+- Repositório no Github chamado `sesi_pbe1_aula09_eventos_climaticos_2026`
+

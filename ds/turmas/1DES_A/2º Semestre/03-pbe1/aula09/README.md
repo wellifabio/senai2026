@@ -166,3 +166,5 @@ eventos_climaticos/
 │   ├── routes.js
 └── server.js
 ```
+- Siga este **[tutorial](https://github.com/wellifabio/sesi_pbe1_aula08_pedidos_mvc_uml_dc_2026/blob/main/docs/tutorial_mvc.md)** para implementar o back-end da aplicação web
+##### Programando os controllers e rotas

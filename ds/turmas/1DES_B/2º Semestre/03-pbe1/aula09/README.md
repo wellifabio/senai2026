@@ -104,5 +104,5 @@ Conectar o back-end da aplicação web com um banco de dados relacional, utiliza
 #### Script SQL
 - Crie uma pasta na área de trabalho chamada `eventos_climaticos` e dentro dela crie uma outra pasta chamada `db`.
 - Na pasta `db`, criar um script chamado `script.sql` para:
-    - criar um banco de dados chamado `registos_climaticos` (DDL)
+    - criar um banco de dados chamado `registros_climaticos` (DDL)
     - e popular com os dados fornecidos para as tabelas `Usuários` e `Eventos` (DML).

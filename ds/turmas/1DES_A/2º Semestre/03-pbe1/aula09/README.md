@@ -154,3 +154,15 @@ select * from evento;
 - Ainda na pasta `eventos_climaticos`, crie um arquivo `server.js` para implementar o back-end da aplicação web, utilizando Node.js e o framework Express.
     - Crie uma pasta `src` e dentro dela crie uma pasta `controllers` para implementar os controladores da aplicação.
     - crie o arquivo `routes.js` para definir as rotas da aplicação.
+    - Crie a seguinte estrutura de pastas e arquivos:
+```
+eventos_climaticos/
+├── db/
+│   └── script.sql
+├── src/
+│   ├── controllers/
+│   │   └── evento.js
+|   |   └── usuario.js
+│   ├── routes.js
+└── server.js
+```

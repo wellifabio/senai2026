@@ -65,6 +65,7 @@ flutter pub get
 ```
 - 5 Crie uma pasta `assets` em seu aplicativo
   - baixe o [icone.png](./icone.png) do aplicativo dentro dela
+  - dentro de assets crie uma pasta fonts `assets/fonts` e baixe a font [PatrickHand-Regular.ttf](./PatrickHand-Regular.ttf) para dentro dela
   - acrescente o caminho no `pubspec.yaml` conforme modelo a seguir:
 ```yaml
 dependencies:
@@ -89,6 +90,10 @@ flutter:
   uses-material-design: true
   assets:
     - assets/
+  fonts:
+    - family: PatrickHand
+      fonts:
+        - asset: assets/fonts/PatrickHand-Regular.ttf
 ```
 - 6 Execute os seguinte comando no terminal do VsCode para configurar o logo:
 ```bash

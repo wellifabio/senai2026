@@ -77,7 +77,11 @@ flutter pub run flutter_launcher_icons:main
 
 ## Gerar APK
 O arquivo **.apk** serve para testar o aplicativo em dispositivo **Android**
-- Ao concluir uma parte do seu aplicativo, execute o comando a seguir no terminal do VsCode:
+- 1 Ao concluir uma parte do seu aplicativo, certifique-se de acrescentar a permissão de uso de internet com comando a seguir no arquivo `./android/app/src/main/AndroidManifest.xml` antes da tag `<application>`
+```xml
+<uses-permission android:name="android.permission.INTERNET"/>
+```
+- Execute o comando a seguir no terminal do VsCode:
 ```bash
 flutter build apk --release
 ```

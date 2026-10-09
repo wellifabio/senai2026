@@ -190,8 +190,8 @@ const con = require('../db')
 const cadastrar = (req, res) => {
     const { nome, email, senha } = req.body
     try {
-        const query = 'INSERT INTO usuario (nome, email, senha) VALUES (?, ?, password(?));'
-        con.query(query, [nome, email, senha], (err, results) => {
+        const sql = 'INSERT INTO usuario (nome, email, senha) VALUES (?, ?, password(?));'
+        con.query(sql, [nome, email, senha], (err, results) => {
             if (err) {
                 console.error(err)
                 res.status(500).json({ error: 'Erro ao cadastrar usuário' })
@@ -208,8 +208,8 @@ const cadastrar = (req, res) => {
 }
 
 const listar = (req, res) => {
-    const query = 'SELECT * FROM usuario;'
-    con.query(query, (err, results) => {
+    const sql = 'SELECT * FROM usuario;'
+    con.query(sql, (err, results) => {
         if (err) {
             console.error(err)
             res.status(500).json({ error: 'Erro ao buscar usuários' })

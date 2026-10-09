@@ -62,11 +62,26 @@ flutter pub get
 ```
 - 4 Crie a seguinte estrutura de pastas em lib
 ```
+lib
+  ui
+    style
+      colors.dart
+      theme.dart
+    detalhes.dart
+    home.dart
+    splash.dart
+  main.dart
 ```
 - 5 Crie uma pasta `assets` em seu aplicativo
   - baixe o [icone.png](./icone.png) do aplicativo dentro dela
   - dentro de assets crie uma pasta fonts `assets/fonts` e baixe a font [PatrickHand-Regular.ttf](./PatrickHand-Regular.ttf) para dentro dela
-  - acrescente o caminho no `pubspec.yaml` conforme modelo a seguir:
+```
+assets
+  fonts
+    PatrickHand-Regular.ttf
+  icone.png
+```
+  - acrescente os caminhos e confira o `pubspec.yaml` conforme modelo a seguir:
 ```yaml
 dependencies:
   flutter:
@@ -99,4 +114,229 @@ flutter:
 ```bash
 flutter pub get
 flutter pub run flutter_launcher_icons:main
+```
+#### Desenvolvendo as telas
+- main.dart
+```dart
+import 'package:flutter/material.dart';
+
+import 'ui/splash.dart';
+import 'ui/style/theme.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      title: "Anotações",
+      theme: AppTheme.temaClaro,
+      darkTheme: AppTheme.temaEscuro,
+      themeMode: ThemeMode.system,
+      home: Splash(),
+    ),
+  );
+}
+```
+- ui/style/colors.dart
+```dart
+import 'package:flutter/material.dart';
+
+abstract class AppColors {
+  static const Color c1 = Color(0xFF664422);
+  static const Color c2 = Color(0xFF886644);
+  static const Color c3 = Color(0xFFBB9988);
+  static const Color c4 = Color(0xFFDDAA99);
+  static const Color c5 = Color(0xFFFFFAEE);
+}
+```
+- ui/style/theme.dart
+```dart
+import 'package:flutter/material.dart';
+
+import 'colors.dart';
+
+abstract class AppTheme {
+  static ThemeData temaClaro = ThemeData.light().copyWith(
+    scaffoldBackgroundColor: AppColors.c5,
+    primaryColor: AppColors.c1,
+    drawerTheme: DrawerThemeData(
+      backgroundColor: AppColors.c5,
+      scrimColor: AppColors.c2,
+    ),
+    iconTheme: IconThemeData(color: AppColors.c1),
+    floatingActionButtonTheme: FloatingActionButtonThemeData(
+      backgroundColor: AppColors.c1,
+      foregroundColor: AppColors.c5,
+      shape: CircleBorder(),
+    ),
+    appBarTheme: AppBarTheme(
+      backgroundColor: AppColors.c1,
+      foregroundColor: AppColors.c4,
+      titleTextStyle: TextStyle(
+        color: AppColors.c5,
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
+        fontFamily: 'PatrickHand',
+      ),
+    ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: AppColors.c1,
+        foregroundColor: AppColors.c5,
+        textStyle: TextStyle(
+          fontSize: 16,
+          fontWeight: FontWeight.bold,
+          fontFamily: 'PatrickHand',
+        ),
+      ),
+    ),
+    dialogTheme: DialogThemeData(
+      backgroundColor: AppColors.c5,
+      titleTextStyle: TextStyle(
+        color: AppColors.c1,
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
+        fontFamily: 'PatrickHand',
+      ),
+      contentTextStyle: TextStyle(
+        color: AppColors.c1,
+        fontSize: 16,
+        fontFamily: 'PatrickHand',
+      ),
+    ),
+    listTileTheme: ListTileThemeData(
+      textColor: AppColors.c1,
+      iconColor: AppColors.c2,
+      style: ListTileStyle.list,
+      titleTextStyle: TextStyle(
+        color: AppColors.c1,
+        fontSize: 16,
+        fontWeight: FontWeight.bold,
+        fontFamily: 'PatrickHand',
+      ),
+    ),
+  );
+  static ThemeData temaEscuro = ThemeData.dark().copyWith(
+    scaffoldBackgroundColor: AppColors.c1,
+    primaryColor: AppColors.c5,
+    drawerTheme: DrawerThemeData(
+      backgroundColor: AppColors.c1,
+      scrimColor: AppColors.c5,
+    ),
+    iconTheme: IconThemeData(color: AppColors.c5),
+    floatingActionButtonTheme: FloatingActionButtonThemeData(
+      backgroundColor: AppColors.c5,
+      foregroundColor: AppColors.c1,
+      shape: CircleBorder(),
+    ),
+    appBarTheme: AppBarTheme(
+      backgroundColor: AppColors.c5,
+      foregroundColor: AppColors.c2,
+      titleTextStyle: TextStyle(
+        color: AppColors.c1,
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
+        fontFamily: 'PatrickHand',
+      ),
+    ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: AppColors.c5,
+        foregroundColor: AppColors.c1,
+        textStyle: TextStyle(
+          fontSize: 16,
+          fontWeight: FontWeight.bold,
+          fontFamily: 'PatrickHand',
+        ),
+      ),
+    ),
+    dialogTheme: DialogThemeData(
+      backgroundColor: AppColors.c1,
+      titleTextStyle: TextStyle(
+        color: AppColors.c5,
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
+        fontFamily: 'PatrickHand',
+      ),
+      contentTextStyle: TextStyle(
+        color: AppColors.c5,
+        fontSize: 16,
+        fontFamily: 'PatrickHand',
+      ),
+    ),
+    listTileTheme: ListTileThemeData(
+      textColor: AppColors.c5,
+      iconColor: AppColors.c4,
+      style: ListTileStyle.list,
+      titleTextStyle: TextStyle(
+        color: AppColors.c5,
+        fontSize: 16,
+        fontWeight: FontWeight.bold,
+        fontFamily: 'PatrickHand',
+      ),
+    ),
+  );
+}
+```
+- ui/detalhes.dart
+```dart
+```
+- ui/home.dart
+```dart
+```
+- ui/splash.dart
+```dart
+import 'package:flutter/material.dart';
+
+import 'home.dart';
+
+class Splash extends StatefulWidget {
+  const Splash({super.key});
+
+  @override
+  State<Splash> createState() => _SplashState();
+}
+
+class _SplashState extends State<Splash> with TickerProviderStateMixin {
+  late AnimationController aumentar;
+  double tamanho = 0;
+
+  @override
+  void initState() {
+    super.initState();
+    animacao();
+  }
+
+  void animacao() {
+    aumentar = AnimationController(vsync: this, duration: Duration(seconds: 2))
+      ..addListener(() {
+        setState(() {
+          tamanho = aumentar.value;
+        });
+      });
+    aumentar.forward().then((value) => irParaHome());
+  }
+
+  void irParaHome() async {
+    await Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => Home()),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Transform.scale(
+          scale: tamanho,
+          child: Image.asset("assets/icone.png", width: 300),
+        ),
+      ),
+    );
+  }
+}
+```
+- Salve e execute no navegador ou emulador
+```bash
+flutter pub get
+flutter run
 ```

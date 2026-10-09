@@ -62,3 +62,17 @@ flutter pub get
 - 4 Crie a seguinte estrutura de pastas em lib
 ```
 ```
+- 5 Crie uma pasta `assets` em seu aplicativo
+  - baixe o [icone.png](./icone.png) do aplicativo dentro dela
+  - acrescente o caminho no `pubspec.yaml`:
+```yaml
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+```
+- 6 Execute os seguinte comando no terminal do VsCode para configurar o logo:
+```bash
+flutter pub get
+flutter pub run flutter_launcher_icons:main
+```

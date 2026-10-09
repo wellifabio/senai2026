@@ -32,14 +32,18 @@ dependencies:
 
 - 4 Desenvolva e teste seu **App**, ao concluir gere o `.APK` para instalar e testar em um aparelho Android.
 
-## Tutorial: Livro de Receitas
+## Livro de Receitas
 Projeto Mobile (Flutter) com Full Stack
 - API de um livro de Receitas implantada na **Vercel** [https://receitasapi-b-2025.vercel.app/](https://receitasapi-b-2025.vercel.app/)
 - Repositório da API no [Github](https://github.com/wellifabio/receitasapp-expo-2025.git)
 - [Front End do livro de Receitas](https://wellifabio.github.io/receitas-web-2025/) consumindo a API
 - Repositório do Front-End no [Github](https://github.com/wellifabio/receitasapi-b-2025)
 
-### Passos
+### Desafio!
+Crie um aplicativo de um livro de receitas que consuma esta API, modele semelhante ao wireframe abaixo, aplique tema, splash screen com animação e um design profissional.
+<br>![wireframe](./wireframe.png)
+
+### Tutorial
 - 1 Criar um novo projeto Flutter
 - 2 Instalar as dependências
 ```bash
@@ -47,3 +51,8 @@ flutter pub add http
 flutter pub add shared_preferences
 flutter pub get
 ```
+- 3 Acrescente a linha a seguir no arquivo `./android/app/src/main/AndroidManifest.xml` antes da tag `<application>` 
+```xml
+<uses-permission android:name="android.permission.INTERNET"/>
+```
+- 4 Crie a seguinte estrutura de pastas

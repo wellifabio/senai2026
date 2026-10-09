@@ -53,6 +53,7 @@ Crie um aplicativo de um livro de receitas que consuma esta API, modele semelhan
 ```bash
 flutter pub add http
 flutter pub add shared_preferences
+flutter pub add flutter_launcher_icons --dev
 flutter pub get
 ```
 - 3 Acrescente a linha a seguir no arquivo `./android/app/src/main/AndroidManifest.xml` antes da tag `<application>` 

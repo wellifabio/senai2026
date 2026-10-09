@@ -70,6 +70,7 @@ lib
     detalhes.dart
     home.dart
     splash.dart
+  api.dart
   main.dart
 ```
 - 5 Crie uma pasta `assets` em seu aplicativo
@@ -133,6 +134,15 @@ void main() {
       home: Splash(),
     ),
   );
+}
+```
+- api.dart
+```dart
+class Api {
+  static String baseUrl = 'https://receitasapi-b-2025.vercel.app/';
+  static String getEndPoint(String endpoint) {
+    return '$baseUrl$endpoint';
+  }
 }
 ```
 - ui/style/colors.dart
@@ -316,7 +326,7 @@ class _SplashState extends State<Splash> with TickerProviderStateMixin {
   }
 
   void irParaHome() async {
-    await Navigator.push(
+    await Navigator.pushReplacement(
       context,
       MaterialPageRoute(builder: (context) => Home()),
     );

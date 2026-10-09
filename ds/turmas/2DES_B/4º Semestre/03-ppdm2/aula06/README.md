@@ -43,6 +43,10 @@ Projeto Mobile (Flutter) com Full Stack
 Crie um aplicativo de um livro de receitas que consuma esta API, modele semelhante ao wireframe abaixo, aplique tema, splash screen com animação e um design profissional.
 <br>![wireframe](./wireframe.png)
 
+### Entrega
+- Envie para o Github com o arquivo [APK](../aula02/README.md) na pasta assets.
+- Apresente o **App** ao instrutor em um aparelho celular Android, utilize um dos dispositivos disponibilizados pelo SESI.
+
 ### Tutorial
 - 1 Criar um novo projeto Flutter
 - 2 Instalar as dependências

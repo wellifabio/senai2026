@@ -65,8 +65,26 @@ flutter pub get
 ```
 - 5 Crie uma pasta `assets` em seu aplicativo
   - baixe o [icone.png](./icone.png) do aplicativo dentro dela
-  - acrescente o caminho no `pubspec.yaml`:
+  - acrescente o caminho no `pubspec.yaml` conforme modelo a seguir:
 ```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.6.0
+  shared_preferences: ^2.5.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icone.png"
+  remove_alpha_ios: true
+
 flutter:
   uses-material-design: true
   assets:

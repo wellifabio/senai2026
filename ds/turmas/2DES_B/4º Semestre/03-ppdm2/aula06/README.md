@@ -59,4 +59,6 @@ flutter pub get
 ```xml
 <uses-permission android:name="android.permission.INTERNET"/>
 ```
-- 4 Crie a seguinte estrutura de pastas
+- 4 Crie a seguinte estrutura de pastas em lib
+```
+```

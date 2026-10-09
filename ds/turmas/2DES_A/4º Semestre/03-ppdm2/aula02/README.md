@@ -86,7 +86,7 @@ O arquivo **.apk** serve para testar o aplicativo em dispositivo **Android**
 flutter build apk --release
 ```
 O arquivo será gerado na pasta `build/app/outputs/flutter-apk/app-release.apk` e poderá ser instalado em qualquer dispositivo Android.
-- Compie este arquivo pasta `assets` do seu projeto para que possa ser enviado ao github e baixado para um celular.
+- Copie este arquivo pasta `assets` do seu projeto para que possa ser enviado ao github e baixado para um celular.
 - Em seguida faça commit e push para o repositório remoto.
 - Obs: Antes de fazer commit, execute o comando `flutter clean`
     - Este comando limpa o cache do projeto.

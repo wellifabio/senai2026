@@ -1,5 +1,9 @@
 # aula02
 
+## Acessar o Excel através do [email](https://outlook.live.com/mail/)
+- Utilizar o e-mail educacional, da tabela da aula 01
+- Abrir o Excel Online
+- Abrir o Chat GPT e digitar os prompts a seguir:
 ## ChatGPT
 - Prompt
 ```

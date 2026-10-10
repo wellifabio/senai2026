@@ -57,4 +57,4 @@ Drenagem	Ralos e tubos	conjunto	1	350,00	=D23*E23
 Crie um orçamento de um churrasco para 15 pessoas
 - Analise
 - Formate
-- Envie para o professor
+- Envie para o professor por e-mail

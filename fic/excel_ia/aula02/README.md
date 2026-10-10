@@ -44,3 +44,17 @@ Drenagem	Ralos e tubos	conjunto	1	350,00	=D23*E23
 	Mão de obra (estimativa)					=4500
 	CUSTO TOTAL ESTIMADO					=SOMA(F24:F26)
 ```
+
+- Analizamos a planilha
+- Clicando nas células e verificando se são:
+    - Contas [=10+10]
+    - Fórmulas [=D2*E2]
+    - Funções [=Soma(F2:F20)]
+- Formatamos a planilha: Selecionar uzando as flechas e o botão `Shift`
+- Enviamos a planiha por e-mail para o professor: wellington.martins2@senaisp.edu.br Assunto: Orçamento
+
+## Desafio (Em grupo de até 3 pessoas)
+Crie um orçamento de um churrasco para 15 pessoas
+- Analise
+- Formate
+- Envie para o professor

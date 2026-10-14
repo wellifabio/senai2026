@@ -8,10 +8,11 @@ Consumir dados de uma API Back-end própria com um app Flutter
 
 ## Passos
 - 1 Implante sua API na [Vercel(Aula03 de projetos)](../../05-psof3/aula03/README.md) ou outro serviço de nuvem.
-- 2 Acrescente no seu App as dependência `http` para consumir dados da sua API e `shared_preferences` para compartilhar entre as telas:
+- 2 Acrescente no seu App as dependência `http` para consumir dados da sua API, `intl` para conversões de tipos de dados e `shared_preferences` para compartilhar entre as telas:
 
 ```bash
 flutter pub add http
+flutter pub add intl
 flutter pub add shared_preferences
 flutter pub get
 ```
@@ -22,6 +23,7 @@ dependencies:
   flutter:
     sdk: flutter
   http: ^1.1.0
+  intl: ^0.20.3
   shared_preferences: ^2.2.2
 ```
 - 3 Acrescente a linha a seguir no arquivo `./android/app/src/main/AndroidManifest.xml` antes da tag `<application>` para que as permissões de internet sejam habilitadas a API responda.
@@ -72,8 +74,8 @@ lib
     style
       colors.dart
       theme.dart
-    detalhes.dart
     home.dart
+    nova.dart
     splash.dart
   api.dart
   main.dart

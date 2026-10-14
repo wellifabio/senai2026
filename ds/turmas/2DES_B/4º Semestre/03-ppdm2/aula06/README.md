@@ -52,7 +52,7 @@ Crie um aplicativo de um livro de receitas que consuma esta API, modele semelhan
 <details>
 <summary><h2>Tutorial App Receitas</h2></summary>
 
-### Passos
+#### Configuração a estrutura do App
 - 1 Criar um **novo projeto** Flutter
 - 2 Instalar as dependências
 ```bash
@@ -121,7 +121,7 @@ flutter:
 flutter pub get
 flutter pub run flutter_launcher_icons:main
 ```
-#### Desenvolvendo as telas
+#### Desenvolvimento as telas
 - main.dart
 ```dart
 import 'package:flutter/material.dart';

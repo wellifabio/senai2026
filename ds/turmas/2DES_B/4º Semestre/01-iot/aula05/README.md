@@ -17,6 +17,16 @@
 - Suporta múltiplos paradigmas de programação, incluindo programação orientada a objetos, programação funcional e programação imperativa.
 - Possui uma sintaxe simples e legível, o que facilita a escrita e manutenção do código.
 
+## Antes de instalar
+Verifique se o Python já está instalado, abrindo um terminal e digitando:
+```bash
+python --version
+```
+Se o resultado form semelhante ao a seguir já está instalado
+```bash
+Python 3.14.7
+```
+
 ## Instalar o Python
 Para instalar o Python, siga os passos abaixo:
 - 1 Acesse o site oficial do Python: [https://www.python.org/downloads/](https://www.python.org/downloads/)
@@ -71,7 +81,7 @@ else:
 for i in range(1, 101):
     print(i)
 ```
-
+Faça a seguinte lista de exercícios para estudo da linguagem, caso utilize IA para estudar, entenda o código gerado, tire dúvidas com o instrutor se necessário.
 ## Exercícios
 1 - Média de três números:
 Escreva um programa que solicite três números ao usuário e imprima a média deles.
@@ -113,3 +123,16 @@ determinar se o triângulo é equilátero (todos os lados iguais), isósceles (d
 11- Verificação de ano bissexto:
 Escreva um programa que solicite um ano ao usuário e determine se ele é bissexto ou não.
 Um ano é bissexto se for divisível por 4, exceto em anos que são divisíveis por 100 mas não são divisíveis por 400.
+
+## Entrega
+Envie todos os exercícios para um repositório do Github chamado `sesi_iot_estudando_python_2026` contendo um README.md com:
+- Título: Estudando Python
+- Descrição: Lista de exercícios de Python resolvida em aula do SESI SENAI no curso Técnico em Desenvolvimento de Sistemas.
+- Tecnologias
+    - Python
+    - VsCode
+- Para testar
+```bash
+pytnon nome_arquivo.py
+```
+Apresente o diretório para o professor vistar:

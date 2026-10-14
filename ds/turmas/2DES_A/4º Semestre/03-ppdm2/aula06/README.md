@@ -8,10 +8,11 @@ Consumir dados de uma API Back-end própria com um app Flutter
 
 ## Passos
 - 1 Implante sua API na [Vercel(Aula03 de projetos)](../../05-psof3/aula03/README.md) ou outro serviço de nuvem.
-- 2 Acrescente no seu App as dependência `http` para consumir dados da sua API e `shared_preferences` para compartilhar entre as telas:
+- 2 Acrescente no seu App as dependência `http` para consumir dados da sua API, `intl` para conversões de tipos de dados e `shared_preferences` para compartilhar entre as telas:
 
 ```bash
 flutter pub add http
+flutter pub add intl
 flutter pub add shared_preferences
 flutter pub get
 ```
@@ -22,6 +23,7 @@ dependencies:
   flutter:
     sdk: flutter
   http: ^1.1.0
+  intl: ^0.20.3
   shared_preferences: ^2.2.2
 ```
 - 3 Acrescente a linha a seguir no arquivo `./android/app/src/main/AndroidManifest.xml` antes da tag `<application>` para que as permissões de internet sejam habilitadas a API responda.
@@ -32,18 +34,21 @@ dependencies:
 
 - 4 Desenvolva e teste seu **App**, ao concluir gere o `.APK` para instalar e testar em um aparelho Android.
 
-## Tutorial: Livro de Receitas
+## Livro de Receitas
 Projeto Mobile (Flutter) com Full Stack
 - API de um livro de Receitas implantada na **Vercel** [https://receitasapi-b-2025.vercel.app/](https://receitasapi-b-2025.vercel.app/)
 - Repositório da API no [Github](https://github.com/wellifabio/receitasapp-expo-2025.git)
 - [Front End do livro de Receitas](https://wellifabio.github.io/receitas-web-2025/) consumindo a API
 - Repositório do Front-End no [Github](https://github.com/wellifabio/receitasapi-b-2025)
 
-### Passos
-- 1 Criar um novo projeto Flutter
-- 2 Instalar as dependências
-```bash
-flutter pub add http
-flutter pub add shared_preferences
-flutter pub get
-```
+### Desafio!
+Crie um aplicativo de um livro de receitas que consuma esta API, modele semelhante ao wireframe abaixo, aplique tema, splash screen com animação e um design profissional.
+#### Requisitos funcionais
+- CRUD Completo
+- Utilize Barra de menu no rodapé [bottomNavigationBar: BottomNavigationBar()]
+- Estilo com temas claro e escuro que acompanhem o tema do sistema.
+<br>![wireframe](./wireframe.png)
+
+### Entrega
+- Envie para o Github com o arquivo [APK](../aula02/README.md) na pasta assets.
+- Apresente o **App** ao instrutor em um aparelho celular Android, utilize um dos dispositivos disponibilizados pelo SESI.

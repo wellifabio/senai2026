@@ -59,7 +59,6 @@ Crie um aplicativo de um livro de receitas que consuma esta API, modele semelhan
 - 2 Instalar as dependências
 ```bash
 flutter pub add http
-flutter pub add shared_preferences
 flutter pub add flutter_launcher_icons --dev
 flutter pub get
 ```
@@ -95,7 +94,6 @@ dependencies:
   flutter:
     sdk: flutter
   http: ^1.6.0
-  shared_preferences: ^2.5.6
 
 dev_dependencies:
   flutter_test:

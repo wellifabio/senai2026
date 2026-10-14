@@ -47,8 +47,13 @@ Crie um aplicativo de um livro de receitas que consuma esta API, modele semelhan
 - Envie para o Github com o arquivo [APK](../aula02/README.md) na pasta assets.
 - Apresente o **App** ao instrutor em um aparelho celular Android, utilize um dos dispositivos disponibilizados pelo SESI.
 
-### Tutorial
-- 1 Criar um novo projeto Flutter
+---
+
+<details>
+<summary><h2>Tutorial App Receitas</h2></summary>
+
+### Passos
+- 1 Criar um **novo projeto** Flutter
 - 2 Instalar as dependências
 ```bash
 flutter pub add http
@@ -350,3 +355,4 @@ class _SplashState extends State<Splash> with TickerProviderStateMixin {
 flutter pub get
 flutter run
 ```
+</details>

@@ -113,16 +113,9 @@ Escreva um programa que solicite dois números ao usuário e determine qual é o
 Escreva um programa que solicite a idade de uma pessoa e determine se ela é maior de idade
 (idade maior ou igual a 18 anos) ou menor de idade (idade menor que 18 anos).
 
-9- Verificação de número par ou ímpar:
-Escreva um programa que solicite um número ao usuário e determine se ele é par ou ímpar.
-
-10- Classificação de triângulos:
+9- Classificação de triângulos:
 Escreva um programa que solicite três comprimentos ao usuário, que representam os lados de um triângulo. O programa deve
 determinar se o triângulo é equilátero (todos os lados iguais), isósceles (dois lados iguais) ou escaleno (todos os lados diferentes).
-
-11- Verificação de ano bissexto:
-Escreva um programa que solicite um ano ao usuário e determine se ele é bissexto ou não.
-Um ano é bissexto se for divisível por 4, exceto em anos que são divisíveis por 100 mas não são divisíveis por 400.
 
 ## Entrega
 Envie todos os exercícios para um repositório do Github chamado `sesi_iot_estudando_python_2026` contendo um README.md com:

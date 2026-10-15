@@ -72,10 +72,4 @@ Sinta-se a vontade para enviar seu currículo para o professor Wellington no int
 
 ## Histórico de Favoritos
 
-<a href="https://www.star-history.com/?repos=wellifabio%2Fsenai2026&type=date&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=wellifabio/senai2026&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=wellifabio/senai2026&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=wellifabio/senai2026&type=date&legend=top-left" />
- </picture>
-</a>
+[![Star History Chart](https://api.star-history.com/chart?repos=wellifabio/senai2026&type=date&legend=top-left)](https://www.star-history.com/?repos=wellifabio%2Fsenai2026&type=date&legend=top-left)

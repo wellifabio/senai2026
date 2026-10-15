@@ -8,7 +8,7 @@ Consumir dados de uma API Back-end própria com um app Flutter
 
 ## Passos
 - 1 Implante sua API na [Vercel(Aula03 de projetos)](../../05-psof3/aula03/README.md) ou outro serviço de nuvem.
-- 2 Acrescente no seu App as dependência `http` para consumir dados da sua API, `intl` para conversões de tipos de dados e `shared_preferences` para compartilhar entre as telas:
+- 2 Acrescente no seu App as dependência `http` para consumir dados da sua API e `shared_preferences` caso precise compartilhar dados entre as telas:
 
 ```bash
 flutter pub add http
@@ -74,7 +74,7 @@ lib
       colors.dart
       theme.dart
     home.dart
-    nova.dart
+    formulario.dart
     splash.dart
   api.dart
   main.dart
@@ -195,6 +195,17 @@ abstract class AppTheme {
     textButtonTheme: TextButtonThemeData(
       style: ButtonStyle(foregroundColor: WidgetStatePropertyAll(AppColors.c1)),
     ),
+    inputDecorationTheme: InputDecorationThemeData(
+      labelStyle: TextStyle(color: AppColors.c1),
+      border: OutlineInputBorder(
+        borderSide: BorderSide(width: 1.0, color: AppColors.c1),
+        borderRadius: BorderRadius.circular(10.0),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderSide: BorderSide(width: 1.5, color: AppColors.c2),
+        borderRadius: BorderRadius.circular(10.0),
+      ),
+    ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
         backgroundColor: AppColors.c1,
@@ -231,6 +242,7 @@ abstract class AppTheme {
         fontFamily: 'PatrickHand',
       ),
     ),
+    dividerTheme: DividerThemeData(color: AppColors.c1),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
       backgroundColor: AppColors.c5,
       selectedIconTheme: IconThemeData(color: AppColors.c1),
@@ -268,6 +280,17 @@ abstract class AppTheme {
     textButtonTheme: TextButtonThemeData(
       style: ButtonStyle(foregroundColor: WidgetStatePropertyAll(AppColors.c5)),
     ),
+    inputDecorationTheme: InputDecorationThemeData(
+      labelStyle: TextStyle(color: AppColors.c4),
+      border: OutlineInputBorder(
+        borderSide: BorderSide(width: 1.0, color: AppColors.c4),
+        borderRadius: BorderRadius.circular(10.0),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderSide: BorderSide(width: 1.5, color: AppColors.c5),
+        borderRadius: BorderRadius.circular(10.0),
+      ),
+    ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
         backgroundColor: AppColors.c3,
@@ -304,6 +327,7 @@ abstract class AppTheme {
         fontFamily: 'PatrickHand',
       ),
     ),
+    dividerTheme: DividerThemeData(color: AppColors.c3),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
       backgroundColor: AppColors.c1,
       selectedIconTheme: IconThemeData(color: AppColors.c5),
@@ -317,7 +341,7 @@ abstract class AppTheme {
   );
 }
 ```
-- ui/nova.dart
+- ui/formulario.dart
 ```dart
 import 'dart:convert';
 
@@ -325,29 +349,52 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 import '../api.dart';
-import 'splash.dart';
 import 'home.dart';
+import 'splash.dart';
 
-class Nova extends StatefulWidget {
-  const Nova({super.key});
+class Formulario extends StatefulWidget {
+  const Formulario({super.key, this.id});
+
+  final int? id;
 
   @override
-  State<Nova> createState() => _NovaState();
+  State<Formulario> createState() => _FormularioState();
 }
 
-class _NovaState extends State<Nova> {
-  String nome = '';
+class _FormularioState extends State<Formulario> {
+  final TextEditingController _nomeController = TextEditingController();
+  final TextEditingController _ingredientesController = TextEditingController();
+  final TextEditingController _modoFazerController = TextEditingController();
+  final TextEditingController _imgController = TextEditingController();
+  final TextEditingController _custoController = TextEditingController();
   String tipo = 'SALGADA';
-  String ingredientes = '';
-  String modoFazer = '';
-  String img = '';
-  double custoAproximado = 0.0;
-  final List<String> _tipos = ['DOCE', 'SALGADA', 'BEBIDA'];
+  static const List<String> _tipos = ['DOCE', 'SALGADA', 'BEBIDA'];
   int _tabIndice = 2;
+
+  @override
+  void initState() {
+    super.initState();
+    if (widget.id != null) carregarReceita();
+  }
+
+  @override
+  void dispose() {
+    _nomeController.dispose();
+    _ingredientesController.dispose();
+    _modoFazerController.dispose();
+    _imgController.dispose();
+    _custoController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('receitas')),
+      appBar: AppBar(
+        title: widget.id == null
+            ? Text('Nova receita')
+            : Text('Editar da receita'),
+      ),
       body: Center(
         child: Padding(
           padding: EdgeInsets.all(18.0),
@@ -356,17 +403,15 @@ class _NovaState extends State<Nova> {
             spacing: 20,
             children: [
               TextField(
+                controller: _nomeController,
                 decoration: InputDecoration(
                   hintText: 'Nome da receita',
                   labelText: 'Nome da receita:',
                 ),
-                onChanged: (value) => setState(() {
-                  nome = value;
-                }),
               ),
               DropdownButton<String>(
                 value: tipo,
-                hint: const Text('Selecione o tipo'),
+                hint: Text('Selecione o tipo'),
                 isExpanded: true,
                 items: _tipos.map((String item) {
                   return DropdownMenuItem<String>(
@@ -375,61 +420,59 @@ class _NovaState extends State<Nova> {
                   );
                 }).toList(),
                 onChanged: (String? novoValor) {
+                  if (novoValor == null) return;
                   setState(() {
-                    tipo = novoValor!;
+                    tipo = novoValor;
                   });
                 },
               ),
               TextField(
+                controller: _ingredientesController,
                 decoration: InputDecoration(
                   hintText: 'Ingredientes',
                   labelText: 'Ingredientes:',
                 ),
-                onChanged: (value) => setState(() {
-                  ingredientes = value;
-                }),
               ),
               TextField(
+                controller: _modoFazerController,
                 decoration: InputDecoration(
                   hintText: 'Modo de fazer',
                   labelText: 'Modo de fazer:',
                 ),
-                onChanged: (value) => setState(() {
-                  modoFazer = value;
-                }),
               ),
               TextField(
+                controller: _imgController,
                 decoration: InputDecoration(
                   hintText: 'URL da imagem',
                   labelText: 'URL da imagem:',
                 ),
-                onChanged: (value) => setState(() {
-                  img = value;
-                }),
+                onChanged: (_) => setState(() {}),
               ),
               Image.network(
-                img,
+                _imgController.text,
                 width: 200,
                 height: 180,
                 fit: BoxFit.cover,
                 errorBuilder: (context, error, stackTrace) =>
-                    Icon(Icons.image_not_supported, size: 200),
+                    const Icon(Icons.image_not_supported, size: 200),
               ),
-
               TextField(
+                controller: _custoController,
                 keyboardType: TextInputType.numberWithOptions(decimal: true),
                 decoration: InputDecoration(
                   hintText: 'Custo R\$ aproximado',
                   labelText: 'Custo R\$ aproximado:',
                 ),
-                onChanged: (value) => setState(() {
-                  custoAproximado = double.parse(value);
-                }),
               ),
-              ElevatedButton(
-                onPressed: () => enviarReceita(),
-                child: Text('Registrar Receita'),
-              ),
+              widget.id == null
+                  ? ElevatedButton(
+                      onPressed: enviarReceita,
+                      child: Text('Registrar Receita'),
+                    )
+                  : ElevatedButton(
+                      onPressed: alterarReceita,
+                      child: Text('Alterar Receita'),
+                    ),
             ],
           ),
         ),
@@ -452,6 +495,12 @@ class _NovaState extends State<Nova> {
               MaterialPageRoute(builder: (context) => Home()),
             );
           }
+          if (indice == 2) {
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(builder: (context) => Formulario()),
+            );
+          }
         },
         type: BottomNavigationBarType.fixed,
         items: const [
@@ -463,66 +512,143 @@ class _NovaState extends State<Nova> {
     );
   }
 
-  Future<void> enviarReceita() async {
-    String dados = '';
-    if (img != '') {
-      dados =
-          '{"nome":"$nome", "tipo":"$tipo", "ingredientes":"$ingredientes", "modoFazer":"$modoFazer", "img":"$img", "custoAproximado":$custoAproximado}';
-    } else {
-      dados =
-          '{"nome":"$nome", "tipo":"$tipo", "ingredientes":"$ingredientes", "modoFazer":"$modoFazer", "custoAproximado":$custoAproximado}';
-    }
-    if (nome != '' &&
-        ingredientes != '' &&
-        modoFazer != '' &&
-        custoAproximado != 0) {
-      try {
-        final url = Uri.parse(Api.getEndPoint('receitas'));
-        final response = await http.post(
-          url,
-          headers: {'Content-Type': 'application/json'},
-          body: dados,
-        );
-        if (response.statusCode == 201) {
-          if (mounted) {
-            Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(builder: (context) => Home()),
-            );
-          }
-        } else {
-          if (mounted) {
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: Text('Erro ao registar receita na API'),
-                duration: Duration(seconds: 2),
-              ),
-            );
-          }
-        }
-      } catch (_) {
-        if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text('Erro ao se comunicar com a API'),
-              duration: Duration(seconds: 2),
-            ),
-          );
+  Future<void> carregarReceita() async {
+    try {
+      final url = Uri.parse(Api.getEndPoint('receitas/${widget.id}'));
+      final response = await http.get(url);
+      if (response.statusCode == 200) {
+        final data = json.decode(response.body);
+        if (data is Map) {
+          final receita = Map<String, dynamic>.from(data);
+          final custo = receita['custoAproximado'];
+          final custoCarregado = custo is num
+              ? custo.toDouble()
+              : double.tryParse(custo?.toString() ?? '') ?? 0.0;
+          if (!mounted) return;
+          setState(() {
+            _nomeController.text = receita['nome']?.toString() ?? '';
+            final tipoCarregado = receita['tipo']?.toString();
+            tipo = _tipos.contains(tipoCarregado)
+                ? tipoCarregado!
+                : _tipos.first;
+            _ingredientesController.text =
+                receita['ingredientes']?.toString() ?? '';
+            _modoFazerController.text = receita['modoFazer']?.toString() ?? '';
+            _imgController.text = receita['img']?.toString() ?? '';
+            _custoController.text = custoCarregado == 0
+                ? ''
+                : custoCarregado.toString();
+          });
+          return;
         }
       }
-    } else {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Preencha todos os campos obrigatórios'),
-            duration: Duration(seconds: 2),
-          ),
-        );
-      }
+      _mostrarMensagem('Não foi possível carregar esta receita.');
+    } catch (_) {
+      _mostrarMensagem('Erro ao se comunicar com a API!');
     }
   }
-}
 
+  Future<void> enviarReceita() async {
+    final nome = _nomeController.text.trim();
+    final ingredientes = _ingredientesController.text.trim();
+    final modoFazer = _modoFazerController.text.trim();
+    final img = _imgController.text.trim();
+    final custo = double.tryParse(
+      _custoController.text.trim().replaceAll(',', '.'),
+    );
+
+    if (nome.isEmpty ||
+        ingredientes.isEmpty ||
+        modoFazer.isEmpty ||
+        custo == null ||
+        custo == 0) {
+      _mostrarMensagem('Preencha todos os campos obrigatórios');
+      return;
+    }
+
+    final dados = <String, dynamic>{
+      'nome': nome,
+      'tipo': tipo,
+      'ingredientes': ingredientes,
+      'modoFazer': modoFazer,
+      if (img.isNotEmpty) 'img': img,
+      'custoAproximado': custo,
+    };
+
+    try {
+      final url = Uri.parse(Api.getEndPoint('receitas'));
+      final response = await http.post(
+        url,
+        headers: {'Content-Type': 'application/json'},
+        body: json.encode(dados),
+      );
+      if (response.statusCode == 201 && mounted) {
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => Splash()),
+        );
+      } else {
+        _mostrarMensagem('Erro ao registar receita na API');
+      }
+    } catch (_) {
+      _mostrarMensagem('Erro ao se comunicar com a API');
+    }
+  }
+
+  Future<void> alterarReceita() async {
+    final nome = _nomeController.text.trim();
+    final ingredientes = _ingredientesController.text.trim();
+    final modoFazer = _modoFazerController.text.trim();
+    final img = _imgController.text.trim();
+    final custo = double.tryParse(
+      _custoController.text.trim().replaceAll(',', '.'),
+    );
+
+    if (nome.isEmpty ||
+        ingredientes.isEmpty ||
+        modoFazer.isEmpty ||
+        custo == null ||
+        custo == 0) {
+      _mostrarMensagem('Preencha todos os campos obrigatórios');
+      return;
+    }
+
+    final dados = <String, dynamic>{
+      'nome': nome,
+      'tipo': tipo,
+      'ingredientes': ingredientes,
+      'modoFazer': modoFazer,
+      if (img.isNotEmpty) 'img': img,
+      'custoAproximado': custo,
+    };
+
+    try {
+      final url = Uri.parse(Api.getEndPoint('receitas/${widget.id}'));
+      final response = await http.put(
+        url,
+        headers: {'Content-Type': 'application/json'},
+        body: json.encode(dados),
+      );
+      if (response.statusCode == 202 && mounted) {
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => Splash()),
+        );
+      } else {
+        _mostrarMensagem('Erro ao alterar receita na API');
+      }
+    } catch (_) {
+      _mostrarMensagem('Erro ao se comunicar com a API');
+    }
+  }
+
+  void _mostrarMensagem(String mensagem) {
+    if (!mounted) return;
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text(mensagem), duration: const Duration(seconds: 2)),
+    );
+  }
+}
 ```
 - ui/home.dart
 ```dart
@@ -532,7 +658,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 import '../api.dart';
-import 'nova.dart';
+import 'formulario.dart';
 import 'splash.dart';
 
 class Home extends StatefulWidget {
@@ -543,9 +669,11 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  List<dynamic> receitas = [];
+  List<dynamic> receitas = [], filtradas = [];
   bool _carregando = true;
   int _tabIndice = 1;
+  String _filtroNome = '';
+  String? _filtroTipo;
 
   @override
   void initState() {
@@ -556,42 +684,87 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('receitas')),
+      appBar: AppBar(title: Text('Receitas')),
       body: _carregando
           ? Center(child: CircularProgressIndicator())
           : receitas.isEmpty
           ? Center(child: Text('Nenhuma receita encontrada'))
-          : ListView.separated(
-              padding: EdgeInsets.all(12),
-              itemCount: receitas.length,
-              separatorBuilder: (context, index) => Divider(height: 1),
-              itemBuilder: (context, index) {
-                final item = receitas[index] as Map<String, dynamic>;
-                final nome = item['nome']?.toString() ?? 'Receita';
-                final img = item['img']?.toString() ?? '';
-                return ListTile(
-                  contentPadding: EdgeInsets.symmetric(vertical: 8),
-                  leading: SizedBox(
-                    width: 56,
-                    height: 56,
-                    child: img.isNotEmpty
-                        ? Image.network(
-                            img,
+          : Padding(
+              padding: EdgeInsets.all(18.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                spacing: 12,
+                children: [
+                  TextField(
+                    decoration: InputDecoration(hintText: 'Filtro'),
+                    onChanged: filtroNome,
+                  ),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      spacing: 12,
+                      children: [
+                        ElevatedButton(
+                          onPressed: () => filtroTipo(null),
+                          child: Text("TODAS"),
+                        ),
+                        ElevatedButton(
+                          onPressed: () => filtroTipo("DOCE"),
+                          child: Text("DOCE"),
+                        ),
+                        ElevatedButton(
+                          onPressed: () => filtroTipo("SALGADA"),
+                          child: Text("SALGADA"),
+                        ),
+                        ElevatedButton(
+                          onPressed: () => filtroTipo("BEBIDA"),
+                          child: Text("BEBIDA"),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    child: ListView.separated(
+                      padding: EdgeInsets.all(12),
+                      itemCount: filtradas.length,
+                      separatorBuilder: (context, index) => Divider(height: 1),
+                      itemBuilder: (context, index) {
+                        final item = filtradas[index] as Map<String, dynamic>;
+                        final nome = item['nome']?.toString() ?? 'Receita';
+                        final img = item['img']?.toString() ?? '';
+                        final int id = item['id'] ?? 0;
+                        return ListTile(
+                          contentPadding: EdgeInsets.symmetric(vertical: 8),
+                          onTap: () => detalhes(id),
+                          leading: SizedBox(
                             width: 56,
                             height: 56,
-                            fit: BoxFit.cover,
-                            errorBuilder: (context, error, stackTrace) =>
-                                Icon(Icons.image_not_supported),
-                          )
-                        : Icon(Icons.restaurant, size: 32),
+                            child: img.isNotEmpty
+                                ? Image.network(
+                                    img,
+                                    width: 56,
+                                    height: 56,
+                                    fit: BoxFit.cover,
+                                    errorBuilder: (
+                                      context,
+                                      error,
+                                      stackTrace,
+                                    ) => Icon(Icons.image_not_supported),
+                                  )
+                                : Icon(Icons.restaurant, size: 32),
+                          ),
+                          title: Text(nome),
+                          trailing: GestureDetector(
+                            onTap: () => confirmaExcluir(item['id']),
+                            child: Icon(Icons.delete),
+                          ),
+                        );
+                      },
+                    ),
                   ),
-                  title: Text(nome),
-                  trailing: GestureDetector(
-                    onTap: () => confirmaExcluir(item['id']),
-                    child: Icon(Icons.delete),
-                  ),
-                );
-              },
+                ],
+              ),
             ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _tabIndice,
@@ -608,7 +781,7 @@ class _HomeState extends State<Home> {
           if (indice == 2) {
             Navigator.pushReplacement(
               context,
-              MaterialPageRoute(builder: (context) => Nova()),
+              MaterialPageRoute(builder: (context) => Formulario()),
             );
           }
         },
@@ -634,6 +807,7 @@ class _HomeState extends State<Home> {
         if (data is List) {
           setState(() {
             receitas = data;
+            filtradas = data;
           });
           return;
         }
@@ -645,10 +819,77 @@ class _HomeState extends State<Home> {
       setState(() {
         receitas = [];
       });
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(
+              'Erro ao se comunicar com a API! Necessário acesso a internet.',
+            ),
+            duration: Duration(seconds: 2),
+          ),
+        );
+      }
     } finally {
       setState(() {
         _carregando = false;
       });
+    }
+  }
+
+  void detalhes(int id) {
+    final receita = receitas.firstWhere(
+      (item) => item is Map && item['id'] == id,
+      orElse: () => null,
+    );
+    if (mounted) {
+      showDialog(
+        context: context,
+        builder: (BuildContext context) => AlertDialog(
+          title: Text(receita["nome"]),
+          content: ConstrainedBox(
+            constraints: BoxConstraints(maxHeight: 400),
+            child: SingleChildScrollView(
+              physics: BouncingScrollPhysics(),
+              child: Column(
+                children: [
+                  SizedBox(
+                    width: 150,
+                    height: 150,
+                    child: receita["img"].isNotEmpty
+                        ? Image.network(
+                            receita["img"],
+                            width: 150,
+                            height: 150,
+                            fit: BoxFit.cover,
+                            errorBuilder: (context, error, stackTrace) =>
+                                Icon(Icons.image_not_supported),
+                          )
+                        : Icon(Icons.restaurant, size: 32),
+                  ),
+                  Text('Ingredientes: ${receita["ingredientes"]}'),
+                  Text('Modo de fazer: ${receita["modoFazer"]}'),
+                  Text('Custo aproximado: R\$ ${receita["custoAproximado"]}'),
+                ],
+              ),
+            ),
+          ),
+          actions: [
+            TextButton(
+              child: const Text('Cancelar'),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+            ElevatedButton(
+              child: Text('Editar'),
+              onPressed: () => Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => Formulario(id: id)),
+              ),
+            ),
+          ],
+        ),
+      );
     }
   }
 
@@ -706,8 +947,30 @@ class _HomeState extends State<Home> {
       }
     }
   }
-}
 
+  void filtroNome(String? nome) {
+    _filtroNome = nome?.trim() ?? '';
+    _aplicarFiltros();
+  }
+
+  void filtroTipo(String? tipo) {
+    _filtroTipo = tipo;
+    _aplicarFiltros();
+  }
+
+  void _aplicarFiltros() {
+    final nomeBusca = _filtroNome.toLowerCase();
+    setState(() {
+      filtradas = receitas.where((receita) {
+        if (receita is! Map) return false;
+        final nome = receita['nome']?.toString().toLowerCase() ?? '';
+        final tipo = receita['tipo']?.toString().toUpperCase();
+        return nome.contains(nomeBusca) &&
+            (_filtroTipo == null || tipo == _filtroTipo);
+      }).toList();
+    });
+  }
+}
 ```
 - ui/splash.dart
 ```dart

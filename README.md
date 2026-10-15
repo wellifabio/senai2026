@@ -68,3 +68,14 @@ Sinta-se a vontade para enviar seu currículo para o professor Wellington no int
 - Faculdade de Tecnologia SENAI Anchieta
 - Faculdade de Tecnologia SENAI Roberto Mange
 - [Faculdade SENAI - Campus Escola SENAI Paulo Antonio Skaf](https://sp.senai.br/cursos/graduacao/0?unidade=134)
+
+
+## Histórico de Favoritos
+
+<a href="https://www.star-history.com/?repos=wellifabio%2Fsenai2026&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=wellifabio/senai2026&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=wellifabio/senai2026&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=wellifabio/senai2026&type=date&legend=top-left" />
+ </picture>
+</a>

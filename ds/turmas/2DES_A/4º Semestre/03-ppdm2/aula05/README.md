@@ -1,4 +1,4 @@
-# Aula05 - Mapas
+# Aula05 - Mapas e GPS
 
 ## Update Flutter - [Instalar](./update_flutter.exe)
 ---

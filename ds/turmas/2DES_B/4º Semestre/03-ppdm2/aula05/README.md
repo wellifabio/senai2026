@@ -1,4 +1,4 @@
-# Aula05 - Mapas
+# Aula05 - Mapas e GPS
 
 ---
 ## Google Maps [Tutorial](./google_maps.md)

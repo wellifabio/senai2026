@@ -58,10 +58,12 @@ construir um App simples em flutter de um bloco de anotações personalizado que
 - [Calendar](./calendar.md)
 - [SQLite](./sqlite.md)
 
-## [Vamos iniciar juntos](https://meet.google.com/ifd-whhw-zyw)
-- Inicie un novo projeto em flutter chamado flutter_anotacoes
-- Baixe deste repositório os arquivos em Assets com imagens e fontes
-- Crie a estrutura de pastas em lib e configure o pubspec.yaml da seguinte forma:
+## Demonstração: [Vamos iniciar juntos](https://meet.google.com/ifd-whhw-zyw)
+
+### Configurações do projeto (Dependências, Fontes e Ícone)
+- Inicie un novo **projeto em flutter** chamado `flutter_anotacoes`
+- Baixe deste repositório os arquivos em `./assets` com **imagens** e **fontes**
+- Crie a estrutura de pastas no eu novo projeto dentro da pasta `./lib`
 ```
 lib
     main.dart
@@ -82,6 +84,15 @@ assets
     fonts
         PatrickHand-Regular.ttf
 ```
+- Instale as dependências executando os comandos a seguir no **terminal** do VsCode:
+```bash
+flutter pub add path_provider
+flutter pub add intl
+flutter pub add flutter_launcher_icons --dev
+flutter pub get
+```
+- Configure o arquivo `pubspec.yaml` da seguinte forma:
+  - Para que o ícone do aplicativo e fontes sejam ativados
 - pubspec.yaml
 ```yaml
 dependencies:
@@ -111,8 +122,11 @@ flutter:
       fonts:
         - asset: assets/fonts/PatrickHand-Regular.ttf
 ```
-
-### Arquivos base
+- Execute o comando a seguir para configurar o ícone do aplicativo:
+```bash
+flutter pub run flutter_launcher_icons:main
+```
+### Editar os arquivos base
 - main.dart
 ```dart
 import 'package:flutter/material.dart';

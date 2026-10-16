@@ -13,6 +13,7 @@ router.post('/login', Usuario.login)
 
 router.post('/usuarios', Usuario.cadastrar)
 router.get('/usuarios', Usuario.listar)
+router.get('/usuarios/:id', Usuario.buscarAgregandoEventos)
 router.put('/usuarios/:id', Usuario.alterar)
 router.patch('/usuarios/:id', Usuario.alterarParcial)
 router.delete('/usuarios/:id', Usuario.excluir)

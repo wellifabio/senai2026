@@ -1,5 +1,24 @@
 const con = require('../db')
 
+//Consulta assincrona
+const consultar = (sql, mensagemErro) => new Promise((resolve, reject) => {
+    con.query(sql, (err, results) => {
+        if (err) {
+            reject({ err, mensagemErro })
+            return
+        }
+        resolve(results)
+    })
+})
+
+//Composição
+function comporEventos(eventos, usuarios) {
+    eventos.forEach(evento => {
+        evento.usuario = usuarios.find(u => u.id == evento.usuarioId)
+    })
+    return eventos
+}
+
 const cadastrar = (req, res) => {
     const { usuarioId, cidade, tipoEvento, temperaturaMaxima, nivelImpacto } = req.body
     try {
@@ -20,16 +39,17 @@ const cadastrar = (req, res) => {
     }
 }
 
-const listar = (req, res) => {
-    const sql = 'SELECT * FROM evento;'
-    con.query(sql, (err, results) => {
-        if (err) {
-            console.error(err)
-            res.status(500).json({ error: 'Erro ao buscar eventos' })
-        } else {
-            res.json(results)
-        }
-    })
+const listar = async (req, res) => {
+    try {
+        const [eventos, usuarios] = await Promise.all([
+            consultar('SELECT * FROM evento;', 'Erro ao buscar eventos'),
+            consultar('SELECT * FROM usuario;', 'Erro ao buscar usuarios')
+        ])
+        res.json(comporEventos(eventos, usuarios))
+    } catch (failure) {
+        console.error(failure.err || failure)
+        res.status(500).json({ error: failure.mensagemErro || 'Erro ao buscar eventos ou usuarios' })
+    }
 }
 
 const alterar = (req, res) => {

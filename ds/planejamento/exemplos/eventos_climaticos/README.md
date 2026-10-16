@@ -1,13 +1,27 @@
 # Gestão de Eventos Climáticos
-Projeto para aulas de back-end, com o objetivo de criar uma API RESTful para gerenciar eventos climáticos conectando Node.js com MariaDB. O projeto inclui funcionalidades para cadastrar, listar, atualizar e excluir eventos climáticos, bem como autenticação de usuários.
+Projeto para aulas de **back-end**, com o objetivo de criar uma **API REST-full** para gerenciar eventos climáticos conectando **Node.js** com **MariaDB**.
+### O projeto inclui as funcionalidades:
+- CRUD (cadastrar, listar, atualizar e excluir) eventos climáticos,
+- CRUD (cadastrar, listar, atualizar e excluir) usuarios,
+- Login (autenticação de usuários)
+- Composição (de usuário ao evento)
+- Agreçação (de eventos ao usuário)
+- Exemplo de asincronissidade com JavaScript
 <br><img alt="MER" src="docs/mer_der_conceitual.png">
 <br><img alt="DC" src="docs/uml_dc.png">
 
+### Estrutura MVC
+- Com Design Pattherns:
+    - Silgleton
+    - Composer
+    - Agregate
+
 ## Tecnologias utilizadas
-- Node.js
+- Node.js (JavaScript)
 - Express.js
-- MariaDB (XAMPP">
+- MariaDB (XAMPP)
 - VsCode
+
 # Instruções para testar
 - 1 Clonar o repositório
 - 2 Instalar as dependências com `npm install`
@@ -21,6 +35,7 @@ Projeto para aulas de back-end, com o objetivo de criar uma API RESTful para ger
 - 5 Testar as rotas da API utilizando o Thunder Client ou Insomnia ou Postman, conforme especificado no arquivo `src/rotes.js`.
 
 ## Testes com Thunder Client
+<details><summary>Login</summary><img alt="Screeshot01" src="./docs/testes/screenshot05.png"></details>
 <details><summary>Listar Usuários</summary><img alt="Screeshot01" src="./docs/testes/screenshot01.png"></details>
 <details><summary>Cadastrar novo usuário</summary><img alt="Screeshot02" src="./docs/testes/screenshot02.png"></details>
 <details><summary>Listar Eventos</summary><img alt="Screeshot03" src="./docs/testes/screenshot03.png"></details>

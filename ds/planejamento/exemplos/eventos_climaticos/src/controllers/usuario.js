@@ -8,9 +8,9 @@ const login = (req, res) => {
             console.error(err)
             res.status(500).json({ erro: 'Erro ao listar usuários' })
         } else {
-            if(results.length == 0){
+            if (results.length == 0) {
                 res.status(404).json("Acesso negado, credenciais inválidas")
-            }else{
+            } else {
                 res.json(results)
             }
         }
@@ -47,6 +47,35 @@ const listar = (req, res) => {
             res.json(results)
         }
     })
+}
+
+const buscarAgregandoEventos = async (req, res) => {
+    const id = Number(req.params.id)
+    const consultar = (sql, mensagemErro) => new Promise((resolve, reject) => {
+        con.query(sql, [id], (err, results) => {
+            if (err) {
+                reject({ err, mensagemErro })
+                return
+            }
+            resolve(results)
+        })
+    })
+
+    try {
+        const [usuarios, eventos] = await Promise.all([
+            consultar('SELECT id, nome, email FROM usuario WHERE id = ?;', 'Erro ao listar usuários'),
+            consultar('SELECT * FROM evento WHERE usuarioId = ?;', 'Erro ao listar eventos do usuário')
+        ])
+
+        if (usuarios.length === 0) {
+            return res.status(404).json({ erro: 'Usuário não encontrado' })
+        }
+
+        res.json({ ...usuarios[0], eventos })
+    } catch (failure) {
+        console.error(failure.err || failure)
+        res.status(500).json({ erro: failure.mensagemErro || 'Erro ao buscar usuário e eventos' })
+    }
 }
 
 const alterar = (req, res) => {
@@ -117,5 +146,6 @@ module.exports = {
     listar,
     alterar,
     alterarParcial,
-    excluir
+    excluir,
+    buscarAgregandoEventos
 }

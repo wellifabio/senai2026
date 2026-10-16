@@ -4,19 +4,13 @@
 ---
 ## Google Maps [Tutorial](./google_maps.md)
 - Tutorial que mostra uum mapa e obtém a latitude e longitude ao clicar em um ponto do mapa.
-### Atividade
-- 1 Crie o Projeto do tutorial.
-    - Teste no **Emulador** (Não funciona no navegador) e tire **print**
-    - Crie um ícone para o aplicativo
-    - Crie o arquivo APK e copie para a pasta `assets/`
-    - Envie para um repositório do github com o print no README.md
----
 
 ## Flutter Map [Tutorial](./flutter_maps.md)
 - Gratuito, Open Source e **funciona no navegador** (Google Chrome)
 - Tutorial que mostra um mapa e obtém a latitude e longitude ao clicar em um ponto do mapa.
+
 ### Atividade
-- 1 Crie o Projeto do tutorial.
+- 1 Crie o Projeto de um dos dois tutoriais acima.
     - Teste e tire **print**
     - Crie um ícone para o aplicativo
     - Crie o arquivo APK e copie para a pasta `assets/`
@@ -33,12 +27,12 @@ Obter dados do sensor GPS do aparelho celular, útil com mapas
 
 ## Traçar rotas
 ### Google Maps [Tutorial](google_maps_rotas.md)
-- Tutorial para traçar rotas entre dois pontos no mapa com google maps, **Funciona no Emulador**
+- Tutorial para traçar rotas entre dois pontos no mapa com google maps, obtendo as rotas da API OSRM, **Funciona no Emulador**
 ### Flutter Maps [Tutorial](flutter_maps_rotas.md)
-- Tutorial para traçar rotas entre dois pontos no mapa com flutter maps, **Funciona no Navegador**
+- Tutorial para traçar rotas entre dois pontos no mapa com flutter maps, obtendo as rotas da API OSRM, **Funciona no Navegador**
 
 ### Atividade
-- 1 Crie o Projeto do tutorial (Obtendo as rotas da API OSRM)
+- 1 Crie o Projeto de um dos dos tutoriais
     - Teste e tire **print**
     - Crie um ícone para o aplicativo
     - Crie o arquivo APK e copie para a pasta `assets/`

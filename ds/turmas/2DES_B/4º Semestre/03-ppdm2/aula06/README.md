@@ -1030,4 +1030,22 @@ class _SplashState extends State<Splash> with TickerProviderStateMixin {
 flutter pub get
 flutter run
 ```
+- Crie o **.APK** deixe em `./assets`
+- Envie para o GitHub com o README.md padrão com prints das telas
+</details>
+<details>
+<summary>
+<h3>Prints do Resultado</h3>
+</summary>
+
+|![Tela01](./prints/sh01.png)|![Tela02](./prints/sh02.png)|
+|:-:|:-:|
+|Splash|Home|
+|![Tela03](./prints/sh03.png)|![Tela04](./prints/sh04.png)|
+|Home Filtro Botão|Home Filtro Campo|
+|![Tela05](./prints/sh05.png)|![Tela06](./prints/sh06.png)|
+|Modal de detalhes|Formulario Alterar|
+|![Tela07](./prints/sh07.png)|<----- Formulário Novo|
+
+
 </details>

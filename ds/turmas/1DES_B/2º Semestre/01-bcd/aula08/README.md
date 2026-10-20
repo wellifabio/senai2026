@@ -250,3 +250,4 @@ Crie um repositório chamaro `sesi_bcd_aula08_queries`
 - coloque o script `ddldml.sql` de criação e população do banco de dados.
 - e o arquivo `dql.sql` contendo as 15 queries deste exercício.
 - Acrescente um README.md com a descrição das atividades.
+- **Mostre ao instrutor para vistar**

@@ -226,7 +226,7 @@ select * from cliente c inner join telefone t on c.id = t.id_cliente;
 - Comandos principais: JOIN, COUNT, GROUP BY
 
 #### 12 Quantidade de pedidos por produto
-- Mostre o nome de cada produto e quantas vezes ele aparece nos pedidos.
+- Mostre o nome de cada produto e quantas vezes ele aparece nos pedidos, em ordem alfabética de nome do produto.
 - Comandos principais: JOIN, COUNT, GROUP BY, ORDER BY
 
 #### 13 Valor total dos pedidos

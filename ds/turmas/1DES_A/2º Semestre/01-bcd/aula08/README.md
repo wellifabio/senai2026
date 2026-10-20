@@ -164,6 +164,9 @@ select * from cliente c inner join telefone t on c.id = t.id_cliente;
 - 3 Mostre somente os pedidos junto com o cliente número 1
 - 4 Mostre somente os ultimos 2 pedidos e seus respectivos produtos
 
+## Entrega
+Apenas mostre ao instrutor para vistar
+
 ## Atividades 02
 - Execute este **[script](https://github.com/wellifabio/sesi_bcd_aula03_mer_der_dd_dados_2026/blob/main/ddldml.sql)** que vai recriar o banco de dados de pedidos com mais dados nas tabelas
 - Crie um arquivo chamado `dql.sql` e nele coloque todas as queries criadas para solucionar as solicitações a seguir.
@@ -240,3 +243,9 @@ select * from cliente c inner join telefone t on c.id = t.id_cliente;
 - Ordene do produto que teve maior valor vendido para o menor.
 - Comandos principais: JOIN, SUM, GROUP BY, ORDER BY
 
+## Entrega
+Crie um repositório chamaro `sesi_bcd_aula08_queries`
+- coloque o script `ddldml.sql` de criação e população do banco de dados.
+- e o arquivo `dql.sql` contendo as 15 queries deste exercício.
+- Acrescente um README.md com a descrição das atividades.
+- **Mostre ao instrutor para vistar**

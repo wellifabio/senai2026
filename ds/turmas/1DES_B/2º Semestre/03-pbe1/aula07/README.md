@@ -58,7 +58,7 @@ A prefeitura de Amparo necessita realzar o Monitoramento de pontos de descarte i
 - CRUD: Cadastrar ocorrência (id com autoIncrement), consultar pontos por: [id, local e tipo], atualizar e excluir registros.
 
 ### Desafio: Tema02 - 🤖 Pesquisa de campo
-Um pesquisador da Faculdade de Jauariúa precisa de um *Banco de usos de Inteligência Artificial*
+Um pesquisador da Faculdade de Jaguariúna precisa de um *Banco de usos de Inteligência Artificial*
 - Um catálogo para registrar como empresas, escolas ou pessoas estão utilizando IA, incluindo finalidade e possíveis riscos.
 - Crie um aquivo de `dados.json` com pelo menos 5 obejetos semelhantes ao abaixo:
 ```json

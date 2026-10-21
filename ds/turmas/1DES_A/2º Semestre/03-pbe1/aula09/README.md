@@ -277,5 +277,6 @@ module.exports = router
 ## Desafio - Para a proxima aula
 - 1 Implemente os **CRUDs** de `atualizar` e `excluir` para as tabelas `usuario` e `evento`.
 - 2 Adicione prints dos testes de atualização e exclusão no README.md do projeto.
-- 3 Implemente uma rota `post` de **login** e uma funcionalidade de **login** no conroller `usuario.js` que receba { **email**, **senha** } cadastrados e retorne os dados do usuário se os credenciais forem válidos, se não retorne um erro 404.
+- 3 Implemente uma rota `get` de **resumo** e uma funcionalidade de **resumo** que liste todos os eventos e retorne a **média de temperaturas**
+- 4 Implemente uma rota `post` de **login** e uma funcionalidade de **login** no conroller `usuario.js` que receba { **email**, **senha** } cadastrados e retorne os dados do usuário se as credenciais forem válidos, se não retorne um erro 404.
 - 4 Adicione prints dos testes de login no README.md do projeto.

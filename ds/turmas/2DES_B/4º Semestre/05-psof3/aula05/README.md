@@ -138,6 +138,10 @@ npx prisma db seed
 - Conclua os controllers e rotas com os comanados a seguir e execute o projeto para testar:
 ```bash
 npx backend-aula -models
+# ou
+npx backend-aula -r usuario
+npx backend-aula -r evento
+# e
 npx backend-aula -insomnia
 npm run dev
 ```
@@ -155,6 +159,7 @@ npx prisma db seed
 Crie uma pasta chamada `web` dentro da pasta eventos no seu projeto full stack
 - Desenvolva um front-end atendendo os seguintes requisitos funcionais:
     - [RF001] Tela de login (Validando os acessos com os usuários cadastrados)
+        - [RF001.1] Desenvolva um controller e rota para login no back-end tipo POST que devolva os dados do usuário
     - [RF002] Tela Home
         - [RF002.1] Mostre o nome do usuário logado no header da Home
         - [RF002.2] Botão "Sair" no header da Home

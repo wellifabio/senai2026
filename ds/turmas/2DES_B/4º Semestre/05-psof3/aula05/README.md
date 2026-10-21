@@ -66,3 +66,15 @@ model Evento{
 npx prisma generate
 npx prisma migrate dev --name init
 ```
+- Crie o `.gitignore` dentro da pasta `/api` contendo:
+```txt
+node_modules
+.env
+package-lock.json
+prisma/migrations
+```
+
+#### Passo 05 - Semear os dados de teste
+- Crie o arquivo `prisma/seed.js` contendo:
+```js
+```

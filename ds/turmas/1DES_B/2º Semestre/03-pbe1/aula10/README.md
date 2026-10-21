@@ -17,7 +17,11 @@ Conectar o **Node.js** back-end da aplicação web com o **SGBD MariaDB** utiliz
 
 ---
 
-## Situação 01 - Gestão de resíduos Sólidos
+<details>
+<summary>
+<h2>Situação 01 - Gestão de resíduos Sólidos</h2>
+</summary>
+
 ### Contextualização
 A prefeitura de Amparo necessita realizar o Monitoramento de pontos de descarte irregular, para isso desenvolva um sistema para registrar locais onde foram identificados descartes de lixo, entulho ou resíduos eletrônicos.
 <br>![MER DER](./der_residuos.png)
@@ -93,9 +97,27 @@ backend_residuos/
 - [RF003] CRUD de resíduos
 - [RF004] Resumo contendo a **contagem total** de resíduos **tratatos**
 
+### Entregas
+Repositório do github chamado `sesi_pbe1_node_mariadb_residuos_2026` contendo
+- Projeto back-end completo
+- arquivo `.gitignore` contendo `node_modules`
+- arquivo `README.md` contendo:
+    - Título
+    - Descrição
+    - Diagrama de Classes
+    - Tenologias
+    - Passo a passo para testar
+    - Print dos testes com a extensão `Thunder Client`
+
+</details>
+
 ---
 
-## Situação 02 - Registros de uso de IA
+<details>
+<summary>
+<h2>Situação 02 - Registros de uso de IA</h2>
+</summary>
+
 ### Contextualização
 Um pesquisador da Faculdade de Jauariúna precisa de um banco de dados de registros de usos de Inteligência Artificial
 - Um catálogo para registrar como empresas, escolas ou pessoas estão utilizando IA, incluindo finalidade e possíveis riscos.
@@ -173,9 +195,27 @@ backend_usos_ia/
 - [RF003] CRUD de usoia
 - [RF004] Resumo contendo a **contagem total** de níveis de risco **ALto, Médio e Baixo**
 
+### Entregas
+Repositório do github chamado `sesi_pbe1_node_mariadb_uso_ia_2026` contendo
+- Projeto back-end completo
+- arquivo `.gitignore` contendo `node_modules`
+- arquivo `README.md` contendo:
+    - Título
+    - Descrição
+    - Diagrama de Classes
+    - Tenologias
+    - Passo a passo para testar
+    - Print dos testes com a extensão `Thunder Client`
+
+</details>
+
 ---
 
-## Situação 03 - Registro de Consumo de Energia
+<details>
+<summary>
+<h2>Situação 03 - Registro de Consumo de Energia</h2>
+</summary>
+
 ### Contextualização
 O SESI precisa de um sistema para registrar equipamentos ou locais e acompanhar o consumo energético, identificando possíveis desperdícios.
 <br>![MER DER](./der_energia.png)
@@ -250,3 +290,17 @@ backend_energia/
 - [RF002] Login
 - [RF003] CRUD de consumo
 - [RF004] Resumo contendo a **media de consumo** de energia em **kwh**.
+
+### Entregas
+Repositório do github chamado `sesi_pbe1_node_mariadb_consumo_2026` contendo
+- Projeto back-end completo
+- arquivo `.gitignore` contendo `node_modules`
+- arquivo `README.md` contendo:
+    - Título
+    - Descrição
+    - Diagrama de Classes
+    - Tenologias
+    - Passo a passo para testar
+    - Print dos testes com a extensão `Thunder Client`
+
+</details>

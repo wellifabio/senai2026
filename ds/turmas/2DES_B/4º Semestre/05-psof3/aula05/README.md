@@ -141,3 +141,26 @@ npx backend-aula -models
 npx backend-aula -insomnia
 npm run dev
 ```
+
+## Reimplantar o banco de dados
+Sempre que precisar remover e instalar novamente o banco de dados pelo **prisma**
+- 1 Exclua a pasta `prisma/migrations` e dê os seguintes comandos:
+```bash
+npx prisma migrate reset
+npx prisma migrate dev --name init
+npx prisma db seed
+```
+
+## Atividade
+Crie uma pasta chamada `web` dentro da pasta eventos no seu projeto full stack
+- Desenvolva um front-end atendendo os seguintes requisitos funcionais:
+    - [RF001] Tela de login (Validando os acessos com os usuários cadastrados)
+    - [RF002] Tela Home
+        - [RF002.1] Mostre o nome do usuário logado no header da Home
+        - [RF002.2] Botão "Sair" no header da Home
+        - [RF002.3] CRUD de eventos climáticos
+
+## Entregas
+Envie para um repositório no github com README.md no padrão de sempre
+- Apresente ao professor para visto
+    

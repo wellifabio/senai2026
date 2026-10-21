@@ -60,15 +60,15 @@ insert into ocorrencia(usuarioId, local, tipoResiduo, nivelRisco, status) values
 (2, 'Rua Osmar Motta, 1313', 'Veículo usado', 'Baixo', 'Pendente'),
 (1, 'Rua Lucas trado, 15', 'Eletônico', 'Alto', 'Tratado'),
 (2, 'Rua Rolando da Rocha, S/N', 'Móvel usado', 'Medio', 'Novo'),
-(3, 'Rua Osmar Dito, 101', 'Hospitalar', 'Alto', 'Novo');
+(3, 'Rua Jacinto Melo, 101', 'Hospitalar', 'Alto', 'Novo');
 
 select * from usuario;
 select * from ocorrencia;
 show tables;
 ```
 - Ainda na pasta `backend_residuos`, crie o arquivo `server.js` para implementar o back-end.
-- Crie a pasta `src` e dentro dela o arquivo `src/routes.js` e o arquivo `db.js`
-- Crie a pasta `src/controllers` e os arquivos `usuario.js` e `ocorrencia.js` semelhante a estrutura de arquivos abaixo:
+- Crie a pasta `src` e dentro dela o arquivo `./src/routes.js` e o arquivo `./src/db.js`
+- Crie a pasta `./src/controllers` e os arquivos `usuario.js` e `ocorrencia.js` semelhante a estrutura de arquivos abaixo:
 ```
 backend_residuos/
 ├── db/
@@ -118,7 +118,13 @@ create table usuario (
 );
 create table usoia (
     id int not null auto_increment primary key,
-    usuarioId int not null
+    usuarioId int not null,
+    sistema varchar(100) not null,
+    tipo enum('Empresa','Escola','Outros') default('Empresa') not null,
+    finalidade varchar(100) not null,
+    tecnologia varchar(100) not null,
+    nivelRisco enum('Baixo','Medio','Alto') default('Baixo') not null,
+    revisaoHumana boolean default(true) not null
 );
 alter table usoia add constraint fk_registra
 foreign key (usuarioId) references usuario(id);
@@ -129,15 +135,20 @@ insert into usuario (nome, email, senha) values
 ('Paula Silva', 'paula@email.com', password('senha123')),
 ('Passos Dias Aguiar', 'passos@email.com', password('senha123'));
 
-insert into usoia() values ();
+insert into usoia(usuarioId, sistema, tipo, finalidade, tecnologia, nivelRisco, revisaoHumana) values
+(1, 'Assistente de atendimento', 'Empresa', 'Responder duvidas de clientes', 'IA generativa', 'Baixo', true),
+(1, 'Reconhecimento facial', 'Empresa', 'Bater ponto', 'Visao computacional', 'Baixo', true),
+(2, 'Biometria', 'Outros', 'Validar identidade', 'Visao computacional', 'Medio', true),
+(2, 'Pesquisa de satisfacao', 'Escola', 'Avaliacao do servico de educacao', 'IA generativa', 'Baixo', false),
+(3, 'Avaliacao institucional', 'Escola', 'Correcao de gabarito', 'Visao computacional', 'Medio', false);
 
 select * from usuario;
 select * from usoia;
 show tables;
 ```
 - Ainda na pasta `backend_usos_ia`, crie o arquivo `server.js` para implementar o back-end.
-- Crie a pasta `src` e dentro dela o arquivo `src/routes.js` e o arquivo `db.js`
-- Crie a pasta `src/controllers` e os arquivos `usuario.js` e `usoia.js` semelhante a estrutura de arquivos abaixo:
+- Crie a pasta `src` e dentro dela o arquivo `./src/routes.js` e o arquivo `./src/db.js`
+- Crie a pasta `./src/controllers` e os arquivos `usuario.js` e `usoia.js` semelhante a estrutura de arquivos abaixo:
 ```
 backend_usos_ia/
 ├── db/
@@ -172,7 +183,7 @@ O SESI precisa de um sistema para registrar equipamentos ou locais e acompanhar 
 ### Desafio
 Crie uma pasta em sua área de trabalho chamada `backend_energia` e abra com o **VsCode**
 - Dentro dela crie uma pasta chamada `docs` e salve o MER DER da imagem acima
-- Crie uma outra pasta chamada `db` e um arquivo chamado `db/script.sql` contendo o seguinte script de criação e população do banco de dados:
+- Crie uma outra pasta chamada `db` e um arquivo chamado `./db/script.sql` contendo o seguinte script de criação e população do banco de dados:
 ```sql
 drop database if exists gestao_residuos;
 create database gestao_residuos;
@@ -186,7 +197,12 @@ create table usuario (
 );
 create table consumo (
     id int not null auto_increment primary key,
-    usuarioId int not null
+    usuarioId int not null,
+    local varchar(100) not null,
+    equipamento varchar(50) not null,
+    consumoKwh decimal(10,2) not null,
+    mesReferencia varchar(15) not null,
+    status enum('Baixo','Normal','Elevado') default('Baixo') not null
 );
 alter table consumo add constraint fk_registra
 foreign key (usuarioId) references usuario(id);
@@ -197,15 +213,20 @@ insert into usuario (nome, email, senha) values
 ('Fujiro Nakombi', 'fujiro@email.com', password('senha123')),
 ('Lindo Omar', 'lindo@email.com', password('senha123'));
 
-insert into consumo() values ();
+insert into consumo(usuarioId, local, equipamento, consumoKwh, mesReferencia, status) values
+(1,'Sala de aula do 1 ano B','Ar condicionado', 185.4,'2026-09','Elevado'),
+(1,'Sala de aula do 1 ano B','Projetor multimidia', 85.4,'2026-09','Normal'),
+(2,'Sala de aula do 1 ano B','Computador do professor', 45.1,'2026-09','Baixo'),
+(2,'Sala de aula do 1 ano A','Ar condicionado', 190.1,'2026-09','Elevado'),
+(3,'Sala de aula do 1 ano A','Projetor multimidia', 86.1,'2026-09','Normal');
 
 select * from usuario;
 select * from consumo;
 show tables;
 ```
 - Ainda na pasta `backend_energia`, crie o arquivo `server.js` para implementar o back-end.
-- Crie a pasta `src` e dentro dela o arquivo `src/routes.js` e o arquivo `db.js`
-- Crie a pasta `src/controllers` e os arquivos `usuario.js` e `consumo.js` semelhante a estrutura de arquivos abaixo:
+- Crie a pasta `src` e dentro dela o arquivo `./src/routes.js` e o arquivo `./src/db.js`
+- Crie a pasta `./src/controllers` e os arquivos `usuario.js` e `consumo.js` semelhante a estrutura de arquivos abaixo:
 ```
 backend_energia/
 ├── db/

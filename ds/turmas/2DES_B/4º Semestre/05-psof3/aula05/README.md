@@ -145,6 +145,39 @@ npx backend-aula -r evento
 npx backend-aula -insomnia
 npm run dev
 ```
+### Boa pratica
+Colocqe na rota raíz as outras rotas da API, altere o `server.js` para:
+```js
+require('dotenv').config();
+const express = require('express');
+const cors = require("cors");
+
+const app = express();
+app.use(express.json());
+app.use(cors());
+
+const eventoRoutes = require('./src/routes/evento.routes');
+app.use('/evento', eventoRoutes);
+
+const usuarioRoutes = require('./src/routes/usuario.routes');
+app.use('/usuario', usuarioRoutes);
+
+app.use('/', (req, res) => {
+  res.json({
+    msg: 'API eventos respondendo:', rotas: [
+      { usuario: '/usuario' },
+      { eventos: '/evento' }
+    ]
+  })
+})
+
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Servidor http://localhost:${PORT}`);
+});
+
+```
 
 ## Reimplantar o banco de dados
 Sempre que precisar remover e instalar novamente o banco de dados pelo **prisma**

@@ -10,3 +10,6 @@ Sistema para registro de eventos climáticos extremos.
 ![UML DC](./uml_dc.png)
 
 ## Vamos desenvolver
+### Passo 01
+- Criar uma pasta `c:/App/eventos` e abrir com o VsCode
+- Abrir o Terminal e digitar `

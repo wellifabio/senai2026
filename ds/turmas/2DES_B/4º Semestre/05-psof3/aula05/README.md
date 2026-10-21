@@ -42,7 +42,7 @@ datasource db {
 ```
 #### 4 Implantar o Modelo no SGBD
 - Se usar o XAMPP, abrir o Control Panel e dar **start** em MySQL, se usa o MariaDB diretamente, apenas instalar as dependências do **prisma**
-- Acesse a pasta API e rode os comandos abaixo:
+- Ainda no terminal na pasta `/api` rode os comandos abaixo:
 ```bash
 npx prisma generate
 npx prisma migrate dev --name init

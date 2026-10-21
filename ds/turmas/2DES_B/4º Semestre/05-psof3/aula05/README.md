@@ -155,7 +155,11 @@ npx prisma migrate dev --name init
 npx prisma db seed
 ```
 
-## Atividade
+## Situação de Aprendizagem
+### Contextualização
+Após executar o back-end e realizar testes unitários e de integração com os dados no banco de dados, precisamos de uma UI (interface para o usuário)
+<br>![Wireframes](./wireframes.png)
+### Desafio
 Crie uma pasta chamada `web` dentro da pasta eventos no seu projeto full stack
 - Desenvolva um front-end atendendo os seguintes requisitos funcionais:
     - [RF001] Tela de login (Validando os acessos com os usuários cadastrados)
@@ -165,7 +169,7 @@ Crie uma pasta chamada `web` dentro da pasta eventos no seu projeto full stack
         - [RF002.2] Botão "Sair" no header da Home
         - [RF002.3] CRUD de eventos climáticos
 
-## Entregas
+### Entregas
 Envie para um repositório no github com README.md no padrão de sempre
 - Apresente ao professor para visto
     

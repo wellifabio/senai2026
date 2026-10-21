@@ -43,7 +43,7 @@ datasource db {
 model Usuario{
   id Int @id @default(autoincrement())
   nome String @db.VarChar(100)
-  email String @db.VarChar(100)
+  email String @db.VarChar(100) @unique
   senha String @db.VarChar(100)
   eventos Evento[]
 }
@@ -55,7 +55,7 @@ model Evento{
   tipoEvento String @db.VarChar(50)
   temperaturaMaxima Float?
   data DateTime @default(now())
-  nivelImpacto String @db.VarChar(50)
+  nivelImpacto String @db.VarChar(100)
   usuario Usuario  @relation(fields: [usuarioId], references: [id])
 }
 ```
@@ -134,4 +134,10 @@ export default defineConfig({
 - Execute a semeadura com o comando
 ```bash
 npx prisma db seed
+```
+- Conclua os controllers e rotas com os comanados a seguir e execute o projeto para testar:
+```bash
+npx backend-aula -models
+npx backend-aula -insomnia
+npm run dev
 ```

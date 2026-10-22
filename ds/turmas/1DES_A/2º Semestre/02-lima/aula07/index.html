@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Discos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Discoteca 🪩</h1>
+        <p>Venda de discos de Vinil!</p>
+    </header>
+    <main class = "container">
+        <div class = "titulo-secao">
+            <div>
+                <h2>Nosso catalogo</h2>
+                <p>Conheça os discos disponíveis</p>
+            </div>
+            <button id="btnCadastrar" type="button">+ Cadastrar Disco</button>
+        </div>
+        <section id="listarDiscos" class="listar-discos">
+            <p id="mensagemVazia">Nenhum disco cadastrado</p>
+        </section>
+    </main>
+    <dialog id = "modalCadastro">
+        <h2>Novo Disco</h2>
+        <form id = "formDisco">
+            <label for="album">Nome do álbum</label>
+            <input type="text" id="album" required>
+            <label for="artista">Artista ou Banda</label>
+            <input type="text" id="artista" required>
+            <label for="genero">Gênero Musical</label>
+            <input type="text" id="genero" required>
+            <label for="imagem">URL da imagem do disco</label>
+            <input type="url" id="imagem" placeholder="https://site.com/capa.jpg" required>
+            <label for="preco">Preço (R$)</label>
+            <input type="number" id="preco" min="0.01" step="0.01"required>
+            <div class = "acoes">
+                <button type="button" id="btnCancelar" class="cancelar">Cancelar</button>
+                <button type="submit">Salvar disco</button>
+            </div>
+        </form>
+    </dialog>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -274,9 +274,18 @@ module.exports = router
         - e prints das requisições e respostas do Thunder Client, salvas em `docs/prints`.
 - Mostre o repositorio para o professor **VISTAR**
 
+---
+
 ## Desafio - Para a proxima aula
+Link do [projeto iniciado na aula anterior](https://github.com/wellifabio/sesi_pbe1_aula09_eventos_climaticos_2026.git) somente com cadastrar e listar das duas classes usuarios e eventos implementadas.
 - 1 Implemente os **CRUDs** de `atualizar` e `excluir` para as tabelas `usuario` e `evento`.
 - 2 Adicione prints dos testes de atualização e exclusão no README.md do projeto.
 - 3 Implemente uma rota `get` de **resumo** e uma funcionalidade de **resumo** que liste todos os eventos e retorne a **média de temperaturas**
 - 4 Implemente uma rota `post` de **login** e uma funcionalidade de **login** no conroller `usuario.js` que receba { **email**, **senha** } cadastrados e retorne os dados do usuário se as credenciais forem válidos, se não retorne um erro 404.
 - 4 Adicione prints dos testes de login no README.md do projeto.
+
+---
+
+## [Insomnia](https://insomnia.rest/download)
+Ferramenta de testes, alternativa ao Thunder Client
+- Baixe e instale em seu computador

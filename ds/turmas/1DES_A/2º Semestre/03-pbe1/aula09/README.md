@@ -292,3 +292,9 @@ Ferramenta de testes, alternativa ao Thunder Client
 <br>![Insomnia](./insomnia01.png)
 <br>![Insomnia](./insomnia02.png)
 <br>![Insomnia](./insomnia03.png)
+
+## [Postman](https://www.postman.com/downloads/)
+Ferramenta de testes, alternativa ao Insomnia
+- Se o insomnia não funcinar baixe e instale o Postman, faça login com seu gmail pessoal
+- Windows x64
+<br>![Insomnia](./postman.png)

@@ -289,3 +289,6 @@ Link do [projeto iniciado na aula anterior](https://github.com/wellifabio/sesi_p
 ## [Insomnia](https://insomnia.rest/download)
 Ferramenta de testes, alternativa ao Thunder Client
 - Baixe e instale em seu computador
+<br>![Insomnia](./insomnia01.png)
+<br>![Insomnia](./insomnia02.png)
+<br>![Insomnia](./insomnia03.png)

@@ -285,6 +285,7 @@ Link do [projeto iniciado na aula anterior](https://github.com/wellifabio/sesi_p
 - 4 Adicione prints dos testes de login no README.md do projeto.
 
 ---
+
 <details>
 <summary>
 <h2>[Insomnia](https://insomnia.rest/download)</h2>
@@ -297,6 +298,9 @@ Ferramenta de testes, alternativa ao Thunder Client
 <br>![Insomnia](./insomnia03.png)
 
 </details>
+
+---
+
 <details>
 <summary>
 <h2>[Postman](https://www.postman.com/downloads/)</h2>

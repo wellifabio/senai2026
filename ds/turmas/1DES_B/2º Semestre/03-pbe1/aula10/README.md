@@ -18,6 +18,82 @@ Conectar o **Node.js** back-end da aplicação web com o **SGBD MariaDB** utiliz
 ---
 
 <details>
+<summary><h2>Iniciar um novo projeto padrão MVC com Mysql<h2></summary>
+
+### Passo 01 - Criar a pasta e abri com VsCode
+No Vs Code crie o arquivo `server.js` contendo:
+```js
+const express = require("express")
+const cors = require("cors")
+
+const routes = require("./src/routes")
+
+const app = express()
+app.use(cors())
+app.use(express.urlencoded({ extended: true }))
+app.use(express.json())
+app.use(routes)
+const porta = 3000
+
+app.listen(porta, () => {
+    console.log(`Servidor respondendo em: http://localhost:${porta}`)
+})
+```
+Abra o terminal `CTRL + '` tipo `CMD` e inicie o novo projeto com as dependências:
+```bash
+npm init -y
+npm i express cors mysql
+```
+Crie a pasta `./src` com os arquivos  `./src/routes.js` e `./src/db.js` contendo respectivamente os códigos:
+```js
+const express = require("express")
+const router = express.Router()
+
+const rotaInicial = (req, res) => {
+    res.json("Back-end respondendo")
+}
+
+router.get('/',rotaInicial)
+
+module.exports = router
+```
+```js
+const mysql = require('mysql')
+
+const connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    database: 'nome_do_banco_de_dados'
+})
+
+module.exports = connection
+```
+### Passo 02 - Executar o script de criação e população do banco de dados
+Abra o XAMPP de Start em MySQL e através do **Shell**, PhpMyadmin ou MySQL Workbenc, copie e cole o script, deixe ele em uma pasta no seu projeto no arquivo `./db/script.sql`
+### Passo 03 - Confira a estrutura MVC e desenvolva seus controllers, rotas e testes
+```
+nome_projeto/
+├── db/
+│   └── script.sql
+├── src/
+│   ├── controllers/
+│   │   └── classe.js
+│   ├── db.js
+|   └── routes.js
+└── server.js
+└── .gitignore
+```
+Não esqueça o `.gitignore` contendo:
+```txt
+node_modules
+package-lock.json
+```
+
+</details>
+
+---
+
+<details>
 <summary>
 <h2>Situação 01 - Gestão de resíduos Sólidos</h2>
 </summary>

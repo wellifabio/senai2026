@@ -68,9 +68,12 @@ const connection = mysql.createConnection({
 
 module.exports = connection
 ```
-### Passo 02 - Executar o script de criação e população do banco de dados
-Abra o XAMPP de Start em MySQL e através do **Shell**, PhpMyadmin ou MySQL Workbenc, copie e cole o script, deixe ele em uma pasta no seu projeto no arquivo `./db/script.sql`
-### Passo 03 - Confira a estrutura MVC e desenvolva seus controllers, rotas e testes
+### Passo 02 - Instalar o Banco de Dados
+Executar o script de criação e população do banco de dados.
+- Abra o XAMPP de Start em MySQL e através do **Shell**, PhpMyadmin ou MySQL Workbenc
+- Copie e cole o script, deixe ele em uma pasta no seu projeto no arquivo `./db/script.sql`
+
+### Passo 03 - Confira a estrutura de arquivos MVC e Execute
 ```
 nome_projeto/
 ├── db/
@@ -88,6 +91,12 @@ Não esqueça o `.gitignore` contendo:
 node_modules
 package-lock.json
 ```
+Execute faça os testes iniciais
+```bash
+npm run dev
+```
+### Desenvolva seus controllers, rotas e testes
+Mãos a obra
 
 </details>
 

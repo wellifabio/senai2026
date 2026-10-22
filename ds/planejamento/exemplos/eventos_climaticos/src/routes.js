@@ -22,5 +22,6 @@ router.post('/eventos', Evento.cadastrar)
 router.get('/eventos', Evento.listar)
 router.patch('/eventos/:id', Evento.alterar)
 router.delete('/eventos/:id', Evento.excluir)
+router.get('/eventos/resumo', Evento.resumo)
 
 module.exports = router

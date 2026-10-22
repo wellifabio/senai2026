@@ -18,8 +18,9 @@ Conectar o **Node.js** back-end da aplicação web com o **SGBD MariaDB** utiliz
 ---
 
 <details>
-<summary><h2>Iniciar um novo projeto padrão MVC com Mysql<h2></summary>
+<summary><h2>Tutorial iniciar Back-End<h2></summary>
 
+## Iniciar um novo projeto padrão MVC com Mysql
 ### Passo 01 - Criar a pasta e abri com VsCode
 No Vs Code crie o arquivo `server.js` contendo:
 ```js
@@ -43,6 +44,28 @@ Abra o terminal `CTRL + '` tipo `CMD` e inicie o novo projeto com as dependênci
 ```bash
 npm init -y
 npm i express cors mysql
+```
+Edite o `package.json` adicionando o `"dev":"node --watch server.js",`, inserindo seu login e conferindo as dependências:
+```json
+{
+  "name": "nome_do_projeto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "seu_login_do_github",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mysql": "^2.18.1"
+  }
+}
 ```
 Crie a pasta `./src` com os arquivos  `./src/routes.js` e `./src/db.js` contendo respectivamente os códigos:
 ```js
@@ -97,6 +120,11 @@ npm run dev
 ```
 ### Desenvolva seus controllers, rotas e testes
 Mãos a obra
+- Desenvolva os controles respeitando os requisitos funcionais e regras de negócio
+- Envie para o github com commits constantes
+- Teste utilizando Thunder Client, Insomnia ou Postman
+- Salve prints dos seus testes na pasta `./docs`
+- Edite o `README.md` com descrição do projeto, tecnologias, passos para testar e prints das telas.
 
 </details>
 

@@ -48,7 +48,7 @@ Desenvolver um sistema Web Full-stack para gerenciar o acervo de uma loja de dis
 
 - 2.1 Entregar o DER (Conceitual ou Lógico) em formato de imagem (.png, .jpeg) ou PDF.
 <br>Exemplos:
-<br>![Diagrama Entidade Relacionamento - Loja de Discos](der.jpg)
+<br>![Diagrama Entidade Relacionamento - Loja de Discos](DER.jpg)
 
 ### 3 - Script de criação e população do banco de dados
 

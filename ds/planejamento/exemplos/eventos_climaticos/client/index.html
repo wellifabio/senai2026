@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Climáticos</title>
+</head>
+
+<body>
+    <header>
+        <h1>Eventos Climáticos</h1>
+    </header>
+    <main>
+        <section>
+            <form id="login">
+                <input type="email" name="email" placeholder="E-mail" value="ana.souza@email.com" required>
+                <input type="password" name="senha" value="senha123" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h2>by wellifabio</h2>
+        <p id="msg"></p>
+    </footer>
+</body>
+<script>
+    login.addEventListener('submit', async e => {
+        e.preventDefault()
+        const dados = {
+            email: login.email.value,
+            senha: login.senha.value
+        }
+        fetch('http://localhost:3000/usuarios/login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(dados)
+        }).then(resp => resp.json())
+            .then(resp => {
+                alert(resp)
+            })
+
+    })
+</script>
+
+</html>

@@ -12,6 +12,7 @@ router.get('/',rotaInicial)
 router.post('/login', Usuario.login)
 
 router.post('/usuarios', Usuario.cadastrar)
+router.post('/usuarios/login', Usuario.login)
 router.get('/usuarios', Usuario.listar)
 router.get('/usuarios/:id', Usuario.buscarAgregandoEventos)
 router.put('/usuarios/:id', Usuario.alterar)

@@ -167,7 +167,8 @@ datasource db {
   provider = "postgresql"
 }
 ```
-    - Pode remover o `"@prisma/adapter-mariadb": "^7.10.0",` do `package.json`
+    - Remover o `"@prisma/adapter-mariadb": "^7.10.0",` do `package.json`
+    - Trocar por `"@prisma/adapter-pg": "^7.10.1",` do `package.json`
     - E adicionar o `"postinstall": "prisma migrate dev --name init && prisma generate"` no script
 ```json
 {
@@ -179,7 +180,7 @@ datasource db {
     "postinstall": "prisma migrate dev --name init && prisma generate"
   },
   "dependencies": {
-    "@prisma/adapter-pg": "^7.10.0",
+    "@prisma/adapter-mariadb": "^7.10.0",
     "@prisma/client": "^7.10.0",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",

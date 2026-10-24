@@ -44,7 +44,7 @@ Digite a planilha a seguir ao lado das planilhas de pastéis
 |Frango|3,85|||||
 |Queijo|6,71|||||
 |Pizza|6,72|||||
-||||**Totais**|||
+|||**Totais**||||
 
 Estime os preços e quantidades para os pastéis de forma que possamos lucrar um **salário mínimo**.
 - Pode utilizar a IA para sujerir.

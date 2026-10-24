@@ -16,5 +16,19 @@ Este mesmo exemplo pode ser aplicado para qualquer outro negócio semelhante.
 - Valor (Média dos preços da região)
 - Preço (No ponto de vista de quem vende)
 ### Desafio
-Abra uma nova planilha do Excel e digite ou transcreva com uma IA (Chat GPT poe exemplo) a seguinte planilha:
+Abra uma nova planilha do Excel e digite ou transcreva com uma IA (Chat GPT por exemplo) a seguinte planilha:
 <br>![Somas](./custos.png)
+
+### Formulas
+
+- `= Quantidade * Custo` Procurando o ingrediente manualmente
+<br>![Somas](./custos_proc.png)
+```
+- PROCV(valor_procurado; tabela + F4; nº da coluna; exato ou aproximado)
+- 0 = Exato
+- 1 = Aproximado
+```
+- VERDADEIRO = 1 = `Aproximado`
+- FALSO = 0 = `Exato`
+- F4 `Congelar as células selecionadas` exemplo $C$4
+<br>![Somas](./custos_procv.png)

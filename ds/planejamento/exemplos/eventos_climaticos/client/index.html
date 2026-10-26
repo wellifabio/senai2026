@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Eventos Climáticos</title>
 </head>
 
@@ -14,15 +15,15 @@
     <main>
         <section>
             <form id="login">
-                <input type="email" name="email" placeholder="E-mail" value="ana.souza@email.com" required>
-                <input type="password" name="senha" value="senha123" required>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <input type="password" name="senha" required>
                 <button type="submit">Entrar</button>
             </form>
         </section>
     </main>
     <footer>
         <h2>by wellifabio</h2>
-        <p id="msg"></p>
+        <p id="msg">Mensagens do sistema:</p>
     </footer>
 </body>
 <script>
@@ -32,13 +33,23 @@
             email: login.email.value,
             senha: login.senha.value
         }
+        let status = 0;
         fetch('http://localhost:3000/usuarios/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(dados)
-        }).then(resp => resp.json())
+        })
             .then(resp => {
-                alert(resp)
+                status = resp.status
+                return resp.json()
+            })
+            .then(resp => {
+                if (status == 200) {
+                    console.log(resp)
+                    window.location.href = `./home.html?id=${resp[0].id}&nome=${resp[0].nome}`
+                } else {
+                    msg.innerHTML = resp.msg;
+                }
             })
 
     })

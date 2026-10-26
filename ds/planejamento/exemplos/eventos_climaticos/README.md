@@ -40,3 +40,8 @@ Projeto para aulas de **back-end**, com o objetivo de criar uma **API REST-full*
 <details><summary>Cadastrar novo usuário</summary><img alt="Screeshot02" src="./docs/testes/screenshot02.png"></details>
 <details><summary>Listar Eventos</summary><img alt="Screeshot03" src="./docs/testes/screenshot03.png"></details>
 <details><summary>Cadastrar novo Evento</summary><img alt="Screeshot04" src="./docs/testes/screenshot04.png"></details>
+
+## UI(Interface de Usuário) - Web
+<details><summary>Login</summary><img alt="Screeshot01" src="./docs/ui_prints/ss01.png"></details>
+<details><summary>Listar Usuários</summary><img alt="Screeshot02" src="./docs/ui_prints/ss02.png"></details>
+<details><summary>Cadastrar novo usuário</summary><img alt="Screeshot03" src="./docs/ui_prints/ss03.png"></details>

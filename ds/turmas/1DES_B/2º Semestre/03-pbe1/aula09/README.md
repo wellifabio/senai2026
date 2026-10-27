@@ -103,31 +103,33 @@ Conectar o back-end da aplicação web com um banco de dados relacional, utiliza
 ![Diagrama de Entidade-Relacionamento](./mer_der_conceitual.png)
 #### Script SQL
 - Crie uma pasta na área de trabalho chamada `eventos_climaticos` e dentro dela crie uma outra pasta chamada `db`.
-- Na pasta `db`, criar um script chamado `script.sql` para:
-    - criar um banco de dados chamado `registros_climaticos` (DDL)
+- Na pasta `db`, criar um script para chamado `script.sql` para:
+    - criar um banco de dados chamado `registos_climaticos` (DDL)
     - e popular com os dados fornecidos para as tabelas `Usuários` e `Eventos` (DML).
 ```sql
 drop database if exists registros_climaticos;
 create database registros_climaticos;
 use registros_climaticos;
--- DDL Criação das tabelas
+-- DDL para criar as tabelas do banco de dados
 create table usuario (
     id int not null auto_increment primary key,
     nome varchar(100) not null,
     email varchar(100) not null unique,
     senha varchar(100) not null
 );
+
 create table evento (
     id int not null auto_increment primary key,
     usuarioId int not null,
     cidade varchar(100) not null,
     tipoEvento varchar(100) not null,
     temperaturaMaxima decimal(10,2) not null,
-    data Date default(curdate()) not null,
-    nivelImpacto enum('Baixo', 'Médio', 'Alto') default('Médio') not null
+    data date not null,
+    nivelImpacto enum('Baixo', 'Médio', 'Alto') default 'Médio' not null
 );
-alter table evento add constraint fk_registra
-foreign key (usuarioId) references usuario(id);
+
+alter table evento add
+constraint fk_registra foreign key (usuarioId) references usuario(id);
 
 -- DML para inserir dados de exemplo nas tabelas
 insert into usuario (nome, email, senha) values
@@ -144,7 +146,6 @@ insert into evento (usuarioId, cidade, tipoEvento, temperaturaMaxima, data, nive
 
 select * from usuario;
 select * from evento;
-
 ```
 ### 2 Back-end com Node.js
 #### Documentação
@@ -272,11 +273,50 @@ module.exports = router
         - instruções para testar
         - e prints das requisições e respostas do Thunder Client, salvas em `docs/prints`.
 - Mostre o repositorio para o professor **VISTAR**
-- [Exemplo de entrega](https://github.com/wellifabio/sesi_pbe1_aula09_eventos_climaticos_2026.git)
+
+---
 
 ## Desafio - Para a proxima aula
+Link do [projeto iniciado na aula anterior](https://github.com/wellifabio/sesi_pbe1_aula09_eventos_climaticos_2026.git) somente com cadastrar e listar das duas classes usuarios e eventos implementadas.
 - 1 Implemente os **CRUDs** de `atualizar` e `excluir` para as tabelas `usuario` e `evento`.
 - 2 Adicione prints dos testes de atualização e exclusão no README.md do projeto.
-- 3 Implemente uma rota `post` de **login** e uma funcionalidade de **login** no conroller `usuario.js` que receba { **email**, **senha** } cadastrados e retorne os dados do usuário se os credenciais forem válidos, se não retorne um erro 404.
+- 3 Implemente uma rota `get` de **resumo** e uma funcionalidade de **resumo** que liste todos os eventos e retorne a **média de temperaturas**
+- 4 Implemente uma rota `post` de **login** e uma funcionalidade de **login** no conroller `usuario.js` que receba { **email**, **senha** } cadastrados e retorne os dados do usuário se as credenciais forem válidos, se não retorne um erro 404.
 - 4 Adicione prints dos testes de login no README.md do projeto.
 
+---
+
+<details>
+<summary>
+<h2>
+
+[Insomnia](https://insomnia.rest/download)
+
+</h2>
+</summary>
+
+Ferramenta de testes, alternativa ao Thunder Client
+- Baixe e instale em seu computador
+<br>![Insomnia](./insomnia01.png)
+<br>![Insomnia](./insomnia02.png)
+<br>![Insomnia](./insomnia03.png)
+
+</details>
+
+---
+
+<details>
+<summary>
+<h2>
+
+[Postman](https://www.postman.com/downloads/)
+
+</h2>
+</summary>
+
+Ferramenta de testes, alternativa ao Insomnia
+- Se o insomnia não funcinar baixe e instale o Postman, faça login com seu gmail pessoal
+- Windows x64
+<br>![Insomnia](./postman.png)
+
+</details>

@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="MUV135lhtfVVtqR0Nrp1">
+    <mxGraphModel dx="982" dy="540" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XFUYft2QduStWQshMwa9-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;shadow=1;" value="" vertex="1">
+          <mxGeometry height="299" width="416" x="154" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="XFUYft2QduStWQshMwa9-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontFamily=Comic Sans MS;" value="E-mail" vertex="1">
+          <mxGeometry height="29" width="243" x="240.5" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="XFUYft2QduStWQshMwa9-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontFamily=Comic Sans MS;" value="Senha" vertex="1">
+          <mxGeometry height="29" width="243" x="240.5" y="331" as="geometry" />
+        </mxCell>
+        <mxCell id="XFUYft2QduStWQshMwa9-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#CCCCCC;strokeColor=#330000;shadow=1;fontFamily=Comic Sans MS;glass=0;sketch=1;curveFitting=1;jiggle=2;" value="Entrar" vertex="1">
+          <mxGeometry height="29" width="243" x="240.5" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="XFUYft2QduStWQshMwa9-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontFamily=Comic Sans MS;" value="Eventos Climáticos" vertex="1">
+          <mxGeometry height="38.71" width="160" x="282" y="243" as="geometry" />
+        </mxCell>
+        <mxCell id="XFUYft2QduStWQshMwa9-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontFamily=Comic Sans MS;" value="" vertex="1">
+          <mxGeometry height="299" width="416" x="599" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="XFUYft2QduStWQshMwa9-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#CCCCCC;strokeColor=#330000;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontFamily=Comic Sans MS;" value="Saír" vertex="1">
+          <mxGeometry height="29" width="52" x="950" y="201.86" as="geometry" />
+        </mxCell>
+        <mxCell id="XFUYft2QduStWQshMwa9-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontFamily=Comic Sans MS;" value="Eventos Climáticos" vertex="1">
+          <mxGeometry height="38.71" width="160" x="608" y="194" as="geometry" />
+        </mxCell>
+        <mxCell id="XFUYft2QduStWQshMwa9-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontFamily=Comic Sans MS;" value="Ana Silva" vertex="1">
+          <mxGeometry height="38.71" width="89" x="854" y="197" as="geometry" />
+        </mxCell>
+        <mxCell id="XFUYft2QduStWQshMwa9-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontFamily=Comic Sans MS;" value="&amp;nbsp; &amp;nbsp;Pedreira, Tempestade" vertex="1">
+          <mxGeometry height="60" width="352" x="631" y="249" as="geometry" />
+        </mxCell>
+        <mxCell id="XFUYft2QduStWQshMwa9-18" parent="1" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://icons.diagrams.net/icon-cache1/Outline_icons-2638/Pencil-528.svg;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontFamily=Comic Sans MS;" value="" vertex="1">
+          <mxGeometry height="38.71" width="38.71" x="881.29" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="XFUYft2QduStWQshMwa9-19" parent="1" style="strokeColor=#999999;verticalLabelPosition=bottom;shadow=1;dashed=0;verticalAlign=top;strokeWidth=2;html=1;shape=mxgraph.mockup.misc.trashcanIcon;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" value="" vertex="1">
+          <mxGeometry height="50" width="50" x="928" y="254" as="geometry" />
+        </mxCell>
+        <mxCell id="XFUYft2QduStWQshMwa9-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontFamily=Comic Sans MS;" value="&amp;nbsp; &amp;nbsp;Amparo, Queimada" vertex="1">
+          <mxGeometry height="60" width="352" x="631" y="323" as="geometry" />
+        </mxCell>
+        <mxCell id="XFUYft2QduStWQshMwa9-22" parent="1" style="strokeColor=#999999;verticalLabelPosition=bottom;shadow=1;dashed=0;verticalAlign=top;strokeWidth=2;html=1;shape=mxgraph.mockup.misc.trashcanIcon;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" value="" vertex="1">
+          <mxGeometry height="50" width="50" x="928" y="328" as="geometry" />
+        </mxCell>
+        <mxCell id="XFUYft2QduStWQshMwa9-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontFamily=Comic Sans MS;" value="&amp;nbsp; &amp;nbsp;Jaguariúna, Geada" vertex="1">
+          <mxGeometry height="60" width="352" x="631" y="398" as="geometry" />
+        </mxCell>
+        <mxCell id="XFUYft2QduStWQshMwa9-25" parent="1" style="strokeColor=#999999;verticalLabelPosition=bottom;shadow=1;dashed=0;verticalAlign=top;strokeWidth=2;html=1;shape=mxgraph.mockup.misc.trashcanIcon;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" value="" vertex="1">
+          <mxGeometry height="50" width="50" x="928" y="403" as="geometry" />
+        </mxCell>
+        <mxCell id="XFUYft2QduStWQshMwa9-26" parent="1" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://icons.diagrams.net/icon-cache1/Outline_icons-2638/Pencil-528.svg;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontFamily=Comic Sans MS;" value="" vertex="1">
+          <mxGeometry height="38.71" width="38.71" x="879.15" y="333.64" as="geometry" />
+        </mxCell>
+        <mxCell id="XFUYft2QduStWQshMwa9-27" parent="1" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://icons.diagrams.net/icon-cache1/Outline_icons-2638/Pencil-528.svg;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontFamily=Comic Sans MS;" value="" vertex="1">
+          <mxGeometry height="38.71" width="38.71" x="879.15" y="408.65" as="geometry" />
+        </mxCell>
+        <mxCell id="XFUYft2QduStWQshMwa9-28" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontFamily=Comic Sans MS;" value="Tela login" vertex="1">
+          <mxGeometry height="38.71" width="160" x="272" y="489" as="geometry" />
+        </mxCell>
+        <mxCell id="XFUYft2QduStWQshMwa9-29" edge="1" parent="1" source="XFUYft2QduStWQshMwa9-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;innerLoopWaypoints=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="XFUYft2QduStWQshMwa9-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XFUYft2QduStWQshMwa9-30" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontFamily=Comic Sans MS;" value="Tela Home" vertex="1">
+          <mxGeometry height="38.71" width="160" x="727" y="494" as="geometry" />
+        </mxCell>
+        <mxCell id="XFUYft2QduStWQshMwa9-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontFamily=Comic Sans MS;" value="Weireframes" vertex="1">
+          <mxGeometry height="38.71" width="160" x="505" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="XFUYft2QduStWQshMwa9-32" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontSize=24;fontFamily=Comic Sans MS;verticalAlign=middle;" value="+" vertex="1">
+          <mxGeometry height="35.71" width="44" x="810" y="201.86" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

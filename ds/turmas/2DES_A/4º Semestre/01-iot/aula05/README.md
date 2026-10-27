@@ -81,8 +81,16 @@ else:
 for i in range(1, 101):
     print(i)
 ```
+
+---
+
+<details><summary><h2>
+
+Exercícios
+
+</h2></summary>
 Faça a seguinte lista de exercícios para estudo da linguagem, caso utilize IA para estudar, entenda o código gerado, tire dúvidas com o instrutor se necessário.
-## Exercícios
+
 1 - Média de três números:
 Escreva um programa que solicite três números ao usuário e imprima a média deles.
 
@@ -128,4 +136,367 @@ Envie todos os exercícios para um repositório do Github chamado `sesi_iot_estu
 ```bash
 pytnon nome_arquivo.py
 ```
-Apresente o diretório para o professor vistar:
+Apresente o diretório para o **professor vistar**:
+
+</details>
+
+---
+
+<details><summary><h2>
+
+Trabalhando arquivos
+
+</h2></summary>
+
+A função open abre um arquivo em modo leitura ‘r’ (padrão) e retorna um objeto file. Se não conseguir, levantará uma exceção do tipo OSError. O arquivo também pode
+ser aberto para escritura ‘w’. O modo escritura trunca e substitui o conteúdo existente, se este existir. O modo append ‘a’, faz com que o modo de gravar adicione o conteúdo novo no final do arquivo, sem truncar.
+<br>O comando with funciona como um wrapper que fecha o objeto file automaticamente ao finalizar o bloco.
+<br>O objeto file possui os métodos read, readline, readlines e write que permitirão ler o arquivo na sua totalidade, uma determinada quantidade de caracteres, uma linha, ou
+criar uma lista com cada uma das linhas; além de escrever, novamente, para um arquivo de saída.
+- Ler um arquivo de entrada na sua totalidade e escrever o resultado no arquivo de saída (truncando):
+
+```py
+with open('xanadu.txt') as fin:
+    texto = fin.read()
+with open('out.txt', 'w') as fout:
+    fout.write(texto)
+```
+
+Ler um caractere por vez e escrever o resultado no arquivo de saída (adicionando):
+
+```py
+with open('xanadu.txt') as fin:
+    with open('out.txt', 'a') as fout:
+    char = fin.read(1)
+    while char != "":
+        # Do stuff with char.
+        fout.write(char)
+        char = fin.read(1)
+```
+
+- Ler o arquivo na sua totalidade, armazenar o resultado numa lista onde cada elemento é uma string representando uma linha do arquivo. Iterar a lista e escrever cada linha no arquivo de saída (adicionando):
+
+```py
+with open('xanadu.txt') as fin:
+    with open('out.txt', 'a') as fout:
+    lines = fin.readlines()
+    for line in lines:
+        # Do stuff with line.
+        fout.write(line)
+```
+
+O método split divide uma string usando um caractere separador especificado como argumento (espaço “ “ por padrão). O método strip vai retirar os caracteres especificados como argumento do início e o final da string. A biblioteca string possui uma constante com todos os caracteres considerados como pontuação. Também é possível iterar linha por linha sem usar o método readlines.
+- Ler todas as linhas do arquivo de entrada, iterar, separar em palavras (split) e limpar caracteres indesejados (strip). Escrever uma palavra por linha no arquivo de saída:
+
+```py
+import string
+
+with open('xanadu.txt', 'r') as fin:
+    with open('out.txt', 'a') as fout:
+    for line in fin:
+        words = line.split()
+        for word in words:
+        word = word.strip(string.punctuation)
+        fout.write(word + "\n")
+```
+
+#### Listas
+As listas em Python são coleções arbitrárias de objetos. Elas podem ser acessadas pelo índice e disponibilizam vários métodos para sua manipulação.
+- Criar uma lista, três formas diferentes:
+
+```py
+lista = list()
+lista = []
+lista = [“João”, “Silva”, 34]
+```
+- Definir critérios de ordenamento:
+
+```py
+# Criar a classe Aluno
+class Aluno:
+    def __init__(self, nome, ano, idade):
+    self.nome = nome
+    self.ano = ano
+    self.idade = idade
+    def __str__(self):
+    return "{:8} {:2} {:2}".format(self.nome, self.ano, self.idade)
+# Criar uma lista de objetos Aluno
+alunos = [Aluno("João", 5, 10), Aluno("Maria", 2, 7), Aluno("Lucas", 1, 6)]
+# Ordenar a lista segundo um dos atributos do objeto Aluno
+alunos.sort(key=lambda aluno: aluno.idade)
+```
+
+#### Formatando Saídas
+Função print:
+- A função print recebe um ou mais argumentos e exibe eles na saída padrão:
+
+```py
+a = 5
+b = “Animal”
+print(“Planta”, 7.8, a, b)
+```
+```txt
+Planta 7.8 5 Animal
+```
+
+- O signo `+` concatena duas strings:
+
+```py
+print(b + “Esquisito”)
+```
+```txt
+AnimalEsquisito
+```
+O operador % formata uma string por meio de marcadores que serão preenchidos pelos argumentos dados em forma de tupla. Os marcadores são:
+- %s strings
+- %c inteiros ou um simples caractere
+- %d ou %i inteiros
+- %f ponto flutuante
+- %e notação científica (ponto flutuante)
+- %o números octais
+- %x hexadecimais (minúscula)
+- %X hexadecimais (maiúscula)
+
+```py
+print("%s %s" % ("um", "dois"))
+```
+```txt
+um dois
+```
+
+```py
+print("%d %d" % (1, 2))
+```
+```txt
+1 2
+```
+A sintaxe dos marcadores é a seguinte:
+
+```py
+%[flag][width][.precision]type
+```
+
+#### Margem e alinhamento:
+Um número inteiro na posição ‘width’ controla a quantidade de caracteres que ocupará esse elemento dentro da string. Por padrão, o alinhamento será à direita. A ‘flag’ ‘-’ antes do inteiro fará com que o alinhamento seja à esquerda:
+
+```py
+print("|%10s|" % ("teste")) # à direita
+```
+```txt
+| teste|
+```
+```py
+print("|%-10s|" % ("teste")) # à esquerda
+```
+```txt
+|teste |
+```
+#### Precisão
+Para os números de ponto flutuante, além da largura, podemos controlar também a precisão, a quantidades de casas decimais após o ponto (com arredondamento):
+
+```py
+print(“|%.2f|” % (5.6794092))
+```
+```txt
+|5.68|
+```
+```py
+print(“|%6.2|” % (5.6794092))
+```
+```txt
+| 5.68|
+```
+
+Sendo strings, o valor da precisão determinará quantos caracteres serão efetivamente formatados:
+
+```py
+print(“|%5.3s|” % (“teste”))
+```
+```txt
+| tes|
+```
+
+É possível passar os valores de ‘width’ e ‘precision’ como argumentos na tupla:
+
+```py
+print(“|%*s||%*.*f|” % (10, “teste”, 6, 2, 3.141628))
+```
+```txt
+| teste|| 3.14|
+```
+
+#### Preenchimento
+
+A flag ‘0’ vai completar o valor do número com zeros à esquerda:
+
+```py
+print(“%010d” % (556))
+```
+```txt
+0000000556
+```
+```py
+print(“%010f” % (5.56))
+```
+```txt
+005.560000
+```
+
+Sendo um número de ponto flutuante, a quantidade de casas decimais padrão será de 6.
+<br>Para limitá-las, precisa adicionar o valor da precisão:
+
+```py
+print(“%010.3f” % (5.56))
+```
+```txt
+000005.560
+```
+
+#### Números com sinais
+Para formatar números com sinal usa-se a ‘flag’ “+”:
+```py
+print(“%+d, %+10.2f” % (12, -20.3))
+```
+```txt
++12, -20.30
+```
+</details>
+
+---
+
+## Desafios
+Desenvolva em Python os desafios a seguir, preferencialmente sem utilizar IA.
+
+### Instruções
+- O Objetivo é treinar seu raciocínio lógico
+- Capacidade de resolver problemas
+    - Decompor
+    - Encontrar padrões
+    - Escrever algoritmos
+- Crie uma pasta chamada `desafios` que será o seu repositório no github, todos os desafios podem ser colocados neste repositório.
+    - Para cada desafio crie uma **subpasta** com o nome do desafio
+        - A subpasta deve conter pelo menos quatro arquivos, entrada.txt, saida.txt, 'nome_desafio.py' e README.md com a descrição do desafio.
+
+<details><summary><h3>
+
+Fechem as portas!
+
+</h3></summary>
+
+- Nome do arquivo fonte: `portas.py`
+### Descrição
+Madame Beauvoir possui uma mansão onde ela recebe todos os seus descendentes (netos e bisnetos) durante as férias. Sua mansão possui exatamente N quartos (cada quarto é numerado de1 a N), onde N é também a quantidade de netos e bisnetos (cada descendente é também numerado de 1 a N).
+<br>Como toda criança, os descendentes de Mme. Beauvoir são bastante travessos. Todo dia é a mesma confusão: eles acordam de manhã cedo antes dela e se encontram no grande jardim. Cada descendente, um de cada vez, entra na mansão e troca o estado das portas dos quartos cujos números são múltiplos do seu identificador. Trocar o estado de uma porta significa fechar uma porta que estava aberta ou abrir uma porta que estava
+fechada. Por exemplo, o descendente cujo identificador é igual a 15 vai trocar o estado das portas 15, 30, 45, etc.
+<br>Considerando que todas as portas estão inicialmente fechadas (todos os descendentes fecham as portas antes de descer para o jardim) e que cada descendente entra exatamente uma vez na mansão (a confusão é tão grande que não sabemos em que ordem), quais portas estarão abertas após a entrada de todos os descendentes na mansão?
+
+### Entrada
+A entrada contém vários casos de teste. Cada caso de teste consiste em uma linha que contém um inteiro N (0 <= N <= 25.000.000), indicando o número de portas e descendentes.
+- O final da entrada é indicado por N = 0.
+- A entrada deverá ser lida de um arquivo texto chamado `entrada.txt`.
+
+### Saída
+Para cada caso de teste da entrada seu programa deve produzir uma linha na saída, contendo a sequência crescente de números correspondente aos identificadores dos quartos cujas portas estarão abertas.
+- Ao imprimir a sequência, deixe um espaço em branco entre dois elementos consecutivos.
+- A saída deverá ser escrita em um arquivo texto chamado `saida.txt`.
+
+|Exemplo de entrada|Saída para o exemplo de entrada|
+|-|-|
+|1| 1|
+|2| 1|
+|3| 1|
+|4| 1 4|
+|0||
+
+</details>
+<details><summary><h3>
+
+Esquerda, Volver!
+
+</h3></summary>
+
+- Nome do arquivo fonte: `esquerda.py`
+
+### Descrição
+Este ano o sargento está tendo mais trabalho do que de costume para treinar os recrutas. Um deles é muito atrapalhado, e de vez em quando faz tudo errado – por exemplo, ao invés de virar à a direita quando comandado, vira à esquerda, causando grande confusão no batalhão.
+<br>O sargento tem fama de durão e não vai deixar o recruta em paz enquanto este não aprender a executar corretamente os comandos. No sábado a tarde, enquanto todos os outros recrutas estão de folga, ele obrigou o recruta a fazer um treinamento extra.
+<br>Com o recruta marchando parado no mesmo lugar, o sargento emitiu uma série de comandos “esquerda volver!” e “direita volver!”. A cada comando, o recruta deve girar sobre o mesmo ponto e dar um quarto de volta na direção correspondente ao comando.
+- Por exemplo, se o recruta está inicialmente como rosto voltado para a direção norte, após um comando de “esquerda volver!” ele deve ficar com o rosto voltado para a direção oeste.
+- Se o recruta está inicialmente com o rosto voltado para o leste, após um comando “direita, volver!” ele deve ter o rosto voltado para o sul.
+<br>No entanto, durante o treinamento, em que o recruta tinha inicialmente o rosto voltado para o norte, o sargento emitiu uma série tão extensa de comandos, e tão rapidamente, que até ele ficou confuso, e não sabe mais para qual direção o recruta deve ter seu rosto voltado após executar todos os comandos. Você pode ajudar o sargento?
+
+### Entrada
+A entrada contém vários casos de teste. A primeira linha de um caso de teste contém um inteiro N que indica o número de comandos emitidos pelo sargento (1 <= N <= 1.000).
+<br>A segunda linha contém N caracteres, descrevendo a série de comandos emitidos pelo sargento. Cada comando é representado por uma letra: “E” (para “esquerda, volver!”) e “D” (para “direita, volver!”). O final da entrada é indicado por N = 0.
+- A entrada deverá ser lida de um arquivo texto chamado `entrada.txt`.
+### Saída
+Para cada caso de teste da entrada seu programa deve produzir uma única linha da saida, indicando a direção para a qual o recruta deve ter sua face voltada após executar a série de comandos, considerando que no início o recruta tem a face voltada para o norte.
+- A linha deve conter uma letra entre ‘N’, ‘L’, ‘S’ e ‘O’, representando respectivamente as direções norte, leste, sul e oeste.
+- A saída deverá ser escrita em um arquivo texto chamado `saida.txt`.
+
+|Exemplo de entrada|Saída para o exemplo de entrada|
+|-|-|
+|3<br>DDE<br>2<br>EE<br>0|L<br>S|
+
+</details>
+<details><summary><h3>
+
+Suco de Acerola
+
+</h3></summary>
+
+- Nome do arquivo fonte: `suco.py`
+
+### Descrição
+Natural das Antilhas, a acerola (Malpighia glabra Linn, também conhecida como cereja das Antilhas) já era apreciada pelos nativos das Américas há muitos séculos. Mas o grande interesse por essa fruta surgiu na década de 1940, quando cientistas porto-riquenhos descobriram que a acerola contém grande quantidade de Ácido ascórbico (vitamina C). 
+<br>A acerola apresenta, em uma mesma quantidade de polpa, até 100 vezes mais vitamina C do que a laranja e o limão, 20 vezes mais do que a goiaba e 10 vezes mais do que o caju e a amora.
+<br>Um grupo de amigos está visitando o Sítio do Picapau Amarelo, renomado produtor de acerola. Com a permissão de Dona Benta, dona do sítio, colheram uma boa quantidade de frutas, e pretendem agora fazer suco de acerola, que será dividido igualmente entre os amigos durante o lanche da tarde.
+- Conhecendo o número de amigos, a quantidade de frutas colhidas, e sabendo que cada unidade da fruta é suficiente para produzir 50 ml de suco, escreva um programa para determinar qual o volume, em litros, que cada amigo poderá tomar.
+
+### Entrada
+A entrada contém vários casos de teste. Cada caso de teste é composto por uma única linha, contendo dois números inteiros N e F, indicando respectivamente o número de amigos (1 <= N <= 103) e a quantidade de de frutas colhidas (1 <= F <= 103).
+- O final da entrada é indicado por uma linha que contém apenas dois zeros, separados por um espaço em branco.
+- A entrada deverá ser lida de um arquivo texto chamado `entrada.txt`.
+
+### Saída
+Para cada caso de teste da entrada seu programa deve imprimir uma única linha, contendo um número real, escrito com precisão de duas casas decimais, representando o volume de suco, em litros, a que cada amigo tem direito.
+- A saída deverá ser escrita em um arquivo de texto chamado `saida.txt`.
+
+|Exemplo de entrada|Saída para o exemplo de entrada|
+|-|-|
+|1 1<br>5 431<br>101 330<br>0 0|0.05<br>4.31<br>0.16|
+
+</details>
+<details><summary><h3>
+
+Help!
+
+</h3></summary>
+
+- Nome do arquivo fonte: `help.py`
+
+### Descrição
+Bem, temos que admitir: precisamos da sua ajuda. Neste ano as coisas não estão correndo muito bem como gostaríamos, e não pudemos terminar o software do sistema de competição a tempo. Uma parte vital foi esquecida, e até onde sabemos, precisaremos do sistema funcionando esta tarde, para a competição oficial.
+<br>A parte esquecida é o módulo que computa o placar dos times, dando a relação das suas submissões.
+<br>Por favor, nos ajude!
+
+### Entrada
+A entrada contém vários casos de teste. A primeira linha de um caso de teste contém um número inteiro N indicando o número de submissões neste teste ( 1 <= N <=300).
+- Cada uma das N linhas descreve uma submissão; cada uma dessas linhas contém um identificador de problema (uma letra de “A” a “Z”), seguida de um número inteiro T representando o tempo em minutos (0 <= T <= 300), seguido de um julgamento (a palavra “correct” (correto) ou a palavra “incorrect” (errado)). A entrada é ordenada em ordem ascendente de tempo, e haverá no máximo um julgamento “correct” (correto) para cada problema.
+- O final do arquivo é indicado por N = 0.
+- A entrada deverá ser lida de um arquivo texto chamado `entrada.txt`.
+
+### Saída
+Para cada caso de teste de entrada seu programa deve imprimir uma única linha de saída contendo dois números inteiros S e P, separados por um espaço, onde o S é o número de problemas distintos com um julgamento “correct” (correto) e P é a somatória dos tempos que cada problema distinto foi julgado “correct” (correto) pela primeira vez, mais 20 para cada submissão “incorrect” (errada) de um problema que mais tarde tenha
+sido julgado “correct” (correto).
+- A saída deverá ser escrita em um arquivo texto chamado `saida.txt`.
+
+|Exemplo de entrada|Saída para o exemplo de entrada|
+|-|-|
+|3<br>A 120 incorrect<br>A 130 incorrect<br>A 200 incorrect<br>5<br>A 100 correct<br>B 110 incorrect<br>B 111 correct<br>C 200 correct<br>D 300 incorrect<br>0|0 0<br>3 431|
+
+</details>
+
+## Entregas
+Repositório do github contendo os 4 desafios descritos e solucionados
+- Mostre ao instrutor para o visto

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Eventos Climáticos</title>
+</head>
+
+<body>
+    <header>
+        <h1>Eventos Climáticos</h1>
+        <nav>
+            <h2 id="nomeUsuario"></h2>
+            <button onclick="novoEvento.showModal()">Novo</button>
+            <button onclick="window.location.href='./'">Sair</button>
+        </nav>
+    </header>
+    <main>
+        <h2>Registros de eventos</h2>
+        <section id="cards"></section>
+    </main>
+    <footer>
+        <h2>by wellifabio</h2>
+        <p id="msg">Mensagens do sistema:</p>
+    </footer>
+    <dialog id="novoEvento">
+        <header>
+            <h2>Registrar novo evento</h2>
+            <button onclick="novoEvento.close()">X</button>
+        </header>
+        <form id="formNovo">
+            <input type="text" name="cidade" placeholder="Digite a cidade:" required>
+            <input type="text" name="tipoEvento" placeholder="Digite qual o tipo de evento:" required>
+            <input type="number" step="0.01" name="temperaturaMaxima" placeholder="Temperatura máxima em °C:" required>
+            <label for="nivelImpacto">Nível de impacto</label>
+            <select name="nivelImpacto">
+                <option value="Baixo">Baixo</option>
+                <option value="Médio">Médio</option>
+                <option value="Alto">Alto</option>
+            </select>
+            <button type="submit">Enviar</button>
+        </form>
+    </dialog>
+</body>
+<script>
+    const parametros = new URLSearchParams(window.location.search);
+    nomeUsuario.innerHTML = parametros.get('nome');
+    fetch('http://localhost:3000/eventos')
+        .then(resp => resp.json())
+        .then(resp => {
+            resp.forEach(evento => {
+                const card = document.createElement("article")
+                card.innerHTML = `
+                <header><h3>${evento.cidade}</h3></header>
+                <div><p>${evento.tipoEvento}, ${evento.temperaturaMaxima.toFixed(2)}°C</p></div>
+                <footer><p>${evento.nivelImpacto}</p></footer>
+                `
+                cards.appendChild(card)
+            });
+        })
+    formNovo.addEventListener('submit', async e => {
+        e.preventDefault()
+        const dados = {
+            usuarioId: Number(parametros.get('id')),
+            cidade: formNovo.cidade.value,
+            tipoEvento: formNovo.tipoEvento.value,
+            temperaturaMaxima: Number(formNovo.temperaturaMaxima.value),
+            nivelImpacto: formNovo.nivelImpacto.value,
+        }
+        let status = 0;
+        fetch('http://localhost:3000/eventos', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(dados)
+        })
+            .then(resp => {
+                status = resp.status
+                return resp.json()
+            })
+            .then(resp => {
+                if (status == 201) {
+                    console.log(resp)
+                    window.location.reload()
+                } else {
+                    msg.innerHTML = resp.msg;
+                }
+            })
+
+    })
+</script>
+
+</html>

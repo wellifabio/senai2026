@@ -9,7 +9,7 @@ const login = (req, res) => {
             res.status(500).json({ erro: 'Erro ao listar usuários' })
         } else {
             if (results.length == 0) {
-                res.status(404).json("Acesso negado, credenciais inválidas")
+                res.status(404).json({ msg: "Acesso negado, credenciais inválidas" })
             } else {
                 res.json(results)
             }

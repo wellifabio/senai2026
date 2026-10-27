@@ -49,8 +49,8 @@ use Pizzaria;
 
 create table Clientes(
 	Cliente_id integer primary key auto_increment,
-	nome varchar(30) not null,
-	logradouro varchar(30) not null,
+	nome varchar(70) not null,
+	logradouro varchar(100) not null,
 	numero decimal(5,0),
 	complemento varchar(30),
 	bairro varchar(30),
@@ -60,7 +60,7 @@ create table Clientes(
 create table Pizzas(
 	pizza_id integer primary key auto_increment,
 	nome varchar(30) not null,
-	descricao varchar(100) not null,
+	descricao varchar(200) not null,
 	valor decimal(8,2) not null
 );
 

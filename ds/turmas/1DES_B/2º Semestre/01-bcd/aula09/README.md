@@ -701,7 +701,7 @@ show tables;
 <details><summary><h3>MER DER Lógico</h3></summary>
 
 ![Lógico](./mer_der_pizzaria_logico.png)
-
+Perceba que o **Script SQL** (Modelo Físico) está mais atualizado do que os modelos conceituais e lógicos, pois como os clientes podem possuir mais de um telefone foi aplicada **Normalização** e cria da uma tabela para armazenar os telefones. 
 </details>
 
 - 4 Crie uma **pasta** `pizzaria_db`, abra com **VsCode** e crie um arquivo `queries.sql` contendo `SELECTs` ou `SHOWs` que respondam as seguintes questões:

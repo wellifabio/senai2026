@@ -766,7 +766,7 @@ Execute **um de cada vez** os comandos *estudando* seus resultados, en seguida f
 
 #### Desafios
 - [ ] Crie um relatório que mostre todos os pedidos, itens, nome dos - clientes e nome das pizzas.
-- [ ] Acrescente uma coluna chamada subtotal que seja o calculo do preco - unitário da pizza vezes a quantidade
+- [ ] Acrescente uma coluna chamada subtotal que seja o calculo do valor da pizza vezes a quantidade.
 - [ ] Agrupe os pedidos e calcule o valor total
 - [ ] Agrupe os pedidos e conte quantas pizzas cada pedido possui
 

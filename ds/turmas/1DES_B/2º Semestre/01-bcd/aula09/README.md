@@ -712,3 +712,28 @@ show tables;
     - F Quais os nomes das pizzas do pedido nº 3
 
 ## Situações de aprendizagem
+Demonstrações e desafios
+### Contextualização
+A partir do banco de dados **Pizzaria** vamos trabalhar diversos temas técnicos sobre bancos de dados relacionais através de demonstrações e desafios.
+### Visões / Relatórios
+Visões são consultas salvas no banco de dados que possuem uso mais frequentes, servem para trazer informações recorrentes.
+- Crie um arquivo chamado `views.sql` e salve o seguinte script:
+
+```sql
+-- Relatório que mostra todos os pedidos e o nome de cada cliente
+SELECT * FROM pedidos;
+SELECT p.*, c.nome  FROM pedidos p INNER JOIN clientes c
+ON p.cliente_id = c.cliente_id;
+-- Salvar a consulta como uma VIEW / Relatório
+CREATE VIEW vw_pedidos1 AS
+SELECT p.*, c.nome  FROM pedidos p INNER JOIN clientes c
+ON p.cliente_id = c.cliente_id;
+-- Para ver o resultado
+SELECT * FROM vw_pedidos1;
+```
+
+#### Desafios
+[ ] Crie um relatório que mostre todos os pedidos, itens, nome dos clientes e nome das pizzas.
+[ ] Acrescente uma coluna chamada subtotal que seja o calculo do preco unitário da pizza vezes a quantidade
+[ ] Agrupe os pedidos e calcule o valor total
+[ ] Agrupe os pedidos e conte quantas pizzas cada pedido possui

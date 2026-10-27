@@ -1,4 +1,4 @@
-# Atividade Prática: Catálogo RetroGame Vault
+# Atividade Prática: RetroGames
 
 ## 1. Descrição do Projeto
 
@@ -28,6 +28,8 @@ Antes da construção do front-end, deve ser definida a estrutura do banco de da
 ---
 
 ## 3. Requisitos do Front-end
+
+# Criar identidade Visual
 
 ### 3.1. Estrutura HTML (`index.html`)
 - **Cabeçalho (`<header>`):** Deve conter o título do sistema e uma breve descrição.

@@ -69,9 +69,3 @@ retrogames-app/
 
 ---
 
-## 5. Critérios de Avaliação
-
-- **Uso correto da semântica HTML5** (uso das tags `<header>`, `<main>`, `<section>`, `<dialog>`, etc.).
-- **Fidelidade ao layout e responsividade** via CSS Grid.
-- **Manipulação correta do DOM e eventos** via JavaScript.
-- **Sintaxe SQL correta** para a criação da tabela e inserção dos dados iniciais.

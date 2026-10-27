@@ -1,5 +1,6 @@
 # Aula09 - Consultas, funções e procedimentos
 - DQL (Data Query Language)
+- INDEX,
 - VIEW,
 - FUNCTIONS,
 - PROCEDURE,
@@ -703,18 +704,40 @@ show tables;
 
 </details>
 
-- 4 Crie uma **pasta** `pizzaria_db`, abra com **VsCode** e crie um arquivo `queries.sql` contendo `SELECTs` que respondam as seguintes questões:
-    - A Quantas tabelas ele possui
-    - B Quantos Clientes cadastrados
-    - C Quantas pizzas Cadastradas
-    - D Quantas pizzas o pedido nº 3 possui
-    - E Qual nome do cliente que fez o pedido nº 3
-    - F Quais os nomes das pizzas do pedido nº 3
+- 4 Crie uma **pasta** `pizzaria_db`, abra com **VsCode** e crie um arquivo `queries.sql` contendo `SELECTs` ou `SHOWs` que respondam as seguintes questões:
+    - [ ] A Quantas **`tabelas`** ele possui
+    - [ ] B Quantos Clientes cadastrados
+    - [ ] C Quantas pizzas Cadastradas
+    - [ ] D Quantas pizzas o pedido nº 3 possui
+    - [ ] E Qual nome do cliente que fez o pedido nº 3
+    - [ ] F Quais os nomes das pizzas do pedido nº 3
 
 ## Situações de aprendizagem
 Demonstrações e desafios
 ### Contextualização
 A partir do banco de dados **Pizzaria** vamos trabalhar diversos temas técnicos sobre bancos de dados relacionais através de demonstrações e desafios.
+### Índices
+Índices são colunas de tabelas semelhantes a *cheves primárias* porém não servem para relacionamentos, servem para **melhorar o desempenho** de consultas.
+- Crie um arquivo chamado `index.sql` em sua pasta e salve o script a seguir:
+```sql
+SELECT * FROM clientes;
+-- Verificar o desempenho, menos de 1 milisegundo
+DESCRIBE clientes;
+-- Descrever a estrutura da tabela
+-- Identificamos a chave primária (cliente_id)
+SELECT * FROM clientes WHERE nome = 'Adelcio Biazi';
+SELECT * FROM clientes WHERE nome LIKE 'Adelcio';
+SELECT * FROM clientes WHERE nome LIKE '%Ana%';
+SELECT * FROM clientes WHERE nome LIKE 'Ana%';
+-- Buscas por nome
+CREATE INDEX i_nome on clientes(nome);
+-- Criado o índice no campo Nome
+DESCRIBE clientes;
+-- Verificado se o índice foi criado
+SELECT * FROM clientes WHERE nome LIKE 'Ana%';
+-- Testando com uma nova busca
+```
+Execute um a um os comandos estudando seus resultados.
 ### Visões / Relatórios
 Visões são consultas salvas no banco de dados que possuem uso mais frequentes, servem para trazer informações recorrentes.
 - Crie um arquivo chamado `views.sql` e salve o seguinte script:
@@ -731,9 +754,10 @@ ON p.cliente_id = c.cliente_id;
 -- Para ver o resultado
 SELECT * FROM vw_pedidos1;
 ```
+Execute um a um os comandos estudando seus resultados.
 
 #### Desafios
-[ ] Crie um relatório que mostre todos os pedidos, itens, nome dos clientes e nome das pizzas.
-[ ] Acrescente uma coluna chamada subtotal que seja o calculo do preco unitário da pizza vezes a quantidade
-[ ] Agrupe os pedidos e calcule o valor total
-[ ] Agrupe os pedidos e conte quantas pizzas cada pedido possui
+- [ ] Crie um relatório que mostre todos os pedidos, itens, nome dos - clientes e nome das pizzas.
+- [ ] Acrescente uma coluna chamada subtotal que seja o calculo do preco - unitário da pizza vezes a quantidade
+- [ ] Agrupe os pedidos e calcule o valor total
+- [ ] Agrupe os pedidos e conte quantas pizzas cada pedido possui

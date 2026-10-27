@@ -20,7 +20,9 @@
 	- Fazer cálculos
 	- Formatar valores
 	- Entre outras soluções de programação em banco de dados
-
+### Praticando
+Instale o banco de dados **Pizzaria** que trabalhamos na aula anterior via **Shell** (mysql -u root) ou **PhpMyAdmin** ou **Workbanch**
+- Abra o repositório localmente com o **VsCode** e crie mais um arquivo chamado `functions.sql` e vamos estudar o script a seguir:
 ```sql
 -- Criando Funções (Exemplo de uma função que formata valores como moeda)
 -- Vamos utilizar o banco de dados Pizzaria da aula anterior
@@ -30,7 +32,8 @@ drop function if exists moeda;
 
 create function moeda(v float) returns text
 return concat("R$ ",v);
-
+-- testando
+select moeda(4.9);
 -- Versão 2
 drop function if exists moeda;
 delimiter //
@@ -39,6 +42,8 @@ Begin
     return concat("R$ ",v);
 end//
 delimiter ;
+-- testando
+select moeda(5.99);
 -- Para excluir uma função
 drop function if exists moeda;
 -- Criar a função novamente modificada com declaração de variáveis
@@ -50,10 +55,12 @@ begin
     return concat("R$ ",x);
 end//
 delimiter ;
+-- testando em uma consulta da tabela de pizzas
+select pizza_id, nome, moeda(valor) as 'preço' from pizzas;
 ```
 ## Procedimentos armazenados (Demonstração)
 Instale o banco de dados **Pizzaria** que trabalhamos na aula anterior via **Shell** (mysql -u root) ou **PhpMyAdmin** ou **Workbanch**
-- Abra o repositório localmente com o **VsCode** e crie mais um arquivo chamado `procedures.sql` e vamos estudar o script a seguir
+- Abra o repositório localmente com o **VsCode** e crie mais um arquivo chamado `procedures.sql` e vamos estudar o script a seguir:
 ```sql
 -- Iniciaremos com uma QUEST / MISSÃO
 -- O cliente Walter Paulo Costenaro quer 1 pizza de Atum e 2 napolitanas.

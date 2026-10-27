@@ -1,16 +1,13 @@
-# Aula09 - Consultas, funções e procedimentos
+# Aula09 - Consultas, índices e relatórios
 - DQL (Data Query Language)
-- INDEX,
-- VIEW,
-- FUNCTIONS,
-- PROCEDURE,
-- TRIGGER,
+- INDEX (Índices)
+- VIEW (Relatórios)
+- DML (Data Manipulation Language)
 
 ## Capacidades Técnicas
 - 9 Utilizar linguagem de definição de dados (DDL)
 - 10 Utilizar linguagem de manipulação de dados (DML)
 - 11 Utilizar funções nativas do banco de dados
-- 12 Aplicar programação em banco de dados utilizando functions, stored procedures, triggers e eventos
 - 13  Executar importação e exportação da base de dados
 
 ## Conhecimentos
@@ -23,9 +20,6 @@
     - 2.6.3 DELETE
     - 2.6.4 SELECT
 - 2.14 VIEW
-- 2.15 STORED PROCEDURE
-- 2.16 FUNCTION
-- 2.17 TRIGGERS
 
 <br>![JOINs](./joins.png)
 
@@ -717,6 +711,9 @@ show tables;
     - [ ] E Qual nome do cliente que fez o pedido nº 3?
     - [ ] F Quais os nomes das pizzas do pedido nº 3?
 
+### Entregas
+Mostre as queries ao instrutor para **vistar**
+
 ## Situações de aprendizagem
 Demonstrações e desafios
 ### Contextualização
@@ -765,10 +762,51 @@ ON p.cliente_id = c.cliente_id;
 -- Para ver o resultado
 SELECT * FROM vw_pedidos1;
 ```
-Execute um a um os comandos estudando seus resultados.
+Execute **um de cada vez** os comandos *estudando* seus resultados, en seguida faça os desafios abaixo salvando as queries no arquivo `views.sql`
 
 #### Desafios
 - [ ] Crie um relatório que mostre todos os pedidos, itens, nome dos - clientes e nome das pizzas.
 - [ ] Acrescente uma coluna chamada subtotal que seja o calculo do preco - unitário da pizza vezes a quantidade
 - [ ] Agrupe os pedidos e calcule o valor total
 - [ ] Agrupe os pedidos e conte quantas pizzas cada pedido possui
+
+#### Entregas
+Mostre as **views** ao instrutor para vistar
+
+#### DML - Manipulando Dados
+No arquivo `queries.sql` acrescente as seguintes:
+- [ ] Um novo cliente com os dados a seguir quer as seguintes pizzas:
+    - Cliente
+```json
+{
+    "nome":"Gaspar Oliveira",
+    "logradouro":"Rua Lizandro Silva",
+    "numero":21,
+    "bairro":"São Dimas",
+    "referencia":"Ao lado da igrejinha",
+    "telefone":"19 99898-1141"
+}
+```
+    - Pizzas
+```json
+[
+    {"quantidade":1,"pizza":"Margherita"},
+    {"quantidade":2,"pizza":"Napolitana"}
+]
+```
+Crie as queries para inserir estes dados no banco de dados.
+
+- [ ] Acrescente a pizza a seguir no cardápio:
+```json
+{
+    "nome":"A moda do chef",
+    "descricao": "Molho de tomate, palmito macio em rodelas, coberto com catupiry, frango desfiado, ovos, carne seca, oregano e azeitonas",
+    "preco" 41.9
+}
+```
+- [ ] O cliente "Gaspar Oliveira" pediu duas pizzas "A moda do chef", registre seu pedido.
+- [ ] Em tempo o cliente "Gaspar Oliveira" ligou e pediu para que seu pedido seja alterado para 3 pizzas "A moda do chef" e acrescentando uma pizza "Margherita" ao pedido.
+
+#### Entregas
+Crie um repositório chamado `sesi_bcd_aula09_pizzaria` no github e envie os arquivos `queries.sql`, `views.sql` e outros que desenvolveu durante a aula, envie também o script de criação e população do banco de dados e crie um README.md com uma breve descrição das atividades realizadas nesta aula.
+- Mostre o repositório ao instrutor para vistar

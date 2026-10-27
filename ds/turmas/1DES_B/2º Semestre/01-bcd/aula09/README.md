@@ -705,12 +705,12 @@ Perceba que o **Script SQL** (Modelo Físico) está mais atualizado do que os mo
 </details>
 
 - 4 Crie uma **pasta** `pizzaria_db`, abra com **VsCode** e crie um arquivo `queries.sql` contendo `SELECTs` ou `SHOWs` que respondam as seguintes questões:
-    - [ ] A Quantas **`tabelas`** ele possui
-    - [ ] B Quantos Clientes cadastrados
-    - [ ] C Quantas pizzas Cadastradas
-    - [ ] D Quantas pizzas o pedido nº 3 possui
-    - [ ] E Qual nome do cliente que fez o pedido nº 3
-    - [ ] F Quais os nomes das pizzas do pedido nº 3
+    - [ ] A Quantas **`tabelas`** o banco de dados possui?
+    - [ ] B Quantos Clientes cadastrados?
+    - [ ] C Quantas pizzas Cadastradas?
+    - [ ] D Quantas pizzas o pedido nº 3 possui?
+    - [ ] E Qual nome do cliente que fez o pedido nº 3?
+    - [ ] F Quais os nomes das pizzas do pedido nº 3?
 
 ## Situações de aprendizagem
 Demonstrações e desafios

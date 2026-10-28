@@ -3,7 +3,8 @@
 ## Objetivos
 Realizar experimentos com componentes reais (ESP32) a partir de experimentos feitos com simulador **[TinkerCAD](https://www.tinkercad.com/)**
 
-## Simulador com ESP32 [WOKI](https://wokwi.com/)
+## Simulador com ESP32 [WOKWI](https://wokwi.com/)
+![SiteWokwi](./wokwi.png)
 
 ### Capacidades Técnicas
 - 1 Identificar as diferenças entre as aplicações do **[IoT e IIoT](./iot_vs_iiot.md)** 
@@ -67,12 +68,17 @@ void loop(){
   	delay(500);
 }
 ```
-## Testando
+## Instalando a IDE
 - Baixar a [Arduino PLC IDE 1.1.0](https://www.arduino.cc/en/software/)
     - Download for Windows
         - Istalar no computador
-        - [Baixar o Driver ESP32](https://www.pololu.com/file/0J14/pololu-cp2102-windows-220616.zip)
-- Após tudo instalado
+<br>![MicrosoftStore](./ide01.png)
+- Após instalar a IDE, baixe o drive
+- [Baixar o Driver ESP32](https://www.pololu.com/file/0J14/pololu-cp2102-windows-220616.zip)
+- Descompacte e através da IDE instale-o
+
+## Testando
+- Após a IDE e drive instalado
     - Conectar o cabo USB no ESP32 e computador
     - Transmitir o código
 

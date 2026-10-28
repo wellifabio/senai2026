@@ -83,6 +83,8 @@ void loop(){
 - Através da IDE instale-o abrindo a IDE do ARDUINO
 - Tools >> Board >> Board Manager e adicone o ESP32
 <br>![ESP32](./driver02.png)
+- Pesquise por esp32 e instale
+<br>![ESP32](./driver03.png)
 
 ## Testando
 - Após a IDE e drive instalado

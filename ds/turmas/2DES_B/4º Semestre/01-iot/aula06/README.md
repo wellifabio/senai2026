@@ -3,8 +3,12 @@
 ## Objetivos
 Realizar experimentos com componentes reais (ESP32) a partir de experimentos feitos com simulador **[TinkerCAD](https://www.tinkercad.com/)**
 
-## Simulador com ESP32 [WOKWI](https://wokwi.com/)
+<details><summary><h2>Simulador com ESP32 [WOKWI](https://wokwi.com/)</h2></summary>
+
 ![SiteWokwi](./wokwi.png)
+![SiteWokwi](./wokwi02.png)
+
+</details>
 
 ### Capacidades Técnicas
 - 1 Identificar as diferenças entre as aplicações do **[IoT e IIoT](./iot_vs_iiot.md)** 
@@ -69,6 +73,7 @@ void loop(){
 }
 ```
 ## Instalando a IDE
+- Tutorial do aluno [Enzo do terceiro B](https://github.com/zenvexy/Arduino-IDE.git)
 - Baixar a [Arduino PLC IDE 1.1.0](https://www.arduino.cc/en/software/)
     - Download for Windows
         - Istalar no computador

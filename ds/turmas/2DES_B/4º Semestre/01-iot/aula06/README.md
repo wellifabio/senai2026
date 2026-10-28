@@ -3,7 +3,11 @@
 ## Objetivos
 Realizar experimentos com componentes reais (ESP32) a partir de experimentos feitos com simulador **[TinkerCAD](https://www.tinkercad.com/)**
 
-<details><summary><h2>Simulador com ESP32 [WOKWI](https://wokwi.com/)</h2></summary>
+<details><summary><h2>
+
+Simulador com ESP32 [WOKWI](https://wokwi.com/)
+
+</h2></summary>
 
 ![SiteWokwi](./wokwi.png)
 ![SiteWokwi](./wokwi02.png)
@@ -94,7 +98,7 @@ void loop(){
 - Pesquise por **`esp32`** e instale
 <br>![ESP32](./driver02.png)
 
-<details><summary><h4>Baixar o driver manualmente</h4></summary>
+<details><summary><h4>Baixar e instalar o driver USB ESP32 para Windows</h4></summary>
 
 - [Baixar o Driver ESP32](https://www.pololu.com/file/0J14/pololu-cp2102-windows-220616.zip)
 - Descompacte e instale o driver x64
@@ -111,7 +115,10 @@ void loop(){
 - ![IDE02](./ide02.png)
 - Clicar na flecha `->` para fazer o upload do código na placa ESP32
 - ![IDE03](./ide03.png)
-
+### Resetar o programa que estiver na placa
+Com o ESP32 conectado via USB no PC:
+- Segure o botão **BOOT**
+- Pressione e solte o outro botão **EN** para reset.
 </details>
 
 ## Desafio 01
@@ -125,4 +132,3 @@ Alguns componentes dos kits podem não estar funcionais, compartilhem os compone
 - **Fotografe** e/ou faça um breve **vídeo** do experimento funcionando
     - Suba o vídeo no Youtube ou as fotos em um repositório no github com o README.md mostrando uma descrição da experiência e fotos do protótipo.
 - Apresente o vídeo ou o repositório com as fotos para o instrutor **vistar**.
-

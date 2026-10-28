@@ -3,7 +3,11 @@
 ## Objetivos
 Realizar experimentos com componentes reais (ESP32) a partir de experimentos feitos com simulador **[TinkerCAD](https://www.tinkercad.com/)**
 
-<details><summary><h2>Simulador com ESP32 [WOKWI](https://wokwi.com/)</h2></summary>
+<details><summary><h2>
+
+Simulador com ESP32 [WOKWI](https://wokwi.com/)
+
+</h2></summary>
 
 ![SiteWokwi](./wokwi.png)
 ![SiteWokwi](./wokwi02.png)

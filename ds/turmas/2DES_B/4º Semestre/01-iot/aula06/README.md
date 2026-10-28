@@ -45,6 +45,9 @@ Realizar experimentos com componentes reais (ESP32) a partir de experimentos fei
 
 ### 1 Acendendo vários Leds
 ESP32 é uma placa com microcontroladora digital programável em linguagem C, possui vários pinos que podem ser programáveis onde conectamos sensores e atuadores, a principal vantagem sobre o ARDUINO é o WIFI integrado.
+- Montagem no simulador **Wokwi**
+<br>![Quatro leds](./4leds02.png)
+- Montagem na **protoboard**
 <br>![Quatro leds](./4leds01.png)
 <br>O circuito acima possui 4 leds, 4 resistores ligados as portas D2, D18, D19 e D21, e conectados em uma **protoboard** e ligados no **GND** (terra).<br>O código a seguir pisca as luzes alternadamente de duas em duas.
 ```c
@@ -116,7 +119,8 @@ Em grupo de até 5 integrantes:
 - Desenvolva o experimento de **semáforo** simulado no ThinkerCAD na [Aula3](../aula03/README.md)
     - Monte o protótipo na protoboard
     - Implante o código utilizando a IDE do Arduino
-- OBS: Alguns componentes de kits diversos não estão funcionais, compartilhem os componentes dos 8 kits tomando cuidados para não queimá-los
+#### OBS:
+Alguns componentes dos kits podem não estar funcionais, compartilhem os componentes dos kits tomando cuidados para não queimá-los
 ## Entregas
 - **Fotografe** e/ou faça um breve **vídeo** do experimento funcionando
     - Suba o vídeo no Youtube ou as fotos em um repositório no github com o README.md mostrando uma descrição da experiência e fotos do protótipo.

@@ -78,12 +78,17 @@ void loop(){
 <br>![MicrosoftStore](./ide01.png)
 - Após instalar a IDE, baixe o drive
 - [Baixar o Driver ESP32](https://www.pololu.com/file/0J14/pololu-cp2102-windows-220616.zip)
-- Descompacte e através da IDE instale-o
+- Descompacte e instale o driver x64
+<br>![Driver](./driver01.png)
+- Através da IDE instale-o abrindo a IDE do ARDUINO
+- Tools >> Board >> Board Manager e adicone o ESP32
+<br>![ESP32](./driver02.png)
 
 ## Testando
 - Após a IDE e drive instalado
     - Conectar o cabo USB no ESP32 e computador
-    - Transmitir o código
+    - Transmitir o código escolhendo a placa em [Board] e clicando em play
+<br>![IDE02](./ide02.png)
 
 ## Desafio 01
 Em grupo de até 5 integrantes:

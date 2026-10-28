@@ -3,6 +3,8 @@
 ## Objetivos
 Realizar experimentos com componentes reais (ESP32) a partir de experimentos feitos com simulador **[TinkerCAD](https://www.tinkercad.com/)**
 
+## Simulador com ESP32 [WOKI](https://wokwi.com/)
+
 ### Capacidades Técnicas
 - 1 Identificar as diferenças entre as aplicações do **[IoT e IIoT](./iot_vs_iiot.md)** 
 - 2 Identificar os tipos de hardwares e soluções disponíveis 
@@ -37,7 +39,7 @@ Realizar experimentos com componentes reais (ESP32) a partir de experimentos fei
 ![Quadro](./quadro.png)
 
 ### 1 Acendendo vários Leds
-ASP32 é uma placa com microcontroladora digital programável em linguagem C, possui vários pinos que podem ser programáveis onde conectamos sensores e atuadores, a principal vantagem sobre o ARDUINO é o WIFI integrado.
+ESP32 é uma placa com microcontroladora digital programável em linguagem C, possui vários pinos que podem ser programáveis onde conectamos sensores e atuadores, a principal vantagem sobre o ARDUINO é o WIFI integrado.
 <br>![Quatro leds](./4leds01.png)
 <br>O circuito acima possui 4 leds, 4 resistores ligados as portas D2, D18, D19 e D21, e conectados em uma **protoboard** e ligados no **GND** (terra).<br>O código a seguir pisca as luzes alternadamente de duas em duas.
 ```c

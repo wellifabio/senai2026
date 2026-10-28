@@ -75,22 +75,31 @@ void loop(){
         - Clicar em inicar e digitar Arduíno
         - Continuar a instalação pelo **Microsoft Store**
         - Ao concluir instalar os drives USB que forem solicitados
-<br>![MicrosoftStore](./ide01.png)
-- Após instalar a IDE, baixe o drive
+#### Imagem da instalação
+![MicrosoftStore](./ide01.png)
+- Se a instalação não iniciar por muito tempo escolha **Arduino 2**.
+- Ao concluir abra o Arduino IDE e instale os drivers
+- Tools >> Board >> Board Manager
+- Pesquise por **`esp32`** e instale
+<br>![ESP32](./driver02.png)
+
+<details><summary><h4>Baixar o driver manualmente</h4></summary>
+
 - [Baixar o Driver ESP32](https://www.pololu.com/file/0J14/pololu-cp2102-windows-220616.zip)
 - Descompacte e instale o driver x64
-<br>![Driver](./driver01.png)
-- Através da IDE instale-o abrindo a IDE do ARDUINO
-- Tools >> Board >> Board Manager e adicone o ESP32
-<br>![ESP32](./driver02.png)
-- Pesquise por esp32 e instale
-<br>![ESP32](./driver03.png)
+  - Navegando até o arquivo `pololu-...x64.exe` e executando como Administrador
+- ![Driver](./driver01.png)
+
+</details>
+
 
 ## Testando
 - Após a IDE e drive instalado
     - Conectar o cabo USB no ESP32 e computador
-    - Transmitir o código escolhendo a placa em [Board] e clicando em play
-<br>![IDE02](./ide02.png)
+    - Transmitir o código escolhendo a placa em [Board]
+- ![IDE02](./ide02.png)
+- Clicar na flecha `->` para fazer o upload do código na placa ESP32
+- ![IDE03](./ide03.png)
 
 ## Desafio 01
 Em grupo de até 5 integrantes:
@@ -99,6 +108,7 @@ Em grupo de até 5 integrantes:
     - Implante o código utilizando a IDE do Arduino
 - OBS: Alguns componentes de kits diversos não estão funcionais, compartilhem os componentes dos 8 kits tomando cuidados para não queimá-los
 ## Entregas
-- Fotografe e/ou faça um pequeno vídeo do experimento funcionando
-    - Suba o vídeo no Youtube ou se forem fotos em um repositório no github com as fotos em README.md
+- **Fotografe** e/ou faça um breve **vídeo** do experimento funcionando
+    - Suba o vídeo no Youtube ou as fotos em um repositório no github com o README.md mostrando uma descrição da experiência e fotos do protótipo.
 - Apresente o vídeo ou o repositório com as fotos para o instrutor **vistar**.
+

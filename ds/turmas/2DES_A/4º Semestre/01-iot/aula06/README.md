@@ -98,7 +98,7 @@ void loop(){
 - Pesquise por **`esp32`** e instale
 <br>![ESP32](./driver02.png)
 
-<details><summary><h4>Baixar o driver manualmente</h4></summary>
+<details><summary><h4>Baixar e instalar o driver USB ESP32 para Windows</h4></summary>
 
 - [Baixar o Driver ESP32](https://www.pololu.com/file/0J14/pololu-cp2102-windows-220616.zip)
 - Descompacte e instale o driver x64

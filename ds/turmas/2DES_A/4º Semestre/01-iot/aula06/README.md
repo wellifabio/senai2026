@@ -115,7 +115,10 @@ void loop(){
 - ![IDE02](./ide02.png)
 - Clicar na flecha `->` para fazer o upload do código na placa ESP32
 - ![IDE03](./ide03.png)
-
+### Resetar o programa que estiver na placa
+Com o ESP32 conectado via USB no PC:
+- Segure o botão **BOOT**
+- Pressione e solte o outro botão **EN** para reset.
 </details>
 
 ## Desafio 01

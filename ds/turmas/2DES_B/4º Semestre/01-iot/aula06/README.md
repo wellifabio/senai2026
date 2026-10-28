@@ -72,6 +72,9 @@ void loop(){
 - Baixar a [Arduino PLC IDE 1.1.0](https://www.arduino.cc/en/software/)
     - Download for Windows
         - Istalar no computador
+        - Clicar em inicar e digitar Arduíno
+        - Continuar a instalação pelo **Microsoft Store**
+        - Ao concluir instalar os drives USB que forem solicitados
 <br>![MicrosoftStore](./ide01.png)
 - Após instalar a IDE, baixe o drive
 - [Baixar o Driver ESP32](https://www.pololu.com/file/0J14/pololu-cp2102-windows-220616.zip)

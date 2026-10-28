@@ -72,15 +72,18 @@ void loop(){
   	delay(500);
 }
 ```
-## Instalando a IDE
-- Tutorial do aluno [Enzo do terceiro B](https://github.com/zenvexy/Arduino-IDE.git)
+<details><summary><h2>Instalando a IDE</h2></summary>
+
+#### Tutorial do aluno [Enzo do terceiro B](https://github.com/zenvexy/Arduino-IDE.git)
+
+#### Tutorial
 - Baixar a [Arduino PLC IDE 1.1.0](https://www.arduino.cc/en/software/)
     - Download for Windows
         - Istalar no computador
         - Clicar em inicar e digitar Arduíno
         - Continuar a instalação pelo **Microsoft Store**
         - Ao concluir instalar os drives USB que forem solicitados
-#### Imagem da instalação
+##### Imagem da instalação
 ![MicrosoftStore](./ide01.png)
 - Se a instalação não iniciar por muito tempo escolha **Arduino 2**.
 - Ao concluir abra o Arduino IDE e instale os drivers
@@ -105,6 +108,8 @@ void loop(){
 - ![IDE02](./ide02.png)
 - Clicar na flecha `->` para fazer o upload do código na placa ESP32
 - ![IDE03](./ide03.png)
+
+</details>
 
 ## Desafio 01
 Em grupo de até 5 integrantes:

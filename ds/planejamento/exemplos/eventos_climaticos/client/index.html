@@ -18,6 +18,7 @@
                 <input type="email" name="email" placeholder="E-mail" required>
                 <input type="password" name="senha" required>
                 <button type="submit">Entrar</button>
+                <button onclick="novoUsuario.showModal()">Cadastre-se</button>
             </form>
         </section>
     </main>
@@ -25,6 +26,19 @@
         <h2>by wellifabio</h2>
         <p id="msg">Mensagens do sistema:</p>
     </footer>
+    <dialog id="novoUsuario">
+        <header>
+            <h2>Novo usuário</h2>
+            <button onclick="novoUsuario.close()">X</button>
+        </header>
+        <form id="formNovo">
+            <input type="text" name="nome" placeholder="Digite seu nome completo:" required>
+            <input type="email" name="email" placeholder="Digite seu e-mail:" required>
+            <input type="password" name="senha" placeholder="Crie uma senha" required>
+            <input type="password" name="confirmaSenha" placeholder="Repita a senha" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </dialog>
 </body>
 <script>
     login.addEventListener('submit', async e => {
@@ -52,6 +66,41 @@
                 }
             }).catch(e => {
                 msg.innerHTML = `Erro de servidor: ${e}`
+            })
+
+    })
+    
+    formNovo.addEventListener('submit', async e => {
+        e.preventDefault()
+        if (formNovo.senha.value != formNovo.confirmaSenha.value) {
+            msg.innerHTML = 'A senha e a confirmação devem ser iguais'
+            novoUsuario.close()
+            return
+        }
+        const dados = {
+            nome: formNovo.nome.value,
+            email: formNovo.email.value,
+            senha: formNovo.senha.value,
+        }
+        let status = 0;
+        fetch('http://localhost:3000/usuarios', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(dados)
+        })
+            .then(resp => {
+                status = resp.status
+                return resp.json()
+            })
+            .then(resp => {
+                if (status == 201) {
+                    login.email.value = dados.email
+                    login.senha.value = dados.senha
+                    novoUsuario.close()
+                } else {
+                    msg.innerHTML = resp.error
+                    novoUsuario.close()
+                }
             })
 
     })

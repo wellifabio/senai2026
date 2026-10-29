@@ -101,7 +101,7 @@ const alterar = (req, res) => {
         } else {
             if (results.affectedRows == 1){
                 const novoUsuario = req.body
-                novoUsuario.id = Number(rec.params.id)
+                novoUsuario.id = Number(req.params.id)
                 res.status(202).json({ message: 'Usuário alterado com sucesso', user: novoUsuario })
             }else
                 res.status(404).json({ msg: "Nada alerado no banco de dados", erro: results })

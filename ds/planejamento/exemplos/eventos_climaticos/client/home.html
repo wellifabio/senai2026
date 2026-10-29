@@ -37,10 +37,29 @@
             <label for="nivelImpacto">Nível de impacto</label>
             <select name="nivelImpacto">
                 <option value="Baixo">Baixo</option>
-                <option value="Médio">Médio</option>
+                <option value="Medio">Médio</option>
                 <option value="Alto">Alto</option>
             </select>
             <button type="submit">Enviar</button>
+        </form>
+    </dialog>
+    <dialog id="alterarEvento">
+        <header>
+            <h2>Editar evento</h2>
+            <button onclick="alterarEvento.close()">X</button>
+        </header>
+        <form id="formAlterar">
+            <input type="hidden" name="id" required>
+            <input type="text" name="cidade" required>
+            <input type="text" name="tipoEvento" required>
+            <input type="number" step="0.01" name="temperaturaMaxima" required>
+            <label for="nivelImpacto">Nível de impacto</label>
+            <select name="nivelImpacto">
+                <option value="Baixo">Baixo</option>
+                <option value="Medio">Médio</option>
+                <option value="Alto">Alto</option>
+            </select>
+            <button type="submit">Alterar</button>
         </form>
     </dialog>
 </body>
@@ -54,11 +73,19 @@
                 const card = document.createElement("article")
                 card.innerHTML = `
                 <header><h3>${evento.cidade}</h3></header>
-                <div><p>${evento.tipoEvento}, ${evento.temperaturaMaxima.toFixed(2)}°C</p></div>
-                <footer><p>${evento.nivelImpacto}</p></footer>
+                <div>
+                    <p>${evento.tipoEvento}, ${evento.temperaturaMaxima.toFixed(2)}°C</p>
+                    <p>${evento.nivelImpacto}</p>
+                </div>
+                <footer>
+                    <button onclick="editar(${evento.id},'${evento.cidade}','${evento.tipoEvento}',${evento.temperaturaMaxima},'${evento.nivelImpacto}')">✏️</button>
+                    <button onclick="confirmar(${evento.id})">🗑️</button>
+                </footer>
                 `
                 cards.appendChild(card)
             });
+        }).catch(e => {
+            msg.innerHTML = `Erro ao carregar eventos: ${e}`
         })
     formNovo.addEventListener('submit', async e => {
         e.preventDefault()
@@ -81,14 +108,65 @@
             })
             .then(resp => {
                 if (status == 201) {
-                    console.log(resp)
                     window.location.reload()
                 } else {
-                    msg.innerHTML = resp.msg;
+                    msg.innerHTML = resp.msg
                 }
             })
 
     })
+    function editar(id, cidade, tipoEvento, temperaturaMaxima, nivelImpacto) {
+        alterarEvento.showModal()
+        formAlterar.id.value = id
+        formAlterar.cidade.value = cidade
+        formAlterar.tipoEvento.value = tipoEvento
+        formAlterar.temperaturaMaxima.value = temperaturaMaxima
+        formAlterar.nivelImpacto.value = nivelImpacto
+    }
+    formAlterar.addEventListener('submit', async e => {
+        e.preventDefault()
+        const dados = {
+            usuarioId: Number(parametros.get('id')),
+            cidade: formAlterar.cidade.value,
+            tipoEvento: formAlterar.tipoEvento.value,
+            temperaturaMaxima: Number(formAlterar.temperaturaMaxima.value),
+            nivelImpacto: formAlterar.nivelImpacto.value,
+        }
+        let status = 0;
+        fetch(`http://localhost:3000/eventos/${formAlterar.id.value}`, {
+            method: 'PATCH',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(dados)
+        })
+            .then(resp => status = resp.status)
+            .then(resp => {
+                if (status == 200) {
+                    window.location.reload()
+                } else {
+                    msg.innerHTML = resp.msg
+                }
+            })
+
+    })
+    function confirmar(id) {
+        msg.innerHTML = `Confirma a exclusão do evento id:${id}
+                        <button onclick="excluir(${id})">Sim</button>
+                        <button onclick="msg.innerHTML='Mensagens do sistema'">Não</button>`
+    }
+    function excluir(id) {
+        fetch(`http://localhost:3000/eventos/${id}`, { method: 'DELETE' })
+            .then(resp => resp.status)
+            .then(resp => {
+                if (resp == 200) {
+                    window.location.reload()
+                } else {
+                    msg.innerHTML = 'Erro ao excluir evento'
+                }
+            })
+            .catch(e => {
+                msg.innerHTML = `Erro ao excluir evento: ${e}`
+            })
+    }
 </script>
 
 </html>

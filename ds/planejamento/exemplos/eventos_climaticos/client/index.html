@@ -48,8 +48,10 @@
                     console.log(resp)
                     window.location.href = `./home.html?id=${resp[0].id}&nome=${resp[0].nome}`
                 } else {
-                    msg.innerHTML = resp.msg;
+                    msg.innerHTML = resp;
                 }
+            }).catch(e => {
+                msg.innerHTML = `Erro de servidor: ${e}`
             })
 
     })

@@ -203,7 +203,7 @@ backend_residuos/
 - Semelhante ao exemplo da aula anterior desenvolva os seguintes requisitos:
 #### Requisitos
 ##### Não funcionais
-- [NF001] Utiliando o *draw.io* faça o Diagrama de Classes e salvem como imagem `.PNG` dentro da pasta `./docs`
+- [NF001] Utiliando o *draw.io* faça o Diagrama de Classes e salve como imagem `.PNG` dentro da pasta `./docs`
 ##### Funcionais
 - [RF001] CRUD de usuários
 - [RF002] Login
@@ -301,7 +301,7 @@ backend_usos_ia/
 - Semelhante ao exemplo da aula anterior desenvolva os seguintes requisitos:
 #### Requisitos
 ##### Não funcionais
-- [NF001] Utiliando o *draw.io* faça o Diagrama de Classes e salvem como imagem `.PNG` dentro da pasta `./docs`
+- [NF001] Utiliando o *draw.io* faça o Diagrama de Classes e salve como imagem `.PNG` dentro da pasta `./docs`
 ##### Funcionais
 - [RF001] CRUD de usuários
 - [RF002] Login
@@ -397,7 +397,7 @@ backend_energia/
 - Semelhante ao exemplo da aula anterior desenvolva os seguintes requisitos:
 #### Requisitos
 ##### Não funcionais
-- [NF001] Utiliando o *draw.io* faça o Diagrama de Classes e salvem como imagem `.PNG` dentro da pasta `./docs`
+- [NF001] Utiliando o *draw.io* faça o Diagrama de Classes e salve como imagem `.PNG` dentro da pasta `./docs`
 ##### Funcionais
 - [RF001] CRUD de usuários
 - [RF002] Login

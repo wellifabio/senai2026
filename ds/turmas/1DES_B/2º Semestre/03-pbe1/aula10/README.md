@@ -220,7 +220,7 @@ Repositório do github chamado `sesi_pbe1_node_mariadb_residuos_2026` contendo
     - Diagrama de Classes
     - Tenologias
     - Passo a passo para testar
-    - Print dos testes com a extensão `Thunder Client`
+    - Print dos testes com `Insomnia` ou `Postman`
 
 </details>
 
@@ -318,7 +318,7 @@ Repositório do github chamado `sesi_pbe1_node_mariadb_uso_ia_2026` contendo
     - Diagrama de Classes
     - Tenologias
     - Passo a passo para testar
-    - Print dos testes com a extensão `Thunder Client`
+    - Print dos testes com `Insomnia` ou `Postman`
 
 </details>
 
@@ -414,6 +414,6 @@ Repositório do github chamado `sesi_pbe1_node_mariadb_consumo_2026` contendo
     - Diagrama de Classes
     - Tenologias
     - Passo a passo para testar
-    - Print dos testes com a extensão `Thunder Client`
+    - Print dos testes com `Insomnia` ou `Postman`
 
 </details>

@@ -99,9 +99,11 @@ const alterar = (req, res) => {
             console.error(err)
             res.status(500).json({ erro: 'Erro ao alterar usuário', msg: err.sqlMessage })
         } else {
-            if (results.affectedRows == 1)
-                res.json("Registro alterado com sucesso")
-            else
+            if (results.affectedRows == 1){
+                const novoUsuario = req.body
+                novoUsuario.id = Number(rec.params.id)
+                res.status(202).json({ message: 'Usuário alterado com sucesso', user: novoUsuario })
+            }else
                 res.status(404).json({ msg: "Nada alerado no banco de dados", erro: results })
         }
     })

@@ -320,3 +320,511 @@ Ferramenta de testes, alternativa ao Insomnia
 <br>![Insomnia](./postman.png)
 
 </details>
+
+---
+
+<details>
+<summary>
+<h2>Correção</h2>
+</summary>
+
+- ser/routes.js
+```js
+const express = require("express")
+const router = express.Router()
+
+const Usuario = require('./controllers/usuario')
+const Evento = require('./controllers/evento')
+
+const rotaInicial = (req, res) => {
+    res.json("Back-end Eventos Climáticos respondendo")
+}
+
+router.get('/',rotaInicial)
+router.post('/usuarios/login', Usuario.login)
+router.post('/usuarios', Usuario.cadastrar)
+router.get('/usuarios', Usuario.listar)
+router.put('/usuarios/:id', Usuario.alterar)
+router.delete('/usuarios/:id', Usuario.excluir)
+
+router.post('/eventos', Evento.cadastrar)
+router.get('/eventos', Evento.listar)
+router.patch('/eventos/:id', Evento.alterar)
+router.delete('/eventos/:id', Evento.excluir)
+router.get('/eventos/resumo', Evento.resumo)
+
+module.exports = router
+```
+- src/cotrollers/usuario.js
+```js
+const con = require('../db')
+
+const login = (req, res) => {
+    try {
+        if (!req.body){
+            res.status(400).json("Informe email e senha no corpo da requisição").end();
+            return
+        }
+        const { email, senha } = req.body
+        if (email == undefined || senha == undefined){
+            res.status(400).json("Informe email e senha").end();
+            return
+        }
+        const sql = 'SELECT id, nome, email FROM usuario WHERE email = ? AND senha = password(?);'
+        con.query(sql, [email, senha], (err, results) => {
+            if (err) {
+                console.error(err)
+                res.status(500).json({ erro: 'Erro ao listar usuários' })
+            } else {
+                if (results.length == 0) {
+                    res.status(404).json("Acesso negado, credenciais inválidas")
+                } else {
+                    res.json(results)
+                }
+            }
+        })
+    } catch (e) {
+        res.status(500).json({ erro: 'Erro ao conectar com o banco de dados' })
+    }
+}
+
+const cadastrar = (req, res) => {
+    const { nome, email, senha } = req.body
+    try {
+        const sql = 'INSERT INTO usuario (nome, email, senha) VALUES (?, ?, password(?));'
+        con.query(sql, [nome, email, senha], (err, results) => {
+            if (err) {
+                console.error(err)
+                res.status(500).json({ error: 'Erro ao cadastrar usuário' })
+            } else {
+                const novoUsuario = req.body
+                novoUsuario.id = results.insertId
+                res.status(201).json({ message: 'Usuário cadastrado com sucesso', user: novoUsuario })
+            }
+        })
+    } catch (error) {
+        console.error(error)
+        res.status(400).json({ error: 'Erro ao cadastrar usuário', details: 'Informe { nome, email, senha }' })
+    }
+}
+
+const listar = (req, res) => {
+    const sql = 'SELECT * FROM usuario;'
+    con.query(sql, (err, results) => {
+        if (err) {
+            console.error(err)
+            res.status(500).json({ error: 'Erro ao buscar usuários' })
+        } else {
+            res.json(results)
+        }
+    })
+}
+
+const alterar = (req, res) => {
+    const { nome, email, senha } = req.body
+    try {
+        const sql = 'UPDATE usuario SET nome = ?, email = ?, senha = password(?) WHERE id = ?;'
+        con.query(sql, [nome, email, senha, Number(req.params.id)], (err, results) => {
+            if (err) {
+                console.error(err)
+                res.status(500).json({ error: 'Erro ao alterar usuário' })
+            } else {
+                const novoUsuario = req.body
+                novoUsuario.id = Number(req.params.id)
+                res.status(202).json({ message: 'Usuário alterado com sucesso', user: novoUsuario })
+            }
+        })
+    } catch (error) {
+        console.error(error)
+        res.status(400).json({ error: 'Erro ao alterar usuário', details: 'Informe { nome, email, senha }' })
+    }
+}
+
+const excluir = (req, res) => {
+    const id = Number(req.params.id)
+    const sql = 'DELETE FROM usuario WHERE id = ?;'
+    con.query(sql, [id], (err, results) => {
+        if (err) {
+            console.error(err)
+            res.status(500).json({ erro: 'Erro ao excluir usuário', msg: err.sqlMessage })
+        } else {
+            if (results.affectedRows == 1)
+                res.json("Registro excluído com sucesso")
+            else
+                res.status(404).json({ msg: "Nada alerado no banco de dados", erro: results })
+        }
+    })
+}
+
+module.exports = {
+    login,
+    cadastrar,
+    listar,
+    alterar,
+    excluir
+}
+```
+- src/cotrollers/evento.js
+```js
+const con = require('../db')
+
+const cadastrar = (req, res) => {
+    const { usuarioId, cidade, tipoEvento, temperaturaMaxima, nivelImpacto } = req.body
+    try {
+        const sql = 'INSERT INTO evento (usuarioId, cidade, tipoEvento, temperaturaMaxima, nivelImpacto) VALUES (?, ?, ?, ?, ?);'
+        con.query(sql, [usuarioId, cidade, tipoEvento, temperaturaMaxima, nivelImpacto], (err, results) => {
+            if (err) {
+                console.error(err)
+                res.status(500).json({ error: 'Erro ao cadastrar evento' })
+            } else {
+                const novoevento = req.body
+                novoevento.id = results.insertId
+                res.status(201).json({ message: 'Evento cadastrado com sucesso', event: novoevento })
+            }
+        })
+    } catch (error) {
+        console.error(error)
+        res.status(400).json({ error: 'Erro ao cadastrar evento', details: 'Informe { usuarioId, cidade, tipoEvento, temperaturaMaxima, nivelImpacto }' })
+    }
+}
+
+const listar = (req, res) => {
+    const sql = 'SELECT * FROM evento;'
+    con.query(sql, (err, results) => {
+        if (err) {
+            console.error(err)
+            res.status(500).json({ error: 'Erro ao buscar eventos' })
+        } else {
+            res.json(results)
+        }
+    })
+}
+
+const alterar = (req, res) => {
+    const id = Number(req.params.id)
+    const chaves = Object.keys(req.body)
+    let campos = ''
+    const colunas = []
+    chaves.forEach((chave) => {
+        campos += `${chave} = ?,`
+        colunas.push(req.body[chave])
+    })
+    campos = campos.slice(0, -1) //Remove a ultima virgula
+    colunas.push(id)
+    const sql = `UPDATE evento SET ${campos} WHERE id = ?;`
+    con.query(sql, colunas, (err, results) => {
+        if (err) {
+            console.error(err)
+            res.status(500).json({ erro: 'Erro ao alterar evento', msg: err.sqlMessage })
+        } else {
+            if (results.affectedRows == 1)
+                res.json("Registro alterado com sucesso")
+            else
+                res.status(404).json({ msg: "Nada alerado no banco de dados", erro: results })
+        }
+    })
+}
+
+const excluir = (req, res) => {
+    const id = Number(req.params.id)
+    const sql = 'DELETE FROM evento WHERE id = ?;'
+    con.query(sql, [id], (err, results) => {
+        if (err) {
+            console.error(err)
+            res.status(500).json({ erro: 'Erro ao excluir evento', msg: err.sqlMessage })
+        } else {
+            if (results.affectedRows == 1)
+                res.json("Registro excluído com sucesso")
+            else
+                res.status(404).json({ msg: "Nada alerado no banco de dados", erro: results })
+        }
+    })
+}
+
+const resumo = (req, res) => {
+    const sql1 = 'SELECT AVG(temperaturaMaxima) as "Temperaturas medias" FROM evento;'
+    const sql2 = 'SELECT * FROM evento;'
+    con.query(sql1, (err, results) => {
+        if (err) {
+            console.error(err)
+            res.status(500).json({ error: 'Erro ao buscar medias' })
+        } else {
+            const resposta = {}
+            resposta.media = results
+            con.query(sql2, (err, results) => {
+                if (err) {
+                    console.error(err)
+                    res.status(500).json({ error: 'Erro ao buscar eventos' })
+                }else{
+                    resposta.eventos = results
+                    res.json(resposta)
+                }
+            })
+        }
+    })
+}
+
+module.exports = {
+    cadastrar,
+    listar,
+    alterar,
+    excluir,
+    resumo
+}
+```
+
+</details>
+
+---
+
+<details>
+<summary>
+<h2>Correção</h2>
+</summary>
+
+- ser/routes.js
+```js
+const express = require("express")
+const router = express.Router()
+
+const Usuario = require('./controllers/usuario')
+const Evento = require('./controllers/evento')
+
+const rotaInicial = (req, res) => {
+    res.json("Back-end Eventos Climáticos respondendo")
+}
+
+router.get('/',rotaInicial)
+router.post('/usuarios/login', Usuario.login)
+router.post('/usuarios', Usuario.cadastrar)
+router.get('/usuarios', Usuario.listar)
+router.put('/usuarios/:id', Usuario.alterar)
+router.delete('/usuarios/:id', Usuario.excluir)
+
+router.post('/eventos', Evento.cadastrar)
+router.get('/eventos', Evento.listar)
+router.patch('/eventos/:id', Evento.alterar)
+router.delete('/eventos/:id', Evento.excluir)
+router.get('/eventos/resumo', Evento.resumo)
+
+module.exports = router
+```
+- src/cotrollers/usuario.js
+```js
+const con = require('../db')
+
+const login = (req, res) => {
+    try {
+        if (!req.body){
+            res.status(400).json("Informe email e senha no corpo da requisição").end();
+            return
+        }
+        const { email, senha } = req.body
+        if (email == undefined || senha == undefined){
+            res.status(400).json("Informe email e senha").end();
+            return
+        }
+        const sql = 'SELECT id, nome, email FROM usuario WHERE email = ? AND senha = password(?);'
+        con.query(sql, [email, senha], (err, results) => {
+            if (err) {
+                console.error(err)
+                res.status(500).json({ erro: 'Erro ao listar usuários' })
+            } else {
+                if (results.length == 0) {
+                    res.status(404).json("Acesso negado, credenciais inválidas")
+                } else {
+                    res.json(results)
+                }
+            }
+        })
+    } catch (e) {
+        res.status(500).json({ erro: 'Erro ao conectar com o banco de dados' })
+    }
+}
+
+const cadastrar = (req, res) => {
+    const { nome, email, senha } = req.body
+    try {
+        const sql = 'INSERT INTO usuario (nome, email, senha) VALUES (?, ?, password(?));'
+        con.query(sql, [nome, email, senha], (err, results) => {
+            if (err) {
+                console.error(err)
+                res.status(500).json({ error: 'Erro ao cadastrar usuário' })
+            } else {
+                const novoUsuario = req.body
+                novoUsuario.id = results.insertId
+                res.status(201).json({ message: 'Usuário cadastrado com sucesso', user: novoUsuario })
+            }
+        })
+    } catch (error) {
+        console.error(error)
+        res.status(400).json({ error: 'Erro ao cadastrar usuário', details: 'Informe { nome, email, senha }' })
+    }
+}
+
+const listar = (req, res) => {
+    const sql = 'SELECT * FROM usuario;'
+    con.query(sql, (err, results) => {
+        if (err) {
+            console.error(err)
+            res.status(500).json({ error: 'Erro ao buscar usuários' })
+        } else {
+            res.json(results)
+        }
+    })
+}
+
+const alterar = (req, res) => {
+    const { nome, email, senha } = req.body
+    try {
+        const sql = 'UPDATE usuario SET nome = ?, email = ?, senha = password(?) WHERE id = ?;'
+        con.query(sql, [nome, email, senha, Number(req.params.id)], (err, results) => {
+            if (err) {
+                console.error(err)
+                res.status(500).json({ error: 'Erro ao alterar usuário' })
+            } else {
+                const novoUsuario = req.body
+                novoUsuario.id = results.insertId
+                res.status(202).json({ message: 'Usuário alterado com sucesso', user: novoUsuario })
+            }
+        })
+    } catch (error) {
+        console.error(error)
+        res.status(400).json({ error: 'Erro ao alterar usuário', details: 'Informe { nome, email, senha }' })
+    }
+}
+
+const excluir = (req, res) => {
+    const id = Number(req.params.id)
+    const sql = 'DELETE FROM usuario WHERE id = ?;'
+    con.query(sql, [id], (err, results) => {
+        if (err) {
+            console.error(err)
+            res.status(500).json({ erro: 'Erro ao excluir usuário', msg: err.sqlMessage })
+        } else {
+            if (results.affectedRows == 1)
+                res.json("Registro excluído com sucesso")
+            else
+                res.status(404).json({ msg: "Nada alerado no banco de dados", erro: results })
+        }
+    })
+}
+
+module.exports = {
+    login,
+    cadastrar,
+    listar,
+    alterar,
+    excluir
+}
+```
+- src/cotrollers/evento.js
+```js
+const con = require('../db')
+
+const cadastrar = (req, res) => {
+    const { usuarioId, cidade, tipoEvento, temperaturaMaxima, nivelImpacto } = req.body
+    try {
+        const sql = 'INSERT INTO evento (usuarioId, cidade, tipoEvento, temperaturaMaxima, nivelImpacto) VALUES (?, ?, ?, ?, ?);'
+        con.query(sql, [usuarioId, cidade, tipoEvento, temperaturaMaxima, nivelImpacto], (err, results) => {
+            if (err) {
+                console.error(err)
+                res.status(500).json({ error: 'Erro ao cadastrar evento' })
+            } else {
+                const novoevento = req.body
+                novoevento.id = results.insertId
+                res.status(201).json({ message: 'Evento cadastrado com sucesso', event: novoevento })
+            }
+        })
+    } catch (error) {
+        console.error(error)
+        res.status(400).json({ error: 'Erro ao cadastrar evento', details: 'Informe { usuarioId, cidade, tipoEvento, temperaturaMaxima, nivelImpacto }' })
+    }
+}
+
+const listar = (req, res) => {
+    const sql = 'SELECT * FROM evento;'
+    con.query(sql, (err, results) => {
+        if (err) {
+            console.error(err)
+            res.status(500).json({ error: 'Erro ao buscar eventos' })
+        } else {
+            res.json(results)
+        }
+    })
+}
+
+const alterar = (req, res) => {
+    const id = Number(req.params.id)
+    const chaves = Object.keys(req.body)
+    let campos = ''
+    const colunas = []
+    chaves.forEach((chave) => {
+        campos += `${chave} = ?,`
+        colunas.push(req.body[chave])
+    })
+    campos = campos.slice(0, -1) //Remove a ultima virgula
+    colunas.push(id)
+    const sql = `UPDATE evento SET ${campos} WHERE id = ?;`
+    con.query(sql, colunas, (err, results) => {
+        if (err) {
+            console.error(err)
+            res.status(500).json({ erro: 'Erro ao alterar evento', msg: err.sqlMessage })
+        } else {
+            if (results.affectedRows == 1)
+                res.json("Registro alterado com sucesso")
+            else
+                res.status(404).json({ msg: "Nada alerado no banco de dados", erro: results })
+        }
+    })
+}
+
+const excluir = (req, res) => {
+    const id = Number(req.params.id)
+    const sql = 'DELETE FROM evento WHERE id = ?;'
+    con.query(sql, [id], (err, results) => {
+        if (err) {
+            console.error(err)
+            res.status(500).json({ erro: 'Erro ao excluir evento', msg: err.sqlMessage })
+        } else {
+            if (results.affectedRows == 1)
+                res.json("Registro excluído com sucesso")
+            else
+                res.status(404).json({ msg: "Nada alerado no banco de dados", erro: results })
+        }
+    })
+}
+
+const resumo = (req, res) => {
+    const sql1 = 'SELECT AVG(temperaturaMaxima) as "Temperaturas medias" FROM evento;'
+    const sql2 = 'SELECT * FROM evento;'
+    con.query(sql1, (err, results) => {
+        if (err) {
+            console.error(err)
+            res.status(500).json({ error: 'Erro ao buscar medias' })
+        } else {
+            const resposta = {}
+            resposta.media = results
+            con.query(sql2, (err, results) => {
+                if (err) {
+                    console.error(err)
+                    res.status(500).json({ error: 'Erro ao buscar eventos' })
+                }else{
+                    resposta.eventos = results
+                    res.json(resposta)
+                }
+            })
+        }
+    })
+}
+
+module.exports = {
+    cadastrar,
+    listar,
+    alterar,
+    excluir,
+    resumo
+}
+```
+
+</details>

@@ -430,7 +430,7 @@ const alterar = (req, res) => {
                 res.status(500).json({ error: 'Erro ao alterar usuário' })
             } else {
                 const novoUsuario = req.body
-                novoUsuario.id = results.insertId
+                novoUsuario.id = Number(req.params.id)
                 res.status(202).json({ message: 'Usuário alterado com sucesso', user: novoUsuario })
             }
         })

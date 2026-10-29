@@ -328,7 +328,7 @@ Ferramenta de testes, alternativa ao Insomnia
 <h2>Correção</h2>
 </summary>
 
-- ser/routes.js
+- src/routes.js
 ```js
 const express = require("express")
 const router = express.Router()

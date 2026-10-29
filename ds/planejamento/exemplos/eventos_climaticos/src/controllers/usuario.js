@@ -1,20 +1,32 @@
 const con = require('../db')
 
 const login = (req, res) => {
-    const { email, senha } = req.body
-    const sql = 'SELECT id, nome, email FROM usuario WHERE email = ? AND senha = password(?);'
-    con.query(sql, [email, senha], (err, results) => {
-        if (err) {
-            console.error(err)
-            res.status(500).json({ erro: 'Erro ao listar usuários' })
-        } else {
-            if (results.length == 0) {
-                res.status(404).json({ msg: "Acesso negado, credenciais inválidas" })
-            } else {
-                res.json(results)
-            }
+    try {
+        if (!req.body){
+            res.status(400).json("Informe email e senha no corpo da requisição").end();
+            return
         }
-    })
+        const { email, senha } = req.body
+        if (email == undefined || senha == undefined){
+            res.status(400).json("Informe email e senha").end();
+            return
+        }
+        const sql = 'SELECT id, nome, email FROM usuario WHERE email = ? AND senha = password(?);'
+        con.query(sql, [email, senha], (err, results) => {
+            if (err) {
+                console.error(err)
+                res.status(500).json({ erro: 'Erro ao listar usuários' })
+            } else {
+                if (results.length == 0) {
+                    res.status(404).json("Acesso negado, credenciais inválidas")
+                } else {
+                    res.json(results)
+                }
+            }
+        })
+    } catch (e) {
+        res.status(500).json({ erro: 'Erro ao conectar com o banco de dados' })
+    }
 }
 
 const cadastrar = (req, res) => {

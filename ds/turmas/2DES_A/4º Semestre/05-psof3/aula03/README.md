@@ -25,6 +25,9 @@ A seguir temos um projeto de um simples estacionamento pronto para ser utilizado
 - A. Em sua área de trabalho abra um terminal e inicie um novo projeto back-end com a extensão backend-aula coloque o nome `estacionamentoSeuNome`
 ```bash
 npx backend-aula estacionamentoSeuNome
+cd estacionamentoSeuNome
+npm uninstall prisma @prisma/client
+npm install prisma@7 @prisma/client@7
 ```
 - Se der erro após alguns minutos pare o script `CTRL + C` e siga adiante.
 - B. Abra a pasta criada com **VsCode**, abra um terminal `CTRL + '` e continue a criação da API conforme shema a seguir:

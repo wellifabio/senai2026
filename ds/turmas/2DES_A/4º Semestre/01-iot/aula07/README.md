@@ -350,7 +350,7 @@ Agora vamos utilizar sensores e enviar dados obtidos para a API
 Este circuito detecta o clique de um botãode comando e mostra no monitor serial
 ![Circuito clique](./1botao.png)
 ```c
-const int botao = 2;
+const int botao = 4;
 int estadoAnterior = HIGH;
 unsigned long ultimaMudanca = 0;
 
@@ -358,6 +358,8 @@ void setup()
 {
   Serial.begin(9600);
   pinMode(botao, INPUT_PULLUP);
+  Serial.println();
+  Serial.println("Ouvindo botao no pino 4");
 }
 
 void loop()
@@ -427,6 +429,8 @@ void setup()
   Serial.begin(9600);
   pinMode(botao1, INPUT_PULLUP);
   pinMode(botao2, INPUT_PULLUP);
+  Serial.println();
+  Serial.println("Ouvindo botoes nos pinos 2 e 4");
 }
 
 void loop()

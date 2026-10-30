@@ -1,4 +1,4 @@
-const int botao = 2;
+const int botao = 4;
 int estadoAnterior = HIGH;
 unsigned long ultimaMudanca = 0;
 
@@ -6,6 +6,8 @@ void setup()
 {
   Serial.begin(9600);
   pinMode(botao, INPUT_PULLUP);
+  Serial.println();
+  Serial.println("Ouvindo botao no pino 4");
 }
 
 void loop()

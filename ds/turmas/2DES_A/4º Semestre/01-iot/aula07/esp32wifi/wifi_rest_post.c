@@ -1,5 +1,5 @@
 #include "WiFi.h"
-#include "WiFiClientSecure.h"
+#include "WiFiClient.h"
 #include "HTTPClient.h"
 
 const char* ssid = "SENAI_DES(novo)";
@@ -29,8 +29,8 @@ void loop() {
     return;
   }
 
-  WiFiClientSecure client;
-  client.setInsecure();
+  WiFiClient client;
+  HTTPClient http;
 
   HTTPClient http;
   if (http.begin(client, apiUrl)) {

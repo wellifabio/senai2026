@@ -1,4 +1,4 @@
-const int botao = 18;
+const int botao = 2;
 int estadoAnterior = HIGH;
 unsigned long ultimaMudanca = 0;
 

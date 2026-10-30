@@ -215,12 +215,70 @@ ipconfig
   - Alterando no código abaixo a URL da API de `http://localhost:3000` para seu IP semelhante a este `http://192.168.1.137:3000`
 ```c
 #include "WiFi.h"
+#include "WiFiClient.h"
+#include "HTTPClient.h"
+
+const char* ssid = "SENAI_DES(novo)";
+const char* password = "Sesi@2026";
+const char* apiUrl = "https://localhost:3000";
+
+void setup() {
+  Serial.begin(9600);
+  WiFi.mode(WIFI_STA);
+  WiFi.begin(ssid, password);
+
+  Serial.print("Conectando ao WiFi");
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  Serial.println();
+  Serial.println("WIFI conectado");
+}
+
+void loop() {
+  if (WiFi.status() != WL_CONNECTED) {
+    Serial.println("WiFi desconectado; tentando reconectar...");
+    WiFi.reconnect();
+    delay(5000);
+    return;
+  }
+
+  WiFiClient client;
+  HTTPClient http;
+
+  HTTPClient http;
+  if (http.begin(client, apiUrl)) {
+    Serial.println("Enviando requisicao GET...");
+    int httpCode = http.GET();
+
+    if (httpCode > 0) {
+      Serial.printf("Codigo HTTP: %d\n", httpCode);
+      Serial.println("Corpo da resposta:");
+      Serial.println(http.getString());
+    } else {
+      Serial.printf("Falha na requisicao: %s\n",
+                    http.errorToString(httpCode).c_str());
+    }
+
+    http.end();
+  } else {
+    Serial.println("Nao foi possivel iniciar a conexao com a API.");
+  }
+
+  delay(10000);
+}
+```
+- O codigo a seguir utiliza HTTPS para quando a API está implantada em nuvem
+```c
+#include "WiFi.h"
 #include "WiFiClientSecure.h"
 #include "HTTPClient.h"
 
 const char* ssid = "SENAI_DES(novo)";
 const char* password = "Sesi@2026";
-const char* apiUrl = "http://localhost:3000";
+const char* apiUrl = "https://localhost:3000";
 
 void setup() {
   Serial.begin(9600);

@@ -1,7 +1,7 @@
 # Aula07 - ESP32 - WIFI
 
 ## Trabalhando com WIFI
-Vamos verificar os recursos de WiFi da placa ESP32
+Vamos verificar os recursos de WiFi da placa ESP32 xxx
 ### Buscando redes com código do [WiFi](https://wokwi.com/esp32)
 Acesse o link do simulador acima, clique no primeiro protótipo **WiFi Scanning**
 - Altere o número do monitor serial `Serial.begin(115200);` na linha 6 para `Serial.begin(9600);`

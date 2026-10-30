@@ -447,7 +447,7 @@ Agora monte o segundo circuito com dois botões e envie os cliques para a API co
 ### DESAFIO 03: Enviar dados do sensor
 #### Contextualização
 O sensor de **ultrassom** mede distâncias emitindo uma onda sonora de alta frequência e calculando o tempo que o eco demora para retornar após atingir um objeto, semelhante a um radar.
-<br>[Ultrasom](./ultrasom.png)
+<br>![Ultrasom](./ultrasom.png)
 
 #### Desafio
 Crie um prototipo que detecte a distância de uma pessoa ou outro objeto e:

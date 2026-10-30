@@ -381,7 +381,11 @@ void loop()
   }
 }
 ```
-Este detecta o clique de dois botões
+
+</details>
+
+<details><summary><h3>Obtendo o clique de dius botões</h3></summary>
+
 ![Circuito dois cliques](./2botoes.png)
 ```c
 const int botao1 = 2;
@@ -433,6 +437,8 @@ void loop()
                  "Botao 2");
 }
 ```
+
+</details>
 
 #### DESAFIO 02: Enviando cliques para a API
 Agora monte o segundo circuito com dois botões e envie os cliques para a API com requisição **POST** na rota `/comandos` com o corpo da requisição contendo `{"botao":1}` e `{"botao":2}`

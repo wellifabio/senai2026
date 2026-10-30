@@ -168,15 +168,14 @@ A extenção backend-aula cria id como padrão para todas as tabelas/models, a t
 
 <details><summary><h2>2 Implantação</h2></summary>
 
-- 1. Para implantar o SGBD para **Postgre**, pois o vercel só da suporte gratuito para este **SGBD**.
-    - Altere o prisma/schema.prisma para `postgresql`
+Para implantar, o *SGBD(Sistema Gerenciador de Banco de Dados)* deve ser alterado de **MariaDB** para  **PostgreSQL**, pois o vercel só da suporte gratuito para **POSTGRE**.
+    - Altere o `./prisma/schema.prisma` para `postgresql`
 ```js
 datasource db {
   provider = "postgresql"
 }
 ```
-    - Pode remover o `"@prisma/adapter-mariadb": "^7.10.0",` do `package.json`
-    - E adicionar o `"postinstall": "prisma migrate dev --name init && prisma generate"` no script
+- Remova o `"@prisma/adapter-mariadb": "^7.10.0",` do **`package.json`** e adicione o `"postinstall": "prisma migrate dev --name init && prisma generate"` no script
 ```json
 {
   "name": "backend",
@@ -209,7 +208,7 @@ datasource db {
 }
 ```
 - O `server.js` passa a ter utilizade apenas para testar localmente.
-- Crie o arquivo `api/index.js` que será o novo servidor que a **Vercel** vai utilizar
+- Crie o arquivo `./api/index.js` copiando o conteúdo do `./server.js` e o transformando em um **módulo** acrescentando na ultima linha `module.exports = app`, ele será o novo servidor que a **Vercel** vai utilizar, *semelhante ao a seguir*:
 ```js
 require("dotenv").config();
 const express = require("express");
@@ -249,7 +248,7 @@ app.get("/", (req, res) => {
 
 module.exports = app;
 ```
-= Altere o adaptador no prisma em `src/data/prisma.js`, comente o MariaDB e acrescente o Postgres
+- No arquivo `./src/data/prisma.js`, Altere o adaptador, comente a linha do `MariaDB` e acrescente a do `Postgres`
 ```js
 const { PrismaClient } = require("@prisma/client");
 // const { PrismaMariaDb } = require("@prisma/adapter-mariadb");
@@ -262,7 +261,7 @@ const prisma = new PrismaClient({ adapter });
 
 module.exports = prisma;
 ```
-- H. Criar um repositório no github e enviar o projeto, não esqueça do arquivo `.gitignore` contendo:
+- Crie um **repositório no github** e enviar o projeto, não esqueça do arquivo `.gitignore` contendo:
 ```
 node_modules
 .env

@@ -212,7 +212,7 @@ ipconfig
 ```
 - Conecte uma placa ESP32 ao computador com o cabo USB
 - Abra a IDE do Arduino e faça upload o código a seguir:
-  - Alterando no código abaixo a URL da API de `https://localhost:3000` para seu IP semelhante a este `https://192.168.1.137:3000`
+  - Alterando no código abaixo a URL da API de `http://localhost:3000` para seu IP semelhante a este `http://192.168.1.137:3000`
 ```c
 #include "WiFi.h"
 #include "WiFiClientSecure.h"
@@ -220,7 +220,7 @@ ipconfig
 
 const char* ssid = "SENAI_DES(novo)";
 const char* password = "Sesi@2026";
-const char* apiUrl = "https://localhost:3000";
+const char* apiUrl = "http://localhost:3000";
 
 void setup() {
   Serial.begin(9600);

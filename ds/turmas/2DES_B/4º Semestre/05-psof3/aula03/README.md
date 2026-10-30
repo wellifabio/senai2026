@@ -14,7 +14,11 @@
 - [GitHub](https://github.com/)
 - [Vercel](https://vercel.com/)
 
-## 1 Criando um novo projeto Node.Js + Prisma
+<details><summary><h2>
+
+1 Criando um novo projeto Node.Js + Prisma
+
+</h2></summary>
 
 A seguir temos um projeto de um simples estacionamento pronto para ser utilizado como base. basta criar a estrutura de pastas e copiar o conteúdo dos arquivos para o seu novo projeto.<br>![Diagrama de Classes](./screenshots/uml-dc.png)
 
@@ -159,17 +163,19 @@ const listar = async (req, res) => {
 ```
 ### Obs:
 A extenção backend-aula cria id como padrão para todas as tabelas/models, a tabela **veiculo** não possui **id**, mas sim **placa** como chave, altere as rotas e controlers de id para placa somente nos modelos *veiculo*.
-## 2 Implantação
-- 1. Para implantar o SGBD para **Postgre**, pois o vercel só da suporte gratuito para este **SGBD**.
-    - Altere o prisma/schema.prisma para `postgresql`
+
+</details>
+
+<details><summary><h2>2 Implantação</h2></summary>
+
+Para implantar, o *SGBD(Sistema Gerenciador de Banco de Dados)* deve ser alterado de **MariaDB** para  **PostgreSQL**, pois o vercel só da suporte gratuito para **POSTGRE**.
+    - Altere o `./prisma/schema.prisma` para `postgresql`
 ```js
 datasource db {
   provider = "postgresql"
 }
 ```
-    - Remover o `"@prisma/adapter-mariadb": "^7.10.0",` do `package.json`
-    - Trocar por `"@prisma/adapter-pg": "^7.10.1",` do `package.json`
-    - E adicionar o `"postinstall": "prisma migrate dev --name init && prisma generate"` no script
+- Remova o `"@prisma/adapter-mariadb": "^7.10.0",` do **`package.json`** e adicione o `"postinstall": "prisma migrate dev --name init && prisma generate"` no script
 ```json
 {
   "name": "backend",
@@ -180,7 +186,7 @@ datasource db {
     "postinstall": "prisma migrate dev --name init && prisma generate"
   },
   "dependencies": {
-    "@prisma/adapter-mariadb": "^7.10.0",
+    "@prisma/adapter-pg": "^7.10.0",
     "@prisma/client": "^7.10.0",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
@@ -202,7 +208,7 @@ datasource db {
 }
 ```
 - O `server.js` passa a ter utilizade apenas para testar localmente.
-- Crie o arquivo `api/index.js` que será o novo servidor que a **Vercel** vai utilizar
+- Crie o arquivo `./api/index.js` copiando o conteúdo do `./server.js` e o transformando em um **módulo** acrescentando na ultima linha `module.exports = app`, ele será o novo servidor que a **Vercel** vai utilizar, *semelhante ao a seguir*:
 ```js
 require("dotenv").config();
 const express = require("express");
@@ -242,7 +248,7 @@ app.get("/", (req, res) => {
 
 module.exports = app;
 ```
-= Altere o adaptador no prisma em `src/data/prisma.js`, comente o MariaDB e acrescente o Postgres
+- No arquivo `./src/data/prisma.js`, Altere o adaptador, comente a linha do `MariaDB` e acrescente a do `Postgres`
 ```js
 const { PrismaClient } = require("@prisma/client");
 // const { PrismaMariaDb } = require("@prisma/adapter-mariadb");
@@ -255,7 +261,7 @@ const prisma = new PrismaClient({ adapter });
 
 module.exports = prisma;
 ```
-- H. Criar um repositório no github e enviar o projeto, não esqueça do arquivo `.gitignore` contendo:
+- Crie um **repositório no github** e enviar o projeto, não esqueça do arquivo `.gitignore` contendo:
 ```
 node_modules
 .env
@@ -263,7 +269,8 @@ node_modules
 /prisma/migrations
 ```
 
-### Criando o projeto na Vercel
+<details><summary><h3>Criando o projeto na Vercel</h3></summary>
+
 Após criar uma conta na Vercel, acesse e crie um novo projeto, **importando** o seu projeto do **github**.
 - ![Vercel tela 1](./screenshots/vercel1.png)
 - Copie e cole o nome do repositório, se ele não aparecer clique em `Configure GitHub App`
@@ -298,11 +305,20 @@ Após criar uma conta na Vercel, acesse e crie um novo projeto, **importando** o
   }
 }
 ```
+
+</details>
+
+
 ## Pronto API Back-end implantada com sucesso
 Esta API é apenas um exemplo, está segura na implantação, porém completamente aberta, qualquer usiário mal intencionado pode alterar os dados do banco de dados, para uma maior segurança, seria necessário uma chave de API em todas as rotas ou ao menos nas de CRUD que geram alteração e/ou uma rota de autenticação JWT.
+
 ## [Exemplo do estacionamento implantado](https://github.com/wellifabio/sesi_psof3_aula3_estacionamento_api_vercel_2026.git)
 
-## Atividades
+</details>
+
+
+<details><summary><h2>Atividades</h2></summary>
+
 Desenvolva uma UI front-end para consumir sua API implantada conforme wireframes e requisitos a seguir:
 ### wireframes
 Segue os wireframes da UI para ter como base para o desenvolvimento:
@@ -312,3 +328,5 @@ Segue os wireframes da UI para ter como base para o desenvolvimento:
 ### Entregas
 - Implante a API na Vercel
 - Implante a UI no GitHub Pages
+
+</details>

@@ -356,7 +356,7 @@ unsigned long ultimaMudanca = 0;
 
 void setup()
 {
-  Serial.begin(115200);
+  Serial.begin(9600);
   pinMode(botao, INPUT_PULLUP);
 }
 
@@ -424,7 +424,7 @@ void detectarClique(int pino, int &leituraAnterior, int &estadoEstavel,
 
 void setup()
 {
-  Serial.begin(115200);
+  Serial.begin(9600);
   pinMode(botao1, INPUT_PULLUP);
   pinMode(botao2, INPUT_PULLUP);
 }

@@ -333,7 +333,119 @@ void loop() {
 ```
 - Observe o **Monitor Serial** que a cada 5 seguindos fará uma requisição GET para a API
 
-#### DESAFIO: Faça requisições POST para a API
-Elabore um código que faça requisições POST com o corpo `{"botao":1}` a cada 10 segundos para a API
+#### DESAFIO 01: Faça requisições POST para a API
+Elabore um código que faça requisições POST com o corpo `{"dados":200}` a cada 10 segundos para a API na rota `/comandos`
+<br>![Desafio](./desafio01.png)
+- O console da API deve mostrar os dados recebidos no corpo da requisição
 
 </details>
+
+<details><summary><h2>Sensores</h2></summary>
+
+Agora vamos utilizar sensores e enviar dados obtidos para a API
+
+<details><summary><h3>Obtendo o clique de um botão</h3></summary>
+
+#### Monte o seguinte circuito
+Este circuito detecta o clique de um botãode comando e mostra no monitor serial
+![Circuito clique](./1botao.png)
+```c
+const int botao = 2;
+int estadoAnterior = HIGH;
+unsigned long ultimaMudanca = 0;
+
+void setup()
+{
+  Serial.begin(115200);
+  pinMode(botao, INPUT_PULLUP);
+}
+
+void loop()
+{
+  int leitura = digitalRead(botao);
+
+  if (leitura != estadoAnterior)
+  {
+    ultimaMudanca = millis();
+    estadoAnterior = leitura;
+  }
+
+  if (leitura == LOW && millis() - ultimaMudanca >= 50)
+  {
+    Serial.println("Clique detectado");
+    while (digitalRead(botao) == LOW)
+    {
+      delay(10); // Aguarda o botão ser solto
+    }
+    estadoAnterior = HIGH;
+  }
+}
+```
+Este detecta o clique de dois botões
+![Circuito dois cliques](./2botoes.png)
+```c
+const int botao1 = 2;
+const int botao2 = 4;
+const unsigned long debounceMs = 50;
+
+int leituraAnterior1 = HIGH;
+int estadoEstavel1 = HIGH;
+unsigned long ultimaMudanca1 = 0;
+
+int leituraAnterior2 = HIGH;
+int estadoEstavel2 = HIGH;
+unsigned long ultimaMudanca2 = 0;
+
+void detectarClique(int pino, int &leituraAnterior, int &estadoEstavel,
+                    unsigned long &ultimaMudanca, const char *nome)
+{
+  int leitura = digitalRead(pino);
+
+  if (leitura != leituraAnterior)
+  {
+    ultimaMudanca = millis();
+    leituraAnterior = leitura;
+  }
+
+  if (millis() - ultimaMudanca >= debounceMs && leitura != estadoEstavel)
+  {
+    estadoEstavel = leitura;
+    if (estadoEstavel == LOW)
+    {
+      Serial.print(nome);
+      Serial.println(" pressionado");
+    }
+  }
+}
+
+void setup()
+{
+  Serial.begin(115200);
+  pinMode(botao1, INPUT_PULLUP);
+  pinMode(botao2, INPUT_PULLUP);
+}
+
+void loop()
+{
+  detectarClique(botao1, leituraAnterior1, estadoEstavel1, ultimaMudanca1,
+                 "Botao 1");
+  detectarClique(botao2, leituraAnterior2, estadoEstavel2, ultimaMudanca2,
+                 "Botao 2");
+}
+```
+
+#### DESAFIO 02: Enviando cliques para a API
+Agora monte o segundo circuito com dois botões e envie os cliques para a API com requisição **POST** na rota `/comandos` com o corpo da requisição contendo `{"botao":1}` e `{"botao":2}`
+</details>
+
+### DESAFIO 03: Enviar dados do sensor
+#### Contextualização
+O sensor de **ultrassom** mede distâncias emitindo uma onda sonora de alta frequência e calculando o tempo que o eco demora para retornar após atingir um objeto, semelhante a um radar.
+<br>[Ultrasom](./ultrasom.png)
+
+#### Desafio
+Crie um prototipo que detecte a distância de uma pessoa ou outro objeto e:
+- Mostre a distância no monitor serial
+- Leia a distância duas vezes em um intervalo de meio segundo
+  - calcule a velocidade e mostre no monitor serial
+- Envie a velocidade para a API

@@ -5,7 +5,7 @@
 const char *ssid = "SENAI_DES(novo)";
 const char *password = "Sesi@2026";
 const char *apiUrl = "http://192.168.0.152:3000/comandos";
-const int botao = 18;
+const int botao = 2;
 
 void setup()
 {
@@ -69,7 +69,7 @@ void enviarComando()
         http.addHeader("Content-Type", "application/json");
 
         Serial.println("Enviando requisicao POST...");
-        int httpCode = http.POST("{\"botao\":1}");
+        int httpCode = http.POST("{\"botao\":2}");
 
         if (httpCode > 0)
         {

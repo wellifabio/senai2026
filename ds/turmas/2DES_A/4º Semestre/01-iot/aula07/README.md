@@ -455,3 +455,6 @@ Crie um prototipo que detecte a distância de uma pessoa ou outro objeto e:
 - Leia a distância duas vezes em um intervalo de meio segundo
   - calcule a velocidade e mostre no monitor serial
 - Envie a velocidade para a API
+
+#### Entrega
+Repositorio do github com os códigos e README.md com descrição e fotos do experimento.

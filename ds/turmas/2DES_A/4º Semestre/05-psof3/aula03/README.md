@@ -14,7 +14,11 @@
 - [GitHub](https://github.com/)
 - [Vercel](https://vercel.com/)
 
-## 1 Criando um novo projeto Node.Js + Prisma
+<details><summary><h2>
+
+1 Criando um novo projeto Node.Js + Prisma
+
+</h2></summary>
 
 A seguir temos um projeto de um simples estacionamento pronto para ser utilizado como base. basta criar a estrutura de pastas e copiar o conteúdo dos arquivos para o seu novo projeto.<br>![Diagrama de Classes](./screenshots/uml-dc.png)
 
@@ -159,7 +163,11 @@ const listar = async (req, res) => {
 ```
 ### Obs:
 A extenção backend-aula cria id como padrão para todas as tabelas/models, a tabela **veiculo** não possui **id**, mas sim **placa** como chave, altere as rotas e controlers de id para placa somente nos modelos *veiculo*.
-## 2 Implantação
+
+</details>
+
+<details><summary><h2>2 Implantação</h2></summary>
+
 - 1. Para implantar o SGBD para **Postgre**, pois o vercel só da suporte gratuito para este **SGBD**.
     - Altere o prisma/schema.prisma para `postgresql`
 ```js
@@ -262,7 +270,8 @@ node_modules
 /prisma/migrations
 ```
 
-### Criando o projeto na Vercel
+<details><summary><h3>Criando o projeto na Vercel</h3></summary>
+
 Após criar uma conta na Vercel, acesse e crie um novo projeto, **importando** o seu projeto do **github**.
 - ![Vercel tela 1](./screenshots/vercel1.png)
 - Copie e cole o nome do repositório, se ele não aparecer clique em `Configure GitHub App`
@@ -297,11 +306,20 @@ Após criar uma conta na Vercel, acesse e crie um novo projeto, **importando** o
   }
 }
 ```
+
+</details>
+
+
 ## Pronto API Back-end implantada com sucesso
 Esta API é apenas um exemplo, está segura na implantação, porém completamente aberta, qualquer usiário mal intencionado pode alterar os dados do banco de dados, para uma maior segurança, seria necessário uma chave de API em todas as rotas ou ao menos nas de CRUD que geram alteração e/ou uma rota de autenticação JWT.
+
 ## [Exemplo do estacionamento implantado](https://github.com/wellifabio/sesi_psof3_aula3_estacionamento_api_vercel_2026.git)
 
-## Atividades
+</details>
+
+
+<details><summary><h2>Atividades</h2></summary>
+
 Desenvolva uma UI front-end para consumir sua API implantada conforme wireframes e requisitos a seguir:
 ### wireframes
 Segue os wireframes da UI para ter como base para o desenvolvimento:
@@ -311,3 +329,5 @@ Segue os wireframes da UI para ter como base para o desenvolvimento:
 ### Entregas
 - Implante a API na Vercel
 - Implante a UI no GitHub Pages
+
+</details>

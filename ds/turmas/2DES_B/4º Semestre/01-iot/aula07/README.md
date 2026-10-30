@@ -359,7 +359,7 @@ void setup()
   Serial.begin(9600);
   pinMode(botao, INPUT_PULLUP);
   Serial.println();
-  Serial.println("Ouvindo botão no pino 4");
+  Serial.println("Ouvindo botao no pino 4");
 }
 
 void loop()
@@ -429,6 +429,8 @@ void setup()
   Serial.begin(9600);
   pinMode(botao1, INPUT_PULLUP);
   pinMode(botao2, INPUT_PULLUP);
+  Serial.println();
+  Serial.println("Ouvindo botoes nos pinos 2 e 4");
 }
 
 void loop()

@@ -19,6 +19,8 @@ void setup() {
 
   Serial.println();
   Serial.println("WIFI conectado");
+  Serial.println("IP: ");
+  Serial.println(wifi.localIP());
 }
 
 void loop() {
@@ -32,7 +34,6 @@ void loop() {
   WiFiClient client;
   HTTPClient http;
 
-  HTTPClient http;
   if (http.begin(client, apiUrl)) {
     http.addHeader("Content-Type", "application/json");
     const char* corpoJson = "{\"dados\":200}";

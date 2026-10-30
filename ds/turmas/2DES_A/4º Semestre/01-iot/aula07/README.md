@@ -235,6 +235,8 @@ void setup() {
 
   Serial.println();
   Serial.println("WIFI conectado");
+  Serial.println("IP: ");
+  Serial.println(wifi.localIP());
 }
 
 void loop() {
@@ -248,7 +250,6 @@ void loop() {
   WiFiClient client;
   HTTPClient http;
 
-  HTTPClient http;
   if (http.begin(client, apiUrl)) {
     Serial.println("Enviando requisicao GET...");
     int httpCode = http.GET();
@@ -293,6 +294,8 @@ void setup() {
 
   Serial.println();
   Serial.println("WIFI conectado");
+  Serial.println("IP: ");
+  Serial.println(wifi.localIP());
 }
 
 void loop() {

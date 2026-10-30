@@ -236,7 +236,7 @@ void setup() {
   Serial.println();
   Serial.println("WIFI conectado");
   Serial.println("IP: ");
-  Serial.println(wifi.localIP());
+  Serial.println(WiFi.localIP());
 }
 
 void loop() {
@@ -295,7 +295,7 @@ void setup() {
   Serial.println();
   Serial.println("WIFI conectado");
   Serial.println("IP: ");
-  Serial.println(wifi.localIP());
+  Serial.println(WiFi.localIP());
 }
 
 void loop() {

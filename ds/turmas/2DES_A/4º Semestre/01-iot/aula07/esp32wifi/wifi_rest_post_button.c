@@ -4,7 +4,7 @@
 
 const char *ssid = "SENAI_DES(novo)";
 const char *password = "Sesi@2026";
-const char *apiUrl = "https://192.168.0.152:3000/comandos";
+const char *apiUrl = "http://192.168.0.152:3000/comandos";
 const int botao = 18;
 
 void setup()

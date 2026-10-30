@@ -384,7 +384,7 @@ void loop()
 
 </details>
 
-<details><summary><h3>Obtendo o clique de dius botões</h3></summary>
+<details><summary><h3>Obtendo o clique de dois botões</h3></summary>
 
 ![Circuito dois cliques](./2botoes.png)
 ```c

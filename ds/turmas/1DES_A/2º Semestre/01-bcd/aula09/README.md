@@ -780,10 +780,11 @@ No arquivo `queries.sql` acrescente as seguintes:
 ```json
 {
     "nome":"Gaspar Oliveira",
-    "logradouro":"Rua Lizandro Silva",
+    "cep":"13905-620",
+    "logradouro":"Rua Alcides Postali",
     "numero":21,
     "bairro":"São Dimas",
-    "referencia":"Ao lado da igrejinha",
+    "referencia":"Ao lado da igreja",
     "telefone":"19 99898-1141"
 }
 ```

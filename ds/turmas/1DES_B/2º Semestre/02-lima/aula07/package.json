@@ -1,0 +1,17 @@
+{
+  "name": "aula07",
+  "version": "1.0.0",
+  "description": "Esta atividade tem como objetivo o desenvolvimento de uma aplicação web interativa para a gestão de um catálogo de jogos clássicos (RetroGames). A aplicação deve permitir a visualização de itens e a inclusão de novos registros por meio de um formulário contido em uma janela modal.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "robsonbsouzaa",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "mysql2": "^3.24.6"
+  }
+}

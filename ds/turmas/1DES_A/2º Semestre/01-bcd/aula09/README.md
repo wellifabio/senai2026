@@ -23,6 +23,8 @@
 
 <br>![JOINs](./joins.png)
 
+---
+
 ## Atividades
 A seguir temos um bando de dados de uma **Pizzaria**
 
@@ -714,6 +716,8 @@ show tables;
 ### Entregas
 Mostre as queries ao instrutor para **vistar**
 
+---
+
 ## Situações de aprendizagem
 Demonstrações e desafios
 ### Contextualização
@@ -764,6 +768,8 @@ SELECT * FROM vw_pedidos1;
 ```
 Execute **um de cada vez** os comandos *estudando* seus resultados, en seguida faça os desafios abaixo salvando as queries no arquivo `views.sql`
 
+---
+
 #### Desafios
 - [ ] Crie um relatório que mostre todos os pedidos, itens, nome dos - clientes e nome das pizzas.
 - [ ] Acrescente uma coluna chamada subtotal que seja o calculo do valor da pizza vezes a quantidade.
@@ -772,6 +778,8 @@ Execute **um de cada vez** os comandos *estudando* seus resultados, en seguida f
 
 #### Entregas
 Mostre as **views** ao instrutor para vistar
+
+---
 
 #### DML - Manipulando Dados
 No arquivo `queries.sql` acrescente as seguintes:

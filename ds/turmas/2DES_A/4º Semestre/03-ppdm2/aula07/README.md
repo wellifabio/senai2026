@@ -136,7 +136,21 @@ class _HomeState extends State<Home> {
 
 ### Resultado final
 Execute o App em um emulador ou dispositivo físico e você verá o widget personalizado exibindo a informação na tela.
+- Criando a versão APK para testar instalando em um celular Android, siga os passos abaixo:
+1. Abra o terminal no diretório do projeto.
+```bash
+flutter build apk --release
+```
+2. O arquivo APK será gerado no diretório `build/app/outputs/flutter-apk/app-release.apk`.
+Copie-o para a pasta /assets do projeto e suba para um repositório GitHub ou envie para o seu celular via cabo USB, e instale o aplicativo.
 
 |Tela do App|Widget Personalizado|
 |---|---|
 |![Tela do App](./tela_app.png)|![Widget Personalizado](./widget_personalizado.png)|
+
+## Atividade prática
+- Crie um widget personalizado em um de seus projetos Flutter, que exiba informações relevantes para o seu aplicativo.
+### Entrega
+- Teste o widget no seu aplicativo e tire um print da tela mostrando o widget em ação.
+- Acrescente o print da tela no README.md do seu repositório GitHub.
+- Apresente o repositório para o professor vistar e avaliar a atividade.

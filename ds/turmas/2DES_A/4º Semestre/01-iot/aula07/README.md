@@ -460,7 +460,7 @@ Mostre o resultado do desafio no monitor serial e console da API ao instrutor pa
 
 ---
 
-## DESAFIO 03: Enviar dados do sensor
+## DESAFIO 03: Enviar dados do sensor para a API (Radar de ultrassom) 
 ### Contextualização
 O sensor de **[ultrassom](./ultrassom/README.md)** mede distâncias emitindo uma onda sonora de alta frequência e calculando o tempo que o eco demora para retornar após atingir um objeto, semelhante a um radar.
 <br>![Ultrasom](./ultrasom.png)

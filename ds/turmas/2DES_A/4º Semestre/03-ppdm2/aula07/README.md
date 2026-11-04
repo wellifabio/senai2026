@@ -9,6 +9,51 @@ App de receitas que consome uma API REST para exibir informações sobre pratos 
 
 ### Passo 1: Criar a classe do Widget
 - 1 Crie um novo App flutter chamado `flutter_widget_externo` ou abra o projeto existente.
+<details>
+  <summary>Exemplo de estrutura de pastas</summary>
+  
+  ```
+  flutter_widget_externo/
+  ├── lib/
+  │   ├── main.dart
+  │   ├── ui/
+  │   │   └── home.dart
+  │   └── meu_info_widget.dart
+  └── pubspec.yaml
+  ```
+  - main.dart: arquivo principal do app, onde é definido o ponto de entrada e a tela inicial.
+  ```dart
+  import 'package:flutter/material.dart';
+  
+  import 'ui/home.dart';
+  void main() {
+    runApp(MaterialApp(title: "Widget Externo Flutter", home: Home()));
+  }
+  ```
+  - home.dart: arquivo que contém a tela principal do app, onde o widget personalizado será utilizado.
+  ```dart
+  import 'package:flutter/material.dart';
+
+  class Home extends StatefulWidget {
+    const new({super.key});
+
+    @override
+    State<Home> createState() => _HomeState();
+  }
+
+  class _HomeState extends State<Home> {
+    @override
+    Widget build(BuildContext context) {
+      return Scaffold(
+        appBar: AppBar(title: const Text("Widget Externo Flutter")),
+        body: const Center(child: Text("Hello World!")),
+      );
+    }
+  }  
+  ```
+
+</details>
+
 - 2 Crie uma nova classe que estende StatelessWidget ou StatefulWidget, dependendo da necessidade.
 - 3 Crie um arquivo Dart separado ou use o mesmo arquivo da sua tela para definir o componente visual.
   - Utilize widgets nativos como Container, Padding, Card e Text para estruturar a informação.

@@ -46,10 +46,13 @@ App de receitas que consome uma API REST para exibir informações sobre pratos 
     Widget build(BuildContext context) {
       return Scaffold(
         appBar: AppBar(title: const Text("Widget Externo Flutter")),
-        body: const Center(child: Text("Hello World!")),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [Center(child: Text("Hello World!"))],
+        ),
       );
     }
-  }  
+  }
   ```
 
 </details>
@@ -100,24 +103,40 @@ class MeuInfoWidget extends StatelessWidget {
 ### Passo 2: Inserir o Widget na Árvore de Componentes da Tela
 Chame o seu novo widget dentro do método build da sua tela principal (dentro de uma Column, ListView ou qualquer outro widget de layout), passando os dados necessários:
 ```dart
-class MinhaTela extends StatelessWidget {
-  const MinhaTela({super.key});
+import 'package:flutter/material.dart';
 
+import '../meu_info_widget.dart';
+
+class Home extends StatefulWidget {
+  const new({super.key});
+
+  @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Exemplo de Widget'),
-      ),
-      body: const Column(
+      appBar: AppBar(title: const Text("Widget Externo Flutter")),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          // 2. Chamando o widget personalizado na tela
           MeuInfoWidget(
-            informacao: 'Esta é a informação exibida no meu widget personalizado!',
+            informacao:
+                'Esta é a informação exibida no meu widget personalizado!',
           ),
+          Center(child: Text("Hello World!")),
         ],
       ),
     );
   }
 }
 ```
+
+### Resultado final
+Execute o App em um emulador ou dispositivo físico e você verá o widget personalizado exibindo a informação na tela.
+
+|Tela do App|Widget Personalizado|
+|---|---|
+|![Tela do App](./tela_app.png)|![Widget Personalizado](./widget_personalizado.png)|

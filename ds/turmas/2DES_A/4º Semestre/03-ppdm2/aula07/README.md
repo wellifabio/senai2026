@@ -50,9 +50,139 @@ flutter pub get
 - Baixe o arquivo `icone.png` e coloque na pasta `assets/` do projeto.
 - Dê o comando a seguir para configurar o ícone do aplicativo com a imagem que você baixou:
 ```bash
+flutter pub get
 flutter pub run flutter_launcher_icons:main
 ```
+
+### 4 Configure o Android
+- Abra o arquivo `android/app/src/main/AndroidManifest.xml` e adicione as permissões necessárias para o widget funcionar corretamente:
+```xml
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application
+        android:label="flutter_home_widget"
+        android:name="${applicationName}"
+        android:icon="@mipmap/ic_launcher">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:taskAffinity=""
+            android:theme="@style/LaunchTheme"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize">
+            <!-- Specifies an Android theme to apply to this Activity as soon as
+                 the Android process has started. This theme is visible to the user
+                 while the Flutter UI initializes. After that, this theme continues
+                 to determine the Window background behind the Flutter UI. -->
+            <meta-data
+              android:name="io.flutter.embedding.android.NormalTheme"
+              android:resource="@style/NormalTheme"
+              />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <receiver
+            android:name=".MeuHomeWidget"
+            android:exported="true"
+            android:label="Ideia">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/meu_home_widget_info" />
+        </receiver>
+        <!-- Don't delete the meta-data below.
+             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+    </application>
+    <!-- Required to query activities that can process text, see:
+         https://developer.android.com/training/package-visibility and
+         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+
+         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin. -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.PROCESS_TEXT"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+    </queries>
+</manifest>
+```
+### 5 COnfigure o `main.dart`
+```dart
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:home_widget/home_widget.dart';
+
+void main() {
+  runApp(const MainApp());
+}
+
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
+
+  // Função para atualizar o widget com uma imagem de fundo e um texto 'Ideia'
+  Future<void> atualizarWidgetExterno(BuildContext context) async {
+    const String androidWidgetName =
+        'com.example.flutter_home_widget.MeuHomeWidget';
+
+    // Caminho da imagem que você quer mostrar no widget
+    String imagemCaminho = 'assets/icone.png';
+
+    try {
+      await HomeWidget.saveWidgetData<String>('chave_imagem', imagemCaminho);
+      await HomeWidget.saveWidgetData<String>('chave_texto', 'Ideia');
+
+      await HomeWidget.updateWidget(
+        qualifiedAndroidName: androidWidgetName,
+      );
+      await HomeWidget.requestPinWidget(
+        qualifiedAndroidName: androidWidgetName,
+      );
+    } on PlatformException catch (exception) {
+      if (!context.mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(
+            'Não foi possível criar o widget: ${exception.message ?? exception.code}',
+          ),
+        ),
+      );
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(title: const Text('Flutter Home Widget')),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            spacing: 20,
+            children: [
+              Image(image: AssetImage('assets/icone.png')),
+              ElevatedButton(
+                onPressed: () => atualizarWidgetExterno(context),
+                child: const Text('Criar o Widget'),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+```
+
 </details>
+
 
 ## Exemplo: [App Receitas](https://github.com/wellifabio/sesi_ppdm2_receitas_flutter_api_2026.git)
 App de receitas que consome uma API REST para exibir informações sobre pratos e receitas.

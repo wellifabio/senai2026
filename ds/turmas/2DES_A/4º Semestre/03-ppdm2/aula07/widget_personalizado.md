@@ -180,4 +180,4 @@ class _HomeState extends State<Home> {
 ### Resultado final
 |Tela do App|Widget Personalizado|
 |---|---|
-|![Tela do App](./tela_app.png)|![Widget Personalizado](./widget_personalizado.png)|
+|![Tela do App](./tela_app.jpg)|![Widget Personalizado](./widget_personalizado.jpg)|

@@ -148,6 +148,8 @@ Copie-o para a pasta /assets do projeto e suba para um repositório GitHub ou en
 |---|---|
 |![Tela do App](./tela_app.png)|![Widget Personalizado](./widget_personalizado.png)|
 
+Se preferir, por sua conta e risco, baixe e instale o APK do app de exemplo [aqui](app-release.apk).
+
 ## Atividade prática
 - Crie um widget personalizado em um de seus projetos Flutter, que exiba informações relevantes para o seu aplicativo.
 ### Entrega

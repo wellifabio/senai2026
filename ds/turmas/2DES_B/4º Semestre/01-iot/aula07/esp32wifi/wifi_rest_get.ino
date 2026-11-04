@@ -4,7 +4,7 @@
 
 const char* ssid = "SENAI_DES(novo)";
 const char* password = "Sesi@2026";
-const char* apiUrl = "http://192.168.0.152:3000";
+const char* apiUrl = "https://receitasapi-b-2025.vercel.app/";
 
 void setup() {
   Serial.begin(9600);

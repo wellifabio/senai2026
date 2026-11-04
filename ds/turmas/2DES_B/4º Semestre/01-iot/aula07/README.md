@@ -271,7 +271,7 @@ void loop() {
   delay(10000);
 }
 ```
-- O codigo a seguir utiliza HTTPS para quando a API está implantada em nuvem
+- O codigo a seguir utiliza HTTPS para quando a API está implantada em nuvem (na internet) e não localmente, como no caso do Vercel. Altere a URL da API para `https://receitasapi-b-2025.vercel.app/` e faça upload do código para a placa ESP32
 ```c
 #include "WiFi.h"
 #include "WiFiClientSecure.h"
@@ -279,7 +279,7 @@ void loop() {
 
 const char* ssid = "SENAI_DES(novo)";
 const char* password = "Sesi@2026";
-const char* apiUrl = "https://localhost:3000";
+const char* apiUrl = "https://receitasapi-b-2025.vercel.app/";
 
 void setup() {
   Serial.begin(9600);
@@ -402,8 +402,7 @@ int leituraAnterior2 = HIGH;
 int estadoEstavel2 = HIGH;
 unsigned long ultimaMudanca2 = 0;
 
-void detectarClique(int pino, int &leituraAnterior, int &estadoEstavel,
-                    unsigned long &ultimaMudanca, const char *nome)
+void detectarClique(int pino, int &leituraAnterior, int &estadoEstavel, unsigned long &ultimaMudanca, const char *nome)
 {
   int leitura = digitalRead(pino);
 
@@ -435,10 +434,8 @@ void setup()
 
 void loop()
 {
-  detectarClique(botao1, leituraAnterior1, estadoEstavel1, ultimaMudanca1,
-                 "Botao 1");
-  detectarClique(botao2, leituraAnterior2, estadoEstavel2, ultimaMudanca2,
-                 "Botao 2");
+  detectarClique(botao1, leituraAnterior1, estadoEstavel1, ultimaMudanca1, "Botao 1");
+  detectarClique(botao2, leituraAnterior2, estadoEstavel2, ultimaMudanca2, "Botao 2");
 }
 ```
 
@@ -450,7 +447,7 @@ Agora monte o segundo circuito com dois botões e envie os cliques para a API co
 
 ### DESAFIO 03: Enviar dados do sensor
 #### Contextualização
-O sensor de **ultrassom** mede distâncias emitindo uma onda sonora de alta frequência e calculando o tempo que o eco demora para retornar após atingir um objeto, semelhante a um radar.
+O sensor de **[ultrassom](./ultrassom/README.md)** mede distâncias emitindo uma onda sonora de alta frequência e calculando o tempo que o eco demora para retornar após atingir um objeto, semelhante a um radar.
 <br>![Ultrasom](./ultrasom.png)
 
 #### Desafio

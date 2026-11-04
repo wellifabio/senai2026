@@ -8,7 +8,10 @@ App de receitas que consome uma API REST para exibir informações sobre pratos 
 - O app utiliza widgets personalizados que mostra o nome e foto de uma receita aleatória e ao ser clicado abre a tela home com a lista de receitas.
 
 ### Passo 1: Criar a classe do Widget
-Crie um arquivo Dart separado ou use o mesmo arquivo da sua tela para definir o componente visual. Utilize widgets nativos como Container, Padding, Card e Text para estruturar a informação.
+- 1 Crie um novo App flutter ou abra o projeto existente.
+- 2 Crie uma nova classe que estende StatelessWidget ou StatefulWidget, dependendo da necessidade.
+- 3 Crie um arquivo Dart separado ou use o mesmo arquivo da sua tela para definir o componente visual.
+  - Utilize widgets nativos como Container, Padding, Card e Text para estruturar a informação.
 ```dart
 import 'package:flutter/material.dart';
 

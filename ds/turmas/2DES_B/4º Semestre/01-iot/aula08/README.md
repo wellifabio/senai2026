@@ -218,6 +218,8 @@ O site deve ser capaz de:
 - Exibir os dados em gráficos interativos (temperatura, umidade e luminosidade) utilizando bibliotecas como Chart.js ou D3.js.
 
 ## Entregas
-- **Fotografe** e/ou faça um breve **vídeo** do experimento funcionando
-    - Suba o vídeo no Youtube ou as fotos em um repositório no github com o README.md mostrando uma descrição da experiência e fotos do protótipo.
-    - Passos para executar a API, print do site com gráficos e print do banco de dados com os dados recebidos.
+- **Fotografe** o experimento funcionando
+- Subra as fotos em um repositório no github com o README.md mostrando uma descrição da experiência e fotos do protótipo.
+    - Passos para executar a API,
+    - Print do site com gráficos e print do banco de dados com os dados recebidos.
+- Acrescente o link do repositório no portifólio dos integrantes do grupo.

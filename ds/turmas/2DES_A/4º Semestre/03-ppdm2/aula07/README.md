@@ -55,13 +55,16 @@ App de receitas que consome uma API REST para exibir informações sobre pratos 
 </details>
 
 - 2 Crie uma nova classe que estende StatelessWidget ou StatefulWidget, dependendo da necessidade.
-- 3 Crie um arquivo Dart separado ou use o mesmo arquivo da sua tela para definir o componente visual.
+- 3 Crie um arquivo `meu_info_widget.dart` separado ou use o mesmo arquivo da sua tela para definir o componente visual.
   - Utilize widgets nativos como Container, Padding, Card e Text para estruturar a informação.
 ```dart
 import 'package:flutter/material.dart';
 
 // 1. Definição de um StatelessWidget customizado
-onst MeuInfoWidget({super.key, required this.informacao});
+class MeuInfoWidget extends StatelessWidget {
+  final String informacao;
+
+  const MeuInfoWidget({super.key, required this.informacao});
 
   @override
   Widget build(BuildContext context) {

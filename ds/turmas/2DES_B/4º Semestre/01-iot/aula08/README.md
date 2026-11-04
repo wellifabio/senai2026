@@ -189,7 +189,7 @@ O Sr. Fujimo Nakombi, descendente de japoneses, é um cultivador de cogumelos e 
 ## Desafio
 O projeto consiste em criar um sistema de monitoramento ambiental utilizando o microcontrolador ESP32, sensores de temperatura e umidade (DHT11), e um sensor de luminosidade (LDR). O objetivo é coletar dados ambientais, enviá-los para uma API na nuvem e exibir os resultados em um site com gráficos interativos.
 
-- Desenvolvar uma API semelhante a da aula anterior, porém os dados devem ser armazanados em um banco de dados relacional (MySQL ou PostgreSQL).
+- Desenvolvar uma API semelhante a da aula anterior, porém os dados devem ser armazanados em um banco de dados relacional (MySQL ou PostgreSQL) ou não relacional (MongoDB, Firebase, etc.).
 ### MER DER
 
 |Medicao|

@@ -121,15 +121,19 @@ Com o ESP32 conectado via USB no PC:
 - Pressione e solte o outro botão **EN** para reset.
 </details>
 
-## Desafio 01
+## Desafio 01 (Semáforo de duas vias)
 Em grupo de até 5 integrantes:
 - Desenvolva o experimento de **semáforo** simulado no ThinkerCAD na [Aula3](../aula03/README.md)
     - Monte o protótipo na protoboard
     - Implante o código utilizando a IDE do Arduino
 #### OBS:
 Alguns componentes dos kits podem não estar funcionais, compartilhem os componentes dos kits tomando cuidados para não queimá-los
+#### Ilustração do cruzamento de semáforo
+![Cruzamento](../aula03/cruzamento.webp)
 ## Entregas
 - **Fotografe** e/ou faça um breve **vídeo** do experimento funcionando
     - Suba o vídeo no Youtube ou as fotos em um repositório no github com o README.md mostrando uma descrição da experiência e fotos do protótipo.
 - Apresente o vídeo ou o repositório com as fotos para o instrutor **vistar**.
 
+## Exemplo com ARDUINO
+![Exemplo](../aula03/semaforo.png)

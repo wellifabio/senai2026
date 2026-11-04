@@ -333,12 +333,19 @@ void loop() {
 ```
 - Observe o **Monitor Serial** que a cada 5 seguindos fará uma requisição GET para a API
 
-#### DESAFIO 01: Faça requisições POST para a API
+</details>
+
+---
+
+## DESAFIO 01: Faça requisições POST para a API
 Elabore um código que faça requisições POST com o corpo `{"dados":200}` a cada 10 segundos para a API na rota `/comandos`
 <br>![Desafio](./desafio01.png)
 - O console da API deve mostrar os dados recebidos no corpo da requisição
 
-</details>
+### Entrega
+Mostre o resultado do desafio no monitor serial e console da API ao instrutor para receber o visto de conclusão do desafio.
+
+---
 
 <details><summary><h2>Sensores</h2></summary>
 
@@ -441,21 +448,32 @@ void loop()
 
 </details>
 
-#### DESAFIO 02: Enviando cliques para a API
-Agora monte o segundo circuito com dois botões e envie os cliques para a API com requisição **POST** na rota `/comandos` com o corpo da requisição contendo `{"botao":1}` e `{"botao":2}`
 </details>
 
-### DESAFIO 03: Enviar dados do sensor
-#### Contextualização
+---
+
+## DESAFIO 02: Enviando cliques para a API
+Agora monte o segundo circuito com dois botões e envie os cliques para a API com requisição **POST** na rota `/comandos` com o corpo da requisição contendo `{"botao":1}` e `{"botao":2}`
+
+### Entrega
+Mostre o resultado do desafio no monitor serial e console da API ao instrutor para receber o visto de conclusão do desafio.
+
+---
+
+## DESAFIO 03: Enviar dados do sensor
+### Contextualização
 O sensor de **[ultrassom](./ultrassom/README.md)** mede distâncias emitindo uma onda sonora de alta frequência e calculando o tempo que o eco demora para retornar após atingir um objeto, semelhante a um radar.
 <br>![Ultrasom](./ultrasom.png)
 
-#### Desafio
+### Desafio
 Crie um prototipo que detecte a distância de uma pessoa ou outro objeto e:
 - Mostre a distância no monitor serial
 - Leia a distância duas vezes em um intervalo de meio segundo
   - calcule a velocidade e mostre no monitor serial
 - Envie a velocidade para a API
 
-#### Entrega
+### Entrega
 Repositorio do github com os códigos e README.md com descrição e fotos do experimento.
+- Apresente ao instrutor para receber o visto de conclusão do desafio.
+
+---

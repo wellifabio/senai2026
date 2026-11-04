@@ -2,7 +2,10 @@
 Para criar um widget personalizado que exibe uma informação na tela do seu aplicativo Flutter, você deve definir uma classe que estende StatelessWidget (se o conteúdo for estático) ou StatefulWidget (se a informação mudar ao longo do tempo)
 
 ## [Documentação oficial](https://docs.flutter.dev/learn/pathway/tutorial/widget-fundamentals)
-## [Exemplo de App de Receitas com um Widget que mostra uma receita aleatoria](https://github.com/wellifabio/sesi_ppdm2_receitas_flutter_api_2026.git
+
+## Exemplo: [App Receitas](https://github.com/wellifabio/sesi_ppdm2_receitas_flutter_api_2026.git)
+App de receitas que consome uma API REST para exibir informações sobre pratos e receitas.
+- O app utiliza widgets personalizados que mostra o nome e foto de uma receita aleatória e ao ser clicado abre a tela home com a lista de receitas.
 
 ### Passo 1: Criar a classe do Widget
 Crie um arquivo Dart separado ou use o mesmo arquivo da sua tela para definir o componente visual. Utilize widgets nativos como Container, Padding, Card e Text para estruturar a informação.

@@ -338,9 +338,9 @@ Crie uma pasta em sua área de trabalho chamada `backend_energia` e abra com o *
 - Dentro dela crie uma pasta chamada `docs` e salve o MER DER da imagem acima
 - Crie uma outra pasta chamada `db` e um arquivo chamado `./db/script.sql` contendo o seguinte script de criação e população do banco de dados:
 ```sql
-drop database if exists gestao_residuos;
-create database gestao_residuos;
-use gestao_residuos;
+drop database if exists gestao_consumo;
+create database gestao_consumo;
+use gestao_consumo;
 -- DDL Criação das tabelas
 create table usuario (
     id int not null auto_increment primary key,

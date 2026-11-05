@@ -271,7 +271,7 @@ void loop() {
   delay(10000);
 }
 ```
-- O codigo a seguir utiliza HTTPS para quando a API está implantada em nuvem
+- O codigo a seguir utiliza HTTPS para quando a API está implantada em nuvem (na internet) e não localmente, como no caso do Vercel. Altere a URL da API para `https://receitasapi-b-2025.vercel.app/` e faça upload do código para a placa ESP32
 ```c
 #include "WiFi.h"
 #include "WiFiClientSecure.h"
@@ -279,7 +279,7 @@ void loop() {
 
 const char* ssid = "SENAI_DES(novo)";
 const char* password = "Sesi@2026";
-const char* apiUrl = "https://localhost:3000";
+const char* apiUrl = "https://receitasapi-b-2025.vercel.app/";
 
 void setup() {
   Serial.begin(9600);
@@ -333,12 +333,19 @@ void loop() {
 ```
 - Observe o **Monitor Serial** que a cada 5 seguindos fará uma requisição GET para a API
 
-#### DESAFIO 01: Faça requisições POST para a API
+</details>
+
+---
+
+## DESAFIO 01: Faça requisições POST para a API
 Elabore um código que faça requisições POST com o corpo `{"dados":200}` a cada 10 segundos para a API na rota `/comandos`
 <br>![Desafio](./desafio01.png)
 - O console da API deve mostrar os dados recebidos no corpo da requisição
 
-</details>
+### Entrega
+Mostre o resultado do desafio no monitor serial e console da API ao instrutor para receber o visto de conclusão do desafio.
+
+---
 
 <details><summary><h2>Sensores</h2></summary>
 
@@ -402,8 +409,7 @@ int leituraAnterior2 = HIGH;
 int estadoEstavel2 = HIGH;
 unsigned long ultimaMudanca2 = 0;
 
-void detectarClique(int pino, int &leituraAnterior, int &estadoEstavel,
-                    unsigned long &ultimaMudanca, const char *nome)
+void detectarClique(int pino, int &leituraAnterior, int &estadoEstavel, unsigned long &ultimaMudanca, const char *nome)
 {
   int leitura = digitalRead(pino);
 
@@ -435,30 +441,39 @@ void setup()
 
 void loop()
 {
-  detectarClique(botao1, leituraAnterior1, estadoEstavel1, ultimaMudanca1,
-                 "Botao 1");
-  detectarClique(botao2, leituraAnterior2, estadoEstavel2, ultimaMudanca2,
-                 "Botao 2");
+  detectarClique(botao1, leituraAnterior1, estadoEstavel1, ultimaMudanca1, "Botao 1");
+  detectarClique(botao2, leituraAnterior2, estadoEstavel2, ultimaMudanca2, "Botao 2");
 }
 ```
 
 </details>
 
-#### DESAFIO 02: Enviando cliques para a API
-Agora monte o segundo circuito com dois botões e envie os cliques para a API com requisição **POST** na rota `/comandos` com o corpo da requisição contendo `{"botao":1}` e `{"botao":2}`
 </details>
 
-### DESAFIO 03: Enviar dados do sensor
-#### Contextualização
-O sensor de **ultrassom** mede distâncias emitindo uma onda sonora de alta frequência e calculando o tempo que o eco demora para retornar após atingir um objeto, semelhante a um radar.
+---
+
+## DESAFIO 02: Enviando cliques para a API
+Agora monte o segundo circuito com dois botões e envie os cliques para a API com requisição **POST** na rota `/comandos` com o corpo da requisição contendo `{"botao":1}` e `{"botao":2}`
+
+### Entrega
+Mostre o resultado do desafio no monitor serial e console da API ao instrutor para receber o visto de conclusão do desafio.
+
+---
+
+## DESAFIO 03: Enviar dados do sensor para a API (Radar de ultrassom) 
+### Contextualização
+O sensor de **[ultrassom](./ultrassom/README.md)** mede distâncias emitindo uma onda sonora de alta frequência e calculando o tempo que o eco demora para retornar após atingir um objeto, semelhante a um radar.
 <br>![Ultrasom](./ultrasom.png)
 
-#### Desafio
+### Desafio
 Crie um prototipo que detecte a distância de uma pessoa ou outro objeto e:
 - Mostre a distância no monitor serial
 - Leia a distância duas vezes em um intervalo de meio segundo
   - calcule a velocidade e mostre no monitor serial
 - Envie a velocidade para a API
 
-#### Entrega
+### Entrega
 Repositorio do github com os códigos e README.md com descrição e fotos do experimento.
+- Apresente ao instrutor para receber o visto de conclusão do desafio.
+
+---

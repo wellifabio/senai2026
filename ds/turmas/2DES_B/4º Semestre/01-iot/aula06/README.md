@@ -1,5 +1,30 @@
 # Aula06 - KIT ESP32
 
+<details><summary><h2>Recursos (Kit ESP32 contendo):</h2></summary>
+
+|Componente|Ilustração|
+|-|-|
+|1 placa ESP32|![ESP32](../../../../../planejamento/4semestre/kit/esp32.png)|
+|1 sensor de ultrassom|![Sensor de Ultrassom](../../../../../planejamento/4semestre/kit/ultrassom.png)|
+|1 Fotoresistor|![Fotoresistor](../../../../../planejamento/4semestre/kit/fotoresistor.png)|
+|1 Buzzer|![Buzzer](../../../../../planejamento/4semestre/kit/buzzer.png)|
+|1 Sensor de Humidade e Temperatura|![Sensor de Humidade e Temperatura](../../../../../planejamento/4semestre/kit/humidade.png)|
+|10 Leds sortidos (Vermelho, Verde, Amarelo, Azul, branco)|![Leds](../../../../../planejamento/4semestre/kit/leds.png)|
+|1 Leds RGB|![Leds](../../../../../planejamento/4semestre/kit/ledrgb.png)|
+|30 Resistores (10 de ~400Ω, 10 de 10kΩ, 10 de 1kΩ)|![Resistores](../../../../../planejamento/4semestre/kit/resistores.png)|
+|1 Potenciômetro|![Potenciômetro](../../../../../planejamento/4semestre/kit/potenciometro.png)|
+|4 Botões tipo push button|![Botões](../../../../../planejamento/4semestre/kit/botoes.png)|
+|1 Micro Motor DC 3v ~ 6v|![Motor](../../../../../planejamento/4semestre/kit/motor.png)|
+|1 Micro servo motor|![Micro Servo](../../../../../planejamento/4semestre/kit/microservo.png)|
+|1 Display 7 Segmentos + PT Duplo 0,28" Vermelho Catodo|![Display](../../../../../planejamento/4semestre/kit/display.png)|
+|1 Tela Para Arduino Modulo Display Lcd Oled 0.96 I2c Ssd1306|![Tela](../../../../../planejamento/4semestre/kit/tela.png)|
+|30 Cabos jumper 10 macho-macho, 10 fem-fem e 10 macho-fem de 10cm|![Cabos jumper](../../../../../planejamento/4semestre/kit/jumpers.png)|
+|1 Protoboard 830 pontos|![Protoboard](../../../../../planejamento/4semestre/kit/protoboard.png)|
+|1 Caixas Organizadora Multiuso 11 Divisórias Plástico Transparente|![Caixa organizadora](../../../../../planejamento/4semestre/kit/caixa.png)|
+
+
+</details>
+
 ## Objetivos
 Realizar experimentos com componentes reais (ESP32) a partir de experimentos feitos com simulador **[TinkerCAD](https://www.tinkercad.com/)**
 
@@ -121,14 +146,19 @@ Com o ESP32 conectado via USB no PC:
 - Pressione e solte o outro botão **EN** para reset.
 </details>
 
-## Desafio 01
+## Desafio 01 (Semáforo de duas vias)
 Em grupo de até 5 integrantes:
 - Desenvolva o experimento de **semáforo** simulado no ThinkerCAD na [Aula3](../aula03/README.md)
     - Monte o protótipo na protoboard
     - Implante o código utilizando a IDE do Arduino
 #### OBS:
 Alguns componentes dos kits podem não estar funcionais, compartilhem os componentes dos kits tomando cuidados para não queimá-los
+#### Ilustração do cruzamento de semáforo
+![Cruzamento](../aula03/cruzamento.webp)
 ## Entregas
 - **Fotografe** e/ou faça um breve **vídeo** do experimento funcionando
     - Suba o vídeo no Youtube ou as fotos em um repositório no github com o README.md mostrando uma descrição da experiência e fotos do protótipo.
 - Apresente o vídeo ou o repositório com as fotos para o instrutor **vistar**.
+
+## Exemplo com ARDUINO
+![Exemplo](../aula03/semaforo.png)

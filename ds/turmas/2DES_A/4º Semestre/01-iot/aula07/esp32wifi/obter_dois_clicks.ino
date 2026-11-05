@@ -1,5 +1,5 @@
-const int botao1 = 2;
-const int botao2 = 4;
+const int botao1 = 4;
+const int botao2 = 18;
 const unsigned long debounceMs = 50;
 
 int leituraAnterior1 = HIGH;
@@ -34,9 +34,11 @@ void detectarClique(int pino, int &leituraAnterior, int &estadoEstavel,
 
 void setup()
 {
-  Serial.begin(115200);
+  Serial.begin(9600);
   pinMode(botao1, INPUT_PULLUP);
   pinMode(botao2, INPUT_PULLUP);
+  Serial.println();
+  Serial.println("Ouvindo botoes nos pinos 4 e 18");
 }
 
 void loop()

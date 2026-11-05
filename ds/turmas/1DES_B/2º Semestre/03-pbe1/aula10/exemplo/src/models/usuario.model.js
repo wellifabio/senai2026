@@ -13,6 +13,45 @@ const cadastrar = async ({ nome, email, senha }) => {
     };
 };
 
+const listar = async () => {
+    const [resultado] = await con.query(
+        "SELECT id, nome, email FROM usuario;"
+    );
+
+    return resultado;
+};
+
+const buscar = async (id) => {
+    const [resultado] = await con.query(
+        "SELECT id, nome, email FROM usuario WHERE id = ?;",
+        [id]
+    );
+
+    return resultado;
+};
+
+const excluir = async (id) => {
+    const [resultado] = await con.query(
+        "DELETE FROM usuario WHERE id = ?;",
+        [id]
+    );
+
+    return resultado;
+};
+
+const atualizar = async (dados, id) => {
+    const [resultado] = await con.query(
+        "UPDATE usuario SET ? WHERE id = ?;",
+        [dados, id]
+    );
+
+    return resultado;
+};
+
 module.exports = {
-    cadastrar
+    cadastrar, 
+    listar,
+    buscar,
+    excluir,
+    atualizar
 };

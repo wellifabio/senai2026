@@ -6,13 +6,25 @@ const cadastrar = async (req, res) => {
     res.status(201).json(resposta).end();
 };
 
-const listar = (req, res) => {};
+const listar = async (req, res) => {
+    const resposta = await usuariomodel.listar();
+    res.status(200).json(resposta).end();
+};
 
-const buscar = (req, res) => {};
+const buscar = async (req, res) => {
+    const resposta = await usuariomodel.buscar(req.params.id);
+    res.status(200).json(resposta).end();
+};
 
-const excluir = (req, res) => {};
+const excluir = async (req, res) => {
+    const resposta = await usuariomodel.excluir(req.params.id);
+    res.status(204).json(resposta).end();
+};
 
-const atualizar = (req, res) => {};
+const atualizar = async (req, res) => {
+    const resposta = await usuariomodel.atualizar(req.body, req.params.id);
+    res.status(200).json(resposta).end();
+};
 
 module.exports = {
     cadastrar,

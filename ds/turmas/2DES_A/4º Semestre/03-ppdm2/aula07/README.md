@@ -15,17 +15,24 @@ Crie um novo App flutter chamado `flutter_home_widget` com a seguinte estrutura 
 ```
 flutter_home_widget/
   assets/
-    logo.png
+    icone.png
   lib/
     main.dart
   pubspec.yaml
 ```
+- Baixe o arquivo `./icone.png` deste repositório e coloque na pasta `assets/` do projeto.
 ### 2 Instale as dependências
-Instale as dependências necessárias no arquivo pubspec.yaml, configurando o pacote home_widget, apontando a pasta assets para a imagem que será exibida no widget e adicionando as permissões necessárias para o Android e iOS.
+Instale as dependências necessárias no arquivo pubspec.yaml:
+- configurando o pacote `home_widget`,
+- configurando o pacote `flutter_launcher_icons` para gerar o ícone do aplicativo
+- apontando o caminho da imagem do ícone do aplicativo para `assets/icone.png`
+- e apontando a pasta `assets/` para a imagem que será exibida no widget e adicionando as permissões necessárias para o Android e iOS.
+  - execute os comandos a seguir no terminal para adicionar as dependências:
 ```bash
 flutter pub add home_widget
 flutter pub add flutter_launcher_icons --dev
 ```
+  - configure o arquivo `pubspec.yaml` com o seguinte conteúdo:
 ```yaml
 dependencies:
   flutter:
@@ -49,18 +56,18 @@ flutter:
   assets:
     - assets/
 ```
+  - execute o comando a seguir no terminal para baixar as dependências:
 ```bash
 flutter pub get
 ```
-### 3 Configure a imagem como icone do aplicativo
-- Baixe o arquivo `icone.png` e coloque na pasta `assets/` do projeto.
-- Dê o comando a seguir para configurar o ícone do aplicativo com a imagem que você baixou:
+- Configure a imagem como icone do aplicativo
+  - Dê o comando a seguir para configurar o ícone do aplicativo com a imagem que você baixou:
 ```bash
 flutter pub get
 flutter pub run flutter_launcher_icons:main
 ```
 
-### 4 Configure o Android
+### 3 Configure o Android
 - Abra o arquivo `android/app/src/main/AndroidManifest.xml` e adicione as permissões necessárias para o widget funcionar corretamente:
 ```xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
@@ -120,7 +127,7 @@ flutter pub run flutter_launcher_icons:main
     </queries>
 </manifest>
 ```
-### 5 COnfigure o `main.dart`
+### 4 Configure o `main.dart`
 ```dart
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -186,7 +193,9 @@ class MainApp extends StatelessWidget {
   }
 }
 ```
-
+- Execute em um emulador ou dispositivo físico para testar o aplicativo.
+  - clique no botão "Criar o Widget" para criar o widget na tela inicial do celular.
+- Ou em um dispositivo físico, pressione e segure na tela inicial, selecione "Widgets" e procure pelo widget do seu aplicativo para adicioná-lo à tela inicial.
 </details>
 
 

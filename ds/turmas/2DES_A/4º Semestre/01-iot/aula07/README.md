@@ -477,3 +477,14 @@ Repositorio do github com os códigos e README.md com descrição e fotos do exp
 - Apresente ao instrutor para receber o visto de conclusão do desafio.
 
 ---
+
+## Trabalhos entregues
+
+|Alunos|GitHub|
+|---|---|
+|Pietra|https://github.com/ClaraAntonacci/Aula07_IOT|
+|Clara|https://github.com/ClaraAntonacci/Aula07_IOT|
+|Julia Novo|https://github.com/ClaraAntonacci/Aula07_IOT|
+|Giovana|https://github.com/ClaraAntonacci/Aula07_IOT|
+|Luisa|https://github.com/ClaraAntonacci/Aula07_IOT|
+|Beatriz|https://github.com/ClaraAntonacci/Aula07_IOT|

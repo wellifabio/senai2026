@@ -223,3 +223,14 @@ O site deve ser capaz de:
     - Passos para executar a API,
     - Print do site com gráficos e print do banco de dados com os dados recebidos.
 - Acrescente o link do repositório no portifólio dos integrantes do grupo.
+
+## Trabalhos entregues
+
+|Alunos|GitHub|
+|---|---|
+|Pietra|https://github.com/pie-L0pes/Monitoramento_iot.git|
+|Clara|https://github.com/pie-L0pes/Monitoramento_iot.git|
+|Julia Novo|https://github.com/pie-L0pes/Monitoramento_iot.git|
+|Giovana|https://github.com/pie-L0pes/Monitoramento_iot.git|
+|Luisa|https://github.com/pie-L0pes/Monitoramento_iot.git|
+|Beatriz|https://github.com/pie-L0pes/Monitoramento_iot.git|

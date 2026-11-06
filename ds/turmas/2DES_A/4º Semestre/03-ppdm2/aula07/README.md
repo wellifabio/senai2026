@@ -70,6 +70,7 @@ flutter pub run flutter_launcher_icons:main
 - Abra o arquivo `android/app/src/main/AndroidManifest.xml` e adicione as permissões necessárias para o widget funcionar corretamente:
 ```xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:label="flutter_home_widget"
         android:name="${applicationName}"

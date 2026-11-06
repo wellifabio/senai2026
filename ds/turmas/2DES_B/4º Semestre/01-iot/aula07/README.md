@@ -477,3 +477,13 @@ Repositorio do github com os códigos e README.md com descrição e fotos do exp
 - Apresente ao instrutor para receber o visto de conclusão do desafio.
 
 ---
+
+## Trabalhos Etregues
+
+|Alnuo|Github|
+|Natália|https://github.com/natmarangonii/SensorUltrassom.git|
+|Alice|https://github.com/natmarangonii/SensorUltrassom.git|
+|Letícia|https://github.com/natmarangonii/SensorUltrassom.git|
+|Nícollas|https://github.com/natmarangonii/SensorUltrassom.git|
+|Mathias|https://github.com/natmarangonii/SensorUltrassom.git|
+|Bruno|https://github.com/natmarangonii/SensorUltrassom.git|

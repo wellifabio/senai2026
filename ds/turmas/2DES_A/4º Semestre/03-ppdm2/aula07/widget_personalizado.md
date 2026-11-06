@@ -174,6 +174,6 @@ class _HomeState extends State<Home> {
 ```
 
 ### Resultado final
-|Tela do App|Widget Personalizado|
-|---|---|
-|![Tela do App](./tela_app.jpg)|![Widget Personalizado](./widget_personalizado.jpg)|
+|Tela do App|Widget Personalizado|Obs:|
+|---|---|---|
+|![Tela do App](./tela_app.jpg)|![Widget Personalizado](./widget_personalizado.jpg)|Um widget é apenas um componente visual que pode ser adicionado à tela inicial de um dispositivo móvel.|

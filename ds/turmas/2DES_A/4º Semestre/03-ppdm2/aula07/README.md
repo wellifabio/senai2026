@@ -1,9 +1,7 @@
 # Aula07 - Home Screen Widget e Widget personalizado
 Para criar um widget personalizado que exibe uma informação na tela do seu aplicativo Flutter, você deve definir uma classe que estende StatelessWidget (se o conteúdo for estático) ou StatefulWidget (se a informação mudar ao longo do tempo)
 
-## [Documentação oficial](https://docs.flutter.dev/learn/pathway/tutorial/widget-fundamentals)
-
-## [Widget personalizado](./widget_personalizado.md)
+## Widget [personalizado](./widget_personalizado.md)
 
 <details>
 <summary><h2> Home Screen Widget </h2></summary>

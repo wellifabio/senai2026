@@ -63,7 +63,6 @@ flutter pub get
 - Configure a imagem como icone do aplicativo
   - Dê o comando a seguir para configurar o ícone do aplicativo com a imagem que você baixou:
 ```bash
-flutter pub get
 flutter pub run flutter_launcher_icons:main
 ```
 
@@ -146,7 +145,7 @@ class MainApp extends StatelessWidget {
         'com.example.flutter_home_widget.MeuHomeWidget';
 
     // Caminho da imagem que você quer mostrar no widget
-    String imagemCaminho = 'assets/icone.png';
+    String imagemCaminho = 'https://github.com/wellifabio/senai2026/blob/main/ds/turmas/2DES_A/4%C2%BA%20Semestre/03-ppdm2/aula07/icone.png?raw=true';
 
     try {
       await HomeWidget.saveWidgetData<String>('chave_imagem', imagemCaminho);
@@ -196,6 +195,10 @@ class MainApp extends StatelessWidget {
 - Execute em um emulador ou dispositivo físico para testar o aplicativo.
   - clique no botão "Criar o Widget" para criar o widget na tela inicial do celular.
 - Ou em um dispositivo físico, pressione e segure na tela inicial, selecione "Widgets" e procure pelo widget do seu aplicativo para adicioná-lo à tela inicial.
+- Ou gere o apk e instale no seu dispositivo físico para testar o aplicativo.
+```bash
+flutter build apk --release
+```
 </details>
 
 

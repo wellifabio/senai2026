@@ -3,10 +3,6 @@ Para criar um widget personalizado que exibe uma informação na tela do seu apl
 
 ## [Documentação oficial](https://docs.flutter.dev/learn/pathway/tutorial/widget-fundamentals)
 
-## Exemplo: [App Receitas](https://github.com/wellifabio/sesi_ppdm2_receitas_flutter_api_2026.git)
-App de receitas que consome uma API REST para exibir informações sobre pratos e receitas.
-- O app utiliza widgets personalizados que mostra o nome e foto de uma receita aleatória e ao ser clicado abre a tela home com a lista de receitas.
-
 ### Passo 1: Criar a classe do Widget
 - 1 Crie um novo App flutter chamado `flutter_widget_externo` ou abra o projeto existente.
 <details>

@@ -24,6 +24,7 @@ flutter_home_widget/
 Instale as dependências necessárias no arquivo pubspec.yaml, configurando o pacote home_widget, apontando a pasta assets para a imagem que será exibida no widget e adicionando as permissões necessárias para o Android e iOS.
 ```bash
 flutter pub add home_widget
+flutter pub add flutter_launcher_icons --dev
 ```
 ```yaml
 dependencies:
@@ -35,6 +36,13 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icone.png"
+  remove_alpha_ios: true
 
 flutter:
   uses-material-design: true

@@ -8,7 +8,7 @@ Cursos de curta duração
 - Qualificação Profissional
 
 ## Cursos
-- [ExcelIA](./exel_ia2/)
+- [ExcelIA](./excel_ia2/)
 - [PowerBI](./power_bi/)
 - [Office](./office/)
 - [ChatGPT](./chatgpt/)

@@ -48,3 +48,16 @@ Prompts são instruções completas que damos a uma IA para que retorne um resul
 ```txt
 Gostaria de um orçamento de materiais para construção de uma garagem de 5 x 5 metros, incluindo muro piso e telhado.
 ```
+
+### Orçamento manualmente no Excel ou Planilha do Google
+
+|Orçamento||||
+|-|-|-|-|
+|Produto|Preço|Quantidade|Total|
+|Cimento|48|12||
+|Areia|165|3||
+|Pedra|145,5|3||	
+|Barra de ferro 3/8|90,2|10||	
+|Barra de ferro 1/5|126,9|4||
+|Total||||
+			

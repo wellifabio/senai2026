@@ -60,4 +60,6 @@ Gostaria de um orçamento de materiais para construção de uma garagem de 5 x 5
 |Barra de ferro 3/8|90,2|10||	
 |Barra de ferro 1/5|126,9|4||
 |Total||||
-			
+
+- Podemos copiar esta planilha e calcular manualmente no excel
+- Ou colar no GPT Brasil ou outra IA e pedir para calcular

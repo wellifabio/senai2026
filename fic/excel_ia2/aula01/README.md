@@ -39,3 +39,12 @@ Desenvolver capacidades técnicas e socioemocionais relativas à utilização b�
 - Abrir o google
 - Digitar GPT
 - Começar a digitar **prompts**
+
+## Prompts
+Prompts são instruções completas que damos a uma IA para que retorne um resultado
+- 1 Em uma janela anônima acesse seu e-mail do google (gmail)
+- 2 Clique no ícone ao lado da sua foto e abra **Planilhas**
+    - A seguir um exemplo de um prompt para a IA Geminy
+```txt
+Gostaria de um orçamento de materiais para construção de uma garagem de 5 x 5 metros, incluindo muro piso e telhado.
+```

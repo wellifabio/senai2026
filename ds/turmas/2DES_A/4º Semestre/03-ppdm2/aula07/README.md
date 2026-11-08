@@ -146,15 +146,14 @@ class MainApp extends StatelessWidget {
         'com.example.flutter_home_widget.MeuHomeWidget';
 
     // Caminho da imagem que você quer mostrar no widget
-    String imagemCaminho = 'https://github.com/wellifabio/senai2026/blob/main/ds/turmas/2DES_A/4%C2%BA%20Semestre/03-ppdm2/aula07/icone.png?raw=true';
+    String imagemCaminho =
+        'https://github.com/wellifabio/senai2026/blob/main/ds/turmas/2DES_A/4%C2%BA%20Semestre/03-ppdm2/aula07/icone.png?raw=true';
 
     try {
       await HomeWidget.saveWidgetData<String>('chave_imagem', imagemCaminho);
       await HomeWidget.saveWidgetData<String>('chave_texto', 'Ideia');
 
-      await HomeWidget.updateWidget(
-        qualifiedAndroidName: androidWidgetName,
-      );
+      await HomeWidget.updateWidget(qualifiedAndroidName: androidWidgetName);
       await HomeWidget.requestPinWidget(
         qualifiedAndroidName: androidWidgetName,
       );
@@ -192,6 +191,7 @@ class MainApp extends StatelessWidget {
     );
   }
 }
+
 ```
 - Execute em um emulador ou dispositivo físico para testar o aplicativo.
   - clique no botão "Criar o Widget" para criar o widget na tela inicial do celular.
@@ -201,6 +201,9 @@ class MainApp extends StatelessWidget {
 flutter build apk --release
 ```
 </details>
+
+## Resultado
+
 
 
 ## Exemplo: [App Receitas](https://github.com/wellifabio/sesi_ppdm2_receitas_flutter_api_2026.git)
@@ -213,3 +216,7 @@ App de receitas que consome uma API REST para exibir informações sobre pratos 
 - Teste o widget no seu aplicativo e tire um print da tela mostrando o widget em ação.
 - Acrescente o print da tela no README.md do seu repositório GitHub.
 - Apresente o repositório para o professor vistar e avaliar a atividade.
+
+|![Tela01](./home_widget.png)|![Tela01](./home_widget2.png)|![Tela01](./home_widget3.png)|
+|-|-|-|
+|Home|CLick do Botão|Widget|

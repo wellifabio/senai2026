@@ -1,12 +1,17 @@
-<div style=display:flex;align-items:center;justify-content:center;gap:50px;justify-itens:center;>
-<div>
-<img src = "download.gif" width="200px" height="auto">
-</div>
-<div style=display:flex;align-items:center;gap:20px>
-<p style=font-size:35px>Créditos</h3>
-<a href="https://github.com/nickfelisbelo"><p style=font-size:30px>@nickfelisbelo</p></a>
-</div>
-</div>
+<table align="center" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      <img src="download.gif" width="300" alt="Download">
+    </td>
+    <td style="padding-left: 50px; vertical-align: middle;">
+      <span style="font-size: 50px; font-weight: bold;">Créditos</span>
+      <span style="font-size: 55px; margin-left: 20px;">
+        <a href="https://github.com" style="text-decoration: none;">@nickfelisbelo</a>
+      </span>
+    </td>
+  </tr>
+</table>
+
 
 ## Parte 1: Subir o banco de dados no Supabase
 

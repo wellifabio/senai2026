@@ -200,11 +200,34 @@ class MainApp extends StatelessWidget {
 ```bash
 flutter build apk --release
 ```
-</details>
-
+- Crie ou edite o arquivo `./flutter_home_widget.iml`
+```iml
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/build" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Dart SDK" level="project" />
+    <orderEntry type="library" name="Flutter Plugins" level="project" />
+    <orderEntry type="library" name="Dart Packages" level="project" />
+  </component>
+</module>
+```
 ## Resultado
 
+|![Tela01](./home_widget.png)|![Tela01](./home_widget2.png)|![Tela01](./home_widget3.png)|
+|-|-|-|
+|Home|CLick do Botão|Widget|
 
+
+</details>
 
 ## Exemplo: [App Receitas](https://github.com/wellifabio/sesi_ppdm2_receitas_flutter_api_2026.git)
 App de receitas que consome uma API REST para exibir informações sobre pratos e receitas.
@@ -216,7 +239,3 @@ App de receitas que consome uma API REST para exibir informações sobre pratos 
 - Teste o widget no seu aplicativo e tire um print da tela mostrando o widget em ação.
 - Acrescente o print da tela no README.md do seu repositório GitHub.
 - Apresente o repositório para o professor vistar e avaliar a atividade.
-
-|![Tela01](./home_widget.png)|![Tela01](./home_widget2.png)|![Tela01](./home_widget3.png)|
-|-|-|-|
-|Home|CLick do Botão|Widget|

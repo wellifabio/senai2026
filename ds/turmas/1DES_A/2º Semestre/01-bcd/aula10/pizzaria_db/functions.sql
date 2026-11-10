@@ -1,6 +1,8 @@
 -- Criando Funções (Exemplo de uma função que formata valores como moeda)
 -- Vamos utilizar o banco de dados Pizzaria da aula anterior
 use pizzaria;
+-- Verificar quais functions um Banco de Dados possui
+show function status;
 -- Versão 1
 drop function if exists moeda;
 

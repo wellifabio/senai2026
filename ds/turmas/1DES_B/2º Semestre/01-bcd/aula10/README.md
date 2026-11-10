@@ -135,9 +135,12 @@ SELECT * FROM pedidos WHERE pedido_id = 28;
 Semelhantes a funções ou precedimentos
 - É um procedimento que é executado sempre antes ou depois de uma alteração no banco de dados INSERT, UPDATE ou DELETE.
 
-### Desafio
+### Desafio 01
 Crie um Procedimento Armazenado que receba três parâmetros (cliente_id, pizza_id e quantidade) e registre um pedido de um item calculando o total ex: pedidoDeUmItem(cli_id int, piz_id int, qtd int)
 - Cadastre os seguintes pedidos para testar:
     - "Thamires de Campos Luz" quer uma pizza "Vienense"
     - "Everton Jose de Souza" que duas "Toscana"
     - "Silvia Roberta de Jesus Garcia" que uma "Canadense" e 2 "Cubanas"
+
+### Entrega
+- Mostre o script SQL e os testes realizados ao intrutor para receber o visto

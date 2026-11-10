@@ -119,5 +119,5 @@ select * from dados_clientes;
 
 # Atividades (Transações)
 - Ainda no banco de dados "pizzaria.sql"
-	- Crie um procedimento armazenado que registre um pedido com três ítens conforme exemplo visto em aula (exemplo.sql linhas 76 a 95)
+	- Crie um procedimento armazenado que registre um pedido com três ítens semelhante ao exemplo no script acima ou no arquivo (`pizzaria_db/transactions.sql`, linhas 76 a 95)
 	- Crie a Procedure colocando um erro e sem erro para testar tanto o commit quanto o rollback.

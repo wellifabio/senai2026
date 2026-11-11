@@ -29,16 +29,16 @@ async function carregarProdutos() {
     produtosOrdenados.forEach(produto => {
         const linha = document.createElement('tr');
         linha.innerHTML = `
-            <td>${produto.id}</td>
+            <td data-label="Id:">${produto.id}</td>
             <td><img src="${produto.imagem}" alt="${produto.nome}"></td>
-            <td>${produto.nome}</td>
-            <td>${produto.descricao}</td>
+            <td data-label="Produto:">${produto.nome}</td>
+            <td data-label="Descrição:">${produto.descricao}</td>
             <td><button onclick="movimento(${produto.id}, data${produto.id}.value, quantidade${produto.id}.value,'Entrada')">Entrada</button></td>
-            <td><input type="date" id="data${produto.id}" name="data" value="${new Date().toISOString().split('T')[0]}"></td>
-            <td><input type="number" name="quantidade" id="quantidade${produto.id}" value="0"></td>
+            <td data-label="Data:"><input type="date" id="data${produto.id}" name="data" value="${new Date().toISOString().split('T')[0]}"></td>
+            <td data-label="Quantidade:"><input type="number" name="quantidade" id="quantidade${produto.id}" value="0"></td>
             <td><button onclick="movimento(${produto.id}, data${produto.id}.value, quantidade${produto.id}.value,'Saida')">Saída</button></td>
-            <td>${produto.estoque}</td>
-            <td>${produto.estoqueMinimo}</td>
+            <td data-label="Estoque:">${produto.estoque}</td>
+            <td data-label="Estoque mínimo:">${produto.estoqueMinimo}</td>
         `;
         if (produto.estoque <= produto.estoqueMinimo) {
             linha.classList.add('alerta');
@@ -55,12 +55,12 @@ async function carregarEstoque() {
     lancamentos.forEach(lancamento => {
         const linha = document.createElement('tr');
         linha.innerHTML = `
-            <td>${lancamento.id}</td>
-            <td>${lancamento.produto.nome}</td>
-            <td>${lancamento.usuario.nome}</td>
-            <td>${new Date(lancamento.data).toLocaleDateString()}</td>
-            <td>${lancamento.tipo}</td>
-            <td>${lancamento.quantidade}</td>
+            <td data-label="Id:">${lancamento.id}</td>
+            <td data-label="Produto:">${lancamento.produto.nome}</td>
+            <td data-label="Usuário:">${lancamento.usuario.nome}</td>
+            <td data-label="Data:">${new Date(lancamento.data).toLocaleDateString()}</td>
+            <td data-label="Tipo:">${lancamento.tipo}</td>
+            <td data-label="Quantidade:">${lancamento.quantidade}</td>
         `;
         tbody.appendChild(linha);
     });

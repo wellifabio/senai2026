@@ -67,9 +67,8 @@ label {
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 5px;
     width: fit-content;
-    margin: auto;
     padding: 20px;
     background-color: var(--c2);
     border-radius: 8px;
@@ -79,7 +78,6 @@ form {
         width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 5px;
 
         input,
         textarea {
@@ -90,7 +88,7 @@ form {
 
 input,
 textarea {
-    padding: 10px;
+    padding: 5px;
     border: none;
     width: 100%;
     border-radius: 4px;
@@ -193,7 +191,7 @@ button {
     background-color: var(--c2);
     border-radius: 8px;
     width: fit-content;
-    min-width: 400px;
+    max-width: 600px;
     max-height: 650px;
     height: fit-content;
     display: flex;
@@ -230,6 +228,19 @@ button {
             td {
                 margin: 0;
                 padding: 0;
+                text-align: right;
+
+                img {
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 20px;
+                }
+            }
+
+            td::before {
+                content: attr(data-label);
+                float: left;
+                font-weight: bold;
             }
         }
     }

@@ -24,14 +24,14 @@ async function carregarProdutos() {
     produtos.forEach(produto => {
         const linha = document.createElement('tr');
         linha.innerHTML = `
-            <td>${produto.id}</td>
+            <td data-label="Id:">${produto.id}</td>
             <td><img src="${produto.imagem}" alt="${produto.nome}"></td>
-            <td>${produto.nome}</td>
-            <td>${produto.descricao}</td>
-            <td>${produto.dimensoes}</td>
-            <td>${produto.peso}</td>
-            <td>${produto.estoque}</td>
-            <td>${produto.estoqueMinimo}</td>
+            <td data-label="Nome:">${produto.nome}</td>
+            <td data-label="Descrição:">${produto.descricao}</td>
+            <td data-label="Dimensões:">${produto.dimensoes}</td>
+            <td data-label="Peso:">${produto.peso}</td>
+            <td data-label="Estoque:">${produto.estoque}</td>
+            <td data-label="Estoque mínimo:">${produto.estoqueMinimo}</td>
             <td>
                 <button onclick="editarProduto(${produto.id})">Editar</button>
                 <button onclick="deletarProduto(${produto.id})">Deletar</button>

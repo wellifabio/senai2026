@@ -1,4 +1,4 @@
-# 1DES-B (Segundo ano B) [Resultados](https://wellifabio.github.io/resultados/)
+# 1DES-B (Segundo ano B)
 
 ## Alunos
 |Matrícula|Nome|

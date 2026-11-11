@@ -481,9 +481,14 @@ Repositorio do github com os códigos e README.md com descrição e fotos do exp
 ## Trabalhos Etregues
 
 |Alnuo|Github|
+|-|-|
 |Natália|https://github.com/natmarangonii/SensorUltrassom.git|
 |Alice|https://github.com/natmarangonii/SensorUltrassom.git|
 |Letícia|https://github.com/natmarangonii/SensorUltrassom.git|
 |Nícollas|https://github.com/natmarangonii/SensorUltrassom.git|
 |Mathias|https://github.com/natmarangonii/SensorUltrassom.git|
 |Bruno|https://github.com/natmarangonii/SensorUltrassom.git|
+|Enzo|https://github.com/zenvexy/ESP32-Sensores.git|
+|Davi|https://github.com/zenvexy/ESP32-Sensores.git|
+|Henrique|https://github.com/zenvexy/ESP32-Sensores.git|
+|Murillo|https://github.com/zenvexy/ESP32-Sensores.git|

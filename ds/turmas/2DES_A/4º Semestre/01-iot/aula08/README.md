@@ -232,5 +232,5 @@ O site deve ser capaz de:
 |Clara|https://github.com/pie-L0pes/Monitoramento_iot.git|
 |Julia Novo|https://github.com/pie-L0pes/Monitoramento_iot.git|
 |Giovana|https://github.com/pie-L0pes/Monitoramento_iot.git|
-|Luisa|https://github.com/pie-L0pes/Monitoramento_iot.git|
+|Luiza|https://github.com/pie-L0pes/Monitoramento_iot.git|
 |Beatriz|https://github.com/pie-L0pes/Monitoramento_iot.git|

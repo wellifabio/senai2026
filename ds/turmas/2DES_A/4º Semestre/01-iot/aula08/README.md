@@ -237,3 +237,5 @@ O site deve ser capaz de:
 |Juliano|https://github.com/julianopls/ESP32-Sensors.git|
 |Murilo|https://github.com/julianopls/ESP32-Sensors.git|
 |Francisco|https://github.com/julianopls/ESP32-Sensors.git|
+|Leandro|https://github.com/leandrosaltorato/iot_monitoring.git|
+|Matheus|https://github.com/leandrosaltorato/iot_monitoring.git|

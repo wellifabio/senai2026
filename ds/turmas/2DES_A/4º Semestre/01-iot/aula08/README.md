@@ -234,3 +234,6 @@ O site deve ser capaz de:
 |Giovana|https://github.com/pie-L0pes/Monitoramento_iot.git|
 |Luiza|https://github.com/pie-L0pes/Monitoramento_iot.git|
 |Beatriz|https://github.com/pie-L0pes/Monitoramento_iot.git|
+|Juliano|https://github.com/julianopls/ESP32-Sensors.git|
+|Murilo|https://github.com/julianopls/ESP32-Sensors.git|
+|Francisco|https://github.com/julianopls/ESP32-Sensors.git|

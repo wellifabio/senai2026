@@ -481,6 +481,7 @@ Repositorio do github com os códigos e README.md com descrição e fotos do exp
 ## Trabalhos Etregues
 
 |Alnuo|Github|
+|-|-|
 |Natália|https://github.com/natmarangonii/SensorUltrassom.git|
 |Alice|https://github.com/natmarangonii/SensorUltrassom.git|
 |Letícia|https://github.com/natmarangonii/SensorUltrassom.git|

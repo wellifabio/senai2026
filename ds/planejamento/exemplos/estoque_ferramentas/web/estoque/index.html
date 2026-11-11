@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Controle de Estoque</title>
+</head>
+
+<body>
+    <header>
+        <h1>Gestão de Estoque</h1>
+        <nav>
+            <h2>Usuário</h2>
+            <button onclick="window.location.href='../home/'">Voltar</button>
+            <button onclick="movimentacoes.classList.remove('oculto')">Listar todas</button>
+            <button onclick="sair()">Sair</button>
+        </nav>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Imagem</th>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Entrada</th>
+                    <th>Data</th>
+                    <th>Quantidade</th>
+                    <th>Saída</th>
+                    <th>Estoque</th>
+                    <th>Estoque Mínimo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Produtos serão inseridos aqui dinamicamente -->
+            </tbody>
+        </table>
+    </main>
+    <div id="movimentacoes" class="modal oculto">
+        <div class="janela">
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h2>Todas as movimentações</h2>
+                <button onclick="movimentacoes.classList.add('oculto')">X</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Produto</th>
+                        <th>Usuario</th>
+                        <th>Data</th>
+                        <th>Tipo</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

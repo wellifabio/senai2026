@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--c1);
+}
+
+:root {
+    --c1: #0B0C10;
+    --c2: #1F2833;
+    --c3: #45A29E;
+    --c4: #66FCF1;
+    --c5: #C5C6C7;
+}
+
+body {
+    background-color: var(--c1);
+    color: var(--c5);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-center;
+    padding: 20px;
+}
+
+header {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+
+    & button {
+        padding: 8px 12px;
+        border: none;
+        border-radius: 4px;
+        background-color: var(--c3);
+        color: var(--c1);
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: var(--c4);
+        }
+    }
+}
+
+h1 {
+    margin: 20px 0;
+    color: var(--c4);
+}
+
+label {
+    font-size: medium;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+    background-color: var(--c2);
+    border-radius: 8px;
+    color: var(--c5);
+
+    div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        input,
+        textarea {
+            min-width: 350px;
+        }
+    }
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+    background-color: var(--c1);
+    color: var(--c5);
+}
+
+.alerta {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: var(--c2);
+    color: var(--c5);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    & th,
+    td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid var(--c1);
+        text-align: center;
+
+        img {
+            width: 50px;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        input {
+            width: 120px;
+            padding: 6px;
+            border: solid 1px var(--c5);
+            color: var(--c5);
+            border-radius: 5px;
+        }
+    }
+
+    /* td tabela zebrada */
+    tr:nth-child(even) {
+        td {
+            background-color: var(--c2);
+        }
+    }
+
+    th {
+        background-color: var(--c3);
+        color: var(--c1);
+    }
+}
+
+button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--c3);
+    color: var(--c1);
+    font-weight: bold;
+    cursor: pointer;
+    margin: 2px 0;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: var(--c4);
+    }
+}
+
+.filtro-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    margin-bottom: 10px;
+
+    input {
+        max-width: 200px;
+        border: solid 1px var(--c5);
+    }
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.janela {
+    background-color: var(--c2);
+    border-radius: 8px;
+    width: fit-content;
+    min-width: 400px;
+    max-height: 650px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow-y: auto;
+
+    & h2 {
+        padding: 5px;
+        color: var(--c4);
+        text-align: center;
+    }
+}
+
+.oculto {
+    display: none;
+}

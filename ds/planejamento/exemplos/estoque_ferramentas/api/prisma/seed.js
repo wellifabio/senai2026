@@ -1,5 +1,4 @@
-const { PrismaClient } = require('@prisma/client');
-const prisma = new PrismaClient();
+const prisma = require("../src/data/prisma");
 async function main() {
     await prisma.usuario.createMany({
         data: [

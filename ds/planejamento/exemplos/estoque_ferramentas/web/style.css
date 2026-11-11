@@ -211,3 +211,26 @@ button {
 .oculto {
     display: none;
 }
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    table {
+        th {
+            display: none;
+        }
+
+        tr {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+
+            td {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}

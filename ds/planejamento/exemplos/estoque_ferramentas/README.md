@@ -25,3 +25,13 @@ Sistema para controle de estoque desenvolvido em Node.js com banco de dados MySQ
 - MySQL (MariaDB) - XAMPP
 - VsCode (IDE)
 - HTML, CSS e JavaScript
+
+## Para testar
+- 1 Clone este repositório
+- 2 Abra com **VsCode**
+- 3 Execute a [API](./api/README.md) seguindo as instruções em `README.md` instalando o Banco de dados.
+- 4 Execute a [UI](./web) executando o `./web/index.html` com a extensão **Live Server** do VsCode
+    - Faça Login con os dados a seguir:
+    ```json
+    { "email": "ana@email.com", "senha": "senha123"}
+    ```

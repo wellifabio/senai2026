@@ -1,4 +1,4 @@
-const express = require("express");
+    const express = require("express");
 const routes = express.Router();
 
 const { cadastrar, listar, alterar } = require("../controllers/usuario.controller");

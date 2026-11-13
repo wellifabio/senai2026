@@ -11,7 +11,7 @@
 - Senha: data de nascimento
 
   <div align = "center">
-  <img src = "./assets/pesquisasatistacao.png">
+  <img src = "https://github.com/wellifabio/senai2026/blob/main/ds/assets/pesquisasatisfacao.png">
   </div>
 
 

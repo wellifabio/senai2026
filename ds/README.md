@@ -10,7 +10,9 @@
 - Login: CFP
 - Senha: data de nascimento
 
-  
+  <div align = "center">
+  <img src = "./assets/pesquisasatistacao.png">
+  </div>
 
 
 

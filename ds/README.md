@@ -1,6 +1,21 @@
 # Técnico em Desenvolvimento de Sistemas
 
 ## [Plano de Curso](./planejamento/Plano_de_Curso_DS.pdf)
+
+# Pesquisa de Satisfação
+
+## [Portal de Pesquisas](https://portaldepesquisassenai.sp.senai.br/Home/Login)
+
+### Acesso:
+- Login: CFP
+- Senha: data de nascimento
+
+  
+
+
+
+
+
 ## Competências transversais - Cursos autoinstitucionais
 - 1 Portal **[EAD](https://ead.sp.senai.br)**
 - 2 Verificar se está matriculado em algum curso e completar todos os que estiver matriculado.

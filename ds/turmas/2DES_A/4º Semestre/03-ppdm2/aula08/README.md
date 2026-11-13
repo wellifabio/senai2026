@@ -645,3 +645,9 @@ Resultado dos testes automatizados
 |:-:|:-:|
 
 ![Sucesso](./sucesso.png)
+
+## Desafio
+Implemente teste automatizado em um Aplicativo que você já desenvolveu, preenchendo um formulário de cadastro e enviando, pode ser do seu TCC ou qualquer aplicativo que tenha preenchimento de formulário.
+
+## Entrega
+Envie ao github no repositório do aplicativo e mostre o script ao instrutor para receber o **visto**.

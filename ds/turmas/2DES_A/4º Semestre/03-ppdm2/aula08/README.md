@@ -527,6 +527,16 @@ abstract class GerenciaArquivo {
   }
 }
 ```
+- Execute o programa em um **emulador** para testar
+```bash
+flutter run
+```
+Resultado dos testes manuais
+
+|![Tela01](./home1.png)|![Tela02](./home2.png)|![Lista](./lista.png)|
+|:-:|:-:|:-:|
+|Home|Simulação|Salvas|
+
 ### 3 Estrutura básica do arquivo de testes
 Utilizando o pacote *flutter_test* e a função **testWidgets** para criar os testes.
 - **integration_test/preencher_form.dart** (Preecha o arquivo de testes com os dados a seguir) observando os comentários no arquivo/script.
@@ -627,6 +637,11 @@ flutter:
 ## Executar no emulador
 Com o **emulador** aberto, execute o comando a seguir:
 ```bash
-flutter test integration_test/preencher_formulario.dart
+flutter test integration_test/preencher_form.dart
 ```
+Resultado dos testes automatizados
 
+|![Tela01](teste1.png)|![Tela02](teste2.png)|
+|:-:|:-:|
+
+![Sucesso](./sucesso.png)

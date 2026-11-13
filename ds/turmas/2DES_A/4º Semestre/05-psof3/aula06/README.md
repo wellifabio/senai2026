@@ -6,7 +6,7 @@
     <td style="padding-left: 50px; vertical-align: middle;">
       <span style="font-size: 50px; font-weight: bold;">Créditos</span>
       <span style="font-size: 55px; margin-left: 20px;">
-        <a href="https://github.com" style="text-decoration: none;">@nickfelisbelo</a>
+        <a href="https://github.com/nickfelisbelo" style="text-decoration: none;">@nickfelisbelo</a>
       </span>
     </td>
   </tr>

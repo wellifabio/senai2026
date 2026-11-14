@@ -1,5 +1,47 @@
 # Aula01
 
+<details><summary><h2>Emails Educacionais</h2></summary>
+
+|Nome do Aluno|E-mail Educacional|
+|-|-|
+|Adriana da Silva Siqueira|adriana.siqueira2@sena is p.edu.br|
+|Alecio Renan da Cunha Rego|alecio.rego@sena is p.edu.br|
+|Brenda Moraes Matos|brenda.matos2@sena is p.edu.br|
+|Bruno Cauan da Silva dos Santos|bruno.santos331@sena is p.edu.br|
+|Caio Henrique Rodrigues|caio.henrique4@sena is p.edu.br|
+|Danilo de Oliveira Varani|danilo.varani@sena is p.edu.br|
+|Elisângela Bispo Rocha|elisangela.rocha2@sena is p.edu.br|
+|Flavio Augusto Elias|flavio.elias2@sena is p.edu.br|
+|Francisco Adriano Ferreira Pereira|francisco.pereira2@sena is p.edu.br|
+|Giovana Marmirrolli Chiavegato|giovana.chiavegato@sena is p.edu.br|
+|Guilherme Galvão da Silva|guilherme.silva1020@sena is p.edu.br|
+|Heitor Manara da Silva Azevedo|heitor.azevedo3@sena is p.edu.br|
+|Kamilly Ferreira de Lima|kamilly.lima2@sena is p.edu.br|
+|Ketlyn Tavares Milan|ketlyn.milan@sena is p.edu.br|
+|Kevyn Magdaleno dos Santos|kevyn.santos11@sena is p.edu.br|
+|Lucas Serafim Torres|lucas.torres10@sena is p.edu.br|
+|Nicolas Gonçalves Feitosa de Jesus|nicolas.jesus8@sena is p.edu.br|
+|Nilma Vieira Silva|nilma.silva3@sena is p.edu.br|
+|Renata Maria Nogueira Manfredi|renata.manfredi@sena is p.edu.br|
+|Rosecler Alves de Souza|rosecler.souza2@sena is p.edu.br|
+|Silvia Helena Mariano|silvia.mariano2@sena is p.edu.br|
+|Thaylea Gabriela Aguiar de Souza|thaylea.souza@sena is p.edu.br|
+|Vanice Alves do Rosario|vanice.rosario@sena is p.edu.br|
+|Vinicius Biasetto Araujo|vinicius.araujo780@sena is p.edu.br|
+
+### Passo a passo para o primeiro acesso:
+- Acesse o *[Portal Educacional](https://pess.sesisenaispedu.org.br/)* SESI SENAI.
+- Clique na opção de Primeiro acesso, **O que fazer**? ou Registrar senha.
+- Digite o seu CPF e a sua data de nascimento.
+- Leia e aceite o termo de compromisso ou contrato com as regras de uso.
+- Confirme o seu e-mail pessoal cadastrado na matrícula, para onde as instruções e o link de confirmação serão enviados.
+- Abra o seu e-mail pessoal, clique no link recebido e cadastre uma senha nova (seguindo os critérios de segurança, como letras maiúsculas, minúsculas e números).
+- Aguarde cerca de 30 minutos para a atualização dos dados no sistema e faça o login usando seu CPF/e-mail institucional e a nova senha criada
+### [Portal educacional](https://pess.sesisenaispedu.org.br/)
+### Lista de e-mails
+
+</details>
+
 ### Objetivo
 Desenvolver capacidades técnicas e socioemocionais relativas à utilização básica da ferramenta Microsoft Excel com o uso de Inteligência Artificial Generativa.
 

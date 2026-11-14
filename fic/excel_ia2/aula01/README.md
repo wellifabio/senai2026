@@ -37,8 +37,14 @@
 - Confirme o seu e-mail pessoal cadastrado na matrícula, para onde as instruções e o link de confirmação serão enviados.
 - Abra o seu e-mail pessoal, clique no link recebido e cadastre uma senha nova (seguindo os critérios de segurança, como letras maiúsculas, minúsculas e números).
 - Aguarde cerca de 30 minutos para a atualização dos dados no sistema e faça o login usando seu CPF/e-mail institucional e a nova senha criada
-### [Portal educacional](https://pess.sesisenaispedu.org.br/)
-### Lista de e-mails
+#### [Outlook.com](https://outlook.com/)
+- Abra em uma outra **aba**, segure o CTRL e clique no link
+- **Entre**
+- Se estiver no e-mail de outra pessoa: **Acessar com outra conta**
+- Digite seu **e-mail** e sua **senha**
+
+##### Abra o Excel Online
+- Clique na **gradinha** ao lado de Outlook e encontre o **Excel**
 
 </details>
 

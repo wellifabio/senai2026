@@ -29,7 +29,7 @@
         - 2.4.6  Aplicações
 
 ## Desafio (Em grupo de até 3 pessoas)
-Crie um orçamento de um churrasco para 15 pessoas
+Crie um orçamento de um churrasco para no mínimo 17 pessoas
 - Analise
     - Total geral
     - Quanto vai ficar por pessoa

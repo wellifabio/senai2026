@@ -4,30 +4,30 @@
 
 |Nome do Aluno|E-mail Educacional|
 |-|-|
-|Adriana da Silva Siqueira|adriana.siqueira2@sena is p.edu.br|
-|Alecio Renan da Cunha Rego|alecio.rego@sena is p.edu.br|
-|Brenda Moraes Matos|brenda.matos2@sena is p.edu.br|
-|Bruno Cauan da Silva dos Santos|bruno.santos331@sena is p.edu.br|
-|Caio Henrique Rodrigues|caio.henrique4@sena is p.edu.br|
-|Danilo de Oliveira Varani|danilo.varani@sena is p.edu.br|
-|Elisângela Bispo Rocha|elisangela.rocha2@sena is p.edu.br|
-|Flavio Augusto Elias|flavio.elias2@sena is p.edu.br|
-|Francisco Adriano Ferreira Pereira|francisco.pereira2@sena is p.edu.br|
-|Giovana Marmirrolli Chiavegato|giovana.chiavegato@sena is p.edu.br|
-|Guilherme Galvão da Silva|guilherme.silva1020@sena is p.edu.br|
-|Heitor Manara da Silva Azevedo|heitor.azevedo3@sena is p.edu.br|
-|Kamilly Ferreira de Lima|kamilly.lima2@sena is p.edu.br|
-|Ketlyn Tavares Milan|ketlyn.milan@sena is p.edu.br|
-|Kevyn Magdaleno dos Santos|kevyn.santos11@sena is p.edu.br|
-|Lucas Serafim Torres|lucas.torres10@sena is p.edu.br|
-|Nicolas Gonçalves Feitosa de Jesus|nicolas.jesus8@sena is p.edu.br|
-|Nilma Vieira Silva|nilma.silva3@sena is p.edu.br|
-|Renata Maria Nogueira Manfredi|renata.manfredi@sena is p.edu.br|
-|Rosecler Alves de Souza|rosecler.souza2@sena is p.edu.br|
-|Silvia Helena Mariano|silvia.mariano2@sena is p.edu.br|
-|Thaylea Gabriela Aguiar de Souza|thaylea.souza@sena is p.edu.br|
-|Vanice Alves do Rosario|vanice.rosario@sena is p.edu.br|
-|Vinicius Biasetto Araujo|vinicius.araujo780@sena is p.edu.br|
+|Adriana da Silva Siqueira|adriana.siqueira2@senaisp.edu.br|
+|Alecio Renan da Cunha Rego|alecio.rego@senaisp.edu.br|
+|Brenda Moraes Matos|brenda.matos2@senaisp.edu.br|
+|Bruno Cauan da Silva dos Santos|bruno.santos331@senaisp.edu.br|
+|Caio Henrique Rodrigues|caio.henrique4@senaisp.edu.br|
+|Danilo de Oliveira Varani|danilo.varani@senaisp.edu.br|
+|Elisângela Bispo Rocha|elisangela.rocha2@senaisp.edu.br|
+|Flavio Augusto Elias|flavio.elias2@senaisp.edu.br|
+|Francisco Adriano Ferreira Pereira|francisco.pereira2@senaisp.edu.br|
+|Giovana Marmirrolli Chiavegato|giovana.chiavegato@senaisp.edu.br|
+|Guilherme Galvão da Silva|guilherme.silva1020@senaisp.edu.br|
+|Heitor Manara da Silva Azevedo|heitor.azevedo3@senaisp.edu.br|
+|Kamilly Ferreira de Lima|kamilly.lima2@senaisp.edu.br|
+|Ketlyn Tavares Milan|ketlyn.milan@senaisp.edu.br|
+|Kevyn Magdaleno dos Santos|kevyn.santos11@senaisp.edu.br|
+|Lucas Serafim Torres|lucas.torres10@senaisp.edu.br|
+|Nicolas Gonçalves Feitosa de Jesus|nicolas.jesus8@senaisp.edu.br|
+|Nilma Vieira Silva|nilma.silva3@senaisp.edu.br|
+|Renata Maria Nogueira Manfredi|renata.manfredi@senaisp.edu.br|
+|Rosecler Alves de Souza|rosecler.souza2@senaisp.edu.br|
+|Silvia Helena Mariano|silvia.mariano2@senaisp.edu.br|
+|Thaylea Gabriela Aguiar de Souza|thaylea.souza@senaisp.edu.br|
+|Vanice Alves do Rosario|vanice.rosario@senaisp.edu.br|
+|Vinicius Biasetto Araujo|vinicius.araujo780@senaisp.edu.br|
 
 ### Passo a passo para o primeiro acesso:
 - Acesse o *[Portal Educacional](https://pess.sesisenaispedu.org.br/)* SESI SENAI.

@@ -27,7 +27,7 @@
 |Silvia Helena Mariano|silvia.mariano2@senaisp.edu.br|
 |Thaylea Gabriela Aguiar de Souza|thaylea.souza@senaisp.edu.br|
 |Vanice Alves do Rosario|vanice.rosario@senaisp.edu.br|
-|Vinicius Biasetto Araujo|vinicius.araujo780@senaisp.edu.br|
+|Vinicius Biasetto Araujo|vinicius.araujo78@senaisp.edu.br|
 
 ### Passo a passo para o primeiro acesso:
 - Acesse o *[Portal Educacional](https://pess.sesisenaispedu.org.br/)* SESI SENAI.

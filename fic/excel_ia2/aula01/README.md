@@ -37,6 +37,9 @@
 - Confirme o seu e-mail pessoal cadastrado na matrícula, para onde as instruções e o link de confirmação serão enviados.
 - Abra o seu e-mail pessoal, clique no link recebido e cadastre uma senha nova (seguindo os critérios de segurança, como letras maiúsculas, minúsculas e números).
 - Aguarde cerca de 30 minutos para a atualização dos dados no sistema e faça o login usando seu CPF/e-mail institucional e a nova senha criada
+
+</details>
+
 #### [Outlook.com](https://outlook.com/)
 - Abra em uma outra **aba**, segure o CTRL e clique no link
 - **Entre**
@@ -46,7 +49,7 @@
 ##### Abra o Excel Online
 - Clique na **gradinha** ao lado de Outlook e encontre o **Excel**
 
-</details>
+
 
 ### Objetivo
 Desenvolver capacidades técnicas e socioemocionais relativas à utilização básica da ferramenta Microsoft Excel com o uso de Inteligência Artificial Generativa.

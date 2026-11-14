@@ -40,19 +40,25 @@
 
 </details>
 
-#### [Outlook.com](https://outlook.com/)
+### Objetivo
+Desenvolver capacidades técnicas e socioemocionais relativas à utilização básica da ferramenta Microsoft Excel com o uso de Inteligência Artificial Generativa.
+
+---
+
+## [Outlook.com](https://outlook.com/)
 - Abra em uma outra **aba**, segure o CTRL e clique no link
 - **Entre**
 - Se estiver no e-mail de outra pessoa: **Acessar com outra conta**
 - Digite seu **e-mail** e sua **senha**
 
-##### Abra o Excel Online
+## Abra o Excel [Online]
 - Clique na **gradinha** ao lado de Outlook e encontre o **Excel**
 
+## Abra a IA
+- [+] Abra uma nova **Aba** e digite **GPT**
+    - Clique em **GPT Brasil**
 
-
-### Objetivo
-Desenvolver capacidades técnicas e socioemocionais relativas à utilização básica da ferramenta Microsoft Excel com o uso de Inteligência Artificial Generativa.
+---
 
 ### Capacidades Técnicas
 - 1 Elaborar prompts com boas práticas, baseando-se em técnicas de engenharia de prompt, sem infringir o uso ético da inteligência artificial.

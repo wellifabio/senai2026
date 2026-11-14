@@ -84,7 +84,7 @@ Considerei aproximadamente 7 kg de carnes, uma média de 410 g por pessoa.
 |Gelo|10 kg|R$ 30,00|
 |Subtotal||R$ 110,00|
 
-##### 4. Churrasqueira e descartáveis|||
+##### 4. Churrasqueira e descartáveis
 
 |Produto|Quantidade|Estimativa|
 |-|-|-:|

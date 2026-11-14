@@ -120,3 +120,5 @@ Gostaria de um orçamento de materiais para construção de uma garagem de 5 x 5
 
 - Podemos copiar esta planilha e calcular manualmente no excel
 - Ou colar no GPT Brasil ou outra IA e pedir para calcular
+
+## Enviar a planilha por e-mail para o professor

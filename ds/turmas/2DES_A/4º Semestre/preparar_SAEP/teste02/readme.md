@@ -1,4 +1,4 @@
-# 2DES A
+# 2DESA - Provas de 2024
 
 ## Alunos
 |Matrícula|Nome|Prova|

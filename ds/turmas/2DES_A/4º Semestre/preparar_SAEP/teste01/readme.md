@@ -1,4 +1,4 @@
-# Simulado SAEP - Téc. Desenvolvimento de Sistemas
+# Téc. Desenvolvimento de Sistemas
 
 
 # Sistema Vinyl Control (Gestão de Acervo e Vendas)

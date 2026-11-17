@@ -1,5 +1,12 @@
 # 2DESA - Provas de 2024
 
+|Assunto|Questões|Link|Status|
+|-|:-:|-|:-:|
+|Testes, Lógica, UML, BD e Excel|20|https://forms.office.com/r/R9T5K9TcZr|A fazer|
+|BD, Proj. Agil, POO, RMS, TS|21|https://forms.office.com/r/0mgH9qH9TD|A fazer|
+|BD, Lógica, RMS, UML|30|https://forms.office.com/r/3KU69pzP1J|A fazer|
+|TS, RMS, UML, Lógica, BD|40|https://forms.office.com/r/hKXjXB2v53|Feito|
+
 ## Alunos
 |Matrícula|Nome|Prova|
 |-|-|-|

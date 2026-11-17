@@ -1,7 +1,4 @@
 # Excel Básico com IA Generativa
-
-## [Autoavaliação](https://forms.gle/2hPzrN8Wr1hBPKQq7)
-
 Aperfeiçoamento Profissional
 ## Área Tecnológica
 Tecnologia da Informação - Software

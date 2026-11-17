@@ -85,7 +85,7 @@ graph TB
     Cliente([Cliente]) --> D
 ```
 
-## UML - CD
+## UML - DC
 UML(Unified Modeling Language), DC(Diagrama Classes)
 ```mermaid
 classDiagram

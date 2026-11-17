@@ -30,6 +30,37 @@ flowchart TD
     H --> I([fim])
 ```
 
+## DER Conceitual
+```mermaid
+flowchart LR
+    %% Entidades (Retângulos)
+    Cliente[CLIENTE]
+    Pedido[PEDIDO]
+
+    %% Relacionamento (Losango)
+    Relacao{Realiza}
+
+    %% Atributos do Cliente (Elipses)
+    Cli_ID((<u>CPF</u>))
+    Cli_Nome((Nome))
+    Cli_Tel((Telefone))
+    Cli_Nascto((Nascimento))
+
+    %% Atributos do Pedido (Elipses)
+    Ped_ID((<u>Número</u>))
+    Ped_Data((Data))
+
+    %% Conexões
+    Cli_ID --- Cliente
+    Cli_Nome --- Cliente
+    Cli_Tel --- Cliente
+    Cli_Nascto --- Cliente
+    Cliente ---|1| Relacao
+    Relacao ---|N| Pedido
+    Pedido --- Ped_ID
+    Pedido --- Ped_Data
+```
+
 ## UML - DCU
 UML(Unified Modeling Language), DCU(Diagrama de Casos de Uso)
 ```mermaid
@@ -53,19 +84,29 @@ graph TB
     Cliente([Cliente]) --> C
     Cliente([Cliente]) --> D
 ```
-Caso beta
+
+## UML - CD
+UML(Unified Modeling Language), DC(Diagrama Classes)
 ```mermaid
-usecase-beta
-    actor Cliente
-    actor Admin as "Administrador"
-
-    systemBoundary Sistema["Loja Online"] {
-        usecase UC1("Fazer Pedido")
-        usecase UC2("Realizar Pagamento")
-        usecase UC3("Gerenciar Estoque")
-    }
-
-    Cliente --> UC1
-    UC1 ..> UC2 : include
-    Admin --> UC3
+classDiagram
+      Animal <|-- Duck
+      Animal <|-- Fish
+      Animal <|-- Zebra
+      Animal : +int age
+      Animal : +String gender
+      Animal: +isMammal()
+      Animal: +mate()
+      class Duck{
+          +String beakColor
+          +swim()
+          +quack()
+      }
+      class Fish{
+          -int sizeInFeet
+          -canEat()
+      }
+      class Zebra{
+          +bool is_wild
+          +run()
+      }
 ```

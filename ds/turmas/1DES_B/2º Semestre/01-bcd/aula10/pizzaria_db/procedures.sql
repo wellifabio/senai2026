@@ -65,3 +65,24 @@ INSERT INTO itens_pedido VALUES (28,28, 2,(SELECT valor FROM pizzas WHERE pizza_
 SELECT * FROM pedidos WHERE pedido_id = 28;
 CALL atulizaValorPedido(28);
 SELECT * FROM pedidos WHERE pedido_id = 28;
+
+-- Procedimento armazenado pedido de um item
+DROP PROCEDURE IF EXISTS pedidoDeUmItem;
+DELIMITER //
+CREATE PROCEDURE pedidoDeUmItem(_cliente_id INT, _pizza_id INT, _qtd INT)
+BEGIN
+    DECLARE _pedido_id INT;
+    INSERT INTO pedidos (cliente_id, data, hora, valor)
+    VALUES (_cliente_id, CURDATE(), CURTIME(), NULL);
+    SET _pedido_id = LAST_INSERT_ID();
+    INSERT INTO itens_pedido (pedido_id, pizza_id, quantidade, valor)
+    VALUES (_pedido_id, _pizza_id, _qtd, (SELECT valor FROM pizzas WHERE pizza_id = _pizza_id));
+    UPDATE pedidos
+    SET valor = (SELECT SUM(valor * quantidade) FROM itens_pedido WHERE pedido_id = _pedido_id)
+    WHERE pedido_id = _pedido_id;
+END //
+DELIMITER ;
+SHOW PROCEDURE STATUS;
+
+-- Inserindo pedidos de um item testando a procedure
+CALL pedidoDeUmItem(96,41,1);

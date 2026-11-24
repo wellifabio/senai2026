@@ -150,6 +150,7 @@ Semelhante ao primeiro desafio, pesquise como criar gatilhos e crie um que **atu
     - "Claudiane Mendes Trigueiro Silva" quer 2 pizzas "Aliche" e uma "Firense"
     - "Diogo Matos da Silva" que duas "Toscana" e uma "Grega"
     - "Eder Almeida Batista de Oliveira" que uma "Canadense" e 2 "Margherita"
+- Confira se o gatilho calculou o valor do pedido **corretamente**.
 
 ### Entrega
 - Mostre o script SQL e os testes realizados ao intrutor para receber o visto

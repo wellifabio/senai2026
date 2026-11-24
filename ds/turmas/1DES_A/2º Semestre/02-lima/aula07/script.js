@@ -7,12 +7,18 @@ const form = document.getElementById('formDisco')
 const lista = document.getElementById('listarDiscos')
 const mensagemVazia = document.getElementById('mensagemVazia')
 
+let idEditando = null
+
 btnCadastrar.addEventListener("click", () => {
     modal.showModal();
 })
 
 btnCancelar.addEventListener("click", () => {
     modal.close();
+})
+modal.addEventListener("close",()=>{
+    idEditando = null
+    form.reset()
 })
 //Carregando as informações do BD (GET)
 async function carregarDiscos() {
@@ -30,19 +36,27 @@ async function carregarDiscos() {
         mensagemVazia.hidden = true
         //Renderizar
         discos.forEach(disco => {
-            criarCard(disco.album, disco.artista, disco.genero, disco.imagem_url, disco.preco)
+            criarCard(disco.album, disco.artista, disco.genero, disco.imagem_url, disco.preco,disco.id)
         })
     } catch (erro) {
         console.error("Erro ao carregar discos:", erro)
         alert("Não foi possivel conectar ao servidor")
     }
 }
-//Cadastrar novo disco (post)
 
 
+//Escolhe o que o submit vai fazer
 form.addEventListener("submit", async (evento) => {
     evento.preventDefault()
+    if(idEditando){
+        await atualizarDisco(idEditando)
+    }else{
+        await cadastrarDisco()
+    }
+})
 
+//Cadastrar novo disco (post)
+async function cadastrarDisco() {
     const novoDisco = {
         album: document.getElementById("album").value.trim(),
         artista: document.getElementById("artista").value.trim(),
@@ -59,7 +73,6 @@ form.addEventListener("submit", async (evento) => {
             body: JSON.stringify(novoDisco)
         })
         if (resposta.ok) {
-            form.reset()
             modal.close()
             carregarDiscos()
         }else{
@@ -70,9 +83,55 @@ form.addEventListener("submit", async (evento) => {
         alert("Erro de conexão com o servidor")
     }
   
-})
+}
 
-function criarCard(album, artista, genero, imagem, preco){
+async function atualizarDisco(id) {
+    const discoAtualizado = {
+        album: document.getElementById("album").value.trim(),
+        artista: document.getElementById("artista").value.trim(),
+        genero: document.getElementById("genero").value.trim(),
+        imagem: document.getElementById("imagem").value.trim(),
+        preco: Number(document.getElementById("preco").value)
+    }
+    try{
+        const resposta = await fetch(API_URL + '/atualizar/'+ id,{
+            method:"PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(discoAtualizado)
+        })
+        if(resposta.ok){
+            modal.close()
+            carregarDiscos()
+        }else {
+            alert("Erro ao atualizar disco. Verificar BD")
+        }
+    }catch (erro){
+        console.error("Erro na requisição:", erro)
+        alert("Erro de conexão com o servidor")
+    }
+}
+async function deletarDisco(id) {
+    try{
+        const resposta = await fetch(API_URL + '/deletar/' + id,{
+            method:"DELETE"
+        })
+        if(resposta.ok){
+            carregarDiscos()
+        }else{
+            alert("Erro ao deletar disco")
+        }
+    }catch (erro){
+        console.error("Erro na requisição:",erro)
+        alert("Erro de conexão com o servidor")
+    }
+    
+}
+
+
+
+function criarCard(album, artista, genero, imagem, preco, id){
     const card = document.createElement("article")
     card.classList.add("card-disco")
 
@@ -98,8 +157,33 @@ function criarCard(album, artista, genero, imagem, preco){
     const valor = document.createElement("strong")
     valor.classList.add("preco")
     valor.textContent = preco.toLocaleString("pt-BR",{style: "currency",currency:"BRL"})
+    //Botões para editar e excluir
+    const acoesCard = document.createElement("div")
+    acoesCard.classList.add("acoes-card")
+    
+    //Editar
+    const btnEditar = document.createElement("button")
+    btnEditar.type = "button"
+    btnEditar.classList.add("btn-editar")
+    btnEditar.textContent = "Editar"
+    //Função ao clicar
+    btnEditar.addEventListener("click",() => {
+        idEditando = id
+        document.getElementById("album").value = album 
+        document.getElementById("artista").value = artista
+        document.getElementById("genero").value = genero
+        document.getElementById("imagem").value = imagem
+        document.getElementById("preco").value = preco
+        modal.showModal()
+    }) 
+    const btnExcluir = document.createElement("button")
+    btnExcluir.type = "button"
+    btnExcluir.classList.add("btn-excluir")
+    btnExcluir.textContent = "Excluir"
+    btnExcluir.addEventListener("click",()=>deletarDisco(id))   
 
-    info.append(titulo, nomeArtista, nomeGenero, valor)
+    acoesCard.append(btnEditar, btnExcluir)
+    info.append(titulo, nomeArtista, nomeGenero, valor,acoesCard)
     card.append(capa, info)
     lista.append(card)
 

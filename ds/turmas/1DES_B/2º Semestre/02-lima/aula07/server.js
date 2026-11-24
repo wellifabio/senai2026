@@ -47,7 +47,35 @@ const novoDisco = (req, res)=>{
             res.status(400).send("Erro: Preencha todos os campos")
         }
 }
+const atualizarDisco = (req,res)=>{
+    const {id} = req.params
+    const {album, artista, genero, imagem, preco}= req.body
 
+    if(album && artista && genero && imagem && preco){
+        const sql = "UPDATE discos SET album = ?, artista = ?, genero = ?, imagem_url = ?, preco = ? WHERE id = ?"
+        const valores = [album, artista, genero, imagem, preco, id]
+
+        db.query(sql,valores,(erro,resultado)=>{
+            if(erro){
+                return res.status(500).send("Erro ao atualizar disco")
+            }
+            res.send("Disco atualizado com sucesso")
+        })
+    }else{
+        res.status(400).send("Erro: Preencha todos os campos")
+    }
+}
+const deletarDisco = (req, res)=>{
+    const {id} = req.params
+    const sql = "DELETE FROM discos WHERE id = ?"
+
+    db.query(sql,[id],(erro,resultado)=>{
+        if(erro){
+            return res.status(500).send("Erro ao deletar disco")
+        }
+        res.send("Disco deletado com sucesso")
+    })
+}
 //Middlewares
 const app = express()
 
@@ -60,6 +88,8 @@ const porta = 3000
 //Rotas
 app.get("/listar",mostrarDiscos)
 app.post("/cadastrar", novoDisco)
+app.put("/atualizar/:id", atualizarDisco)
+app.delete("/deletar/:id", deletarDisco)
 
 app.listen(porta,()=>{
     console.log(`Servidor rodando (alegria) porta ${porta}`)

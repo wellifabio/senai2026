@@ -7,6 +7,9 @@ const form = document.getElementById('formDisco')
 const lista = document.getElementById('listarDiscos')
 const mensagemVazia = document.getElementById('mensagemVazia')
 
+//Variavel local para ler o ID
+let idEditando = null
+
 btnCadastrar.addEventListener("click", () => {
     modal.showModal();
 })
@@ -14,6 +17,10 @@ btnCadastrar.addEventListener("click", () => {
 btnCancelar.addEventListener("click", () => {
     modal.close();
 })
+    modal.addEventListener("close",()=>{
+        idEditando = null
+        form.reset()
+    })
 //Carregando as informações do BD (GET)
 async function carregarDiscos() {
     try {
@@ -30,7 +37,7 @@ async function carregarDiscos() {
         mensagemVazia.hidden = true
         //Renderizar
         discos.forEach(disco => {
-            criarCard(disco.album, disco.artista, disco.genero, disco.imagem_url, disco.preco)
+            criarCard(disco.album, disco.artista, disco.genero, disco.imagem_url, disco.preco, disco.id)
         })
     } catch (erro) {
         console.error("Erro ao carregar discos:", erro)
@@ -39,11 +46,17 @@ async function carregarDiscos() {
 }
 //Cadastrar novo disco (post)
 
-
 form.addEventListener("submit", async (evento) => {
     evento.preventDefault()
+    if(idEditando){
+        await atualizarDisco(idEditando)
+    }else {
+        await cadastrarDisco()
+    }
+})
 
-    const novoDisco = {
+async function cadastrarDisco() {
+       const novoDisco = {
         album: document.getElementById("album").value.trim(),
         artista: document.getElementById("artista").value.trim(),
         genero: document.getElementById("genero").value.trim(),
@@ -62,17 +75,52 @@ form.addEventListener("submit", async (evento) => {
             form.reset()
             modal.close()
             carregarDiscos()
-        }else{
+        } else {
             alert("Erro ao salvar disco. Verificar database")
         }
-    }catch (erro){
+    } catch (erro) {
         console.error("Erro na requisição:", erro)
         alert("Erro de conexão com o servidor")
     }
-  
-})
 
-function criarCard(album, artista, genero, imagem, preco){
+}
+async function atualizarDisco(id) {
+    const discoAtualizado = {
+         album: document.getElementById("album").value.trim(),
+        artista: document.getElementById("artista").value.trim(),
+        genero: document.getElementById("genero").value.trim(),
+        imagem: document.getElementById("imagem").value.trim(),
+        preco: Number(document.getElementById("preco").value)
+    } 
+    try{
+        const resposta = await fetch(API_URL + '/atualizar/'+ id,{
+            method:"PUT",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body: JSON.stringify(discoAtualizado)
+        })
+        if(resposta.ok){
+            modal.close()
+            carregarDiscos()
+        }else{
+            alert("Erro ao atualizar o disco.Verifica o BD")
+        }
+    }catch(erro){
+        console.error("Erro na requisição:",erro)
+        alert("Erro de conexão com o servidor")
+    }
+}
+async function deletarDisco(id) {
+    try{
+        const resposta = await fetch(API_URL + "/deletar/"+ id,{
+            method:"DELETE"
+        }
+    }
+    
+}
+
+function criarCard(album, artista, genero, imagem, preco) {
     const card = document.createElement("article")
     card.classList.add("card-disco")
 
@@ -97,7 +145,7 @@ function criarCard(album, artista, genero, imagem, preco){
 
     const valor = document.createElement("strong")
     valor.classList.add("preco")
-    valor.textContent = preco.toLocaleString("pt-BR",{style: "currency",currency:"BRL"})
+    valor.textContent = preco.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
 
     info.append(titulo, nomeArtista, nomeGenero, valor)
     card.append(capa, info)

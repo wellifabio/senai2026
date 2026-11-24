@@ -149,3 +149,10 @@ Semelhante ao primeiro desafio, pesquise como criar gatilhos e crie um que **atu
 
 ### Entrega
 - Mostre o script SQL e os testes realizados ao intrutor para receber o visto
+- Suba no github no repositório da pizzaria, confira se o repositório está completo contendo:
+    - MER DER Conceitual e lógico
+    - Script de criação **DDL** e população **DML** no arquivo `script.sql`
+    - Queries relatórios/visões no arquivo `queries.sql`
+    - Funções no arquivo `functions.sql`
+    - Procedimentos armazenados no arquivo `procedures.sql`
+    - Gatilho no arquivo `triggers.sql`

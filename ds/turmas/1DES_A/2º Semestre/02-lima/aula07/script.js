@@ -7,75 +7,71 @@ const form = document.getElementById('formDisco')
 const lista = document.getElementById('listarDiscos')
 const mensagemVazia = document.getElementById('mensagemVazia')
 
-btnCadastrar.addEventListener("click", () =>{
+btnCadastrar.addEventListener("click", () => {
     modal.showModal();
 })
 
-btnCancelar.addEventListener("click", () =>{
+btnCancelar.addEventListener("click", () => {
     modal.close();
 })
-
-//Carregar os discos do BD(GET)
+//Carregando as informações do BD (GET)
 async function carregarDiscos() {
-    try{
+    try {
         const resposta = await fetch(API_URL + '/listar')
         const discos = await resposta.json()
 
-        lista.innerHTML=""
+        lista.innerHTML = ""
 
-        if(discos.length == 0){
+        if (discos.length === 0) {
             mensagemVazia.hidden = false
             lista.appendChild(mensagemVazia)
             return
         }
-
         mensagemVazia.hidden = true
-        //Renderize os discos encontrados
-        discos.forEach(disco =>{
-            criarCard(disco.album, disco.artista, disco.genero, disco.imagem, disco.preco)
+        //Renderizar
+        discos.forEach(disco => {
+            criarCard(disco.album, disco.artista, disco.genero, disco.imagem_url, disco.preco)
         })
-    }catch (erro){
-        console.error("Erro ao carregar discos: ", erro)
+    } catch (erro) {
+        console.error("Erro ao carregar discos:", erro)
         alert("Não foi possivel conectar ao servidor")
     }
-    
 }
-//Cadartar novo Disco (POST)
+//Cadastrar novo disco (post)
 
-form.addEventListener("submit",async (evento)=>{
+
+form.addEventListener("submit", async (evento) => {
     evento.preventDefault()
 
     const novoDisco = {
-    album: document.getElementById("album").value.trim(),
-    artista: document.getElementById("artista").value.trim(),
-    genero: document.getElementById("genero").value.trim(),
-    imagem: document.getElementById("imagem").value.trim(),
-    preco: Number(document.getElementById("preco").value)
-}
-    try{
-        const resposta = await fetch(API_URL + '/cadastrar',{
+        album: document.getElementById("album").value.trim(),
+        artista: document.getElementById("artista").value.trim(),
+        genero: document.getElementById("genero").value.trim(),
+        imagem: document.getElementById("imagem").value.trim(),
+        preco: Number(document.getElementById("preco").value)
+    }
+    try {
+        const resposta = await fetch(API_URL + '/cadastrar', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(novoDisco)
-
         })
-
-        if(resposta.ok){
+        if (resposta.ok) {
             form.reset()
             modal.close()
             carregarDiscos()
-        }else {
-            alert("Erro ao salvar discos. Verifique BD")
+        }else{
+            alert("Erro ao salvar disco. Verificar database")
         }
-    }catch{
+    }catch (erro){
         console.error("Erro na requisição:", erro)
         alert("Erro de conexão com o servidor")
     }
-
-   
+  
 })
+
 function criarCard(album, artista, genero, imagem, preco){
     const card = document.createElement("article")
     card.classList.add("card-disco")
@@ -106,5 +102,7 @@ function criarCard(album, artista, genero, imagem, preco){
     info.append(titulo, nomeArtista, nomeGenero, valor)
     card.append(capa, info)
     lista.append(card)
+
+
 }
 carregarDiscos()

@@ -146,6 +146,10 @@ Crie um Procedimento Armazenado que receba três parâmetros (cliente_id, pizza_
 
 ### Desafio 02
 Semelhante ao primeiro desafio, pesquise como criar gatilhos e crie um que **atualize** o **valor** do **pedido** **após** a inserção de um **ítem**, salve em um arquivo chamado **`triggers.sql`** e mostre ao professor para receber o visto.
+- Cadastre os seguintes pedidos para testar:
+    - "Claudiane Mendes Trigueiro Silva" quer 2 pizzas "Aliche" e uma "Firense"
+    - "Diogo Matos da Silva" que duas "Toscana" e uma "Grega"
+    - "Eder Almeida Batista de Oliveira" que uma "Canadense" e 2 "Margherita"
 
 ### Entrega
 - Mostre o script SQL e os testes realizados ao intrutor para receber o visto

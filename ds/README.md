@@ -1,17 +1,23 @@
 <!-- # SAEP
 
-// ### Link para realizar a Prova: https://saepsenai.caeddigital.net/#!/pagina-inicial
+### Link para realizar a Prova: https://saepsenai.caeddigital.net/#!/pagina-inicial
 
-// Para acessar o sistema utilizar:
-// Login: CPF
-// Senha: Link abaixo
+Para acessar o sistema utilizar:<br>
+Login: CPF<br>
+Senha: Link abaixo
 
-// ## Link para senha de acesso: https://robsonbsouzaa.github.io/saep/
+## Link para senha de acesso: https://robsonbsouzaa.github.io/saep/
 
-Ao acessar click na area destacada
+### Ao acessar click na area destacada
+
+<img src = "https://github.com/wellifabio/senai2026/blob/main/ds/assets/al1.png">
+
+### Depois responda as provas na sequencia listada
+
+<img src = "https://github.com/wellifabio/senai2026/blob/main/ds/assets/al2.png">
+
 
 -->
-
 
 
 

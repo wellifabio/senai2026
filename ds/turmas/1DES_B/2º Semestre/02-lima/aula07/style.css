@@ -140,3 +140,19 @@ button.cancelar:hover{
     object-fit: cover;
     display: block;
 }
+.acoes-card{
+    display: flex;
+    gap:8px;
+    margin-top: 14px;
+}
+.acoes-card button{
+    flex:1;
+    padding: 8px 10px;
+    font-size: 13px;
+}
+button.btn-editar{
+    background: #201c1a;
+}
+button.btn-excluir{
+    background: #c0392b;
+}

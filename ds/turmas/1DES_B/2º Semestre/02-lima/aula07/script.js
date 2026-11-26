@@ -115,12 +115,23 @@ async function deletarDisco(id) {
     try{
         const resposta = await fetch(API_URL + "/deletar/"+ id,{
             method:"DELETE"
+        })
+
+        if(resposta.ok){
+            carregarDiscos()
+        }else{
+            alert("deu ruim")
         }
+
+    }catch(erro){
+        console.error("Erro na requisição",erro)
+        alert("Erro de conexão com o servidor")
     }
+
     
 }
 
-function criarCard(album, artista, genero, imagem, preco) {
+function criarCard(album, artista, genero, imagem, preco, id) {
     const card = document.createElement("article")
     card.classList.add("card-disco")
 
@@ -147,7 +158,32 @@ function criarCard(album, artista, genero, imagem, preco) {
     valor.classList.add("preco")
     valor.textContent = preco.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
 
-    info.append(titulo, nomeArtista, nomeGenero, valor)
+    const acoesCard = document.createElement("div")
+    acoesCard.classList.add("acoes-card")
+
+    const btnEditar = document.createElement("button")
+    btnEditar.type = "button"
+    btnEditar.classList.add("btn-editar")
+    btnEditar.textContent = "Editar"
+
+    btnEditar.addEventListener("click",()=>{
+        idEditando = id
+        document.getElementById("album").value = album 
+        document.getElementById("artista").value = artista
+        document.getElementById("genero").value = genero
+        document.getElementById("imagem").value = imagem
+        document.getElementById("preco").value = preco
+        modal.showModal()
+    })
+    const btnExcluir = document.createElement("button")
+    btnExcluir.type = "button"
+    btnExcluir.classList.add("btn-excluir")
+    btnExcluir.textContent = "Excluir"
+
+    btnExcluir.addEventListener("click", () => deletarDisco(id))
+
+    acoesCard.append(btnEditar, btnExcluir)
+    info.append(titulo, nomeArtista, nomeGenero, valor, acoesCard)
     card.append(capa, info)
     lista.append(card)
 

@@ -23,3 +23,28 @@ Abra uma nova planilha do Excel e digite ou transcreva com uma IA (Chat GPT por 
 
 - `= Quantidade * Custo` Procurando o ingrediente manualmente
 - `= SOMA(coluna dos custos)`
+<br>![Custos Calculando](./custos_proc.png)
+```
+- PROCV(valor_procurado; tabela + F4; nº da coluna; exato ou aproximado)
+- 0 = Exato
+- 1 = Aproximado
+```
+- VERDADEIRO = 1 = `Aproximado`
+- FALSO = 0 = `Exato`
+- F4 `Congelar as células selecionadas` exemplo $C$4
+<br>![Somas](./custos_procv.png)
+
+### Desafio 03
+Digite a planilha a seguir ao lado das planilhas de pastéis
+
+|Estimativas||||||
+|-|-|-|-|-|-|
+|Sabor|Custo R$|Preço R$|Quantidade|Faturamento|Lucro|
+|Carne|5,39|||||
+|Frango|3,85|||||
+|Queijo|6,71|||||
+|Pizza|6,72|||||
+|||**Totais**||||
+
+Estime os preços e quantidades para os pastéis de forma que possamos lucrar um **salário mínimo**.
+- Pode utilizar a IA para sujerir.

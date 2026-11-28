@@ -6,3 +6,20 @@ Sempre é bom ter uma noção de como fazer um orçamento doméstico simples, a 
 ### Desafio
 Abra uma nova planilha do Excel e digite a seguinte planilha
 <br>![Somas](./somas.png)
+
+## Desafio Nº 02
+### Contextualização
+Vamos analizar os dados de um pequeno negócio (Barraca de pasteis para uma quermesse ou até uma feira) como calcular os custos de produção de pastéis.
+Este mesmo exemplo pode ser aplicado para qualquer outro negócio semelhante.
+#### Conceitos
+- Custo (No ponto de vista de quem compra)
+- Valor (Média dos preços da região)
+- Preço (No ponto de vista de quem vende)
+### Desafio
+Abra uma nova planilha do Excel e digite ou transcreva com uma IA (Chat GPT por exemplo) a seguinte planilha:
+<br>![Custos](./custos.png)
+
+### Formulas
+
+- `= Quantidade * Custo` Procurando o ingrediente manualmente
+- `= SOMA(coluna dos custos)`

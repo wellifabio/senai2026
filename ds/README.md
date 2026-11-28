@@ -1,6 +1,6 @@
 # Técnico em Desenvolvimento de Sistemas
 
-# SAEP
+# SAEP - Objetiva
 
 ### Link para realizar a Prova: https://saepsenai.caeddigital.net/#!/pagina-inicial
 
@@ -21,22 +21,6 @@ Senha: Link abaixo
 <img src = "https://github.com/wellifabio/senai2026/blob/main/ds/assets/bp1.gif">
 
 ## [Plano de Curso](./planejamento/Plano_de_Curso_DS.pdf)
-
-# Pesquisa de Satisfação
-
-## [Portal de Pesquisas](https://portaldepesquisassenai.sp.senai.br/Home/Login)
-
-### Acesso:
-- Login: CFP
-- Senha: data de nascimento
-
-  <div align = "center">
-  <img src = "https://github.com/wellifabio/senai2026/blob/main/ds/assets/pesquisasatisfacao.png">
-  </div>
-
-
-
-
 
 ## Competências transversais - Cursos autoinstitucionais
 - 1 Portal **[EAD](https://ead.sp.senai.br)**
